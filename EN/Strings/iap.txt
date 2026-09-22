@@ -1,0 +1,18 @@
+@iap_title_full_game = The Farmer Was Replaced
+@iap_desc_full_game = Unlock the full game, including the mining expansion below the farm.
+@iap_buy = Buy
+@iap_owned = Owned
+@iap_pending = Waiting for approval.
+@iap_retry = Retry
+@iap_restore = Restore purchases
+@iap_restored = Purchases restored.
+@iap_restore_failed = Could not reach the store. Try again later.
+@iap_purchase_success = Unlocked. Enjoy!
+@iap_purchase_failed = The purchase did not go through. Nothing was charged.
+@iap_unavailable = The store is not available right now.
+@iap_offline = Prices are unavailable. Check your connection and try again.
+@iap_retrying = Asking the store again...
+@iap_all_owned = You own everything. Thank you!
+
+@unlock_locked_full_game = This is part of the full game. Get it in the store to unlock it.
+@unlock_locked_mining_dlc = This is part of the Mining DLC. Get it in the store to unlock it.

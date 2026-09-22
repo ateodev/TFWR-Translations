@@ -16,3 +16,6 @@
 @new_hat_unlocked = ## New Hat Unlocked
 `change_hat(`{0}`)`
 @right_click_for_more_info = -- right click for more information --
+@tap_here_for_more_info = -- tap here for more information --
+@right_click_to_open_store = -- right click to open the store --
+@tap_here_to_open_store = -- tap here to open the store --

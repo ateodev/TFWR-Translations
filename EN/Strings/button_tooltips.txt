@@ -61,3 +61,14 @@
 @keybind_tooltip_next_step = Perform one step if the execution is paused.
 @keybind_tooltip_pause_execution = Pause the execution.
 @keybind_tooltip_hide_UI = Hide or unhide the HUD.
+@button_tooltip_iap = Opens the store.
+@button_tooltip_achievements = Show your achievements.
+@button_tooltip_sign_in = Sign in to Google Play Games / Game Center to sync your achievements.
+@option_tooltip_keyboard_switches = How the on-screen keyboard's keys feel: Tactile = vibration tick, Clicky = key sound, Linear/Silent = neither. OS variants use the system keyboard's click sound.
+@button_tooltip_open_main_menu = Open the main menu.
+@button_tooltip_open_search = Open the search bar.
+@button_tooltip_open_news = Open the latest news.
+@button_tooltip_fullscreen = Show this window fullscreen.
+@button_tooltip_exit_fullscreen = Leave fullscreen.
+@option_tooltip_keyboard_layout = Key arrangement of the in-game keyboard. Defaults to the layout used in your system language.
+@option_tooltip_keyboard_type = Which keyboard to type code with. The in-game keyboard has the symbols Python needs; the system keyboard is the one you use in other apps. A connected hardware keyboard is always used instead.

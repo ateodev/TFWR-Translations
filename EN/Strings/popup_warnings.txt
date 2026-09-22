@@ -12,3 +12,4 @@
 @ok = ok
 @popup_warning_old_save = This save file is from an older version of the game. Since the tech tree has been reworked, all upgrades have been reset to something that makes more sense with the new progression system.
 @popup_warning_unofficial_language = This is an unofficial translation created by the community that isn't maintained by the game's developers. Some text may be missing or inaccurate.
+@popup_warning_sign_in_failed = Couldn't sign in. Check the Google Play Games / Game Center sign-in in your device settings and try again.
