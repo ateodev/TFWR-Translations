@@ -12,3 +12,11 @@
 @item_descr_cactus = Obtained by harvesting sorted cacti.
 @item_descr_cactus_seed = This items has been removed from the game.
 @item_descr_bone = The bones of an ancient creature.
+@item_descr_rice = Obtained by harvesting rice.
+@item_descr_block = A simple block of dirt. Perhaps something will happen if we collect more of these.
+@item_descr_coal = Obtained by digging up coal underground. Coal deposits occur in flat sheets.
+@item_descr_iron = Obtained by digging up iron underground.
+@item_descr_quartz = Obtained by digging up quartz veins. Grows in needle-like structures.
+@item_descr_dynamite = Obtained by digging into dynamite ground.
+@item_descr_bamboo = Obtained by harvesting bamboo.
+@item_descr_mushroom = Obtained by stacking mushroom ground blocks.

@@ -12,3 +12,6 @@ To spawn a full-size maze do:
 substance = get_world_size() * 2**(num_unlocked(Unlocks.Mazes) - 1)
 use_item(Items.Weird_Substance, substance)`
 @warning_recursive_simulation = Simulations and leaderboard runs cannot be started from within other simulations and leaderboard runs.
+@warning_not_enough_coal = Didn't have enough coal to prospect for iron.
+@warning_not_enough_iron = Didn't have enough iron to prospect for quartz.
+@warning_cannot_place_ground = Cannot place {0}, because it's a special block.

@@ -632,3 +632,12 @@ list.insert(0, 0)`
 @code_tooltip_or = Evaluates the first operand. If it's truthy (anything other than `False`, `0` and empty collections), it returns that value immediately (short-circuiting the evaluation), otherwise, it evaluates and returns the second operand.
 @code_tooltip_return = Used to return a value from a function.
 @code_tooltip_pass = Does nothing. Can be useful because empty code blocks aren't allowed.
+@code_tooltip_dig = `dig()`
+Dig a tile downward. The block may or may not be destroyed. This depends on the block's hardness and on the drone's drill strength.
+
+returns `True` if the block was destroyed, `False` otherwise.
+
+takes 0.5s to execute.
+
+example:
+`dig()`

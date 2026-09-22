@@ -19,3 +19,9 @@
 @tap_here_for_more_info = -- tap here for more information --
 @right_click_to_open_store = -- right click to open the store --
 @tap_here_to_open_store = -- tap here to open the store --
+@missing_unlock_page = You need to unlock {0} in the [tech tree](tech_tree) before you can see this page.
+
+---
+
+{1}
+@latest_news = Latest News

@@ -78,3 +78,5 @@
 @30 fps = 30 FPS
 @60 fps = 60 FPS
 @120 fps = 120 FPS
+
+@avalanche particles = Avalanche Particles

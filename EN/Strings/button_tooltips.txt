@@ -72,3 +72,7 @@
 @button_tooltip_exit_fullscreen = Leave fullscreen.
 @option_tooltip_keyboard_layout = Key arrangement of the in-game keyboard. Defaults to the layout used in your system language.
 @option_tooltip_keyboard_type = Which keyboard to type code with. The in-game keyboard has the symbols Python needs; the system keyboard is the one you use in other apps. A connected hardware keyboard is always used instead.
+
+@button_tooltip_docs_home = Go to the documentation home page.
+@button_tooltip_docs_back = Go to the previously visited documentation page.
+@option_tooltip_avalanche_particles = Disable the particles created by cave-ins.
