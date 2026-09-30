@@ -75,6 +75,7 @@
 @Keyboard type = Keyboard Type
 @os = System
 @custom = In-Game
+@exit fullscreen on run = Exit Fullscreen on Run
 @30 fps = 30 FPS
 @60 fps = 60 FPS
 @120 fps = 120 FPS
