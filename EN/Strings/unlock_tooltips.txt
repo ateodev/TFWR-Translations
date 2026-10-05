@@ -221,3 +221,7 @@ The {0} unlock must be on level {1} or higher.
 @multi_unlock_descr_bamboo = Increases the yield and cost of bamboo.
 @drill = Drill
 @jump = Jump
+@unlock_button_unlock = Unlock
+@unlock_button_upgrade = Upgrade
+@unlock_button_get_full_game = Get full game
+@unlock_button_reset = Reset to max
