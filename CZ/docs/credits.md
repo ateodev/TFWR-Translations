@@ -16,6 +16,18 @@ Andri Weidmann
 Flurin Weidmann
 Nathalie Weidmann
 
+### Mobilní port od Ateo
+
+Aaron Abt
+Benjamin Andermatt
+Ingrid Hagen
+Jan Schneider
+Marvin Lanz
+Melissa Derrer
+Moreno Vogel
+Sebastian Tobler
+Xavier Heimgartner
+
 ### Hlavní grafika
 
 Stephanie Stutz

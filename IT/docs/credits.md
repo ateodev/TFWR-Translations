@@ -13,6 +13,17 @@ Andri Weidmann
 Flurin Weidmann
 Nathalie Weidmann
 
+### Porting mobile a cura di Ateo
+Aaron Abt
+Benjamin Andermatt
+Ingrid Hagen
+Jan Schneider
+Marvin Lanz
+Melissa Derrer
+Moreno Vogel
+Sebastian Tobler
+Xavier Heimgartner
+
 ### Key Art
 Stephanie Stutz
 

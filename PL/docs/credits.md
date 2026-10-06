@@ -13,6 +13,17 @@ Andri Weidmann
 Flurin Weidmann
 Nathalie Weidmann
 
+### Wersja mobilna: Ateo
+Aaron Abt
+Benjamin Andermatt
+Ingrid Hagen
+Jan Schneider
+Marvin Lanz
+Melissa Derrer
+Moreno Vogel
+Sebastian Tobler
+Xavier Heimgartner
+
 ### Grafika promocyjna
 Stephanie Stutz
 

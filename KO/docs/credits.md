@@ -13,6 +13,17 @@ Andri Weidmann
 Flurin Weidmann
 Nathalie Weidmann
 
+### 모바일 이식: Ateo
+Aaron Abt
+Benjamin Andermatt
+Ingrid Hagen
+Jan Schneider
+Marvin Lanz
+Melissa Derrer
+Moreno Vogel
+Sebastian Tobler
+Xavier Heimgartner
+
 ### 키 아트
 Stephanie Stutz
 

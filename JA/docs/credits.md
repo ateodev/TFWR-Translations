@@ -13,6 +13,17 @@ Andri Weidmann
 Flurin Weidmann
 Nathalie Weidmann
 
+### モバイル移植 Ateo
+Aaron Abt
+Benjamin Andermatt
+Ingrid Hagen
+Jan Schneider
+Marvin Lanz
+Melissa Derrer
+Moreno Vogel
+Sebastian Tobler
+Xavier Heimgartner
+
 ### キーアート
 Stephanie Stutz
 
