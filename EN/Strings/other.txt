@@ -26,3 +26,4 @@
 {1}
 @latest_news = Latest News
 @tooltip_button_more_info = More info
+@loading_screen = Loading
