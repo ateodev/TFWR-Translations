@@ -7,8 +7,10 @@
 @cloud_badge_off = Cloud save off
 @cloud_badge_not_signed_in = Cloud save: not signed in
 @cloud_badge_near_limit = Cloud save {0}% full
+@cloud_badge_ok = Cloud save on
 @cloud_status_paused = Cloud save is paused: another device saved newer progress, or the cloud could not be reached. Your progress is safe on this device. Sync now to compare both versions and pick one.
-@cloud_status_not_signed_in = You are not signed in, so your saves stay on this device. Sync now to sign in and enable cloud save.
+@cloud_status_not_signed_in = You are not signed in, so your saves stay on this device. Restart the game and sign in to enable cloud save.
 @cloud_status_warning_size = Your saves use {0} of the {1} cloud save limit. Delete saves you no longer need to keep cloud save working.
+@cloud_status_ok = Your saves are synchronized to the cloud.
 @cloud_status_off_too_large = Cloud save is off: your saves need {0}, the limit is {1}. Delete saves you no longer need to turn it back on.
 @cloud_sync_now = Sync now
