@@ -7,7 +7,7 @@ You can rename the file by clicking on its name at the top of the window.
 
 You can edit the code as you would in any text editor, as long as it isn't running.
 You can execute the program directly by pressing the green play button in the code window.
-![](PlayButton50)
+![|x50](PlayButton)
 
 You can create more code files using the "+" button in the upper right corner of the screen.
 You can dock a window to another window by dragging it onto it.

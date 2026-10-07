@@ -12,6 +12,7 @@
 @low = Low
 @sfx limit = SFX Limit
 @vfx limit = VFX Limit
+@avalanche particles = Avalanche Particles
 @volume damping = Volume Damping
 @volume = Volume
 @music volume = Music Volume
@@ -61,6 +62,7 @@
 @Light = Light
 @Lunar New Year = Lunar New Year
 @Custom = Custom
+
 @Keyboard switches = Key Switches
 @blue clicky = Blue - Clicky
 @brown tactile = Brown - Tactile
@@ -80,4 +82,3 @@
 @60 fps = 60 FPS
 @120 fps = 120 FPS
 
-@avalanche particles = Avalanche Particles

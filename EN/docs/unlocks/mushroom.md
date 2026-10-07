@@ -2,7 +2,36 @@
 ---
 # Mushroom
 
-Many types of mushrooms grow in colonies underground. Look for a stratum of `Grounds.Mushroom` while digging. You can `measure()` the ground to get the mushroom type as a number, starting from `0`.
+Many types of mushrooms grow in colonies underground. Look for a stratum of `Grounds.Mushroom` while digging. You can then `measure()` the ground to get the mushroom type as a number, starting from `0`.
+
+{{codeexample 
+{
+    "camera_position": {"x": -1, "y": 0, "z": 6},
+    "show_image": true,
+    "image_size": {"x": 800, "y": 300},
+    "show_code": true,
+    "show_inventory": true,
+    "show_output": false,
+    "collapsing": true,
+    "autoplay": false,
+    "items": [{"item": "hay", "n": 100}, {"item": "iron", "n": 100}],
+    "world_size": {"x": 4, "y": 4},
+    "execution_speed": 2,
+    "digging_speed": 6,
+    "action_ticks": 200,
+    "operation_ticks": 200,
+    "seed": 9,
+    "exclude_unlocks": ["watering", "fertilizer", "dynamite", "iron"]
+}
+
+#SETUP
+jump(Unlocks.Mushrooms)
+#CODE
+while get_ground_type() != Grounds.Mushroom:
+    dig()
+do_a_flip()
+print(measure())
+}}
 
 Mushrooms of the same type like to be together, but they are a bit too shy to grow on top of each other. Push a mushroom block on top of another mushroom block of the same type and they will disappear, earning you mushrooms as a reward.
 

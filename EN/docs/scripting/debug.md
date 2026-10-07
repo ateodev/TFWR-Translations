@@ -8,7 +8,7 @@ The first is to execute the program step by step.
 You can go into step-by-step mode with the button next to the Execute button or by setting a breakpoint.
 
 Breakpoints can be added by clicking on the breakpoint panel to the left of the code.
-![](Breakpoints227)
+![|x227](Breakpoints)
 When execution reaches the line where the breakpoint is, it will automatically switch to step-by-step mode.
 
 When you move your mouse over a variable, its current value is displayed.
@@ -94,6 +94,6 @@ When execution stops, the output is also written to the [output.txt](persistent_
 
 ---
 
-[Output](docs/output.md)      [Comments](docs/scripting/comments.md)      [Debug 2](docs/unlocks/debug2.md)      [Placing Blocks to Debug](docs/unlocks/debug_place.md)      [Simulation](docs/unlocks/simulation.md)
+[Output](docs/output.md)      [Comments](docs/scripting/comments.md)      [Debug 2](docs/unlocks/debug2.md)      [Colorful Blocks](docs/unlocks/debug_place.md)      [Simulation](docs/unlocks/simulation.md)
 
 [print()](functions/print)      [quick_print()](functions/quick_print)

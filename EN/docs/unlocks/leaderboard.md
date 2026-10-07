@@ -15,7 +15,7 @@ If the run is successful, your time will be added to the leaderboard.
 To reduce variance, all runs must cover at least 2 hours of simulated time. You can speed up the simulation, so it won't take that long in real time. If a run finishes earlier, it will be repeated until the total simulated time reaches 2 hours. The average time across all runs is then uploaded as your score.
 
 Here's an example setup that will get you on the hay leaderboard.
-![](LeaderboardSetup400)
+![|x400](LeaderboardSetup)
 
 ## Fastest Reset
 The fastest reset is the most prestigious category. In this category, you completely automate the game, starting with a single farm plot and ending when you unlock the leaderboards again.

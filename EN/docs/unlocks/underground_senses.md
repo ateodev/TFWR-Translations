@@ -14,8 +14,9 @@ You can now use `get_pos_z()` to get the drone's height (starting at 0 and becom
     "show_code": true,
     "show_inventory": true,
     "show_output": false,
-    "collapsing": false,
+    "collapsing": true,
     "autoplay": false,
+    "exclude_unlocks": ["watering", "fertilizer"],
     "items": [{"item": "hay", "n": 100}, {"item": "wood", "n": 100}],
     "world_size": {"x": 4, "y": 4},
     "execution_speed": 2,
@@ -30,7 +31,7 @@ move(East)
 dig()
 dig()
 dig()
-print(get_pos())
+print(get_pos_z())
 }}
 
 `get_ground_type()` returns the type of ground under the drone. You can pass it a direction argument—for example, `get_ground_type(North)`—to get the ground type of a neighboring tile.
@@ -45,7 +46,7 @@ Here's how you would check if the block under the drone is dirt:
     "show_code": true,
     "show_inventory": true,
     "show_output": false,
-    "collapsing": false,
+    "collapsing": true,
     "autoplay": false,
     "items": [{"item": "hay", "n": 100}, {"item": "wood", "n": 100}],
     "world_size": {"x": 4, "y": 4},

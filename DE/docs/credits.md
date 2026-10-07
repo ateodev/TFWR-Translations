@@ -33,9 +33,9 @@ Evgeniia Ushakova (Russische Übersetzung)
 Melanie Chen (Chinesische Übersetzung)
 Siyoon Ji (Koreanische Übersetzung)
 Mina Horiba-Maguire (Japanische Übersetzung)
-Danil Belousov (Account Manager)
-Elizaveta Shevchenko (Team Lead)
-Yulia Tregubova (Project Manager)
+Danil Belousov (Kundenbetreuer)
+Elizaveta Shevchenko (Teamleitung)
+Yulia Tregubova (Projektleitung)
 
 ### Community-Übersetzer
 HoshiyomiLusia
@@ -46,6 +46,7 @@ Ivan Bondar
 Jimmy Sheep
 Taigo Nakajima
 НУІ
+Lucas Ceratto (@LucasCerattoRS)
 
 ### Discord-Moderatoren
 MrBlobfish
@@ -57,5 +58,6 @@ Jeff Siebold aka Noon Knight
 Jonas Bornhöft
 ThatMerlinGuy
 Zoroark Zwart
+arch
 Ramón Buchenberger
 Swiss Game Hub

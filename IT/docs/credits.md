@@ -27,7 +27,15 @@ Xavier Heimgartner
 ### Key Art
 Stephanie Stutz
 
-### Traduzioni a cura di Allcorrect
+### Allcorrect
+Maria Pavlova (traduzione russa)
+Evgeniia Ushakova (traduzione russa)
+Melanie Chen (traduzione cinese)
+Siyoon Ji (traduzione coreana)
+Mina Horiba-Maguire (traduzione giapponese)
+Danil Belousov (Responsabile clienti)
+Elizaveta Shevchenko (Responsabile del gruppo)
+Yulia Tregubova (Responsabile di progetto)
 
 ### Contributi alla traduzione dalla comunità
 HoshiyomiLusia
@@ -38,6 +46,7 @@ Ivan Bondar
 Jimmy Sheep
 Taigo Nakajima
 НУІ
+Lucas Ceratto (@LucasCerattoRS)
 
 ### Moderatori Discord
 MrBlobfish
@@ -49,5 +58,6 @@ Jeff Siebold aka Noon Knight
 Jonas Bornhöft
 ThatMerlinGuy
 Zoroark Zwart
+arch
 Ramón Buchenberger
 Swiss Game Hub

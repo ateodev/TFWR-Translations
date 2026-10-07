@@ -4,7 +4,7 @@
 Putting all your code in a single file quickly becomes unmanageable. 
 `import` statements allow you to import functions and global variables from another file.
 How it works in one screenshot:
-![](ImportsInOnePicture400)
+![|x400](ImportsInOnePicture)
 
 Here `import module2` runs the file named `module2` and gives you access to all its globals.
 You can then access variables and functions within the imported module using the `.` operator.

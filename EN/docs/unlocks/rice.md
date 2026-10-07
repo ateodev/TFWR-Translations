@@ -1,6 +1,6 @@
 [<- Mining](docs/unlocks/mining.md) <right>[Bamboo ->](docs/unlocks/bamboo.md)
 <right>[Petrified Pumpkins ->](docs/unlocks/petrified_pumpkins.md)
-<right>[Pyramids ->](docs/unlocks/pyramid.md)
+<right>[Perlite and Loam ->](docs/unlocks/special_soils.md)
 ---
 # Rice
 
@@ -8,7 +8,7 @@ Underneath the surface you have noticed a thin sheet of clay. As it turns out, t
 
 Rice will dry out the clay it was planted on. You can only use each clay block once. Luckily, the sheet is a few blocks thick. And of course, you can always just `clear()` the world to get the clay sheet back.
 
-You might find the following code useful as a starting point.
+You might find the following code useful to dig down until you find clay.
 
 {{codeexample 
 {
@@ -21,19 +21,22 @@ You might find the following code useful as a starting point.
     "collapsing": false,
     "autoplay": true,
     "items": [{"item": "hay", "n": 100}, {"item": "wood", "n": 100}],
+    "exclude_unlocks": ["watering", "fertilizer"],
     "world_size": {"x": 4, "y": 4},
-    "execution_speed": 2,
+    "execution_speed": 8,
+    "digging_speed": 4,
     "action_ticks": 200,
     "operation_ticks": 200,
     "seed": 1
 }
 #SETUP
-move(North)
 move(East)
 #CODE
 while get_ground_type() != Grounds.Clay:
     dig()
 plant(Entities.Rice)
+move(North)
+do_a_flip()
 }}
 
 ---

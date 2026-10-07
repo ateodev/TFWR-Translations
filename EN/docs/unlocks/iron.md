@@ -21,24 +21,19 @@ An iron vein is always continuous, with no diagonal jumps. If you find a piece o
     "collapsing": false,
     "autoplay": true,
     "items": [{"item": "hay", "n": 100}, {"item": "wood", "n": 100}],
-    "world_size": {"x": 4, "y": 4},
+    "world_size": {"x": 5, "y": 5},
     "execution_speed": 1,
     "digging_speed": 4,
     "action_ticks": 200,
     "operation_ticks": 200,
-    "seed": 1,
-    "exclude_unlocks": ["watering", "fertilizer", "mushrooms", "coal"],
-    "starting_chunk": 2
+    "seed": 9,
+    "exclude_unlocks": ["watering", "fertilizer", "mushrooms", "coal", "quartz"]
 }
 #SETUP
-move(North)
-move(East)
+jump(Unlocks.Iron)
 #CODE
-dig()
-do_a_flip()
-dig()
-do_a_flip()
-dig()
+for i in range(4):
+    dig()
 do_a_flip()
 }}
 

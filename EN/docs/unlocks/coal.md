@@ -1,4 +1,5 @@
 [<- Mining](docs/unlocks/mining.md) <right>[Iron ->](docs/unlocks/iron.md)
+<right>[Jumping ->](docs/unlocks/jump.md)
 ---
 # Coal
 
@@ -20,13 +21,15 @@ The following program is a good starting point for finding coal. It digs down in
     "autoplay": true,
     "items": [{"item": "hay", "n": 100}, {"item": "wood", "n": 100}],
     "world_size": {"x": 4, "y": 4},
-    "execution_speed": 2,
+    "execution_speed": 4,
+    "digging_speed": 2,
     "action_ticks": 200,
     "operation_ticks": 200,
     "seed": 2
 }
 #SETUP
 move(North)
+move(East)
 move(East)
 #CODE
 while get_ground_type() != Grounds.Coal:
