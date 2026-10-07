@@ -1,7 +1,7 @@
 @iap_title_full_game = The Farmer Was Replaced
 @iap_desc_full_game = Unlock the full game, including the mining expansion below the farm.
 @iap_buy = Buy
-@iap_owned = Owned
+@iap_play = Play
 @iap_pending = Waiting for approval or payment.
 @iap_retry = Retry
 @iap_restore = Restore purchases
