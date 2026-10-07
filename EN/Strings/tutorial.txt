@@ -1,0 +1,110 @@
+@tutorial_skip = SKIP
+@tutorial_skip_question = Skip ahead?
+@tutorial_skip_part = This part
+@tutorial_skip_all = Whole tutorial
+@tutorial_skip_cancel = Keep going
+@tutorial_welcome = Oh, hello!
+Welcome to The Farmer Was Replaced!
+@tutorial_show_around = Would you like me to show you around?
+@tutorial_show_around_yes = Yes, show me!
+@tutorial_show_around_no = No thanks
+@tutorial_farm = This is your farm. One single patch of soil.
+@tutorial_look_around = Drag and pinch to move around the farm.
+@tutorial_drone = Don't worry about getting your hands dirty.
+This drone will do most of the work for you.
+All you have to do is tell it what to do.
+@tutorial_tap_window = Tap the window to write your first code.
+@tutorial_code_window = This is a code window.
+Every code window is a file. This one is called <b>main</b>.
+The drone only knows two commands so far.
+@tutorial_type_harvest = Let's start with harvesting.
+Type <b>harvest</b>
+@tutorial_autocomplete = See that list? The editor guesses what you wanted to type.
+Isn't that smart?
+@tutorial_accept_completion = Tap the one you want, or press <b>tab</b> to accept the highlighted guess.
+@tutorial_run_harvest = Let's see what happens.
+Tap <b>play</b> to run the code.
+@tutorial_error = Oops! When something's wrong, an error shows up right where it happened.
+It even tells you how to fix it.
+@tutorial_type_bracket = The <b>()</b> is what tells the drone to actually do it.
+Tap your code and type <b>(</b>
+@tutorial_brackets_pair = Brackets always come in pairs, so you get both at once.
+@tutorial_run_program = That's a program! Tap <b>play</b> to run it.
+@tutorial_leave_fullscreen = You can't see the farm from in here.
+Tap <b>x</b> to go back.
+@tutorial_first_program = You did it!
+That was your very first program.
+@tutorial_hay = Everything the drone harvests ends up in me.
+That's hay, your first resource.
+@tutorial_get_five = Let's get 5 of them.
+Run <b>main</b> again when the grass has grown back.
+@tutorial_hay_five = Five hay! That deserves a hay five.
+@tutorial_play_gets_old = Pressing play every time gets old, doesn't it?
+Let's make the drone do that automatically.
+@tutorial_open_tech_tree = But to do that, we need to unlock a new technology.
+Tap this button to open the tech tree.
+@tutorial_tech_tree = Wow, so much stuff!
+This is where you can spend your resources.
+@tutorial_tap_loops = We can unlock <b>loops</b>. Let's have a look.
+Tap it to see what it does.
+@tutorial_buy_loops = Loops repeat code, so you don't have to press play every time.
+Tap <b>unlock</b> to buy it.
+@tutorial_docs_intro = Every time you unlock something, its page opens here.
+This is called the <b>documentation</b>. It knows more about this game than I do.
+@tutorial_docs_example = Try the example. Tap <b>play</b> in the little window.
+@tutorial_docs_navigate = Tap a link to jump to that page.
+<b>back</b> takes you back, <b>home</b> shows everything there is.
+Close it with <b>x</b> when you're done.
+@tutorial_docs_reopen = You can open it again anytime with <b>i</b>.
+@tutorial_loop_tap_main = Now let's loop that harvest.
+Tap <b>main</b>.
+@tutorial_loop_caret_swipe = First, move the cursor to the start of the line.
+Drag sideways on the keyboard to move the cursor. Any key works.
+@tutorial_loop_caret_tap = First, move the cursor to the start of the line.
+Tap right before <b>harvest</b> to put the cursor there.
+@tutorial_loop_type_while = Now type <b>while</b> and a space in front of <b>harvest()</b>.
+@tutorial_loop_type_true = Then <b>True</b>, with a capital T.
+Type <b>t</b> and pick <b>True</b> from the list.
+@tutorial_loop_type_colon = And a colon <b>:</b> at the end.
+@tutorial_loop_return = Now press <b>return</b> to push <b>harvest()</b> onto its own line.
+@tutorial_loop_tab = Press <b>tab</b> to indent <b>harvest()</b>.
+@tutorial_loop_spaces = Type a few spaces in front of <b>harvest()</b> to indent it.
+@tutorial_loop_auto_indent = See how <b>harvest()</b> moved in by itself?
+The editor indented it for you.
+@tutorial_loop_explain = Everything indented under <b>while True:</b> repeats forever.
+@tutorial_loop_caret_back = Oops, the cursor wandered off.
+Put it back right in front of <b>harvest()</b>.
+@tutorial_loop_true_case = Careful, it has to be <b>True</b> with a capital T.
+Delete it, then type <b>t</b> and pick <b>True</b> from the list.
+@tutorial_loop_off_track = Hmm, that's not quite it.
+Delete back to where it went wrong, or start over.
+@tutorial_loop_start_over = Start over
+@tutorial_loop_run = Run it and lean back.
+@tutorial_done = Woohoo, look at it go!
+Now <b>that's</b> farming!
+@tutorial_done_more = That's all you need to get started.
+Whenever you're stuck, tap <b>i</b> to check the docs.
+@tutorial_done_petting = I'll pop up when there's something new.
+Oh, and I really like being petted. Just saying.
+@tutorial_tip_windows_new = Big programs are easier to manage in more than one file.
+Tap <b>+</b> to make a new one.
+@tutorial_tip_windows_manage = Drag a window by its header to move it.
+Drop it onto another window to dock them together.
+Pull the corner to resize it.
+<b>minimize</b> tucks a window away. <b>trash</b> deletes the file for good.
+@tutorial_tip_caret = Let me show you something cool.
+You can move the cursor by swiping on the keyboard.
+Go ahead, give it a try.
+@tutorial_tip_caret_select = Isn't that cool? But it gets even cooler!
+While dragging, hold the <b>shift</b> key with your other finger.
+This lets you select and change code a lot faster.
+@tutorial_tip_autocomplete = You can also pick suggestions by swiping up or down on the keyboard,
+or get rid of them by swiping left or right.
+@tutorial_tip_word_info = Double-tap any word in your code to look it up.
+While your code runs, double-tap a variable to see its value.
+@tutorial_tip_step = Not sure where it goes wrong?
+Tap <b>step</b> to run your code one line at a time.
+@tutorial_tip_search = Search finds text in all your open code and docs windows.
+<b><noparse><</noparse></b> and <b><noparse>></noparse></b> jump between the matches.
+@tutorial for new saves = Tutorial in New Saves
+@option_tooltip_tutorial_for_new_saves = Whether the piggy shows a new save around. Turns itself off once you have finished the tutorial or turned it down.
