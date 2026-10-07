@@ -165,6 +165,7 @@ other_file.function()`
 @multi_unlock_descr_quartz = Increases the yield of quartz ores.
 @multi_unlock_descr_petrified_pumpkins = Increases the yield of petrified pumpkins.
 @multi_unlock_descr_dynamite = Increase the yield of dynamite and the energy of explosions.
+@unlock_descr_explosive_drill = The most powerful drill.
 @multi_unlock_descr_treasure_map = Increases the depth of the treasure path and therefore the amount of gold you get from the treasure.
 @multi_unlock_descr_ore_boost = Further increases coal yield. Further increases iron and quartz vein size.
 @multi_unlock_descr_bamboo = Increases the yield and cost of bamboo.
@@ -218,6 +219,7 @@ other_file.function()`
 @quartz = Quartz
 @prospecting = Iron Prospecting
 @dynamite = Dynamite
+@explosive_drill = Explosive Drill
 @bamboo = Bamboo
 @treasure_map = Treasure Map
 @mushrooms = Mushroom

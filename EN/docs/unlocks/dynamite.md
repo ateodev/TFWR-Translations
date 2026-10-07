@@ -1,4 +1,4 @@
-[<- Mushroom](docs/unlocks/mushroom.md)
+[<- Mushroom](docs/unlocks/mushroom.md) <right>[Explosive Drill ->](docs/unlocks/explosive_drill.md)
 ---
 # Dynamite
 

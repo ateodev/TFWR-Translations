@@ -6,6 +6,8 @@ Apparently you can find pumpkins underground. They have turned solid and become 
 
 Petrified pumpkins occur underground in blocks of 3x3x3 or 5x5x5. There is no surefire way to find them, so you just have to hope your drone digs into one, but they occur in the hard dirt under the stone-and-iron layer, about the same height where quartz occurs (if you have it unlocked).
 
+This provides an alternative way to obtain pumpkins without farming them above ground. If you prefer farming, you can safely ignore petrified pumpkins altogether.
+
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
