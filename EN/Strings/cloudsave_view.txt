@@ -1,0 +1,10 @@
+@cloud_view_title = Cloud save
+@cloud_view_signed_in = Signed in
+@cloud_view_not_signed_in = Not signed in
+@cloud_view_last_synced = Last synced: {0}
+@cloud_view_not_synced = Not synced
+@cloud_view_sync_now = Sync now
+@cloud_view_sign_in = Sign in
+@cloud_view_on_this_device = On this device
+@cloud_view_current = Current
+@cloud_view_no_saves = No saves yet
