@@ -9,8 +9,7 @@
 @cloud_card_this_device = This device
 @cloud_card_another_device = Another device
 @cloud_card_saved = Saved {0}
-@cloud_card_saves = Saves: {0}
-@cloud_card_unlock = {0} unlock
-@cloud_card_unlocks = {0} unlocks
+@cloud_card_saves_heading = Saves
+@cloud_card_unlocks_heading = Unlocks
 @cloud_card_more = And {0} more
 @cloud_card_unreadable = Details could not be read
