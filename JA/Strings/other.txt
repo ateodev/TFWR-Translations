@@ -15,3 +15,9 @@
 
 {1}
 @latest_news = 最新ニュース
+
+@tap_here_for_more_info = -- 詳細はここをタップ --
+@right_click_to_open_store = -- 右クリックでストアを開く --
+@tap_here_to_open_store = -- ここをタップしてストアを開く --
+@tooltip_button_more_info = 詳細
+@loading_screen = ロード中

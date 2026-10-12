@@ -1,10 +1,11 @@
 ## 一般情報
 <columns>
 [クレジット](docs/credits.md)
-[外部エディタ](docs/external_editor.md)
+<desktop>[外部エディタ](docs/external_editor.md)</desktop>
 [最初のプログラム](docs/first_program.md)
 [はじめに](docs/getting_started.md)
-[バックアップのロード](docs/backup.md)
+<mobile>[ゲーム内キーボード](docs/keyboard.md)</mobile>
+<desktop>[バックアップのロード](docs/backup.md)</desktop>
 <unlock=debug>[Output](docs/output.md)
 </unlock><unlock=debug>[統計](docs/stats.md)
 </unlock>

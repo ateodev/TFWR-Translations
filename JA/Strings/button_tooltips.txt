@@ -1,6 +1,7 @@
 @button_tooltip_load = 他のセーブデータをロードするか、新しく作成します。
 @button_tooltip_save = ゲームをセーブします。
 @button_tooltip_options = 設定メニューを開きます。
+@button_tooltip_iap = ストアを開きます。
 @button_tooltip_discord = Discordに参加して、他のプレイヤーや開発者とチャットしたり、バグを報告したり、助けを求めたりできます。
 @button_tooltip_execute = このウィンドウのコードの実行を開始または停止します。
 @button_tooltip_step_by_step = コードを1ステップ実行します。
@@ -21,6 +22,7 @@
 @button_tooltip_close_search = 検索メニューを閉じます。
 @button_tooltip_open_unlock_menu = アンロックツリーを開きます。
 @warning_icon_tooltip = あなたのコードで警告が発生しました。アイコンをクリックして、出力ウィンドウで詳細を確認してください。
+@warning_icon_tooltip_mobile = あなたのコードで警告が発生しました。アイコンをタップして、出力ウィンドウで詳細を確認してください。
 @option_tooltip_graphics = 影、アンビエントオクルージョン、ブルームなど、様々なレンダーパイプライン設定に影響します。
 @option_tooltip_vfx_limit = 1秒あたりに再生できるビジュアルエフェクトの数を制限します。
 @option_tooltip_avalanche_particles = 落盤で発生するパーティクルを無効にします。
@@ -48,6 +50,7 @@
 @option_tooltip_resolution = 画面の解像度を変更します。
 @option_tooltip_increment_number_effect = インベントリで数字が変わるときに再生されるエフェクトを無効にします。
 @option_tooltip_color_theme = UIのカラーテーマを変更します。カスタムテーマはセーブディレクトリ内の「Themes」フォルダーに追加できます。
+@option_tooltip_color_theme_mobile = UIのカラーテーマを変更します。
 @keybind_tooltip_indent_selection = 選択したすべての行にインデントを追加します。動作させるには、これが文字を挿入するキーである必要があります。そのため、ctrlやaltとの組み合わせは機能しません。
 @keybind_tooltip_unindent_selection = 選択したすべての行からインデントを削除します。動作させるには、これが文字を挿入するキーである必要があります。そのため、ctrlやaltとの組み合わせは機能しません。
 @keybind_tooltip_menu = メインメニューを開閉します。
@@ -64,3 +67,14 @@
 @keybind_tooltip_next_step = 実行が一時停止中の場合に1ステップ実行します。
 @keybind_tooltip_pause_execution = 実行を一時停止します。
 @keybind_tooltip_hide_UI = HUDを表示または非表示にします。
+@button_tooltip_achievements = 実績を表示します。
+@button_tooltip_sign_in = Google Play Games / Game Centerにサインインして実績を同期します。
+@option_tooltip_keyboard_switches = ゲーム内キーボードのキーを押したときの反応：クリック音 = メカニカルキーの音、システム音 = 端末のキーボードのクリック音、振動 = 短い振動。
+@button_tooltip_open_main_menu = メインメニューを開きます。
+@button_tooltip_open_search = 検索バーを開きます。
+@button_tooltip_open_news = 最新ニュースを開きます。
+@button_tooltip_fullscreen = このウィンドウを全画面で表示します。
+@button_tooltip_exit_fullscreen = 全画面を終了します。
+@option_tooltip_keyboard_layout = ゲーム内キーボードのキー配列。初期設定はシステム言語の配列です。
+@option_tooltip_keyboard_type = コードを入力するキーボード。ゲーム内キーボードにはPythonに必要な記号がそろっています。システムキーボードは他のアプリで使っているものです。物理キーボードを接続しているときは常にそちらが使われます。
+@option_tooltip_exit_fullscreen_on_run = スタートを押すと全画面のコードエディタを終了して農場を表示します。ブレークポイントで停止した行には引き続き移動します。

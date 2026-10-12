@@ -1,0 +1,9 @@
+@cloud_notice_ok = OK
+@cloud_notice_account_changed_headline = アカウントが変わりました
+@cloud_notice_account_saves = 別のアカウントで {0} にサインインしました。ゲームはそのアカウントのセーブデータを表示します。
+@cloud_notice_account_no_saves = 別のアカウントで {0} にサインインしました。そのアカウントにはまだセーブデータがないため、新しいゲームが始まります。
+@cloud_notice_account_signed_in = {0} にサインインしました。ゲームはこのアカウントのセーブデータを表示します。サインインせずに作ったセーブデータはこの端末に残ります。
+@cloud_notice_account_unsent = 以前使っていたアカウントのセーブデータはまだこの端末にありますが、そのアカウントのクラウドにはまだ保存されていません。クラウドに保存するには、この端末でそのアカウントを使って {0} にもう一度サインインしてください。
+@cloud_sign_in_failed_google_play_games = Google Play Gamesにサインインできませんでした。後でもう一度お試しください。
+@cloud_sign_in_failed_game_center = Game Centerにサインインできませんでした。設定アプリでオンにしてから、もう一度お試しください。
+@cloud_notice_save_failed = {0} をこの端末にセーブできませんでした。端末の空き容量を確認してから、もう一度お試しください。

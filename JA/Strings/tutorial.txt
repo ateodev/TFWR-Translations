@@ -1,0 +1,110 @@
+@tutorial_skip = スキップ
+@tutorial_skip_question = 先に進みますか？
+@tutorial_skip_part = この部分
+@tutorial_skip_all = チュートリアル全部
+@tutorial_skip_cancel = 続ける
+@tutorial_welcome = あら、こんにちは！
+The Farmer Was Replacedへようこそ！
+@tutorial_show_around = 案内しましょうか？
+@tutorial_show_around_yes = うん、お願い！
+@tutorial_show_around_no = いいえ、結構です
+@tutorial_farm = これがあなたの農場。たった1マスの土地です。
+@tutorial_look_around = ドラッグやピンチで農場を見回せます。
+@tutorial_drone = 手を汚す心配はいりません。
+ほとんどの作業はこのドローンがやってくれます。
+あなたは何をするか指示するだけ。
+@tutorial_tap_window = ウィンドウをタップして、最初のコードを書きましょう。
+@tutorial_code_window = これはコードウィンドウです。
+コードウィンドウはそれぞれ1つのファイル。これは <b>main</b> という名前です。
+ドローンは今のところ2つのコマンドしか知りません。
+@tutorial_type_harvest = まずは収穫から始めましょう。
+<b>harvest</b> と入力してください
+@tutorial_autocomplete = あのリストが見えますか？エディタが入力したい内容を推測しています。
+賢いでしょう？
+@tutorial_accept_completion = 欲しい候補をタップするか、<b>Tab</b> を押して強調表示された候補を確定します。
+@tutorial_run_harvest = 何が起きるか見てみましょう。
+<b>実行</b> をタップしてコードを実行します。
+@tutorial_error = おっと！何かが間違っていると、その場所にエラーが表示されます。
+直し方まで教えてくれます。
+@tutorial_type_bracket = <b>()</b> がドローンに「実際にやれ」と伝える部分です。
+コードをタップして <b>(</b> を入力してください
+@tutorial_brackets_pair = 括弧は必ずペアなので、両方が一度に入力されます。
+@tutorial_run_program = これでプログラムの完成！<b>実行</b> をタップして実行しましょう。
+@tutorial_leave_fullscreen = ここからは農場が見えません。
+<b>x</b> をタップして戻りましょう。
+@tutorial_first_program = やりました！
+これがあなたの初めてのプログラムです。
+@tutorial_hay = ドローンが収穫したものはすべて私のところに届きます。
+それが干し草、最初の資源です。
+@tutorial_get_five = 5つ集めましょう。
+草が生え直したら、もう一度 <b>main</b> を実行してください。
+@tutorial_hay_five = 干し草が5つ！ハイタッチに値します。干し草タッチかな。
+@tutorial_play_gets_old = 毎回実行を押すのは面倒ですよね？
+ドローンに自動でやらせましょう。
+@tutorial_open_tech_tree = でもそのためには、新しい技術をアンロックする必要があります。
+このボタンをタップして技術ツリーを開いてください。
+@tutorial_tech_tree = わあ、いっぱいある！
+ここで資源を使います。
+@tutorial_tap_loops = <b>ループ</b> をアンロックできます。見てみましょう。
+タップして何ができるか確認してください。
+@tutorial_buy_loops = ループはコードを繰り返すので、毎回実行を押さなくて済みます。
+<b>アンロック</b> をタップして購入しましょう。
+@tutorial_docs_intro = 何かをアンロックするたびに、そのページがここに開きます。
+これが <b>ドキュメント</b>。私よりこのゲームに詳しいです。
+@tutorial_docs_example = 例を試してみましょう。小さなウィンドウの <b>実行</b> をタップしてください。
+@tutorial_docs_navigate = リンクをタップするとそのページに移動します。
+<b>戻る</b> で前に戻り、<b>ホーム</b> ですべての項目が見られます。
+読み終わったら <b>x</b> で閉じてください。
+@tutorial_docs_reopen = <b>i</b> でいつでも開き直せます。
+@tutorial_loop_tap_main = では、収穫をループさせましょう。
+<b>main</b> をタップしてください。
+@tutorial_loop_caret_swipe = まず、カーソルを行の先頭に動かします。
+キーボードの上で横にドラッグするとカーソルが動きます。どのキーでも大丈夫です。
+@tutorial_loop_caret_tap = まず、カーソルを行の先頭に動かします。
+<b>harvest</b> のすぐ前をタップしてカーソルを置いてください。
+@tutorial_loop_type_while = 次に <b>harvest()</b> の前に <b>while</b> とスペースを入力します。
+@tutorial_loop_type_true = 続いて <b>True</b>、Tは大文字です。
+<b>t</b> と入力してリストから <b>True</b> を選んでください。
+@tutorial_loop_type_colon = 最後にコロン <b>:</b> を付けます。
+@tutorial_loop_return = ここで <b>Return</b> を押して <b>harvest()</b> を次の行に送ります。
+@tutorial_loop_tab = <b>Tab</b> を押して <b>harvest()</b> をインデントします。
+@tutorial_loop_spaces = <b>harvest()</b> の前にスペースをいくつか入力してインデントします。
+@tutorial_loop_auto_indent = <b>harvest()</b> が勝手に下がったのが分かりますか？
+エディタがインデントしてくれました。
+@tutorial_loop_explain = <b>while True:</b> の下でインデントされたものはすべて、永遠に繰り返されます。
+@tutorial_loop_caret_back = おっと、カーソルが迷子になりました。
+<b>harvest()</b> のすぐ前に戻してください。
+@tutorial_loop_true_case = 注意、Tが大文字の <b>True</b> でないといけません。
+削除してから <b>t</b> と入力し、リストから <b>True</b> を選んでください。
+@tutorial_loop_off_track = うーん、ちょっと違います。
+間違えたところまで削除するか、やり直しましょう。
+@tutorial_loop_start_over = やり直す
+@tutorial_loop_run = 実行して、あとはゆっくり眺めましょう。
+@tutorial_done = やった、見てください！
+<b>これ</b> こそ農業です！
+@tutorial_done_more = 始めるのに必要なのはこれだけです。
+困ったら <b>i</b> をタップしてドキュメントを見てください。
+@tutorial_done_petting = 何か新しいことがあったら顔を出しますね。
+あ、それと、なでられるのが大好きです。念のため。
+@tutorial_tip_windows_new = 大きなプログラムは複数のファイルに分けると管理しやすくなります。
+<b>+</b> をタップして新しいファイルを作りましょう。
+@tutorial_tip_windows_manage = ウィンドウのヘッダーをドラッグして移動できます。
+別のウィンドウの上に落とすとドッキングします。
+角を引っ張るとサイズを変えられます。
+<b>最小化</b> でウィンドウを片付け、<b>ゴミ箱</b> でファイルを完全に削除します。
+@tutorial_tip_caret = いいものを見せてあげましょう。
+キーボードの上でスワイプするとカーソルを動かせます。
+さあ、試してみて。
+@tutorial_tip_caret_select = すごいでしょう？でもまだ続きがあります！
+ドラッグ中に、もう一方の指で <b>Shift</b> キーを押さえてください。
+これでコードの選択と変更がぐっと速くなります。
+@tutorial_tip_autocomplete = 候補はキーボードの上で上下にスワイプして選ぶこともできますし、
+左右にスワイプすれば消せます。
+@tutorial_tip_word_info = コード内の単語をダブルタップすると説明が見られます。
+コードの実行中に変数をダブルタップすると、その値が表示されます。
+@tutorial_tip_step = どこで間違えたか分からない？
+<b>ステップ</b> をタップすると、コードを1行ずつ実行できます。
+@tutorial_tip_search = 検索は、開いているすべてのコードウィンドウとドキュメントウィンドウからテキストを探します。
+<b><noparse><</noparse></b> と <b><noparse>></noparse></b> で一致箇所を移動します。
+@tutorial for new saves = 新規セーブでチュートリアル
+@option_tooltip_tutorial_for_new_saves = 新しいセーブデータでブタさんが案内するかどうか。チュートリアルを終えるか断ると自動でオフになります。

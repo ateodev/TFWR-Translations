@@ -121,10 +121,10 @@ while True:
 通常、無限ループを作成するのはプログラムがフリーズするため悪い考えですが、このゲームではループの各反復の間に遅延があるため、実行ボタンをもう一度押して手動で停止するまでドローンはフリップを続けます。
 
 コロンの後の行がインデントされていることに注目してください。このようなインデントはコードのブロックを区切るために使用されます。
-Tabキーでインデントを追加し、Shift + Tabキー（またはBackspaceキー）で削除できます。複数の行を選択している場合は、そのすべてに適用されます。
+Tabキーでインデントを追加し、Shift + Tabキー（または<desktop>Backspace</desktop><mobile>削除</mobile>キー）で削除できます。複数の行を選択している場合は、そのすべてに適用されます。
 
-注意：Steamでプレイしている場合、Shift + Tabキーを押すとSteamオーバーレイが開きます。ゲームの設定でインデント解除のショートカットを変更するか、Steamオーバーレイの設定でそのショートカットを変更できます。
-
+<desktop>注意：Steamでプレイしている場合、Shift + Tabキーを押すとSteamオーバーレイが開きます。ゲームの設定でインデント解除のショートカットを変更するか、Steamオーバーレイの設定でそのショートカットを変更できます。
+</desktop>
 ここでは、`do_a_flip()` と `pet_the_piggy()` はインデントされた `while` ブロック内にあるため繰り返し呼ばれます。一方、`harvest()` はそのブロックの後にあるため実行されません。
 {{codeexample 
 {
@@ -157,4 +157,4 @@ harvest()
 
 ---
 
-[forループ](docs/scripting/for.md)      [if文](docs/scripting/if.md)      [break](docs/scripting/break.md)      [continue](docs/scripting/continue.md)      [外部エディタ](docs/external_editor.md)
+[forループ](docs/scripting/for.md)      [if文](docs/scripting/if.md)      [break](docs/scripting/break.md)      [continue](docs/scripting/continue.md)<desktop>      [外部エディタ](docs/external_editor.md)</desktop>

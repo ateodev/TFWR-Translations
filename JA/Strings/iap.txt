@@ -1,5 +1,32 @@
+@iap_title_full_game = The Farmer Was Replaced
 @iap_get_full_game = 完全版を入手
+@iap_desc_full_game = <b>すべて込み</b>
+• 買い切り。広告なし、サブスクなし。
+• 研究のアンロックが35個追加
+• 新しい帽子が十数種類
+• 新しい実績に挑戦
+
+<b>農場はまだ始まったばかり</b>
+新しい作物はどれも新しいプログラミングパズル。巨大カボチャを育て、サボテンを並べ替え、恐竜にエサをやり、生け垣の迷路で金を探そう。そしてドローンの大群で巨大農場に拡大しよう。
+
+<b>農場の下に広がる世界</b>
+ドローンを地下へ。鉱石を掘り、古代の遺跡を発掘し、ダイナマイトでマインスイーパをプレイしよう。
 @iap_caption_multiple_drones = 複数のドローン
 @iap_caption_cool_puzzles = 楽しいパズル
 @iap_caption_new_mechanics = 新しい仕組み
 @iap_caption_more_upgrades = さらなる強化
+@iap_buy = 購入
+@iap_play = プレイ
+@iap_pending = 承認または支払いを待っています。
+@iap_retry = 再試行
+@iap_restore = 購入を復元
+@iap_restored = 購入を復元しました。
+@iap_restore_failed = ストアに接続できませんでした。後でもう一度お試しください。
+@iap_purchase_success = アンロックしました。お楽しみください！
+@iap_purchase_failed = 購入は完了しませんでした。請求は発生していません。
+@iap_unavailable = ストアは現在利用できません。
+@iap_offline = 価格を取得できません。接続を確認してもう一度お試しください。
+@iap_retrying = ストアに再度問い合わせ中...
+@iap_all_owned = すべて所有しています。ありがとうございます！
+@unlock_locked_full_game = これは製品版の内容です。ストアで製品版を入手するとアンロックされます。
+@unlock_locked_mining_dlc = これは採掘DLCの内容です。ストアでDLCを入手するとアンロックされます。

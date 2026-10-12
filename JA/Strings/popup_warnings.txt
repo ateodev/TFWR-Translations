@@ -6,8 +6,11 @@
 @popup_warning_load_game = ロードする前にセーブしますか？
 @don't save = セーブしない
 @popup_warning_corrupted_save = {0} のロード中に問題が発生したようです。詳細については、バックアップに関するセクションを確認してください。
+@popup_warning_corrupted_save_mobile = {0} のロード中に問題が発生したようです。
 @popup_warning_failed_read_save = {0} のセーブファイルの読み込みに失敗しました。ファイルにアクセスしている他のすべてのプログラムを閉じて、もう一度試してください。
+@popup_warning_failed_read_save_mobile = {0} のセーブファイルの読み込みに失敗しました。もう一度お試しください。
 @popup_warning_failed_write_save = {0} のセーブファイルへの書き込みに失敗しました。ファイルにアクセスしている他のすべてのプログラムを閉じて、もう一度試してください。
+@popup_warning_failed_write_save_mobile = {0} のセーブファイルへの書き込みに失敗しました。もう一度お試しください。
 @ok = OK
 @popup_warning_old_save = このセーブファイルは古いバージョンのものです。テックツリーが変更されたため、すべてのアップグレードが新しい進行システムに合わせてリセットされました。
 @popup_warning_unofficial_language = この翻訳はコミュニティによって作られた非公式なもので、ゲームの開発元によって管理されているものではありません。一部のテキストが抜けていたり、内容が正確でなかったりする場合があります。

@@ -165,6 +165,7 @@ other_file.function()`
 @multi_unlock_descr_quartz = 石英鉱石の収穫量を増やします。
 @multi_unlock_descr_petrified_pumpkins = 石化したカボチャの収穫量を増やします。
 @multi_unlock_descr_dynamite = ダイナマイトの収穫量と爆発の威力を増やします。
+@unlock_descr_explosive_drill = 最強のドリル。
 @multi_unlock_descr_treasure_map = 宝の道がより深くまで伸び、宝物から得られるゴールドが増えます。
 @multi_unlock_descr_ore_boost = 石炭の収穫量と、鉄と石英の鉱脈の大きさをさらに増やします。
 @multi_unlock_descr_bamboo = 竹の収穫量とコストを増やします。
@@ -218,7 +219,13 @@ other_file.function()`
 @quartz = 石英
 @prospecting = 鉄の探査
 @dynamite = ダイナマイト
+@explosive_drill = 爆破ドリル
 @bamboo = 竹
 @treasure_map = 宝の地図
 @mushrooms = キノコ
 @jump = ジャンプ
+
+@unlock_button_unlock = アンロック
+@unlock_button_upgrade = アップグレード
+@unlock_button_get_full_game = 製品版を入手
+@unlock_button_reset = 最大に戻す

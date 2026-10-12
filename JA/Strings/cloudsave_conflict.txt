@@ -1,0 +1,15 @@
+@cloud_conflict_title = クラウドセーブの競合
+@cloud_conflict_message = セーブデータが複数の端末で変更されました。
+@cloud_conflict_versions_total = バージョン数：{0}
+@cloud_conflict_keep = バージョン {0} を残す
+@cloud_conflict_confirm_title = バージョン {0} を残しますか？
+@cloud_conflict_confirm_body = 他のバージョンはすべてクラウドとこの端末から削除されます。
+@cloud_card_version = バージョン {0}
+@cloud_card_suggested = おすすめ
+@cloud_card_this_device = この端末
+@cloud_card_another_device = 別の端末
+@cloud_card_saved = セーブ日時 {0}
+@cloud_card_saves_heading = セーブデータ
+@cloud_card_unlocks_heading = アンロック
+@cloud_card_more = 他 {0} 件
+@cloud_card_unreadable = 詳細を読み取れませんでした
