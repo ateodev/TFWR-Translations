@@ -1,1 +1,5 @@
 @iap_get_full_game = 정식 버전 받기
+@iap_caption_multiple_drones = 여러 대의 드론
+@iap_caption_cool_puzzles = 멋진 퍼즐
+@iap_caption_new_mechanics = 새로운 메커니즘
+@iap_caption_more_upgrades = 더 많은 업그레이드

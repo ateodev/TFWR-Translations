@@ -1,1 +1,5 @@
 @iap_get_full_game = Získej plnou hru
+@iap_caption_multiple_drones = Více dronů
+@iap_caption_cool_puzzles = Skvělé hádanky
+@iap_caption_new_mechanics = Nové mechaniky
+@iap_caption_more_upgrades = Další vylepšení
