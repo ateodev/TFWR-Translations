@@ -6,8 +6,11 @@
 @popup_warning_load_game = ¿Deseas guardar antes de cargar?
 @don't save = No Guardar
 @popup_warning_corrupted_save = Parece que ha habido un problema al cargar {0}. Consulta la sección de copias de seguridad para más información.
+@popup_warning_corrupted_save_mobile = Parece que ha habido un problema al cargar {0}.
 @popup_warning_failed_read_save = Error al leer los archivos de guardado de {0}. Asegúrate de cerrar todos los demás programas que acceden a los archivos e inténtalo de nuevo.
+@popup_warning_failed_read_save_mobile = Error al leer los archivos de guardado de {0}. Inténtalo de nuevo.
 @popup_warning_failed_write_save = Error al escribir en los archivos de guardado de {0}. Asegúrate de cerrar todos los demás programas que acceden a los archivos e inténtalo de nuevo.
+@popup_warning_failed_write_save_mobile = Error al escribir en los archivos de guardado de {0}. Inténtalo de nuevo.
 @ok = ok
 @popup_warning_old_save = Este archivo de guardado es de una versión anterior del juego. Como el árbol de tecnologías ha sido rediseñado, todas las mejoras se han reiniciado a algo que tiene más sentido con el nuevo sistema de progresión.
 @popup_warning_unofficial_language = Esta es una traducción no oficial creada por la comunidad que no cuenta con el mantenimiento de los desarrolladores del juego. Es posible que falte algún texto o que no sea del todo preciso.

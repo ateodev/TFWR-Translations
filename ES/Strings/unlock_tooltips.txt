@@ -163,6 +163,7 @@ other_file.function()`
 @multi_unlock_descr_quartz = Aumenta el rendimiento del mineral de cuarzo.
 @multi_unlock_descr_petrified_pumpkins = Aumenta el rendimiento de las calabazas petrificadas.
 @multi_unlock_descr_dynamite = Aumenta el rendimiento de la dinamita y la energía de las explosiones.
+@unlock_descr_explosive_drill = El taladro más potente.
 @multi_unlock_descr_treasure_map = Aumenta la profundidad del camino del tesoro y, por tanto, la cantidad de oro que obtienes del tesoro.
 @multi_unlock_descr_ore_boost = Aumenta aún más el rendimiento del carbón. Aumenta aún más el tamaño de las vetas de hierro y cuarzo.
 @multi_unlock_descr_bamboo = Aumenta el rendimiento y el coste del bambú.
@@ -216,7 +217,13 @@ other_file.function()`
 @quartz = Cuarzo
 @prospecting = Prospección de hierro
 @dynamite = Dinamita
+@explosive_drill = Taladro explosivo
 @bamboo = Bambú
 @treasure_map = Mapa del tesoro
 @mushrooms = Hongo
 @jump = Salto
+
+@unlock_button_unlock = Desbloquear
+@unlock_button_upgrade = Mejorar
+@unlock_button_get_full_game = Conseguir el juego completo
+@unlock_button_reset = Restablecer al máximo

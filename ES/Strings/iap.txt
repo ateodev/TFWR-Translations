@@ -1,5 +1,32 @@
+@iap_title_full_game = The Farmer Was Replaced
 @iap_get_full_game = Juego completo
+@iap_desc_full_game = <b>Todo incluido</b>
+• Compra única. Sin anuncios, sin suscripción.
+• 35 desbloqueos de investigación más
+• Más de una docena de sombreros nuevos
+• Nuevos logros que conseguir
+
+<b>Tu granja no ha hecho más que empezar</b>
+Cada nuevo cultivo es un nuevo puzle de programación. Cultiva calabazas gigantes, ordena cactus, alimenta a un dinosaurio y busca oro en laberintos de setos. Luego pasa a una megagranja con una flota de drones.
+
+<b>Todo un mundo bajo tu granja</b>
+Lleva tu dron bajo tierra. Extrae minerales, desentierra ruinas antiguas y juega al Buscaminas con dinamita.
 @iap_caption_multiple_drones = Varios drones
 @iap_caption_cool_puzzles = Puzles geniales
 @iap_caption_new_mechanics = Nuevas mecánicas
 @iap_caption_more_upgrades = Más mejoras
+@iap_buy = Comprar
+@iap_play = Jugar
+@iap_pending = Esperando aprobación o pago.
+@iap_retry = Reintentar
+@iap_restore = Restaurar compras
+@iap_restored = Compras restauradas.
+@iap_restore_failed = No se pudo conectar con la tienda. Inténtalo de nuevo más tarde.
+@iap_purchase_success = Desbloqueado. ¡Disfruta!
+@iap_purchase_failed = La compra no se completó. No se ha cobrado nada.
+@iap_unavailable = La tienda no está disponible ahora mismo.
+@iap_offline = Los precios no están disponibles. Comprueba tu conexión e inténtalo de nuevo.
+@iap_retrying = Consultando la tienda de nuevo...
+@iap_all_owned = Ya lo tienes todo. ¡Gracias!
+@unlock_locked_full_game = Esto forma parte del juego completo. Consíguelo en la tienda para desbloquearlo.
+@unlock_locked_mining_dlc = Esto forma parte del DLC de minería. Consíguelo en la tienda para desbloquearlo.

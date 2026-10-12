@@ -7,12 +7,14 @@ A veces tu código simplemente no funciona y necesitas averiguar por qué. Hay u
 La primera es ejecutar el programa paso a paso. 
 Puedes entrar en el modo paso a paso con el botón junto al botón Ejecutar o estableciendo un punto de interrupción.
 
-Los puntos de interrupción se pueden añadir haciendo clic en el panel de puntos de interrupción a la izquierda del código.
+Los puntos de interrupción se pueden añadir <desktop>haciendo clic</desktop><mobile>tocando</mobile> en el panel de puntos de interrupción a la izquierda del código.
 ![|x227](Breakpoints)
 Cuando la ejecución llega a la línea donde está el punto de interrupción, cambiará automáticamente al modo paso a paso.
 
-Cuando mueves el ratón sobre una variable, se muestra su valor actual.
-
+<desktop>Cuando mueves el ratón sobre una variable, se muestra su valor actual.
+</desktop>
+<mobile>Toca dos veces una variable para ver su valor actual.
+</mobile>
 La función `print()` también puede ser muy útil. Escribirá cualquier valor que se le pase directamente en el aire.
 
 Ejemplos:
@@ -90,8 +92,8 @@ En este caso, puedes usar la función `quick_print()`, que imprime solo en la ve
 
 La ventana de salida también registra advertencias y errores, por lo que puede ser útil revisarla cuando algo no funciona como esperabas.
 
-Cuando la ejecución se detiene, la salida también se escribe en el archivo [output.txt](persistent_data_path/output.txt) de la carpeta del juego.
-
+<desktop>Cuando la ejecución se detiene, la salida también se escribe en el archivo [output.txt](persistent_data_path/output.txt) de la carpeta del juego.
+</desktop>
 ---
 
 [Salida](docs/output.md)      [Comentarios](docs/scripting/comments.md)      [Depuración 2](docs/unlocks/debug2.md)      [Bloques de colores](docs/unlocks/debug_place.md)      [Simulación](docs/unlocks/simulation.md)

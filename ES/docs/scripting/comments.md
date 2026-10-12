@@ -29,7 +29,7 @@ Se pueden añadir comentarios usando `#`. Cualquier cosa en la misma línea desp
 
 Esto puede ser útil para añadir notas al código, y también para desactivar temporalmente partes del código sin eliminarlas.
 
-Cualquier comentario en la línea anterior a la definición de una función será parte de la información emergente que aparece cuando pasas el ratón sobre el nombre de la función.
+Cualquier comentario en la línea anterior a la definición de una función será parte de la información emergente que aparece cuando <desktop>pasas el ratón sobre</desktop><mobile>tocas dos veces</mobile> el nombre de la función.
 
 ---
 

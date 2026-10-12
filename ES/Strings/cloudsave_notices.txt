@@ -1,0 +1,9 @@
+@cloud_notice_ok = OK
+@cloud_notice_account_changed_headline = Tu cuenta cambió
+@cloud_notice_account_saves = Ahora has iniciado sesión en {0} con otra cuenta. El juego muestra ahora las partidas guardadas de esa cuenta.
+@cloud_notice_account_no_saves = Ahora has iniciado sesión en {0} con otra cuenta. Esa cuenta aún no tiene partidas guardadas, así que empieza una partida nueva.
+@cloud_notice_account_signed_in = Ahora has iniciado sesión en {0}. El juego muestra ahora las partidas guardadas de esta cuenta. Las partidas que guardaste sin iniciar sesión se quedan en este dispositivo.
+@cloud_notice_account_unsent = Las partidas guardadas de la cuenta que usabas antes siguen en este dispositivo, pero aún no están en su guardado en la nube. Vuelve a iniciar sesión en {0} con esa cuenta en este dispositivo para guardarlas en la nube.
+@cloud_sign_in_failed_google_play_games = No se pudo iniciar sesión en Google Play Games. Inténtalo de nuevo más tarde.
+@cloud_sign_in_failed_game_center = No se pudo iniciar sesión en Game Center. Actívalo en la aplicación Ajustes e inténtalo de nuevo.
+@cloud_notice_save_failed = No se pudo guardar {0} en este dispositivo. Asegúrate de que el dispositivo tenga espacio libre e inténtalo de nuevo.

@@ -1,0 +1,10 @@
+@cloud_view_title = Guardado en la nube
+@cloud_view_signed_in = Sesión iniciada
+@cloud_view_not_signed_in = Sin sesión
+@cloud_view_last_synced = Última sincronización: {0}
+@cloud_view_not_synced = Sin sincronizar
+@cloud_view_sync_now = Sincronizar ahora
+@cloud_view_sign_in = Iniciar sesión
+@cloud_view_on_this_device = En este dispositivo
+@cloud_view_current = Actual
+@cloud_view_no_saves = Aún no hay partidas

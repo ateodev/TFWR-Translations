@@ -1,0 +1,15 @@
+@cloud_conflict_title = Conflicto de guardado en la nube
+@cloud_conflict_message = Tus partidas guardadas cambiaron en más de un dispositivo.
+@cloud_conflict_versions_total = Versiones en total: {0}
+@cloud_conflict_keep = Conservar la versión {0}
+@cloud_conflict_confirm_title = ¿Conservar la versión {0}?
+@cloud_conflict_confirm_body = Todas las demás versiones se eliminarán de la nube y de este dispositivo.
+@cloud_card_version = Versión {0}
+@cloud_card_suggested = Sugerida
+@cloud_card_this_device = Este dispositivo
+@cloud_card_another_device = Otro dispositivo
+@cloud_card_saved = Guardada {0}
+@cloud_card_saves_heading = Partidas guardadas
+@cloud_card_unlocks_heading = Desbloqueos
+@cloud_card_more = Y {0} más
+@cloud_card_unreadable = No se pudieron leer los detalles

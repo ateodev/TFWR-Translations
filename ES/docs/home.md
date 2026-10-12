@@ -1,10 +1,11 @@
 ## Información general
 <columns>
 [Créditos](docs/credits.md)
-[Editor Externo](docs/external_editor.md)
+<desktop>[Editor Externo](docs/external_editor.md)</desktop>
 [Primer Programa](docs/first_program.md)
 [Para Empezar](docs/getting_started.md)
-[Cargando Copias de Seguridad](docs/backup.md)
+<mobile>[Teclado del juego](docs/keyboard.md)</mobile>
+<desktop>[Cargando Copias de Seguridad](docs/backup.md)</desktop>
 <unlock=debug>[Output](docs/output.md)
 </unlock><unlock=debug>[Estadísticas](docs/stats.md)
 </unlock>

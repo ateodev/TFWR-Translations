@@ -121,10 +121,10 @@ El primero nunca hará una voltereta y el segundo las hará para siempre (un buc
 Normalmente, crear un bucle infinito es mala idea porque bloqueará el programa. Sin embargo, en este juego hay pausas entre las iteraciones, así que el dron seguirá haciendo volteretas hasta que lo detengas manualmente pulsando otra vez el botón Ejecutar.
 
 Observa cómo la línea después de los dos puntos está indentada. La indentación como esta se usa para separar bloques de código.
-Pulsa Tab para añadir sangría y Mayús + Tab (o Retroceso) para quitarla. Si hay varias líneas seleccionadas, Tab y Mayús + Tab se aplicarán a todas.
+Pulsa Tab para añadir sangría y Mayús + Tab (o <desktop>Retroceso</desktop><mobile>Borrar</mobile>) para quitarla. Si hay varias líneas seleccionadas, Tab y Mayús + Tab se aplicarán a todas.
 
-Nota: si juegas a través de Steam, al pulsar Mayús + Tab se abrirá la interfaz de Steam. Puedes reasignar el atajo para quitar sangría en las opciones del juego o el atajo de la interfaz en las opciones de Steam.
-
+<desktop>Nota: si juegas a través de Steam, al pulsar Mayús + Tab se abrirá la interfaz de Steam. Puedes reasignar el atajo para quitar sangría en las opciones del juego o el atajo de la interfaz en las opciones de Steam.
+</desktop>
 Aquí, `do_a_flip()` y `pet_the_piggy()` se llaman repetidamente porque están dentro del bloque `while` con sangría. Sin embargo, `harvest()` nunca se ejecuta porque está después de ese bloque.
 {{codeexample 
 {
@@ -157,4 +157,4 @@ harvest()
 
 ---
 
-[Bucle for](docs/scripting/for.md)      [If](docs/scripting/if.md)      [Break](docs/scripting/break.md)      [Continue](docs/scripting/continue.md)      [Editor externo](docs/external_editor.md)
+[Bucle for](docs/scripting/for.md)      [If](docs/scripting/if.md)      [Break](docs/scripting/break.md)      [Continue](docs/scripting/continue.md)<desktop>      [Editor externo](docs/external_editor.md)</desktop>

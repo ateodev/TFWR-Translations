@@ -31,7 +31,7 @@ ejecutar la simulación
 La función `simulate()` devuelve el tiempo, en segundos, que tardó en simular el archivo de inicio dado.
 
 ### Nombre de Archivo
-El primer argumento de la función `simulate()` es el nombre del archivo. Es el nombre que aparece en la parte superior de la ventana de código. La simulación ejecutará el archivo especificado como si hubieras pulsado su botón Ejecutar.
+El primer argumento de la función `simulate()` es el nombre del archivo. Es el nombre que aparece en la parte superior de la ventana de código. La simulación ejecutará el archivo especificado como si hubieras <desktop>pulsado</desktop><mobile>tocado</mobile> su botón Ejecutar.
 
 ### Desbloqueos Iniciales
 Todas las funciones de programación, como los bucles, las instrucciones `if`, las listas y los diccionarios, permanecen siempre desbloqueadas.

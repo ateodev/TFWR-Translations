@@ -1,0 +1,14 @@
+@load_screen_play = Jugar
+@load_screen_current = Actual
+@load_screen_unlocks = {0} desbloqueos
+@load_screen_unlock = {0} desbloqueo
+@load_screen_code_files = {0} archivos de código
+@load_screen_code_file = {0} archivo de código
+@load_screen_no_saves = Aún no hay partidas
+@load_screen_no_saves_hint = Pulsa '{0}' para empezar una granja.
+@load_screen_rename_title = Renombrar partida
+@load_screen_rename = Renombrar
+@load_screen_rename_empty = Introduce un nombre.
+@load_screen_rename_taken = Ya existe una partida con ese nombre.
+@load_screen_delete_title = ¿Eliminar {0}?
+@load_screen_delete_body = Se eliminarán su granja y su código. Esto no se puede deshacer.

@@ -43,7 +43,7 @@ clear()
 
 Si quieres volver a la superficie, puedes usar `clear()` en cualquier momento. Esto también restaura tu granja.
 
-Al pasar el cursor sobre un bloque se mostrarán su nombre, estabilidad y dureza.
+Al <desktop>pasar el cursor sobre</desktop><mobile>tocar</mobile> un bloque se mostrarán su nombre, estabilidad y dureza.
 
 # Taladro
 
@@ -63,7 +63,7 @@ Por supuesto, los bloques se vuelven cada vez más duros a medida que bajas, as�
 
 Excavar hacia abajo hará que los bloques de alrededor se derrumben. Los cuatro bloques adyacentes al dron siempre se destruyen. Después, el derrumbe se propaga en función de la estabilidad del terreno. Un bloque con estabilidad 1, como la pradera, puede soportar una diferencia de altura de 1. En otras palabras, si la pradera tiene un vecino vertical u horizontal cuya coordenada z está 2 o más bloques por debajo, la pradera se destruirá.
 
-La estabilidad de un bloque aparece en su descripción al pasar el cursor sobre él.
+La estabilidad de un bloque aparece en su descripción<desktop> al pasar el cursor sobre él</desktop>.
 
 Cuando un bloque se derrumba, también elimina todos los bloques que tiene encima. Solo recibes recursos de los bloques que el dron excava directamente, así que los bloques perdidos en un derrumbe se destruyen sin producir recursos.
 
