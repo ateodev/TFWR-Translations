@@ -4,12 +4,14 @@ Někdy kód prostě nefunguje a je potřeba zjistit proč. K tomu existuje něko
 Prvním z nich je krokové provádění programu.  
 Do režimu krokování se přepneš tlačítkem vedle tlačítka Spustit nebo nastavením breakpointu.
 
-Breakpointy lze přidat kliknutím do panelu vlevo od kódu.  
+Breakpointy lze přidat <desktop>kliknutím</desktop><mobile>klepnutím</mobile> do panelu vlevo od kódu.  
 ![](Breakpoints227)  
 Když běh programu dosáhne řádku s breakpointem, automaticky se přepne do režimu krokování.
 
-Když najedeš myší na proměnnou, zobrazí se její aktuální hodnota.
-
+<desktop>Když najedeš myší na proměnnou, zobrazí se její aktuální hodnota.
+</desktop>
+<mobile>Poklepej na proměnnou a zobrazí se její aktuální hodnota.
+</mobile>
 Funkce `print()` je také velmi užitečná – vypíše jakoukoli hodnotu, kterou jí předáš, přímo do vzduchu.
 
 Příklady:
@@ -30,4 +32,4 @@ V takovém případě můžeš použít funkci `quick_print()`, která vypisuje 
 
 Výstupní okno také zaznamenává varování a chyby, takže pokud něco nefunguje podle očekávání, je užitečné ho zkontrolovat.
 
-Když se běh programu zastaví, výstup se také uloží do souboru output.txt ve složce hry. [output.txt](persistent_data_path/output.txt)
+<desktop>Když se běh programu zastaví, výstup se také uloží do souboru output.txt ve složce hry. [output.txt](persistent_data_path/output.txt)</desktop>

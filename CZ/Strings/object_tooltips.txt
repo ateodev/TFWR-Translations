@@ -8,6 +8,8 @@ Může růst na {3}.
 @object_descr_bush = Malý keř, který dává `Items.Wood`.
 @object_descr_tree = Stromy dávají více dřeva než keře. Rostou však déle, pokud vedle nich rostou jiné stromy.
 @object_descr_carrot = Mrkve!
+@object_descr_rice = Rýži lze sázet na vrstvu jílu, kterou najdeš v podzemí.
+@object_descr_bamboo = Bambus může vyrůst docela vysoko, ale kvete v jedné určité výšce. Výnos je největší, když ho sklidíš přesně tam, kde kvete.
 @object_descr_pumpkin = Dýně rostou společně, když jsou vedle jiných plně vyrostlých dýní. Přibližně jedna z pěti dýní při růstu zahyne.
 @object_descr_dead_pumpkin = Jedna z pěti dýní při růstu zahyne a zůstane po ní mrtvá dýně. Mrtvé dýně jsou k ničemu a zmizí, když se zasadí něco nového.
 @object_descr_sunflower = Slunečnice sbírají energii ze slunce. Jejich sklizní získáš `Items.Power`.
@@ -18,8 +20,37 @@ Pokud sklidíš slunečnici s maximálním počtem okvětních lístků, získá
 @object_descr_dinosaur = Část ocasu dinosauřího klobouku.
 @object_descr_grassland = Výchozí typ půdy. Tráva na ní roste automaticky.
 @object_descr_soil = Voláním `till()` změníš půdu na ornou. Dalším voláním `till()` ji vrátíš zpět na trávník.
+@object_descr_dirt = Je to hlína.
+@object_descr_rock = Je to tvrdý kámen.
+@object_descr_clay = Blok jílu. Úrodná půda, ideální pro rýži. Když rostlina rýže dozraje, promění jíl pod sebou zpět na hlínu.
+@object_descr_blue_block = Modrý blok.
+@object_descr_red_block = Červený blok.
+@object_descr_green_block = Zelený blok.
+@object_descr_coal = Blok bohatý na usazené uhlí.
+@object_descr_iron = Blok obsahující surový magnetit.
+@object_descr_quartz = Blok obklopující krystalický křemen.
+@object_descr_limestone = Bělavý vápenec. Tvoří základy starověkých pyramid.
+@object_descr_sand = Blok písku. Součást starověké pyramidy.
+@object_descr_bedrock = Nezničitelný.
+@object_descr_petrified_pumpkin = Zkamenělá dýně. Pořád se dá jíst.
+@object_descr_loam = Úrodná hlína, ideální pro pěstování určitých rostlin. Slunečnice a mrkve zde dávají dvojnásobný výnos.
+@object_descr_perlite = Hlína s vysokým obsahem perlitu, ideální pro pěstování určitých rostlin. Keře, kaktusy, bambus a stromy zde dávají dvojnásobný výnos.
 @runtime_entity_tooltip = Při sklizni dává:
 {{itemblock tooltip}}
 @runtime_growable_tooltip = Celková doba růstu: {0} sekund
 Vyrostlo {1}%
+@runtime_ground_hardness_tooltip = Tvrdost: {0}
+@runtime_ground_stability_tooltip = Stabilita: {0}
+@runtime_ground_water_tooltip = Hladina vody: {0}
+@object_descr_dynamite = Vybuchne, když do něj kopneš. Sázení a sklizeň vždy spotřebuje a dá 1 dynamit.
+@object_descr_dynamite_ground = Při vykopání může upustit trochu dynamitu na blok pod sebou. Dynamit lze sklidit, nebo do něj kopnout a nechat ho vybuchnout.
+@object_descr_soot = Záhadné saze, které při volání `measure()` spočítají živý dynamit ve vrstvě nad sebou. Okamžitě odpálí každý dynamit, který na ně spadne.
+@object_descr_basalt = Měkká hornina vzniklá chladnutím lávy. Nezachovalo se pod ní něco?
+@object_descr_treasure_map_ground = Mapa pokladu! Kam asi vede?
+@object_descr_treasure_path_ground = Na cestě vedoucí od mapy pokladu k cíli.
+@object_descr_treasure_goal_ground = Cíl na konci stezky z mapy pokladu. Co se tu asi skrývá?
+@object_descr_underground_treasure = Nepolapitelný poklad nalezený na konci stezky z mapy pokladu.
+@object_descr_mushroom = Houby rostoucí v podzemí. Pomocí `measure()` zjistíš, o jaký typ houby jde.
 @runtime_ground_tooltip = Hladina vody: {0}
+@runtime_mushroom_tooltip = Když jsou dva houbové bloky stejného typu na sobě, dávají:
+{{itemblock tooltip_ground}}

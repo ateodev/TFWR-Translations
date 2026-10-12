@@ -28,3 +28,36 @@ Odsazení musí být stejné pro všechny příkazy v rámci jednoho bloku kódu
 @error_assign_before_global = {0} je přiřazeno dříve, než je deklarováno jako `global`.
 @error_wildcard_imports_not_allowed_in_function = Importy ve tvaru `from x import *` nejsou uvnitř funkcí povoleny.
 @error_invalid_import = Nelze importovat soubory s názvy, které nejsou platnými identifikátory. Platné identifikátory mohou obsahovat pouze písmena, čísla a podtržítka. Pokud název souboru obsahuje jiné znaky, musíš ho přejmenovat.
+
+@error_invalid_number_format = Tento formát čísla není platný.
+@error_compared_item_with_number = {0} není číslo, je to předmět. Porovnávat ho s číslem nedává smysl.
+
+Pokud chceš zjistit, kolik toho předmětu máš, použij místo toho `num_items(`{0}`)`.
+@error_compared_entity_with_number = {0} není číslo, je to entita. Porovnávat ji s číslem nedává smysl.
+@error_compared_unlock_with_number = {0} není číslo, je to odemčení. Porovnávat ho s číslem nedává smysl.
+
+Pokud chceš zjistit, kolikrát jsi ho odemkl, použij místo toho `num_unlocked(`{0}`)`.
+@error_nonsensical_or = Použití `or `{0} v podmínce nedává smysl, protože {0} je konstanta.
+Všimni si, že porovnávací operátory se vyhodnocují před `or`.
+
+Příklad:
+`x == 5 or 6`
+je totéž co
+`(x == 5) or 6`
+Nenulová čísla se považují za pravdivá, takže je to totéž co
+`(x == 5) or True`
+což je vždy pravda.
+
+Teoreticky je to platný kód v Pythonu, ale není žádný důvod ho takto psát.
+@error_item_condition = {0} je předmět, ne booleovská hodnota. Používat ho samotný jako podmínku nedává smysl.
+Nechtěl jsi zkontrolovat, zda se nějaká hodnota rovná tomuto předmětu?
+`some_variable == `{0}
+@error_unlock_condition = {0} je odemčení, ne booleovská hodnota. Používat ho samotné jako podmínku nedává smysl.
+Takto zkontroluješ, zda je odemčení odemčené:
+`num_unlocked(`{0}`) > 0`
+@error_entity_condition = {0} je entita, ne booleovská hodnota. Používat ji samotnou jako podmínku nedává smysl.
+Takto zkontroluješ typ entity pod dronem:
+`get_entity_type() == `{0}
+@error_ground_condition = {0} je typ půdy, ne booleovská hodnota. Používat ho samotný jako podmínku nedává smysl.
+Takto zkontroluješ typ půdy pod dronem:
+`get_ground_type() == `{0}

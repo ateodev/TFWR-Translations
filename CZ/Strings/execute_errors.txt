@@ -74,6 +74,11 @@ x += 1`
 @error_file_not_found = Soubor {0} neexistuje.
 @error_max_drones_reached = Překročen limit počtu dronů.
 @error_dino_hat_already_used = Existuje jen jeden dinosauří klobouk a už je používán. Nelze ho nasadit druhému dronu.
+@error_explosive_drill_already_used = Výbušný vrták je jen jeden a už se používá. Nemůžeš ho nasadit druhému dronu.
 @error_invalid_drone_id = Neexistuje žádný dron s ID {0}.
 @error_invalid_handle = {0} už neexistuje.
 @error_spawn_drone_builtin = Nelze použít `spawn_drone()` přímo s vestavěnými funkcemi. Musíš si vytvořit vlastní funkci.
+
+@error_non_jumpable_unlock = K tomuto odemčení nelze skočit.
+@error_only_first_drone_can_jump = `jump()` může provést jen první dron.
+@error_can_only_jump_once = `jump()` lze provést jen jednou za program.

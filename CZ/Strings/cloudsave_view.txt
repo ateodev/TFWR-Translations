@@ -1,0 +1,10 @@
+@cloud_view_title = Cloudové ukládání
+@cloud_view_signed_in = Přihlášen
+@cloud_view_not_signed_in = Nepřihlášen
+@cloud_view_last_synced = Poslední synchronizace: {0}
+@cloud_view_not_synced = Nesynchronizováno
+@cloud_view_sync_now = Synchronizovat
+@cloud_view_sign_in = Přihlásit se
+@cloud_view_on_this_device = Na tomto zařízení
+@cloud_view_current = Aktuální
+@cloud_view_no_saves = Zatím žádné savy

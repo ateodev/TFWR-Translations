@@ -18,3 +18,8 @@
 @hat_descr_gold_trophy_hat = Jen pro nejlepšího farmáře.
 @hat_descr_silver_trophy_hat = Pro druhého nejlepšího farmáře.
 @hat_descr_wood_trophy_hat = Pro třetího nejlepšího farmáře.
+@hat_descr_explosive_drill = Každé kopnutí spotřebuje jeden dynamit a způsobí běžnou explozi. Bloky zničené přímo explozí dávají předměty, jako by byly vykopány. Výbušný vrták může nasadit jen jeden dron.
+@hat_descr_golden_cactus_hat = Zlatá verze kaktusového klobouku.
+@hat_descr_golden_pumpkin_hat = Zlatá verze dýňového klobouku.
+@hat_descr_golden_sunflower_hat = Zlatá verze slunečnicového klobouku.
+@hat_descr_the_farmers_remains = Co se stalo?

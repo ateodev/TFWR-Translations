@@ -1,0 +1,110 @@
+@tutorial_skip = PŘESKOČIT
+@tutorial_skip_question = Přeskočit?
+@tutorial_skip_part = Tuto část
+@tutorial_skip_all = Celý tutoriál
+@tutorial_skip_cancel = Pokračovat
+@tutorial_welcome = Ó, ahoj!
+Vítej ve hře The Farmer Was Replaced!
+@tutorial_show_around = Chceš, abych tě tu provedlo?
+@tutorial_show_around_yes = Ano, ukaž mi to!
+@tutorial_show_around_no = Ne, díky
+@tutorial_farm = Tohle je tvoje farma. Jeden jediný kousek půdy.
+@tutorial_look_around = Tažením a stažením prstů se pohybuješ po farmě.
+@tutorial_drone = Neboj, ruce si špinit nemusíš.
+Většinu práce za tebe udělá tenhle dron.
+Stačí mu říct, co má dělat.
+@tutorial_tap_window = Klepni na okno a napiš svůj první kód.
+@tutorial_code_window = Tohle je okno s kódem.
+Každé okno s kódem je soubor. Tenhle se jmenuje <b>main</b>.
+Dron zatím zná jen dva příkazy.
+@tutorial_type_harvest = Začneme sklizní.
+Napiš <b>harvest</b>
+@tutorial_autocomplete = Vidíš ten seznam? Editor hádá, co jsi chtěl napsat.
+Chytré, co?
+@tutorial_accept_completion = Klepni na ten, který chceš, nebo stiskni <b>Tab</b> a přijmi zvýrazněný návrh.
+@tutorial_run_harvest = Podíváme se, co se stane.
+Klepni na <b>Play</b> a spusť kód.
+@tutorial_error = Jejda! Když je něco špatně, chyba se objeví přesně tam, kde vznikla.
+Dokonce ti poradí, jak ji opravit.
+@tutorial_type_bracket = <b>()</b> říká dronu, aby to opravdu udělal.
+Klepni na svůj kód a napiš <b>(</b>
+@tutorial_brackets_pair = Závorky chodí vždy v páru, takže dostaneš obě najednou.
+@tutorial_run_program = A to je program! Klepni na <b>Play</b> a spusť ho.
+@tutorial_leave_fullscreen = Odtud farmu nevidíš.
+Klepni na <b>x</b> a vrať se.
+@tutorial_first_program = Dokázal jsi to!
+To byl tvůj úplně první program.
+@tutorial_hay = Všechno, co dron sklidí, skončí u mě.
+To je seno, tvoje první surovina.
+@tutorial_get_five = Pojďme jich získat 5.
+Až tráva doroste, spusť <b>main</b> znovu.
+@tutorial_hay_five = Pět sena! To si zaslouží plácnout. Senově.
+@tutorial_play_gets_old = Mačkat Play pokaždé je otrava, co?
+Ať to dron dělá sám.
+@tutorial_open_tech_tree = Ale k tomu musíme odemknout novou technologii.
+Klepni na tohle tlačítko a otevři strom technologií.
+@tutorial_tech_tree = Páni, tolik věcí!
+Tady utrácíš své suroviny.
+@tutorial_tap_loops = Můžeme odemknout <b>smyčky</b>. Podíváme se na ně.
+Klepni na ně a zjisti, co dělají.
+@tutorial_buy_loops = Smyčky opakují kód, takže nemusíš pokaždé mačkat Play.
+Klepni na <b>Odemknout</b> a kup je.
+@tutorial_docs_intro = Pokaždé, když něco odemkneš, otevře se tu jeho stránka.
+Tomu se říká <b>dokumentace</b>. Ví o téhle hře víc než já.
+@tutorial_docs_example = Vyzkoušej příklad. Klepni na <b>Play</b> v malém okně.
+@tutorial_docs_navigate = Klepni na odkaz a skoč na tu stránku.
+<b>Zpět</b> tě vrátí, <b>Domů</b> ukáže všechno, co tu je.
+Až skončíš, zavři ji pomocí <b>x</b>.
+@tutorial_docs_reopen = Kdykoli ji znovu otevřeš pomocí <b>i</b>.
+@tutorial_loop_tap_main = Teď tu sklizeň zacyklíme.
+Klepni na <b>main</b>.
+@tutorial_loop_caret_swipe = Nejdřív přesuň kurzor na začátek řádku.
+Táhni prstem do strany po klávesnici a kurzor se posune. Funguje to na jakékoli klávese.
+@tutorial_loop_caret_tap = Nejdřív přesuň kurzor na začátek řádku.
+Klepni těsně před <b>harvest</b> a umísti tam kurzor.
+@tutorial_loop_type_while = Teď před <b>harvest()</b> napiš <b>while</b> a mezeru.
+@tutorial_loop_type_true = Potom <b>True</b>, s velkým T.
+Napiš <b>t</b> a vyber ze seznamu <b>True</b>.
+@tutorial_loop_type_colon = A na konec dvojtečku <b>:</b>.
+@tutorial_loop_return = Teď stiskni <b>Return</b> a odsuň <b>harvest()</b> na vlastní řádek.
+@tutorial_loop_tab = Stiskni <b>Tab</b> a odsaď <b>harvest()</b>.
+@tutorial_loop_spaces = Napiš před <b>harvest()</b> pár mezer, aby se odsadil.
+@tutorial_loop_auto_indent = Vidíš, jak se <b>harvest()</b> posunul sám?
+Editor ho za tebe odsadil.
+@tutorial_loop_explain = Všechno odsazené pod <b>while True:</b> se opakuje donekonečna.
+@tutorial_loop_caret_back = Jejda, kurzor se zatoulal.
+Vrať ho těsně před <b>harvest()</b>.
+@tutorial_loop_true_case = Pozor, musí to být <b>True</b> s velkým T.
+Smaž to, pak napiš <b>t</b> a vyber ze seznamu <b>True</b>.
+@tutorial_loop_off_track = Hmm, to není úplně ono.
+Smaž to až k místu, kde se to pokazilo, nebo začni znovu.
+@tutorial_loop_start_over = Začít znovu
+@tutorial_loop_run = Spusť to a opři se.
+@tutorial_done = Hurá, koukej, jak to jede!
+<b>Tohle</b> je farmaření!
+@tutorial_done_more = To je všechno, co potřebuješ pro začátek.
+Kdykoli se zasekneš, klepni na <b>i</b> a nahlédni do dokumentace.
+@tutorial_done_petting = Ozvu se, až bude něco nového.
+Jo, a moc rádo se nechám hladit. Jen tak mimochodem.
+@tutorial_tip_windows_new = Velké programy se lépe spravují ve více souborech.
+Klepni na <b>+</b> a vytvoř nový.
+@tutorial_tip_windows_manage = Táhni okno za záhlaví a přesuň ho.
+Pusť ho na jiné okno a spojí se k sobě.
+Zatáhni za roh a změň jeho velikost.
+<b>Minimalizovat</b> okno uklidí. <b>Koš</b> soubor nadobro smaže.
+@tutorial_tip_caret = Ukážu ti něco skvělého.
+Kurzor můžeš posouvat tažením prstu po klávesnici.
+No tak, zkus to.
+@tutorial_tip_caret_select = Skvělé, co? Ale bude to ještě lepší!
+Během tažení podrž druhým prstem klávesu <b>Shift</b>.
+Tak můžeš mnohem rychleji vybírat a měnit kód.
+@tutorial_tip_autocomplete = Návrhy můžeš vybírat i tažením nahoru nebo dolů po klávesnici,
+nebo se jich zbavit tažením doleva nebo doprava.
+@tutorial_tip_word_info = Poklepej na libovolné slovo v kódu a zobraz si ho.
+Když kód běží, poklepej na proměnnou a uvidíš její hodnotu.
+@tutorial_tip_step = Nevíš, kde se to kazí?
+Klepni na <b>Krok</b> a spouštěj kód řádek po řádku.
+@tutorial_tip_search = Hledání najde text ve všech otevřených oknech s kódem i dokumentací.
+<b><noparse><</noparse></b> a <b><noparse>></noparse></b> skáčou mezi nalezenými shodami.
+@tutorial for new saves = Tutoriál v nových savech
+@option_tooltip_tutorial_for_new_saves = Zda prasátko provede novým savem. Samo se vypne, jakmile tutoriál dokončíš nebo odmítneš.

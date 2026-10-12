@@ -1,0 +1,9 @@
+@cloud_notice_ok = OK
+@cloud_notice_account_changed_headline = Tvůj účet se změnil
+@cloud_notice_account_saves = Nyní jsi přihlášen do {0} jiným účtem. Hra teď zobrazuje savy tohoto účtu.
+@cloud_notice_account_no_saves = Nyní jsi přihlášen do {0} jiným účtem. Tento účet zatím nemá žádné savy, takže začíná nová hra.
+@cloud_notice_account_signed_in = Nyní jsi přihlášen do {0}. Hra teď zobrazuje savy tohoto účtu. Savy, které jsi vytvořil bez přihlášení, zůstávají na tomto zařízení.
+@cloud_notice_account_unsent = Savy účtu, který jsi používal dříve, jsou stále na tomto zařízení, ale zatím ne v jeho cloudu. Přihlas se na tomto zařízení znovu tímto účtem do {0}, aby se uložily do cloudu.
+@cloud_sign_in_failed_google_play_games = Přihlášení do Google Play Games se nezdařilo. Zkus to prosím později.
+@cloud_sign_in_failed_game_center = Přihlášení do Game Center se nezdařilo. Zapni ho prosím v aplikaci Nastavení a zkus to znovu.
+@cloud_notice_save_failed = Nepodařilo se uložit {0} na toto zařízení. Ujisti se, že má zařízení volné místo, a zkus to znovu.

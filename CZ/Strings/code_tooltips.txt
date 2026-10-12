@@ -111,6 +111,16 @@ Provádění trvá `1` tick.
 
 příklad:
 `x, y = get_pos_x(), get_pos_y()`
+@code_tooltip_get_pos_z = `get_pos_z()`
+Zjistí aktuální souřadnici z dronu.
+Souřadnice z začíná na `0` a při kopání dolů klesá.
+
+vrací číslo odpovídající aktuální souřadnici z dronu.
+
+trvá `1` tik.
+
+příklad:
+`x, y, z = get_pos_x(), get_pos_y(), get_pos_z()`
 @code_tooltip_get_world_size = `get_world_size()` 
 Získá aktuální velikost farmy.
 
@@ -141,6 +151,26 @@ Provádění trvá `1` tick.
 příklad:
 `if get_ground_type() != Grounds.Soil:
     till()`
+@code_tooltip_get_hardness = `get_hardness()`
+Zjistí, jak tvrdá je půda pod dronem.
+
+vrací tvrdost půdy pod dronem.
+
+trvá `1` tik.
+
+příklad:
+`if get_hardness() < 5:
+    dig()`
+@code_tooltip_get_stability = `get_stability()`
+Zjistí, jak stabilní je půda pod dronem.
+
+vrací stabilitu půdy pod dronem.
+
+trvá `1` tik.
+
+příklad:
+`if get_stability() > 3:
+    dig()`
 @code_tooltip_get_time = `get_time()` 
 Získá aktuální herní čas.
 
@@ -630,3 +660,59 @@ list.insert(0, 0)`
 @code_tooltip_or = Vyhodnotí první operand. Pokud je pravdivý (cokoliv jiného než `False`, `0` a prázdné kolekce), vrátí jej okamžitě (krátké vyhodnocení); jinak vyhodnotí a vrátí druhý operand.
 @code_tooltip_return = Používá se k vrácení hodnoty z funkce.
 @code_tooltip_pass = Nedělá nic. Může být užitečné, protože prázdné bloky kódu nejsou povoleny.
+@code_tooltip_dig = `dig()`
+Vykope políčko směrem dolů.
+
+Rychlost kopání závisí na tvrdosti bloku a na síle vrtáku dronu.
+
+příklad:
+`dig()`
+@code_tooltip_prospect_iron = `prospect_iron()`
+Používá uhlí k hledání železa.
+
+vrací směr k nejbližší železné rudě (`North`, `East`, `South` nebo `West`), pokud je nějaká poblíž. Vrací `None`, pokud poblíž žádné železo není, pokud nemáš dost uhlí nebo pokud je dron už přímo nad kusem železa.
+
+stojí 1 uhlí za provedení.
+
+příklad:
+`while prospect_iron() != None:
+    move(prospect_iron())`
+@code_tooltip_prospect_quartz = `prospect_quartz()`
+Používá železo k hledání křemene.
+
+vrací eukleidovskou vzdálenost (vzdálenost ve 3D) od dronu k nejbližšímu bloku křemene, nebo `None`, pokud poblíž žádný křemen není.
+
+stojí 1 železo za provedení.
+
+příklad:
+`print(prospect_quartz())`
+@code_tooltip_place = `place(ground)`
+Položí bloky.
+
+Můžeš určit, který blok se má položit. Položit lze jen bloky bez zvláštní funkce. Můžeš například `place(Grounds.Rock)`, ale ne `place(Grounds.Clay)`.
+
+příklad:
+`place(Grounds.Rock)`
+@code_tooltip_push = `push(direction)`
+Posune houbový blok pod dronem.
+
+Bloky nelze posouvat nahoru.
+
+vrací `True`, pokud byl blok posunut, jinak `False`.
+
+příklad:
+`push(North)`
+@code_tooltip_can_push = `can_push(direction)`
+Zkontroluje, zda lze blok pod dronem posunout.
+
+vrací `True`, pokud lze blok pod dronem posunout, jinak `False`.
+
+příklad:
+`can_push(North)`
+@code_tooltip_jump = `jump(unlock)`
+Skočí k podzemnímu útvaru spojenému s `unlock`.
+
+`jump` lze provést jen jednou za skript.
+
+příklad:
+`jump(Unlocks.Iron)`

@@ -1,6 +1,7 @@
 @button_tooltip_load = Načte nebo vytvoří jiný save.
 @button_tooltip_save = Uloží hru.
 @button_tooltip_options = Otevře nabídku možností.
+@button_tooltip_iap = Otevře obchod.
 @button_tooltip_discord = Připoj se na Discord – chat s ostatními hráči a vývojářem, hlášení chyb nebo pomoc.
 @button_tooltip_execute = Spustí nebo zastaví kód v tomto okně.
 @button_tooltip_step_by_step = Provede jeden krok kódu.
@@ -10,6 +11,8 @@
 @button_tooltip_delete = Trvale smaže tento soubor.
 @button_tooltip_close_docs = Zavře toto okno.
 @button_tooltip_table_of_contents = Obsah.
+@button_tooltip_docs_home = Přejde na domovskou stránku dokumentace.
+@button_tooltip_docs_back = Přejde na předchozí navštívenou stránku dokumentace.
 @button_tooltip_new_game = Vytvoří nový save.
 @button_tooltip_open_folder = Otevře složku se savy v průzkumníku.
 @button_tooltip_toggle_search_docs = Přepne, zda má hledání zahrnovat informační okna.
@@ -19,8 +22,10 @@
 @button_tooltip_close_search = Zavře nabídku hledání.
 @button_tooltip_open_unlock_menu = Otevře strom odemykání.
 @warning_icon_tooltip = Tvůj kód vyvolal varování. Klikni na ikonu pro zobrazení detailů v okně výstupu.
+@warning_icon_tooltip_mobile = Tvůj kód vyvolal varování. Klepni na ikonu pro zobrazení detailů v okně výstupu.
 @option_tooltip_graphics = Ovlivňuje nastavení vykreslování jako stíny, ambientní okluzi a záři.
 @option_tooltip_vfx_limit = Omezuje počet vizuálních efektů za sekundu.
+@option_tooltip_avalanche_particles = Vypne částice vznikající při sesuvech.
 @option_tooltip_volume = Nastaví hlasitost všech zvuků.
 @option_tooltip_music_volume = Nastaví hlasitost hudby.
 @option_tooltip_drone_volume = Nastaví hlasitost bzučení dronu.
@@ -30,6 +35,7 @@
 @option_tooltip_volume_damping = Hlasitost se násobí tímto faktorem pro každý současně přehrávaný zvuk, aby ti neexplodovaly uši při vysoké rychlosti dronu.
 @option_tooltip_sfx_limit = Omezuje počet zvuků přehratelných za sekundu.
 @option_tooltip_autosave = Automaticky ukládá hru každých 30 s, pokud je zapnuto. Nelze zapnout při aktivním File Watcheru.
+@option_tooltip_autosave_progress = Když je zapnuto, automaticky ukládá herní postup každých 30 s.
 @option_tooltip_file_watcher = Automaticky načítá změny v souborech kódu ve složce save, umožňuje použití externího editoru. Nelze zapnout při aktivním autosave.
 @option_tooltip_frames = Omezí FPS hry. VSync synchronizuje FPS s obnovovací frekvencí monitoru.
 @option_tooltip_viewport_sliding = Vypne klouzání pohledu po puštění myši.
@@ -37,11 +43,14 @@
 @option_tooltip_tabs_to_spaces = Převede všechny tabulátory na 4 mezery.
 @option_tooltip_error_forgot_call = Pokud je zapnuto, hra vyhodí chybu, když se pokusíš vyhodnotit funkci bez závorek `()`, protože jsi je pravděpodobně zapomněl.
 @option_tooltip_error_shadow = Pokud je zapnuto, hra vyhodí chybu, když má lokální proměnná stejné jméno jako globální.
+@option_tooltip_allow_locked_features = Když je zapnuto, lze používat zamčené funkce, i když ještě nebyly odemčeny. Takto hra není zamýšlena.
 @option_tooltip_print_warnings = Aktivuje varování a ikonu varování, která se občas zobrazí.
 @option_tooltip_language = Změní jazyk hry.
 @option_tooltip_code_highlights = Vypne blikající zvýraznění při běhu kódu.
 @option_tooltip_resolution = Změní rozlišení obrazovky.
 @option_tooltip_increment_number_effect = Vypne efekt v inventáři při změně počtu položek.
+@option_tooltip_color_theme = Změní barevné téma rozhraní. Vlastní témata můžeš přidat do složky „Themes“ v adresáři se savy.
+@option_tooltip_color_theme_mobile = Změní barevné téma rozhraní.
 @keybind_tooltip_indent_selection = Přidá odsazení všem vybraným řádkům. Musí to být klávesa, která vkládá znak – kombinace s Ctrl nebo Alt nefungují.
 @keybind_tooltip_unindent_selection = Odebere odsazení všem vybraným řádkům. Musí to být klávesa, která vkládá znak – kombinace s Ctrl nebo Alt nefungují.
 @keybind_tooltip_menu = Otevře nebo zavře hlavní menu.
@@ -58,3 +67,15 @@
 @keybind_tooltip_next_step = Provede jeden krok, pokud je vykonávání pozastaveno.
 @keybind_tooltip_pause_execution = Pozastaví vykonávání.
 @keybind_tooltip_hide_UI = Skryje nebo zobrazí rozhraní (HUD).
+
+@button_tooltip_achievements = Zobrazí tvé úspěchy.
+@button_tooltip_sign_in = Přihlas se do Google Play Games / Game Center a synchronizuj své úspěchy.
+@option_tooltip_keyboard_switches = Odezva při stisku klávesy herní klávesnice: Kliknutí = zvuk mechanické klávesy, Systémový klik = zvuk kliknutí klávesnice zařízení, Vibrace = krátké zavibrování.
+@button_tooltip_open_main_menu = Otevře hlavní nabídku.
+@button_tooltip_open_search = Otevře vyhledávací lištu.
+@button_tooltip_open_news = Otevře nejnovější novinky.
+@button_tooltip_fullscreen = Zobrazí toto okno na celou obrazovku.
+@button_tooltip_exit_fullscreen = Opustí celou obrazovku.
+@option_tooltip_keyboard_layout = Rozložení kláves herní klávesnice. Výchozí je rozložení jazyka tvého systému.
+@option_tooltip_keyboard_type = Kterou klávesnicí psát kód. Herní klávesnice má symboly, které Python potřebuje; systémová klávesnice je ta, kterou používáš v jiných aplikacích. Připojená hardwarová klávesnice se vždy použije místo nich.
+@option_tooltip_exit_fullscreen_on_run = Stisk Startu opustí editor kódu na celou obrazovku a ukáže farmu. Breakpointy tě stále přenesou na pozastavený řádek.

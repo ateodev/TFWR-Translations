@@ -1,5 +1,32 @@
+@iap_title_full_game = The Farmer Was Replaced
 @iap_get_full_game = Získej plnou hru
+@iap_desc_full_game = <b>Vše v ceně</b>
+• Jednorázový nákup. Žádné reklamy, žádné předplatné.
+• 35 dalších odemčení výzkumu
+• Přes tucet nových klobouků
+• Nové úspěchy, za kterými se můžeš hnát
+
+<b>Tvoje farma teprve začíná</b>
+Každá nová plodina je nová programátorská hádanka. Pěstuj obří dýně, třiď kaktusy, krm dinosaura a hledej zlato v bludištích ze živých plotů. Pak se rozroste na megafarmu s flotilou dronů.
+
+<b>Celý svět pod tvou farmou</b>
+Pošli svůj dron pod zem. Těž rudy, vykopávej starověké ruiny a hraj Hledání min s dynamitem.
 @iap_caption_multiple_drones = Více dronů
 @iap_caption_cool_puzzles = Skvělé hádanky
 @iap_caption_new_mechanics = Nové mechaniky
 @iap_caption_more_upgrades = Další vylepšení
+@iap_buy = Koupit
+@iap_play = Hrát
+@iap_pending = Čeká se na schválení nebo platbu.
+@iap_retry = Zkusit znovu
+@iap_restore = Obnovit nákupy
+@iap_restored = Nákupy obnoveny.
+@iap_restore_failed = Obchod je nedostupný. Zkus to později.
+@iap_purchase_success = Odemčeno. Užij si to!
+@iap_purchase_failed = Nákup neproběhl. Nic nebylo účtováno.
+@iap_unavailable = Obchod teď není k dispozici.
+@iap_offline = Ceny nejsou k dispozici. Zkontroluj připojení a zkus to znovu.
+@iap_retrying = Znovu se dotazuji obchodu...
+@iap_all_owned = Už máš všechno. Děkujeme!
+@unlock_locked_full_game = Toto je součást plné hry. Pořiď si ji v obchodě a odemkni to.
+@unlock_locked_mining_dlc = Toto je součást DLC Těžba. Pořiď si ho v obchodě a odemkni to.

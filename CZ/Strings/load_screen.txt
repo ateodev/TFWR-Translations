@@ -1,0 +1,14 @@
+@load_screen_play = Hrát
+@load_screen_current = Aktuální
+@load_screen_unlocks = Odemčení: {0}
+@load_screen_unlock = Odemčení: {0}
+@load_screen_code_files = Soubory s kódem: {0}
+@load_screen_code_file = Soubory s kódem: {0}
+@load_screen_no_saves = Zatím žádné savy
+@load_screen_no_saves_hint = Stiskni „{0}“ a založ farmu.
+@load_screen_rename_title = Přejmenovat save
+@load_screen_rename = Přejmenovat
+@load_screen_rename_empty = Zadej prosím název.
+@load_screen_rename_taken = Save s tímto názvem už existuje.
+@load_screen_delete_title = Smazat {0}?
+@load_screen_delete_body = Jeho farma i kód budou smazány. Nelze to vrátit zpět.

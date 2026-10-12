@@ -2,7 +2,10 @@
 @warning_no_space_to_plant = Pokusil ses zasadit {0}, ale na tom místě už něco roste.
 @warning_cant_plant_on_ground = Nelze zasadit {0} na {1}.
 @warning_missing_seed = Nemáš potřebné předměty pro zasazení {0}.
+@warning_not_enough_coal = Nebylo dost uhlí na hledání železa.
+@warning_not_enough_iron = Nebylo dost železa na hledání křemene.
 @warning_no_item_to_use = Pokusil ses použít {0}, ale nemáš ho dostatek.
+@warning_cannot_place_ground = Nelze položit {0}, protože je to speciální blok.
 @warning_failed_swap_wrap = Pokusil ses provést výměnu mimo hranice farmy. To není povoleno.
 @warning_failed_swap_unswappable = Pokusil ses vyměnit {0}, což nelze vyměnit.
 @warning_weird_substance_not_divisible = Použil jsi množství Podivné látky, které neodpovídá přesně potřebnému množství pro vytvoření bludiště. Nezapomeň, že s vylepšováním bludiště se požadované množství Podivné látky zvyšuje.

@@ -6,7 +6,7 @@ Komentáře se přidávají pomocí `#`. Cokoli na stejném řádku za znakem `#
 
 To se hodí pro přidávání poznámek do kódu a také pro dočasné vypnutí části kódu bez jejího smazání.
 
-Jakýkoli komentář na řádku bezprostředně před definicí funkce bude součástí vyskakovací informace, která se zobrazí při najetí myší na název funkce.
+Jakýkoli komentář na řádku bezprostředně před definicí funkce bude součástí vyskakovací informace, která se zobrazí při <desktop>najetí myší na název funkce</desktop><mobile>poklepání na název funkce</mobile>.
 
 `#Tato funkce nedělá nic.
 def f():

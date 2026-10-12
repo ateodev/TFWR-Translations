@@ -6,7 +6,12 @@
 @popup_warning_load_game = Chceš hru uložit před načtením?
 @don't save = Neukládat
 @popup_warning_corrupted_save = Při načítání {0} došlo k problému. Více informací najdeš v části o zálohách.
+@popup_warning_corrupted_save_mobile = Při načítání {0} došlo k problému.
 @popup_warning_failed_read_save = Nepodařilo se načíst soubory savů {0}. Ujisti se, že jsi zavřel všechny programy, které mají tyto soubory otevřené, a zkus to znovu.
+@popup_warning_failed_read_save_mobile = Nepodařilo se načíst soubory savu {0}. Zkus to prosím znovu.
 @popup_warning_failed_write_save = Nepodařilo se zapsat do souborů savů {0}. Ujisti se, že jsi zavřel všechny programy, které mají tyto soubory otevřené, a zkus to znovu.
+@popup_warning_failed_write_save_mobile = Nepodařilo se zapsat do souborů savu {0}. Zkus to prosím znovu.
 @ok = OK
 @popup_warning_old_save = Tento save pochází ze starší verze hry. Protože byl přepracován technologický strom, všechny upgrady byly resetovány, aby odpovídaly novému systému postupu.
+
+@popup_warning_unofficial_language = Toto je neoficiální překlad vytvořený komunitou, který vývojáři hry neudržují. Některé texty mohou chybět nebo být nepřesné.

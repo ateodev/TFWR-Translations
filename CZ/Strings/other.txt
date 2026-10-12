@@ -13,5 +13,18 @@
 @table_of_contents_section_items = Předměty
 @table_of_contents_section_entities = Objekty
 @table_of_contents_section_grounds = Povrchy
+@tap_here_for_more_info = -- klepni sem pro více informací --
+@right_click_to_open_store = -- pravé kliknutí otevře obchod --
+@tap_here_to_open_store = -- klepni sem pro otevření obchodu --
+@tooltip_button_more_info = Více informací
+@loading_screen = Načítání
 @new_hat_unlocked = ## Nový klobouk odemčen
 `change_hat(`{0}`)`
+
+@right_click_for_more_info = -- pravé kliknutí pro více informací --
+@missing_unlock_page = Než uvidíš tuto stránku, musíš ve [stromu technologií](tech_tree) odemknout {0}.
+
+---
+
+{1}
+@latest_news = Nejnovější novinky

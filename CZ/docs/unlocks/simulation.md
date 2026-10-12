@@ -29,7 +29,7 @@ spusť simulaci
 Funkce `simulate()` vrací čas v sekundách, který trvalo odsimulovat zadaný startovní soubor.
 
 ### File Name
-První argument funkce simulate je název souboru. To je jméno zobrazené nahoře v okně s kódem. Simulace spustí zadaný soubor, jako bys na něm klikl na tlačítko Execute.
+První argument funkce simulate je název souboru. To je jméno zobrazené nahoře v okně s kódem. Simulace spustí zadaný soubor, jako bys na něm <desktop>klikl</desktop><mobile>klepl</mobile> na tlačítko Execute.
 
 ### Starting Unlocks
 Všechny programátorské funkce (smyčky, if, lists, dicts, …) zůstávají vždy odemčené.

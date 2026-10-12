@@ -1,4 +1,6 @@
 @unlock_tooltip_template_cost = ### Cena odemknutí {{{{itemblock cost unlock {0}}}}}
+@unlock_tooltip_template_additional_requirement = ### Požadavky na odemčení
+Odemčení {0} musí být na úrovni {1} nebo vyšší.
 @unlock_descr_trees = Odemkne stromy.
 
 `plant(Entities.Trees)`
@@ -45,6 +47,10 @@ do_two_flips()`
 
 `till()
 plant(Entities.Carrot)`
+@unlock_descr_rice = Je to jako pšenice, kdyby pšenice rostla na jílu.
+
+`if get_ground_type() == Grounds.Clay:
+    plant(Entities.Rice)`
 @unlock_descr_lists = Používej seznamy pro ukládání více hodnot.
 
 `plants = [Entities.Hay, Entities.Bush, Entities.Tree]
@@ -107,8 +113,41 @@ other_file.function()`
 @unlock_descr_megafarm = Více dronů!
 
 `spawn_drone(task)`
+@unlock_descr_mining = Dá dronu vrták. A hornickou helmu.
+
+`dig()`
+@unlock_descr_coal = V podzemí se objevují ložiska uhlí.
+@unlock_descr_iron = V podzemí se objevují žíly železné rudy.
+@unlock_descr_pyramid = V podzemí se objevují starověké pískovcové stavby.
+@unlock_descr_quartz = V podzemí se objevují křemenné jehlice.
+@unlock_descr_ore_boost = Zdvojnásobí výnos uhlí. Zdvojnásobí velikost žil železa a křemene.
+@unlock_descr_jump = Umožní dronu skákat dolů.
+@unlock_descr_prospecting = Hledej železo pomocí uhlí!
+
+`prospect_iron()`
+@unlock_descr_drill = Zvyšuje sílu vrtáku.
+@unlock_descr_debug_place = Pokládej barevné bloky.
+
+`place(Grounds.Red_Block)`
+@unlock_descr_underground_senses = Senzory dronu pro práci s podzemními políčky
+
+`while get_pos_z() < 100:
+    while get_hardness() > 5:
+        while get_hardness(North):
+            dig(North)
+        move(North)
+    dig()`
+@unlock_descr_petrified_pumpkins = V podzemí se objevují zkamenělé dýně.
+@unlock_descr_special_soils = Objev vrstvy perlitu a hlíny a zvyš výnos rostlin.
+@unlock_descr_bamboo = Zasaď bambus a sleduj, jak roste.
+
+`plant(Entities.Bamboo)`
+@unlock_descr_dynamite = Najdi a použij dynamit a vyhoď věci do vzduchu.
+@unlock_descr_treasure_map = Hledej poklad ukrytý hluboko dole.
+@unlock_descr_mushrooms = Hledej a sklízej podzemní houby spojováním hub stejného typu.
 @multi_unlock_descr_expand = Rozšiřuje farmu. Tím se farma zároveň vymaže.
 @multi_unlock_descr_carrots = Zvyšuje výnos i cenu mrkve.
+@multi_unlock_descr_rice = Zvyšuje výnos a cenu rostlin rýže.
 @multi_unlock_descr_trees = Zvyšuje výnos keřů a stromů.
 @multi_unlock_descr_pumpkins = Zvyšuje výnos i cenu dýní.
 @multi_unlock_descr_mazes = Zvyšuje množství zlata v pokladech a množství podivné látky potřebné k vytvoření bludiště.
@@ -119,15 +158,29 @@ other_file.function()`
 @multi_unlock_descr_watering = Získávej více vody.
 @multi_unlock_descr_fertilizer = Získávej více hnojiva.
 @multi_unlock_descr_megafarm = Ještě více dronů.
+@multi_unlock_descr_drill = Zvyšuje rychlost vrtání.
+@multi_unlock_descr_coal = V podzemí se objevuje více vrstev uhlí.
+@multi_unlock_descr_iron = Zvyšuje výnos železné rudy.
+@multi_unlock_descr_pyramid = Zvyšuje energii získanou obnovením pyramid.
+@multi_unlock_descr_quartz = Zvyšuje výnos křemenné rudy.
+@multi_unlock_descr_petrified_pumpkins = Zvyšuje výnos zkamenělých dýní.
+@multi_unlock_descr_dynamite = Zvyšuje výnos dynamitu a energii explozí.
+@unlock_descr_explosive_drill = Nejsilnější vrták.
+@multi_unlock_descr_treasure_map = Zvyšuje hloubku stezky k pokladu, a tím i množství zlata, které z pokladu získáš.
+@multi_unlock_descr_ore_boost = Dále zvyšuje výnos uhlí. Dále zvětšuje velikost žil železa a křemene.
+@multi_unlock_descr_bamboo = Zvyšuje výnos a cenu bambusu.
+@multi_unlock_descr_mushrooms = Zvyšuje výnos spojených houbových bloků.
 @auto_unlock = Automatické odemykání
 @cactus = Kaktus
 @carrots = Mrkev
+@rice = Rýže
 @costs = Ceny
 @debug = Ladění
 @debug_2 = Ladění_2
 @dictionaries = Slovníky
 @dinosaurs = Dinosauři
 @expand = Rozšíření
+@expand_2 = Rozšíření 2
 @fertilizer = Hnojivo
 @functions = Funkce
 @grass = Tráva
@@ -143,6 +196,8 @@ other_file.function()`
 @polyculture = Smíšená výsadba
 @pumpkins = Dýně
 @senses = Smysly
+@underground_senses = Podzemní senzory
+@debug_place = Barevné bloky
 @simulation = Simulace
 @speed = Rychlost
 @sunflowers = Slunečnice
@@ -153,3 +208,23 @@ other_file.function()`
 @utilities = Pomůcky
 @variables = Proměnné
 @watering = Zalévání
+@iron = Železo
+@pyramid = Pyramidy
+@ore_boost = Více rudy
+@petrified_pumpkins = Zkamenělé dýně
+@special_soils = Speciální půdy
+@mining = Těžba
+@coal = Uhlí
+@drill = Vrták
+@quartz = Křemen
+@prospecting = Hledání železa
+@dynamite = Dynamit
+@explosive_drill = Výbušný vrták
+@bamboo = Bambus
+@treasure_map = Mapa pokladu
+@mushrooms = Houby
+@jump = Skok
+@unlock_button_unlock = Odemknout
+@unlock_button_upgrade = Vylepšit
+@unlock_button_get_full_game = Získat plnou hru
+@unlock_button_reset = Obnovit na maximum

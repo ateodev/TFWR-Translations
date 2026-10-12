@@ -51,7 +51,7 @@ Ale v této hře jsou mezi jednotlivými cykly smyčky malé prodlevy, takže dr
 
 Všimni si, že řádek za dvojtečkou je odsazený.
 Takové odsazení se používá k oddělení bloků kódu.
-Pro přidání odsazení stiskni Tab, a pro jeho odstranění Shift + Tab (nebo Backspace).
+Pro přidání odsazení stiskni Tab, a pro jeho odstranění Shift + Tab (nebo <desktop>Backspace</desktop><mobile>Smazat</mobile>).
 
 Smyčka zopakuje všechny příkazy s odsazením za dvojtečkou.
 Příkazy, které následují až po skončení odsazeného bloku, se vykonají až po dokončení smyčky.

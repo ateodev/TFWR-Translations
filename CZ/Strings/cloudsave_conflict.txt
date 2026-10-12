@@ -1,0 +1,15 @@
+@cloud_conflict_title = Konflikt cloudového uložení
+@cloud_conflict_message = Tvé savy se změnily na více než jednom zařízení.
+@cloud_conflict_versions_total = Verzí celkem: {0}
+@cloud_conflict_keep = Ponechat verzi {0}
+@cloud_conflict_confirm_title = Ponechat verzi {0}?
+@cloud_conflict_confirm_body = Všechny ostatní verze budou smazány z cloudu i z tohoto zařízení.
+@cloud_card_version = Verze {0}
+@cloud_card_suggested = Doporučeno
+@cloud_card_this_device = Toto zařízení
+@cloud_card_another_device = Jiné zařízení
+@cloud_card_saved = Uloženo {0}
+@cloud_card_saves_heading = Savy
+@cloud_card_unlocks_heading = Odemčení
+@cloud_card_more = A dalších {0}
+@cloud_card_unreadable = Podrobnosti se nepodařilo přečíst
