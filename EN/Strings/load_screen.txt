@@ -1,0 +1,14 @@
+@load_screen_play = Play
+@load_screen_current = Current
+@load_screen_unlocks = {0} unlocks
+@load_screen_unlock = {0} unlock
+@load_screen_code_files = {0} code files
+@load_screen_code_file = {0} code file
+@load_screen_no_saves = No saves yet
+@load_screen_no_saves_hint = Press '{0}' to start a farm.
+@load_screen_rename_title = Rename save
+@load_screen_rename = Rename
+@load_screen_rename_empty = Please enter a name.
+@load_screen_rename_taken = A save with this name already exists.
+@load_screen_delete_title = Delete {0}?
+@load_screen_delete_body = Its farm and its code are deleted. This can't be undone.
