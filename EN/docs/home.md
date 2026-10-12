@@ -4,6 +4,7 @@
 [External Editor](docs/external_editor.md)
 [First Program](docs/first_program.md)
 [Getting Started](docs/getting_started.md)
+[In-Game Keyboard](docs/keyboard.md)
 [Loading Backups](docs/backup.md)
 <unlock=debug>[Output](docs/output.md)
 </unlock><unlock=debug>[Stats](docs/stats.md)

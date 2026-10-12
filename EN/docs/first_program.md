@@ -15,6 +15,7 @@ You can dock a window to another window by dragging it onto it.
 You will notice that once you start typing, a simple code completion window will pop up.
 Press Tab to insert the selected completion.
 Use the arrow keys to navigate through the completion options.
+See the [In-Game Keyboard](docs/keyboard.md) page for how to move the cursor, select text and pick completions by swiping.
 
 Don't worry if this is your first time programming. The language is unlocked step by step, so you won't be overwhelmed by all the things you can do. 
 The syntax is also similar to Python, one of the most widely used programming languages in the world, so what you learn here will be useful elsewhere.
@@ -69,6 +70,6 @@ Collecting grass will give you hay. Hay can be used to unlock loops in the tech 
 
 ---
 
-[External Editor](docs/external_editor.md)      [Comments](docs/scripting/comments.md)      [While Loop](docs/scripting/while.md)
+[External Editor](docs/external_editor.md)      [In-Game Keyboard](docs/keyboard.md)      [Comments](docs/scripting/comments.md)      [While Loop](docs/scripting/while.md)
 
 [harvest()](functions/harvest)      [do_a_flip()](functions/do_a_flip)
