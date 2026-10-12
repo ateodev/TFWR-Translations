@@ -1,7 +1,7 @@
 <right>[第一个程序 ->](docs/first_program.md)
 ---
 # 入门指南
-这个窗口包含了游戏中所有内容。
+<desktop>这个窗口包含了游戏中所有内容。
 
 拖动窗口的灰色部分可以移动窗口。
 在窗口外任意处拖动可以移动镜头。
@@ -9,7 +9,16 @@
 要开始编写代码了吗？请点击前往[第一个程序](docs/first_program.md)页面。
 
 看见屏幕右上角的按钮了吗？将鼠标移到按钮上就可以看到按钮的作用了。其中一个按钮可以打开科技树！
+</desktop>
+<mobile>这个窗口包含了游戏中所有内容。
 
+窗口会以全屏方式打开。窗口标题栏中的按钮可以把它缩小成小窗口，也可以再次让它铺满屏幕。拖动小窗口的灰色部分可以移动它。
+在窗口外任意处拖动可以移动镜头，双指可以缩放。
+
+要开始编写代码了吗？请点按前往[第一个程序](docs/first_program.md)页面。
+
+看见屏幕底部边缘的按钮了吗？横握设备时它们在右上角。试试点按它们，看看有什么作用。其中一个按钮可以打开科技树！
+</mobile>
 ---
 
-[第一个程序](docs/first_program.md)      [外部编辑器](docs/external_editor.md)
+[第一个程序](docs/first_program.md)<desktop>      [外部编辑器](docs/external_editor.md)</desktop><mobile>      [游戏内键盘](docs/keyboard.md)</mobile>

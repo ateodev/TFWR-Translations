@@ -1,0 +1,15 @@
+@cloud_conflict_title = 云存档冲突
+@cloud_conflict_message = 你的存档在多台设备上发生了变化。
+@cloud_conflict_versions_total = 版本总数：{0}
+@cloud_conflict_keep = 保留版本 {0}
+@cloud_conflict_confirm_title = 保留版本 {0}？
+@cloud_conflict_confirm_body = 其他所有版本都会从云端和此设备上删除。
+@cloud_card_version = 版本 {0}
+@cloud_card_suggested = 推荐
+@cloud_card_this_device = 此设备
+@cloud_card_another_device = 其他设备
+@cloud_card_saved = 保存于 {0}
+@cloud_card_saves_heading = 存档
+@cloud_card_unlocks_heading = 解锁
+@cloud_card_more = 还有 {0} 个
+@cloud_card_unreadable = 无法读取详情

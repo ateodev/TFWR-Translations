@@ -1,0 +1,14 @@
+@load_screen_play = 开始游戏
+@load_screen_current = 当前
+@load_screen_unlocks = {0} 项解锁
+@load_screen_unlock = {0} 项解锁
+@load_screen_code_files = {0} 个代码文件
+@load_screen_code_file = {0} 个代码文件
+@load_screen_no_saves = 暂无存档
+@load_screen_no_saves_hint = 按“{0}”开始一个农场。
+@load_screen_rename_title = 重命名存档
+@load_screen_rename = 重命名
+@load_screen_rename_empty = 请输入名称。
+@load_screen_rename_taken = 已存在同名存档。
+@load_screen_delete_title = 删除 {0}？
+@load_screen_delete_body = 它的农场和代码都会被删除。此操作无法撤销。

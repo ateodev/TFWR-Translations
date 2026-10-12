@@ -1,5 +1,32 @@
+@iap_title_full_game = The Farmer Was Replaced
 @iap_get_full_game = 获取完整版
+@iap_desc_full_game = <b>全部包含</b>
+• 一次购买。无广告，无订阅。
+• 额外 35 项研究解锁
+• 十多顶新帽子
+• 新的成就等你达成
+
+<b>你的农场才刚刚起步</b>
+每种新作物都是一道新的编程谜题。种植巨型南瓜、给仙人掌排序、喂养恐龙、在树篱迷宫中寻找黄金。然后扩建成拥有无人机舰队的超级农场。
+
+<b>农场之下的整个世界</b>
+把无人机派到地下。开采矿石、挖掘古代遗迹，用炸药玩扫雷。
 @iap_caption_multiple_drones = 多台无人机
 @iap_caption_cool_puzzles = 有趣的谜题
 @iap_caption_new_mechanics = 全新机制
 @iap_caption_more_upgrades = 更多升级
+@iap_buy = 购买
+@iap_play = 开始游戏
+@iap_pending = 正在等待批准或付款。
+@iap_retry = 重试
+@iap_restore = 恢复购买
+@iap_restored = 已恢复购买。
+@iap_restore_failed = 无法连接商店。请稍后重试。
+@iap_purchase_success = 已解锁。玩得开心！
+@iap_purchase_failed = 购买未完成。没有产生任何扣费。
+@iap_unavailable = 商店目前不可用。
+@iap_offline = 无法获取价格。请检查网络连接后重试。
+@iap_retrying = 正在重新向商店查询...
+@iap_all_owned = 你已拥有全部内容。谢谢！
+@unlock_locked_full_game = 这是完整版的内容。在商店中获取完整版即可解锁。
+@unlock_locked_mining_dlc = 这是采矿 DLC 的内容。在商店中获取该 DLC 即可解锁。

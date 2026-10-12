@@ -1,6 +1,7 @@
 @button_tooltip_load = 加载或创建另一个存档。
 @button_tooltip_save = 保存游戏。
 @button_tooltip_options = 打开选项菜单。
+@button_tooltip_iap = 打开商店。
 @button_tooltip_discord = 加入 Discord 与其他玩家和开发者交流、报告 bug 或寻求帮助。
 @button_tooltip_execute = 开始或停止执行此窗口中的代码。
 @button_tooltip_step_by_step = 执行单步代码。
@@ -21,6 +22,7 @@
 @button_tooltip_close_search = 关闭搜索菜单。
 @button_tooltip_open_unlock_menu = 打开科技树。
 @warning_icon_tooltip = 你的代码触发了警告。点击图标在输出窗口中查看详情。
+@warning_icon_tooltip_mobile = 你的代码触发了警告。点按图标在输出窗口中查看详情。
 @option_tooltip_graphics = 影响各种渲染管线设置，如阴影、环境光遮蔽和泛光。
 @option_tooltip_vfx_limit = 限制每秒可播放的视觉效果数量。
 @option_tooltip_avalanche_particles = 关闭塌方产生的粒子效果。
@@ -48,6 +50,7 @@
 @option_tooltip_resolution = 更改屏幕分辨率。
 @option_tooltip_increment_number_effect = 禁用物品栏中数字变化时播放的特效。
 @option_tooltip_color_theme = 更改 UI 的颜色主题。你可以在存档目录下的“Themes”文件夹中添加自定义主题。
+@option_tooltip_color_theme_mobile = 更改 UI 的颜色主题。
 @keybind_tooltip_indent_selection = 为所有选定行添加缩进。必须是一个能插入字符的键。任何带有 ctrl 或 alt 的组合键都无效。
 @keybind_tooltip_unindent_selection = 移除所有选定行的缩进。必须是一个能插入字符的键。任何带有 ctrl 或 alt 的组合键都无效。
 @keybind_tooltip_menu = 打开或关闭主菜单。
@@ -64,3 +67,14 @@
 @keybind_tooltip_next_step = 如果执行已暂停，则执行单步操作。
 @keybind_tooltip_pause_execution = 暂停执行。
 @keybind_tooltip_hide_UI = 隐藏或显示 HUD。
+@button_tooltip_achievements = 显示你的成就。
+@button_tooltip_sign_in = 登录 Google Play Games / Game Center 以同步你的成就。
+@option_tooltip_keyboard_switches = 按下游戏内键盘按键时的反馈：按键音 = 机械键盘按键声，系统按键音 = 设备键盘自带的按键声，振动 = 短促的振动。
+@button_tooltip_open_main_menu = 打开主菜单。
+@button_tooltip_open_search = 打开搜索栏。
+@button_tooltip_open_news = 打开最新消息。
+@button_tooltip_fullscreen = 全屏显示此窗口。
+@button_tooltip_exit_fullscreen = 退出全屏。
+@option_tooltip_keyboard_layout = 游戏内键盘的按键排列。默认使用你的系统语言对应的布局。
+@option_tooltip_keyboard_type = 用哪种键盘编写代码。游戏内键盘带有 Python 所需的全部符号；系统键盘就是你在其他应用中使用的键盘。连接了实体键盘时总是优先使用实体键盘。
+@option_tooltip_exit_fullscreen_on_run = 按下运行时退出全屏代码编辑器并显示农场。断点仍会把你带到暂停的那一行。

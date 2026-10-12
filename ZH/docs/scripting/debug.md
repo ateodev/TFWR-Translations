@@ -7,12 +7,14 @@
 第一个是逐步执行程序。
 你可以使用运行按钮旁边的按钮或设置断点来进入逐步模式。
 
-点击代码左侧区域可以添加断点。
+<desktop>点击</desktop><mobile>点按</mobile>代码左侧区域可以添加断点。
 ![|x227](Breakpoints)
 当代码执行到断点所在的行时，会自动切换到逐步模式。
 
-将鼠标移到某个变量上时，会显示它当前的值。
-
+<desktop>将鼠标移到某个变量上时，会显示它当前的值。
+</desktop>
+<mobile>双击某个变量可以查看它当前的值。
+</mobile>
 `print()` 函数也非常有用。它会将传递给它的所有值直接打印到空中，形成文字状的云朵效果。
 
 示例：
@@ -90,8 +92,8 @@ print(get_pos_x(), get_pos_y())
 
 输出窗口还会记录警告和错误，所以如果运行结果有哪里与预期不符，不妨检查一下输出窗口。
 
-当程序停止运行时，输出也会被写入游戏文件夹中的 [output.txt](persistent_data_path/output.txt) 文件。
-
+<desktop>当程序停止运行时，输出也会被写入游戏文件夹中的 [output.txt](persistent_data_path/output.txt) 文件。
+</desktop>
 ---
 
 [输出](docs/output.md)      [注释](docs/scripting/comments.md)      [调试 2](docs/unlocks/debug2.md)      [彩色地块](docs/unlocks/debug_place.md)      [模拟](docs/unlocks/simulation.md)

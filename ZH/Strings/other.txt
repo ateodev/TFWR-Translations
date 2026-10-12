@@ -15,3 +15,8 @@
 
 {1}
 @latest_news = 最新消息
+@tap_here_for_more_info = -- 点按此处获取更多信息 --
+@right_click_to_open_store = -- 右键点击打开商店 --
+@tap_here_to_open_store = -- 点按此处打开商店 --
+@tooltip_button_more_info = 更多信息
+@loading_screen = 加载中

@@ -1,10 +1,11 @@
 ## 通用信息
 <columns>
 [制作人员](docs/credits.md)
-[外部编辑器](docs/external_editor.md)
+<desktop>[外部编辑器](docs/external_editor.md)</desktop>
 [第一个程序](docs/first_program.md)
 [入门指南](docs/getting_started.md)
-[加载备份](docs/backup.md)
+<mobile>[游戏内键盘](docs/keyboard.md)</mobile>
+<desktop>[加载备份](docs/backup.md)</desktop>
 <unlock=debug>[输出](docs/output.md)
 </unlock><unlock=debug>[统计数据](docs/stats.md)
 </unlock>

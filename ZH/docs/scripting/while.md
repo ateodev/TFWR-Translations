@@ -125,10 +125,10 @@ while True:
 创建无限循环通常不是个好主意，因为会导致程序卡死，但在这款游戏中，循环的每次迭代之间都有延迟，所以它只会让无人机一直翻转，直到你再次按下执行按钮手动让它停下。
 
 注意冒号后面的行是如何缩进的。这样的缩进是用来分隔代码块的。
-按 Tab 键即可添加缩进，按 Shift + Tab（或 Backspace）即可移除缩进。选中多行时，Tab 和 Shift + Tab 会对所有选中行生效。
+按 Tab 键即可添加缩进，按 Shift + Tab（或 <desktop>Backspace</desktop><mobile>删除键</mobile>）即可移除缩进。选中多行时，Tab 和 Shift + Tab 会对所有选中行生效。
 
-注意：如果通过 Steam 游玩，按 Shift + Tab 会打开 Steam 界面。你可以在游戏选项中重新绑定取消缩进快捷键，或在 Steam 设置中更改界面快捷键。
-
+<desktop>注意：如果通过 Steam 游玩，按 Shift + Tab 会打开 Steam 界面。你可以在游戏选项中重新绑定取消缩进快捷键，或在 Steam 设置中更改界面快捷键。
+</desktop>
 这里，`do_a_flip()` 和 `pet_the_piggy()` 位于缩进的 `while` 代码块中，因此会被反复调用。而 `harvest()` 在代码块之后，永远不会运行。
 {{codeexample 
 {
@@ -161,4 +161,4 @@ harvest()
 
 ---
 
-[For 循环](docs/scripting/for.md)      [If 语句](docs/scripting/if.md)      [Break 语句](docs/scripting/break.md)      [Continue 语句](docs/scripting/continue.md)      [外部编辑器](docs/external_editor.md)
+[For 循环](docs/scripting/for.md)      [If 语句](docs/scripting/if.md)      [Break 语句](docs/scripting/break.md)      [Continue 语句](docs/scripting/continue.md)<desktop>      [外部编辑器](docs/external_editor.md)</desktop>

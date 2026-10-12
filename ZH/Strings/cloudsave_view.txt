@@ -1,0 +1,10 @@
+@cloud_view_title = 云存档
+@cloud_view_signed_in = 已登录
+@cloud_view_not_signed_in = 未登录
+@cloud_view_last_synced = 上次同步：{0}
+@cloud_view_not_synced = 未同步
+@cloud_view_sync_now = 立即同步
+@cloud_view_sign_in = 登录
+@cloud_view_on_this_device = 此设备上
+@cloud_view_current = 当前
+@cloud_view_no_saves = 暂无存档

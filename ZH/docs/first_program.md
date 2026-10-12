@@ -4,18 +4,22 @@
 ## 文本编辑器
 
 只需要在代码编辑窗口中编写代码就可以完成 1 个程序的编写。每个窗口都对应 1 个代码文件，里面的内容就是你正在编写的代码。
-你可以通过单击窗口顶部的文件名来重命名文件。
+<desktop>你可以通过单击窗口顶部的文件名来重命名文件。</desktop>
+<mobile>你可以点按窗口按钮旁边的文件名来重命名文件。</mobile>
 
 程序停止运行时，就可以在窗口中编写代码，像使用其他的文本编辑器一样。
 单击窗口中的绿色运行按钮可以直接执行程序。
 ![|x50](PlayButton)
 
-单击屏幕右上角的“+”按钮可以创建新的代码文件。
+<desktop>单击屏幕右上角的“+”按钮可以创建新的代码文件。</desktop>
+<mobile>点按屏幕底部边缘的“+”按钮可以创建新的代码文件，横握设备时该按钮在右上角。</mobile>
 将一个窗口拖到另一个窗口上，两个窗口可以有序地堆放在一起。
 
 在窗口中编写代码时，会弹出一个简单的代码补全窗口。
-按 Tab 键可以插入选中的补全内容。
-使用方向键可以在补全选项之间切换。
+<desktop>按 Tab 键可以插入选中的补全内容。
+使用方向键可以在补全选项之间切换。</desktop>
+<mobile>在键盘上向上或向下滑动可以在补全选项之间切换，按 Tab 键插入选中的补全内容。
+请参阅[游戏内键盘](docs/keyboard.md)页面，了解如何通过滑动移动光标、选择文本和选取补全内容。</mobile>
 
 如果你是第一次编程，新手也可以快速上手。这些功能是逐步解锁的，相关知识不会一股脑地砸下来，让你手忙脚乱。
 这款游戏中编程的语法也与 Python 相似，而 Python 是世界上使用最广泛的编程语言之一，所以学习它并不是在浪费时间。
@@ -66,10 +70,10 @@ harvest()
 }}
 
 ## 科技树
-收集草可获得干草。干草可以用来在科技树中解锁循环功能。点击右上角的按钮可打开科技树。
+收集草可获得干草。干草可以用来在科技树中解锁循环功能。点击<desktop>右上角</desktop><mobile>屏幕底部边缘（横握设备时在右上角）</mobile>的按钮可打开科技树。
 
 ---
 
-[外部编辑器](docs/external_editor.md)      [注释](docs/scripting/comments.md)      [While 循环](docs/scripting/while.md)
+<desktop>[外部编辑器](docs/external_editor.md)      </desktop><mobile>[游戏内键盘](docs/keyboard.md)      </mobile>[注释](docs/scripting/comments.md)      [While 循环](docs/scripting/while.md)
 
 [harvest()](functions/harvest)      [do_a_flip()](functions/do_a_flip)

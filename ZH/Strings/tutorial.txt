@@ -1,0 +1,110 @@
+@tutorial_skip = 跳过
+@tutorial_skip_question = 要跳过吗？
+@tutorial_skip_part = 这一部分
+@tutorial_skip_all = 整个教程
+@tutorial_skip_cancel = 继续
+@tutorial_welcome = 哦，你好！
+欢迎来到 The Farmer Was Replaced！
+@tutorial_show_around = 要我带你四处看看吗？
+@tutorial_show_around_yes = 好，带我看看！
+@tutorial_show_around_no = 不用了，谢谢
+@tutorial_farm = 这是你的农场。只有一小块土地。
+@tutorial_look_around = 拖动和双指缩放可以在农场里四处查看。
+@tutorial_drone = 别担心会弄脏手。
+大部分工作都由这架无人机替你完成。
+你只需要告诉它该做什么。
+@tutorial_tap_window = 点按窗口，写下你的第一段代码。
+@tutorial_code_window = 这是一个代码窗口。
+每个代码窗口都是一个文件。这个文件叫 <b>main</b>。
+无人机目前只认识两个命令。
+@tutorial_type_harvest = 先从收割开始。
+输入 <b>harvest</b>
+@tutorial_autocomplete = 看到那个列表了吗？编辑器在猜你想输入什么。
+很聪明吧？
+@tutorial_accept_completion = 点按你想要的那个，或者按 <b>Tab</b> 接受高亮的候选项。
+@tutorial_run_harvest = 来看看会发生什么。
+点按 <b>运行</b> 来运行代码。
+@tutorial_error = 哎呀！出错时，错误会直接显示在它发生的地方。
+它甚至会告诉你怎么修。
+@tutorial_type_bracket = <b>()</b> 才是真正让无人机去做的指令。
+点按你的代码，然后输入 <b>(</b>
+@tutorial_brackets_pair = 括号总是成对出现，所以你一次就得到了两个。
+@tutorial_run_program = 这就是一个程序！点按 <b>运行</b> 来运行它。
+@tutorial_leave_fullscreen = 在这里面看不到农场。
+点按 <b>x</b> 返回。
+@tutorial_first_program = 你做到了！
+这是你的第一个程序。
+@tutorial_hay = 无人机收割的一切都会进到我这里。
+这是干草，你的第一种资源。
+@tutorial_get_five = 我们来收集 5 个吧。
+等草长回来后，再运行一次 <b>main</b>。
+@tutorial_hay_five = 五个干草！值得击个掌。草草的那种。
+@tutorial_play_gets_old = 每次都要按运行，很烦吧？
+让无人机自动来做吧。
+@tutorial_open_tech_tree = 不过要做到这一点，我们得先解锁一项新技术。
+点按这个按钮打开科技树。
+@tutorial_tech_tree = 哇，好多东西！
+这里是你花费资源的地方。
+@tutorial_tap_loops = 我们可以解锁<b>循环</b>。来看看。
+点按它看看它能做什么。
+@tutorial_buy_loops = 循环会重复执行代码，这样你就不用每次都按运行了。
+点按 <b>解锁</b> 来购买它。
+@tutorial_docs_intro = 每次解锁新内容时，它的页面都会在这里打开。
+这叫做<b>文档</b>。它比我更了解这个游戏。
+@tutorial_docs_example = 试试这个示例。点按小窗口里的 <b>运行</b>。
+@tutorial_docs_navigate = 点按链接可以跳转到那个页面。
+<b>返回</b> 带你回到上一页，<b>主页</b> 显示所有内容。
+看完后点按 <b>x</b> 关闭它。
+@tutorial_docs_reopen = 你随时可以用 <b>i</b> 再次打开它。
+@tutorial_loop_tap_main = 现在来让收割循环起来。
+点按 <b>main</b>。
+@tutorial_loop_caret_swipe = 首先，把光标移到行首。
+在键盘上横向滑动可以移动光标。任意按键都可以。
+@tutorial_loop_caret_tap = 首先，把光标移到行首。
+点按 <b>harvest</b> 的正前方，把光标放到那里。
+@tutorial_loop_type_while = 现在在 <b>harvest()</b> 前面输入 <b>while</b> 和一个空格。
+@tutorial_loop_type_true = 然后是 <b>True</b>，T 要大写。
+输入 <b>t</b>，再从列表中选择 <b>True</b>。
+@tutorial_loop_type_colon = 最后在末尾加一个冒号 <b>:</b>。
+@tutorial_loop_return = 现在按 <b>Return</b>，把 <b>harvest()</b> 推到单独一行。
+@tutorial_loop_tab = 按 <b>Tab</b> 给 <b>harvest()</b> 缩进。
+@tutorial_loop_spaces = 在 <b>harvest()</b> 前面输入几个空格来缩进它。
+@tutorial_loop_auto_indent = 看到 <b>harvest()</b> 自己缩进了吗？
+编辑器替你缩进了。
+@tutorial_loop_explain = <b>while True:</b> 下面所有缩进的内容都会永远重复。
+@tutorial_loop_caret_back = 哎呀，光标跑偏了。
+把它放回 <b>harvest()</b> 的正前方。
+@tutorial_loop_true_case = 小心，必须是大写 T 的 <b>True</b>。
+删掉它，然后输入 <b>t</b>，再从列表中选择 <b>True</b>。
+@tutorial_loop_off_track = 嗯，不太对。
+删回到出错的地方，或者重新开始。
+@tutorial_loop_start_over = 重新开始
+@tutorial_loop_run = 运行它，然后坐等就好。
+@tutorial_done = 哇哦，看它跑起来了！
+<b>这</b>才叫种田！
+@tutorial_done_more = 入门需要的就这些了。
+遇到困难时，点按 <b>i</b> 查看文档。
+@tutorial_done_petting = 有新东西时我会冒出来。
+哦对了，我很喜欢被摸摸头。随口一提。
+@tutorial_tip_windows_new = 大型程序分成多个文件更容易管理。
+点按 <b>+</b> 新建一个。
+@tutorial_tip_windows_manage = 拖动窗口的标题栏可以移动它。
+把它放到另一个窗口上可以把它们停靠在一起。
+拖动窗口角可以调整大小。
+<b>最小化</b> 可以把窗口收起来。<b>垃圾桶</b> 会永久删除文件。
+@tutorial_tip_caret = 给你看个很酷的东西。
+在键盘上滑动就可以移动光标。
+来，试试看。
+@tutorial_tip_caret_select = 很酷吧？还有更酷的！
+拖动时，用另一根手指按住 <b>Shift</b> 键。
+这样你可以更快地选择和修改代码。
+@tutorial_tip_autocomplete = 你也可以在键盘上向上或向下滑动来选择候选项，
+或者向左或向右滑动来关闭它们。
+@tutorial_tip_word_info = 双击代码中的任意单词可以查看它的说明。
+代码运行时，双击变量可以查看它的值。
+@tutorial_tip_step = 不确定哪里出了问题？
+点按 <b>单步</b> 来逐行运行代码。
+@tutorial_tip_search = 搜索会在所有打开的代码和文档窗口中查找文本。
+<b><noparse><</noparse></b> 和 <b><noparse>></noparse></b> 在匹配项之间跳转。
+@tutorial for new saves = 新存档中的教程
+@option_tooltip_tutorial_for_new_saves = 小猪是否带新存档的玩家四处看看。完成或拒绝教程后会自动关闭。
