@@ -124,10 +124,10 @@ Le premier ne fera jamais de looping et le second en fera pour toujours (une bou
 Normalement, créer une boucle infinie est une mauvaise idée car cela figera le programme, mais dans ce jeu, il y a des délais entre chaque itération de la boucle, donc cela fera que le drone continuera à faire des loopings jusqu'à ce que tu l'arrêtes manuellement en appuyant à nouveau sur le bouton d'exécution.
 
 Remarque comment la ligne après les deux-points est indentée. Une indentation comme celle-ci est utilisée pour séparer les blocs de code.
-Appuie simplement sur Tab pour ajouter une indentation et sur Maj + Tab (ou Retour arrière) pour la supprimer.
+Appuie simplement sur Tab pour ajouter une indentation et sur Maj + Tab (ou <desktop>Retour arrière</desktop><mobile>Supprimer</mobile>) pour la supprimer.
 
-Remarque : si tu joues via Steam, appuyer sur Maj + Tab ouvre plutôt l’interface Steam. Tu peux réassigner le raccourci de désindentation dans les options du jeu, ou le raccourci de l’interface dans les options de l’interface Steam.
-
+<desktop>Remarque : si tu joues via Steam, appuyer sur Maj + Tab ouvre plutôt l’interface Steam. Tu peux réassigner le raccourci de désindentation dans les options du jeu, ou le raccourci de l’interface dans les options de l’interface Steam.
+</desktop>
 Ici, `do_a_flip()` et `pet_the_piggy()` sont appelées en boucle parce qu’elles se trouvent dans le bloc `while` indenté. En revanche, `harvest()` ne s’exécute jamais puisqu’elle se trouve après ce bloc.
 {{codeexample 
 {
@@ -160,4 +160,4 @@ harvest()
 
 ---
 
-[Boucle for](docs/scripting/for.md)      [If](docs/scripting/if.md)      [Break](docs/scripting/break.md)      [Continue](docs/scripting/continue.md)      [Éditeur externe](docs/external_editor.md)
+[Boucle for](docs/scripting/for.md)      [If](docs/scripting/if.md)      [Break](docs/scripting/break.md)      [Continue](docs/scripting/continue.md)<desktop>      [Éditeur externe](docs/external_editor.md)</desktop>

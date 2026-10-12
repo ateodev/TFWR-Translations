@@ -43,7 +43,7 @@ clear()
 
 Si tu veux retourner à la surface, tu peux utiliser `clear()` à tout moment. Cela restaure également ta ferme.
 
-Survoler un bloc affiche son nom, sa stabilité et sa dureté.
+<desktop>Survoler</desktop><mobile>Toucher</mobile> un bloc affiche son nom, sa stabilité et sa dureté.
 
 # Foreuse
 
@@ -63,7 +63,7 @@ Bien sûr, plus tu descends, plus les blocs deviennent résistants. Cette strat�
 
 Forer vers le bas provoque l’effondrement des blocs alentour. Les quatre blocs adjacents au drone sont toujours détruits. Ensuite, l’effondrement se propage selon la stabilité du sol. Un bloc de stabilité 1, comme une prairie, supporte une différence de hauteur de 1. Autrement dit, si une prairie a un voisin vertical ou horizontal dont la coordonnée z est inférieure d’au moins 2 blocs, elle est détruite.
 
-La stabilité d’un bloc figure dans son infobulle au survol.
+La stabilité d’un bloc figure dans son infobulle<desktop> au survol</desktop>.
 
 Lorsqu’un bloc s’effondre, tous les blocs situés au-dessus de lui sont également supprimés. Tu ne reçois des ressources que pour les blocs directement forés par le drone : ceux perdus dans un effondrement sont détruits sans rien rapporter.
 

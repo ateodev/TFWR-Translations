@@ -3,18 +3,22 @@
 # Premier Programme
 ## Éditeur de texte
 Toute la programmation se fait dans des fenêtres de code. Chaque fenêtre de code correspond à un fichier texte contenant du code.
-Tu peux renommer le fichier en cliquant sur son nom en haut de la fenêtre.
+<desktop>Tu peux renommer le fichier en cliquant sur son nom en haut de la fenêtre.</desktop>
+<mobile>Tu peux renommer le fichier en touchant son nom à côté des boutons de la fenêtre.</mobile>
 
 Le code peut être modifié comme dans n'importe quel éditeur de texte tant qu'il n'est pas en cours d'exécution.
 Tu peux exécuter le programme directement en appuyant sur le bouton de lecture vert dans la fenêtre de code.
 ![](PlayButton)
 
-Tu peux créer plus de fichiers de code en utilisant le bouton "+" dans le coin supérieur droit de l'écran.
+<desktop>Tu peux créer plus de fichiers de code en utilisant le bouton "+" dans le coin supérieur droit de l'écran.</desktop>
+<mobile>Tu peux créer plus de fichiers de code en utilisant le bouton "+" en bas de l'écran, ou dans le coin supérieur droit quand tu tiens ton appareil à l'horizontale.</mobile>
 Tu peux ancrer une fenêtre à une autre en la faisant glisser dessus.
 
 Tu remarqueras qu'une fois que tu commences à taper, une simple fenêtre de complétion de code apparaîtra.
-Appuie sur Tab pour insérer la complétion de code.
-Utilise les touches fléchées pour naviguer dans les options de complétion.
+<desktop>Appuie sur Tab pour insérer la complétion de code.
+Utilise les touches fléchées pour naviguer dans les options de complétion.</desktop>
+<mobile>Balaie vers le haut ou le bas sur le clavier pour parcourir les options de complétion et appuie sur Tab pour insérer celle qui est sélectionnée.
+Consulte la page [Clavier intégré](docs/keyboard.md) pour savoir comment déplacer le curseur, sélectionner du texte et choisir des complétions en balayant.</mobile>
 
 Ne t'inquiète pas si c'est ta première fois en programmation. Le langage est débloqué étape par étape, donc tu ne seras pas submergé par toutes les choses que tu peux faire.
 La syntaxe est également similaire à celle de Python, qui est l'un des langages de programmation les plus utilisés au monde, donc l'apprendre n'est pas complètement inutile.
@@ -65,10 +69,10 @@ harvest()
 }}
 
 ## Déblocages
-La collecte d'herbe te donnera du foin. Le foin peut être utilisé pour débloquer des boucles dans le menu de déblocage. Ouvre le menu de déblocage avec le bouton dans le coin supérieur droit.
+La collecte d'herbe te donnera du foin. Le foin peut être utilisé pour débloquer des boucles dans le menu de déblocage. Ouvre le menu de déblocage avec le bouton <desktop>dans le coin supérieur droit</desktop><mobile>en bas de l'écran (dans le coin supérieur droit quand tu tiens ton appareil à l'horizontale)</mobile>.
 
 ---
 
-[Éditeur externe](docs/external_editor.md)      [Commentaires](docs/scripting/comments.md)      [Boucle while](docs/scripting/while.md)
+<desktop>[Éditeur externe](docs/external_editor.md)      </desktop><mobile>[Clavier intégré](docs/keyboard.md)      </mobile>[Commentaires](docs/scripting/comments.md)      [Boucle while](docs/scripting/while.md)
 
 [harvest()](functions/harvest)      [do_a_flip()](functions/do_a_flip)

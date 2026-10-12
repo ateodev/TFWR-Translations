@@ -31,7 +31,7 @@ lancer la simulation
 La fonction `simulate()` renvoie le temps, en secondes, qu'il a fallu pour simuler le fichier de départ donné.
 
 ### Nom du fichier
-Le premier argument de la fonction `simulate()` est le nom du fichier. C'est le nom qui est affiché en haut de la fenêtre de code. La simulation exécutera le fichier spécifié comme si tu avais cliqué sur le bouton Exécuter.
+Le premier argument de la fonction `simulate()` est le nom du fichier. C'est le nom qui est affiché en haut de la fenêtre de code. La simulation exécutera le fichier spécifié comme si tu avais <desktop>cliqué</desktop><mobile>touché</mobile> le bouton Exécuter.
 
 ### Déblocages de départ
 Toutes les fonctionnalités de programmation comme les boucles, les instructions `if`, les listes, les dictionnaires,... resteront toujours débloquées.

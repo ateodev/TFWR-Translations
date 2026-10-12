@@ -1,0 +1,10 @@
+@cloud_view_title = Sauvegarde cloud
+@cloud_view_signed_in = Connecté
+@cloud_view_not_signed_in = Non connecté
+@cloud_view_last_synced = Dernière synchronisation : {0}
+@cloud_view_not_synced = Non synchronisé
+@cloud_view_sync_now = Synchroniser
+@cloud_view_sign_in = Se connecter
+@cloud_view_on_this_device = Sur cet appareil
+@cloud_view_current = Actuelle
+@cloud_view_no_saves = Aucune sauvegarde

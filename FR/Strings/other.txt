@@ -15,3 +15,9 @@
 
 {1}
 @latest_news = Dernières nouvelles
+
+@tap_here_for_more_info = -- touche ici pour plus d'informations --
+@right_click_to_open_store = -- clic droit pour ouvrir la boutique --
+@tap_here_to_open_store = -- touche ici pour ouvrir la boutique --
+@tooltip_button_more_info = Plus d'infos
+@loading_screen = Chargement

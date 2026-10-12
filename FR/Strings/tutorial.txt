@@ -1,0 +1,110 @@
+@tutorial_skip = PASSER
+@tutorial_skip_question = Passer la suite ?
+@tutorial_skip_part = Cette partie
+@tutorial_skip_all = Tout le tutoriel
+@tutorial_skip_cancel = Continuer
+@tutorial_welcome = Oh, salut !
+Bienvenue dans The Farmer Was Replaced !
+@tutorial_show_around = Tu veux que je te fasse visiter ?
+@tutorial_show_around_yes = Oui, montre-moi !
+@tutorial_show_around_no = Non merci
+@tutorial_farm = Voici ta ferme. Une seule parcelle de terre.
+@tutorial_look_around = Fais glisser et pince pour te déplacer dans la ferme.
+@tutorial_drone = Pas besoin de te salir les mains.
+Ce drone fera presque tout le travail à ta place.
+Tu n'as qu'à lui dire quoi faire.
+@tutorial_tap_window = Touche la fenêtre pour écrire ton premier code.
+@tutorial_code_window = Ceci est une fenêtre de code.
+Chaque fenêtre de code est un fichier. Celui-ci s'appelle <b>main</b>.
+Pour l'instant, le drone ne connaît que deux commandes.
+@tutorial_type_harvest = Commençons par récolter.
+Tape <b>harvest</b>
+@tutorial_autocomplete = Tu vois cette liste ? L'éditeur devine ce que tu voulais taper.
+Malin, non ?
+@tutorial_accept_completion = Touche celle que tu veux, ou appuie sur <b>Tab</b> pour accepter la suggestion surlignée.
+@tutorial_run_harvest = Voyons ce qui se passe.
+Touche <b>Play</b> pour lancer le code.
+@tutorial_error = Oups ! Quand quelque chose cloche, une erreur apparaît juste là où ça s'est produit.
+Elle te dit même comment la corriger.
+@tutorial_type_bracket = Les <b>()</b> disent au drone de vraiment le faire.
+Touche ton code et tape <b>(</b>
+@tutorial_brackets_pair = Les parenthèses vont toujours par deux, tu obtiens donc les deux d'un coup.
+@tutorial_run_program = Ça, c'est un programme ! Touche <b>Play</b> pour le lancer.
+@tutorial_leave_fullscreen = D'ici, tu ne vois pas la ferme.
+Touche <b>x</b> pour revenir.
+@tutorial_first_program = Bravo !
+C'était ton tout premier programme.
+@tutorial_hay = Tout ce que le drone récolte finit chez moi.
+Ça, c'est du foin, ta première ressource.
+@tutorial_get_five = Allons en chercher 5.
+Relance <b>main</b> quand l'herbe aura repoussé.
+@tutorial_hay_five = Cinq foins ! Ça mérite un high five. Ou plutôt un hay five.
+@tutorial_play_gets_old = Appuyer sur Play à chaque fois, ça devient lassant, non ?
+Faisons en sorte que le drone le fasse tout seul.
+@tutorial_open_tech_tree = Mais pour ça, il faut débloquer une nouvelle technologie.
+Touche ce bouton pour ouvrir l'arbre technologique.
+@tutorial_tech_tree = Waouh, tout ce bazar !
+C'est ici que tu dépenses tes ressources.
+@tutorial_tap_loops = On peut débloquer les <b>boucles</b>. Jetons un œil.
+Touche-les pour voir ce qu'elles font.
+@tutorial_buy_loops = Les boucles répètent le code, tu n'as donc plus besoin d'appuyer sur Play à chaque fois.
+Touche <b>Débloquer</b> pour les acheter.
+@tutorial_docs_intro = Chaque fois que tu débloques quelque chose, sa page s'ouvre ici.
+C'est la <b>documentation</b>. Elle en sait plus sur ce jeu que moi.
+@tutorial_docs_example = Essaie l'exemple. Touche <b>Play</b> dans la petite fenêtre.
+@tutorial_docs_navigate = Touche un lien pour aller à cette page.
+<b>Retour</b> te ramène en arrière, <b>Accueil</b> montre tout ce qui existe.
+Ferme-la avec <b>x</b> quand tu as fini.
+@tutorial_docs_reopen = Tu peux la rouvrir à tout moment avec <b>i</b>.
+@tutorial_loop_tap_main = Maintenant, mettons cette récolte en boucle.
+Touche <b>main</b>.
+@tutorial_loop_caret_swipe = D'abord, place le curseur au début de la ligne.
+Fais glisser ton doigt de côté sur le clavier pour déplacer le curseur. N'importe quelle touche fait l'affaire.
+@tutorial_loop_caret_tap = D'abord, place le curseur au début de la ligne.
+Touche juste avant <b>harvest</b> pour y placer le curseur.
+@tutorial_loop_type_while = Maintenant, tape <b>while</b> et un espace devant <b>harvest()</b>.
+@tutorial_loop_type_true = Puis <b>True</b>, avec un T majuscule.
+Tape <b>t</b> et choisis <b>True</b> dans la liste.
+@tutorial_loop_type_colon = Et deux-points <b>:</b> à la fin.
+@tutorial_loop_return = Appuie maintenant sur <b>Return</b> pour envoyer <b>harvest()</b> sur sa propre ligne.
+@tutorial_loop_tab = Appuie sur <b>Tab</b> pour indenter <b>harvest()</b>.
+@tutorial_loop_spaces = Tape quelques espaces devant <b>harvest()</b> pour l'indenter.
+@tutorial_loop_auto_indent = Tu as vu comme <b>harvest()</b> s'est décalé tout seul ?
+L'éditeur l'a indenté pour toi.
+@tutorial_loop_explain = Tout ce qui est indenté sous <b>while True:</b> se répète à l'infini.
+@tutorial_loop_caret_back = Oups, le curseur s'est égaré.
+Remets-le juste devant <b>harvest()</b>.
+@tutorial_loop_true_case = Attention, il faut <b>True</b> avec un T majuscule.
+Efface-le, puis tape <b>t</b> et choisis <b>True</b> dans la liste.
+@tutorial_loop_off_track = Hmm, ce n'est pas tout à fait ça.
+Efface jusqu'à l'endroit où ça a dérapé, ou recommence.
+@tutorial_loop_start_over = Recommencer
+@tutorial_loop_run = Lance-le et détends-toi.
+@tutorial_done = Youpi, regarde-moi ça !
+Ça, <b>c'est</b> de l'agriculture !
+@tutorial_done_more = C'est tout ce qu'il te faut pour commencer.
+Quand tu es bloqué, touche <b>i</b> pour consulter la doc.
+@tutorial_done_petting = Je reviendrai quand il y aura du nouveau.
+Ah, et j'adore les caresses. Je dis ça, je dis rien.
+@tutorial_tip_windows_new = Les gros programmes sont plus faciles à gérer en plusieurs fichiers.
+Touche <b>+</b> pour en créer un nouveau.
+@tutorial_tip_windows_manage = Fais glisser une fenêtre par son en-tête pour la déplacer.
+Dépose-la sur une autre fenêtre pour les ancrer ensemble.
+Tire sur le coin pour la redimensionner.
+<b>Réduire</b> range une fenêtre. <b>Corbeille</b> supprime le fichier pour de bon.
+@tutorial_tip_caret = Je vais te montrer un truc cool.
+Tu peux déplacer le curseur en faisant glisser ton doigt sur le clavier.
+Vas-y, essaie.
+@tutorial_tip_caret_select = Cool, non ? Mais ça devient encore mieux !
+Pendant que tu fais glisser, maintiens la touche <b>Shift</b> avec ton autre doigt.
+Tu pourras ainsi sélectionner et modifier le code bien plus vite.
+@tutorial_tip_autocomplete = Tu peux aussi choisir les suggestions en faisant glisser ton doigt vers le haut ou le bas sur le clavier,
+ou les faire disparaître en le faisant glisser vers la gauche ou la droite.
+@tutorial_tip_word_info = Touche deux fois un mot de ton code pour le consulter.
+Pendant que ton code tourne, touche deux fois une variable pour voir sa valeur.
+@tutorial_tip_step = Tu ne sais pas où ça coince ?
+Touche <b>Pas à pas</b> pour exécuter ton code une ligne à la fois.
+@tutorial_tip_search = La recherche trouve du texte dans toutes tes fenêtres de code et de doc ouvertes.
+<b><noparse><</noparse></b> et <b><noparse>></noparse></b> passent d'un résultat à l'autre.
+@tutorial for new saves = Tutoriel : nouvelles parties
+@option_tooltip_tutorial_for_new_saves = Si le cochon fait visiter une nouvelle partie. Se désactive tout seul une fois le tutoriel terminé ou refusé.

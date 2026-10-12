@@ -7,12 +7,14 @@ Parfois, ton code ne fonctionne tout simplement pas et tu dois trouver pourquoi.
 Le premier est d'exécuter le programme pas à pas.
 Tu peux passer en mode pas à pas avec le bouton à côté du bouton Exécuter ou en définissant un point d'arrêt.
 
-Les points d'arrêt peuvent être ajoutés en cliquant sur le panneau des points d'arrêt à gauche du code.
+Les points d'arrêt peuvent être ajoutés en <desktop>cliquant sur</desktop><mobile>touchant</mobile> le panneau des points d'arrêt à gauche du code.
 ![|x227](Breakpoints)
 Lorsque l'exécution atteint la ligne où se trouve le point d'arrêt, elle passera automatiquement en mode pas à pas.
 
-Lorsque tu passes la souris sur une variable, sa valeur actuelle s'affiche.
-
+<desktop>Lorsque tu passes la souris sur une variable, sa valeur actuelle s'affiche.
+</desktop>
+<mobile>Touche deux fois une variable pour voir sa valeur actuelle.
+</mobile>
 La fonction `print()` peut aussi être très utile. Elle écrira toute valeur qui lui est passée directement dans les airs.
 
 Exemples :
@@ -90,8 +92,8 @@ Dans ce cas, tu peux utiliser la fonction `quick_print()` qui n'affiche que dans
 
 La fenêtre de sortie enregistre également les avertissements et les erreurs, donc si quelque chose ne fonctionne pas comme prévu, il peut être utile de la vérifier.
 
-Lorsque l'exécution s'arrête, la sortie est également écrite dans le fichier [output.txt](persistent_data_path/output.txt) dans le dossier du jeu.
-
+<desktop>Lorsque l'exécution s'arrête, la sortie est également écrite dans le fichier [output.txt](persistent_data_path/output.txt) dans le dossier du jeu.
+</desktop>
 ---
 
 [Sortie](docs/output.md)      [Commentaires](docs/scripting/comments.md)      [Débogage 2](docs/unlocks/debug2.md)      [Blocs colorés](docs/unlocks/debug_place.md)      [Simulation](docs/unlocks/simulation.md)

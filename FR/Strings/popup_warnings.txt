@@ -6,8 +6,11 @@
 @popup_warning_load_game = Souhaites-tu sauvegarder avant de charger ?
 @don't save = Ne pas sauvegarder
 @popup_warning_corrupted_save = Il semble y avoir eu un problème lors du chargement de {0}. Consulte la section sur les sauvegardes pour plus d'informations.
+@popup_warning_corrupted_save_mobile = Il semble y avoir eu un problème lors du chargement de {0}.
 @popup_warning_failed_read_save = Échec de la lecture des fichiers de sauvegarde de {0}. Assure-toi de fermer tous les autres programmes accédant aux fichiers et réessaie.
+@popup_warning_failed_read_save_mobile = Échec de la lecture des fichiers de sauvegarde de {0}. Réessaie.
 @popup_warning_failed_write_save = Échec de l'écriture dans les fichiers de sauvegarde de {0}. Assure-toi de fermer tous les autres programmes accédant aux fichiers et réessaie.
+@popup_warning_failed_write_save_mobile = Échec de l'écriture dans les fichiers de sauvegarde de {0}. Réessaie.
 @ok = ok
 @popup_warning_old_save = Ce fichier de sauvegarde provient d'une ancienne version du jeu. Comme l'arbre de recherche a été retravaillé, toutes tes améliorations ont été réinitialisées pour mieux correspondre au nouveau système de progression.
 @popup_warning_unofficial_language = Ceci est une traduction non officielle créée par la communauté qui n'est pas maintenue par les développeurs du jeu. Certains textes peuvent être manquants ou inexacts.

@@ -1,0 +1,14 @@
+@load_screen_play = Jouer
+@load_screen_current = Actuelle
+@load_screen_unlocks = {0} déblocages
+@load_screen_unlock = {0} déblocage
+@load_screen_code_files = {0} fichiers de code
+@load_screen_code_file = {0} fichier de code
+@load_screen_no_saves = Aucune sauvegarde
+@load_screen_no_saves_hint = Appuie sur '{0}' pour commencer une ferme.
+@load_screen_rename_title = Renommer la sauvegarde
+@load_screen_rename = Renommer
+@load_screen_rename_empty = Entre un nom.
+@load_screen_rename_taken = Une sauvegarde porte déjà ce nom.
+@load_screen_delete_title = Supprimer {0} ?
+@load_screen_delete_body = Sa ferme et son code seront supprimés. Cette action est irréversible.

@@ -62,3 +62,22 @@
 @Light = Clair
 @Lunar New Year = Nouvel An lunaire
 @Custom = Personnalisé
+
+@Keyboard switches = Retour des touches
+@blue clicky = Clic + vibration
+@brown tactile = Vibration
+@green clicky linear = Clic
+@red silent = Silencieux
+@grey os tactile = Clic système + vibration
+@black os linear = Clic système
+@Keyboard layout = Disposition du clavier
+@qwerty = QWERTY
+@qwertz = QWERTZ
+@azerty = AZERTY
+@Keyboard type = Type de clavier
+@os = Système
+@custom = Intégré
+@exit fullscreen on run = Quitter plein écran : Démarrer
+@30 fps = 30 IPS
+@60 fps = 60 IPS
+@120 fps = 120 IPS

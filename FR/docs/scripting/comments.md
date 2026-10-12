@@ -29,7 +29,7 @@ Les commentaires peuvent être ajoutés en utilisant `#`. Tout ce qui se trouve 
 
 Cela peut être utile pour ajouter des notes au code, et aussi pour désactiver temporairement des parties du code sans les supprimer.
 
-Tout commentaire sur la ligne précédant une définition de fonction fera partie des informations contextuelles qui apparaissent lorsque tu survoles le nom de la fonction avec la souris.
+Tout commentaire sur la ligne précédant une définition de fonction fera partie des informations contextuelles qui apparaissent lorsque tu <desktop>survoles le nom de la fonction avec la souris</desktop><mobile>touches deux fois le nom de la fonction</mobile>.
 
 ---
 

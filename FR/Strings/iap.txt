@@ -1,5 +1,32 @@
+@iap_title_full_game = The Farmer Was Replaced
 @iap_get_full_game = Jeu complet
+@iap_desc_full_game = <b>Tout inclus</b>
+• Achat unique. Pas de pub, pas d'abonnement.
+• 35 déblocages de recherche supplémentaires
+• Plus d'une douzaine de nouveaux chapeaux
+• De nouveaux succès à décrocher
+
+<b>Ta ferme ne fait que commencer</b>
+Chaque nouvelle culture est une nouvelle énigme de programmation. Fais pousser des citrouilles géantes, trie des cactus, nourris un dinosaure et cherche de l'or dans des labyrinthes de haies. Puis passe à la mégaferme avec une flotte de drones.
+
+<b>Tout un monde sous ta ferme</b>
+Envoie ton drone sous terre. Extrais des minerais, déterre des ruines antiques et joue au Démineur avec de la dynamite.
 @iap_caption_multiple_drones = Plusieurs drones
 @iap_caption_cool_puzzles = Super énigmes
 @iap_caption_new_mechanics = Nouveau gameplay
 @iap_caption_more_upgrades = Plus d'améliorations
+@iap_buy = Acheter
+@iap_play = Jouer
+@iap_pending = En attente d'approbation ou de paiement.
+@iap_retry = Réessayer
+@iap_restore = Restaurer les achats
+@iap_restored = Achats restaurés.
+@iap_restore_failed = Impossible de joindre la boutique. Réessaie plus tard.
+@iap_purchase_success = Débloqué. Amuse-toi bien !
+@iap_purchase_failed = L'achat n'a pas abouti. Rien n'a été facturé.
+@iap_unavailable = La boutique n'est pas disponible pour le moment.
+@iap_offline = Les prix ne sont pas disponibles. Vérifie ta connexion et réessaie.
+@iap_retrying = Nouvelle demande à la boutique...
+@iap_all_owned = Tu possèdes déjà tout. Merci !
+@unlock_locked_full_game = Ceci fait partie du jeu complet. Procure-le-toi dans la boutique pour le débloquer.
+@unlock_locked_mining_dlc = Ceci fait partie du DLC Minage. Procure-le-toi dans la boutique pour le débloquer.
