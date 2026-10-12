@@ -1,0 +1,4 @@
+@main_menu_play = Грати
+@main_menu_full_game = Повна версія
+@main_menu_free_trial = Пробна
+версія

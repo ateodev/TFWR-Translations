@@ -1,0 +1,4 @@
+@main_menu_play = Gioca
+@main_menu_full_game = Gioco completo
+@main_menu_free_trial = Prova
+gratuita

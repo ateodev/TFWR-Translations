@@ -1,0 +1,4 @@
+@main_menu_play = 플레이
+@main_menu_full_game = 정식판
+@main_menu_free_trial = 무료
+체험판

@@ -1,0 +1,4 @@
+@main_menu_play = Play
+@main_menu_full_game = Full game
+@main_menu_free_trial = Free
+trial

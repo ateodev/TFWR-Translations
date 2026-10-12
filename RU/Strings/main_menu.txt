@@ -1,0 +1,4 @@
+@main_menu_play = Играть
+@main_menu_full_game = Полная версия
+@main_menu_free_trial = Пробная
+версия
