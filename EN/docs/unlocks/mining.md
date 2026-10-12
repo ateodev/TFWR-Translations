@@ -43,7 +43,7 @@ clear()
 
 If you want to return to the surface, you can use `clear()` at any point. This also restores your farm.
 
-Hovering over a block will show its name, stability, and hardness.
+<desktop>Hovering over</desktop><mobile>Tapping</mobile> a block will show its name, stability, and hardness.
 
 # Drill
 
@@ -63,7 +63,7 @@ Of course, blocks get tougher and tougher as you move down, so while this strate
 
 Digging down will cause surrounding blocks to cave-in. The four blocks next to the drone are always destroyed. After that, the cave-in propagates according to the ground's stability. A block with stability 1, such as grassland, can withstand a height difference of 1. In other words, if grassland has a vertical or horizontal neighbor whose z-coordinate is 2 or more blocks deeper, the grassland will get destroyed.
 
-The stability of a block is included in its hover tooltip.
+The stability of a block is included in its <desktop>hover </desktop>tooltip.
 
 When a block caves in, it will also remove all blocks above it. You receive resources only from blocks the drone digs directly, so any blocks lost in a cave-in are destroyed without yielding resources.
 

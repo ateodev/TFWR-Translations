@@ -23,13 +23,13 @@ Hold Shift with one finger and swipe with another to select text starting from t
 Once something is selected you can copy it, delete it, wrap it in brackets, indent it or comment it out with the keys above.
 
 ## Code completion
-While you type, a list of completions pops up. Swipe up or down to move through the list, then press Tab to insert the highlighted entry. Return also inserts the entry if it matches what you have typed so far. Otherwise it closes the list and starts a new line. Swipe sideways to close the list without inserting anything.
+While you type, a list of completions pops up. Swipe up or down to move through the list, then press Tab or tap the entry to insert it. Return also inserts the entry if it matches what you have typed so far. Otherwise Return closes the list and starts a new line. Swipe sideways to close the list without inserting anything.
 
 ## Layouts
 The "Keyboard Layout" option allows you to switch between QWERTY, QWERTZ and AZERTY.
 
 ## Feel
-"Key Switches" in the options decides how the keyboard feels and sounds, named after mechanical keyboard switches. **Tactile** switches vibrate on every key press and tick for every cursor step while you swipe, **Clicky** switches play a key sound, **Linear** switches do not vibrate, **Silent** ones make no sound, and the **OS** variants use your system keyboard's click sound instead of the mechanical one.
+"Key Feedback" in the options decides how the keyboard feels and sounds. **Click + Vibration** plays a mechanical key sound and vibrates on every key press, with a tick for every cursor step while you swipe. **Vibration** does the same without the sound, **Click** only plays the sound, **Silent** does neither, and the **System Click** variants use your device keyboard's own click sound instead of the mechanical one.
 
 ---
 

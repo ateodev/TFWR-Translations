@@ -7,12 +7,14 @@ Sometimes your code just doesn't work and you need to find out why. There are a 
 The first is to execute the program step by step. 
 You can go into step-by-step mode with the button next to the Execute button or by setting a breakpoint.
 
-Breakpoints can be added by clicking on the breakpoint panel to the left of the code.
+Breakpoints can be added by <desktop>clicking</desktop><mobile>tapping</mobile> on the breakpoint panel to the left of the code.
 ![|x227](Breakpoints)
 When execution reaches the line where the breakpoint is, it will automatically switch to step-by-step mode.
 
-When you move your mouse over a variable, its current value is displayed.
-
+<desktop>When you move your mouse over a variable, its current value is displayed.
+</desktop>
+<mobile>Double tap a variable to see its current value.
+</mobile>
 The `print()` function can also be very useful. It will write any value passed to it directly into the air.
 
 Examples:
@@ -90,8 +92,8 @@ In this case, you can use the `quick_print()` function, which prints only to the
 
 The output window also logs warnings and errors, so it can be useful to check when something doesn't work as expected.
 
-When execution stops, the output is also written to the [output.txt](persistent_data_path/output.txt) file in the game folder.
-
+<desktop>When execution stops, the output is also written to the [output.txt](persistent_data_path/output.txt) file in the game folder.
+</desktop>
 ---
 
 [Output](docs/output.md)      [Comments](docs/scripting/comments.md)      [Debug 2](docs/unlocks/debug2.md)      [Colorful Blocks](docs/unlocks/debug_place.md)      [Simulation](docs/unlocks/simulation.md)

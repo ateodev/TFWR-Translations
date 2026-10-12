@@ -121,10 +121,10 @@ The first will never perform a flip, and the second will perform flips forever (
 Normally, creating an infinite loop is a bad idea because it will freeze the program. In this game, however, there are delays between iterations, so the drone will keep performing flips until you stop it manually by pressing the Execute button again.
 
 Notice how the line after the colon is indented. Indentation like this is used to separate blocks of code.
-Just press Tab to add indentation and Shift + Tab (or Backspace) to remove it. If several lines are selected, Tab and Shift + Tab will apply to all of them.
+Just press Tab to add indentation and Shift + Tab (or <desktop>Backspace</desktop><mobile>Delete</mobile>) to remove it. If several lines are selected, Tab and Shift + Tab will apply to all of them.
 
-Note: if you are playing the game through steam, pressing Shift + Tab will open the steam overlay instead. You can rebind the unindent shortcut in the game options, or the steam overlay shortcut in the steam overlay options.
-
+<desktop>Note: if you are playing the game through steam, pressing Shift + Tab will open the steam overlay instead. You can rebind the unindent shortcut in the game options, or the steam overlay shortcut in the steam overlay options.
+</desktop>
 Here, `do_a_flip()` and `pet_the_piggy()` are called repeatedly because they are inside the indented `while` block. However, `harvest()` never runs because it comes after that block.
 {{codeexample 
 {
@@ -157,4 +157,4 @@ harvest()
 
 ---
 
-[For Loop](docs/scripting/for.md)      [If](docs/scripting/if.md)      [Break](docs/scripting/break.md)      [Continue](docs/scripting/continue.md)      [External Editor](docs/external_editor.md)
+[For Loop](docs/scripting/for.md)      [If](docs/scripting/if.md)      [Break](docs/scripting/break.md)      [Continue](docs/scripting/continue.md)<desktop>      [External Editor](docs/external_editor.md)</desktop>

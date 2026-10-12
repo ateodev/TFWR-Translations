@@ -31,7 +31,7 @@ run the simulation
 The `simulate()` function returns the time, in seconds, that it took to simulate the given start file.
 
 ### File Name
-The first argument of the `simulate()` function is the filename. This is the name displayed at the top of the code window. The simulation will run the specified file as if you had clicked its Execute button.
+The first argument of the `simulate()` function is the filename. This is the name displayed at the top of the code window. The simulation will run the specified file as if you had <desktop>clicked</desktop><mobile>tapped</mobile> its Execute button.
 
 ### Starting Unlocks
 All programming features, such as loops, `if` statements, lists, and dictionaries, always remain unlocked.

@@ -1,6 +1,7 @@
 @button_tooltip_load = Load or create a different save.
 @button_tooltip_save = Saves the game.
 @button_tooltip_options = Opens the options menu.
+@button_tooltip_iap = Opens the store.
 @button_tooltip_discord = Join the discord to chat with other players and the developer, report bugs or get help.
 @button_tooltip_execute = Starts or stops execution of the code in this window.
 @button_tooltip_step_by_step = Executes one step of the code.
@@ -21,6 +22,7 @@
 @button_tooltip_close_search = Close the search menu.
 @button_tooltip_open_unlock_menu = Open the unlock tree.
 @warning_icon_tooltip = Your code triggered a warning. Click the icon to view details in the Output window.
+@warning_icon_tooltip_mobile = Your code triggered a warning. Tap the icon to view details in the Output window.
 @option_tooltip_graphics = Affects various render pipeline settings like shadows, ambient occlusion and bloom.
 @option_tooltip_vfx_limit = Limits the number of visual effects that can be played per second.
 @option_tooltip_avalanche_particles = Disable the particles created by cave-ins.
@@ -48,6 +50,7 @@
 @option_tooltip_resolution = Change the screen resolution.
 @option_tooltip_increment_number_effect = Disable the effects in the inventory that play when the numbers change.
 @option_tooltip_color_theme = Change the color theme of the UI. Custom themes can be added in the "Themes" folder in the save directory.
+@option_tooltip_color_theme_mobile = Change the color theme of the UI.
 @keybind_tooltip_indent_selection = Add indentation to all selected lines. This needs to be a key that inserts a character for it to work. So any combinations with ctrl or alt won't work.
 @keybind_tooltip_unindent_selection = Remove indentation from all selected lines. This needs to be a key that inserts a character for it to work. So any combinations with ctrl or alt won't work.
 @keybind_tooltip_menu = Open or close the main menu.
@@ -64,8 +67,6 @@
 @keybind_tooltip_next_step = Perform one step if the execution is paused.
 @keybind_tooltip_pause_execution = Pause the execution.
 @keybind_tooltip_hide_UI = Hide or unhide the HUD.
-
-@button_tooltip_iap = Opens the store.
 @button_tooltip_achievements = Show your achievements.
 @button_tooltip_sign_in = Sign in to Google Play Games / Game Center to sync your achievements.
 @option_tooltip_keyboard_switches = Feedback when a key of the in-game keyboard is pressed: Click = mechanical key sound, System Click = the device keyboard's click sound, Vibration = a short vibration tick.
@@ -77,4 +78,3 @@
 @option_tooltip_keyboard_layout = Key arrangement of the in-game keyboard. Defaults to the layout used in your system language.
 @option_tooltip_keyboard_type = Which keyboard to type code with. The in-game keyboard has the symbols Python needs; the system keyboard is the one you use in other apps. A connected hardware keyboard is always used instead.
 @option_tooltip_exit_fullscreen_on_run = Pressing Run leaves the fullscreen code editor and shows the farm. Breakpoints still take you to the paused line.
-

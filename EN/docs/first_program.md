@@ -3,19 +3,22 @@
 # First Program
 ## Text Editor
 All programming is done in code windows. Each code window corresponds to a text file containing code. 
-You can rename the file by clicking on its name at the top of the window.
+<desktop>You can rename the file by clicking on its name at the top of the window.</desktop>
+<mobile>You can rename the file by tapping on its name next to the window's buttons.</mobile>
 
 You can edit the code as you would in any text editor, as long as it isn't running.
 You can execute the program directly by pressing the green play button in the code window.
 ![|x50](PlayButton)
 
-You can create more code files using the "+" button in the upper right corner of the screen.
+<desktop>You can create more code files using the "+" button in the upper right corner of the screen.</desktop>
+<mobile>You can create more code files using the "+" button at the bottom edge of the screen, or in the top right corner when you hold your device sideways.</mobile>
 You can dock a window to another window by dragging it onto it.
 
 You will notice that once you start typing, a simple code completion window will pop up.
-Press Tab to insert the selected completion.
-Use the arrow keys to navigate through the completion options.
-See the [In-Game Keyboard](docs/keyboard.md) page for how to move the cursor, select text and pick completions by swiping.
+<desktop>Press Tab to insert the selected completion.
+Use the arrow keys to navigate through the completion options.</desktop>
+<mobile>Swipe up or down on the keyboard to move through the completion options and press Tab to insert the selected one.
+See the [In-Game Keyboard](docs/keyboard.md) page for how to move the cursor, select text and pick completions by swiping.</mobile>
 
 Don't worry if this is your first time programming. The language is unlocked step by step, so you won't be overwhelmed by all the things you can do. 
 The syntax is also similar to Python, one of the most widely used programming languages in the world, so what you learn here will be useful elsewhere.
@@ -66,10 +69,10 @@ harvest()
 }}
 
 ## Unlocks
-Collecting grass will give you hay. Hay can be used to unlock loops in the tech tree. Open the tech tree with the button in the top right corner of the screen.
+Collecting grass will give you hay. Hay can be used to unlock loops in the tech tree. Open the tech tree with the button <desktop>in the top right corner of the screen</desktop><mobile>at the bottom edge of the screen (top right corner when you hold your device sideways)</mobile>.
 
 ---
 
-[External Editor](docs/external_editor.md)      [In-Game Keyboard](docs/keyboard.md)      [Comments](docs/scripting/comments.md)      [While Loop](docs/scripting/while.md)
+<desktop>[External Editor](docs/external_editor.md)      </desktop><mobile>[In-Game Keyboard](docs/keyboard.md)      </mobile>[Comments](docs/scripting/comments.md)      [While Loop](docs/scripting/while.md)
 
 [harvest()](functions/harvest)      [do_a_flip()](functions/do_a_flip)

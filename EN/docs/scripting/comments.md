@@ -29,7 +29,7 @@ Comments can be added using `#`. Anything on the same line after the `#` is a co
 
 This can be useful for adding notes to the code or temporarily disabling parts of it without deleting them.
 
-A comment on the line before a function definition becomes part of the information that appears when you hover over the function name.
+A comment on the line before a function definition becomes part of the information that appears when you <desktop>hover over</desktop><mobile>double tap</mobile> the function name.
 
 ---
 
