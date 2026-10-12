@@ -1,5 +1,20 @@
 @iap_title_full_game = The Farmer Was Replaced
-@iap_desc_full_game = Unlock the full game, including the mining expansion below the farm.
+@iap_get_full_game = Get the full game
+@iap_desc_full_game = <b>Everything included</b>
+• One-time purchase. No ads, no subscription.
+• 35 more research unlocks
+• Over a dozen new hats
+• New achievements to chase
+
+<b>Your farm is just getting started</b>
+Every new crop is a new programming puzzle. Grow giant pumpkins, sort cacti, feed a dinosaur and hunt for gold in hedge mazes. Then scale up to a megafarm with a fleet of drones.
+
+<b>A whole world below your farm</b>
+Take your drone underground. Mine ores, dig up ancient ruins and play Minesweeper with dynamite.
+@iap_caption_multiple_drones = Multiple drones
+@iap_caption_cool_puzzles = Cool puzzles
+@iap_caption_new_mechanics = New mechanics
+@iap_caption_more_upgrades = More upgrades
 @iap_buy = Buy
 @iap_play = Play
 @iap_pending = Waiting for approval or payment.
