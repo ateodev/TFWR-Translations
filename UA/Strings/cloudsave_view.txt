@@ -1,0 +1,10 @@
+@cloud_view_title = Хмарне збереження
+@cloud_view_signed_in = Вхід виконано
+@cloud_view_not_signed_in = Вхід не виконано
+@cloud_view_last_synced = Остання синхронізація: {0}
+@cloud_view_not_synced = Не синхронізовано
+@cloud_view_sync_now = Синхронізувати
+@cloud_view_sign_in = Увійти
+@cloud_view_on_this_device = На цьому пристрої
+@cloud_view_current = Поточне
+@cloud_view_no_saves = Збережень поки немає

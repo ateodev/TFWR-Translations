@@ -1,6 +1,7 @@
 @button_tooltip_load = Завантажити або створити інше збереження.
 @button_tooltip_save = Зберегти гру.
 @button_tooltip_options = Відкрити меню параметрів.
+@button_tooltip_iap = Відкрити магазин.
 @button_tooltip_discord = Приєднуйтесь до Discord, щоб спілкуватись з іншими гравцями та розробником, повідомляти про помилки чи отримати допомогу.
 @button_tooltip_execute = Запустити/зупинити виконання коду в даному вікні.
 @button_tooltip_step_by_step = Виконати один крок коду.
@@ -10,6 +11,8 @@
 @button_tooltip_delete = Видалити файл назавжди.
 @button_tooltip_close_docs = Закрити вікно.
 @button_tooltip_table_of_contents = Зміст
+@button_tooltip_docs_home = Перейти на головну сторінку документації.
+@button_tooltip_docs_back = Повернутися на попередню сторінку документації.
 @button_tooltip_new_game = Створити нове збереження.
 @button_tooltip_open_folder = Відкрити теку збережень у файловому провіднику.
 @button_tooltip_toggle_search_docs = Включати вікна документації до пошуку.
@@ -19,8 +22,10 @@
 @button_tooltip_close_search = Закрити меню пошуку.
 @button_tooltip_open_unlock_menu = Відкрити дерево розблокувань.
 @warning_icon_tooltip = Ваш код спричинив попередження. Натисніть на значок, щоб переглянути деталі у вікні виводу.
+@warning_icon_tooltip_mobile = Ваш код спричинив попередження. Натисніть на значок, щоб переглянути деталі у вікні виводу.
 @option_tooltip_graphics = Впливає на різні параметри рендер-пайплайну, такі як тіні, навколишнє затінення і блум.
 @option_tooltip_vfx_limit = Обмежує кількість візуальних ефектів, які можуть відтворюватись за секунду.
+@option_tooltip_avalanche_particles = Вимикає частинки, що утворюються під час обвалів.
 @option_tooltip_volume = Налаштувати гучність усіх аудіо.
 @option_tooltip_music_volume = Налаштувати гучність музики.
 @option_tooltip_drone_volume = Налаштувати гучність дзижчання дрона.
@@ -45,6 +50,7 @@
 @option_tooltip_resolution = Змінити роздільну здатність екрану.
 @option_tooltip_increment_number_effect = Вимкнути ефекти в інвентарі, які відтворюються при зміні чисел.
 @option_tooltip_color_theme = Змінює кольорову тему інтерфейсу. Користувацькі теми можна додати до папки "Themes" у папці збережень.
+@option_tooltip_color_theme_mobile = Змінює кольорову тему інтерфейсу.
 @keybind_tooltip_indent_selection = Додати відступ до всіх вибраних рядків. Працює лише з клавішами, які вставляють символ; комбінації Ctrl/Alt не підтримуються.
 @keybind_tooltip_unindent_selection = Видалити відступи з усіх вибраних рядків. Працює лише з клавішами, які вставляють символ; комбінації Ctrl/Alt не підтримуються.
 @keybind_tooltip_menu = Відкрити/закрити головне меню.
@@ -61,3 +67,14 @@
 @keybind_tooltip_next_step = Виконати один крок, якщо виконання призупинено.
 @keybind_tooltip_pause_execution = Призупинити виконання.
 @keybind_tooltip_hide_UI = Приховати/показати HUD.
+@button_tooltip_achievements = Показати ваші досягнення.
+@button_tooltip_sign_in = Увійдіть у Google Play Games / Game Center, щоб синхронізувати досягнення.
+@option_tooltip_keyboard_switches = Відгук при натисканні клавіші ігрової клавіатури: Клік = звук механічної клавіші, Системний клік = звук натискання клавіатури пристрою, Вібрація = коротка вібрація.
+@button_tooltip_open_main_menu = Відкрити головне меню.
+@button_tooltip_open_search = Відкрити рядок пошуку.
+@button_tooltip_open_news = Відкрити останні новини.
+@button_tooltip_fullscreen = Розгорнути це вікно на весь екран.
+@button_tooltip_exit_fullscreen = Вийти з повноекранного режиму.
+@option_tooltip_keyboard_layout = Розташування клавіш ігрової клавіатури. За замовчуванням — розкладка мови вашої системи.
+@option_tooltip_keyboard_type = Якою клавіатурою писати код. Ігрова клавіатура має всі символи, потрібні для Python; системна — та, якою ви користуєтеся в інших застосунках. Підключена фізична клавіатура завжди використовується замість них.
+@option_tooltip_exit_fullscreen_on_run = При натисканні «Почати» повноекранний редактор коду закривається і показується ферма. Точки зупинки все одно переносять вас до призупиненого рядка.

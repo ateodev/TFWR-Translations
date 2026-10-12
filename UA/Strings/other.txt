@@ -13,6 +13,17 @@
 @table_of_contents_section_items = Ресурси
 @table_of_contents_section_entities = Об'єкти
 @table_of_contents_section_grounds = Ділянки
+@tap_here_for_more_info = -- натисніть тут, щоб дізнатися більше --
+@right_click_to_open_store = -- клацніть ПКМ, щоб відкрити магазин --
+@tap_here_to_open_store = -- натисніть тут, щоб відкрити магазин --
+@tooltip_button_more_info = Докладніше
+@loading_screen = Завантаження
 @new_hat_unlocked = ## Новий капелюх розблоковано
 `change_hat(`{0}`)`
 @right_click_for_more_info = -- клацніть ПКМ для додаткової інформації --
+@missing_unlock_page = Вам потрібно розблокувати {0} у [дереві технологій](tech_tree), перш ніж ви зможете побачити цю сторінку.
+
+---
+
+{1}
+@latest_news = Останні новини

@@ -1,0 +1,15 @@
+@cloud_conflict_title = Конфлікт хмарних збережень
+@cloud_conflict_message = Ваші збереження змінилися більш ніж на одному пристрої.
+@cloud_conflict_versions_total = Усього версій: {0}
+@cloud_conflict_keep = Залишити версію {0}
+@cloud_conflict_confirm_title = Залишити версію {0}?
+@cloud_conflict_confirm_body = Усі інші версії буде видалено з хмари та з цього пристрою.
+@cloud_card_version = Версія {0}
+@cloud_card_suggested = Рекомендовано
+@cloud_card_this_device = Цей пристрій
+@cloud_card_another_device = Інший пристрій
+@cloud_card_saved = Збережено {0}
+@cloud_card_saves_heading = Збереження
+@cloud_card_unlocks_heading = Розблокування
+@cloud_card_more = І ще {0}
+@cloud_card_unreadable = Не вдалося прочитати деталі

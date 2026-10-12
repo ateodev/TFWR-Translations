@@ -18,3 +18,8 @@
 @hat_descr_gold_trophy_hat = Тільки для найкращого фермера.
 @hat_descr_silver_trophy_hat = Для другого найкращого фермера.
 @hat_descr_wood_trophy_hat = Для третього найкращого фермера.
+@hat_descr_explosive_drill = Кожне копання витрачає один динаміт і спричиняє звичайний вибух. Блоки, зруйновані безпосередньо вибухом, дають предмети так, ніби їх викопали. Вибуховий бур може надіти лише один дрон.
+@hat_descr_golden_cactus_hat = Золота версія капелюха-кактуса.
+@hat_descr_golden_pumpkin_hat = Золота версія капелюха-гарбуза.
+@hat_descr_golden_sunflower_hat = Золота версія капелюха-соняшника.
+@hat_descr_the_farmers_remains = Що сталося?

@@ -1,0 +1,14 @@
+@load_screen_play = Грати
+@load_screen_current = Поточне
+@load_screen_unlocks = Розблокувань: {0}
+@load_screen_unlock = Розблокувань: {0}
+@load_screen_code_files = Файлів коду: {0}
+@load_screen_code_file = Файлів коду: {0}
+@load_screen_no_saves = Збережень поки немає
+@load_screen_no_saves_hint = Натисніть «{0}», щоб почати ферму.
+@load_screen_rename_title = Перейменувати збереження
+@load_screen_rename = Перейменувати
+@load_screen_rename_empty = Введіть назву.
+@load_screen_rename_taken = Збереження з такою назвою вже існує.
+@load_screen_delete_title = Видалити {0}?
+@load_screen_delete_body = Його ферму та код буде видалено. Це неможливо скасувати.

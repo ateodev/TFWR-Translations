@@ -1,7 +1,7 @@
 @save = Зберегти
 @saved = Збережено
 @play = Почати
-@load = Загрузити
+@load = Завантажити
 @options = Налаштування
 @join_discord = Discord
 @quit = Вийти
@@ -10,8 +10,8 @@
 @back = Назад
 @unlocks = Розблокування
 @farm = Ферма
-@unlocked = Розблаковано
+@unlocked = Розблоковано
 @upgrade = Покращення
 @max_level = Мак. рівень
-@unlock = Розблоковути
+@unlock = Розблокувати
 @locked = Заблоковано
