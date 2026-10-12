@@ -1,0 +1,5 @@
+@iap_get_full_game = Vollversion holen
+@iap_caption_multiple_drones = Mehrere Drohnen
+@iap_caption_cool_puzzles = Coole Rätsel
+@iap_caption_new_mechanics = Neue Mechaniken
+@iap_caption_more_upgrades = Mehr Upgrades

@@ -1,0 +1,5 @@
+@iap_get_full_game = 获取完整版
+@iap_caption_multiple_drones = 多台无人机
+@iap_caption_cool_puzzles = 有趣的谜题
+@iap_caption_new_mechanics = 全新机制
+@iap_caption_more_upgrades = 更多升级

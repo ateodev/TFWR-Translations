@@ -1,0 +1,4 @@
+@main_menu_play = プレイ
+@main_menu_full_game = 製品版
+@main_menu_free_trial = 無料
+体験版

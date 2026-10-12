@@ -1,0 +1,5 @@
+@iap_get_full_game = 完全版を入手
+@iap_caption_multiple_drones = 複数のドローン
+@iap_caption_cool_puzzles = 楽しいパズル
+@iap_caption_new_mechanics = 新しい仕組み
+@iap_caption_more_upgrades = さらなる強化

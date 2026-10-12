@@ -1,0 +1,9 @@
+@cloud_notice_ok = OK
+@cloud_notice_account_changed_headline = Your account changed
+@cloud_notice_account_saves = You are now signed in to {0} with a different account. The game now shows that account's saves.
+@cloud_notice_account_no_saves = You are now signed in to {0} with a different account. That account has no saves yet, so a new game starts.
+@cloud_notice_account_signed_in = You are now signed in to {0}. The game now shows the saves of this account. The saves you made while not signed in stay on this device.
+@cloud_notice_account_unsent = The saves of the account you used before are still on this device but not yet in its cloud save. Please sign in to {0} with that account on this device again to save them to the cloud.
+@cloud_sign_in_failed_google_play_games = Could not sign in to Google Play Games. Please try again later.
+@cloud_sign_in_failed_game_center = Could not sign in to Game Center. Please turn it on in the Settings app and try again.
+@cloud_notice_save_failed = Could not save {0} on this device. Please make sure the device has free space, then try again.

@@ -1,0 +1,5 @@
+@iap_get_full_game = Jogo completo
+@iap_caption_multiple_drones = Vários drones
+@iap_caption_cool_puzzles = Enigmas incríveis
+@iap_caption_new_mechanics = Novas mecânicas
+@iap_caption_more_upgrades = Mais melhorias

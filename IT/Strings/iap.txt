@@ -1,0 +1,5 @@
+@iap_get_full_game = Gioco completo
+@iap_caption_multiple_drones = Più droni
+@iap_caption_cool_puzzles = Enigmi fantastici
+@iap_caption_new_mechanics = Nuove meccaniche
+@iap_caption_more_upgrades = Più potenziamenti

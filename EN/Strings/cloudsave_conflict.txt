@@ -1,0 +1,15 @@
+@cloud_conflict_title = Cloud save conflict
+@cloud_conflict_message = Your saves changed on more than one device.
+@cloud_conflict_versions_total = Versions in total: {0}
+@cloud_conflict_keep = Keep version {0}
+@cloud_conflict_confirm_title = Keep version {0}?
+@cloud_conflict_confirm_body = Every other version is deleted from the cloud and this device.
+@cloud_card_version = Version {0}
+@cloud_card_suggested = Suggested
+@cloud_card_this_device = This device
+@cloud_card_another_device = Another device
+@cloud_card_saved = Saved {0}
+@cloud_card_saves_heading = Saves
+@cloud_card_unlocks_heading = Unlocks
+@cloud_card_more = And {0} more
+@cloud_card_unreadable = Details could not be read
