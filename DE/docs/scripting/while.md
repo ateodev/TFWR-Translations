@@ -121,10 +121,10 @@ Die erste Schleife führt nie einen Salto aus, während die zweite endlos Saltos
 Normalerweise ist eine Endlosschleife keine gute Idee, da sie das Programm zum Stillstand bringt. In diesem Spiel gibt es jedoch Verzögerungen zwischen den Schleifendurchläufen. Die Drohne macht daher so lange Saltos, bis du sie manuell stoppst, indem du erneut auf den Ausführen-Button drückst.
 
 Beachte, wie die Zeile nach dem Doppelpunkt eingerückt ist. Solche Einrückungen werden verwendet, um Codeblöcke zu trennen.
-Drücke einfach die Tab-Taste, um eine Einrückung hinzuzufügen, und Umschalt + Tab (oder Rücktaste), um sie zu entfernen. Wenn mehrere Zeilen ausgewählt sind, werden Tab und Umschalt + Tab auf alle angewendet.
+Drücke einfach die Tab-Taste, um eine Einrückung hinzuzufügen, und Umschalt + Tab (oder <desktop>Rücktaste</desktop><mobile>Löschen</mobile>), um sie zu entfernen. Wenn mehrere Zeilen ausgewählt sind, werden Tab und Umschalt + Tab auf alle angewendet.
 
-Hinweis: Wenn du das Spiel über Steam spielst, öffnet Umschalt + Tab stattdessen das Steam-Overlay. Du kannst die Tastenkombination zum Entfernen der Einrückung in den Spieloptionen oder die Tastenkombination für das Steam-Overlay in dessen Optionen ändern.
-
+<desktop>Hinweis: Wenn du das Spiel über Steam spielst, öffnet Umschalt + Tab stattdessen das Steam-Overlay. Du kannst die Tastenkombination zum Entfernen der Einrückung in den Spieloptionen oder die Tastenkombination für das Steam-Overlay in dessen Optionen ändern.
+</desktop>
 Hier werden `do_a_flip()` und `pet_the_piggy()` wiederholt aufgerufen, weil sie sich im eingerückten `while`-Block befinden. `harvest()` wird jedoch nie ausgeführt, da es nach diesem Block steht.
 {{codeexample 
 {
@@ -157,4 +157,4 @@ harvest()
 
 ---
 
-[For-Schleife](docs/scripting/for.md)      [If](docs/scripting/if.md)      [Break](docs/scripting/break.md)      [Continue](docs/scripting/continue.md)      [Externer Editor](docs/external_editor.md)
+[For-Schleife](docs/scripting/for.md)      [If](docs/scripting/if.md)      [Break](docs/scripting/break.md)      [Continue](docs/scripting/continue.md)<desktop>      [Externer Editor](docs/external_editor.md)</desktop>

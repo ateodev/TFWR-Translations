@@ -1,0 +1,14 @@
+@load_screen_play = Spielen
+@load_screen_current = Aktuell
+@load_screen_unlocks = {0} Freischaltungen
+@load_screen_unlock = {0} Freischaltung
+@load_screen_code_files = {0} Codedateien
+@load_screen_code_file = {0} Codedatei
+@load_screen_no_saves = Noch keine Spielstände
+@load_screen_no_saves_hint = Drücke auf '{0}', um eine Farm zu starten.
+@load_screen_rename_title = Spielstand umbenennen
+@load_screen_rename = Umbenennen
+@load_screen_rename_empty = Bitte gib einen Namen ein.
+@load_screen_rename_taken = Ein Spielstand mit diesem Namen existiert bereits.
+@load_screen_delete_title = {0} löschen?
+@load_screen_delete_body = Die Farm und der Code werden gelöscht. Das kann nicht rückgängig gemacht werden.

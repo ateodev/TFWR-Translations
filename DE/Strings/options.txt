@@ -62,3 +62,22 @@
 @Light = Hell
 @Lunar New Year = Mondneujahr
 @Custom = Benutzerdefiniert
+
+@Keyboard switches = Tastenfeedback
+@blue clicky = Klick + Vibration
+@brown tactile = Vibration
+@green clicky linear = Klick
+@red silent = Lautlos
+@grey os tactile = Systemklick + Vibration
+@black os linear = Systemklick
+@Keyboard layout = Tastaturlayout
+@qwerty = QWERTY
+@qwertz = QWERTZ
+@azerty = AZERTY
+@Keyboard type = Tastaturtyp
+@os = System
+@custom = Im Spiel
+@exit fullscreen on run = Vollbild beim Start verlassen
+@30 fps = 30 FPS
+@60 fps = 60 FPS
+@120 fps = 120 FPS

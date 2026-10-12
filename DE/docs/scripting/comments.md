@@ -29,7 +29,7 @@ Kommentare können mit `#` hinzugefügt werden. Alles in der gleichen Zeile nach
 
 Dies kann nützlich sein, um Notizen zum Code hinzuzufügen und auch um Teile des Codes vorübergehend zu deaktivieren, ohne sie zu löschen.
 
-Ein Kommentar in der Zeile vor einer Funktionsdefinition wird Teil der Informationen, die beim Bewegen des Mauszeigers über den Funktionsnamen angezeigt werden.
+Ein Kommentar in der Zeile vor einer Funktionsdefinition wird Teil der Informationen, die angezeigt werden, wenn du <desktop>mit der Maus über den Funktionsnamen fährst</desktop><mobile>doppelt auf den Funktionsnamen tippst</mobile>.
 
 ---
 

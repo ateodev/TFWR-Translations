@@ -7,12 +7,14 @@ Manchmal funktioniert dein Code einfach nicht und du musst herausfinden, warum. 
 Das erste ist, das Programm Schritt für Schritt auszuführen.
 Du kannst mit dem Button neben dem Ausführen-Button oder durch Setzen eines Haltepunkts in den Schritt-für-Schritt-Modus wechseln.
 
-Haltepunkte können hinzugefügt werden, indem du auf das Haltepunkt-Panel links vom Code klickst.
+Haltepunkte können hinzugefügt werden, indem du auf das Haltepunkt-Panel links vom Code <desktop>klickst</desktop><mobile>tippst</mobile>.
 ![|x227](Breakpoints)
 Wenn die Ausführung die Zeile erreicht, in der sich der Haltepunkt befindet, wechselt sie automatisch in den Schritt-für-Schritt-Modus.
 
-Wenn du mit der Maus über eine Variable fährst, wird ihr aktueller Wert angezeigt.
-
+<desktop>Wenn du mit der Maus über eine Variable fährst, wird ihr aktueller Wert angezeigt.
+</desktop>
+<mobile>Tippe doppelt auf eine Variable, um ihren aktuellen Wert zu sehen.
+</mobile>
 Die `print()`-Funktion kann auch sehr nützlich sein. Sie schreibt jeden an sie übergebenen Wert direkt in die Luft.
 
 Beispiele:
@@ -90,8 +92,8 @@ In diesem Fall kannst du die `quick_print()`-Funktion verwenden, die nur in das 
 
 Das Ausgabefenster protokolliert auch Warnungen und Fehler. Wenn also etwas nicht wie erwartet funktioniert, kann es nützlich sein, das zu überprüfen.
 
-Wenn die Ausführung endet, wird die Ausgabe außerdem in die Datei [output.txt](persistent_data_path/output.txt) im Spielordner geschrieben.
-
+<desktop>Wenn die Ausführung endet, wird die Ausgabe außerdem in die Datei [output.txt](persistent_data_path/output.txt) im Spielordner geschrieben.
+</desktop>
 ---
 
 [Ausgabe](docs/output.md)      [Kommentare](docs/scripting/comments.md)      [Debug 2](docs/unlocks/debug2.md)      [Farbige Blöcke](docs/unlocks/debug_place.md)      [Simulation](docs/unlocks/simulation.md)

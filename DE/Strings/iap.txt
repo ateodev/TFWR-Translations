@@ -1,5 +1,32 @@
+@iap_title_full_game = The Farmer Was Replaced
 @iap_get_full_game = Vollversion holen
+@iap_desc_full_game = <b>Alles inklusive</b>
+• Einmaliger Kauf. Keine Werbung, kein Abo.
+• 35 weitere Forschungen zum Freischalten
+• Über ein Dutzend neue Hüte
+• Neue Erfolge zum Jagen
+
+<b>Deine Farm fängt gerade erst an</b>
+Jede neue Pflanze ist ein neues Programmierrätsel. Züchte Riesenkürbisse, sortiere Kakteen, füttere einen Dinosaurier und suche in Heckenlabyrinthen nach Gold. Dann vergrößere deine Farm zur Megafarm mit einer ganzen Drohnenflotte.
+
+<b>Eine ganze Welt unter deiner Farm</b>
+Schick deine Drohne unter die Erde. Baue Erze ab, grabe antike Ruinen aus und spiele Minesweeper mit Dynamit.
 @iap_caption_multiple_drones = Mehrere Drohnen
 @iap_caption_cool_puzzles = Coole Rätsel
 @iap_caption_new_mechanics = Neue Mechaniken
 @iap_caption_more_upgrades = Mehr Upgrades
+@iap_buy = Kaufen
+@iap_play = Spielen
+@iap_pending = Warten auf Genehmigung oder Zahlung.
+@iap_retry = Erneut versuchen
+@iap_restore = Käufe wiederherstellen
+@iap_restored = Käufe wiederhergestellt.
+@iap_restore_failed = Der Store konnte nicht erreicht werden. Versuche es später noch einmal.
+@iap_purchase_success = Freigeschaltet. Viel Spaß!
+@iap_purchase_failed = Der Kauf wurde nicht abgeschlossen. Es wurde nichts berechnet.
+@iap_unavailable = Der Store ist gerade nicht verfügbar.
+@iap_offline = Preise sind nicht verfügbar. Überprüfe deine Verbindung und versuche es erneut.
+@iap_retrying = Store wird erneut angefragt...
+@iap_all_owned = Du besitzt bereits alles. Danke!
+@unlock_locked_full_game = Das ist Teil der Vollversion. Hol sie dir im Store, um es freizuschalten.
+@unlock_locked_mining_dlc = Das ist Teil des Bergbau-DLC. Hol ihn dir im Store, um es freizuschalten.

@@ -31,7 +31,7 @@ Führe die Simulation aus
 Die `simulate()`-Funktion gibt die Zeit in Sekunden zurück, die benötigt wurde, um die angegebene Startdatei zu simulieren.
 
 ### Dateiname
-Das erste Argument der `simulate()`-Funktion ist der Dateiname. Dies ist der Name, der oben im Codefenster angezeigt wird. Die Simulation führt die angegebene Datei so aus, als ob du den Ausführen-Button darauf geklickt hättest.
+Das erste Argument der `simulate()`-Funktion ist der Dateiname. Dies ist der Name, der oben im Codefenster angezeigt wird. Die Simulation führt die angegebene Datei so aus, als ob du den Ausführen-Button darauf <desktop>geklickt</desktop><mobile>angetippt</mobile> hättest.
 
 ### Start-Freischaltungen
 Alle Programmier-Features wie Schleifen, `if`-Anweisungen, Listen, Dicts,... bleiben immer freigeschaltet. 

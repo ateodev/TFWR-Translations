@@ -6,8 +6,11 @@
 @popup_warning_load_game = Möchtest du vor dem Laden speichern?
 @don't save = Nicht speichern
 @popup_warning_corrupted_save = Es scheint ein Problem beim Laden von {0} gegeben zu haben. Weitere Informationen findest du im Abschnitt über Backups.
+@popup_warning_corrupted_save_mobile = Es scheint ein Problem beim Laden von {0} gegeben zu haben.
 @popup_warning_failed_read_save = Fehler beim Lesen der Speicherdateien von {0}. Stelle sicher, dass du alle anderen Programme schließt, die auf die Dateien zugreifen, und versuche es erneut.
+@popup_warning_failed_read_save_mobile = Fehler beim Lesen der Speicherdateien von {0}. Bitte versuche es erneut.
 @popup_warning_failed_write_save = Fehler beim Schreiben in die Speicherdateien von {0}. Stelle sicher, dass du alle anderen Programme schließt, die auf die Dateien zugreifen, und versuche es erneut.
+@popup_warning_failed_write_save_mobile = Fehler beim Schreiben in die Speicherdateien von {0}. Bitte versuche es erneut.
 @ok = OK
 @popup_warning_old_save = Dieser Spielstand stammt von einer älteren Version des Spiels. Da der Forschungsbaum überarbeitet wurde, wurden alle Upgrades zurückgesetzt, um besser zum neuen Fortschrittssystem zu passen.
 @popup_warning_unofficial_language = Dies ist eine inoffizielle Übersetzung aus der Community, die nicht von den Entwicklern des Spiels gepflegt wird. Manche Texte könnten fehlen oder ungenau sein.

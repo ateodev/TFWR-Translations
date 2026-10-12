@@ -3,18 +3,22 @@
 # Erstes Programm
 ## Texteditor
 Die gesamte Programmierung erfolgt in Codefenstern. Jedes Codefenster entspricht einer Textdatei, die Code enthält.
-Du kannst die Datei umbenennen, indem du auf ihren Namen oben im Fenster klickst.
+<desktop>Du kannst die Datei umbenennen, indem du auf ihren Namen oben im Fenster klickst.</desktop>
+<mobile>Du kannst die Datei umbenennen, indem du auf ihren Namen neben den Buttons des Fensters tippst.</mobile>
 
 Der Code kann wie in jedem Texteditor bearbeitet werden, solange er nicht ausgeführt wird.
 Du kannst das Programm direkt ausführen, indem du auf den grünen Play-Button im Codefenster drückst.
 ![|x50](PlayButton)
 
-Du kannst weitere Codedateien erstellen, indem du den "+"-Button in der oberen rechten Ecke des Bildschirms verwendest.
+<desktop>Du kannst weitere Codedateien erstellen, indem du den "+"-Button in der oberen rechten Ecke des Bildschirms verwendest.</desktop>
+<mobile>Du kannst weitere Codedateien erstellen, indem du den "+"-Button am unteren Bildschirmrand verwendest, oder in der oberen rechten Ecke, wenn du dein Gerät quer hältst.</mobile>
 Du kannst ein Fenster an ein anderes Fenster andocken, indem du es darauf ziehst.
 
 Du wirst feststellen, dass, sobald du mit dem Tippen beginnst, ein einfaches Code-Vervollständigungsfenster erscheint.
-Drücke die Tab-Taste, um die Code-Vervollständigung einzufügen.
-Verwende die Pfeiltasten, um durch die Vervollständigungsoptionen zu navigieren.
+<desktop>Drücke die Tab-Taste, um die Code-Vervollständigung einzufügen.
+Verwende die Pfeiltasten, um durch die Vervollständigungsoptionen zu navigieren.</desktop>
+<mobile>Wische auf der Tastatur nach oben oder unten, um durch die Vervollständigungsoptionen zu gehen, und drücke Tab, um die ausgewählte einzufügen.
+Auf der Seite [Spieltastatur](docs/keyboard.md) erfährst du, wie du durch Wischen den Cursor bewegst, Text auswählst und Vervollständigungen auswählst.</mobile>
 
 Keine Sorge, wenn dies dein erstes Mal beim Programmieren ist. Die Sprache wird schrittweise freigeschaltet, sodass du nicht von all den Dingen, die du tun kannst, überfordert wirst.
 Die Syntax ähnelt auch der von Python, einer der weltweit am weitesten verbreiteten Programmiersprachen, daher ist das Erlernen nicht völlig verschwendet.
@@ -65,10 +69,10 @@ harvest()
 }}
 
 ## Freischaltungen
-Beim Ernten von Gras erhältst du Heu. Mit Heu kannst du Schleifen im Forschungsbaum freischalten. Öffne den Forschungsbaum über den Button oben rechts auf dem Bildschirm.
+Beim Ernten von Gras erhältst du Heu. Mit Heu kannst du Schleifen im Forschungsbaum freischalten. Öffne den Forschungsbaum über den Button <desktop>oben rechts auf dem Bildschirm</desktop><mobile>am unteren Bildschirmrand (oben rechts, wenn du dein Gerät quer hältst)</mobile>.
 
 ---
 
-[Externer Editor](docs/external_editor.md)      [Kommentare](docs/scripting/comments.md)      [While-Schleife](docs/scripting/while.md)
+<desktop>[Externer Editor](docs/external_editor.md)      </desktop><mobile>[Spieltastatur](docs/keyboard.md)      </mobile>[Kommentare](docs/scripting/comments.md)      [While-Schleife](docs/scripting/while.md)
 
 [harvest()](functions/harvest)      [do_a_flip()](functions/do_a_flip)

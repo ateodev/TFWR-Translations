@@ -1,0 +1,15 @@
+@cloud_conflict_title = Cloud-Speicherkonflikt
+@cloud_conflict_message = Deine Spielstände wurden auf mehr als einem Gerät geändert.
+@cloud_conflict_versions_total = Versionen insgesamt: {0}
+@cloud_conflict_keep = Version {0} behalten
+@cloud_conflict_confirm_title = Version {0} behalten?
+@cloud_conflict_confirm_body = Alle anderen Versionen werden aus der Cloud und von diesem Gerät gelöscht.
+@cloud_card_version = Version {0}
+@cloud_card_suggested = Empfohlen
+@cloud_card_this_device = Dieses Gerät
+@cloud_card_another_device = Anderes Gerät
+@cloud_card_saved = Gespeichert {0}
+@cloud_card_saves_heading = Spielstände
+@cloud_card_unlocks_heading = Freischaltungen
+@cloud_card_more = Und {0} weitere
+@cloud_card_unreadable = Details konnten nicht gelesen werden

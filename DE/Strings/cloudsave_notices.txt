@@ -1,0 +1,9 @@
+@cloud_notice_ok = OK
+@cloud_notice_account_changed_headline = Dein Konto hat sich geändert
+@cloud_notice_account_saves = Du bist jetzt mit einem anderen Konto bei {0} angemeldet. Das Spiel zeigt nun die Spielstände dieses Kontos.
+@cloud_notice_account_no_saves = Du bist jetzt mit einem anderen Konto bei {0} angemeldet. Dieses Konto hat noch keine Spielstände, deshalb beginnt ein neues Spiel.
+@cloud_notice_account_signed_in = Du bist jetzt bei {0} angemeldet. Das Spiel zeigt nun die Spielstände dieses Kontos. Die Spielstände, die du ohne Anmeldung erstellt hast, bleiben auf diesem Gerät.
+@cloud_notice_account_unsent = Die Spielstände deines vorherigen Kontos sind noch auf diesem Gerät, aber noch nicht in dessen Cloud-Speicher. Bitte melde dich auf diesem Gerät noch einmal mit diesem Konto bei {0} an, um sie in der Cloud zu speichern.
+@cloud_sign_in_failed_google_play_games = Anmeldung bei Google Play Games fehlgeschlagen. Bitte versuche es später noch einmal.
+@cloud_sign_in_failed_game_center = Anmeldung bei Game Center fehlgeschlagen. Bitte aktiviere es in der Einstellungen-App und versuche es erneut.
+@cloud_notice_save_failed = {0} konnte auf diesem Gerät nicht gespeichert werden. Bitte stelle sicher, dass das Gerät freien Speicherplatz hat, und versuche es erneut.

@@ -43,7 +43,7 @@ clear()
 
 Wenn du zur Oberfläche zurückkehren möchtest, kannst du jederzeit `clear()` verwenden. Dadurch wird auch deine Farm wiederhergestellt.
 
-Wenn du den Mauszeiger über einen Block bewegst, werden sein Name, seine Stabilität und seine Härte angezeigt.
+Wenn du <desktop>den Mauszeiger über einen Block bewegst</desktop><mobile>auf einen Block tippst</mobile>, werden sein Name, seine Stabilität und seine Härte angezeigt.
 
 # Bohrer
 
@@ -63,7 +63,7 @@ Natürlich werden die Blöcke nach unten hin immer härter. Diese Strategie hilf
 
 Wenn du nach unten gräbst, stürzen umliegende Blöcke ein. Die vier Blöcke neben der Drohne werden immer zerstört. Anschließend breitet sich der Einsturz abhängig von der Stabilität des Bodens aus. Ein Block mit Stabilität 1, etwa Grasland, verträgt einen Höhenunterschied von 1. Hat das Grasland also einen senkrechten oder waagerechten Nachbarn, dessen z-Koordinate mindestens 2 Blöcke tiefer liegt, wird es zerstört.
 
-Die Stabilität eines Blocks wird in seinem Tooltip angezeigt.
+Die Stabilität eines Blocks wird in seinem <desktop>Hover-</desktop>Tooltip angezeigt.
 
 Wenn ein Block einstürzt, werden auch alle Blöcke darüber entfernt. Du erhältst nur für Blöcke Ressourcen, die die Drohne direkt ausgräbt. Alle bei einem Einsturz verlorenen Blöcke werden ohne Ertrag zerstört.
 
