@@ -34,7 +34,7 @@ A função `simulate()` retorna o tempo, em segundos, que levou para simular o a
 
 ### Nome do Arquivo
 
-O primeiro argumento da função `simulate()` é o nome do arquivo. Esse é o nome exibido no topo da janela de código. A simulação executará o arquivo especificado como se você tivesse clicado no botão Executar dele.
+O primeiro argumento da função `simulate()` é o nome do arquivo. Esse é o nome exibido no topo da janela de código. A simulação executará o arquivo especificado como se você tivesse <desktop>clicado</desktop><mobile>tocado</mobile> no botão Executar dele.
 
 ### Desbloqueios Iniciais
 

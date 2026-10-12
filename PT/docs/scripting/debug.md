@@ -11,12 +11,14 @@
 A primeira é executar o programa passo a passo. 
 Você pode entrar no modo passo a passo com o botão ao lado do botão Executar ou definindo um ponto de interrupção.
 
-Pontos de interrupção podem ser adicionados clicando no painel à esquerda do código.
+Pontos de interrupção podem ser adicionados <desktop>clicando</desktop><mobile>tocando</mobile> no painel à esquerda do código.
 ![|x227](Breakpoints)
 Quando a execução chegar à linha do ponto de interrupção, ela mudará automaticamente para o modo passo a passo.
 
-Quando você move o mouse sobre uma variável, seu valor atual é exibido.
-
+<desktop>Quando você move o mouse sobre uma variável, seu valor atual é exibido.
+</desktop>
+<mobile>Toque duas vezes em uma variável para ver seu valor atual.
+</mobile>
 A função `print()` também pode ser muito útil. Ela escreverá qualquer valor passado para ela diretamente no ar.
 
 Exemplos:
@@ -94,8 +96,8 @@ Nesse caso, use a função `quick_print()`, que imprime apenas na janela de saí
 
 A janela de saída também registra avisos e erros, por isso vale a pena consultá-la quando algo não funcionar como esperado.
 
-Quando a execução para, a saída também é gravada no arquivo [output.txt](persistent_data_path/output.txt) da pasta do jogo.
-
+<desktop>Quando a execução para, a saída também é gravada no arquivo [output.txt](persistent_data_path/output.txt) da pasta do jogo.
+</desktop>
 ---
 
 [Saída](docs/output.md)      [Comentários](docs/scripting/comments.md)      [Depuração 2](docs/unlocks/debug2.md)      [Blocos Coloridos](docs/unlocks/debug_place.md)      [Simulação](docs/unlocks/simulation.md)

@@ -1,0 +1,9 @@
+@cloud_notice_ok = OK
+@cloud_notice_account_changed_headline = Sua conta mudou
+@cloud_notice_account_saves = Agora você está conectado ao {0} com outra conta. O jogo passa a mostrar os jogos salvos dessa conta.
+@cloud_notice_account_no_saves = Agora você está conectado ao {0} com outra conta. Essa conta ainda não tem jogos salvos, então um novo jogo começa.
+@cloud_notice_account_signed_in = Agora você está conectado ao {0}. O jogo passa a mostrar os jogos salvos desta conta. Os jogos que você salvou sem estar conectado ficam neste aparelho.
+@cloud_notice_account_unsent = Os jogos salvos da conta que você usava antes ainda estão neste aparelho, mas ainda não no salvamento na nuvem dela. Entre de novo no {0} com essa conta neste aparelho para salvá-los na nuvem.
+@cloud_sign_in_failed_google_play_games = Não foi possível entrar no Google Play Games. Tente novamente mais tarde.
+@cloud_sign_in_failed_game_center = Não foi possível entrar no Game Center. Ative-o no aplicativo Ajustes e tente novamente.
+@cloud_notice_save_failed = Não foi possível salvar {0} neste aparelho. Verifique se o aparelho tem espaço livre e tente novamente.

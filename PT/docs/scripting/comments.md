@@ -32,7 +32,7 @@ Comentários podem ser adicionados usando `#`. Qualquer coisa na mesma linha ap�
 
 Isso pode ser útil para adicionar anotações ao código ou desativar partes dele temporariamente sem excluí-las.
 
-Um comentário na linha anterior à definição de uma função passa a fazer parte das informações exibidas ao passar o cursor sobre o nome da função.
+Um comentário na linha anterior à definição de uma função passa a fazer parte das informações exibidas ao <desktop>passar o cursor sobre</desktop><mobile>tocar duas vezes</mobile> o nome da função.
 
 ---
 

@@ -7,18 +7,22 @@
 ## Editor de texto
 
 Toda a programação é feita em janelas de código. Cada janela de código corresponde a um arquivo de texto contendo código. 
-Você pode renomear o arquivo clicando em seu nome no topo da janela.
+<desktop>Você pode renomear o arquivo clicando em seu nome no topo da janela.</desktop>
+<mobile>Você pode renomear o arquivo tocando em seu nome ao lado dos botões da janela.</mobile>
 
 O código pode ser editado como em qualquer editor de texto, desde que não esteja em execução.
 Você pode executar o programa diretamente pressionando o botão de play verde na janela de código.
 ![|x50](PlayButton)
 
-Você pode criar mais arquivos de código usando o botão "+" no canto superior direito da tela.
+<desktop>Você pode criar mais arquivos de código usando o botão "+" no canto superior direito da tela.</desktop>
+<mobile>Você pode criar mais arquivos de código usando o botão "+" na borda inferior da tela, ou no canto superior direito quando você segura o aparelho de lado.</mobile>
 Você pode acoplar uma janela a outra arrastando-a sobre ela.
 
 Você notará que, assim que começar a digitar, uma janela simples de autocompletar aparecerá.
-Pressione Tab para inserir o autocompletar selecionado.
-Use as setas para navegar pelas opções de autocompletar.
+<desktop>Pressione Tab para inserir o autocompletar selecionado.
+Use as setas para navegar pelas opções de autocompletar.</desktop>
+<mobile>Deslize para cima ou para baixo no teclado para percorrer as opções de autocompletar e pressione Tab para inserir a selecionada.
+Veja a página [Teclado do jogo](docs/keyboard.md) para saber como mover o cursor, selecionar texto e escolher opções de autocompletar deslizando o dedo.</mobile>
 
 Não se preocupe se esta é sua primeira vez programando. A linguagem é desbloqueada passo a passo, então você não ficará sobrecarregado com todas as coisas que pode fazer. 
 A sintaxe também é semelhante à do Python, uma das linguagens de programação mais usadas no mundo, então o que você aprender aqui será útil em outros lugares.
@@ -70,10 +74,10 @@ harvest()
 
 ## Desbloqueios
 
-Coletar grama dá feno. O feno pode ser usado para desbloquear loops na árvore de tecnologias. Abra a árvore de tecnologias com o botão no canto superior direito da tela.
+Coletar grama dá feno. O feno pode ser usado para desbloquear loops na árvore de tecnologias. Abra a árvore de tecnologias com o botão <desktop>no canto superior direito da tela</desktop><mobile>na borda inferior da tela (no canto superior direito quando você segura o aparelho de lado)</mobile>.
 
 ---
 
-[Editor Externo](docs/external_editor.md)      [Comentários](docs/scripting/comments.md)      [Loop While](docs/scripting/while.md)
+<desktop>[Editor Externo](docs/external_editor.md)      </desktop><mobile>[Teclado do jogo](docs/keyboard.md)      </mobile>[Comentários](docs/scripting/comments.md)      [Loop While](docs/scripting/while.md)
 
 [harvest()](functions/harvest)      [do_a_flip()](functions/do_a_flip)

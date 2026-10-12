@@ -128,10 +128,10 @@ O primeiro nunca dará uma cambalhota, e o segundo dará cambalhotas para sempre
 Normalmente, criar um loop infinito é uma má ideia porque ele trava o programa. Neste jogo, porém, há pausas entre as iterações, então o drone continuará dando cambalhotas até você interrompê-lo manualmente pressionando o botão Executar outra vez.
 
 Observe que a linha depois dos dois-pontos está recuada. Esse tipo de indentação é usado para separar blocos de código.
-Basta pressionar Tab para adicionar indentação e Shift + Tab (ou Backspace) para removê-la. Se várias linhas estiverem selecionadas, Tab e Shift + Tab serão aplicados a todas elas.
+Basta pressionar Tab para adicionar indentação e Shift + Tab (ou <desktop>Backspace</desktop><mobile>Excluir</mobile>) para removê-la. Se várias linhas estiverem selecionadas, Tab e Shift + Tab serão aplicados a todas elas.
 
-Observação: se você estiver jogando pela Steam, pressionar Shift + Tab abrirá a sobreposição da Steam. Você pode redefinir o atalho para remover a indentação nas opções do jogo ou o atalho da sobreposição nas opções da Steam.
-
+<desktop>Observação: se você estiver jogando pela Steam, pressionar Shift + Tab abrirá a sobreposição da Steam. Você pode redefinir o atalho para remover a indentação nas opções do jogo ou o atalho da sobreposição nas opções da Steam.
+</desktop>
 Aqui, `do_a_flip()` e `pet_the_piggy()` são chamados repetidamente porque estão dentro do bloco `while` indentado. Porém, `harvest()` nunca é executado porque vem depois desse bloco.
 
 {{codeexample 
@@ -165,4 +165,4 @@ harvest()
 
 ---
 
-[Loop For](docs/scripting/for.md)      [If](docs/scripting/if.md)      [Break](docs/scripting/break.md)      [Continue](docs/scripting/continue.md)      [Editor Externo](docs/external_editor.md)
+[Loop For](docs/scripting/for.md)      [If](docs/scripting/if.md)      [Break](docs/scripting/break.md)      [Continue](docs/scripting/continue.md)<desktop>      [Editor Externo](docs/external_editor.md)</desktop>

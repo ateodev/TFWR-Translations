@@ -1,0 +1,14 @@
+@load_screen_play = Jogar
+@load_screen_current = Atual
+@load_screen_unlocks = {0} desbloqueios
+@load_screen_unlock = {0} desbloqueio
+@load_screen_code_files = {0} arquivos de código
+@load_screen_code_file = {0} arquivo de código
+@load_screen_no_saves = Nenhum jogo salvo ainda
+@load_screen_no_saves_hint = Toque em '{0}' para começar uma fazenda.
+@load_screen_rename_title = Renomear jogo salvo
+@load_screen_rename = Renomear
+@load_screen_rename_empty = Digite um nome.
+@load_screen_rename_taken = Já existe um jogo salvo com esse nome.
+@load_screen_delete_title = Excluir {0}?
+@load_screen_delete_body = A fazenda e o código dele serão excluídos. Isso não pode ser desfeito.

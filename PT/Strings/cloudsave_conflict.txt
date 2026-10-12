@@ -1,0 +1,15 @@
+@cloud_conflict_title = Conflito de salvamento na nuvem
+@cloud_conflict_message = Seus jogos salvos mudaram em mais de um aparelho.
+@cloud_conflict_versions_total = Versões no total: {0}
+@cloud_conflict_keep = Manter a versão {0}
+@cloud_conflict_confirm_title = Manter a versão {0}?
+@cloud_conflict_confirm_body = Todas as outras versões serão excluídas da nuvem e deste aparelho.
+@cloud_card_version = Versão {0}
+@cloud_card_suggested = Sugerida
+@cloud_card_this_device = Este aparelho
+@cloud_card_another_device = Outro aparelho
+@cloud_card_saved = Salva {0}
+@cloud_card_saves_heading = Jogos salvos
+@cloud_card_unlocks_heading = Desbloqueios
+@cloud_card_more = E mais {0}
+@cloud_card_unreadable = Não foi possível ler os detalhes

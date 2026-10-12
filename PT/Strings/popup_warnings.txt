@@ -6,8 +6,11 @@
 @popup_warning_load_game = Deseja salvar antes de carregar?
 @don't save = Não Salvar
 @popup_warning_corrupted_save = Parece que houve um problema ao carregar {0}. Confira a seção sobre backups para mais informações.
+@popup_warning_corrupted_save_mobile = Parece que houve um problema ao carregar {0}.
 @popup_warning_failed_read_save = Falha ao ler os arquivos de salvamento de {0}. Certifique-se de fechar todos os outros programas que acessam os arquivos e tente novamente.
+@popup_warning_failed_read_save_mobile = Falha ao ler os arquivos de salvamento de {0}. Tente novamente.
 @popup_warning_failed_write_save = Falha ao escrever nos arquivos de salvamento de {0}. Certifique-se de fechar todos os outros programas que acessam os arquivos e tente novamente.
+@popup_warning_failed_write_save_mobile = Falha ao gravar nos arquivos de salvamento de {0}. Tente novamente.
 @ok = ok
 @popup_warning_old_save = Este arquivo de salvamento é de uma versão mais antiga do jogo. Como a árvore de tecnologia foi reformulada, todas as melhorias foram redefinidas para algo que faz mais sentido com o novo sistema de progressão.
 @popup_warning_unofficial_language = Esta é uma tradução não oficial criada pela comunidade e não é mantida pelos desenvolvedores do jogo. Alguns textos podem estar faltando ou estarem incorretos.

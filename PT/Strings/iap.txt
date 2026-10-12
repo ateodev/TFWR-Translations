@@ -1,5 +1,32 @@
+@iap_title_full_game = The Farmer Was Replaced
 @iap_get_full_game = Jogo completo
+@iap_desc_full_game = <b>Tudo incluído</b>
+• Compra única. Sem anúncios, sem assinatura.
+• 35 desbloqueios de pesquisa a mais
+• Mais de uma dúzia de chapéus novos
+• Novas conquistas para perseguir
+
+<b>Sua fazenda está só começando</b>
+Cada nova plantação é um novo quebra-cabeça de programação. Cultive abóboras gigantes, organize cactos, alimente um dinossauro e cace ouro em labirintos de cerca viva. Depois, expanda para uma megafazenda com uma frota de drones.
+
+<b>Um mundo inteiro embaixo da sua fazenda</b>
+Leve seu drone para o subsolo. Minere minérios, desenterre ruínas antigas e jogue Campo Minado com dinamite.
 @iap_caption_multiple_drones = Vários drones
 @iap_caption_cool_puzzles = Enigmas incríveis
 @iap_caption_new_mechanics = Novas mecânicas
 @iap_caption_more_upgrades = Mais melhorias
+@iap_buy = Comprar
+@iap_play = Jogar
+@iap_pending = Aguardando aprovação ou pagamento.
+@iap_retry = Tentar novamente
+@iap_restore = Restaurar compras
+@iap_restored = Compras restauradas.
+@iap_restore_failed = Não foi possível acessar a loja. Tente novamente mais tarde.
+@iap_purchase_success = Desbloqueado. Divirta-se!
+@iap_purchase_failed = A compra não foi concluída. Nada foi cobrado.
+@iap_unavailable = A loja não está disponível no momento.
+@iap_offline = Os preços não estão disponíveis. Verifique sua conexão e tente novamente.
+@iap_retrying = Consultando a loja novamente...
+@iap_all_owned = Você já tem tudo. Obrigado!
+@unlock_locked_full_game = Isso faz parte do jogo completo. Adquira-o na loja para desbloquear.
+@unlock_locked_mining_dlc = Isso faz parte da DLC de Mineração. Adquira-a na loja para desbloquear.

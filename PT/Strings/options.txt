@@ -62,3 +62,22 @@
 @Light = Claro
 @Lunar New Year = Ano Novo Lunar
 @Custom = Personalizado
+
+@Keyboard switches = Resposta das teclas
+@blue clicky = Clique + vibração
+@brown tactile = Vibração
+@green clicky linear = Clique
+@red silent = Silencioso
+@grey os tactile = Clique do sistema + vibração
+@black os linear = Clique do sistema
+@Keyboard layout = Layout do teclado
+@qwerty = QWERTY
+@qwertz = QWERTZ
+@azerty = AZERTY
+@Keyboard type = Tipo de teclado
+@os = Sistema
+@custom = Do jogo
+@exit fullscreen on run = Sair da tela cheia ao executar
+@30 fps = 30 FPS
+@60 fps = 60 FPS
+@120 fps = 120 FPS

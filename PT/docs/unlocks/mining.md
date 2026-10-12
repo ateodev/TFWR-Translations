@@ -43,7 +43,7 @@ clear()
 
 Se quiser voltar à superfície, você pode usar `clear()` a qualquer momento. Isso também restaura sua fazenda.
 
-Passe o mouse sobre um bloco para ver seu nome, estabilidade e dureza.
+<desktop>Passe o mouse sobre</desktop><mobile>Toque em</mobile> um bloco para ver seu nome, estabilidade e dureza.
 
 # Broca
 
@@ -63,7 +63,7 @@ Você pode usar `get_hardness()` para verificar a dureza do bloco abaixo. Se enc
 
 Escavar para baixo faz os blocos ao redor desmoronarem. Os quatro blocos ao lado do drone são sempre destruídos. Depois disso, o desmoronamento se propaga conforme a estabilidade do solo. Um bloco com estabilidade 1, como a pastagem, suporta uma diferença de altura de 1. Em outras palavras, se a pastagem tiver um vizinho vertical ou horizontal cuja coordenada z esteja 2 ou mais blocos abaixo, ela será destruída.
 
-A estabilidade de um bloco aparece na dica exibida ao passar o mouse.
+A estabilidade de um bloco aparece na dica<desktop> exibida ao passar o mouse</desktop>.
 
 Quando um bloco desmorona, todos os blocos acima dele também são removidos. Você só recebe recursos dos blocos que o drone escava diretamente; blocos perdidos em um desmoronamento são destruídos sem render recursos.
 
