@@ -62,3 +62,22 @@
 @Light = Jasny
 @Lunar New Year = Księżycowy Nowy Rok
 @Custom = Własny
+
+@Keyboard switches = Reakcja klawiszy
+@blue clicky = Klik + wibracja
+@brown tactile = Wibracja
+@green clicky linear = Klik
+@red silent = Cisza
+@grey os tactile = Klik systemowy + wibracja
+@black os linear = Klik systemowy
+@Keyboard layout = Układ klawiatury
+@qwerty = QWERTY
+@qwertz = QWERTZ
+@azerty = AZERTY
+@Keyboard type = Typ klawiatury
+@os = Systemowa
+@custom = W grze
+@exit fullscreen on run = Start zamyka pełny ekran
+@30 fps = 30 FPS
+@60 fps = 60 FPS
+@120 fps = 120 FPS

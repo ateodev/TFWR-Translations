@@ -1,0 +1,10 @@
+@cloud_view_title = Zapis w chmurze
+@cloud_view_signed_in = Zalogowano
+@cloud_view_not_signed_in = Nie zalogowano
+@cloud_view_last_synced = Ostatnia synchronizacja: {0}
+@cloud_view_not_synced = Nie zsynchronizowano
+@cloud_view_sync_now = Synchronizuj
+@cloud_view_sign_in = Zaloguj się
+@cloud_view_on_this_device = Na tym urządzeniu
+@cloud_view_current = Bieżący
+@cloud_view_no_saves = Brak zapisów

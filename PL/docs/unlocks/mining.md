@@ -43,7 +43,7 @@ clear()
 
 Aby wrócić na powierzchnię, możesz w dowolnym momencie użyć `clear()`. Przywróci to również farmę.
 
-Najechanie kursorem na blok pokazuje jego nazwę, stabilność i twardość.
+<desktop>Najechanie kursorem na blok</desktop><mobile>Dotknięcie bloku</mobile> pokazuje jego nazwę, stabilność i twardość.
 
 # Wiertło
 
@@ -63,7 +63,7 @@ Oczywiście im głębiej schodzisz, tym twardsze stają się bloki, więc ta str
 
 Kopanie w dół powoduje zawał otaczających bloków. Cztery bloki obok drona są zawsze niszczone. Następnie zawał rozprzestrzenia się zależnie od stabilności podłoża. Blok o stabilności 1, taki jak teren trawiasty, wytrzymuje różnicę wysokości równą 1. Innymi słowy, jeśli jego sąsiad w pionie lub poziomie ma współrzędną z niższą o co najmniej 2 bloki, teren trawiasty zostanie zniszczony.
 
-Stabilność bloku jest podana w jego podpowiedzi po najechaniu kursorem.
+Stabilność bloku jest podana w jego podpowiedzi<desktop> po najechaniu kursorem</desktop>.
 
 Gdy blok się zawali, wszystkie bloki nad nim również zostaną usunięte. Zasoby otrzymujesz tylko z bloków wykopanych bezpośrednio przez drona, więc bloki utracone w zawale zostają zniszczone bez żadnego plonu.
 

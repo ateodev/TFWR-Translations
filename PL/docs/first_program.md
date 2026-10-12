@@ -3,18 +3,22 @@
 # Pierwszy program
 ## Edytor tekstu
 Wszystkie operacje programistyczne odbywają się w oknach kodu. Każde okno kodu odpowiada plikowi tekstowemu zawierającemu kod. 
-Możesz zmienić nazwę pliku, klikając jego nazwę na górze okna.
+<desktop>Możesz zmienić nazwę pliku, klikając jego nazwę na górze okna.</desktop>
+<mobile>Możesz zmienić nazwę pliku, dotykając jego nazwy obok przycisków okna.</mobile>
 
 Kod można edytować jak w każdym edytorze tekstu, o ile nie jest uruchomiony.
 Możesz uruchomić program bezpośrednio, naciskając zielony przycisk odtwarzania w oknie kodu.
 ![|x50](PlayButton)
 
-Możesz tworzyć więcej plików z kodem za pomocą przycisku "+" w prawym górnym rogu ekranu.
+<desktop>Możesz tworzyć więcej plików z kodem za pomocą przycisku "+" w prawym górnym rogu ekranu.</desktop>
+<mobile>Możesz tworzyć więcej plików z kodem za pomocą przycisku "+" przy dolnej krawędzi ekranu lub w prawym górnym rogu, gdy trzymasz urządzenie poziomo.</mobile>
 Możesz zadokować okno do innego okna, przeciągając je na nie.
 
 Zauważysz, że po rozpoczęciu pisania pojawi się proste okno uzupełniania kodu.
-Naciśnij Tab, aby wstawić wybrane uzupełnienie.
-Użyj klawiszy strzałek, aby poruszać się po opcjach uzupełniania.
+<desktop>Naciśnij Tab, aby wstawić wybrane uzupełnienie.
+Użyj klawiszy strzałek, aby poruszać się po opcjach uzupełniania.</desktop>
+<mobile>Przesuń palcem w górę lub w dół po klawiaturze, aby poruszać się po opcjach uzupełniania, i naciśnij Tab, aby wstawić wybraną.
+Na stronie [Klawiatura w grze](docs/keyboard.md) dowiesz się, jak przesuwać kursor, zaznaczać tekst i wybierać uzupełnienia przez przesuwanie palcem.</mobile>
 
 Nie martw się, jeśli programujesz po raz pierwszy. Język jest odblokowywany krok po kroku, więc nie zostaniesz przytłoczony wszystkimi rzeczami, które możesz zrobić. 
 Składnia jest również podobna do Pythona, jednego z najczęściej używanych języków programowania na świecie, więc zdobyta tutaj wiedza przyda ci się także gdzie indziej.
@@ -65,10 +69,10 @@ harvest()
 }}
 
 ## Odblokowania
-Zbieranie trawy da ci siano. Siana można użyć do odblokowania pętli w drzewku technologii. Otwórz drzewko technologii za pomocą przycisku w prawym górnym rogu ekranu.
+Zbieranie trawy da ci siano. Siana można użyć do odblokowania pętli w drzewku technologii. Otwórz drzewko technologii za pomocą przycisku <desktop>w prawym górnym rogu ekranu</desktop><mobile>przy dolnej krawędzi ekranu (w prawym górnym rogu, gdy trzymasz urządzenie poziomo)</mobile>.
 
 ---
 
-[Zewnętrzny edytor](docs/external_editor.md)      [Komentarze](docs/scripting/comments.md)      [Pętla While](docs/scripting/while.md)
+<desktop>[Zewnętrzny edytor](docs/external_editor.md)      </desktop><mobile>[Klawiatura w grze](docs/keyboard.md)      </mobile>[Komentarze](docs/scripting/comments.md)      [Pętla While](docs/scripting/while.md)
 
 [harvest()](functions/harvest)      [do_a_flip()](functions/do_a_flip)

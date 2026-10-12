@@ -29,7 +29,7 @@ Komentarze można dodawać za pomocą `#`. Wszystko w tej samej linii po `#` jes
 
 Może to być przydatne do dodawania notatek do kodu lub tymczasowego wyłączania jego części bez ich usuwania.
 
-Komentarz w wierszu przed definicją funkcji staje się częścią informacji wyświetlanych po najechaniu kursorem na nazwę funkcji.
+Komentarz w wierszu przed definicją funkcji staje się częścią informacji wyświetlanych po <desktop>najechaniu kursorem na nazwę funkcji</desktop><mobile>dwukrotnym dotknięciu nazwy funkcji</mobile>.
 
 ---
 

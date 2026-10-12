@@ -7,12 +7,14 @@ Czasami twój kod po prostu nie działa i musisz dowiedzieć się, dlaczego. Jes
 Pierwszym z nich jest wykonywanie programu krok po kroku. 
 Możesz przejść do trybu krok po kroku za pomocą przycisku obok przycisku Wykonaj lub ustawiając punkt przerwania (breakpoint).
 
-Punkty przerwania można dodawać, klikając panel punktów przerwania po lewej stronie kodu.
+Punkty przerwania można dodawać, <desktop>klikając</desktop><mobile>dotykając</mobile> panel punktów przerwania po lewej stronie kodu.
 ![|x227](Breakpoints)
 Gdy wykonanie dotrze do wiersza z punktem przerwania, automatycznie przełączy się w tryb krok po kroku.
 
-Gdy najedziesz myszą na zmienną, wyświetli się jej aktualna wartość.
-
+<desktop>Gdy najedziesz myszą na zmienną, wyświetli się jej aktualna wartość.
+</desktop>
+<mobile>Dotknij dwukrotnie zmiennej, aby zobaczyć jej aktualną wartość.
+</mobile>
 Funkcja `print()` również może być bardzo przydatna. Wypisze każdą przekazaną jej wartość bezpośrednio w powietrzu.
 
 Przykłady:
@@ -90,8 +92,8 @@ W takim przypadku możesz użyć funkcji `quick_print()`, która wyświetla dane
 
 Okno wyjściowe rejestruje również ostrzeżenia i błędy, więc warto je sprawdzić, jeśli coś nie działa zgodnie z oczekiwaniami.
 
-Gdy wykonanie się zatrzyma, dane wyjściowe są również zapisywane w pliku [output.txt](persistent_data_path/output.txt) w folderze gry.
-
+<desktop>Gdy wykonanie się zatrzyma, dane wyjściowe są również zapisywane w pliku [output.txt](persistent_data_path/output.txt) w folderze gry.
+</desktop>
 ---
 
 [Dane wyjściowe](docs/output.md)      [Komentarze](docs/scripting/comments.md)      [Debugowanie 2](docs/unlocks/debug2.md)      [Kolorowe bloki](docs/unlocks/debug_place.md)      [Symulacja](docs/unlocks/simulation.md)

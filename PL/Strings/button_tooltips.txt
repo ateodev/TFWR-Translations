@@ -1,6 +1,7 @@
 @button_tooltip_load = Wczytaj lub stwórz inny zapis.
 @button_tooltip_save = Zapisuje grę.
 @button_tooltip_options = Otwiera menu opcji.
+@button_tooltip_iap = Otwiera sklep.
 @button_tooltip_discord = Dołącz na Discorda, aby rozmawiać z innymi graczami i twórcą, zgłaszać błędy lub uzyskać pomoc.
 @button_tooltip_execute = Uruchamia lub zatrzymuje wykonywanie kodu w tym oknie.
 @button_tooltip_step_by_step = Wykonuje jeden krok kodu.
@@ -21,6 +22,7 @@
 @button_tooltip_close_search = Zamknij menu wyszukiwania.
 @button_tooltip_open_unlock_menu = Otwórz drzewko odblokowań.
 @warning_icon_tooltip = Twój kod wywołał ostrzeżenie. Kliknij ikonę, aby zobaczyć szczegóły w oknie wyjściowym.
+@warning_icon_tooltip_mobile = Twój kod wywołał ostrzeżenie. Dotknij ikony, aby zobaczyć szczegóły w oknie wyjściowym.
 @option_tooltip_graphics = Wpływa na różne ustawienia potoku renderowania, takie jak cienie, okluzja otoczenia i bloom.
 @option_tooltip_vfx_limit = Ogranicza liczbę efektów wizualnych, które mogą być odtwarzane na sekundę.
 @option_tooltip_avalanche_particles = Wyłącz cząsteczki powstające podczas zawałów.
@@ -48,6 +50,7 @@
 @option_tooltip_resolution = Zmień rozdzielczość ekranu.
 @option_tooltip_increment_number_effect = Wyłącz efekty w ekwipunku, które odtwarzają się, gdy zmieniają się liczby.
 @option_tooltip_color_theme = Zmień motyw kolorystyczny interfejsu. Własne motywy można dodać w folderze „Themes” w katalogu zapisu.
+@option_tooltip_color_theme_mobile = Zmień motyw kolorystyczny interfejsu.
 @keybind_tooltip_indent_selection = Dodaj wcięcie do wszystkich zaznaczonych linii. Musi to być klawisz, który wstawia znak, aby to zadziałało. Kombinacje z klawiszami Ctrl lub Alt nie będą działać.
 @keybind_tooltip_unindent_selection = Usuń wcięcie ze wszystkich zaznaczonych linii. Musi to być klawisz, który wstawia znak, aby to zadziałało. Kombinacje z klawiszami Ctrl lub Alt nie będą działać.
 @keybind_tooltip_menu = Otwórz lub zamknij menu główne.
@@ -64,3 +67,15 @@
 @keybind_tooltip_next_step = Wykonaj jeden krok, jeśli wykonywanie jest wstrzymane.
 @keybind_tooltip_pause_execution = Wstrzymaj wykonywanie.
 @keybind_tooltip_hide_UI = Ukryj lub pokaż HUD.
+
+@button_tooltip_achievements = Pokazuje twoje osiągnięcia.
+@button_tooltip_sign_in = Zaloguj się do Google Play Games / Game Center, aby synchronizować osiągnięcia.
+@option_tooltip_keyboard_switches = Reakcja na naciśnięcie klawisza klawiatury w grze: Klik = dźwięk mechanicznego klawisza, Klik systemowy = dźwięk kliknięcia klawiatury urządzenia, Wibracja = krótka wibracja.
+@button_tooltip_open_main_menu = Otwiera menu główne.
+@button_tooltip_open_search = Otwiera pasek wyszukiwania.
+@button_tooltip_open_news = Otwiera najnowsze wiadomości.
+@button_tooltip_fullscreen = Pokazuje to okno na pełnym ekranie.
+@button_tooltip_exit_fullscreen = Wychodzi z pełnego ekranu.
+@option_tooltip_keyboard_layout = Układ klawiszy klawiatury w grze. Domyślnie układ używany w języku twojego systemu.
+@option_tooltip_keyboard_type = Którą klawiaturą piszesz kod. Klawiatura w grze ma symbole potrzebne w Pythonie; klawiatura systemowa to ta, której używasz w innych aplikacjach. Podłączona klawiatura sprzętowa jest zawsze używana zamiast nich.
+@option_tooltip_exit_fullscreen_on_run = Naciśnięcie Start wychodzi z pełnoekranowego edytora kodu i pokazuje farmę. Punkty przerwania nadal przenoszą cię do wstrzymanego wiersza.

@@ -121,10 +121,10 @@ Pierwsza pętla nigdy nie wykona obrotu, a druga będzie wykonywać obroty bez k
 Zwykle tworzenie pętli nieskończonej jest złym pomysłem, ponieważ zawiesza program. W tej grze występują jednak opóźnienia między iteracjami, więc dron będzie wykonywał obroty, dopóki nie zatrzymasz go ręcznie, ponownie naciskając przycisk Wykonaj.
 
 Zauważ, że wiersz po dwukropku ma wcięcie. Takie wcięcia służą do oddzielania bloków kodu.
-Naciśnij Tab, aby dodać wcięcie, i Shift + Tab (lub Backspace), aby je usunąć. Jeśli zaznaczonych jest kilka wierszy, Tab i Shift + Tab zastosują zmianę do wszystkich.
+Naciśnij Tab, aby dodać wcięcie, i Shift + Tab (lub <desktop>Backspace</desktop><mobile>Usuń</mobile>), aby je usunąć. Jeśli zaznaczonych jest kilka wierszy, Tab i Shift + Tab zastosują zmianę do wszystkich.
 
-Uwaga: jeśli grasz przez Steam, naciśnięcie Shift + Tab otworzy nakładkę Steam. Skrót do zmniejszania wcięcia możesz zmienić w opcjach gry, a skrót nakładki — w jej ustawieniach.
-
+<desktop>Uwaga: jeśli grasz przez Steam, naciśnięcie Shift + Tab otworzy nakładkę Steam. Skrót do zmniejszania wcięcia możesz zmienić w opcjach gry, a skrót nakładki — w jej ustawieniach.
+</desktop>
 Tutaj `do_a_flip()` i `pet_the_piggy()` są wywoływane wielokrotnie, ponieważ znajdują się wewnątrz bloku `while` z wcięciem. `harvest()` nigdy się jednak nie uruchomi, ponieważ znajduje się po tym bloku.
 {{codeexample 
 {
@@ -157,4 +157,4 @@ harvest()
 
 ---
 
-[Pętla For](docs/scripting/for.md)      [If](docs/scripting/if.md)      [Break](docs/scripting/break.md)      [Continue](docs/scripting/continue.md)      [Zewnętrzny edytor](docs/external_editor.md)
+[Pętla For](docs/scripting/for.md)      [If](docs/scripting/if.md)      [Break](docs/scripting/break.md)      [Continue](docs/scripting/continue.md)<desktop>      [Zewnętrzny edytor](docs/external_editor.md)</desktop>

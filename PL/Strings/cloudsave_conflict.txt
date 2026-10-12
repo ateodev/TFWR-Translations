@@ -1,0 +1,15 @@
+@cloud_conflict_title = Konflikt zapisu w chmurze
+@cloud_conflict_message = Twoje zapisy zmieniły się na więcej niż jednym urządzeniu.
+@cloud_conflict_versions_total = Łącznie wersji: {0}
+@cloud_conflict_keep = Zachowaj wersję {0}
+@cloud_conflict_confirm_title = Zachować wersję {0}?
+@cloud_conflict_confirm_body = Wszystkie pozostałe wersje zostaną usunięte z chmury i z tego urządzenia.
+@cloud_card_version = Wersja {0}
+@cloud_card_suggested = Sugerowana
+@cloud_card_this_device = To urządzenie
+@cloud_card_another_device = Inne urządzenie
+@cloud_card_saved = Zapisano {0}
+@cloud_card_saves_heading = Zapisy
+@cloud_card_unlocks_heading = Odblokowania
+@cloud_card_more = I jeszcze {0}
+@cloud_card_unreadable = Nie udało się odczytać szczegółów

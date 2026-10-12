@@ -1,5 +1,32 @@
+@iap_title_full_game = The Farmer Was Replaced
 @iap_get_full_game = Pełna wersja gry
+@iap_desc_full_game = <b>Wszystko w zestawie</b>
+• Jednorazowy zakup. Bez reklam, bez subskrypcji.
+• 35 dodatkowych odblokowań badań
+• Ponad tuzin nowych kapeluszy
+• Nowe osiągnięcia do zdobycia
+
+<b>Twoja farma dopiero się rozkręca</b>
+Każda nowa roślina to nowa zagadka programistyczna. Hoduj ogromne dynie, sortuj kaktusy, karm dinozaura i szukaj złota w labiryntach z żywopłotu. Potem rozbuduj farmę do megafarmy z flotą dronów.
+
+<b>Cały świat pod twoją farmą</b>
+Zabierz drona pod ziemię. Wydobywaj rudy, odkopuj starożytne ruiny i graj w Sapera dynamitem.
 @iap_caption_multiple_drones = Wiele dronów
 @iap_caption_cool_puzzles = Fajne zagadki
 @iap_caption_new_mechanics = Nowe mechaniki
 @iap_caption_more_upgrades = Więcej ulepszeń
+@iap_buy = Kup
+@iap_play = Graj
+@iap_pending = Oczekiwanie na zatwierdzenie lub płatność.
+@iap_retry = Spróbuj ponownie
+@iap_restore = Przywróć zakupy
+@iap_restored = Zakupy przywrócone.
+@iap_restore_failed = Nie udało się połączyć ze sklepem. Spróbuj ponownie później.
+@iap_purchase_success = Odblokowano. Miłej zabawy!
+@iap_purchase_failed = Zakup nie został zrealizowany. Nic nie zostało pobrane.
+@iap_unavailable = Sklep jest teraz niedostępny.
+@iap_offline = Ceny są niedostępne. Sprawdź połączenie i spróbuj ponownie.
+@iap_retrying = Ponowne zapytanie do sklepu...
+@iap_all_owned = Masz już wszystko. Dziękujemy!
+@unlock_locked_full_game = To część pełnej wersji gry. Kup ją w sklepie, aby to odblokować.
+@unlock_locked_mining_dlc = To część DLC Górnictwo. Kup je w sklepie, aby to odblokować.

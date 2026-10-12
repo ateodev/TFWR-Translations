@@ -1,0 +1,110 @@
+@tutorial_skip = POMIŃ
+@tutorial_skip_question = Pominąć?
+@tutorial_skip_part = Tę część
+@tutorial_skip_all = Cały samouczek
+@tutorial_skip_cancel = Kontynuuj
+@tutorial_welcome = O, cześć!
+Witaj w The Farmer Was Replaced!
+@tutorial_show_around = Chcesz, żebym cię oprowadziła?
+@tutorial_show_around_yes = Tak, pokaż mi!
+@tutorial_show_around_no = Nie, dziękuję
+@tutorial_farm = To twoja farma. Jeden jedyny kawałek ziemi.
+@tutorial_look_around = Przeciągaj i ściskaj palcami, aby poruszać się po farmie.
+@tutorial_drone = Nie martw się, nie musisz brudzić sobie rąk.
+Ten dron wykona za ciebie większość pracy.
+Musisz mu tylko powiedzieć, co ma robić.
+@tutorial_tap_window = Dotknij okna, aby napisać swój pierwszy kod.
+@tutorial_code_window = To jest okno kodu.
+Każde okno kodu to plik. Ten nazywa się <b>main</b>.
+Na razie dron zna tylko dwa polecenia.
+@tutorial_type_harvest = Zacznijmy od zbiorów.
+Wpisz <b>harvest</b>
+@tutorial_autocomplete = Widzisz tę listę? Edytor zgaduje, co chcesz wpisać.
+Sprytne, prawda?
+@tutorial_accept_completion = Dotknij tej, którą chcesz, albo naciśnij <b>Tab</b>, aby przyjąć podświetloną podpowiedź.
+@tutorial_run_harvest = Zobaczmy, co się stanie.
+Dotknij <b>Play</b>, aby uruchomić kod.
+@tutorial_error = Ups! Gdy coś jest nie tak, błąd pojawia się dokładnie tam, gdzie wystąpił.
+Mówi ci nawet, jak go naprawić.
+@tutorial_type_bracket = <b>()</b> mówi dronowi, żeby naprawdę to zrobił.
+Dotknij swojego kodu i wpisz <b>(</b>
+@tutorial_brackets_pair = Nawiasy zawsze chodzą parami, więc dostajesz oba naraz.
+@tutorial_run_program = To jest program! Dotknij <b>Play</b>, aby go uruchomić.
+@tutorial_leave_fullscreen = Stąd nie widać farmy.
+Dotknij <b>x</b>, aby wrócić.
+@tutorial_first_program = Udało się!
+To był twój pierwszy program.
+@tutorial_hay = Wszystko, co zbierze dron, trafia do mnie.
+To siano, twój pierwszy surowiec.
+@tutorial_get_five = Zdobądźmy 5 sztuk.
+Uruchom <b>main</b> jeszcze raz, gdy trawa odrośnie.
+@tutorial_hay_five = Pięć siana! To zasługuje na piątkę. Taką sianową.
+@tutorial_play_gets_old = Naciskanie Play za każdym razem nudzi się, prawda?
+Niech dron robi to automatycznie.
+@tutorial_open_tech_tree = Ale do tego musimy odblokować nową technologię.
+Dotknij tego przycisku, aby otworzyć drzewko technologii.
+@tutorial_tech_tree = Wow, ile tu rzeczy!
+Tutaj wydajesz swoje surowce.
+@tutorial_tap_loops = Możemy odblokować <b>pętle</b>. Zobaczmy.
+Dotknij ich, aby sprawdzić, co robią.
+@tutorial_buy_loops = Pętle powtarzają kod, więc nie musisz za każdym razem naciskać Play.
+Dotknij <b>Odblokuj</b>, aby je kupić.
+@tutorial_docs_intro = Za każdym razem, gdy coś odblokujesz, tutaj otworzy się jego strona.
+To <b>dokumentacja</b>. Wie o tej grze więcej niż ja.
+@tutorial_docs_example = Wypróbuj przykład. Dotknij <b>Play</b> w małym oknie.
+@tutorial_docs_navigate = Dotknij łącza, aby przejść do tej strony.
+<b>Wróć</b> cofa cię, <b>Strona główna</b> pokazuje wszystko, co jest.
+Zamknij ją przyciskiem <b>x</b>, gdy skończysz.
+@tutorial_docs_reopen = Możesz ją otworzyć w każdej chwili przyciskiem <b>i</b>.
+@tutorial_loop_tap_main = Teraz zapętlijmy te zbiory.
+Dotknij <b>main</b>.
+@tutorial_loop_caret_swipe = Najpierw przesuń kursor na początek wiersza.
+Przeciągnij palcem w bok po klawiaturze, aby przesunąć kursor. Dowolny klawisz zadziała.
+@tutorial_loop_caret_tap = Najpierw przesuń kursor na początek wiersza.
+Dotknij tuż przed <b>harvest</b>, aby umieścić tam kursor.
+@tutorial_loop_type_while = Teraz wpisz <b>while</b> i spację przed <b>harvest()</b>.
+@tutorial_loop_type_true = Potem <b>True</b>, z wielkiej litery T.
+Wpisz <b>t</b> i wybierz <b>True</b> z listy.
+@tutorial_loop_type_colon = I dwukropek <b>:</b> na końcu.
+@tutorial_loop_return = Teraz naciśnij <b>Return</b>, aby przenieść <b>harvest()</b> do osobnego wiersza.
+@tutorial_loop_tab = Naciśnij <b>Tab</b>, aby wciąć <b>harvest()</b>.
+@tutorial_loop_spaces = Wpisz kilka spacji przed <b>harvest()</b>, aby zrobić wcięcie.
+@tutorial_loop_auto_indent = Widzisz, jak <b>harvest()</b> samo się przesunęło?
+Edytor zrobił wcięcie za ciebie.
+@tutorial_loop_explain = Wszystko wcięte pod <b>while True:</b> powtarza się w nieskończoność.
+@tutorial_loop_caret_back = Ups, kursor uciekł.
+Ustaw go z powrotem tuż przed <b>harvest()</b>.
+@tutorial_loop_true_case = Uwaga, to musi być <b>True</b> z wielkiej litery T.
+Usuń to, potem wpisz <b>t</b> i wybierz <b>True</b> z listy.
+@tutorial_loop_off_track = Hmm, to nie do końca to.
+Cofnij do miejsca, w którym poszło nie tak, albo zacznij od nowa.
+@tutorial_loop_start_over = Zacznij od nowa
+@tutorial_loop_run = Uruchom i rozsiądź się wygodnie.
+@tutorial_done = Hura, zobacz, jak śmiga!
+<b>To</b> jest prawdziwa farma!
+@tutorial_done_more = To wszystko, czego potrzebujesz na początek.
+Gdy utkniesz, dotknij <b>i</b>, aby zajrzeć do dokumentacji.
+@tutorial_done_petting = Odezwę się, gdy pojawi się coś nowego.
+A, i bardzo lubię głaskanie. Tak tylko mówię.
+@tutorial_tip_windows_new = Dużymi programami łatwiej zarządzać w kilku plikach.
+Dotknij <b>+</b>, aby utworzyć nowy.
+@tutorial_tip_windows_manage = Przeciągnij okno za nagłówek, aby je przesunąć.
+Upuść je na innym oknie, aby je ze sobą zadokować.
+Pociągnij za róg, aby zmienić jego rozmiar.
+<b>Minimalizuj</b> chowa okno. <b>Kosz</b> usuwa plik na dobre.
+@tutorial_tip_caret = Pokażę ci coś fajnego.
+Możesz przesuwać kursor, przeciągając palcem po klawiaturze.
+Śmiało, spróbuj.
+@tutorial_tip_caret_select = Fajne, prawda? A będzie jeszcze fajniej!
+Podczas przeciągania przytrzymaj drugim palcem klawisz <b>Shift</b>.
+Dzięki temu znacznie szybciej zaznaczysz i zmienisz kod.
+@tutorial_tip_autocomplete = Podpowiedzi możesz też wybierać, przeciągając palcem w górę lub w dół po klawiaturze,
+albo pozbyć się ich, przeciągając w lewo lub w prawo.
+@tutorial_tip_word_info = Dotknij dwukrotnie dowolnego słowa w kodzie, aby je sprawdzić.
+Gdy kod działa, dotknij dwukrotnie zmiennej, aby zobaczyć jej wartość.
+@tutorial_tip_step = Nie wiesz, gdzie coś idzie nie tak?
+Dotknij <b>Krok</b>, aby wykonywać kod wiersz po wierszu.
+@tutorial_tip_search = Wyszukiwanie znajduje tekst we wszystkich otwartych oknach kodu i dokumentacji.
+<b><noparse><</noparse></b> i <b><noparse>></noparse></b> przeskakują między wynikami.
+@tutorial for new saves = Samouczek w nowych zapisach
+@option_tooltip_tutorial_for_new_saves = Czy świnka oprowadza po nowym zapisie. Wyłącza się samo, gdy ukończysz samouczek lub go odrzucisz.

@@ -31,7 +31,7 @@ uruchom symulację
 Funkcja `simulate()` zwraca czas w sekundach, jaki zajęła symulacja danego pliku startowego.
 
 ### Nazwa pliku
-Pierwszym argumentem funkcji `simulate()` jest nazwa pliku wyświetlana na górze okna kodu. Symulacja uruchomi wskazany plik tak, jakby naciśnięto w jego oknie przycisk Wykonaj.
+Pierwszym argumentem funkcji `simulate()` jest nazwa pliku wyświetlana na górze okna kodu. Symulacja uruchomi wskazany plik tak, jakby <desktop>kliknięto</desktop><mobile>dotknięto</mobile> w jego oknie przycisk Wykonaj.
 
 ### Początkowe odblokowania
 Wszystkie funkcje programistyczne, takie jak pętle, instrukcje `if`, listy i słowniki, zawsze pozostają odblokowane.

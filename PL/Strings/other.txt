@@ -15,3 +15,9 @@
 
 {1}
 @latest_news = Najnowsze wiadomości
+
+@tap_here_for_more_info = -- dotknij tutaj po więcej informacji --
+@right_click_to_open_store = -- prawy klik, aby otworzyć sklep --
+@tap_here_to_open_store = -- dotknij tutaj, aby otworzyć sklep --
+@tooltip_button_more_info = Więcej informacji
+@loading_screen = Wczytywanie

@@ -1,0 +1,9 @@
+@cloud_notice_ok = OK
+@cloud_notice_account_changed_headline = Twoje konto się zmieniło
+@cloud_notice_account_saves = Jesteś teraz zalogowany do {0} na innym koncie. Gra pokazuje teraz zapisy tego konta.
+@cloud_notice_account_no_saves = Jesteś teraz zalogowany do {0} na innym koncie. To konto nie ma jeszcze zapisów, więc zaczyna się nowa gra.
+@cloud_notice_account_signed_in = Jesteś teraz zalogowany do {0}. Gra pokazuje teraz zapisy tego konta. Zapisy utworzone bez logowania pozostają na tym urządzeniu.
+@cloud_notice_account_unsent = Zapisy konta, którego używałeś wcześniej, wciąż są na tym urządzeniu, ale nie ma ich jeszcze w jego zapisie w chmurze. Zaloguj się ponownie do {0} na tym koncie na tym urządzeniu, aby zapisać je w chmurze.
+@cloud_sign_in_failed_google_play_games = Nie udało się zalogować do Google Play Games. Spróbuj ponownie później.
+@cloud_sign_in_failed_game_center = Nie udało się zalogować do Game Center. Włącz je w aplikacji Ustawienia i spróbuj ponownie.
+@cloud_notice_save_failed = Nie udało się zapisać {0} na tym urządzeniu. Upewnij się, że urządzenie ma wolne miejsce, i spróbuj ponownie.

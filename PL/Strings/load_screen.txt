@@ -1,0 +1,14 @@
+@load_screen_play = Graj
+@load_screen_current = Bieżący
+@load_screen_unlocks = Odblokowania: {0}
+@load_screen_unlock = Odblokowania: {0}
+@load_screen_code_files = Pliki z kodem: {0}
+@load_screen_code_file = Pliki z kodem: {0}
+@load_screen_no_saves = Brak zapisów
+@load_screen_no_saves_hint = Naciśnij „{0}”, aby założyć farmę.
+@load_screen_rename_title = Zmień nazwę zapisu
+@load_screen_rename = Zmień nazwę
+@load_screen_rename_empty = Wpisz nazwę.
+@load_screen_rename_taken = Zapis o tej nazwie już istnieje.
+@load_screen_delete_title = Usunąć {0}?
+@load_screen_delete_body = Farma i kod tego zapisu zostaną usunięte. Nie da się tego cofnąć.
