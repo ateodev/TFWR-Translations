@@ -1,0 +1,9 @@
+@cloud_notice_ok = 確定
+@cloud_notice_account_changed_headline = 你的帳號已變更
+@cloud_notice_account_saves = 你現在已用另一個帳號登入 {0}。遊戲現在顯示該帳號的存檔。
+@cloud_notice_account_no_saves = 你現在已用另一個帳號登入 {0}。該帳號還沒有存檔，因此將開始新遊戲。
+@cloud_notice_account_signed_in = 你現在已登入 {0}。遊戲現在顯示此帳號的存檔。你未登入時建立的存檔會保留在此裝置上。
+@cloud_notice_account_unsent = 你先前使用的帳號的存檔仍在此裝置上，但尚未上傳至該帳號的雲端存檔。請在此裝置上重新以該帳號登入 {0}，以將它們儲存到雲端。
+@cloud_sign_in_failed_google_play_games = 無法登入 Google Play Games。請稍後再試。
+@cloud_sign_in_failed_game_center = 無法登入 Game Center。請在「設定」App 中開啟它，然後再試一次。
+@cloud_notice_save_failed = 無法在此裝置上儲存 {0}。請確認裝置有可用空間，然後再試一次。

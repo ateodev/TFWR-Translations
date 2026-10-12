@@ -4,12 +4,14 @@
 第一個是逐步執行程式。
 你可以使用「執行」按鈕旁的按鈕或設定斷點進入逐步執行模式。
 
-點選程式碼左側的斷點面板可新增斷點。
+<desktop>點擊</desktop><mobile>點選</mobile>程式碼左側的斷點面板可新增斷點。
 ![](Breakpoints227)
 當程式碼執行到斷點所在的行時，就會自動切換到逐步模式。
 
-將滑鼠移到變數上時，會顯示它目前的值。
-
+<desktop>將滑鼠移到變數上時，會顯示它目前的值。
+</desktop>
+<mobile>點兩下變數可以查看它目前的值。
+</mobile>
 `print()` 函式也非常有用。無人機會將傳遞給它的任何值直接書寫在空中。
 
 範例：
@@ -38,4 +40,4 @@ print 函式將數值直接印出到空中和[輸出](docs/output.md)頁面。
 
 輸出視窗也會記錄警告和錯誤，所以如果操作未按預期運行，不妨查看一下輸出視窗。
 
-當執行停止時，輸出也會被寫入遊戲資料夾中的 [output.txt](persistent_data_path/output.txt) 檔案中。
+<desktop>當執行停止時，輸出也會被寫入遊戲資料夾中的 [output.txt](persistent_data_path/output.txt) 檔案中。</desktop>

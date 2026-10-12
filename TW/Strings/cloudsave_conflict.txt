@@ -1,0 +1,15 @@
+@cloud_conflict_title = 雲端存檔衝突
+@cloud_conflict_message = 你的存檔在多台裝置上有所變更。
+@cloud_conflict_versions_total = 版本總數：{0}
+@cloud_conflict_keep = 保留版本 {0}
+@cloud_conflict_confirm_title = 保留版本 {0}？
+@cloud_conflict_confirm_body = 其他所有版本都會從雲端和此裝置上刪除。
+@cloud_card_version = 版本 {0}
+@cloud_card_suggested = 建議
+@cloud_card_this_device = 此裝置
+@cloud_card_another_device = 其他裝置
+@cloud_card_saved = 儲存於 {0}
+@cloud_card_saves_heading = 存檔
+@cloud_card_unlocks_heading = 解鎖項
+@cloud_card_more = 還有 {0} 個
+@cloud_card_unreadable = 無法讀取詳細資訊

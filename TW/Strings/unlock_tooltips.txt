@@ -1,4 +1,6 @@
 @unlock_tooltip_template_cost = ### 解鎖成本 {{{{itemblock cost unlock {0}}}}}
+@unlock_tooltip_template_additional_requirement = ### 解鎖需求
+{0} 解鎖項必須達到等級 {1} 以上。
 @unlock_descr_trees = 解鎖樹木。
 
 ```
@@ -67,6 +69,10 @@ use_item(Items.Water)
 till()
 plant(Entities.Carrot)
 ```
+@unlock_descr_rice = 就像小麥一樣，只是長在黏土上。
+
+`if get_ground_type() == Grounds.Clay:
+    plant(Entities.Rice)`
 @unlock_descr_lists = 使用串列儲存大量的值。
 
 ```
@@ -163,8 +169,41 @@ other_file.function()
 ```
 spawn_drone(task)
 ```
+@unlock_descr_mining = 給無人機一個鑽頭。還有一頂礦工帽。
+
+`dig()`
+@unlock_descr_coal = 煤礦會在地底生成。
+@unlock_descr_iron = 鐵礦脈會在地底生成。
+@unlock_descr_pyramid = 古代砂岩建築會在地底生成。
+@unlock_descr_quartz = 石英針會在地底生成。
+@unlock_descr_ore_boost = 煤炭產量加倍。鐵礦脈和石英礦脈的大小加倍。
+@unlock_descr_jump = 讓無人機可以向下跳躍。
+@unlock_descr_prospecting = 用煤炭來尋找鐵！
+
+`prospect_iron()`
+@unlock_descr_drill = 提高鑽頭強度。
+@unlock_descr_debug_place = 放置彩色方塊。
+
+`place(Grounds.Red_Block)`
+@unlock_descr_underground_senses = 用來與地底方塊互動的無人機感測器
+
+`while get_pos_z() < 100:
+    while get_hardness() > 5:
+        while get_hardness(North):
+            dig(North)
+        move(North)
+    dig()`
+@unlock_descr_petrified_pumpkins = 石化的南瓜會在地底生成。
+@unlock_descr_special_soils = 發現珍珠岩層和壤土層，提高植物產量。
+@unlock_descr_bamboo = 種植竹子，看著它生長。
+
+`plant(Entities.Bamboo)`
+@unlock_descr_dynamite = 尋找並使用炸藥把東西炸飛。
+@unlock_descr_treasure_map = 尋找深埋地底的寶藏。
+@unlock_descr_mushrooms = 透過配對蘑菇類型來尋找並收穫地底的蘑菇。
 @multi_unlock_descr_expand = 擴張農場。這同時會清空農場。
 @multi_unlock_descr_carrots = 提升胡蘿蔔的產量和成本。
+@multi_unlock_descr_rice = 提高稻米的產量和成本。
 @multi_unlock_descr_trees = 提升灌木和樹木的產量。
 @multi_unlock_descr_pumpkins = 提升南瓜的產量和成本。
 @multi_unlock_descr_mazes = 提升寶箱中的金碧樹量，以及生成迷宮所需的奇異物質數量。
@@ -175,9 +214,22 @@ spawn_drone(task)
 @multi_unlock_descr_watering = 獲得更多水。
 @multi_unlock_descr_fertilizer = 獲得更多肥料。
 @multi_unlock_descr_megafarm = 進一步提升無人機數量。
+@multi_unlock_descr_drill = 提高挖掘速度。
+@multi_unlock_descr_coal = 地底會生成更多煤層。
+@multi_unlock_descr_iron = 提高鐵礦的產量。
+@multi_unlock_descr_pyramid = 提高修復金字塔獲得的能量。
+@multi_unlock_descr_quartz = 提高石英礦的產量。
+@multi_unlock_descr_petrified_pumpkins = 提高石化南瓜的產量。
+@multi_unlock_descr_dynamite = 提高炸藥的產量和爆炸的能量。
+@unlock_descr_explosive_drill = 最強力的鑽頭。
+@multi_unlock_descr_treasure_map = 增加藏寶路徑的深度，因此也增加你從寶藏獲得的黃金數量。
+@multi_unlock_descr_ore_boost = 進一步提高煤炭產量。進一步增加鐵礦脈和石英礦脈的大小。
+@multi_unlock_descr_bamboo = 提高竹子的產量和成本。
+@multi_unlock_descr_mushrooms = 提高配對蘑菇方塊的產量。
 @auto_unlock = 自動解鎖
 @cactus = 仙人掌
 @carrots = 胡蘿蔔
+@rice = 稻米
 @costs = 成本
 @debug = 偵錯
 @debug_2 = 偵錯 2
@@ -200,6 +252,8 @@ spawn_drone(task)
 @polyculture = 混合種植
 @pumpkins = 南瓜
 @senses = 感測
+@underground_senses = 地下感測
+@debug_place = 彩色方塊
 @simulation = 模擬
 @speed = 速度
 @sunflowers = 向日葵
@@ -210,3 +264,23 @@ spawn_drone(task)
 @utilities = 實用工具
 @variables = 變數
 @watering = 澆水
+@iron = 鐵
+@pyramid = 金字塔
+@ore_boost = 礦石增產
+@petrified_pumpkins = 石化南瓜
+@special_soils = 特殊土壤
+@mining = 採礦
+@coal = 煤炭
+@drill = 鑽頭
+@quartz = 石英
+@prospecting = 鐵礦探勘
+@dynamite = 炸藥
+@explosive_drill = 爆破鑽頭
+@bamboo = 竹子
+@treasure_map = 藏寶圖
+@mushrooms = 蘑菇
+@jump = 跳躍
+@unlock_button_unlock = 解鎖
+@unlock_button_upgrade = 升級
+@unlock_button_get_full_game = 取得完整版
+@unlock_button_reset = 重設為最大值

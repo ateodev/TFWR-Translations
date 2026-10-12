@@ -1,6 +1,7 @@
 @button_tooltip_load = 載入或建立一個存檔。
 @button_tooltip_save = 儲存遊戲。
 @button_tooltip_options = 開啟選項選單。
+@button_tooltip_iap = 開啟商店。
 @button_tooltip_discord = 加入 Discord 與其他玩家和開發者交流、回報 bug 或尋求幫助。
 @button_tooltip_execute = 開始或停止執行此視窗的程式碼。
 @button_tooltip_step_by_step = 執行單步程式碼。
@@ -10,6 +11,8 @@
 @button_tooltip_delete = 永久刪除此檔案。
 @button_tooltip_close_docs = 關閉此視窗。
 @button_tooltip_table_of_contents = 目錄
+@button_tooltip_docs_home = 前往說明文件首頁。
+@button_tooltip_docs_back = 返回上一個瀏覽的說明文件頁面。
 @button_tooltip_new_game = 建立新存檔。
 @button_tooltip_open_folder = 在檔案總管中開啟存檔資料夾。
 @button_tooltip_toggle_search_docs = 切換在搜尋中是否包含文檔視窗。
@@ -19,8 +22,10 @@
 @button_tooltip_close_search = 關閉搜尋選單。
 @button_tooltip_open_unlock_menu = 開啟科技樹。
 @warning_icon_tooltip = 你的程式碼觸發了警告。點擊圖示可在「輸出」視窗中查看詳細資訊。
+@warning_icon_tooltip_mobile = 你的程式碼觸發了警告。點選圖示可在「輸出」視窗中查看詳細資訊。
 @option_tooltip_graphics = 影響各種渲染通道設定，如陰影、環境光遮蔽和光暈。
 @option_tooltip_vfx_limit = 限制每秒可播放的特效數量。
+@option_tooltip_avalanche_particles = 停用崩塌時產生的粒子效果。
 @option_tooltip_volume = 調整所有聲音的音量。
 @option_tooltip_music_volume = 調整音樂的音量。
 @option_tooltip_drone_volume = 調整無人機嗡嗡聲的音量。
@@ -45,6 +50,7 @@
 @option_tooltip_resolution = 變更遊戲解析度。
 @option_tooltip_increment_number_effect = 停用物品欄中數字變化時的特效。
 @option_tooltip_color_theme = 變更 UI 的色彩主題。你可以在存檔目錄裡的「Themes」資料夾中加入自定義主題。
+@option_tooltip_color_theme_mobile = 變更 UI 的色彩主題。
 @keybind_tooltip_indent_selection = 為所有選取的行新增縮排。必須是一個能插入字元的鍵。任何與 Ctrl 或 Alt 的組合鍵均無效。
 @keybind_tooltip_unindent_selection = 移除所有選取的行的縮排。必須是一個能插入字元的鍵。任何與 Ctrl 或 Alt 的組合鍵均無效。
 @keybind_tooltip_menu = 開啟或關閉主選單。
@@ -61,3 +67,14 @@
 @keybind_tooltip_next_step = 如果已暫停執行，則執行單步操作。
 @keybind_tooltip_pause_execution = 暫停執行。
 @keybind_tooltip_hide_UI = 隱藏或顯示 HUD。
+@button_tooltip_achievements = 顯示你的成就。
+@button_tooltip_sign_in = 登入 Google Play Games / Game Center 以同步你的成就。
+@option_tooltip_keyboard_switches = 按下遊戲內鍵盤按鍵時的回饋：按鍵音 = 機械鍵盤按鍵聲，系統按鍵音 = 裝置鍵盤本身的按鍵聲，震動 = 短促的震動。
+@button_tooltip_open_main_menu = 開啟主選單。
+@button_tooltip_open_search = 開啟搜尋列。
+@button_tooltip_open_news = 開啟最新消息。
+@button_tooltip_fullscreen = 以全螢幕顯示此視窗。
+@button_tooltip_exit_fullscreen = 離開全螢幕。
+@option_tooltip_keyboard_layout = 遊戲內鍵盤的按鍵排列。預設使用你系統語言對應的配置。
+@option_tooltip_keyboard_type = 用哪種鍵盤輸入程式碼。遊戲內鍵盤具備 Python 所需的全部符號；系統鍵盤則是你在其他應用程式中使用的鍵盤。連接實體鍵盤時一律優先使用實體鍵盤。
+@option_tooltip_exit_fullscreen_on_run = 按下執行時離開全螢幕程式碼編輯器並顯示農場。中斷點仍會帶你前往暫停的那一行。

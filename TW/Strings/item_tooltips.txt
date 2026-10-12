@@ -1,5 +1,6 @@
 @item_tooltip_template_amount = 你有 {0} 個
 @item_descr_carrot = 透過收穫胡蘿蔔獲得。
+@item_descr_rice = 收割稻米取得。
 @item_descr_fertilizer = 呼叫 `use_item(Items.Fertilizer)` 立即將植物剩餘生長時間縮短 2 秒。
 @item_descr_weird_substance = 在灌木叢上呼叫 `use_item(Items.Weird_Substance)` 可以升成一個迷宮，或對其他植物呼叫可切換其感染狀態。從受感染的植物中獲得。給植物施肥會使它們感染。
 @item_descr_gold = 在迷宮的寶箱中找到。
@@ -12,3 +13,10 @@
 @item_descr_cactus = 透過收穫已排序的仙人掌獲得。
 @item_descr_cactus_seed = 此物品已從遊戲中移除。
 @item_descr_bone = 遠古生物的骨頭。
+@item_descr_block = 一個方塊，透過挖掘取得。
+@item_descr_coal = 在地底挖掘煤炭取得。煤礦以平坦的薄層出現。
+@item_descr_iron = 在地底挖掘鐵礦取得。
+@item_descr_quartz = 挖掘石英礦脈取得。以針狀結構生長。
+@item_descr_dynamite = 挖掘炸藥地面取得。
+@item_descr_bamboo = 收割竹子取得。
+@item_descr_mushroom = 堆疊蘑菇地面方塊取得。

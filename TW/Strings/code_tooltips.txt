@@ -140,6 +140,16 @@ y 座標從南邊的 `0` 開始，向北遞增。
 ```
 x, y = get_pos_x(), get_pos_y()
 ```
+@code_tooltip_get_pos_z = `get_pos_z()`
+取得無人機目前的 z 座標。
+z 座標從 `0` 開始，向下挖掘時會遞減。
+
+回傳一個代表無人機目前 z 座標的數字。
+
+執行需要 `1` 個 tick。
+
+範例：
+`x, y, z = get_pos_x(), get_pos_y(), get_pos_z()`
 @code_tooltip_get_world_size = `get_world_size()`
 取得目前農場的大小。
 
@@ -179,6 +189,26 @@ if get_entity_type() == Entities.Grass:
 if get_ground_type() != Grounds.Soil:
     till()
 ```
+@code_tooltip_get_hardness = `get_hardness()`
+查看無人機下方地面的硬度。
+
+回傳無人機下方地面的硬度。
+
+執行需要 `1` 個 tick。
+
+範例：
+`if get_hardness() < 5:
+    dig()`
+@code_tooltip_get_stability = `get_stability()`
+查看無人機下方地面的穩定度。
+
+回傳無人機下方地面的穩定度。
+
+執行需要 `1` 個 tick。
+
+範例：
+`if get_stability() > 3:
+    dig()`
 @code_tooltip_get_time = `get_time()`
 取得目前的遊戲時間。
 
@@ -786,3 +816,59 @@ else:
 @code_tooltip_or = 計算第一個運算元。如果結果為真值（除了 `False`、`0` 和空集合之外的任何值），則立即回傳該值（短路求值），否則，計算並回傳第二個運算元。
 @code_tooltip_return = 用於從函式中回傳值。
 @code_tooltip_pass = 什麼都不做。由於不允許空的程式碼區塊，因此必要時可用它進行填充。
+@code_tooltip_dig = `dig()`
+向下挖掘一格。
+
+挖掘速度取決於方塊的硬度和無人機的鑽頭強度。
+
+範例：
+`dig()`
+@code_tooltip_prospect_iron = `prospect_iron()`
+消耗煤炭來尋找鐵。
+
+如果附近有鐵礦，回傳最近鐵礦的方向（`North`、`East`、`South` 或 `West`）。如果附近沒有鐵、煤炭不足，或無人機已經在鐵礦正上方，則回傳 `None`。
+
+執行需要消耗 1 個煤炭。
+
+範例：
+`while prospect_iron() != None:
+    move(prospect_iron())`
+@code_tooltip_prospect_quartz = `prospect_quartz()`
+消耗鐵來尋找石英。
+
+回傳無人機到最近石英方塊的歐幾里得距離（3D 距離），如果附近沒有石英則回傳 `None`。
+
+執行需要消耗 1 個鐵。
+
+範例：
+`print(prospect_quartz())`
+@code_tooltip_place = `place(ground)`
+放置方塊。
+
+你可以指定要放置的方塊。只能放置沒有特殊功能的方塊。例如，你可以 `place(Grounds.Rock)`，但不能 `place(Grounds.Clay)`。
+
+範例：
+`place(Grounds.Rock)`
+@code_tooltip_push = `push(direction)`
+推動無人機下方的蘑菇方塊。
+
+方塊無法向上推。
+
+如果方塊被推動則回傳 `True`，否則回傳 `False`。
+
+範例：
+`push(North)`
+@code_tooltip_can_push = `can_push(direction)`
+檢查無人機下方的方塊是否可以被推動。
+
+如果無人機下方的方塊可以被推動則回傳 `True`，否則回傳 `False`。
+
+範例：
+`can_push(North)`
+@code_tooltip_jump = `jump(unlock)`
+跳躍到與 `unlock` 相關的地下構造。
+
+每個指令碼只能執行一次 `jump`。
+
+範例：
+`jump(Unlocks.Iron)`

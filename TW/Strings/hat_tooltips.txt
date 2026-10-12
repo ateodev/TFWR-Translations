@@ -18,3 +18,8 @@
 @hat_descr_gold_trophy_hat = 只給最優秀的農夫。
 @hat_descr_silver_trophy_hat = 給第二好的農夫。
 @hat_descr_wood_trophy_hat = 給第三好的農夫。
+@hat_descr_explosive_drill = 每次挖掘消耗 1 個炸藥並引發一次普通爆炸。被爆炸直接摧毀的方塊會像被開採一樣產出物品。只能有一台無人機裝備爆破鑽頭。
+@hat_descr_golden_cactus_hat = 仙人掌帽的黃金版本。
+@hat_descr_golden_pumpkin_hat = 南瓜帽的黃金版本。
+@hat_descr_golden_sunflower_hat = 向日葵帽的黃金版本。
+@hat_descr_the_farmers_remains = 發生了什麼事？

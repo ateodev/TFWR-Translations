@@ -47,7 +47,7 @@ run_time = simulate(filename, sim_unlocks, sim_items, sim_globals, seed, speedup
 `simulate()` 函式會回傳模擬指定起始檔案所需的時間（以秒為單位）。
 
 ### 檔案名稱
-`simulate()` 函式的第一個引數為檔案名稱。這是顯示在程式碼視窗頂端的名稱。模擬會如同你按下該檔案的執行按鈕一樣執行指定的檔案。
+`simulate()` 函式的第一個引數為檔案名稱。這是顯示在程式碼視窗頂端的名稱。模擬會如同你<desktop>點擊</desktop><mobile>點選</mobile>該檔案的執行按鈕一樣執行指定的檔案。
 
 ### 起始解鎖項目
 所有程式語言功能，如迴圈、if 陳述式、串列、字典……會永遠保持解鎖。

@@ -13,6 +13,17 @@
 @table_of_contents_section_items = 物品
 @table_of_contents_section_entities = 實體
 @table_of_contents_section_grounds = 地塊
+@tap_here_for_more_info = -- 點選此處查看更多資訊 --
+@right_click_to_open_store = -- 右鍵點擊開啟商店 --
+@tap_here_to_open_store = -- 點選此處開啟商店 --
+@tooltip_button_more_info = 更多資訊
+@loading_screen = 載入中
 @new_hat_unlocked = ## 已解鎖新帽子
 `change_hat(`{0}`)`
 @right_click_for_more_info = -- 右鍵點擊查看更多資訊 --
+@missing_unlock_page = 你需要先在[科技樹](tech_tree)中解鎖 {0}，才能查看此頁面。
+
+---
+
+{1}
+@latest_news = 最新消息

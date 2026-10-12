@@ -8,6 +8,8 @@
 @object_descr_bush = 一種會掉落 `Items.Wood` 的小灌木。
 @object_descr_tree = 樹木比灌木掉落更多木材。如果旁邊有其他樹木生長，樹木的生長速度會變慢。
 @object_descr_carrot = 胡蘿蔔！
+@object_descr_rice = 稻米可以種在你在地底找到的黏土層上。
+@object_descr_bamboo = 竹子可以長得很高，但會在某個特定高度開花。在開花處收割時產量最多。
 @object_descr_pumpkin = 南瓜與其他完全成熟的南瓜相鄰時會一起生長。大約五分之一的南瓜在成熟後會死亡。
 @object_descr_dead_pumpkin = 五分之一的南瓜在成熟後會死亡，留下一個枯萎南瓜。枯萎南瓜毫無用處，種植新植物後會消失。
 @object_descr_sunflower = 向日葵會吸收太陽的能量。收穫它可獲得 `Items.Power`。
@@ -18,8 +20,37 @@
 @object_descr_dinosaur = 恐龍帽尾巴的碎片。
 @object_descr_grassland = 預設地塊。牧草會自動在上面生長。
 @object_descr_soil = 呼叫 `till()` 會將地塊變成土壤。再次呼叫 `till()` 會將其變回草地。
+@object_descr_dirt = 就是泥土。
+@object_descr_rock = 一塊堅硬的岩石。
+@object_descr_clay = 一個黏土方塊。肥沃的土地，非常適合種稻米。稻米成熟時，會把下方的黏土變回泥土。
+@object_descr_blue_block = 一個藍色方塊。
+@object_descr_red_block = 一個紅色方塊。
+@object_descr_green_block = 一個綠色方塊。
+@object_descr_coal = 富含沉積煤的方塊。
+@object_descr_iron = 含有原始磁鐵礦的方塊。
+@object_descr_quartz = 包裹著結晶石英的方塊。
+@object_descr_limestone = 泛白的石灰岩。構成古代金字塔的地基。
+@object_descr_sand = 一個沙方塊。古代金字塔的一部分。
+@object_descr_bedrock = 堅不可摧。
+@object_descr_petrified_pumpkin = 一顆石化的南瓜。仍然可以吃。
+@object_descr_loam = 肥沃的壤土，非常適合種植特定植物。向日葵和胡蘿蔔種在這裡時產量加倍。
+@object_descr_perlite = 含有大量珍珠岩的泥土，非常適合種植特定植物。灌木、仙人掌、竹子和樹木種在這裡時產量加倍。
 @runtime_entity_tooltip = 收穫後，可獲得：
 {{itemblock tooltip}}
 @runtime_growable_tooltip = 總生長時間：{0} 秒
 已生長 {1}%
+@runtime_ground_hardness_tooltip = 硬度：{0}
+@runtime_ground_stability_tooltip = 穩定度：{0}
+@runtime_ground_water_tooltip = 水位：{0}
+@object_descr_dynamite = 被挖掘時會爆炸。種植和收割一律消耗並產出 1 個炸藥。
+@object_descr_dynamite_ground = 被挖掘時可能會在下方方塊掉落一些炸藥。炸藥可以收割，或挖掘它使其爆炸。
+@object_descr_soot = 神秘的煤灰，呼叫 `measure()` 時會計算上方地層中活性炸藥的數量。任何掉落在它上面的炸藥都會立即引爆。
+@object_descr_basalt = 熔岩冷卻形成的軟岩。下方可能保存了什麼東西？
+@object_descr_treasure_map_ground = 一張藏寶圖！它會通往哪裡呢？
+@object_descr_treasure_path_ground = 位於從藏寶圖通往目標的路徑上。
+@object_descr_treasure_goal_ground = 藏寶圖路徑盡頭的目標。這裡可能藏著什麼？
+@object_descr_underground_treasure = 在藏寶圖路徑盡頭找到的神秘寶藏。
+@object_descr_mushroom = 生長在地底的蘑菇。使用 `measure()` 來判斷它是哪一種蘑菇。
 @runtime_ground_tooltip = 含水量：{0}
+@runtime_mushroom_tooltip = 當兩個同類型的蘑菇方塊堆疊時，會給予：
+{{itemblock tooltip_ground}}
