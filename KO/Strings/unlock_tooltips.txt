@@ -165,6 +165,7 @@ other_file.function()`
 @multi_unlock_descr_quartz = 수정 광석의 수확량이 증가합니다.
 @multi_unlock_descr_petrified_pumpkins = 화석화된 호박의 수확량이 증가합니다.
 @multi_unlock_descr_dynamite = 다이너마이트 수확량과 폭발 에너지가 증가합니다.
+@unlock_descr_explosive_drill = 가장 강력한 드릴입니다.
 @multi_unlock_descr_treasure_map = 보물 길의 깊이가 늘어나고, 따라서 보물에서 얻는 황금의 양도 증가합니다.
 @multi_unlock_descr_ore_boost = 석탄 수확량이 더 증가합니다. 철과 수정 광맥의 크기가 더 커집니다.
 @multi_unlock_descr_bamboo = 대나무의 수확량과 비용이 증가합니다.
@@ -218,7 +219,13 @@ other_file.function()`
 @quartz = 수정
 @prospecting = 철 탐사
 @dynamite = 다이너마이트
+@explosive_drill = 폭발 드릴
 @bamboo = 대나무
 @treasure_map = 보물지도
 @mushrooms = 버섯
 @jump = 점프
+
+@unlock_button_unlock = 해금
+@unlock_button_upgrade = 업그레이드
+@unlock_button_get_full_game = 정식판 받기
+@unlock_button_reset = 최대로 초기화

@@ -1,0 +1,15 @@
+@cloud_conflict_title = 클라우드 저장 충돌
+@cloud_conflict_message = 저장 항목이 두 대 이상의 기기에서 변경되었습니다.
+@cloud_conflict_versions_total = 전체 버전 수: {0}
+@cloud_conflict_keep = 버전 {0} 유지
+@cloud_conflict_confirm_title = 버전 {0}을(를) 유지할까요?
+@cloud_conflict_confirm_body = 다른 모든 버전은 클라우드와 이 기기에서 삭제됩니다.
+@cloud_card_version = 버전 {0}
+@cloud_card_suggested = 추천
+@cloud_card_this_device = 이 기기
+@cloud_card_another_device = 다른 기기
+@cloud_card_saved = 저장 시각 {0}
+@cloud_card_saves_heading = 저장 항목
+@cloud_card_unlocks_heading = 해금
+@cloud_card_more = 외 {0}개
+@cloud_card_unreadable = 세부 정보를 읽을 수 없습니다

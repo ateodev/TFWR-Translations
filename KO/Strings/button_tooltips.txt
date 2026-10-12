@@ -1,6 +1,7 @@
 @button_tooltip_load = 다른 저장 항목을 불러오거나 새로 만듭니다.
 @button_tooltip_save = 게임을 저장합니다.
 @button_tooltip_options = 옵션 메뉴를 엽니다.
+@button_tooltip_iap = 상점을 엽니다.
 @button_tooltip_discord = Discord에 참여해서 다른 플레이어나 개발자와 대화하고, 버그를 신고하거나 도움을 받으세요.
 @button_tooltip_execute = 이 창에 있는 코드의 실행을 시작하거나 중지합니다.
 @button_tooltip_step_by_step = 코드를 한 단계 실행합니다.
@@ -21,6 +22,7 @@
 @button_tooltip_close_search = 검색 메뉴를 닫습니다.
 @button_tooltip_open_unlock_menu = 해금 트리를 엽니다.
 @warning_icon_tooltip = 코드가 경고를 발동했습니다. 아이콘을 클릭해서 출력 창에서 자세한 내용을 확인하세요.
+@warning_icon_tooltip_mobile = 코드가 경고를 발동했습니다. 아이콘을 탭해서 출력 창에서 자세한 내용을 확인하세요.
 @option_tooltip_graphics = 그림자, 앰비언트 오클루전, 블룸 같은 다양한 렌더 파이프라인 설정에 영향을 줍니다.
 @option_tooltip_vfx_limit = 초당 재생할 수 있는 시각 효과의 수를 제한합니다.
 @option_tooltip_avalanche_particles = 땅이 붕괴할 때 생성되는 파티클을 비활성화합니다.
@@ -48,6 +50,7 @@
 @option_tooltip_resolution = 화면 해상도를 변경합니다.
 @option_tooltip_increment_number_effect = 숫자가 바뀔 때 인벤토리에서 재생되는 효과를 비활성화합니다.
 @option_tooltip_color_theme = UI 색상 테마를 변경합니다. 커스텀 테마는 저장 디렉토리의 "Themes" 폴더에 추가할 수 있습니다.
+@option_tooltip_color_theme_mobile = UI 색상 테마를 변경합니다.
 @keybind_tooltip_indent_selection = 선택한 모든 줄에 들여쓰기를 추가합니다. 이 기능이 작동하려면 문자를 삽입하는 키여야 하므로 ctrl이나 alt 조합은 사용할 수 없습니다.
 @keybind_tooltip_unindent_selection = 선택한 모든 줄에서 들여쓰기를 제거합니다. 이 기능이 작동하려면 문자를 삽입하는 키여야 하므로 ctrl이나 alt 조합은 사용할 수 없습니다.
 @keybind_tooltip_menu = 메인 메뉴를 열거나 닫습니다.
@@ -64,3 +67,15 @@
 @keybind_tooltip_next_step = 실행이 일시 중지된 경우 한 단계 실행합니다.
 @keybind_tooltip_pause_execution = 실행을 일시 중지합니다.
 @keybind_tooltip_hide_UI = HUD를 숨기거나 다시 표시합니다.
+
+@button_tooltip_achievements = 업적을 표시합니다.
+@button_tooltip_sign_in = Google Play Games / Game Center에 로그인하여 업적을 동기화합니다.
+@option_tooltip_keyboard_switches = 게임 내 키보드의 키를 누를 때의 피드백: 클릭음 = 기계식 키 소리, 시스템 클릭음 = 기기 키보드의 클릭 소리, 진동 = 짧은 진동.
+@button_tooltip_open_main_menu = 메인 메뉴를 엽니다.
+@button_tooltip_open_search = 검색창을 엽니다.
+@button_tooltip_open_news = 최신 소식을 엽니다.
+@button_tooltip_fullscreen = 이 창을 전체 화면으로 표시합니다.
+@button_tooltip_exit_fullscreen = 전체 화면을 종료합니다.
+@option_tooltip_keyboard_layout = 게임 내 키보드의 키 배열입니다. 기본값은 시스템 언어의 배열입니다.
+@option_tooltip_keyboard_type = 코드를 입력할 키보드입니다. 게임 내 키보드에는 Python에 필요한 기호가 있고, 시스템 키보드는 다른 앱에서 쓰는 키보드입니다. 하드웨어 키보드가 연결되어 있으면 항상 그것을 대신 사용합니다.
+@option_tooltip_exit_fullscreen_on_run = 시작을 누르면 전체 화면 코드 편집기를 벗어나 농장을 보여줍니다. 중단점에서는 여전히 멈춘 줄로 이동합니다.

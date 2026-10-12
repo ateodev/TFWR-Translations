@@ -1,5 +1,32 @@
+@iap_title_full_game = The Farmer Was Replaced
 @iap_get_full_game = 정식 버전 받기
+@iap_desc_full_game = <b>전부 포함</b>
+• 한 번만 구매. 광고 없음, 구독 없음.
+• 연구 해금 35개 추가
+• 새 모자 열 개 이상
+• 도전할 새 업적
+
+<b>농장은 이제 시작일 뿐이에요</b>
+새로운 작물마다 새로운 프로그래밍 퍼즐이 기다려요. 거대 호박을 기르고, 선인장을 정렬하고, 공룡에게 먹이를 주고, 울타리 미로에서 금을 찾아보세요. 그다음엔 드론 군단과 함께 메가팜으로 확장하세요.
+
+<b>농장 아래 펼쳐진 또 하나의 세계</b>
+드론을 지하로 보내세요. 광석을 캐고, 고대 유적을 발굴하고, 다이너마이트로 지뢰 찾기를 즐기세요.
 @iap_caption_multiple_drones = 여러 대의 드론
 @iap_caption_cool_puzzles = 멋진 퍼즐
 @iap_caption_new_mechanics = 새로운 메커니즘
 @iap_caption_more_upgrades = 더 많은 업그레이드
+@iap_buy = 구매
+@iap_play = 플레이
+@iap_pending = 승인 또는 결제를 기다리는 중입니다.
+@iap_retry = 다시 시도
+@iap_restore = 구매 복원
+@iap_restored = 구매가 복원되었습니다.
+@iap_restore_failed = 상점에 연결할 수 없습니다. 나중에 다시 시도하세요.
+@iap_purchase_success = 해금되었습니다. 즐겁게 플레이하세요!
+@iap_purchase_failed = 구매가 완료되지 않았습니다. 청구된 금액은 없습니다.
+@iap_unavailable = 지금은 상점을 이용할 수 없습니다.
+@iap_offline = 가격을 불러올 수 없습니다. 연결을 확인하고 다시 시도하세요.
+@iap_retrying = 상점에 다시 요청하는 중...
+@iap_all_owned = 이미 모두 보유하고 있습니다. 감사합니다!
+@unlock_locked_full_game = 정식판에 포함된 내용입니다. 상점에서 정식판을 받으면 해금됩니다.
+@unlock_locked_mining_dlc = 채굴 DLC에 포함된 내용입니다. 상점에서 DLC를 받으면 해금됩니다.

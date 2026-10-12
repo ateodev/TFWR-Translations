@@ -124,10 +124,10 @@ while True:
 보통 무한 루프를 만드는 것은 프로그램이 멈추기 때문에 좋지 않은 생각이지만, 이 게임에서는 루프의 각 반복 사이에 지연이 있어서, 실행 버튼을 다시 눌러 수동으로 멈출 때까지 드론이 계속 재주를 넘게 할 거예요.
 
 콜론 다음 줄이 어떻게 들여쓰기 되었는지 주목하세요. 이와 같은 들여쓰기는 코드 블록을 구분하는 데 사용돼요.
-들여쓰기를 추가하려면 Tab 키를, 제거하려면 Shift + Tab(또는 Backspace)을 누르세요. 여러 줄을 선택하면 Tab과 Shift + Tab이 모든 줄에 적용돼요.
+들여쓰기를 추가하려면 Tab 키를, 제거하려면 Shift + Tab(또는 <desktop>Backspace</desktop><mobile>삭제</mobile>)을 누르세요. 여러 줄을 선택하면 Tab과 Shift + Tab이 모든 줄에 적용돼요.
 
-참고: Steam을 통해 게임을 플레이하는 경우 Shift + Tab을 누르면 Steam 오버레이가 열려요. 게임 옵션에서 내어쓰기 단축키를 다시 지정하거나 Steam 오버레이 옵션에서 오버레이 단축키를 다시 지정할 수 있어요.
-
+<desktop>참고: Steam을 통해 게임을 플레이하는 경우 Shift + Tab을 누르면 Steam 오버레이가 열려요. 게임 옵션에서 내어쓰기 단축키를 다시 지정하거나 Steam 오버레이 옵션에서 오버레이 단축키를 다시 지정할 수 있어요.
+</desktop>
 여기서 `do_a_flip()`과 `pet_the_piggy()`는 들여쓰기된 `while` 블록 안에 있으므로 반복해 호출돼요. 하지만 `harvest()`는 그 블록 뒤에 있으므로 절대 실행되지 않아요.
 {{codeexample 
 {
@@ -160,4 +160,4 @@ harvest()
 
 ---
 
-[for 루프](docs/scripting/for.md)      [If문](docs/scripting/if.md)      [Break](docs/scripting/break.md)      [Continue](docs/scripting/continue.md)      [외부 에디터](docs/external_editor.md)
+[for 루프](docs/scripting/for.md)      [If문](docs/scripting/if.md)      [Break](docs/scripting/break.md)      [Continue](docs/scripting/continue.md)<desktop>      [외부 에디터](docs/external_editor.md)</desktop>

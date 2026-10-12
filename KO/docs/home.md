@@ -1,10 +1,11 @@
 ## 일반 정보
 <columns>
 [크레딧](docs/credits.md)
-[외부 에디터](docs/external_editor.md)
+<desktop>[외부 에디터](docs/external_editor.md)</desktop>
 [첫 번째 프로그램](docs/first_program.md)
 [시작하기](docs/getting_started.md)
-[백업 불러오기](docs/backup.md)
+<mobile>[게임 내 키보드](docs/keyboard.md)</mobile>
+<desktop>[백업 불러오기](docs/backup.md)</desktop>
 <unlock=debug>[Output](docs/output.md)
 </unlock><unlock=debug>[통계](docs/stats.md)
 </unlock>

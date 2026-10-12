@@ -62,3 +62,22 @@
 @Light = 라이트
 @Lunar New Year = 설날
 @Custom = 커스텀
+
+@Keyboard switches = 키 피드백
+@blue clicky = 클릭음 + 진동
+@brown tactile = 진동
+@green clicky linear = 클릭음
+@red silent = 무음
+@grey os tactile = 시스템 클릭음 + 진동
+@black os linear = 시스템 클릭음
+@Keyboard layout = 키보드 배열
+@qwerty = QWERTY
+@qwertz = QWERTZ
+@azerty = AZERTY
+@Keyboard type = 키보드 종류
+@os = 시스템
+@custom = 게임 내
+@exit fullscreen on run = 실행 시 전체 화면 종료
+@30 fps = 30 FPS
+@60 fps = 60 FPS
+@120 fps = 120 FPS
