@@ -1,0 +1,9 @@
+@cloud_notice_ok = OK
+@cloud_notice_account_changed_headline = Il tuo account è cambiato
+@cloud_notice_account_saves = Ora hai effettuato l'accesso a {0} con un altro account. Il gioco mostra ora i salvataggi di quell'account.
+@cloud_notice_account_no_saves = Ora hai effettuato l'accesso a {0} con un altro account. Quell'account non ha ancora salvataggi, quindi inizia una nuova partita.
+@cloud_notice_account_signed_in = Ora hai effettuato l'accesso a {0}. Il gioco mostra ora i salvataggi di questo account. I salvataggi fatti senza accesso restano su questo dispositivo.
+@cloud_notice_account_unsent = I salvataggi dell'account che usavi prima sono ancora su questo dispositivo, ma non ancora nel suo salvataggio cloud. Accedi di nuovo a {0} con quell'account su questo dispositivo per salvarli nel cloud.
+@cloud_sign_in_failed_google_play_games = Impossibile accedere a Google Play Games. Riprova più tardi.
+@cloud_sign_in_failed_game_center = Impossibile accedere a Game Center. Attivalo nell'app Impostazioni e riprova.
+@cloud_notice_save_failed = Impossibile salvare {0} su questo dispositivo. Assicurati che il dispositivo abbia spazio libero, poi riprova.

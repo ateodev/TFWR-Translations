@@ -165,6 +165,7 @@ other_file.function()`
 @multi_unlock_descr_quartz = Aumenta la resa dei minerali di quarzo.
 @multi_unlock_descr_petrified_pumpkins = Aumenta la resa delle zucche pietrificate.
 @multi_unlock_descr_dynamite = Aumenta la resa della dinamite e l'energia delle esplosioni.
+@unlock_descr_explosive_drill = La trivella più potente.
 @multi_unlock_descr_treasure_map = Aumenta la profondità del percorso del tesoro e quindi la quantità d'oro ottenuta dal tesoro.
 @multi_unlock_descr_ore_boost = Aumenta ulteriormente la resa del carbone. Aumenta ulteriormente le dimensioni delle vene di ferro e quarzo.
 @multi_unlock_descr_bamboo = Aumenta la resa e il costo del bambù.
@@ -218,7 +219,13 @@ other_file.function()`
 @quartz = Quarzo
 @prospecting = Prospezione del Ferro
 @dynamite = Dinamite
+@explosive_drill = Trivella esplosiva
 @bamboo = Bambù
 @treasure_map = Mappa del Tesoro
 @mushrooms = Funghi
 @jump = Salto
+
+@unlock_button_unlock = Sblocca
+@unlock_button_upgrade = Potenzia
+@unlock_button_get_full_game = Ottieni il gioco completo
+@unlock_button_reset = Riporta al massimo

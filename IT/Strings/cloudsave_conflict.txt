@@ -1,0 +1,15 @@
+@cloud_conflict_title = Conflitto di salvataggio cloud
+@cloud_conflict_message = I tuoi salvataggi sono cambiati su più di un dispositivo.
+@cloud_conflict_versions_total = Versioni in totale: {0}
+@cloud_conflict_keep = Tieni la versione {0}
+@cloud_conflict_confirm_title = Tenere la versione {0}?
+@cloud_conflict_confirm_body = Tutte le altre versioni verranno eliminate dal cloud e da questo dispositivo.
+@cloud_card_version = Versione {0}
+@cloud_card_suggested = Consigliata
+@cloud_card_this_device = Questo dispositivo
+@cloud_card_another_device = Un altro dispositivo
+@cloud_card_saved = Salvata {0}
+@cloud_card_saves_heading = Salvataggi
+@cloud_card_unlocks_heading = Sblocchi
+@cloud_card_more = E altri {0}
+@cloud_card_unreadable = Impossibile leggere i dettagli

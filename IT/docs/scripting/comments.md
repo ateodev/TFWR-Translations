@@ -29,7 +29,7 @@ I commenti possono essere aggiunti usando `#`. Qualsiasi cosa sulla stessa riga 
 
 Questo può essere utile per aggiungere note al codice o disabilitarne temporaneamente alcune parti senza eliminarle.
 
-Un commento sulla riga che precede la definizione di una funzione diventa parte delle informazioni visualizzate quando passi il mouse sul nome della funzione.
+Un commento sulla riga che precede la definizione di una funzione diventa parte delle informazioni visualizzate quando <desktop>passi il mouse sul</desktop><mobile>tocchi due volte il</mobile> nome della funzione.
 
 ---
 

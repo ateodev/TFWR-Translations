@@ -121,10 +121,10 @@ Il primo non eseguirà mai un flip, mentre il secondo continuerà a eseguirne pe
 Di norma creare un ciclo infinito è una cattiva idea perché blocca il programma. In questo gioco, però, ci sono dei ritardi tra le iterazioni, quindi il drone continuerà a eseguire flip finché non lo fermerai manualmente premendo di nuovo il pulsante Esegui.
 
 Nota come la riga dopo i due punti sia indentata. L'indentazione come questa viene usata per separare i blocchi di codice.
-Premi Tab per aggiungere l'indentazione e Shift + Tab (o Backspace) per rimuoverla. Se sono selezionate più righe, Tab e Shift + Tab verranno applicati a tutte.
+Premi Tab per aggiungere l'indentazione e Shift + Tab (o <desktop>Backspace</desktop><mobile>Elimina</mobile>) per rimuoverla. Se sono selezionate più righe, Tab e Shift + Tab verranno applicati a tutte.
 
-Nota: se giochi tramite Steam, premendo Shift + Tab si aprirà invece l'overlay di Steam. Puoi riassegnare la scorciatoia per rimuovere l'indentazione nelle opzioni del gioco oppure quella dell'overlay nelle opzioni di Steam.
-
+<desktop>Nota: se giochi tramite Steam, premendo Shift + Tab si aprirà invece l'overlay di Steam. Puoi riassegnare la scorciatoia per rimuovere l'indentazione nelle opzioni del gioco oppure quella dell'overlay nelle opzioni di Steam.
+</desktop>
 Qui `do_a_flip()` e `pet_the_piggy()` vengono chiamate ripetutamente perché si trovano nel blocco `while` indentato. `harvest()`, invece, non viene mai eseguita perché si trova dopo quel blocco.
 {{codeexample 
 {
@@ -157,4 +157,4 @@ harvest()
 
 ---
 
-[Ciclo For](docs/scripting/for.md)      [If](docs/scripting/if.md)      [Break](docs/scripting/break.md)      [Continue](docs/scripting/continue.md)      [Editor Esterno](docs/external_editor.md)
+[Ciclo For](docs/scripting/for.md)      [If](docs/scripting/if.md)      [Break](docs/scripting/break.md)      [Continue](docs/scripting/continue.md)<desktop>      [Editor Esterno](docs/external_editor.md)</desktop>

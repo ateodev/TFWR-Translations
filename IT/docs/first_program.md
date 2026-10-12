@@ -3,18 +3,22 @@
 # Primo Programma
 ## Editor di testo
 Tutta la programmazione si fa nelle finestre di codice. Ogni finestra di codice corrisponde a un file di testo contenente codice.
-Puoi rinominare il file cliccando sul suo nome in cima alla finestra.
+<desktop>Puoi rinominare il file cliccando sul suo nome in cima alla finestra.</desktop>
+<mobile>Puoi rinominare il file toccando il suo nome accanto ai pulsanti della finestra.</mobile>
 
 Il codice può essere modificato come in qualsiasi editor di testo finché non è in esecuzione.
 Puoi eseguire il programma direttamente premendo il pulsante verde di riproduzione nella finestra del codice.
 ![|x50](PlayButton)
 
-Puoi creare più file di codice usando il pulsante "+" nell'angolo in alto a destra dello schermo.
+<desktop>Puoi creare più file di codice usando il pulsante "+" nell'angolo in alto a destra dello schermo.</desktop>
+<mobile>Puoi creare più file di codice usando il pulsante "+" sul bordo inferiore dello schermo, o nell'angolo in alto a destra quando tieni il dispositivo in orizzontale.</mobile>
 Puoi agganciare una finestra a un'altra trascinandola su di essa.
 
 Noterai che una volta che inizi a digitare, apparirà una semplice finestra di completamento del codice.
-Premi Tab per inserire il completamento selezionato.
-Usa i tasti freccia per navigare tra le opzioni di completamento.
+<desktop>Premi Tab per inserire il completamento selezionato.
+Usa i tasti freccia per navigare tra le opzioni di completamento.</desktop>
+<mobile>Scorri verso l'alto o il basso sulla tastiera per spostarti tra le opzioni di completamento e premi Tab per inserire quella selezionata.
+Vedi la pagina [Tastiera del gioco](docs/keyboard.md) per sapere come spostare il cursore, selezionare il testo e scegliere i completamenti scorrendo il dito.</mobile>
 
 Non preoccuparti se è la tua prima volta che programmi. Il linguaggio si sblocca passo dopo passo, quindi non sarai sopraffatto da tutte le cose che puoi fare.
 La sintassi è anche simile a Python, uno dei linguaggi di programmazione più usati al mondo, quindi ciò che impari qui ti sarà utile anche altrove.
@@ -65,10 +69,10 @@ harvest()
 }}
 
 ## Sblocchi
-Raccogliere erba ti darà fieno. Il fieno può essere usato per sbloccare i cicli nell'albero tecnologico. Apri l'albero tecnologico con il pulsante nell'angolo in alto a destra dello schermo.
+Raccogliere erba ti darà fieno. Il fieno può essere usato per sbloccare i cicli nell'albero tecnologico. Apri l'albero tecnologico con il pulsante <desktop>nell'angolo in alto a destra dello schermo</desktop><mobile>sul bordo inferiore dello schermo (nell'angolo in alto a destra quando tieni il dispositivo in orizzontale)</mobile>.
 
 ---
 
-[Editor Esterno](docs/external_editor.md)      [Commenti](docs/scripting/comments.md)      [Ciclo While](docs/scripting/while.md)
+<desktop>[Editor Esterno](docs/external_editor.md)      </desktop><mobile>[Tastiera del gioco](docs/keyboard.md)      </mobile>[Commenti](docs/scripting/comments.md)      [Ciclo While](docs/scripting/while.md)
 
 [harvest()](functions/harvest)      [do_a_flip()](functions/do_a_flip)

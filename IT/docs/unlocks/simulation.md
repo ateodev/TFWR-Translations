@@ -31,7 +31,7 @@ esegui la simulazione
 La funzione `simulate()` restituisce il tempo, in secondi, impiegato per simulare il file di partenza dato.
 
 ### Nome del File
-Il primo argomento della funzione `simulate()` è il nome del file, visualizzato in cima alla finestra del codice. La simulazione eseguirà il file specificato come se avessi premuto il suo pulsante Esegui.
+Il primo argomento della funzione `simulate()` è il nome del file, visualizzato in cima alla finestra del codice. La simulazione eseguirà il file specificato come se avessi <desktop>cliccato</desktop><mobile>toccato</mobile> il suo pulsante Esegui.
 
 ### Sblocchi Iniziali
 Tutte le funzionalità di programmazione, come cicli, istruzioni `if`, liste e dizionari, rimangono sempre sbloccate.

@@ -1,0 +1,14 @@
+@load_screen_play = Gioca
+@load_screen_current = Attuale
+@load_screen_unlocks = {0} sblocchi
+@load_screen_unlock = {0} sblocco
+@load_screen_code_files = {0} file di codice
+@load_screen_code_file = {0} file di codice
+@load_screen_no_saves = Nessun salvataggio
+@load_screen_no_saves_hint = Premi '{0}' per iniziare una fattoria.
+@load_screen_rename_title = Rinomina salvataggio
+@load_screen_rename = Rinomina
+@load_screen_rename_empty = Inserisci un nome.
+@load_screen_rename_taken = Esiste già un salvataggio con questo nome.
+@load_screen_delete_title = Eliminare {0}?
+@load_screen_delete_body = La sua fattoria e il suo codice verranno eliminati. Non si può annullare.

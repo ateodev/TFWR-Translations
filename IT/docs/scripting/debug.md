@@ -7,12 +7,14 @@ A volte il tuo codice semplicemente non funziona e devi scoprire perché. Ci son
 Il primo è eseguire il programma passo dopo passo.
 Puoi entrare in modalità passo dopo passo con il pulsante accanto al pulsante Esegui o impostando un breakpoint.
 
-I breakpoint possono essere aggiunti cliccando sul pannello dei breakpoint a sinistra del codice.
+I breakpoint possono essere aggiunti <desktop>cliccando sul</desktop><mobile>toccando il</mobile> pannello dei breakpoint a sinistra del codice.
 ![|x227](Breakpoints)
 Quando l'esecuzione raggiunge la riga in cui si trova il breakpoint, passerà automaticamente alla modalità passo dopo passo.
 
-Quando sposti il mouse su una variabile, viene visualizzato il suo valore attuale.
-
+<desktop>Quando sposti il mouse su una variabile, viene visualizzato il suo valore attuale.
+</desktop>
+<mobile>Tocca due volte una variabile per vedere il suo valore attuale.
+</mobile>
 Anche la funzione `print()` può essere molto utile. Scriverà qualsiasi valore passato ad essa direttamente in aria.
 
 Esempi:
@@ -90,8 +92,8 @@ In questo caso puoi usare la funzione `quick_print()`, che stampa solo nella fin
 
 La finestra di output registra anche avvisi ed errori, quindi può essere utile controllarla quando qualcosa non funziona come previsto.
 
-Quando l'esecuzione si ferma, l'output viene scritto anche nel file [output.txt](persistent_data_path/output.txt) nella cartella del gioco.
-
+<desktop>Quando l'esecuzione si ferma, l'output viene scritto anche nel file [output.txt](persistent_data_path/output.txt) nella cartella del gioco.
+</desktop>
 ---
 
 [Output](docs/output.md)      [Commenti](docs/scripting/comments.md)      [Debug 2](docs/unlocks/debug2.md)      [Blocchi Colorati](docs/unlocks/debug_place.md)      [Simulazione](docs/unlocks/simulation.md)

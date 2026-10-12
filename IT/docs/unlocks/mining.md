@@ -43,7 +43,7 @@ clear()
 
 Se vuoi tornare in superficie, puoi usare `clear()` in qualsiasi momento. Questo ripristina anche la fattoria.
 
-Passando il mouse su un blocco vedrai il suo nome, la stabilità e la durezza.
+<desktop>Passando il mouse su</desktop><mobile>Toccando</mobile> un blocco vedrai il suo nome, la stabilità e la durezza.
 
 # Trivella
 
@@ -63,7 +63,7 @@ Naturalmente i blocchi diventano sempre più duri scendendo, quindi questa strat
 
 Scavare verso il basso provoca il crollo dei blocchi circostanti. I quattro blocchi accanto al drone vengono sempre distrutti. Poi il crollo si propaga in base alla stabilità del terreno. Un blocco con stabilità 1, come il prato, può sopportare una differenza di altezza pari a 1. In altre parole, se il prato ha un vicino verticale o orizzontale con una coordinata z più profonda di almeno 2 blocchi, viene distrutto.
 
-La stabilità di un blocco è indicata nel tooltip visualizzato al passaggio del mouse.
+La stabilità di un blocco è indicata nel tooltip<desktop> visualizzato al passaggio del mouse</desktop>.
 
 Quando un blocco crolla, rimuove anche tutti i blocchi sopra di esso. Ricevi risorse solo dai blocchi scavati direttamente dal drone, quindi quelli persi in un crollo vengono distrutti senza produrre risorse.
 
