@@ -62,3 +62,22 @@
 @Light = Светлая
 @Lunar New Year = Лунный Новый год
 @Custom = Своя
+
+@Keyboard switches = Отклик клавиш
+@blue clicky = Клик + вибрация
+@brown tactile = Вибрация
+@green clicky linear = Клик
+@red silent = Без звука
+@grey os tactile = Системный клик + вибрация
+@black os linear = Системный клик
+@Keyboard layout = Раскладка клавиатуры
+@qwerty = QWERTY
+@qwertz = QWERTZ
+@azerty = AZERTY
+@Keyboard type = Тип клавиатуры
+@os = Системная
+@custom = Игровая
+@exit fullscreen on run = Свернуть редактор при запуске
+@30 fps = 30 FPS
+@60 fps = 60 FPS
+@120 fps = 120 FPS

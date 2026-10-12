@@ -1,0 +1,15 @@
+@cloud_conflict_title = Конфликт облачных сохранений
+@cloud_conflict_message = Твои сохранения изменились более чем на одном устройстве.
+@cloud_conflict_versions_total = Всего версий: {0}
+@cloud_conflict_keep = Оставить версию {0}
+@cloud_conflict_confirm_title = Оставить версию {0}?
+@cloud_conflict_confirm_body = Все остальные версии будут удалены из облака и с этого устройства.
+@cloud_card_version = Версия {0}
+@cloud_card_suggested = Рекомендуется
+@cloud_card_this_device = Это устройство
+@cloud_card_another_device = Другое устройство
+@cloud_card_saved = Сохранено {0}
+@cloud_card_saves_heading = Сохранения
+@cloud_card_unlocks_heading = Технологии
+@cloud_card_more = И еще {0}
+@cloud_card_unreadable = Не удалось прочитать подробности

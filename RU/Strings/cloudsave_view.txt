@@ -1,0 +1,10 @@
+@cloud_view_title = Облачное сохранение
+@cloud_view_signed_in = Вход выполнен
+@cloud_view_not_signed_in = Вход не выполнен
+@cloud_view_last_synced = Последняя синхронизация: {0}
+@cloud_view_not_synced = Не синхронизировано
+@cloud_view_sync_now = Синхронизировать
+@cloud_view_sign_in = Войти
+@cloud_view_on_this_device = На этом устройстве
+@cloud_view_current = Текущее
+@cloud_view_no_saves = Сохранений пока нет

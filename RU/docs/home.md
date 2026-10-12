@@ -1,10 +1,11 @@
 ## Общая информация
 <columns>
 [Авторы](docs/credits.md)
-[Внешний редактор](docs/external_editor.md)
+<desktop>[Внешний редактор](docs/external_editor.md)</desktop>
 [Первая программа](docs/first_program.md)
 [Начало работы](docs/getting_started.md)
-[Загрузка резервных копий](docs/backup.md)
+<mobile>[Игровая клавиатура](docs/keyboard.md)</mobile>
+<desktop>[Загрузка резервных копий](docs/backup.md)</desktop>
 <unlock=debug>[Output](docs/output.md)
 </unlock><unlock=debug>[Статистика](docs/stats.md)
 </unlock>

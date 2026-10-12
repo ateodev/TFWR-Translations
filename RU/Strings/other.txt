@@ -15,3 +15,9 @@
 
 {1}
 @latest_news = Последние новости
+
+@tap_here_for_more_info = -- нажми сюда, чтобы узнать больше --
+@right_click_to_open_store = -- щелкни ПКМ, чтобы открыть магазин --
+@tap_here_to_open_store = -- нажми сюда, чтобы открыть магазин --
+@tooltip_button_more_info = Подробнее
+@loading_screen = Загрузка
