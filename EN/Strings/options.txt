@@ -3,6 +3,7 @@
 @graphics = Graphics
 @general = General
 @controls = Controls
+@keyboard = Keyboard
 @errors = Errors
 @screen mode = Screen Mode
 @fullscreen = Fullscreen
@@ -74,6 +75,8 @@
 @qwerty = QWERTY
 @qwertz = QWERTZ
 @azerty = AZERTY
+@Keyboard squish = Keyboard Squish
+@keyboard_preview_placeholder = Type here to try the keyboard
 @Keyboard type = Keyboard Type
 @os = System
 @custom = In-Game
