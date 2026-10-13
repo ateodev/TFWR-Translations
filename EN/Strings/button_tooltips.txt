@@ -69,13 +69,15 @@
 @keybind_tooltip_hide_UI = Hide or unhide the HUD.
 @button_tooltip_achievements = Show your achievements.
 @button_tooltip_sign_in = Sign in to Google Play Games / Game Center to sync your achievements.
-@option_tooltip_keyboard_switches = Feedback when a key of the in-game keyboard is pressed: Click = mechanical key sound, System Click = the device keyboard's click sound, Vibration = a short vibration tick.
+@option_tooltip_keyboard_sound = Sound of a key press on the in-game keyboard: System = the click of your device's own keyboard, Mechanical = a mechanical keyboard key.
+@option_tooltip_keyboard_vibration = A short vibration on every key press of the in-game keyboard.
 @button_tooltip_open_main_menu = Open the main menu.
 @button_tooltip_open_search = Open the search bar.
 @button_tooltip_open_news = Open the latest news.
 @button_tooltip_fullscreen = Show this window fullscreen.
 @button_tooltip_exit_fullscreen = Leave fullscreen.
 @option_tooltip_keyboard_layout = Key arrangement of the in-game keyboard. Defaults to the layout used in your system language.
+@option_tooltip_keyboard_backlight = Light glowing out from under the keys of the in-game keyboard, white or in rainbow colors (RGB), with a ripple of light from every key you press.
 @option_tooltip_keyboard_squish = Makes the keys of the in-game keyboard flatter so it covers less of the screen. At the maximum, keys are half their normal height.
 @option_tooltip_keyboard_type = Which keyboard to type code with. The in-game keyboard has the symbols Python needs; the system keyboard is the one you use in other apps. A connected hardware keyboard is always used instead.
 @option_tooltip_exit_fullscreen_on_run = Pressing Run leaves the fullscreen code editor and shows the farm. Breakpoints still take you to the paused line.

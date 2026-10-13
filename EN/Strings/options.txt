@@ -64,18 +64,20 @@
 @Lunar New Year = Lunar New Year
 @Custom = Custom
 
-@Keyboard switches = Key Feedback
-@blue clicky = Click + Vibration
-@brown tactile = Vibration
-@green clicky linear = Click
-@red silent = Silent
-@grey os tactile = System Click + Vibration
-@black os linear = System Click
+@Keyboard sound = Key Sound
+@silent = Silent
+@system = System
+@mechanical = Mechanical
+@Keyboard vibration = Key Vibration
 @Keyboard layout = Keyboard Layout
 @qwerty = QWERTY
 @qwertz = QWERTZ
 @azerty = AZERTY
 @Keyboard squish = Keyboard Squish
+@Keyboard backlight = Backlight
+@off = Off
+@white = White
+@rgb = RGB
 @keyboard_preview_placeholder = Type here to try the keyboard
 @Keyboard type = Keyboard Type
 @os = System
