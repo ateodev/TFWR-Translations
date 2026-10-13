@@ -31,6 +31,7 @@
 @half vsync = Medio Vsync
 @1/4 vsync = Vsync a 1/4
 @viewport sliding = Deslizamiento de la vista
+@scroll sensitivity = Sensibilidad de la rueda
 @UI size = Tamaño UI
 @file watcher = Observador de archivos
 @indent selection = Indentar selección

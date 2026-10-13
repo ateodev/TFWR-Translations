@@ -39,6 +39,7 @@
 @option_tooltip_file_watcher = 自動套用對存檔資料夾中程式碼檔案的變更，從而允許使用外部編輯器。無法與自動存檔功能同時啟用。
 @option_tooltip_frames = 限制遊戲的幀率。垂直同步會將幀率與顯示器的刷新率同步。
 @option_tooltip_viewport_sliding = 拖曳和釋放時停用視窗的滑動。
+@option_tooltip_scroll_sensitivity = 滑鼠滾輪捲動與縮放的速度。
 @option_tooltip_UI_size = 變更介面元素的大小。
 @option_tooltip_tabs_to_spaces = 將所有製表符轉為 4 個空格。
 @option_tooltip_error_forgot_call = 啟用後，如果你嘗試評估函式的真值，遊戲會拋出安全保護錯誤，因為這通常表示你忘記了 `()`。

@@ -39,6 +39,7 @@
 @option_tooltip_file_watcher = Applica automaticamente le modifiche apportate ai file di codice nella cartella dei salvataggi, consentendo l'uso di un editor di codice esterno. Non può essere abilitato mentre i salvataggi automatici sono attivi.
 @option_tooltip_frames = Limita gli fps del gioco. Vsync sincronizza gli fps con la frequenza di aggiornamento del tuo monitor.
 @option_tooltip_viewport_sliding = Disabilita lo scorrimento del viewport quando trascini e rilasci.
+@option_tooltip_scroll_sensitivity = Quanto velocemente la rotellina del mouse scorre e ingrandisce.
 @option_tooltip_UI_size = Cambia la dimensione degli elementi UI.
 @option_tooltip_tabs_to_spaces = Trasforma tutti i tab in 4 spazi.
 @option_tooltip_error_forgot_call = Se abilitata, il gioco genererà un errore di safeguard quando si prova a valutare la verità di un oggetto funzione, perché questo di solito indica che hai dimenticato di invocarlo con ().
