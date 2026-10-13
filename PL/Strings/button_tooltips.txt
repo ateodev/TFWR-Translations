@@ -39,6 +39,7 @@
 @option_tooltip_file_watcher = Automatycznie stosuje zmiany dokonane w plikach z kodem w folderze zapisu, co pozwala na korzystanie z zewnętrznego edytora kodu. Nie można włączyć, gdy włączone są autozapisy.
 @option_tooltip_frames = Ogranicz liczbę klatek na sekundę (fps) w grze. Vsync synchronizuje fps z częstotliwością odświeżania twojego monitora.
 @option_tooltip_viewport_sliding = Wyłącza przesuwanie widoku po przeciągnięciu i puszczeniu.
+@option_tooltip_scroll_sensitivity = Jak szybko kółko myszy przewija i przybliża.
 @option_tooltip_UI_size = Zmień rozmiar elementów interfejsu.
 @option_tooltip_tabs_to_spaces = Zamienia wszystkie tabulacje na 4 spacje.
 @option_tooltip_error_forgot_call = Gdy włączone, gra zgłosi błąd zabezpieczający, jeśli spróbujesz ocenić prawdziwość obiektu funkcji, ponieważ zwykle oznacza to, że zapomniałeś o `()`.

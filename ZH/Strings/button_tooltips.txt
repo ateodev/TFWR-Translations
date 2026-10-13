@@ -39,6 +39,7 @@
 @option_tooltip_file_watcher = 自动应用对存档文件夹中代码文件所做的更改，以便使用外部代码编辑器。无法与自动存档同时启用。
 @option_tooltip_frames = 限制游戏的帧率。垂直同步会使帧率与你的显示器刷新率保持同步。
 @option_tooltip_viewport_sliding = 禁用拖放时的视口滑动效果。
+@option_tooltip_scroll_sensitivity = 鼠标滚轮滚动和缩放的速度。
 @option_tooltip_UI_size = 更改 UI 元素的大小。
 @option_tooltip_tabs_to_spaces = 将所有制表符转换成 4 个空格。
 @option_tooltip_error_forgot_call = 启用后，如果你尝试对一个函数对象求值，游戏会抛出安全保护错误，因为这通常意味着你忘记了 `()`。

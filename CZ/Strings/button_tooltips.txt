@@ -39,6 +39,7 @@
 @option_tooltip_file_watcher = Automaticky načítá změny v souborech kódu ve složce save, umožňuje použití externího editoru. Nelze zapnout při aktivním autosave.
 @option_tooltip_frames = Omezí FPS hry. VSync synchronizuje FPS s obnovovací frekvencí monitoru.
 @option_tooltip_viewport_sliding = Vypne klouzání pohledu po puštění myši.
+@option_tooltip_scroll_sensitivity = Jak rychle kolečko myši posouvá a přibližuje.
 @option_tooltip_UI_size = Změní velikost prvků rozhraní.
 @option_tooltip_tabs_to_spaces = Převede všechny tabulátory na 4 mezery.
 @option_tooltip_error_forgot_call = Pokud je zapnuto, hra vyhodí chybu, když se pokusíš vyhodnotit funkci bez závorek `()`, protože jsi je pravděpodobně zapomněl.

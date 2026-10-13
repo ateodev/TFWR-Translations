@@ -31,6 +31,7 @@
 @half vsync = 半垂直同步
 @1/4 vsync = 1/4 垂直同步
 @viewport sliding = 视口滑动
+@scroll sensitivity = 滚轮灵敏度
 @UI size = UI 大小
 @file watcher = 文件监视器
 @indent selection = 缩进选中部分

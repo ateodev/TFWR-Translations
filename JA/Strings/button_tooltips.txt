@@ -39,6 +39,7 @@
 @option_tooltip_file_watcher = セーブフォルダー内のコードファイルに加えられた変更を自動的に適用し、外部のコードエディターを使用できるようにします。自動セーブが有効な場合は有効にできません。
 @option_tooltip_frames = ゲームのfpsを制限します。Vsyncはfpsをモニターのリフレッシュレートに同期させます。
 @option_tooltip_viewport_sliding = ドラッグして離したときのビューポートのスライドを無効にします。
+@option_tooltip_scroll_sensitivity = マウスホイールでスクロールやズームする速さ。
 @option_tooltip_UI_size = UI要素のサイズを変更します。
 @option_tooltip_tabs_to_spaces = すべてのタブを4つのスペースに変換します。
 @option_tooltip_error_forgot_call = 有効にすると、関数オブジェクトの真偽値を評価しようとした場合にセーフガードエラーが発生します。これは通常、`()` を忘れていることを意味します。

@@ -31,6 +31,7 @@
 @half vsync = ハーフ Vsync
 @1/4 vsync = 1/4 Vsync
 @viewport sliding = ビューポートのスライド
+@scroll sensitivity = スクロール感度
 @UI size = UIサイズ
 @file watcher = ファイルウォッチャー
 @indent selection = 選択部インデント
