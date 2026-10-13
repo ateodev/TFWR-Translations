@@ -1,4 +1,4 @@
-@iap_title_full_game = The Farmer Was Replaced
+@iap_title_full_game = 程式農場
 @iap_get_full_game = 取得完整版
 @iap_desc_full_game = <b>全部包含</b>
 • 一次購買。無廣告，無訂閱。
