@@ -23,13 +23,13 @@
 很聰明吧？
 @tutorial_accept_completion = 點選你想要的那個，或按 <b>Tab</b> 接受反白的候選項。
 @tutorial_run_harvest = 來看看會發生什麼事。
-點選 <b>執行</b> 來執行程式碼。
+點選 <b>執行按鈕</b> 來執行程式碼。
 @tutorial_error = 哎呀！出錯時，錯誤會直接顯示在發生的地方。
 它甚至會告訴你怎麼修正。
-@tutorial_type_bracket = <b>()</b> 才是真正叫無人機去做的指令。
+@tutorial_type_bracket = <b>harvest</b> 後面的 <b>()</b> 才是真正叫無人機去做的指令。
 點選你的程式碼，然後輸入 <b>(</b>
 @tutorial_brackets_pair = 括號總是成對出現，所以你一次就得到兩個。
-@tutorial_run_program = 這就是一個程式！點選 <b>執行</b> 來執行它。
+@tutorial_run_program = 這就是一個程式！點選 <b>執行按鈕</b> 來執行它。
 @tutorial_leave_fullscreen = 在這裡面看不到農場。
 點選 <b>x</b> 返回。
 @tutorial_first_program = 你做到了！
@@ -38,8 +38,8 @@
 這是乾草，你的第一種資源。
 @tutorial_get_five = 我們來收集 5 個吧。
 等草長回來後，再執行一次 <b>main</b>。
-@tutorial_hay_five = 五個乾草！值得擊個掌。乾草味的那種。
-@tutorial_play_gets_old = 每次都要按執行，很煩吧？
+@tutorial_hay_five = 五個乾草！來擊個掌慶祝吧！
+@tutorial_play_gets_old = 每次都要按執行按鈕，很煩吧？
 讓無人機自動來做吧。
 @tutorial_open_tech_tree = 不過要做到這點，我們得先解鎖一項新科技。
 點選這個按鈕開啟科技樹。
@@ -47,11 +47,11 @@
 這裡是你花費資源的地方。
 @tutorial_tap_loops = 我們可以解鎖<b>迴圈</b>。來看看。
 點選它看看它能做什麼。
-@tutorial_buy_loops = 迴圈會重複執行程式碼，這樣你就不用每次都按執行了。
+@tutorial_buy_loops = 迴圈會重複執行程式碼，這樣你就不用每次都按執行按鈕了。
 點選 <b>解鎖</b> 來購買它。
 @tutorial_docs_intro = 每次解鎖新內容時，它的頁面都會在這裡開啟。
 這叫做<b>說明文件</b>。它比我更了解這個遊戲。
-@tutorial_docs_example = 試試這個範例。點選小視窗裡的 <b>執行</b>。
+@tutorial_docs_example = 試試這個範例。點選小視窗裡的 <b>執行按鈕</b>。
 @tutorial_docs_navigate = 點選連結可以跳到那個頁面。
 <b>返回</b> 帶你回到上一頁，<b>首頁</b> 顯示所有內容。
 看完後點選 <b>x</b> 關閉它。

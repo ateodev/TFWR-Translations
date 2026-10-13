@@ -4,7 +4,7 @@
 @tutorial_skip_all = 整个教程
 @tutorial_skip_cancel = 继续
 @tutorial_welcome = 哦，你好！
-欢迎来到 The Farmer Was Replaced！
+欢迎来到《编程农场》！
 @tutorial_show_around = 要我带你四处看看吗？
 @tutorial_show_around_yes = 好，带我看看！
 @tutorial_show_around_no = 不用了，谢谢
@@ -23,13 +23,13 @@
 很聪明吧？
 @tutorial_accept_completion = 点按你想要的那个，或者按 <b>Tab</b> 接受高亮的候选项。
 @tutorial_run_harvest = 来看看会发生什么。
-点按 <b>运行</b> 来运行代码。
+点按<b>运行按钮</b>执行代码。
 @tutorial_error = 哎呀！出错时，错误会直接显示在它发生的地方。
 它甚至会告诉你怎么修。
-@tutorial_type_bracket = <b>()</b> 才是真正让无人机去做的指令。
+@tutorial_type_bracket = <b>harvest</b> 后面的 <b>()</b> 才是真正让无人机去做的指令。
 点按你的代码，然后输入 <b>(</b>
 @tutorial_brackets_pair = 括号总是成对出现，所以你一次就得到了两个。
-@tutorial_run_program = 这就是一个程序！点按 <b>运行</b> 来运行它。
+@tutorial_run_program = 这就是一个程序！点按<b>运行按钮</b>执行它。
 @tutorial_leave_fullscreen = 在这里面看不到农场。
 点按 <b>x</b> 返回。
 @tutorial_first_program = 你做到了！
@@ -38,8 +38,8 @@
 这是干草，你的第一种资源。
 @tutorial_get_five = 我们来收集 5 个吧。
 等草长回来后，再运行一次 <b>main</b>。
-@tutorial_hay_five = 五个干草！值得击个掌。草草的那种。
-@tutorial_play_gets_old = 每次都要按运行，很烦吧？
+@tutorial_hay_five = 五个干草！值得击个掌！
+@tutorial_play_gets_old = 每次都要按运行按钮，很烦吧？
 让无人机自动来做吧。
 @tutorial_open_tech_tree = 不过要做到这一点，我们得先解锁一项新技术。
 点按这个按钮打开科技树。
@@ -47,11 +47,11 @@
 这里是你花费资源的地方。
 @tutorial_tap_loops = 我们可以解锁<b>循环</b>。来看看。
 点按它看看它能做什么。
-@tutorial_buy_loops = 循环会重复执行代码，这样你就不用每次都按运行了。
+@tutorial_buy_loops = 循环会重复执行代码，这样你就不用每次都按运行按钮了。
 点按 <b>解锁</b> 来购买它。
 @tutorial_docs_intro = 每次解锁新内容时，它的页面都会在这里打开。
 这叫做<b>文档</b>。它比我更了解这个游戏。
-@tutorial_docs_example = 试试这个示例。点按小窗口里的 <b>运行</b>。
+@tutorial_docs_example = 试试这个示例。点按小窗口里的<b>运行按钮</b>。
 @tutorial_docs_navigate = 点按链接可以跳转到那个页面。
 <b>返回</b> 带你回到上一页，<b>主页</b> 显示所有内容。
 看完后点按 <b>x</b> 关闭它。

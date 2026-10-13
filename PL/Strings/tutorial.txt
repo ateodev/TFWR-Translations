@@ -23,13 +23,13 @@ Wpisz <b>harvest</b>
 Sprytne, prawda?
 @tutorial_accept_completion = Dotknij tej, którą chcesz, albo naciśnij <b>Tab</b>, aby przyjąć podświetloną podpowiedź.
 @tutorial_run_harvest = Zobaczmy, co się stanie.
-Dotknij <b>Play</b>, aby uruchomić kod.
+Dotknij <b>Wykonaj</b>, aby uruchomić kod.
 @tutorial_error = Ups! Gdy coś jest nie tak, błąd pojawia się dokładnie tam, gdzie wystąpił.
 Mówi ci nawet, jak go naprawić.
-@tutorial_type_bracket = <b>()</b> mówi dronowi, żeby naprawdę to zrobił.
+@tutorial_type_bracket = <b>()</b> po <b>harvest</b> mówi dronowi, żeby naprawdę to zrobił.
 Dotknij swojego kodu i wpisz <b>(</b>
 @tutorial_brackets_pair = Nawiasy zawsze chodzą parami, więc dostajesz oba naraz.
-@tutorial_run_program = To jest program! Dotknij <b>Play</b>, aby go uruchomić.
+@tutorial_run_program = To jest program! Dotknij <b>Wykonaj</b>, aby go uruchomić.
 @tutorial_leave_fullscreen = Stąd nie widać farmy.
 Dotknij <b>x</b>, aby wrócić.
 @tutorial_first_program = Udało się!
@@ -38,8 +38,8 @@ To był twój pierwszy program.
 To siano, twój pierwszy surowiec.
 @tutorial_get_five = Zdobądźmy 5 sztuk.
 Uruchom <b>main</b> jeszcze raz, gdy trawa odrośnie.
-@tutorial_hay_five = Pięć siana! To zasługuje na piątkę. Taką sianową.
-@tutorial_play_gets_old = Naciskanie Play za każdym razem nudzi się, prawda?
+@tutorial_hay_five = Pięć siana! Należy ci się piątka!
+@tutorial_play_gets_old = Naciskanie przycisku Wykonaj za każdym razem nudzi się, prawda?
 Niech dron robi to automatycznie.
 @tutorial_open_tech_tree = Ale do tego musimy odblokować nową technologię.
 Dotknij tego przycisku, aby otworzyć drzewko technologii.
@@ -47,11 +47,11 @@ Dotknij tego przycisku, aby otworzyć drzewko technologii.
 Tutaj wydajesz swoje surowce.
 @tutorial_tap_loops = Możemy odblokować <b>pętle</b>. Zobaczmy.
 Dotknij ich, aby sprawdzić, co robią.
-@tutorial_buy_loops = Pętle powtarzają kod, więc nie musisz za każdym razem naciskać Play.
+@tutorial_buy_loops = Pętle powtarzają kod, więc nie musisz za każdym razem naciskać przycisku Wykonaj.
 Dotknij <b>Odblokuj</b>, aby je kupić.
 @tutorial_docs_intro = Za każdym razem, gdy coś odblokujesz, tutaj otworzy się jego strona.
 To <b>dokumentacja</b>. Wie o tej grze więcej niż ja.
-@tutorial_docs_example = Wypróbuj przykład. Dotknij <b>Play</b> w małym oknie.
+@tutorial_docs_example = Wypróbuj przykład. Dotknij <b>Wykonaj</b> w małym oknie.
 @tutorial_docs_navigate = Dotknij łącza, aby przejść do tej strony.
 <b>Wróć</b> cofa cię, <b>Strona główna</b> pokazuje wszystko, co jest.
 Zamknij ją przyciskiem <b>x</b>, gdy skończysz.

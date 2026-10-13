@@ -23,13 +23,13 @@ Scrivi <b>harvest</b>
 Furbo, eh?
 @tutorial_accept_completion = Tocca quello che vuoi, oppure premi <b>Tab</b> per accettare il suggerimento evidenziato.
 @tutorial_run_harvest = Vediamo cosa succede.
-Tocca <b>Play</b> per eseguire il codice.
+Tocca <b>Esegui</b> per avviare il codice.
 @tutorial_error = Ops! Quando qualcosa non va, un errore compare proprio dove è successo.
 Ti dice persino come sistemarlo.
-@tutorial_type_bracket = Le <b>()</b> dicono al drone di farlo davvero.
+@tutorial_type_bracket = Sono le <b>()</b> dopo <b>harvest</b> a dire al drone di farlo davvero.
 Tocca il tuo codice e scrivi <b>(</b>
 @tutorial_brackets_pair = Le parentesi vanno sempre in coppia, quindi le ottieni entrambe in un colpo solo.
-@tutorial_run_program = Questo è un programma! Tocca <b>Play</b> per eseguirlo.
+@tutorial_run_program = Questo è un programma! Tocca <b>Esegui</b> per avviarlo.
 @tutorial_leave_fullscreen = Da qui dentro non vedi la fattoria.
 Tocca <b>x</b> per tornare indietro.
 @tutorial_first_program = Ce l'hai fatta!
@@ -38,8 +38,8 @@ Quello era il tuo primissimo programma.
 Quello è fieno, la tua prima risorsa.
 @tutorial_get_five = Prendiamone 5.
 Esegui di nuovo <b>main</b> quando l'erba è ricresciuta.
-@tutorial_hay_five = Cinque fieno! Ci vuole un bel cinque. Anzi, un bel fieno-cinque.
-@tutorial_play_gets_old = Premere Play ogni volta stufa, vero?
+@tutorial_hay_five = Cinque fieno! Batti il cinque!
+@tutorial_play_gets_old = Premere Esegui ogni volta stufa, vero?
 Facciamo in modo che il drone lo faccia da solo.
 @tutorial_open_tech_tree = Ma per farlo dobbiamo sbloccare una nuova tecnologia.
 Tocca questo pulsante per aprire l'albero tecnologico.
@@ -47,11 +47,11 @@ Tocca questo pulsante per aprire l'albero tecnologico.
 Qui puoi spendere le tue risorse.
 @tutorial_tap_loops = Possiamo sbloccare i <b>cicli</b>. Diamo un'occhiata.
 Toccali per vedere cosa fanno.
-@tutorial_buy_loops = I cicli ripetono il codice, così non devi premere Play ogni volta.
+@tutorial_buy_loops = I cicli ripetono il codice, così non devi premere Esegui ogni volta.
 Tocca <b>Sblocca</b> per comprarli.
 @tutorial_docs_intro = Ogni volta che sblocchi qualcosa, la sua pagina si apre qui.
 Questa è la <b>documentazione</b>. Sa più cose di questo gioco di me.
-@tutorial_docs_example = Prova l'esempio. Tocca <b>Play</b> nella finestrella.
+@tutorial_docs_example = Prova l'esempio. Tocca <b>Esegui</b> nella finestrella.
 @tutorial_docs_navigate = Tocca un collegamento per andare a quella pagina.
 <b>Indietro</b> ti riporta indietro, <b>Home</b> mostra tutto quello che c'è.
 Chiudila con <b>x</b> quando hai finito.

@@ -4,7 +4,7 @@
 @tutorial_skip_all = チュートリアル全部
 @tutorial_skip_cancel = 続ける
 @tutorial_welcome = あら、こんにちは！
-The Farmer Was Replacedへようこそ！
+「農家は Replace() されました」へようこそ！
 @tutorial_show_around = 案内しましょうか？
 @tutorial_show_around_yes = うん、お願い！
 @tutorial_show_around_no = いいえ、結構です
@@ -23,13 +23,13 @@ The Farmer Was Replacedへようこそ！
 賢いでしょう？
 @tutorial_accept_completion = 欲しい候補をタップするか、<b>Tab</b> を押して強調表示された候補を確定します。
 @tutorial_run_harvest = 何が起きるか見てみましょう。
-<b>実行</b> をタップしてコードを実行します。
+<b>実行ボタン</b> をタップしてコードを実行します。
 @tutorial_error = おっと！何かが間違っていると、その場所にエラーが表示されます。
 直し方まで教えてくれます。
-@tutorial_type_bracket = <b>()</b> がドローンに「実際にやれ」と伝える部分です。
+@tutorial_type_bracket = <b>harvest</b> の後ろの <b>()</b> がドローンに「実際にやれ」と伝える部分です。
 コードをタップして <b>(</b> を入力してください
 @tutorial_brackets_pair = 括弧は必ずペアなので、両方が一度に入力されます。
-@tutorial_run_program = これでプログラムの完成！<b>実行</b> をタップして実行しましょう。
+@tutorial_run_program = これでプログラムの完成！<b>実行ボタン</b> をタップして実行しましょう。
 @tutorial_leave_fullscreen = ここからは農場が見えません。
 <b>x</b> をタップして戻りましょう。
 @tutorial_first_program = やりました！
@@ -38,20 +38,20 @@ The Farmer Was Replacedへようこそ！
 それが干し草、最初の資源です。
 @tutorial_get_five = 5つ集めましょう。
 草が生え直したら、もう一度 <b>main</b> を実行してください。
-@tutorial_hay_five = 干し草が5つ！ハイタッチに値します。干し草タッチかな。
-@tutorial_play_gets_old = 毎回実行を押すのは面倒ですよね？
+@tutorial_hay_five = 干し草が5つ！ハイタッチしよう！
+@tutorial_play_gets_old = 毎回実行ボタンを押すのは面倒ですよね？
 ドローンに自動でやらせましょう。
 @tutorial_open_tech_tree = でもそのためには、新しい技術をアンロックする必要があります。
-このボタンをタップして技術ツリーを開いてください。
+このボタンをタップしてアンロックツリーを開いてください。
 @tutorial_tech_tree = わあ、いっぱいある！
 ここで資源を使います。
 @tutorial_tap_loops = <b>ループ</b> をアンロックできます。見てみましょう。
 タップして何ができるか確認してください。
-@tutorial_buy_loops = ループはコードを繰り返すので、毎回実行を押さなくて済みます。
+@tutorial_buy_loops = ループはコードを繰り返すので、毎回実行ボタンを押さなくて済みます。
 <b>アンロック</b> をタップして購入しましょう。
 @tutorial_docs_intro = 何かをアンロックするたびに、そのページがここに開きます。
 これが <b>ドキュメント</b>。私よりこのゲームに詳しいです。
-@tutorial_docs_example = 例を試してみましょう。小さなウィンドウの <b>実行</b> をタップしてください。
+@tutorial_docs_example = 例を試してみましょう。小さなウィンドウの <b>実行ボタン</b> をタップしてください。
 @tutorial_docs_navigate = リンクをタップするとそのページに移動します。
 <b>戻る</b> で前に戻り、<b>ホーム</b> ですべての項目が見られます。
 読み終わったら <b>x</b> で閉じてください。

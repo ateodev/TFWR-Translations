@@ -1,5 +1,5 @@
 @tutorial_skip = ÜBERSPRINGEN
-@tutorial_skip_question = Weiterspringen?
+@tutorial_skip_question = Überspringen?
 @tutorial_skip_part = Diesen Teil
 @tutorial_skip_all = Ganzes Tutorial
 @tutorial_skip_cancel = Weitermachen
@@ -23,23 +23,23 @@ Tippe <b>harvest</b> ein
 Ganz schön schlau, oder?
 @tutorial_accept_completion = Tippe auf den Vorschlag, den du willst, oder drücke <b>Tab</b>, um den markierten zu übernehmen.
 @tutorial_run_harvest = Mal sehen, was passiert.
-Tippe auf <b>Play</b>, um den Code auszuführen.
+Tippe auf den <b>Ausführen-Button</b>, um den Code zu starten.
 @tutorial_error = Hoppla! Wenn etwas nicht stimmt, erscheint der Fehler genau dort, wo er passiert ist.
 Er sagt dir sogar, wie du ihn behebst.
-@tutorial_type_bracket = Die <b>()</b> sagen der Drohne, dass sie es wirklich tun soll.
+@tutorial_type_bracket = Die <b>()</b> nach <b>harvest</b> sagen der Drohne, dass sie es wirklich tun soll.
 Tippe auf deinen Code und gib <b>(</b> ein
 @tutorial_brackets_pair = Klammern kommen immer paarweise, deshalb bekommst du beide auf einmal.
-@tutorial_run_program = Das ist ein Programm! Tippe auf <b>Play</b>, um es auszuführen.
+@tutorial_run_program = Das ist ein Programm! Tippe auf den <b>Ausführen-Button</b>, um es zu starten.
 @tutorial_leave_fullscreen = Von hier drin siehst du die Farm nicht.
 Tippe auf <b>x</b>, um zurückzugehen.
 @tutorial_first_program = Geschafft!
 Das war dein allererstes Programm.
-@tutorial_hay = Alles, was die Drohne erntet, landet bei mir.
+@tutorial_hay = Alles, was die Drohne erntet, landet in mir.
 Das ist Heu, deine erste Ressource.
 @tutorial_get_five = Holen wir uns 5 davon.
 Führe <b>main</b> noch einmal aus, wenn das Gras nachgewachsen ist.
-@tutorial_hay_five = Fünf Heu! Das verdient ein High Five. Oder eher ein Heu Five.
-@tutorial_play_gets_old = Jedes Mal auf Play zu drücken wird langsam öde, oder?
+@tutorial_hay_five = Fünf Heu! Gib mir fünf!
+@tutorial_play_gets_old = Jedes Mal den Ausführen-Button zu drücken wird langsam öde, oder?
 Lassen wir die Drohne das automatisch machen.
 @tutorial_open_tech_tree = Dafür müssen wir aber erst eine neue Technologie freischalten.
 Tippe auf diesen Button, um den Forschungsbaum zu öffnen.
@@ -47,11 +47,11 @@ Tippe auf diesen Button, um den Forschungsbaum zu öffnen.
 Hier kannst du deine Ressourcen ausgeben.
 @tutorial_tap_loops = Wir können <b>Schleifen</b> freischalten. Schauen wir mal.
 Tippe darauf, um zu sehen, was sie tun.
-@tutorial_buy_loops = Schleifen wiederholen Code, damit du nicht jedes Mal auf Play drücken musst.
+@tutorial_buy_loops = Schleifen wiederholen Code, damit du nicht jedes Mal den Ausführen-Button drücken musst.
 Tippe auf <b>Freischalten</b>, um sie zu kaufen.
 @tutorial_docs_intro = Jedes Mal, wenn du etwas freischaltest, öffnet sich hier seine Seite.
 Das nennt sich <b>Dokumentation</b>. Sie weiß mehr über dieses Spiel als ich.
-@tutorial_docs_example = Probier das Beispiel aus. Tippe im kleinen Fenster auf <b>Play</b>.
+@tutorial_docs_example = Probier das Beispiel aus. Tippe im kleinen Fenster auf den <b>Ausführen-Button</b>.
 @tutorial_docs_navigate = Tippe auf einen Link, um zu dieser Seite zu springen.
 <b>Zurück</b> bringt dich zurück, <b>Startseite</b> zeigt alles, was es gibt.
 Schließe sie mit <b>x</b>, wenn du fertig bist.
@@ -107,4 +107,4 @@ Tippe auf <b>Schritt</b>, um deinen Code Zeile für Zeile auszuführen.
 @tutorial_tip_search = Die Suche findet Text in all deinen offenen Code- und Doku-Fenstern.
 <b><noparse><</noparse></b> und <b><noparse>></noparse></b> springen zwischen den Treffern.
 @tutorial for new saves = Tutorial in neuen Spielständen
-@option_tooltip_tutorial_for_new_saves = Ob das Schweinchen einen neuen Spielstand vorführt. Schaltet sich von selbst aus, sobald du das Tutorial beendet oder abgelehnt hast.
+@option_tooltip_tutorial_for_new_saves = Ob dich das Schweinchen in einem neuen Spielstand herumführt. Schaltet sich von selbst aus, sobald du das Tutorial beendet oder abgelehnt hast.

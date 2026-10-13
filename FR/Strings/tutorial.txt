@@ -23,13 +23,13 @@ Tape <b>harvest</b>
 Malin, non ?
 @tutorial_accept_completion = Touche celle que tu veux, ou appuie sur <b>Tab</b> pour accepter la suggestion surlignée.
 @tutorial_run_harvest = Voyons ce qui se passe.
-Touche <b>Play</b> pour lancer le code.
+Touche <b>Exécuter</b> pour lancer le code.
 @tutorial_error = Oups ! Quand quelque chose cloche, une erreur apparaît juste là où ça s'est produit.
 Elle te dit même comment la corriger.
-@tutorial_type_bracket = Les <b>()</b> disent au drone de vraiment le faire.
+@tutorial_type_bracket = Les <b>()</b> après <b>harvest</b> disent au drone de vraiment le faire.
 Touche ton code et tape <b>(</b>
 @tutorial_brackets_pair = Les parenthèses vont toujours par deux, tu obtiens donc les deux d'un coup.
-@tutorial_run_program = Ça, c'est un programme ! Touche <b>Play</b> pour le lancer.
+@tutorial_run_program = Ça, c'est un programme ! Touche <b>Exécuter</b> pour le lancer.
 @tutorial_leave_fullscreen = D'ici, tu ne vois pas la ferme.
 Touche <b>x</b> pour revenir.
 @tutorial_first_program = Bravo !
@@ -38,8 +38,8 @@ C'était ton tout premier programme.
 Ça, c'est du foin, ta première ressource.
 @tutorial_get_five = Allons en chercher 5.
 Relance <b>main</b> quand l'herbe aura repoussé.
-@tutorial_hay_five = Cinq foins ! Ça mérite un high five. Ou plutôt un hay five.
-@tutorial_play_gets_old = Appuyer sur Play à chaque fois, ça devient lassant, non ?
+@tutorial_hay_five = Cinq foins ! Ça mérite qu'on en fasse tout un foin !
+@tutorial_play_gets_old = Appuyer sur Exécuter à chaque fois, ça devient lassant, non ?
 Faisons en sorte que le drone le fasse tout seul.
 @tutorial_open_tech_tree = Mais pour ça, il faut débloquer une nouvelle technologie.
 Touche ce bouton pour ouvrir l'arbre technologique.
@@ -47,11 +47,11 @@ Touche ce bouton pour ouvrir l'arbre technologique.
 C'est ici que tu dépenses tes ressources.
 @tutorial_tap_loops = On peut débloquer les <b>boucles</b>. Jetons un œil.
 Touche-les pour voir ce qu'elles font.
-@tutorial_buy_loops = Les boucles répètent le code, tu n'as donc plus besoin d'appuyer sur Play à chaque fois.
+@tutorial_buy_loops = Les boucles répètent le code, tu n'as donc plus besoin d'appuyer sur Exécuter à chaque fois.
 Touche <b>Débloquer</b> pour les acheter.
 @tutorial_docs_intro = Chaque fois que tu débloques quelque chose, sa page s'ouvre ici.
 C'est la <b>documentation</b>. Elle en sait plus sur ce jeu que moi.
-@tutorial_docs_example = Essaie l'exemple. Touche <b>Play</b> dans la petite fenêtre.
+@tutorial_docs_example = Essaie l'exemple. Touche <b>Exécuter</b> dans la petite fenêtre.
 @tutorial_docs_navigate = Touche un lien pour aller à cette page.
 <b>Retour</b> te ramène en arrière, <b>Accueil</b> montre tout ce qui existe.
 Ferme-la avec <b>x</b> quand tu as fini.
