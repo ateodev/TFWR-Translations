@@ -6,7 +6,7 @@ Hra má vlastní klávesnici pro psaní kódu. Všechny symboly, které Python p
 Pokud chceš raději používat klávesnici svého zařízení, nastav v možnostech „Typ klávesnice“ na „Systémová“. Připojená hardwarová klávesnice se vždy použije místo nich a herní klávesnice se vrátí, jakmile ji odpojíš.
 
 ## Psaní
-**Závorky a uvozovky**: klávesy `()`, `[]`, `{}` a `"` vloží pár a umístí kurzor mezi ně. Pokud máš vybraný text, místo toho ho obalí a nechají vybraný, takže ho můžeš obalit znovu. Podrž klávesu závorky chvíli a objeví se nabídka jen s otevírací nebo zavírací závorkou, přejeď na tu, kterou chceš, a pusť.
+**Závorky a uvozovky**: klávesy `()`, `[]`, `{}` a `"` vloží pár a umístí kurzor mezi ně. Pokud máš vybraný text, místo toho ho obalí a nechají vybraný, takže ho můžeš obalit znovu. Podrž klávesu závorky chvíli a objeví se nabídka jen s otevírací nebo zavírací závorkou, nebo klávesu `"` pro jednoduchou uvozovku; přejeď na ten znak, který chceš, a pusť.
 
 **Tab**: odsadí o jednu úroveň. S více vybranými řádky odsadí všechny. Shift + Tab naopak jednu úroveň odsazení odebere.
 

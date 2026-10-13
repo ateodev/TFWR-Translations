@@ -6,7 +6,7 @@ Il gioco ha una tastiera tutta sua per scrivere codice. Mette tutti i simboli di
 Se preferisci usare la tastiera del tuo dispositivo, imposta "Tipo di tastiera" su "Sistema" nelle opzioni. Una tastiera fisica collegata viene sempre usata al loro posto, e la tastiera del gioco torna quando la scolleghi.
 
 ## Digitazione
-**Parentesi e virgolette**: i tasti `()`, `[]`, `{}` e `"` inseriscono la coppia e mettono il cursore in mezzo. Se hai del testo selezionato, lo racchiudono invece e lo tengono selezionato, così puoi racchiuderlo di nuovo. Tieni premuto un tasto parentesi per un attimo per avere un popup con la sola parentesi aperta o chiusa, scorri su quella che vuoi e lascia.
+**Parentesi e virgolette**: i tasti `()`, `[]`, `{}` e `"` inseriscono la coppia e mettono il cursore in mezzo. Se hai del testo selezionato, lo racchiudono invece e lo tengono selezionato, così puoi racchiuderlo di nuovo. Tieni premuto un tasto parentesi per un attimo per avere un popup con la sola parentesi aperta o chiusa, oppure il tasto `"` per una virgoletta singola; scorri su quella che vuoi e lascia.
 
 **Tab**: indenta di un livello. Con più righe selezionate le indenta tutte. Shift + Tab rimuove invece un livello di indentazione.
 

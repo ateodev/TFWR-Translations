@@ -6,7 +6,7 @@ The game comes with its own keyboard for writing code. It puts all the symbols P
 If you would rather use your device's own keyboard, set "Keyboard Type" to "System" in the options. A connected hardware keyboard is always used instead, and the in-game keyboard comes back when you disconnect it.
 
 ## Typing
-**Brackets and quotes**: the `()`, `[]`, `{}` and `"` keys insert the pair and put the cursor in between. If you have text selected, they wrap it instead and keep it selected, so you can wrap it again. Hold a bracket key for a moment to get a popup with just the opening or the closing bracket, slide to the one you want and let go.
+**Brackets and quotes**: the `()`, `[]`, `{}` and `"` keys insert the pair and put the cursor in between. If you have text selected, they wrap it instead and keep it selected, so you can wrap it again. Hold a bracket key for a moment to get a popup with just the opening or the closing bracket, or the `"` key for a single quote; slide to the one you want and let go.
 
 **Tab**: indents by one level. With several lines selected it indents all of them. Shift + Tab removes one level of indentation instead.
 

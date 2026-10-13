@@ -6,7 +6,7 @@ Le jeu est livré avec son propre clavier pour écrire du code. Il réunit tous 
 Si tu préfères utiliser le clavier de ton appareil, règle "Type de clavier" sur "Système" dans les options. Un clavier physique connecté est toujours utilisé à la place, et le clavier intégré revient quand tu le déconnectes.
 
 ## Saisie
-**Parenthèses et guillemets** : les touches `()`, `[]`, `{}` et `"` insèrent la paire et placent le curseur entre les deux. Si du texte est sélectionné, elles l'entourent à la place et le gardent sélectionné, pour que tu puisses l'entourer encore. Maintiens une touche de parenthèse un instant pour obtenir une fenêtre avec seulement la parenthèse ouvrante ou fermante, glisse vers celle que tu veux et relâche.
+**Parenthèses et guillemets** : les touches `()`, `[]`, `{}` et `"` insèrent la paire et placent le curseur entre les deux. Si du texte est sélectionné, elles l'entourent à la place et le gardent sélectionné, pour que tu puisses l'entourer encore. Maintiens une touche de parenthèse un instant pour obtenir une fenêtre avec seulement la parenthèse ouvrante ou fermante, ou la touche `"` pour un guillemet simple ; glisse vers le signe que tu veux et relâche.
 
 **Tab** : indente d'un niveau. Avec plusieurs lignes sélectionnées, il les indente toutes. Shift + Tab retire un niveau d'indentation à la place.
 

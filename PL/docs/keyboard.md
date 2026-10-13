@@ -6,7 +6,7 @@ Gra ma własną klawiaturę do pisania kodu. Mieści wszystkie symbole potrzebne
 Jeśli wolisz używać klawiatury swojego urządzenia, ustaw w opcjach „Typ klawiatury” na „Systemowa”. Podłączona klawiatura sprzętowa jest zawsze używana zamiast nich, a klawiatura w grze wraca po jej odłączeniu.
 
 ## Pisanie
-**Nawiasy i cudzysłowy**: klawisze `()`, `[]`, `{}` i `"` wstawiają parę i umieszczają kursor pomiędzy. Jeśli masz zaznaczony tekst, zamiast tego otaczają go i zostawiają zaznaczony, więc możesz otoczyć go ponownie. Przytrzymaj chwilę klawisz nawiasu, aby wyświetlić okienko tylko z nawiasem otwierającym lub zamykającym, przesuń palec na wybrany i puść.
+**Nawiasy i cudzysłowy**: klawisze `()`, `[]`, `{}` i `"` wstawiają parę i umieszczają kursor pomiędzy. Jeśli masz zaznaczony tekst, zamiast tego otaczają go i zostawiają zaznaczony, więc możesz otoczyć go ponownie. Przytrzymaj chwilę klawisz nawiasu, aby wyświetlić okienko tylko z nawiasem otwierającym lub zamykającym, albo klawisz `"`, aby uzyskać pojedynczy cudzysłów; przesuń palec na wybrany znak i puść.
 
 **Tab**: wcina o jeden poziom. Gdy zaznaczonych jest kilka wierszy, wcina je wszystkie. Shift + Tab zamiast tego usuwa jeden poziom wcięcia.
 

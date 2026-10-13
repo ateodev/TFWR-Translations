@@ -6,7 +6,7 @@ O jogo vem com seu próprio teclado para escrever código. Ele coloca todos os s
 Se preferir usar o teclado do seu aparelho, defina "Tipo de teclado" como "Sistema" nas opções. Um teclado físico conectado é sempre usado no lugar deles, e o teclado do jogo volta quando você o desconecta.
 
 ## Digitação
-**Parênteses e aspas**: as teclas `()`, `[]`, `{}` e `"` inserem o par e colocam o cursor no meio. Se houver texto selecionado, elas o envolvem e o mantêm selecionado, para que você possa envolvê-lo de novo. Segure uma tecla de parêntese por um instante para abrir uma janelinha só com o parêntese de abertura ou de fechamento, deslize até o que você quer e solte.
+**Parênteses e aspas**: as teclas `()`, `[]`, `{}` e `"` inserem o par e colocam o cursor no meio. Se houver texto selecionado, elas o envolvem e o mantêm selecionado, para que você possa envolvê-lo de novo. Segure uma tecla de parêntese por um instante para abrir uma janelinha só com o parêntese de abertura ou de fechamento, ou a tecla `"` para uma aspa simples; deslize até o que você quer e solte.
 
 **Tab**: indenta um nível. Com várias linhas selecionadas, indenta todas elas. Shift + Tab remove um nível de indentação.
 

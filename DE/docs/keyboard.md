@@ -6,7 +6,7 @@ Das Spiel bringt eine eigene Tastatur zum Schreiben von Code mit. Sie hat alle S
 Wenn du lieber die Tastatur deines Geräts verwenden möchtest, stelle in den Optionen "Tastaturtyp" auf "System". Eine angeschlossene Hardware-Tastatur wird immer bevorzugt verwendet, und die Spieltastatur kommt zurück, sobald du sie trennst.
 
 ## Tippen
-**Klammern und Anführungszeichen**: Die Tasten `()`, `[]`, `{}` und `"` fügen das Paar ein und setzen den Cursor dazwischen. Wenn du Text ausgewählt hast, umschließen sie ihn stattdessen und lassen ihn ausgewählt, sodass du ihn noch einmal umschließen kannst. Halte eine Klammertaste einen Moment gedrückt, um ein Popup mit nur der öffnenden oder der schließenden Klammer zu bekommen, schiebe den Finger auf die gewünschte und lass los.
+**Klammern und Anführungszeichen**: Die Tasten `()`, `[]`, `{}` und `"` fügen das Paar ein und setzen den Cursor dazwischen. Wenn du Text ausgewählt hast, umschließen sie ihn stattdessen und lassen ihn ausgewählt, sodass du ihn noch einmal umschließen kannst. Halte eine Klammertaste einen Moment gedrückt, um ein Popup mit nur der öffnenden oder der schließenden Klammer zu bekommen, oder die Taste `"` für ein einfaches Anführungszeichen; schiebe den Finger auf das gewünschte Zeichen und lass los.
 
 **Tab**: rückt um eine Stufe ein. Sind mehrere Zeilen ausgewählt, werden alle eingerückt. Shift + Tab entfernt stattdessen eine Einrückungsstufe.
 

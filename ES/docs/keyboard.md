@@ -6,7 +6,7 @@ El juego incluye su propio teclado para escribir código. Reúne todos los símb
 Si prefieres usar el teclado de tu dispositivo, pon "Tipo de teclado" en "Sistema" en las opciones. Un teclado físico conectado se usa siempre en su lugar, y el teclado del juego vuelve cuando lo desconectas.
 
 ## Escritura
-**Paréntesis y comillas**: las teclas `()`, `[]`, `{}` y `"` insertan la pareja y colocan el cursor en medio. Si tienes texto seleccionado, lo envuelven y lo mantienen seleccionado, para que puedas envolverlo otra vez. Mantén pulsada una tecla de paréntesis un momento para obtener una ventana emergente con solo el de apertura o el de cierre, desliza hasta el que quieras y suelta.
+**Paréntesis y comillas**: las teclas `()`, `[]`, `{}` y `"` insertan la pareja y colocan el cursor en medio. Si tienes texto seleccionado, lo envuelven y lo mantienen seleccionado, para que puedas envolverlo otra vez. Mantén pulsada una tecla de paréntesis un momento para obtener una ventana emergente con solo el de apertura o el de cierre, o la tecla `"` para una comilla simple; desliza hasta el que quieras y suelta.
 
 **Tab**: indenta un nivel. Con varias líneas seleccionadas las indenta todas. Shift + Tab quita un nivel de indentación en su lugar.
 
