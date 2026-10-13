@@ -26,7 +26,7 @@ Isn't that smart?
 Tap <b>play</b> to run the code.
 @tutorial_error = Oops! When something's wrong, an error shows up right where it happened.
 It even tells you how to fix it.
-@tutorial_type_bracket = The <b>()</b> is what tells the drone to actually do it.
+@tutorial_type_bracket = The <b>()</b> after <b>harvest</b> is what tells the drone to actually do it.
 Tap your code and type <b>(</b>
 @tutorial_brackets_pair = Brackets always come in pairs, so you get both at once.
 @tutorial_run_program = That's a program! Tap <b>play</b> to run it.
