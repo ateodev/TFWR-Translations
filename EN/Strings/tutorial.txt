@@ -6,7 +6,7 @@
 @tutorial_welcome = Oh, hello!
 Welcome to The Farmer Was Replaced!
 @tutorial_show_around = Would you like me to show you around?
-@tutorial_show_around_yes = Yes, show me!
+@tutorial_show_around_yes = Yes, let's go!
 @tutorial_show_around_no = No thanks
 @tutorial_farm = This is your farm. One single patch of soil.
 @tutorial_look_around = Drag and pinch to move around the farm.
@@ -27,7 +27,7 @@ Tap <b>play</b> to run the code.
 @tutorial_error = Oops! When something's wrong, an error shows up right where it happened.
 It even tells you how to fix it.
 @tutorial_type_bracket = The <b>()</b> after <b>harvest</b> is what tells the drone to actually do it.
-Tap your code and type <b>(</b>
+Tap your code and type <b>()</b>
 @tutorial_brackets_pair = Brackets always come in pairs, so you get both at once.
 @tutorial_run_program = That's a program! Tap <b>play</b> to run it.
 @tutorial_leave_fullscreen = You can't see the farm from in here.

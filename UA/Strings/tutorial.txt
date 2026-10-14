@@ -6,7 +6,7 @@
 @tutorial_welcome = О, привіт!
 Ласкаво просимо до The Farmer Was Replaced!
 @tutorial_show_around = Показати тобі, що тут до чого?
-@tutorial_show_around_yes = Так, покажи!
+@tutorial_show_around_yes = Так, поїхали!
 @tutorial_show_around_no = Ні, дякую
 @tutorial_farm = Це твоя ферма. Один-єдиний клаптик землі.
 @tutorial_look_around = Перетягуй і зводь пальці, щоб роздивитися ферму.
@@ -27,7 +27,7 @@
 @tutorial_error = Ой! Коли щось не так, помилка з'являється прямо там, де сталася.
 Вона навіть підказує, як її виправити.
 @tutorial_type_bracket = <b>()</b> після <b>harvest</b> кажуть дрону, що це справді треба зробити.
-Натисни на свій код і введи <b>(</b>
+Натисни на свій код і введи <b>()</b>
 @tutorial_brackets_pair = Дужки завжди ходять парами, тому ти отримуєш обидві одразу.
 @tutorial_run_program = Оце так програма! Натисни кнопку <b>відтворення</b>, щоб запустити її.
 @tutorial_leave_fullscreen = Звідси ферми не видно.

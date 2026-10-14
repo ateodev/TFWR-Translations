@@ -6,7 +6,7 @@
 @tutorial_welcome = Oh, ciao!
 Benvenuto in The Farmer Was Replaced!
 @tutorial_show_around = Vuoi che ti faccia fare un giro?
-@tutorial_show_around_yes = Sì, fammi vedere!
+@tutorial_show_around_yes = Sì, andiamo!
 @tutorial_show_around_no = No, grazie
 @tutorial_farm = Questa è la tua fattoria. Un solo pezzetto di terra.
 @tutorial_look_around = Trascina e pizzica per muoverti nella fattoria.
@@ -27,7 +27,7 @@ Tocca <b>Esegui</b> per avviare il codice.
 @tutorial_error = Ops! Quando qualcosa non va, un errore compare proprio dove è successo.
 Ti dice persino come sistemarlo.
 @tutorial_type_bracket = Sono le <b>()</b> dopo <b>harvest</b> a dire al drone di farlo davvero.
-Tocca il tuo codice e scrivi <b>(</b>
+Tocca il tuo codice e scrivi <b>()</b>
 @tutorial_brackets_pair = Le parentesi vanno sempre in coppia, quindi le ottieni entrambe in un colpo solo.
 @tutorial_run_program = Questo è un programma! Tocca <b>Esegui</b> per avviarlo.
 @tutorial_leave_fullscreen = Da qui dentro non vedi la fattoria.

@@ -6,7 +6,7 @@
 @tutorial_welcome = 어, 안녕!
 농부는 대체되었다에 온 걸 환영해요!
 @tutorial_show_around = 제가 안내해 드릴까요?
-@tutorial_show_around_yes = 네, 보여주세요!
+@tutorial_show_around_yes = 네, 시작해요!
 @tutorial_show_around_no = 괜찮아요
 @tutorial_farm = 여기가 당신의 농장이에요. 흙 한 칸뿐이지만요.
 @tutorial_look_around = 드래그하거나 두 손가락으로 오므려서 농장을 둘러보세요.
@@ -27,7 +27,7 @@
 @tutorial_error = 이런! 뭔가 잘못되면 바로 그 자리에 오류가 나타나요.
 고치는 방법까지 알려줘요.
 @tutorial_type_bracket = <b>harvest</b> 뒤의 <b>()</b>가 드론에게 실제로 하라고 말해주는 부분이에요.
-코드를 탭하고 <b>(</b>를 입력하세요
+코드를 탭하고 <b>()</b>를 입력하세요
 @tutorial_brackets_pair = 괄호는 항상 짝으로 다니니까 한 번에 둘 다 생겨요.
 @tutorial_run_program = 이게 바로 프로그램이에요! <b>실행</b> 버튼을 탭해서 실행해 보세요.
 @tutorial_leave_fullscreen = 여기서는 농장이 안 보여요.

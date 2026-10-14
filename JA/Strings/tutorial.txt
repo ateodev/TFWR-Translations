@@ -6,7 +6,7 @@
 @tutorial_welcome = あら、こんにちは！
 「農家は Replace() されました」へようこそ！
 @tutorial_show_around = 案内しましょうか？
-@tutorial_show_around_yes = うん、お願い！
+@tutorial_show_around_yes = うん、行こう！
 @tutorial_show_around_no = いいえ、結構です
 @tutorial_farm = これがあなたの農場。たった1マスの土地です。
 @tutorial_look_around = ドラッグやピンチで農場を見回せます。
@@ -27,7 +27,7 @@
 @tutorial_error = おっと！何かが間違っていると、その場所にエラーが表示されます。
 直し方まで教えてくれます。
 @tutorial_type_bracket = <b>harvest</b> の後ろの <b>()</b> がドローンに「実際にやれ」と伝える部分です。
-コードをタップして <b>(</b> を入力してください
+コードをタップして <b>()</b> を入力してください
 @tutorial_brackets_pair = 括弧は必ずペアなので、両方が一度に入力されます。
 @tutorial_run_program = これでプログラムの完成！<b>実行ボタン</b> をタップして実行しましょう。
 @tutorial_leave_fullscreen = ここからは農場が見えません。

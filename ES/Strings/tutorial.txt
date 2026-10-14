@@ -6,7 +6,7 @@
 @tutorial_welcome = ¡Oh, hola!
 ¡Bienvenido a The Farmer Was Replaced!
 @tutorial_show_around = ¿Quieres que te enseñe esto?
-@tutorial_show_around_yes = ¡Sí, enséñamelo!
+@tutorial_show_around_yes = ¡Sí, vamos allá!
 @tutorial_show_around_no = No, gracias
 @tutorial_farm = Esta es tu granja. Una sola parcela de tierra.
 @tutorial_look_around = Arrastra y pellizca para moverte por la granja.
@@ -27,7 +27,7 @@ Toca <b>Ejecutar</b> para poner en marcha el código.
 @tutorial_error = ¡Vaya! Cuando algo falla, el error aparece justo donde ocurrió.
 Incluso te dice cómo arreglarlo.
 @tutorial_type_bracket = Los <b>()</b> después de <b>harvest</b> son lo que le dice al dron que lo haga de verdad.
-Toca tu código y escribe <b>(</b>
+Toca tu código y escribe <b>()</b>
 @tutorial_brackets_pair = Los paréntesis siempre van en pareja, así que te salen los dos a la vez.
 @tutorial_run_program = ¡Eso es un programa! Toca <b>Ejecutar</b> para ponerlo en marcha.
 @tutorial_leave_fullscreen = Desde aquí no se ve la granja.

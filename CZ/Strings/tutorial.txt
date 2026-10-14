@@ -6,7 +6,7 @@
 @tutorial_welcome = Ó, ahoj!
 Vítej ve hře The Farmer Was Replaced!
 @tutorial_show_around = Chceš, abych tě tu provedlo?
-@tutorial_show_around_yes = Ano, ukaž mi to!
+@tutorial_show_around_yes = Ano, jdeme na to!
 @tutorial_show_around_no = Ne, díky
 @tutorial_farm = Tohle je tvoje farma. Jeden jediný kousek půdy.
 @tutorial_look_around = Tažením a stažením prstů se pohybuješ po farmě.
@@ -27,7 +27,7 @@ Klepni na <b>tlačítko pro spuštění</b> a kód se rozběhne.
 @tutorial_error = Jejda! Když je něco špatně, chyba se objeví přesně tam, kde vznikla.
 Dokonce ti poradí, jak ji opravit.
 @tutorial_type_bracket = <b>()</b> za <b>harvest</b> říká dronu, aby to opravdu udělal.
-Klepni na svůj kód a napiš <b>(</b>
+Klepni na svůj kód a napiš <b>()</b>
 @tutorial_brackets_pair = Závorky chodí vždy v páru, takže dostaneš obě najednou.
 @tutorial_run_program = A to je program! Klepni na <b>tlačítko pro spuštění</b>.
 @tutorial_leave_fullscreen = Odtud farmu nevidíš.

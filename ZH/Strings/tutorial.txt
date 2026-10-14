@@ -6,7 +6,7 @@
 @tutorial_welcome = 哦，你好！
 欢迎来到《编程农场》！
 @tutorial_show_around = 要我带你四处看看吗？
-@tutorial_show_around_yes = 好，带我看看！
+@tutorial_show_around_yes = 好，出发吧！
 @tutorial_show_around_no = 不用了，谢谢
 @tutorial_farm = 这是你的农场。只有一小块土地。
 @tutorial_look_around = 拖动和双指缩放可以在农场里四处查看。
@@ -27,7 +27,7 @@
 @tutorial_error = 哎呀！出错时，错误会直接显示在它发生的地方。
 它甚至会告诉你怎么修。
 @tutorial_type_bracket = <b>harvest</b> 后面的 <b>()</b> 才是真正让无人机去做的指令。
-点按你的代码，然后输入 <b>(</b>
+点按你的代码，然后输入 <b>()</b>
 @tutorial_brackets_pair = 括号总是成对出现，所以你一次就得到了两个。
 @tutorial_run_program = 这就是一个程序！点按<b>运行按钮</b>执行它。
 @tutorial_leave_fullscreen = 在这里面看不到农场。

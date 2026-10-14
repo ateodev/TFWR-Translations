@@ -6,7 +6,7 @@
 @tutorial_welcome = Oh, hallo!
 Willkommen bei The Farmer Was Replaced!
 @tutorial_show_around = Soll ich dich ein bisschen herumführen?
-@tutorial_show_around_yes = Ja, zeig's mir!
+@tutorial_show_around_yes = Ja, auf geht's!
 @tutorial_show_around_no = Nein danke
 @tutorial_farm = Das ist deine Farm. Ein einziges Stück Erde.
 @tutorial_look_around = Ziehe und zoome mit zwei Fingern, um dich auf der Farm umzusehen.
@@ -27,7 +27,7 @@ Tippe auf den <b>Ausführen-Button</b>, um den Code zu starten.
 @tutorial_error = Hoppla! Wenn etwas nicht stimmt, erscheint der Fehler genau dort, wo er passiert ist.
 Er sagt dir sogar, wie du ihn behebst.
 @tutorial_type_bracket = Die <b>()</b> nach <b>harvest</b> sagen der Drohne, dass sie es wirklich tun soll.
-Tippe auf deinen Code und gib <b>(</b> ein
+Tippe auf deinen Code und gib <b>()</b> ein
 @tutorial_brackets_pair = Klammern kommen immer paarweise, deshalb bekommst du beide auf einmal.
 @tutorial_run_program = Das ist ein Programm! Tippe auf den <b>Ausführen-Button</b>, um es zu starten.
 @tutorial_leave_fullscreen = Von hier drin siehst du die Farm nicht.
