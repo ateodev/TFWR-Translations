@@ -8,6 +8,8 @@
 @load_screen_no_saves_hint = Нажми «{0}», чтобы начать ферму.
 @load_screen_rename_title = Переименовать сохранение
 @load_screen_rename = Переименовать
+@load_screen_create_title = Создать сохранение
+@load_screen_create = Создать
 @load_screen_rename_empty = Введи название.
 @load_screen_rename_taken = Сохранение с таким названием уже есть.
 @load_screen_delete_title = Удалить {0}?

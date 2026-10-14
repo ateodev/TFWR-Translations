@@ -3,6 +3,7 @@
 @graphics = 图像
 @general = 通用
 @controls = 控制
+@controls_mobile = 外设
 @errors = 错误
 @screen mode = 屏幕模式
 @fullscreen = 全屏
@@ -33,6 +34,8 @@
 @viewport sliding = 视口滑动
 @scroll sensitivity = 滚轮灵敏度
 @UI size = UI 大小
+@UI size in portrait = 竖屏 UI 大小
+@UI size in landscape = 横屏 UI 大小
 @file watcher = 文件监视器
 @indent selection = 缩进选中部分
 @menu = 菜单

@@ -3,6 +3,7 @@
 @graphics = Графіка
 @general = Загальні
 @controls = Управління
+@controls_mobile = Периферія
 @errors = Помилки
 @screen mode = Режим відображення
 @fullscreen = Повний екран
@@ -33,6 +34,8 @@
 @viewport sliding = Зсув області перегляду
 @scroll sensitivity = Чутливість коліщатка
 @UI size = Розмір інтерфейсу
+@UI size in portrait = Розмір інтерфейсу (вертикально)
+@UI size in landscape = Розмір інтерфейсу (горизонтально)
 @file watcher = Файловий спостерігач
 @indent selection = Відступ виділення
 @menu = Меню

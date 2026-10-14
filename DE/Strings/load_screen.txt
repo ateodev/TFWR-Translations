@@ -8,6 +8,8 @@
 @load_screen_no_saves_hint = Drücke auf '{0}', um eine Farm zu starten.
 @load_screen_rename_title = Spielstand umbenennen
 @load_screen_rename = Umbenennen
+@load_screen_create_title = Spielstand erstellen
+@load_screen_create = Erstellen
 @load_screen_rename_empty = Bitte gib einen Namen ein.
 @load_screen_rename_taken = Ein Spielstand mit diesem Namen existiert bereits.
 @load_screen_delete_title = {0} löschen?

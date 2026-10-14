@@ -8,6 +8,8 @@
 @load_screen_no_saves_hint = Premi '{0}' per iniziare una fattoria.
 @load_screen_rename_title = Rinomina salvataggio
 @load_screen_rename = Rinomina
+@load_screen_create_title = Crea salvataggio
+@load_screen_create = Crea
 @load_screen_rename_empty = Inserisci un nome.
 @load_screen_rename_taken = Esiste già un salvataggio con questo nome.
 @load_screen_delete_title = Eliminare {0}?

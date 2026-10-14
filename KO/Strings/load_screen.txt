@@ -8,6 +8,8 @@
 @load_screen_no_saves_hint = '{0}'을(를) 눌러 농장을 시작하세요.
 @load_screen_rename_title = 저장 항목 이름 바꾸기
 @load_screen_rename = 이름 바꾸기
+@load_screen_create_title = 저장 항목 만들기
+@load_screen_create = 만들기
 @load_screen_rename_empty = 이름을 입력하세요.
 @load_screen_rename_taken = 같은 이름의 저장 항목이 이미 있습니다.
 @load_screen_delete_title = {0}을(를) 삭제할까요?

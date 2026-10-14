@@ -8,6 +8,8 @@
 @load_screen_no_saves_hint = 按“{0}”开始一个农场。
 @load_screen_rename_title = 重命名存档
 @load_screen_rename = 重命名
+@load_screen_create_title = 创建存档
+@load_screen_create = 创建
 @load_screen_rename_empty = 请输入名称。
 @load_screen_rename_taken = 已存在同名存档。
 @load_screen_delete_title = 删除 {0}？

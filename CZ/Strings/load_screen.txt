@@ -8,6 +8,8 @@
 @load_screen_no_saves_hint = Stiskni „{0}“ a založ farmu.
 @load_screen_rename_title = Přejmenovat save
 @load_screen_rename = Přejmenovat
+@load_screen_create_title = Vytvořit save
+@load_screen_create = Vytvořit
 @load_screen_rename_empty = Zadej prosím název.
 @load_screen_rename_taken = Save s tímto názvem už existuje.
 @load_screen_delete_title = Smazat {0}?

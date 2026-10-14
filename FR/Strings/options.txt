@@ -3,6 +3,7 @@
 @graphics = Graphismes
 @general = Général
 @controls = Contrôles
+@controls_mobile = Périphériques
 @errors = Erreurs
 @screen mode = Mode écran
 @fullscreen = Plein écran
@@ -33,6 +34,8 @@
 @viewport sliding = Défilement de la vue
 @scroll sensitivity = Sensibilité de la molette
 @UI size = Taille UI
+@UI size in portrait = Taille UI en portrait
+@UI size in landscape = Taille UI en paysage
 @file watcher = Surveillance des fichiers
 @indent selection = Indenter la sélection
 @menu = Menu

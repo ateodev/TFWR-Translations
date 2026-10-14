@@ -8,6 +8,8 @@
 @load_screen_no_saves_hint = Pulsa '{0}' para empezar una granja.
 @load_screen_rename_title = Renombrar partida
 @load_screen_rename = Renombrar
+@load_screen_create_title = Crear partida
+@load_screen_create = Crear
 @load_screen_rename_empty = Introduce un nombre.
 @load_screen_rename_taken = Ya existe una partida con ese nombre.
 @load_screen_delete_title = ¿Eliminar {0}?

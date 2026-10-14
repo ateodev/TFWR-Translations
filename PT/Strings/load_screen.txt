@@ -8,6 +8,8 @@
 @load_screen_no_saves_hint = Toque em '{0}' para começar uma fazenda.
 @load_screen_rename_title = Renomear jogo salvo
 @load_screen_rename = Renomear
+@load_screen_create_title = Criar jogo salvo
+@load_screen_create = Criar
 @load_screen_rename_empty = Digite um nome.
 @load_screen_rename_taken = Já existe um jogo salvo com esse nome.
 @load_screen_delete_title = Excluir {0}?

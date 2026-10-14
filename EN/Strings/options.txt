@@ -3,6 +3,7 @@
 @graphics = Graphics
 @general = General
 @controls = Controls
+@controls_mobile = Peripherals
 @keyboard = Keyboard
 @errors = Errors
 @screen mode = Screen Mode
@@ -35,6 +36,8 @@
 @viewport sliding = Viewport Sliding
 @scroll sensitivity = Scroll Sensitivity
 @UI size = UI Size
+@UI size in portrait = UI Size in Portrait
+@UI size in landscape = UI Size in Landscape
 @file watcher = File Watcher
 @indent selection = Indent Selection
 @menu = Menu

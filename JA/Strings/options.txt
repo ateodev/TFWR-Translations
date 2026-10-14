@@ -3,6 +3,7 @@
 @graphics = グラフィック
 @general = 一般
 @controls = 操作
+@controls_mobile = 周辺機器
 @errors = エラー
 @screen mode = 画面モード
 @fullscreen = フル画面
@@ -33,6 +34,8 @@
 @viewport sliding = ビューポートのスライド
 @scroll sensitivity = スクロール感度
 @UI size = UIサイズ
+@UI size in portrait = UIサイズ（縦向き）
+@UI size in landscape = UIサイズ（横向き）
 @file watcher = ファイルウォッチャー
 @indent selection = 選択部インデント
 @menu = メニュー

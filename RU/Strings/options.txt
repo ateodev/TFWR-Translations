@@ -3,6 +3,7 @@
 @graphics = Качество графики
 @general = Общие
 @controls = Управление
+@controls_mobile = Периферия
 @errors = Ошибки
 @screen mode = Режим экрана
 @fullscreen = Полный экран
@@ -33,6 +34,8 @@
 @viewport sliding = Прокрутка области просмотра
 @scroll sensitivity = Чувствительность колёсика
 @UI size = Размер интерфейса
+@UI size in portrait = Размер интерфейса (вертикально)
+@UI size in landscape = Размер интерфейса (горизонтально)
 @file watcher = Отслеживание файлов
 @indent selection = Увеличить отступ
 @menu = Меню

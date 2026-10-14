@@ -8,6 +8,8 @@
 @load_screen_no_saves_hint = Press '{0}' to start a farm.
 @load_screen_rename_title = Rename save
 @load_screen_rename = Rename
+@load_screen_create_title = Create save
+@load_screen_create = Create
 @load_screen_rename_empty = Please enter a name.
 @load_screen_rename_taken = A save with this name already exists.
 @load_screen_delete_title = Delete {0}?

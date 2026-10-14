@@ -8,6 +8,8 @@
 @load_screen_no_saves_hint = 按下「{0}」開始一座農場。
 @load_screen_rename_title = 重新命名存檔
 @load_screen_rename = 重新命名
+@load_screen_create_title = 建立存檔
+@load_screen_create = 建立
 @load_screen_rename_empty = 請輸入名稱。
 @load_screen_rename_taken = 已有同名的存檔。
 @load_screen_delete_title = 刪除 {0}？

@@ -8,6 +8,8 @@
 @load_screen_no_saves_hint = Appuie sur '{0}' pour commencer une ferme.
 @load_screen_rename_title = Renommer la sauvegarde
 @load_screen_rename = Renommer
+@load_screen_create_title = Créer une sauvegarde
+@load_screen_create = Créer
 @load_screen_rename_empty = Entre un nom.
 @load_screen_rename_taken = Une sauvegarde porte déjà ce nom.
 @load_screen_delete_title = Supprimer {0} ?

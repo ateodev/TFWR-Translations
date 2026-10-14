@@ -8,6 +8,8 @@
 @load_screen_no_saves_hint = Naciśnij „{0}”, aby założyć farmę.
 @load_screen_rename_title = Zmień nazwę zapisu
 @load_screen_rename = Zmień nazwę
+@load_screen_create_title = Utwórz zapis
+@load_screen_create = Utwórz
 @load_screen_rename_empty = Wpisz nazwę.
 @load_screen_rename_taken = Zapis o tej nazwie już istnieje.
 @load_screen_delete_title = Usunąć {0}?

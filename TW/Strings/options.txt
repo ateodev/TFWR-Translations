@@ -3,6 +3,7 @@
 @graphics = 圖像品質
 @general = 通用
 @controls = 控制
+@controls_mobile = 周邊裝置
 @errors = 錯誤
 @screen mode = 螢幕模式
 @fullscreen = 全螢幕
@@ -33,6 +34,8 @@
 @viewport sliding = 視窗滑動
 @scroll sensitivity = 滾輪靈敏度
 @UI size = 介面大小
+@UI size in portrait = 直向介面大小
+@UI size in landscape = 橫向介面大小
 @file watcher = 檔案監視器
 @indent selection = 縮排選取部分
 @menu = 選單

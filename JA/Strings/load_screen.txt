@@ -8,6 +8,8 @@
 @load_screen_no_saves_hint = 「{0}」を押して農場を始めましょう。
 @load_screen_rename_title = セーブデータの名前を変更
 @load_screen_rename = 名前を変更
+@load_screen_create_title = セーブデータを作成
+@load_screen_create = 作成
 @load_screen_rename_empty = 名前を入力してください。
 @load_screen_rename_taken = その名前のセーブデータはすでにあります。
 @load_screen_delete_title = {0} を削除しますか？

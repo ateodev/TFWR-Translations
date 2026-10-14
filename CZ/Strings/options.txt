@@ -3,6 +3,7 @@
 @graphics = Grafika
 @general = Obecné
 @controls = Ovládání
+@controls_mobile = Periferie
 @errors = Chyby
 @screen mode = Režim obrazovky
 @fullscreen = Celá obrazovka
@@ -33,6 +34,8 @@
 @viewport sliding = Klouzání pohledu
 @scroll sensitivity = Citlivost kolečka
 @UI size = Velikost rozhraní
+@UI size in portrait = Velikost rozhraní na výšku
+@UI size in landscape = Velikost rozhraní na šířku
 @file watcher = Sledování souborů
 @indent selection = Přidat odsazení
 @menu = Menu
