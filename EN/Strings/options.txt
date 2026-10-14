@@ -19,6 +19,7 @@
 @music volume = Music Volume
 @SFX volume = SFX Volume
 @UI volume = UI Volume
+@Keyboard volume = Keyboard Volume
 @ambience volume = Ambience Volume
 @drone volume = Drone Volume
 @fps limit = Max Framerate
