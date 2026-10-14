@@ -85,3 +85,16 @@
 @30 fps = 30 FPS
 @60 fps = 60 FPS
 @120 fps = 120 FPS
+@keyboard = Klávesnice
+@Keyboard volume = Hlasitost klávesnice
+@Keyboard sound = Zvuk kláves
+@silent = Ticho
+@system = Systémový
+@mechanical = Mechanický
+@Keyboard vibration = Vibrace kláves
+@Keyboard squish = Zploštění klávesnice
+@Keyboard backlight = Podsvícení
+@off = Vypnuto
+@white = Bílé
+@rgb = RGB
+@keyboard_preview_placeholder = Piš sem a vyzkoušej klávesnici

@@ -79,3 +79,8 @@
 @option_tooltip_keyboard_layout = ゲーム内キーボードのキー配列。初期設定はシステム言語の配列です。
 @option_tooltip_keyboard_type = コードを入力するキーボード。ゲーム内キーボードにはPythonに必要な記号がそろっています。システムキーボードは他のアプリで使っているものです。物理キーボードを接続しているときは常にそちらが使われます。
 @option_tooltip_exit_fullscreen_on_run = スタートを押すと全画面のコードエディタを終了して農場を表示します。ブレークポイントで停止した行には引き続き移動します。
+@option_tooltip_keyboard_volume = ゲーム内キーボードのキー音の音量を調整します。
+@option_tooltip_keyboard_sound = ゲーム内キーボードのキーを押したときの音：システム＝端末のキーボードのクリック音、メカニカル＝メカニカルキーボードのキー音。
+@option_tooltip_keyboard_vibration = ゲーム内キーボードのキーを押すたびに短く振動します。
+@option_tooltip_keyboard_backlight = ゲーム内キーボードのキーの下から光が漏れます。白または虹色（RGB）で、押したキーから光の波紋が広がります。
+@option_tooltip_keyboard_squish = ゲーム内キーボードのキーを平たくして、画面を覆う範囲を減らします。最大でキーの高さは通常の半分になります。

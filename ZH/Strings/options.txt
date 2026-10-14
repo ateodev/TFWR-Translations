@@ -84,3 +84,16 @@
 @30 fps = 30 FPS
 @60 fps = 60 FPS
 @120 fps = 120 FPS
+@keyboard = 键盘
+@Keyboard volume = 键盘音量
+@Keyboard sound = 按键音
+@silent = 静音
+@system = 系统
+@mechanical = 机械
+@Keyboard vibration = 按键振动
+@Keyboard squish = 键盘压扁
+@Keyboard backlight = 背光
+@off = 关闭
+@white = 白色
+@rgb = RGB
+@keyboard_preview_placeholder = 在此输入以试用键盘

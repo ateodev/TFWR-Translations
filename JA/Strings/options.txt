@@ -84,3 +84,16 @@
 @30 fps = 30 FPS
 @60 fps = 60 FPS
 @120 fps = 120 FPS
+@keyboard = キーボード
+@Keyboard volume = キーボード音量
+@Keyboard sound = キー音
+@silent = 無音
+@system = システム
+@mechanical = メカニカル
+@Keyboard vibration = キーの振動
+@Keyboard squish = キーボード圧縮
+@Keyboard backlight = バックライト
+@off = オフ
+@white = ホワイト
+@rgb = RGB
+@keyboard_preview_placeholder = ここに入力してキーボードを試す

@@ -79,3 +79,8 @@
 @option_tooltip_keyboard_layout = 遊戲內鍵盤的按鍵排列。預設使用你系統語言對應的配置。
 @option_tooltip_keyboard_type = 用哪種鍵盤輸入程式碼。遊戲內鍵盤具備 Python 所需的全部符號；系統鍵盤則是你在其他應用程式中使用的鍵盤。連接實體鍵盤時一律優先使用實體鍵盤。
 @option_tooltip_exit_fullscreen_on_run = 按下執行時離開全螢幕程式碼編輯器並顯示農場。中斷點仍會帶你前往暫停的那一行。
+@option_tooltip_keyboard_volume = 調整遊戲內鍵盤按鍵音的音量。
+@option_tooltip_keyboard_sound = 按下遊戲內鍵盤按鍵時的聲音：系統 = 裝置內建鍵盤的點擊聲，機械 = 機械鍵盤的按鍵聲。
+@option_tooltip_keyboard_vibration = 每次按下遊戲內鍵盤的按鍵時短暫震動。
+@option_tooltip_keyboard_backlight = 從遊戲內鍵盤按鍵下方透出的光，白色或彩虹色（RGB），按下的每個鍵都會泛起光波。
+@option_tooltip_keyboard_squish = 讓遊戲內鍵盤的按鍵變扁，少遮擋畫面。最大時按鍵高度為正常的一半。

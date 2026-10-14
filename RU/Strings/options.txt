@@ -85,3 +85,16 @@
 @30 fps = 30 FPS
 @60 fps = 60 FPS
 @120 fps = 120 FPS
+@keyboard = Клавиатура
+@Keyboard volume = Громкость клавиатуры
+@Keyboard sound = Звук клавиш
+@silent = Без звука
+@system = Системный
+@mechanical = Механический
+@Keyboard vibration = Вибрация клавиш
+@Keyboard squish = Сжатие клавиатуры
+@Keyboard backlight = Подсветка
+@off = Выкл.
+@white = Белая
+@rgb = RGB
+@keyboard_preview_placeholder = Печатайте здесь, чтобы опробовать клавиатуру

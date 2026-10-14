@@ -85,3 +85,16 @@
 @30 fps = 30 IPS
 @60 fps = 60 IPS
 @120 fps = 120 IPS
+@keyboard = Clavier
+@Keyboard volume = Volume du clavier
+@Keyboard sound = Son des touches
+@silent = Silencieux
+@system = Système
+@mechanical = Mécanique
+@Keyboard vibration = Vibration des touches
+@Keyboard squish = Aplatir le clavier
+@Keyboard backlight = Rétroéclairage
+@off = Désactivé
+@white = Blanc
+@rgb = RGB
+@keyboard_preview_placeholder = Tapez ici pour essayer le clavier

@@ -80,3 +80,8 @@
 @option_tooltip_keyboard_layout = Disposition des touches du clavier intégré. Par défaut, celle de la langue de ton système.
 @option_tooltip_keyboard_type = Le clavier avec lequel tu écris ton code. Le clavier intégré a tous les symboles dont Python a besoin ; le clavier système est celui que tu utilises dans les autres applis. Un clavier physique connecté est toujours utilisé à la place.
 @option_tooltip_exit_fullscreen_on_run = Appuyer sur Démarrer quitte l'éditeur de code en plein écran et affiche la ferme. Les points d'arrêt te ramènent quand même à la ligne en pause.
+@option_tooltip_keyboard_volume = Règle le volume des sons des touches du clavier en jeu.
+@option_tooltip_keyboard_sound = Son d'une pression de touche sur le clavier en jeu : Système = le clic du clavier de votre appareil, Mécanique = une touche de clavier mécanique.
+@option_tooltip_keyboard_vibration = Une courte vibration à chaque pression de touche sur le clavier en jeu.
+@option_tooltip_keyboard_backlight = Lumière qui s'échappe sous les touches du clavier en jeu, blanche ou aux couleurs de l'arc-en-ciel (RGB), avec une onde lumineuse à chaque touche pressée.
+@option_tooltip_keyboard_squish = Rend les touches du clavier en jeu plus plates pour qu'il couvre moins l'écran. Au maximum, les touches font la moitié de leur hauteur normale.

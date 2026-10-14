@@ -80,3 +80,8 @@
 @option_tooltip_keyboard_layout = Disposizione dei tasti della tastiera del gioco. Per impostazione predefinita, quella della lingua del tuo sistema.
 @option_tooltip_keyboard_type = Con quale tastiera scrivi il codice. La tastiera del gioco ha i simboli di cui Python ha bisogno; la tastiera di sistema è quella che usi nelle altre app. Una tastiera fisica collegata viene sempre usata al loro posto.
 @option_tooltip_exit_fullscreen_on_run = Premendo Avvia si esce dall'editor di codice a schermo intero e si mostra la fattoria. I breakpoint ti portano comunque alla riga in pausa.
+@option_tooltip_keyboard_volume = Regola il volume dei suoni dei tasti della tastiera di gioco.
+@option_tooltip_keyboard_sound = Suono alla pressione di un tasto della tastiera di gioco: Sistema = il clic della tastiera del tuo dispositivo, Meccanico = il tasto di una tastiera meccanica.
+@option_tooltip_keyboard_vibration = Una breve vibrazione a ogni pressione di un tasto della tastiera di gioco.
+@option_tooltip_keyboard_backlight = Luce che filtra da sotto i tasti della tastiera di gioco, bianca o nei colori dell'arcobaleno (RGB), con un'onda di luce da ogni tasto premuto.
+@option_tooltip_keyboard_squish = Rende i tasti della tastiera di gioco più bassi, così copre meno lo schermo. Al massimo, i tasti sono alti la metà del normale.

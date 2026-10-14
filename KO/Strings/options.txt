@@ -85,3 +85,16 @@
 @30 fps = 30 FPS
 @60 fps = 60 FPS
 @120 fps = 120 FPS
+@keyboard = 키보드
+@Keyboard volume = 키보드 음량
+@Keyboard sound = 키 소리
+@silent = 무음
+@system = 시스템
+@mechanical = 기계식
+@Keyboard vibration = 키 진동
+@Keyboard squish = 키보드 납작하게
+@Keyboard backlight = 백라이트
+@off = 끄기
+@white = 흰색
+@rgb = RGB
+@keyboard_preview_placeholder = 여기에 입력해 키보드를 사용해 보세요

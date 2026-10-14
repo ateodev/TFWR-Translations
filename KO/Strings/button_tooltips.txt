@@ -80,3 +80,8 @@
 @option_tooltip_keyboard_layout = 게임 내 키보드의 키 배열입니다. 기본값은 시스템 언어의 배열입니다.
 @option_tooltip_keyboard_type = 코드를 입력할 키보드입니다. 게임 내 키보드에는 Python에 필요한 기호가 있고, 시스템 키보드는 다른 앱에서 쓰는 키보드입니다. 하드웨어 키보드가 연결되어 있으면 항상 그것을 대신 사용합니다.
 @option_tooltip_exit_fullscreen_on_run = 시작을 누르면 전체 화면 코드 편집기를 벗어나 농장을 보여줍니다. 중단점에서는 여전히 멈춘 줄로 이동합니다.
+@option_tooltip_keyboard_volume = 게임 키보드의 키 소리 음량을 조절합니다.
+@option_tooltip_keyboard_sound = 게임 키보드의 키를 누를 때 나는 소리: 시스템 = 기기 키보드의 클릭 소리, 기계식 = 기계식 키보드의 키 소리.
+@option_tooltip_keyboard_vibration = 게임 키보드의 키를 누를 때마다 짧게 진동합니다.
+@option_tooltip_keyboard_backlight = 게임 키보드의 키 아래에서 빛이 새어 나옵니다. 흰색 또는 무지개색(RGB)이며, 누른 키에서 빛의 물결이 퍼집니다.
+@option_tooltip_keyboard_squish = 게임 키보드의 키를 납작하게 만들어 화면을 덜 가립니다. 최대일 때 키 높이는 보통의 절반입니다.

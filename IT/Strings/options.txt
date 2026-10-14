@@ -85,3 +85,16 @@
 @30 fps = 30 FPS
 @60 fps = 60 FPS
 @120 fps = 120 FPS
+@keyboard = Tastiera
+@Keyboard volume = Volume tastiera
+@Keyboard sound = Suono dei tasti
+@silent = Silenzioso
+@system = Sistema
+@mechanical = Meccanico
+@Keyboard vibration = Vibrazione dei tasti
+@Keyboard squish = Schiaccia tastiera
+@Keyboard backlight = Retroilluminazione
+@off = Disattivato
+@white = Bianco
+@rgb = RGB
+@keyboard_preview_placeholder = Scrivi qui per provare la tastiera

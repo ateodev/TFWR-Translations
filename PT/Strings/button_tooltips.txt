@@ -80,3 +80,8 @@
 @option_tooltip_keyboard_layout = Disposição das teclas do teclado do jogo. Por padrão, a do idioma do seu sistema.
 @option_tooltip_keyboard_type = Com qual teclado você escreve código. O teclado do jogo tem os símbolos que o Python precisa; o teclado do sistema é o que você usa em outros aplicativos. Um teclado físico conectado é sempre usado no lugar deles.
 @option_tooltip_exit_fullscreen_on_run = Pressionar Iniciar sai do editor de código em tela cheia e mostra a fazenda. Os pontos de interrupção ainda levam você à linha pausada.
+@option_tooltip_keyboard_volume = Ajusta o volume dos sons das teclas do teclado do jogo.
+@option_tooltip_keyboard_sound = Som ao tocar numa tecla do teclado do jogo: Sistema = o clique do teclado do seu dispositivo, Mecânico = uma tecla de teclado mecânico.
+@option_tooltip_keyboard_vibration = Uma vibração curta a cada toque numa tecla do teclado do jogo.
+@option_tooltip_keyboard_backlight = Luz que brilha por baixo das teclas do teclado do jogo, branca ou nas cores do arco-íris (RGB), com uma onda de luz em cada tecla pressionada.
+@option_tooltip_keyboard_squish = Deixa as teclas do teclado do jogo mais baixas para cobrir menos a tela. No máximo, as teclas têm metade da altura normal.
