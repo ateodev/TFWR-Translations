@@ -1,14 +1,14 @@
-[<- 採礦](docs/unlocks/mining.md) <right>[竹子 ->](docs/unlocks/bamboo.md)
-<right>[石化南瓜 ->](docs/unlocks/petrified_pumpkins.md)
-<right>[珍珠岩與壤土 ->](docs/unlocks/special_soils.md)
+[<-採礦](docs/unlocks/mining.md) <right>[竹子->](docs/unlocks/bamboo.md)
+<right>[石化南瓜->](docs/unlocks/petrified_pumpkins.md)
+<right>[珍珠岩與壤土->](docs/unlocks/special_soils.md)
 ---
-# 稻米
+# 水稻
 
-你注意到地表下方有一層薄薄的黏土。原來這片肥沃的土地非常適合種植稻秧。
+你注意到地表下方有一層薄薄的黏土。這種肥沃的地塊非常適合種植水稻幼苗。
 
-稻米會讓它所種植的黏土乾涸。每個黏土方塊只能使用一次。幸好，這層黏土有好幾格厚。當然，你隨時可以 `clear()` 世界來讓黏土層回來。
+種植水稻後，黏土會變乾。每塊黏土只能使用一次。好在這層黏土有好幾個地塊厚。當然，你也隨時可以使用 `clear()` 重設世界，讓黏土層重新出現。
 
-下面的程式碼可以幫你向下挖掘直到找到黏土。
+下面的程式碼可以幫助你向下挖掘，直到找到黏土。
 
 {{codeexample 
 {
@@ -41,6 +41,6 @@ do_a_flip()
 
 ---
 
-[統計資料](docs/stats.md)      [採礦](docs/unlocks/mining.md)      [地下感測](docs/unlocks/underground_senses.md)      [if 陳述式](docs/scripting/if.md)      [for 迴圈](docs/scripting/for.md)
+[統計資料](docs/stats.md)      [採礦](docs/unlocks/mining.md)      [地下感官](docs/unlocks/underground_senses.md)      [If 陳述式](docs/scripting/if.md)      [For 迴圈](docs/scripting/for.md)
 
 [harvest()](functions/harvest)      [plant()](functions/plant)      [move()](functions/move)      [dig()](functions/dig)      [get_ground_type()](functions/get_ground_type)

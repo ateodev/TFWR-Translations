@@ -1,14 +1,14 @@
-[<- 煤炭](docs/unlocks/coal.md) <right>[石英 ->](docs/unlocks/quartz.md)
-<right>[鐵礦探勘 ->](docs/unlocks/prospecting.md)
-<right>[藏寶圖 ->](docs/unlocks/treasure_map.md)
+[<-煤炭](docs/unlocks/coal.md) <right>[石英->](docs/unlocks/quartz.md)
+<right>[鐵礦探查->](docs/unlocks/prospecting.md)
+<right>[藏寶圖->](docs/unlocks/treasure_map.md)
 ---
-# 鐵
+# 鐵礦
 
-你在黏土下方的石層中發現了鐵礦脈。
+你在黏土下方的岩石層中發現了鐵礦脈。
 
-鐵礦脈一開始很小，需要一點運氣才能找到。隨著這個解鎖項的等級提高，礦脈的最大規模也會增加。如果想要更穩定地找到鐵，也可以看看礦石探勘解鎖項。
+鐵礦脈的礦頭很小，要找到還需要一點運氣。隨著此解鎖項等級提高，礦脈的最大規模也會增大。想更穩定地找到鐵礦，還可以看看礦石探查解鎖項。
 
-鐵礦脈一定是連續的，不會斜向跳躍。如果你找到一塊鐵，記得在它下方或旁邊尋找更多，確保收集整條礦脈。
+鐵礦脈始終連成一片，不會斜著跨越地塊。如果找到一塊鐵礦，就檢查它的下方及相鄰地塊，確保採完整條礦脈。
 
 {{codeexample 
 {
@@ -39,6 +39,6 @@ do_a_flip()
 
 ---
 
-[統計資料](docs/stats.md)      [採礦](docs/unlocks/mining.md)      [鐵礦探勘](docs/unlocks/prospecting.md)      [地下感測](docs/unlocks/underground_senses.md)
+[統計資料](docs/stats.md)      [採礦](docs/unlocks/mining.md)      [鐵礦探查](docs/unlocks/prospecting.md)      [地下感官](docs/unlocks/underground_senses.md)
 
 [move()](functions/move)      [dig()](functions/dig)

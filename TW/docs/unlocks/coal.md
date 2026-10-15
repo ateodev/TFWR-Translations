@@ -1,13 +1,13 @@
-[<- 採礦](docs/unlocks/mining.md) <right>[鐵 ->](docs/unlocks/iron.md)
-<right>[跳躍 ->](docs/unlocks/jump.md)
+[<-採礦](docs/unlocks/mining.md) <right>[鐵礦->](docs/unlocks/iron.md)
+<right>[跳轉->](docs/unlocks/jump.md)
 ---
 # 煤炭
 
-原來地表正下方的土層是尋找煤礦的好地方。
+原來，地表下方就是尋找煤炭礦床的好地方。
 
-煤炭會隨機生成在厚度為 1 格的水平薄層中。薄層的大小會隨你的世界大小等比例增長，所以你可能會想擴大世界來找到更多煤炭！
+煤炭會隨機產生厚度為 1 個地塊的水平煤層。煤層面積會隨世界規模變化。因此，想找到更多煤炭，不妨擴大農場！
 
-下面的程式是尋找煤炭的好起點。它會向下挖掘尋找煤層，然後往東西兩側挖掘，希望找到更多煤炭。
+下面的程式很適合用來尋找煤炭。它會向下挖掘尋找煤炭層，然後往東西兩側挖掘，試著找到更多煤炭。
 
 {{codeexample 
 {
@@ -44,6 +44,6 @@ dig()
 
 ---
 
-[統計資料](docs/stats.md)      [採礦](docs/unlocks/mining.md)      [地下感測](docs/unlocks/underground_senses.md)
+[統計資料](docs/stats.md)      [採礦](docs/unlocks/mining.md)      [地下感官](docs/unlocks/underground_senses.md)
 
 [move()](functions/move)      [get_ground_type()](functions/get_ground_type)      [dig()](functions/dig)

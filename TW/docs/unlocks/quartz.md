@@ -1,16 +1,16 @@
-[<- 鐵](docs/unlocks/iron.md) <right>[蘑菇 ->](docs/unlocks/mushroom.md)
+[<-鐵礦](docs/unlocks/iron.md) <right>[蘑菇->](docs/unlocks/mushroom.md)
 ---
 # 石英
 
-石英以針狀礦脈生長在石層底部附近以及其下方的硬土中。這些礦脈呈垂直柱狀，靠反覆嘗試很難找到。
+石英礦脈呈針狀，生長在岩石層底部附近及其下方的硬質泥土中。礦脈形成垂直的柱狀結構，單憑碰運氣很難挖掘到。
 
-幸好，我們可以把鐵扭成類似探測杖的東西，讓我們更容易找到這些石英礦脈。對應的指令是 `prospect_quartz()`。
+好在我們可以把鐵礦加工成類似探礦杖的東西，更容易找到石英礦脈。對應的指令是 `prospect_quartz()`。
 
-`prospect_quartz()` 的運作方式和 `prospect_iron()` 不同。它不會回傳最近石英礦的方向，而是回傳到最近石英的歐幾里得距離（3D 距離）。執行 `prospect_quartz()` 需要消耗 1 個鐵，所以最好省著點用。
+`prospect_quartz()` 的工作方式與 `prospect_iron()` 不同。它不會回傳最近石英礦石的方向，而是回傳到最近石英的歐幾里得距離（三維距離）。執行 `prospect_quartz()` 指令需消耗 1 份鐵礦，最好省著用。
 
-如果 `prospect_quartz()` 在附近找不到任何石英，或者你的鐵不足以進行搜尋，它會回傳 `None`。
+如果附近沒有石英，或者鐵礦不足以執行探查，`prospect_quartz()` 就會回傳 `None`。
 
-下面的程式碼片段會讓你的無人機挖穿泥土，深入岩層。然後，運氣好的話，附近就會有一條石英礦脈，這時無人機會印出到它的距離。
+下面的程式碼片段會讓無人機挖穿泥土，深入岩石層。運氣好的話，附近就有一條石英礦脈，無人機會列印出到它的距離。
 
 {{codeexample 
 {
@@ -46,6 +46,6 @@ print(prospect_quartz())
 
 ---
 
-[統計資料](docs/stats.md)      [採礦](docs/unlocks/mining.md)      [地下感測](docs/unlocks/underground_senses.md)      [變數](docs/scripting/variables.md)      [運算子](docs/scripting/operators.md)
+[統計資料](docs/stats.md)      [採礦](docs/unlocks/mining.md)      [地下感官](docs/unlocks/underground_senses.md)      [變數](docs/scripting/variables.md)      [運算子](docs/scripting/operators.md)
 
 [move()](functions/move)      [dig()](functions/dig)      [get_ground_type()](functions/get_ground_type)      [prospect_quartz()](functions/prospect_quartz)

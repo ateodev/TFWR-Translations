@@ -1,4 +1,4 @@
-# 致謝
+# 製作人員
 
 ## The Farmer Was Replaced
 
@@ -24,20 +24,20 @@ Moreno Vogel
 Sebastian Tobler
 Xavier Heimgartner
 
-### 主視覺設計
+### 主視覺圖
 Stephanie Stutz
 
 ### Allcorrect
-Maria Pavlova (俄语翻译)
-Evgeniia Ushakova (俄语翻译)
-Melanie Chen (中文翻译)
-Siyoon Ji (韩语翻译)
-Mina Horiba-Maguire (日语翻译)
-Danil Belousov (客户经理)
-Elizaveta Shevchenko (团队负责人)
-Yulia Tregubova (项目经理)
+Maria Pavlova (俄語翻譯)
+Evgeniia Ushakova (俄語翻譯)
+Melanie Chen (中文翻譯)
+Siyoon Ji (韓語翻譯)
+Mina Horiba-Maguire (日語翻譯)
+Danil Belousov (客戶經理)
+Elizaveta Shevchenko (團隊負責人)
+Yulia Tregubova (專案經理)
 
-### 社群翻譯貢獻者
+### 社區翻譯貢獻者
 HoshiyomiLusia
 Liuxun
 Davide Altamura
@@ -46,6 +46,7 @@ Ivan Bondar
 Jimmy Sheep
 Taigo Nakajima
 НУІ
+Lucas Ceratto (@LucasCerattoRS)
 
 ### Discord 管理員
 MrBlobfish
@@ -53,9 +54,10 @@ Josh Markey
 danielrab
 Jeff Siebold aka Noon Knight
 
-### 特別感謝
+### 特別鳴謝
 Jonas Bornhöft
 ThatMerlinGuy
 Zoroark Zwart
+arch
 Ramón Buchenberger
 Swiss Game Hub

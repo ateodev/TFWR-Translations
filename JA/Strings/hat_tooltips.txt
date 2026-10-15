@@ -22,4 +22,4 @@
 @hat_descr_golden_cactus_hat = サボテンの帽子の金色バージョン。
 @hat_descr_golden_pumpkin_hat = カボチャの帽子の金色バージョン。
 @hat_descr_golden_sunflower_hat = ヒマワリの帽子の金色バージョン。
-@hat_descr_the_farmers_remains = 何があったのでしょう？
+@hat_descr_the_farmers_remains = 何が起きたのでしょうか？

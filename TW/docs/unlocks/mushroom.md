@@ -1,8 +1,8 @@
-[<- 石英](docs/unlocks/quartz.md) <right>[炸藥 ->](docs/unlocks/dynamite.md)
+[<-石英](docs/unlocks/quartz.md) <right>[炸藥->](docs/unlocks/dynamite.md)
 ---
 # 蘑菇
 
-許多種類的蘑菇會在地底成群生長。挖掘時留意 `Grounds.Mushroom` 地層。然後你可以對地面 `measure()`，以數字形式取得蘑菇類型，從 `0` 開始。
+地下有許多種蘑菇成群生長。挖掘時尋找一層 `Grounds.Mushroom`。隨後，可以對地塊使用 `measure()`，取得從 `0` 開始編號的蘑菇類型。
 
 {{codeexample 
 {
@@ -33,16 +33,16 @@ do_a_flip()
 print(measure())
 }}
 
-同類型的蘑菇喜歡聚在一起，但它們太害羞了，不會長在彼此上面。把一個蘑菇方塊推到另一個同類型的蘑菇方塊上，它們就會消失，並以蘑菇作為獎勵。
+同類蘑菇喜歡長在一起，卻又很害羞，不會疊著長。把一個蘑菇地塊推到另一個相同類型的蘑菇地塊上，兩者就會消失，而你會獲得蘑菇作為獎勵。
 
-你可以使用 `can_push(direction)` 檢查無人機下方的方塊是否可以被推動，以及指定方向上是否有東西擋住。`push(direction)` 會推動方塊並回傳推動是否成功。
+使用 `can_push(direction)` 可以檢查無人機下方的地塊能否推動，以及指定方向上是否有東西擋路。`push(direction)` 會推動地塊，並回傳是否成功。
 
-方塊無法向上推，如果有其他方塊擋路，推動就會失敗。被推到空中的方塊會掉落並停在下方最近的方塊上。
+地塊不能向上推動；如果有其他地塊擋路，推動也會失敗。地塊被推到空中後，會落到下方的第一個地塊上。
 
-記住，你可以呼叫 `place(Grounds.Dirt)` 在無人機下方放置方塊。這在填洞時很有用，這樣你就能把方塊推過去。
+別忘了，可以呼叫 `place(Grounds.Dirt)` 在無人機下方放置地塊。這有助於填平坑洞，讓你能將其他地塊推過去。
 
 ---
 
-[統計資料](docs/stats.md)      [地下感測](docs/unlocks/underground_senses.md)      [字典](docs/scripting/dicts.md)
+[統計資料](docs/stats.md)      [地下感官](docs/unlocks/underground_senses.md)      [字典](docs/scripting/dicts.md)
 
 [move()](functions/move)      [measure()](functions/measure)      [can_push()](functions/can_push)      [push()](functions/push)      [place()](functions/place)      [get_ground_type()](functions/get_ground_type)

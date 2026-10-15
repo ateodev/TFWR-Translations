@@ -1,11 +1,11 @@
-[<- 稻米](docs/unlocks/rice.md) <right>[彩色方塊 ->](docs/unlocks/debug_place.md)
-<right>[金字塔 ->](docs/unlocks/pyramid.md)
+[<-水稻](docs/unlocks/rice.md) <right>[彩色地塊->](docs/unlocks/debug_place.md)
+<right>[金字塔->](docs/unlocks/pyramid.md)
 ---
 # 竹子
 
-竹子是一種最高可以長到 6 格的植物。上方有無人機時它不會生長，所以使用 `plant(Entities.Bamboo)` 後記得把無人機 `move` 開。種植竹子需要消耗稻米。
+竹子是一種最高可長到 6 個地塊的植物。如果上方有無人機，它就不會生長。因此，使用 `plant(Entities.Bamboo)` 後，記得用 `move` 移開無人機。種植竹子需要消耗水稻。
 
-竹子長到某個隨機決定的高度時會開花。使用 `measure()` 可以查看它會在哪個高度開花。`measure()` 從 0 開始計數，所以如果竹子在第二格開花，`measure()` 會回傳 1：
+竹子長到隨機高度時會開花。使用 `measure()` 檢視開花高度。`measure()` 從 0 開始計數，因此竹子在第二個地塊開花時，`measure()` 會回傳 1：
 
 {{codeexample 
 {
@@ -35,16 +35,16 @@ print(measure())
 move(East)
 }}
 
-當無人機正好在花的正上方時 `harvest()`，竹子的產量最高。每差一格，產量就會除以八。
-例如，如果它的花在高度 3，但你在高兩格的地方收割，產量就會除以 64。
+當無人機正好位於竹花上方時呼叫 `harvest()`，竹子的產量最高。每偏離一個地塊，產量就會變成原來的八分之一。
+例如，如果開花高度為 3，而你在其上方兩個地塊的位置收穫，產量就會變成原來的六十四分之一。
 
-要收割位置較高的花，請在無人機處於所需高度時飛進竹子。新解鎖的 `place()` 指令可以幫上忙。
+要收穫更高處的竹花，先讓無人機升到所需高度，再從側面飛入竹子。新解鎖的 `place()` 指令能幫上忙。
 
-使用 `place(Grounds.Dirt)` 在竹子旁邊堆疊方塊往上爬。然後使用 `move()` 從側面飛進竹子。呼叫 `harvest()` 時，無人機應該正好在花的正上方。
+用 `place(Grounds.Dirt)` 在竹子旁邊堆疊地塊，爬到高處。然後用 `move()` 從側面飛入竹子。呼叫 `harvest()` 時，無人機應正好位於竹花上方。
 
-`place(Grounds.Dirt)` 會消耗你 1 個方塊！你也可以放置其他地面，例如 `Grounds.Rock`，但不能放置 `Grounds.Clay` 之類的特殊方塊。
+`place(Grounds.Dirt)` 會消耗 1 個地塊！你也可以放置 `Grounds.Rock` 等其他地塊，但不能放置 `Grounds.Clay` 這樣的特殊地塊。
 
-竹子每秒正好長高 1 格。
+竹子每秒長高 1 個地塊。
 
 {{codeexample 
 {
@@ -73,7 +73,7 @@ plant(Entities.Bamboo)
 print(measure())
 move(East)
 place(Grounds.Dirt)
-do_a_flip() # 稍等一下
+do_a_flip() # 稍等片刻
 do_a_flip()
 move(West)
 harvest()
@@ -81,6 +81,6 @@ harvest()
 
 ---
 
-[統計資料](docs/stats.md)      [for 迴圈](docs/scripting/for.md)      [變數](docs/scripting/variables.md)      [if 陳述式](docs/scripting/if.md)      [函式](docs/scripting/functions.md)      [稻米](docs/unlocks/rice.md)
+[統計資料](docs/stats.md)      [For 迴圈](docs/scripting/for.md)      [變數](docs/scripting/variables.md)      [If 陳述式](docs/scripting/if.md)      [函式](docs/scripting/functions.md)      [水稻](docs/unlocks/rice.md)
 
 [harvest()](functions/harvest)      [plant()](functions/plant)      [move()](functions/move)      [till()](functions/till)      [place()](functions/place)      [measure()](functions/measure)

@@ -1,14 +1,14 @@
-[<- 擴張 1](docs/unlocks/expand_1.md) <right>[地下感測 ->](docs/unlocks/underground_senses.md)
-<right>[稻米 ->](docs/unlocks/rice.md)
-<right>[煤炭 ->](docs/unlocks/coal.md)
+[<-擴張 1](docs/unlocks/expand_1.md) <right>[地下感官->](docs/unlocks/underground_senses.md)
+<right>[水稻->](docs/unlocks/rice.md)
+<right>[煤炭->](docs/unlocks/coal.md)
 ---
 # 採礦
 
-你的無人機獲得了一個簡陋的鑽頭，可以用來在地底搜尋寶物。
+無人機可以使用簡陋鑽頭了，可以用它到地下尋找寶藏。
 
-你可以使用 `dig()` 指令挖掘你下方的方塊。
+使用 `dig()` 指令挖掘下方的地塊。
 
-現在，先來收集一些方塊：
+先來收集一些地塊吧：
 
 {{codeexample 
 {
@@ -41,15 +41,15 @@ do_a_flip()
 clear()
 }}
 
-如果你想回到地面，隨時可以使用 `clear()`。這也會還原你的農場。
+如果想回到地表，隨時可以使用 `clear()`。這也會修復你的農場。
 
-<desktop>將滑鼠懸停在方塊上</desktop><mobile>點選方塊</mobile>會顯示它的名稱、穩定度和硬度。
+<desktop>將滑鼠懸停在地塊上</desktop><mobile>點選地塊</mobile>，可以看到它的名稱、穩定度和硬度。
 
 # 鑽頭
 
-隨著你越挖越深，你會發現方塊越來越硬，挖掘也會花更多時間。幸好我們可以升級鑽頭來解決這個問題！
+越往下挖，地塊越堅硬，挖掘所需的時間也越長。好在可以升級鑽頭來應對！
 
-你可以使用 `get_hardness()` 檢查下方方塊的硬度。如果遇到一片特別硬的方塊，繞過它們或許比較明智，這樣你可以更快前進：
+使用 `get_hardness()` 可以檢查下方地塊的硬度。如果遇到特別堅硬的一片地塊，不妨繞過去，以便更快取得進展：
 
 `while True:
         if get_hardness() < 5:
@@ -57,18 +57,18 @@ clear()
         else:
                 move(East)`
 
-當然，方塊會隨著深度越來越硬，所以這個策略雖然有幫助，但效果有限。
+當然，越往下地塊越堅硬，所以這個策略雖然有用，也無法讓你一路暢通無阻。
 
-## 崩塌
+## 塌方
 
-向下挖掘會導致周圍的方塊崩塌。無人機旁邊的四個方塊一定會被摧毀。之後，崩塌會依據地面的穩定度擴散。穩定度為 1 的方塊（例如草地）可以承受 1 的高度差。換句話說，如果草地的垂直或水平相鄰方塊的 z 座標低了 2 格以上，這塊草地就會被摧毀。
+向下挖掘會導致周圍地塊塌方。無人機四周的四個地塊總會被摧毀。之後，塌方如何擴散取決於地塊的穩定度。穩定度為 1 的地塊（如草地）能承受 1 格的高度差。換句話說，如果草地在垂直或水平方向上的相鄰地塊的 z 座標比它至少深 2 格，這塊草地就會被摧毀。
 
-方塊的<desktop>懸停</desktop>提示中會顯示其穩定度。
+地塊的<desktop>懸停</desktop>提示框中會顯示其穩定度。
 
-方塊崩塌時，也會移除它上方的所有方塊。你只能從無人機直接挖掘的方塊獲得資源，所以在崩塌中失去的方塊都會被摧毀而不產出任何資源。
+地塊塌方時，其上方的所有地塊也會被移除。只有無人機直接挖掘的地塊才會提供資源，因此塌方中損失的地塊會被直接摧毀，不會產出資源。
 
 ---
 
-[地下感測](docs/unlocks/underground_senses.md)      [while 迴圈](docs/scripting/while.md)
+[地下感官](docs/unlocks/underground_senses.md)      [While 迴圈](docs/scripting/while.md)
 
 [move()](functions/move)      [dig()](functions/dig)

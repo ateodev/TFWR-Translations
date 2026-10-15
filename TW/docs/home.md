@@ -1,6 +1,6 @@
-## 一般資訊
+## 通用資訊
 <columns>
-[致謝](docs/credits.md)
+[製作人員](docs/credits.md)
 <desktop>[外部編輯器](docs/external_editor.md)</desktop>
 [第一個程式](docs/first_program.md)
 [入門指南](docs/getting_started.md)
@@ -16,18 +16,18 @@
 <unlock=debug>[偵錯](docs/scripting/debug.md)
 </unlock><unlock=functions>[函式](docs/scripting/functions.md)
 </unlock><unlock=import>[匯入](docs/scripting/import.md)
-</unlock><unlock=functions>[命名作用域](docs/scripting/scopes.md)
+</unlock><unlock=functions>[名稱作用域](docs/scripting/scopes.md)
 </unlock><unlock=operators>[運算子](docs/scripting/operators.md)
 </unlock><unlock=variables>[變數](docs/scripting/variables.md)
 </unlock>
 </columns>
-**控制流程**
+**流程控制**
 <columns>
-<unlock=break>[break 陳述式](docs/scripting/break.md)
-</unlock><unlock=continue>[continue 陳述式](docs/scripting/continue.md)
-</unlock><unlock=for>[for 迴圈](docs/scripting/for.md)
-</unlock><unlock=if>[if 陳述式](docs/scripting/if.md)
-</unlock><unlock=while>[while 迴圈](docs/scripting/while.md)
+<unlock=break>[Break 陳述式](docs/scripting/break.md)
+</unlock><unlock=continue>[Continue 陳述式](docs/scripting/continue.md)
+</unlock><unlock=for>[For 迴圈](docs/scripting/for.md)
+</unlock><unlock=if>[If 陳述式](docs/scripting/if.md)
+</unlock><unlock=while>[While 迴圈](docs/scripting/while.md)
 </unlock>
 </columns>
 **容器**
@@ -39,8 +39,8 @@
 </unlock>
 </columns>
 
-## 解鎖項
-**農耕**
+## 解鎖
+**農業**
 <columns>
 <unlock=cactus>[{{@cactus}}](docs/unlocks/cactus.md)
 </unlock><unlock=carrots>[{{@carrots}}](docs/unlocks/carrots.md)
@@ -109,7 +109,7 @@
 </columns>
 
 ## 內建函式
-**農耕**
+**農業**
 <columns>
 <unlock=can_harvest>[can_harvest()](functions/can_harvest)
 </unlock><unlock=can_move>[can_move()](functions/can_move)
@@ -132,7 +132,7 @@
 </unlock><unlock=push>[push()](functions/push)
 </unlock>
 </columns></dlc>
-**感測**
+**感官**
 <columns>
 <unlock=get_companion>[get_companion()](functions/get_companion)
 </unlock><unlock=get_entity_type>[get_entity_type()](functions/get_entity_type)
@@ -187,7 +187,7 @@
 </columns>
 
 ## 物品
-**農耕**
+**農業**
 <columns>
 <unlock=bone>[Bone](items/bone)
 </unlock><unlock=cactus>[Cactus](items/cactus)
@@ -216,7 +216,7 @@
 </columns>
 
 ## 實體
-**農耕**
+**農業**
 <columns>
 <unlock=apple>[Apple](objects/apple)
 </unlock><unlock=bush>[Bush](objects/bush)
@@ -241,8 +241,8 @@
 </unlock>
 </columns>
 
-## 地面
-**農耕**
+## 地塊
+**農業**
 <columns>
 <unlock=grassland>[Grassland](grounds/grassland)
 </unlock><unlock=soil>[Soil](grounds/soil)
