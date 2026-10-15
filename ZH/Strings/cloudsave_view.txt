@@ -3,7 +3,7 @@
 @cloud_view_not_signed_in = 未登录
 @cloud_view_last_synced = 上次同步：{0}
 @cloud_view_not_synced = 未同步
-@cloud_view_sync_now = 立即同步
+@cloud_view_sync_now = 同步
 @cloud_view_sign_in = 登录
 @cloud_view_on_this_device = 此设备上
 @cloud_view_current = 当前

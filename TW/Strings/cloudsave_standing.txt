@@ -1,7 +1,7 @@
 @cloud_standing_write_failed_headline = 無法寫入你的存檔
-@cloud_standing_write_failed_body = 來自雲端的存檔無法寫入此裝置。此裝置上的存檔沒有變更。請確認裝置有可用空間，然後按下「立即同步」。
+@cloud_standing_write_failed_body = 來自雲端的存檔無法寫入此裝置。此裝置上的存檔沒有變更。請確認裝置有可用空間，然後按下「同步」。
 @cloud_standing_device_write_failed_headline = 此裝置空間不足
-@cloud_standing_device_write_failed_body = 你的存檔在此裝置上，但雲端存檔無法在這裡保留它們的副本，因此不會上傳至雲端。請確認裝置有可用空間，然後按下「立即同步」。
+@cloud_standing_device_write_failed_body = 你的存檔在此裝置上，但雲端存檔無法在這裡保留它們的副本，因此不會上傳至雲端。請確認裝置有可用空間，然後按下「同步」。
 @cloud_standing_newer_save_headline = 請更新遊戲
 @cloud_standing_newer_save_body = 你的雲端存檔來自另一台裝置上較新版本的遊戲。請更新此裝置上的遊戲以繼續該進度。在此之前，你的進度不會同步。
 @cloud_standing_too_large_headline = 你的存檔太大了
@@ -9,11 +9,11 @@
 @cloud_standing_signed_out_headline = 你尚未登入
 @cloud_standing_signed_out_body = 請登入 {0} 以將存檔保存在雲端。這樣你就能在另一台裝置上接著玩。
 @cloud_standing_other_account_headline = 雲端存檔已暫停
-@cloud_standing_other_account_body = 你登入 {0} 所用的帳號與存檔所屬的帳號不同，因此雲端存檔已暫停。請按下「立即同步」切換至該帳號的存檔。
+@cloud_standing_other_account_body = 你登入 {0} 所用的帳號與存檔所屬的帳號不同，因此雲端存檔已暫停。請按下「同步」切換至該帳號的存檔。
 @cloud_standing_unreachable_headline = 無法連線至雲端
 @cloud_standing_unreachable_body = 你的存檔會保留在此裝置上，並在雲端可以連線後上傳。
 @cloud_standing_changed_elsewhere_headline = 存檔在其他裝置上有變更
-@cloud_standing_changed_elsewhere_body = 自此裝置上次同步以來，你的存檔在另一台裝置上有所變更。請按下「立即同步」進行比較。
+@cloud_standing_changed_elsewhere_body = 自此裝置上次同步以來，你的存檔在另一台裝置上有所變更。請按下「同步」進行比較。
 @cloud_standing_almost_full_headline = 雲端存檔快滿了
 @cloud_standing_almost_full_body = 你的存檔已使用雲端存檔 {1} 容量中的 {0}。請在「載入」中刪除不再需要的存檔，以便繼續保存在雲端。
 @cloud_standing_in_sync_headline = 一切已同步

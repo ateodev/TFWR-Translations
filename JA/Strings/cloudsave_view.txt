@@ -3,7 +3,7 @@
 @cloud_view_not_signed_in = サインインしていません
 @cloud_view_last_synced = 最終同期：{0}
 @cloud_view_not_synced = 未同期
-@cloud_view_sync_now = 今すぐ同期
+@cloud_view_sync_now = 同期
 @cloud_view_sign_in = サインイン
 @cloud_view_on_this_device = この端末
 @cloud_view_current = 現在

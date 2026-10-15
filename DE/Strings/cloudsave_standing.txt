@@ -1,7 +1,7 @@
 @cloud_standing_write_failed_headline = Spielstände konnten nicht geschrieben werden
-@cloud_standing_write_failed_body = Spielstände aus der Cloud konnten auf diesem Gerät nicht geschrieben werden. Deine Spielstände auf diesem Gerät sind unverändert. Bitte stelle sicher, dass das Gerät freien Speicherplatz hat, und drücke dann auf 'Jetzt synchronisieren'.
+@cloud_standing_write_failed_body = Spielstände aus der Cloud konnten auf diesem Gerät nicht geschrieben werden. Deine Spielstände auf diesem Gerät sind unverändert. Bitte stelle sicher, dass das Gerät freien Speicherplatz hat, und drücke dann auf 'Synchronisieren'.
 @cloud_standing_device_write_failed_headline = Dieses Gerät hat keinen Speicherplatz mehr
-@cloud_standing_device_write_failed_body = Deine Spielstände sind auf diesem Gerät, aber die Cloud-Speicherung konnte hier keine Kopie davon behalten, deshalb gelangen sie nicht in die Cloud. Bitte stelle sicher, dass das Gerät freien Speicherplatz hat, und drücke dann auf 'Jetzt synchronisieren'.
+@cloud_standing_device_write_failed_body = Deine Spielstände sind auf diesem Gerät, aber die Cloud-Speicherung konnte hier keine Kopie davon behalten, deshalb gelangen sie nicht in die Cloud. Bitte stelle sicher, dass das Gerät freien Speicherplatz hat, und drücke dann auf 'Synchronisieren'.
 @cloud_standing_newer_save_headline = Bitte aktualisiere das Spiel
 @cloud_standing_newer_save_body = Dein Cloud-Spielstand stammt von einer neueren Version des Spiels auf einem anderen Gerät. Bitte aktualisiere das Spiel auf diesem Gerät, um diesen Fortschritt fortzusetzen. Bis dahin wird dein Fortschritt nicht synchronisiert.
 @cloud_standing_too_large_headline = Deine Spielstände sind zu groß
@@ -9,11 +9,11 @@
 @cloud_standing_signed_out_headline = Du bist nicht angemeldet
 @cloud_standing_signed_out_body = Bitte melde dich bei {0} an, um deine Spielstände in der Cloud zu sichern. Dann kannst du auf einem anderen Gerät dort weiterspielen, wo du aufgehört hast.
 @cloud_standing_other_account_headline = Cloud-Speicherung ist pausiert
-@cloud_standing_other_account_body = Du bist bei {0} mit einem anderen Konto angemeldet als dem, zu dem deine Spielstände gehören, deshalb ist die Cloud-Speicherung pausiert. Bitte drücke auf 'Jetzt synchronisieren', um zu den Spielständen dieses Kontos zu wechseln.
+@cloud_standing_other_account_body = Du bist bei {0} mit einem anderen Konto angemeldet als dem, zu dem deine Spielstände gehören, deshalb ist die Cloud-Speicherung pausiert. Bitte drücke auf 'Synchronisieren', um zu den Spielständen dieses Kontos zu wechseln.
 @cloud_standing_unreachable_headline = Cloud nicht erreichbar
 @cloud_standing_unreachable_body = Deine Spielstände bleiben auf diesem Gerät und gelangen in die Cloud, sobald sie erreichbar ist.
 @cloud_standing_changed_elsewhere_headline = Spielstände anderswo geändert
-@cloud_standing_changed_elsewhere_body = Deine Spielstände wurden seit der letzten Synchronisierung dieses Geräts auf einem anderen Gerät geändert. Bitte drücke auf 'Jetzt synchronisieren', um sie zu vergleichen.
+@cloud_standing_changed_elsewhere_body = Deine Spielstände wurden seit der letzten Synchronisierung dieses Geräts auf einem anderen Gerät geändert. Bitte drücke auf 'Synchronisieren', um sie zu vergleichen.
 @cloud_standing_almost_full_headline = Cloud-Speicher ist fast voll
 @cloud_standing_almost_full_body = Deine Spielstände belegen {0} der {1}, die die Cloud-Speicherung fasst. Bitte lösche unter 'Laden' Spielstände, die du nicht mehr brauchst, damit sie in der Cloud bleiben.
 @cloud_standing_in_sync_headline = Alles ist synchron
