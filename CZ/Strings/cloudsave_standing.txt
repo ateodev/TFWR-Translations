@@ -1,7 +1,7 @@
 @cloud_standing_write_failed_headline = Nepodařilo se zapsat tvé savy
-@cloud_standing_write_failed_body = Savy z cloudu se nepodařilo zapsat na toto zařízení. Tvé savy na tomto zařízení jsou beze změny. Ujisti se, že má zařízení volné místo, a pak stiskni 'Synchronizovat'.
+@cloud_standing_write_failed_body = Savy z cloudu se nepodařilo zapsat na toto zařízení. Tvé savy na tomto zařízení jsou beze změny. Ujisti se, že má zařízení volné místo, a pak stiskni „Synchronizovat“.
 @cloud_standing_device_write_failed_headline = Tomuto zařízení došlo místo
-@cloud_standing_device_write_failed_body = Tvé savy jsou na tomto zařízení, ale cloudové ukládání tu nedokázalo uchovat jejich kopii, takže se nedostanou do cloudu. Ujisti se, že má zařízení volné místo, a pak stiskni 'Synchronizovat'.
+@cloud_standing_device_write_failed_body = Tvé savy jsou na tomto zařízení, ale cloudové ukládání tu nedokázalo uchovat jejich kopii, takže se nedostanou do cloudu. Ujisti se, že má zařízení volné místo, a pak stiskni „Synchronizovat“.
 @cloud_standing_newer_save_headline = Aktualizuj prosím hru
 @cloud_standing_newer_save_body = Tvůj cloudový save pochází z novější verze hry na jiném zařízení. Aktualizuj hru na tomto zařízení, abys mohl v tomto postupu pokračovat. Do té doby se tvůj postup nebude synchronizovat.
 @cloud_standing_too_large_headline = Tvé savy jsou příliš velké
@@ -9,11 +9,11 @@
 @cloud_standing_signed_out_headline = Nejsi přihlášen
 @cloud_standing_signed_out_body = Přihlas se do {0}, aby se tvé savy ukládaly do cloudu. Pak můžeš pokračovat tam, kde jsi skončil, i na jiném zařízení.
 @cloud_standing_other_account_headline = Cloudové ukládání je pozastaveno
-@cloud_standing_other_account_body = Jsi přihlášen do {0} jiným účtem, než ke kterému patří tvé savy, takže cloudové ukládání je pozastaveno. Stiskni 'Synchronizovat' pro přepnutí na savy tohoto účtu.
+@cloud_standing_other_account_body = Jsi přihlášen do {0} jiným účtem, než ke kterému patří tvé savy, takže cloudové ukládání je pozastaveno. Stiskni „Synchronizovat“ pro přepnutí na savy tohoto účtu.
 @cloud_standing_unreachable_headline = Cloud není dostupný
 @cloud_standing_unreachable_body = Tvé savy zůstávají na tomto zařízení a do cloudu se dostanou, jakmile bude dostupný.
 @cloud_standing_changed_elsewhere_headline = Savy se změnily jinde
-@cloud_standing_changed_elsewhere_body = Od poslední synchronizace tohoto zařízení se tvé savy změnily na jiném zařízení. Stiskni 'Synchronizovat' pro jejich porovnání.
+@cloud_standing_changed_elsewhere_body = Od poslední synchronizace tohoto zařízení se tvé savy změnily na jiném zařízení. Stiskni „Synchronizovat“ pro jejich porovnání.
 @cloud_standing_almost_full_headline = Cloud je téměř plný
 @cloud_standing_almost_full_body = Tvé savy zabírají {0} z {1}, které cloudové ukládání pojme. Smaž savy, které už nepotřebuješ, v nabídce „Nahrát“, aby zůstaly v cloudu.
 @cloud_standing_in_sync_headline = Vše je synchronizováno
