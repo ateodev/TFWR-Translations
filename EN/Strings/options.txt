@@ -29,6 +29,7 @@
 @enabled = Enabled
 @disabled = Disabled
 @language = Language
+@unofficial_translations_separator = ---- Unofficial Translations ----
 @frames = Frames
 @full vsync = Full Vsync
 @half vsync = Half Vsync
@@ -68,7 +69,6 @@
 @Light = Light
 @Lunar New Year = Lunar New Year
 @Custom = Custom
-
 @Keyboard sound = Key Sound
 @silent = Silent
 @system = System
@@ -91,4 +91,3 @@
 @30 fps = 30 FPS
 @60 fps = 60 FPS
 @120 fps = 120 FPS
-
