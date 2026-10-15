@@ -3,7 +3,7 @@
 @cloud_view_not_signed_in = Não conectado
 @cloud_view_last_synced = Última sincronização: {0}
 @cloud_view_not_synced = Não sincronizado
-@cloud_view_sync_now = Sincronizar agora
+@cloud_view_sync_now = Sincronizar
 @cloud_view_sign_in = Entrar
 @cloud_view_on_this_device = Neste aparelho
 @cloud_view_current = Atual

@@ -3,7 +3,7 @@
 @cloud_view_not_signed_in = 로그인 안 됨
 @cloud_view_last_synced = 마지막 동기화: {0}
 @cloud_view_not_synced = 동기화 안 됨
-@cloud_view_sync_now = 지금 동기화
+@cloud_view_sync_now = 동기화
 @cloud_view_sign_in = 로그인
 @cloud_view_on_this_device = 이 기기
 @cloud_view_current = 현재

@@ -1,7 +1,7 @@
 @cloud_standing_write_failed_headline = Could not write your saves
-@cloud_standing_write_failed_body = Saves from the cloud could not be written on this device. Your saves on this device are unchanged. Please make sure the device has free space, then press 'Sync now'.
+@cloud_standing_write_failed_body = Saves from the cloud could not be written on this device. Your saves on this device are unchanged. Please make sure the device has free space, then press 'Sync'.
 @cloud_standing_device_write_failed_headline = This device is out of space
-@cloud_standing_device_write_failed_body = Your saves are on this device, but cloud save could not keep a copy of them here, so they do not go to the cloud. Please make sure the device has free space, then press 'Sync now'.
+@cloud_standing_device_write_failed_body = Your saves are on this device, but cloud save could not keep a copy of them here, so they do not go to the cloud. Please make sure the device has free space, then press 'Sync'.
 @cloud_standing_newer_save_headline = Please update the game
 @cloud_standing_newer_save_body = Your cloud save is from a newer version of the game on another device. Please update the game on this device to continue that progress. Until then, your progress will not be synced.
 @cloud_standing_too_large_headline = Your saves are too large
@@ -9,11 +9,11 @@
 @cloud_standing_signed_out_headline = You are not signed in
 @cloud_standing_signed_out_body = Please sign in to {0} to keep your saves in the cloud. You can then keep playing where you left off on another device.
 @cloud_standing_other_account_headline = Cloud save is paused
-@cloud_standing_other_account_body = You are signed in to {0} with a different account than the one your saves belong to, so cloud save is paused. Please press 'Sync now' to switch to that account's saves.
+@cloud_standing_other_account_body = You are signed in to {0} with a different account than the one your saves belong to, so cloud save is paused. Please press 'Sync' to switch to that account's saves.
 @cloud_standing_unreachable_headline = Cloud save can't be reached
 @cloud_standing_unreachable_body = Your saves are kept on this device and go to the cloud once it can be reached.
 @cloud_standing_changed_elsewhere_headline = Saves changed elsewhere
-@cloud_standing_changed_elsewhere_body = Your saves changed on another device since this device last synced. Please press 'Sync now' to compare them.
+@cloud_standing_changed_elsewhere_body = Your saves changed on another device since this device last synced. Please press 'Sync' to compare them.
 @cloud_standing_almost_full_headline = Cloud save is almost full
 @cloud_standing_almost_full_body = Your saves use {0} of the {1} cloud save holds. Please delete saves you no longer need from 'Load' to keep them in the cloud.
 @cloud_standing_in_sync_headline = Everything is in sync
