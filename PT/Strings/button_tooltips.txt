@@ -41,6 +41,8 @@
 @option_tooltip_frames_mobile = Taxas de quadros mais altas ficam mais suaves, mas gastam mais bateria.
 @option_tooltip_viewport_sliding = Desativa o deslizamento da tela ao arrastar e soltar.
 @option_tooltip_scroll_sensitivity = A velocidade com que a roda do mouse rola e dá zoom.
+@option_tooltip_scroll_direction = Para que lado a roda do mouse e o trackpad rolam listas, texto e código.
+@option_tooltip_zoom_direction = Para que lado a roda do mouse e o trackpad dão zoom na fazenda e na árvore de pesquisa.
 @option_tooltip_UI_size = Altera o tamanho dos elementos da UI.
 @option_tooltip_tabs_to_spaces = Transforma todas as tabulações em 4 espaços.
 @option_tooltip_error_forgot_call = Quando ativado, o jogo lançará um erro de proteção se você tentar avaliar o valor booleano de um objeto de função, pois isso geralmente significa que você esqueceu os `()`.

@@ -33,6 +33,10 @@
 @1/4 vsync = 1/4 Vsync
 @viewport sliding = Scorrimento Vista
 @scroll sensitivity = Sensibilità rotellina
+@scroll direction = Direzione scorrimento
+@zoom direction = Direzione zoom
+@follow device = Come il dispositivo
+@inverted = Invertita
 @UI size = Dimensione UI
 @UI size in portrait = Dimensione UI in verticale
 @UI size in landscape = Dimensione UI in orizzontale

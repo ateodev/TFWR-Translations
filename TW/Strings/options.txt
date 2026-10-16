@@ -34,6 +34,10 @@
 @1/4 vsync = 1/4 垂直同步
 @viewport sliding = 檢視區滑動
 @scroll sensitivity = 滾輪靈敏度
+@scroll direction = 捲動方向
+@zoom direction = 縮放方向
+@follow device = 跟隨裝置
+@inverted = 反轉
 @UI size = UI 大小
 @UI size in portrait = 直向介面大小
 @UI size in landscape = 橫向介面大小
