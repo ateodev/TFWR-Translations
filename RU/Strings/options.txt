@@ -97,4 +97,4 @@
 @off = Выкл.
 @white = Белая
 @rgb = RGB
-@keyboard_preview_placeholder = Печатайте здесь, чтобы опробовать клавиатуру
+@keyboard_preview_placeholder = Попробуйте клавиатуру здесь

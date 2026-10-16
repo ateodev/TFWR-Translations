@@ -29,7 +29,9 @@ Pendant que tu tapes, une liste de complétions apparaît. Balaie vers le haut o
 L'option "Disposition du clavier" te permet de passer de QWERTY à QWERTZ ou AZERTY.
 
 ## Sensations
-"Retour des touches" dans les options décide de la sensation et du son du clavier. **Clic + vibration** joue un son de touche mécanique et vibre à chaque pression, avec un petit tic à chaque déplacement du curseur pendant un balayage. **Vibration** fait la même chose sans le son, **Clic** ne joue que le son, **Silencieux** ne fait ni l'un ni l'autre, et les variantes **Clic système** utilisent le son de clic du clavier de ton appareil à la place du son mécanique.
+"Son des touches" dans les options décide du son d'une pression : **Mécanique** joue le son d'une touche de clavier mécanique, **Système** utilise le clic du clavier de ton appareil et **Silencieux** ne joue rien. "Volume du clavier" règle le volume des sons des touches. "Vibration des touches" ajoute une courte vibration à chaque pression, avec un petit tic à chaque déplacement du curseur pendant un balayage.
+
+"Rétroéclairage" éclaire les touches par en dessous comme un clavier de joueur : **Blanc** en blanc, **RGB** aux couleurs de l'arc-en-ciel, et chaque touche que tu presses envoie une onde de lumière. **Désactivé** laisse les touches éteintes.
 
 ---
 

@@ -29,7 +29,9 @@ Mentre scrivi, compare una lista di completamenti. Scorri in alto o in basso per
 L'opzione "Layout tastiera" ti permette di passare tra QWERTY, QWERTZ e AZERTY.
 
 ## Sensazione
-"Feedback dei tasti" nelle opzioni decide come si sente e come suona la tastiera. **Clic + vibrazione** riproduce un suono di tasto meccanico e vibra a ogni pressione, con un tic per ogni passo del cursore mentre scorri. **Vibrazione** fa lo stesso senza il suono, **Clic** riproduce solo il suono, **Silenzioso** non fa nessuna delle due cose, e le varianti **Clic di sistema** usano il suono di clic della tastiera del tuo dispositivo al posto di quello meccanico.
+"Suono dei tasti" nelle opzioni decide come suona una pressione: **Meccanico** riproduce il suono di un tasto meccanico, **Sistema** usa il clic della tastiera del tuo dispositivo e **Silenzioso** non riproduce nulla. "Volume tastiera" regola il volume dei suoni dei tasti. "Vibrazione dei tasti" aggiunge una breve vibrazione a ogni pressione, con un tic per ogni passo del cursore mentre scorri.
+
+"Retroilluminazione" illumina i tasti dal basso come una tastiera da gaming: **Bianco** in bianco, **RGB** nei colori dell'arcobaleno, e ogni tasto che premi emette un'onda di luce. **Disattivato** lascia i tasti spenti.
 
 ---
 

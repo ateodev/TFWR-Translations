@@ -96,4 +96,4 @@
 @off = Вимк.
 @white = Біле
 @rgb = RGB
-@keyboard_preview_placeholder = Друкуйте тут, щоб випробувати клавіатуру
+@keyboard_preview_placeholder = Спробуйте клавіатуру тут

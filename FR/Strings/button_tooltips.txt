@@ -38,6 +38,7 @@
 @option_tooltip_autosave_progress = Sauvegarde automatiquement la progression du jeu toutes les 30s lorsque cette option est activée.
 @option_tooltip_file_watcher = Applique automatiquement les changements faits aux fichiers de code dans le dossier de sauvegarde, permettant l'utilisation d'un éditeur de code externe. Ne peut pas être activé si la sauvegarde automatique est activée.
 @option_tooltip_frames = Limite les FPS du jeu. La Vsync synchronise les FPS avec le taux de rafraîchissement de ton moniteur.
+@option_tooltip_frames_mobile = Des fréquences d'images plus élevées sont plus fluides, mais consomment plus de batterie.
 @option_tooltip_viewport_sliding = Désactive le glissement de la vue lorsque tu glisses-déposes.
 @option_tooltip_scroll_sensitivity = Vitesse de défilement et de zoom de la molette de la souris.
 @option_tooltip_UI_size = Modifie la taille des éléments de l'interface.

@@ -97,4 +97,4 @@
 @off = Wyłączone
 @white = Białe
 @rgb = RGB
-@keyboard_preview_placeholder = Pisz tutaj, aby wypróbować klawiaturę
+@keyboard_preview_placeholder = Wypróbuj klawiaturę tutaj

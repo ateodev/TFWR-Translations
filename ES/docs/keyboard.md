@@ -29,7 +29,9 @@ Mientras escribes aparece una lista de opciones de autocompletado. Desliza hacia
 La opción "Distribución del teclado" te permite cambiar entre QWERTY, QWERTZ y AZERTY.
 
 ## Sensación
-"Respuesta de teclas" en las opciones decide cómo se siente y suena el teclado. **Clic + vibración** reproduce un sonido de tecla mecánica y vibra con cada pulsación, con un tic por cada paso del cursor mientras deslizas. **Vibración** hace lo mismo sin el sonido, **Clic** solo reproduce el sonido, **Silencio** no hace ninguna de las dos cosas, y las variantes **Clic del sistema** usan el sonido de clic del teclado de tu dispositivo en lugar del mecánico.
+"Sonido de teclas" en las opciones decide cómo suena una pulsación: **Mecánico** reproduce el sonido de una tecla mecánica, **Sistema** usa el clic del teclado de tu dispositivo y **Silencio** no reproduce nada. "Volumen del teclado" ajusta lo fuerte que suenan las teclas. "Vibración de teclas" añade una vibración breve a cada pulsación, con un tic por cada paso del cursor mientras deslizas.
+
+"Retroiluminación" ilumina las teclas desde abajo como un teclado para juegos: **Blanco** en blanco, **RGB** con los colores del arcoíris, y cada tecla que pulsas lanza una onda de luz. **Desactivado** deja las teclas sin luz.
 
 ---
 

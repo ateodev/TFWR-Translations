@@ -97,4 +97,4 @@
 @off = Desligado
 @white = Branco
 @rgb = RGB
-@keyboard_preview_placeholder = Digite aqui para testar o teclado
+@keyboard_preview_placeholder = Digite aqui para testar

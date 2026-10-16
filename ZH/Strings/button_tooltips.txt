@@ -38,6 +38,7 @@
 @option_tooltip_autosave_progress = 启用后每 30 秒自动保存游戏进度。
 @option_tooltip_file_watcher = 自动应用对存档文件夹中代码文件所做的更改，以便使用外部代码编辑器。无法与自动存档同时启用。
 @option_tooltip_frames = 限制游戏的帧率。垂直同步会使帧率与你的显示器刷新率保持同步。
+@option_tooltip_frames_mobile = 更高的帧率看起来更流畅，但会消耗更多电量。
 @option_tooltip_viewport_sliding = 禁用拖放时的视口滑动效果。
 @option_tooltip_scroll_sensitivity = 鼠标滚轮滚动和缩放的速度。
 @option_tooltip_UI_size = 更改 UI 元素的大小。

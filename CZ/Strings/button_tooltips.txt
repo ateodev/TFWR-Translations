@@ -38,6 +38,7 @@
 @option_tooltip_autosave_progress = Když je zapnuto, automaticky ukládá herní postup každých 30 s.
 @option_tooltip_file_watcher = Automaticky načítá změny v souborech kódu ve složce save, umožňuje použití externího editoru. Nelze zapnout při aktivním autosave.
 @option_tooltip_frames = Omezí FPS hry. VSync synchronizuje FPS s obnovovací frekvencí monitoru.
+@option_tooltip_frames_mobile = Vyšší snímková frekvence vypadá plynuleji, ale spotřebuje více baterie.
 @option_tooltip_viewport_sliding = Vypne klouzání pohledu po puštění myši.
 @option_tooltip_scroll_sensitivity = Jak rychle kolečko myši posouvá a přibližuje.
 @option_tooltip_UI_size = Změní velikost prvků rozhraní.
