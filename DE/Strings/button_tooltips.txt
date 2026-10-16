@@ -38,6 +38,7 @@
 @option_tooltip_autosave_progress = Speichert den Spielfortschritt automatisch alle 30s, wenn aktiviert.
 @option_tooltip_file_watcher = Wendet Änderungen an Codedateien im Speicherordner automatisch an, was die Verwendung eines externen Code-Editors ermöglicht. Kann nicht aktiviert werden, während automatisches Speichern aktiviert ist.
 @option_tooltip_frames = Begrenzt die FPS des Spiels. Vsync synchronisiert die FPS mit der Bildwiederholfrequenz deines Monitors.
+@option_tooltip_frames_mobile = Höhere Bildraten sehen flüssiger aus, verbrauchen aber mehr Akku.
 @option_tooltip_viewport_sliding = Deaktiviert das Gleiten der Ansicht, wenn du ziehst und loslässt.
 @option_tooltip_scroll_sensitivity = Wie schnell das Mausrad scrollt und zoomt.
 @option_tooltip_UI_size = Ändert die Größe der UI-Elemente.

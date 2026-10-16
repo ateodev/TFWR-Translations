@@ -44,6 +44,7 @@
 @option_tooltip_autosave_progress = Automatically saves the game progress every 30s when enabled.
 @option_tooltip_file_watcher = Automatically applies changes made to the code files in the save folder allowing the use of an external code editor. Can't be enabled while autosaves are enabled.
 @option_tooltip_frames = Limit the game's fps. Vsync syncs the fps to your monitors refresh rate.
+@option_tooltip_frames_mobile = Higher frame rates look smoother but use more battery.
 @option_tooltip_viewport_sliding = Disables the sliding of the viewport when you drag and release.
 @option_tooltip_scroll_sensitivity = How fast the mouse wheel scrolls and zooms.
 @option_tooltip_UI_size = Change the size of UI elements.

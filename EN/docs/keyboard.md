@@ -29,7 +29,9 @@ While you type, a list of completions pops up. Swipe up or down to move through 
 The "Keyboard Layout" option allows you to switch between QWERTY, QWERTZ and AZERTY.
 
 ## Feel
-"Key Feedback" in the options decides how the keyboard feels and sounds. **Click + Vibration** plays a mechanical key sound and vibrates on every key press, with a tick for every cursor step while you swipe. **Vibration** does the same without the sound, **Click** only plays the sound, **Silent** does neither, and the **System Click** variants use your device keyboard's own click sound instead of the mechanical one.
+"Key Sound" in the options decides what a key press sounds like: **Mechanical** plays the sound of a mechanical keyboard key, **System** uses your device keyboard's own click and **Silent** plays nothing. "Keyboard Volume" sets how loud the key sounds are. "Key Vibration" adds a short vibration to every key press, with a tick for every cursor step while you swipe.
+
+"Backlight" lights the keys from below like a gaming keyboard: **White** in white, **RGB** in rainbow colors, and every key you press sends out a ripple of light. **Off** leaves the keys unlit.
 
 ---
 

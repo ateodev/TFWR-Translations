@@ -29,7 +29,9 @@ Podczas pisania pojawia się lista uzupełnień. Przesuń palcem w górę lub w 
 Opcja „Układ klawiatury” pozwala przełączać między QWERTY, QWERTZ i AZERTY.
 
 ## Odczucia
-„Reakcja klawiszy” w opcjach decyduje o tym, jak klawiatura się czuje i brzmi. **Klik + wibracja** odtwarza dźwięk mechanicznego klawisza i wibruje przy każdym naciśnięciu, z tyknięciem przy każdym kroku kursora podczas przesuwania. **Wibracja** robi to samo bez dźwięku, **Klik** tylko odtwarza dźwięk, **Cisza** nie robi żadnej z tych rzeczy, a warianty **Klik systemowy** używają dźwięku kliknięcia klawiatury twojego urządzenia zamiast mechanicznego.
+„Dźwięk klawiszy” w opcjach decyduje, jak brzmi naciśnięcie klawisza: **Mechaniczny** odtwarza dźwięk mechanicznego klawisza, **Systemowy** używa kliknięcia klawiatury twojego urządzenia, a **Wyciszony** nie odtwarza niczego. „Głośność klawiatury” ustawia, jak głośne są dźwięki klawiszy. „Wibracja klawiszy” dodaje krótką wibrację do każdego naciśnięcia, z tyknięciem przy każdym kroku kursora podczas przesuwania.
+
+„Podświetlenie” podświetla klawisze od spodu jak w klawiaturze dla graczy: **Białe** świeci na biało, **RGB** w kolorach tęczy, a każdy naciśnięty klawisz wysyła falę światła. **Wyłączone** zostawia klawisze bez światła.
 
 ---
 

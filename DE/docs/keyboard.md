@@ -29,7 +29,9 @@ Während du tippst, erscheint eine Liste mit Vervollständigungen. Wische nach o
 Mit der Option "Tastaturlayout" kannst du zwischen QWERTY, QWERTZ und AZERTY wechseln.
 
 ## Gefühl
-"Tastenfeedback" in den Optionen bestimmt, wie sich die Tastatur anfühlt und anhört. **Klick + Vibration** spielt bei jedem Tastendruck ein mechanisches Tastengeräusch ab und vibriert, mit einem kurzen Ticken für jeden Cursorschritt beim Wischen. **Vibration** macht dasselbe ohne Ton, **Klick** spielt nur den Ton ab, **Lautlos** macht beides nicht, und die **Systemklick**-Varianten verwenden das Klickgeräusch der Tastatur deines Geräts anstelle des mechanischen.
+"Tastenton" in den Optionen bestimmt, wie ein Tastendruck klingt: **Mechanisch** spielt das Geräusch einer mechanischen Tastaturtaste ab, **System** verwendet das Klickgeräusch der Tastatur deines Geräts und **Lautlos** spielt nichts ab. "Tastaturlautstärke" legt fest, wie laut die Tastentöne sind. "Tastenvibration" fügt jedem Tastendruck eine kurze Vibration hinzu, mit einem kurzen Ticken für jeden Cursorschritt beim Wischen.
+
+"Hintergrundbeleuchtung" beleuchtet die Tasten von unten wie bei einer Gaming-Tastatur: **Weiß** in Weiß, **RGB** in Regenbogenfarben, und jede Taste, die du drückst, sendet eine Lichtwelle aus. **Aus** lässt die Tasten unbeleuchtet.
 
 ---
 

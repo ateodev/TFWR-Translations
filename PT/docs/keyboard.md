@@ -29,7 +29,9 @@ Enquanto você digita, aparece uma lista de opções de autocompletar. Deslize p
 A opção "Layout do teclado" permite alternar entre QWERTY, QWERTZ e AZERTY.
 
 ## Sensação
-"Resposta das teclas" nas opções decide como o teclado se sente e soa. **Clique + vibração** toca um som de tecla mecânica e vibra a cada toque, com um tique para cada passo do cursor enquanto você desliza. **Vibração** faz o mesmo sem o som, **Clique** toca só o som, **Silencioso** não faz nenhum dos dois, e as variantes **Clique do sistema** usam o som de clique do teclado do seu aparelho em vez do mecânico.
+"Som das teclas" nas opções decide como soa um toque: **Mecânico** toca o som de uma tecla mecânica, **Sistema** usa o clique do teclado do seu aparelho e **Silencioso** não toca nada. "Volume do teclado" ajusta o volume dos sons das teclas. "Vibração das teclas" adiciona uma vibração curta a cada toque, com um tique para cada passo do cursor enquanto você desliza.
+
+"Retroiluminação" ilumina as teclas por baixo como um teclado gamer: **Branco** em branco, **RGB** nas cores do arco-íris, e cada tecla que você toca solta uma onda de luz. **Desligado** deixa as teclas apagadas.
 
 ---
 

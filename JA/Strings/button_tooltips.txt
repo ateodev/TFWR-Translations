@@ -38,6 +38,7 @@
 @option_tooltip_autosave_progress = 有効にすると、30秒ごとにゲームの進行状況を自動でセーブします。
 @option_tooltip_file_watcher = セーブフォルダー内のコードファイルに加えられた変更を自動的に適用し、外部のコードエディターを使用できるようにします。自動セーブが有効な場合は有効にできません。
 @option_tooltip_frames = ゲームのfpsを制限します。Vsyncはfpsをモニターのリフレッシュレートに同期させます。
+@option_tooltip_frames_mobile = フレームレートが高いほど滑らかに見えますが、バッテリーの消費が増えます。
 @option_tooltip_viewport_sliding = ドラッグして離したときのビューポートのスライドを無効にします。
 @option_tooltip_scroll_sensitivity = マウスホイールでスクロールやズームする速さ。
 @option_tooltip_UI_size = UI要素のサイズを変更します。

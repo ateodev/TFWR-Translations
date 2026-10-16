@@ -29,7 +29,9 @@ Během psaní se objeví seznam návrhů. Přejeď nahoru nebo dolů, aby ses v 
 Možnost „Rozložení klávesnice“ umožňuje přepínat mezi QWERTY, QWERTZ a AZERTY.
 
 ## Odezva
-„Odezva kláves“ v možnostech určuje, jak klávesnice působí a zní. **Kliknutí + vibrace** přehraje při každém stisku zvuk mechanické klávesy a zavibruje, při přejíždění cukne při každém kroku kurzoru. **Vibrace** dělá totéž bez zvuku, **Kliknutí** jen přehraje zvuk, **Tichý** nedělá ani jedno a varianty **Systémový klik** použijí zvuk kliknutí klávesnice tvého zařízení místo toho mechanického.
+„Zvuk kláves“ v možnostech určuje, jak stisk klávesy zní: **Mechanický** přehraje zvuk mechanické klávesy, **Systémový** použije zvuk kliknutí klávesnice tvého zařízení a **Ticho** nepřehraje nic. „Hlasitost klávesnice“ nastavuje, jak hlasité zvuky kláves jsou. „Vibrace kláves“ přidá ke každému stisku klávesy krátkou vibraci a při přejíždění cukne při každém kroku kurzoru.
+
+„Podsvícení“ rozsvítí klávesy zespodu jako u herní klávesnice: **Bílé** svítí bíle, **RGB** v barvách duhy a každá klávesa, kterou stiskneš, vyšle vlnu světla. **Vypnuto** nechá klávesy bez světla.
 
 ---
 

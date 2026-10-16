@@ -97,4 +97,4 @@
 @off = Aus
 @white = Weiß
 @rgb = RGB
-@keyboard_preview_placeholder = Hier tippen, um die Tastatur auszuprobieren
+@keyboard_preview_placeholder = Hier tippen zum Ausprobieren

@@ -38,6 +38,7 @@
 @option_tooltip_autosave_progress = Automatycznie zapisuje postęp w grze co 30s, gdy jest włączone.
 @option_tooltip_file_watcher = Automatycznie stosuje zmiany dokonane w plikach z kodem w folderze zapisu, co pozwala na korzystanie z zewnętrznego edytora kodu. Nie można włączyć, gdy włączone są autozapisy.
 @option_tooltip_frames = Ogranicz liczbę klatek na sekundę (fps) w grze. Vsync synchronizuje fps z częstotliwością odświeżania twojego monitora.
+@option_tooltip_frames_mobile = Wyższa liczba klatek na sekundę wygląda płynniej, ale zużywa więcej baterii.
 @option_tooltip_viewport_sliding = Wyłącza przesuwanie widoku po przeciągnięciu i puszczeniu.
 @option_tooltip_scroll_sensitivity = Jak szybko kółko myszy przewija i przybliża.
 @option_tooltip_UI_size = Zmień rozmiar elementów interfejsu.
