@@ -33,6 +33,10 @@
 @1/4 vsync = 1/4 VSync
 @viewport sliding = Прокрутка области просмотра
 @scroll sensitivity = Чувствительность колёсика
+@scroll direction = Направление прокрутки
+@zoom direction = Направление масштаба
+@follow device = Как на устройстве
+@inverted = Обратное
 @UI size = Размер интерфейса
 @UI size in portrait = Размер интерфейса (вертикально)
 @UI size in landscape = Размер интерфейса (горизонтально)

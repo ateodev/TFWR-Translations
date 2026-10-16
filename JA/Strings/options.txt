@@ -33,6 +33,10 @@
 @1/4 vsync = 1/4 Vsync
 @viewport sliding = ビューポートのスライド
 @scroll sensitivity = スクロール感度
+@scroll direction = スクロール方向
+@zoom direction = ズーム方向
+@follow device = デバイスに合わせる
+@inverted = 反転
 @UI size = UIサイズ
 @UI size in portrait = UIサイズ（縦向き）
 @UI size in landscape = UIサイズ（横向き）
