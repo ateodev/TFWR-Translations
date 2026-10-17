@@ -43,7 +43,7 @@
 @option_tooltip_scroll_sensitivity = Jak rychle kolečko myši posouvá a přibližuje.
 @option_tooltip_scroll_direction = Kterým směrem kolečko myši a touchpad posouvají seznamy, text a kód.
 @option_tooltip_zoom_direction = Kterým směrem kolečko myši a touchpad přibližují farmu a strom výzkumu.
-@option_tooltip_vibration = Krátké vibrace, které reagují na tvůj dotek.
+@option_tooltip_vibration = Krátké vibrace, které reagují na tvůj dotek. „Omezené“ je přehraje jen při dlouhém stisku.
 @option_tooltip_UI_size = Změní velikost prvků rozhraní.
 @option_tooltip_tabs_to_spaces = Převede všechny tabulátory na 4 mezery.
 @option_tooltip_error_forgot_call = Pokud je zapnuto, hra vyhodí chybu, když se pokusíš vyhodnotit funkci bez závorek `()`, protože jsi je pravděpodobně zapomněl.

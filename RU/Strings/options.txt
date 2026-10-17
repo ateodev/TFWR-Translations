@@ -38,6 +38,8 @@
 @follow device = Как на устройстве
 @inverted = Обратное
 @vibration = Вибрация
+@full = Полная
+@limited = Ограниченная
 @UI size = Размер интерфейса
 @UI size in portrait = Размер интерфейса (вертикально)
 @UI size in landscape = Размер интерфейса (горизонтально)

@@ -41,6 +41,8 @@
 @follow device = Follow Device
 @inverted = Inverted
 @vibration = Vibration
+@full = Full
+@limited = Limited
 @UI size = UI Size
 @UI size in portrait = UI Size in Portrait
 @UI size in landscape = UI Size in Landscape

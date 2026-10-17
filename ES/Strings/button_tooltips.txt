@@ -43,7 +43,7 @@
 @option_tooltip_scroll_sensitivity = Qué tan rápido la rueda del ratón desplaza y hace zoom.
 @option_tooltip_scroll_direction = Hacia dónde desplazan la rueda del ratón y el trackpad las listas, el texto y el código.
 @option_tooltip_zoom_direction = Hacia dónde hacen zoom la rueda del ratón y el trackpad en la granja y el árbol de investigación.
-@option_tooltip_vibration = Vibraciones breves que responden a tu toque.
+@option_tooltip_vibration = Vibraciones breves que responden a tu toque. 'Limitado' solo las reproduce al mantener pulsado.
 @option_tooltip_UI_size = Cambia el tamaño de los elementos de la interfaz de usuario.
 @option_tooltip_tabs_to_spaces = Convierte todas las tabulaciones en 4 espacios.
 @option_tooltip_error_forgot_call = Cuando está activado, el juego lanzará un error de salvaguarda si intentas evaluar el valor de verdad de un objeto de función, porque esto usualmente significa que olvidaste los `()`.

@@ -39,6 +39,8 @@
 @follow device = 跟隨裝置
 @inverted = 反轉
 @vibration = 震動
+@full = 完整
+@limited = 有限
 @UI size = UI 大小
 @UI size in portrait = 直向介面大小
 @UI size in landscape = 橫向介面大小

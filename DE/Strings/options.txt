@@ -38,6 +38,8 @@
 @follow device = Wie das Gerät
 @inverted = Umgekehrt
 @vibration = Vibration
+@full = Voll
+@limited = Begrenzt
 @UI size = UI-Größe
 @UI size in portrait = UI-Größe im Hochformat
 @UI size in landscape = UI-Größe im Querformat

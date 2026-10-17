@@ -38,6 +38,8 @@
 @follow device = Podle zařízení
 @inverted = Obrácený
 @vibration = Vibrace
+@full = Plné
+@limited = Omezené
 @UI size = Velikost rozhraní
 @UI size in portrait = Velikost rozhraní na výšku
 @UI size in landscape = Velikost rozhraní na šířku

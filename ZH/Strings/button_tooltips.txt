@@ -43,7 +43,7 @@
 @option_tooltip_scroll_sensitivity = 鼠标滚轮滚动和缩放的速度。
 @option_tooltip_scroll_direction = 鼠标滚轮和触控板滚动列表、文本和代码的方向。
 @option_tooltip_zoom_direction = 鼠标滚轮和触控板缩放农场和研究树的方向。
-@option_tooltip_vibration = 随你的触碰短暂振动。
+@option_tooltip_vibration = 随你的触碰短暂振动。“有限”只在长按时振动。
 @option_tooltip_UI_size = 更改 UI 元素的大小。
 @option_tooltip_tabs_to_spaces = 将所有制表符转换成 4 个空格。
 @option_tooltip_error_forgot_call = 启用后，如果你尝试对一个函数对象求值，游戏会抛出安全保护错误，因为这通常意味着你忘记了 `()`。

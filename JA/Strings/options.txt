@@ -38,6 +38,8 @@
 @follow device = デバイスに合わせる
 @inverted = 反転
 @vibration = 振動
+@full = フル
+@limited = 限定
 @UI size = UIサイズ
 @UI size in portrait = UIサイズ（縦向き）
 @UI size in landscape = UIサイズ（横向き）

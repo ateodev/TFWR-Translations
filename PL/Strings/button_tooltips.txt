@@ -43,7 +43,7 @@
 @option_tooltip_scroll_sensitivity = Jak szybko kółko myszy przewija i przybliża.
 @option_tooltip_scroll_direction = W którą stronę kółko myszy i gładzik przewijają listy, tekst i kod.
 @option_tooltip_zoom_direction = W którą stronę kółko myszy i gładzik przybliżają farmę i drzewo badań.
-@option_tooltip_vibration = Krótkie wibracje reagujące na twój dotyk.
+@option_tooltip_vibration = Krótkie wibracje reagujące na twój dotyk. „Ograniczone” odtwarza je tylko przy długim naciśnięciu.
 @option_tooltip_UI_size = Zmień rozmiar elementów interfejsu.
 @option_tooltip_tabs_to_spaces = Zamienia wszystkie tabulacje na 4 spacje.
 @option_tooltip_error_forgot_call = Gdy włączone, gra zgłosi błąd zabezpieczający, jeśli spróbujesz ocenić prawdziwość obiektu funkcji, ponieważ zwykle oznacza to, że zapomniałeś o `()`.
