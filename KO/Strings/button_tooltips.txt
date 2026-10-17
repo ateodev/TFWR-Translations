@@ -43,6 +43,7 @@
 @option_tooltip_scroll_sensitivity = 마우스 휠로 스크롤하고 확대/축소하는 속도입니다.
 @option_tooltip_scroll_direction = 마우스 휠과 트랙패드로 목록, 텍스트, 코드를 스크롤하는 방향입니다.
 @option_tooltip_zoom_direction = 마우스 휠과 트랙패드로 농장과 연구 트리를 확대/축소하는 방향입니다.
+@option_tooltip_vibration = 터치에 반응해 짧게 진동합니다.
 @option_tooltip_UI_size = UI 요소의 크기를 변경합니다.
 @option_tooltip_tabs_to_spaces = 모든 탭을 4개의 공백으로 바꿉니다.
 @option_tooltip_error_forgot_call = 활성화하면 함수 객체의 진위를 평가하려고 할 때 게임이 세이프가드 오류를 발생시킵니다. 보통 이 경우는 `()`를 빠뜨렸다는 의미입니다.

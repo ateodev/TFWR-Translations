@@ -43,6 +43,7 @@
 @option_tooltip_scroll_sensitivity = 滑鼠滾輪捲動與縮放的速度。
 @option_tooltip_scroll_direction = 滑鼠滾輪和觸控板捲動清單、文字和程式碼的方向。
 @option_tooltip_zoom_direction = 滑鼠滾輪和觸控板縮放農場和研究樹的方向。
+@option_tooltip_vibration = 隨你的觸碰短暫震動。
 @option_tooltip_UI_size = 更改 UI 元素的大小。
 @option_tooltip_tabs_to_spaces = 將所有 Tab 鍵輸入轉換成 4 個空格。
 @option_tooltip_error_forgot_call = 啟用後，如果你嘗試對一個函式物件求值，遊戲會拋出安全保護錯誤，因為這通常意味著你忘記了 `()`。
