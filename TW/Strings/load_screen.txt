@@ -1,3 +1,4 @@
+@load_screen_title = 載入
 @load_screen_play = 開始遊戲
 @load_screen_current = 目前
 @load_screen_unlocks = {0} 項解鎖

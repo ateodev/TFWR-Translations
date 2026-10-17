@@ -1,3 +1,4 @@
+@load_screen_title = Завантажити
 @load_screen_play = Грати
 @load_screen_current = Поточне
 @load_screen_unlocks = Розблокувань: {0}

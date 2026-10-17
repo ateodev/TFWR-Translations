@@ -1,3 +1,4 @@
+@load_screen_title = Wczytaj
 @load_screen_play = Graj
 @load_screen_current = Bieżący
 @load_screen_unlocks = Odblokowania: {0}

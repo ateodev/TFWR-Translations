@@ -1,3 +1,4 @@
+@load_screen_title = Загрузить
 @load_screen_play = Играть
 @load_screen_current = Текущее
 @load_screen_unlocks = Технологий: {0}

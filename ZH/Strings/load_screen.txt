@@ -1,3 +1,4 @@
+@load_screen_title = 加载
 @load_screen_play = 开始游戏
 @load_screen_current = 当前
 @load_screen_unlocks = {0} 项解锁

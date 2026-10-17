@@ -1,3 +1,4 @@
+@load_screen_title = 불러오기
 @load_screen_play = 플레이
 @load_screen_current = 현재
 @load_screen_unlocks = 해금 {0}개

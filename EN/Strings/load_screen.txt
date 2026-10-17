@@ -1,3 +1,4 @@
+@load_screen_title = Load
 @load_screen_play = Play
 @load_screen_current = Current
 @load_screen_unlocks = {0} unlocks
