@@ -37,6 +37,7 @@
 @zoom direction = Направление масштаба
 @follow device = Как на устройстве
 @inverted = Обратное
+@vibration = Вибрация
 @UI size = Размер интерфейса
 @UI size in portrait = Размер интерфейса (вертикально)
 @UI size in landscape = Размер интерфейса (горизонтально)

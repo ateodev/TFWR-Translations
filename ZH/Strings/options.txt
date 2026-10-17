@@ -37,6 +37,7 @@
 @zoom direction = 缩放方向
 @follow device = 跟随设备
 @inverted = 反转
+@vibration = 振动
 @UI size = UI 大小
 @UI size in portrait = 竖屏 UI 大小
 @UI size in landscape = 横屏 UI 大小

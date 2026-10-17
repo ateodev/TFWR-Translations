@@ -37,6 +37,7 @@
 @zoom direction = Kierunek przybliżania
 @follow device = Jak urządzenie
 @inverted = Odwrócony
+@vibration = Wibracja
 @UI size = Rozmiar UI
 @UI size in portrait = Rozmiar UI w pionie
 @UI size in landscape = Rozmiar UI w poziomie

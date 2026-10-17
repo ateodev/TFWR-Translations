@@ -43,6 +43,7 @@
 @option_tooltip_scroll_sensitivity = Vitesse de défilement et de zoom de la molette de la souris.
 @option_tooltip_scroll_direction = Sens dans lequel la molette et le pavé tactile font défiler les listes, le texte et le code.
 @option_tooltip_zoom_direction = Sens dans lequel la molette et le pavé tactile zooment sur la ferme et l'arbre de recherche.
+@option_tooltip_vibration = De courtes vibrations qui répondent à ton toucher.
 @option_tooltip_UI_size = Modifie la taille des éléments de l'interface.
 @option_tooltip_tabs_to_spaces = Transforme toutes les tabulations en 4 espaces.
 @option_tooltip_error_forgot_call = Lorsqu'activé, le jeu affichera une erreur de protection si tu essaies d'évaluer la véracité d'un objet fonction, car cela signifie généralement que tu as oublié les `()`.

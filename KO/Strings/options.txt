@@ -37,6 +37,7 @@
 @zoom direction = 확대/축소 방향
 @follow device = 기기 따르기
 @inverted = 반전
+@vibration = 진동
 @UI size = UI 크기
 @UI size in portrait = UI 크기 (세로)
 @UI size in landscape = UI 크기 (가로)

@@ -43,6 +43,7 @@
 @option_tooltip_scroll_sensitivity = Quanto velocemente la rotellina del mouse scorre e ingrandisce.
 @option_tooltip_scroll_direction = In che direzione la rotellina del mouse e il trackpad scorrono elenchi, testo e codice.
 @option_tooltip_zoom_direction = In che direzione la rotellina del mouse e il trackpad ingrandiscono la fattoria e l'albero della ricerca.
+@option_tooltip_vibration = Brevi vibrazioni che rispondono al tuo tocco.
 @option_tooltip_UI_size = Cambia la dimensione degli elementi UI.
 @option_tooltip_tabs_to_spaces = Trasforma tutti i tab in 4 spazi.
 @option_tooltip_error_forgot_call = Se abilitata, il gioco genererà un errore di safeguard quando si prova a valutare la verità di un oggetto funzione, perché questo di solito indica che hai dimenticato di invocarlo con ().
