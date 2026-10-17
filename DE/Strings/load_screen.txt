@@ -5,6 +5,7 @@
 @load_screen_code_files = {0} Codedateien
 @load_screen_code_file = {0} Codedatei
 @load_screen_no_saves = Noch keine Spielstände
+@load_screen_new = Neu
 @load_screen_no_saves_hint = Drücke auf '{0}', um eine Farm zu starten.
 @load_screen_rename_title = Spielstand umbenennen
 @load_screen_rename = Umbenennen

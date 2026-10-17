@@ -5,6 +5,7 @@
 @load_screen_code_files = {0} file di codice
 @load_screen_code_file = {0} file di codice
 @load_screen_no_saves = Nessun salvataggio
+@load_screen_new = Nuovo
 @load_screen_no_saves_hint = Premi '{0}' per iniziare una fattoria.
 @load_screen_rename_title = Rinomina salvataggio
 @load_screen_rename = Rinomina

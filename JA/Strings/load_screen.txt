@@ -5,6 +5,7 @@
 @load_screen_code_files = コードファイル {0} 個
 @load_screen_code_file = コードファイル {0} 個
 @load_screen_no_saves = セーブデータはまだありません
+@load_screen_new = 新規
 @load_screen_no_saves_hint = 「{0}」を押して農場を始めましょう。
 @load_screen_rename_title = セーブデータの名前を変更
 @load_screen_rename = 名前を変更

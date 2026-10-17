@@ -5,6 +5,7 @@
 @load_screen_code_files = {0} 個程式碼檔案
 @load_screen_code_file = {0} 個程式碼檔案
 @load_screen_no_saves = 尚無存檔
+@load_screen_new = 新增
 @load_screen_no_saves_hint = 按下「{0}」開始一座農場。
 @load_screen_rename_title = 重新命名存檔
 @load_screen_rename = 重新命名

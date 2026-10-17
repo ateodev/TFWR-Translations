@@ -5,6 +5,7 @@
 @load_screen_code_files = 코드 파일 {0}개
 @load_screen_code_file = 코드 파일 {0}개
 @load_screen_no_saves = 아직 저장 항목이 없습니다
+@load_screen_new = 신규
 @load_screen_no_saves_hint = '{0}'을(를) 눌러 농장을 시작하세요.
 @load_screen_rename_title = 저장 항목 이름 바꾸기
 @load_screen_rename = 이름 바꾸기

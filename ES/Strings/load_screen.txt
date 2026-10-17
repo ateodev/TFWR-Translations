@@ -5,6 +5,7 @@
 @load_screen_code_files = {0} archivos de código
 @load_screen_code_file = {0} archivo de código
 @load_screen_no_saves = Aún no hay partidas
+@load_screen_new = Nueva
 @load_screen_no_saves_hint = Pulsa '{0}' para empezar una granja.
 @load_screen_rename_title = Renombrar partida
 @load_screen_rename = Renombrar

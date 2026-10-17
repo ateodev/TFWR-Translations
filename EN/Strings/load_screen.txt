@@ -5,6 +5,7 @@
 @load_screen_code_files = {0} code files
 @load_screen_code_file = {0} code file
 @load_screen_no_saves = No saves yet
+@load_screen_new = New
 @load_screen_no_saves_hint = Press '{0}' to start a farm.
 @load_screen_rename_title = Rename save
 @load_screen_rename = Rename

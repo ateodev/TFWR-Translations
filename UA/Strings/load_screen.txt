@@ -5,6 +5,7 @@
 @load_screen_code_files = Файлів коду: {0}
 @load_screen_code_file = Файлів коду: {0}
 @load_screen_no_saves = Збережень поки немає
+@load_screen_new = Нова
 @load_screen_no_saves_hint = Натисніть «{0}», щоб почати ферму.
 @load_screen_rename_title = Перейменувати збереження
 @load_screen_rename = Перейменувати

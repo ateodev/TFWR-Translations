@@ -5,6 +5,7 @@
 @load_screen_code_files = {0} 个代码文件
 @load_screen_code_file = {0} 个代码文件
 @load_screen_no_saves = 暂无存档
+@load_screen_new = 新建
 @load_screen_no_saves_hint = 按“{0}”开始一个农场。
 @load_screen_rename_title = 重命名存档
 @load_screen_rename = 重命名

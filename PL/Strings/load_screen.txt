@@ -5,6 +5,7 @@
 @load_screen_code_files = Pliki z kodem: {0}
 @load_screen_code_file = Pliki z kodem: {0}
 @load_screen_no_saves = Brak zapisów
+@load_screen_new = Nowa
 @load_screen_no_saves_hint = Naciśnij „{0}”, aby założyć farmę.
 @load_screen_rename_title = Zmień nazwę zapisu
 @load_screen_rename = Zmień nazwę

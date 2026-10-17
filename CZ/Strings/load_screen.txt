@@ -5,6 +5,7 @@
 @load_screen_code_files = Soubory s kódem: {0}
 @load_screen_code_file = Soubory s kódem: {0}
 @load_screen_no_saves = Zatím žádné savy
+@load_screen_new = Nová
 @load_screen_no_saves_hint = Stiskni „{0}“ a založ farmu.
 @load_screen_rename_title = Přejmenovat save
 @load_screen_rename = Přejmenovat
