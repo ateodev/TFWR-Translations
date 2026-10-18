@@ -4,6 +4,15 @@
 @general = General
 @controls = Controles
 @controls_mobile = Periféricos
+@section_mouse = Ratón
+@section_shortcuts = Atajos de teclado
+@section_interface = Interfaz
+@section_code_editor = Editor de código
+@section_gameplay = Jugabilidad
+@section_quality = Calidad
+@section_effects = Efectos
+@section_tuning = Ajuste fino
+@section_more = Más
 @errors = Errores
 @screen mode = Modo de pantalla
 @fullscreen = Pantalla completa

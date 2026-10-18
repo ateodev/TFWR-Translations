@@ -4,6 +4,15 @@
 @general = 通用
 @controls = 控制
 @controls_mobile = 周邊裝置
+@section_mouse = 滑鼠
+@section_shortcuts = 快速鍵
+@section_interface = 介面
+@section_code_editor = 程式碼編輯器
+@section_gameplay = 遊戲玩法
+@section_quality = 畫質
+@section_effects = 特效
+@section_tuning = 微調
+@section_more = 其他
 @errors = 錯誤
 @screen mode = 螢幕模式
 @fullscreen = 全螢幕

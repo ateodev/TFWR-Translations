@@ -4,6 +4,15 @@
 @general = Obecné
 @controls = Ovládání
 @controls_mobile = Periferie
+@section_mouse = Myš
+@section_shortcuts = Klávesové zkratky
+@section_interface = Rozhraní
+@section_code_editor = Editor kódu
+@section_gameplay = Hratelnost
+@section_quality = Kvalita
+@section_effects = Efekty
+@section_tuning = Ladění
+@section_more = Další
 @errors = Chyby
 @screen mode = Režim obrazovky
 @fullscreen = Celá obrazovka

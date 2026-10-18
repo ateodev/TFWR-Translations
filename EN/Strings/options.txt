@@ -4,6 +4,15 @@
 @general = General
 @controls = Controls
 @controls_mobile = Peripherals
+@section_mouse = Mouse
+@section_shortcuts = Shortcuts
+@section_interface = Interface
+@section_code_editor = Code editor
+@section_gameplay = Gameplay
+@section_quality = Quality
+@section_effects = Effects
+@section_tuning = Tuning
+@section_more = More
 @keyboard = Keyboard
 @errors = Errors
 @screen mode = Screen Mode

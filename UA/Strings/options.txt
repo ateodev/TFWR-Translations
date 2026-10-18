@@ -4,6 +4,15 @@
 @general = Загальні
 @controls = Управління
 @controls_mobile = Периферія
+@section_mouse = Миша
+@section_shortcuts = Гарячі клавіші
+@section_interface = Інтерфейс
+@section_code_editor = Редактор коду
+@section_gameplay = Ігровий процес
+@section_quality = Якість
+@section_effects = Ефекти
+@section_tuning = Тонке налаштування
+@section_more = Інше
 @errors = Помилки
 @screen mode = Режим відображення
 @fullscreen = Повний екран

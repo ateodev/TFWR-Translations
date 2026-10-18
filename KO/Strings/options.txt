@@ -4,6 +4,15 @@
 @general = 일반
 @controls = 조작
 @controls_mobile = 주변 기기
+@section_mouse = 마우스
+@section_shortcuts = 단축키
+@section_interface = 인터페이스
+@section_code_editor = 코드 편집기
+@section_gameplay = 게임플레이
+@section_quality = 화질
+@section_effects = 효과
+@section_tuning = 세부 조정
+@section_more = 기타
 @errors = 오류
 @screen mode = 화면 모드
 @fullscreen = 전체 화면
