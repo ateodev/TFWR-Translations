@@ -82,6 +82,7 @@
 @button_tooltip_sign_in = Sign in to Google Play Games / Game Center to sync your achievements.
 @option_tooltip_keyboard_sound = Sound of a key press on the in-game keyboard: System = the click of your device's own keyboard, Mechanical = a mechanical keyboard key.
 @option_tooltip_keyboard_vibration = A short vibration on every key press of the in-game keyboard.
+@option_tooltip_selection_menu = The menu with 'Cut', 'Copy' and 'Paste' over selected text. Automatic = hidden while the in-game keyboard shows or a hardware keyboard is connected, since both have these keys.
 @button_tooltip_open_main_menu = Open the main menu.
 @button_tooltip_open_search = Open the search bar.
 @button_tooltip_open_news = Open the latest news.

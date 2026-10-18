@@ -15,3 +15,9 @@
 @max_level = Max Level
 @unlock = Unlock
 @locked = Locked
+@selection_cut = Cut
+@selection_copy = Copy
+@selection_paste = Paste
+@selection_search = Search
+@selection_select = Select
+@selection_select_all = Select All

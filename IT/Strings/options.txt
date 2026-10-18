@@ -97,6 +97,9 @@
 @Keyboard type = Tipo di tastiera
 @os = Sistema
 @custom = Del gioco
+@Selection menu = Menu di selezione
+@automatic = Automatico
+@on = Attivato
 @exit fullscreen on run = Avvio esce da schermo intero
 @30 fps = 30 FPS
 @60 fps = 60 FPS

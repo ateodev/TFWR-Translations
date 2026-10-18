@@ -3,7 +3,7 @@
 @graphics = Grafika
 @general = Ogólne
 @controls = Sterowanie
-@controls_mobile = Urządzenia peryferyjne
+@controls_mobile = Urządzenia
 @section_mouse = Mysz
 @section_shortcuts = Skróty klawiszowe
 @section_interface = Interfejs
@@ -97,6 +97,9 @@
 @Keyboard type = Typ klawiatury
 @os = Systemowa
 @custom = W grze
+@Selection menu = Menu zaznaczenia
+@automatic = Automatycznie
+@on = Włączone
 @exit fullscreen on run = Start zamyka pełny ekran
 @30 fps = 30 FPS
 @60 fps = 60 FPS

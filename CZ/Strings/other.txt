@@ -17,6 +17,8 @@
 @right_click_to_open_store = -- pravé kliknutí otevře obchod --
 @tap_here_to_open_store = -- klepni sem pro otevření obchodu --
 @tooltip_button_more_info = Více informací
+@tooltip_right_click_for_more_info = Pravé kliknutí pro více informací
+@tooltip_long_press_for_more_info = Dlouhý stisk pro více informací
 @loading_screen = Načítání
 @new_hat_unlocked = ## Nový klobouk odemčen
 `change_hat(`{0}`)`

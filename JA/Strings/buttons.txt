@@ -15,3 +15,9 @@
 @max_level = 最大レベル
 @unlock = アンロック
 @locked = ロック中
+@selection_cut = カット
+@selection_copy = コピー
+@selection_paste = ペースト
+@selection_search = 検索
+@selection_select = 選択
+@selection_select_all = すべてを選択

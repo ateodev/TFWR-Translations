@@ -87,5 +87,6 @@
 @option_tooltip_keyboard_volume = Regola il volume dei suoni dei tasti della tastiera di gioco.
 @option_tooltip_keyboard_sound = Suono alla pressione di un tasto della tastiera di gioco: Sistema = il clic della tastiera del tuo dispositivo, Meccanico = il tasto di una tastiera meccanica.
 @option_tooltip_keyboard_vibration = Una breve vibrazione a ogni pressione di un tasto della tastiera di gioco.
+@option_tooltip_selection_menu = Il menu con 'Taglia', 'Copia' e 'Incolla' sopra il testo selezionato. Automatico = nascosto mentre è visibile la tastiera del gioco o è collegata una tastiera fisica, perché entrambe hanno questi tasti.
 @option_tooltip_keyboard_backlight = Luce che filtra da sotto i tasti della tastiera di gioco, bianca o nei colori dell'arcobaleno (RGB), con un'onda di luce da ogni tasto premuto.
 @option_tooltip_keyboard_squish = Rende i tasti della tastiera di gioco più bassi, così copre meno lo schermo. Al massimo, i tasti sono alti la metà del normale.

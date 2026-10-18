@@ -15,3 +15,9 @@
 @max_level = 已满级
 @unlock = 解锁
 @locked = 未解锁
+@selection_cut = 剪切
+@selection_copy = 拷贝
+@selection_paste = 粘贴
+@selection_search = 搜索
+@selection_select = 选择
+@selection_select_all = 全选

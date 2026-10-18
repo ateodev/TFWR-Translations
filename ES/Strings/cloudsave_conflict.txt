@@ -1,4 +1,4 @@
-@cloud_conflict_title = Conflicto de guardado en la nube
+@cloud_conflict_title = Conflicto en la nube
 @cloud_conflict_message = Tus partidas guardadas cambiaron en más de un dispositivo.
 @cloud_conflict_versions_total = Versiones en total: {0}
 @cloud_conflict_keep = Conservar la versión {0}

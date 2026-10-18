@@ -87,5 +87,6 @@
 @option_tooltip_keyboard_volume = 게임 키보드의 키 소리 음량을 조절합니다.
 @option_tooltip_keyboard_sound = 게임 키보드의 키를 누를 때 나는 소리: 시스템 = 기기 키보드의 클릭 소리, 기계식 = 기계식 키보드의 키 소리.
 @option_tooltip_keyboard_vibration = 게임 키보드의 키를 누를 때마다 짧게 진동합니다.
+@option_tooltip_selection_menu = 선택한 텍스트 위에 '오려두기', '복사하기', '붙여넣기'가 있는 메뉴입니다. 자동 = 게임 키보드가 표시되거나 하드웨어 키보드가 연결되어 있으면 숨김. 두 키보드 모두 이 키가 있기 때문입니다.
 @option_tooltip_keyboard_backlight = 게임 키보드의 키 아래에서 빛이 새어 나옵니다. 흰색 또는 무지개색(RGB)이며, 누른 키에서 빛의 물결이 퍼집니다.
 @option_tooltip_keyboard_squish = 게임 키보드의 키를 납작하게 만들어 화면을 덜 가립니다. 최대일 때 키 높이는 보통의 절반입니다.

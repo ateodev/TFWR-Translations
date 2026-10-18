@@ -86,5 +86,6 @@
 @option_tooltip_keyboard_volume = 调整游戏内键盘按键音的音量。
 @option_tooltip_keyboard_sound = 按下游戏内键盘按键时的声音：系统 = 设备自带键盘的点击声，机械 = 机械键盘的按键声。
 @option_tooltip_keyboard_vibration = 每次按下游戏内键盘的按键时短暂振动。
+@option_tooltip_selection_menu = 选中文字上方带有“剪切”、“拷贝”和“粘贴”的菜单。自动 = 显示游戏内键盘或连接实体键盘时隐藏，因为两者都有这些按键。
 @option_tooltip_keyboard_backlight = 游戏内键盘按键下方透出的光，白色或彩虹色（RGB），按下的每个键都会泛起光波。
 @option_tooltip_keyboard_squish = 让游戏内键盘的按键变扁，少遮挡屏幕。最大时按键高度为正常的一半。

@@ -87,5 +87,6 @@
 @option_tooltip_keyboard_volume = Ajusta o volume dos sons das teclas do teclado do jogo.
 @option_tooltip_keyboard_sound = Som ao tocar numa tecla do teclado do jogo: Sistema = o clique do teclado do seu dispositivo, Mecânico = uma tecla de teclado mecânico.
 @option_tooltip_keyboard_vibration = Uma vibração curta a cada toque numa tecla do teclado do jogo.
+@option_tooltip_selection_menu = O menu com 'Cortar', 'Copiar' e 'Colar' sobre o texto selecionado. Automático = oculto enquanto o teclado do jogo está visível ou um teclado físico está ligado, pois ambos têm estas teclas.
 @option_tooltip_keyboard_backlight = Luz que brilha por baixo das teclas do teclado do jogo, branca ou nas cores do arco-íris (RGB), com uma onda de luz em cada tecla pressionada.
 @option_tooltip_keyboard_squish = Deixa as teclas do teclado do jogo mais baixas para cobrir menos a tela. No máximo, as teclas têm metade da altura normal.

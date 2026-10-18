@@ -96,6 +96,9 @@
 @Keyboard type = Тип клавіатури
 @os = Системна
 @custom = Ігрова
+@Selection menu = Меню виділення
+@automatic = Авто
+@on = Увімк.
 @exit fullscreen on run = Згортати редактор при запуску
 @30 fps = 30 FPS
 @60 fps = 60 FPS

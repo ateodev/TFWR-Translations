@@ -4,6 +4,7 @@
 @general = Общие
 @controls = Управление
 @controls_mobile = Периферия
+@visuals_mobile = Графика
 @section_mouse = Мышь
 @section_shortcuts = Сочетания клавиш
 @section_interface = Интерфейс
@@ -97,6 +98,9 @@
 @Keyboard type = Тип клавиатуры
 @os = Системная
 @custom = Игровая
+@Selection menu = Меню выделения
+@automatic = Авто
+@on = Вкл.
 @exit fullscreen on run = Свернуть редактор при запуске
 @30 fps = 30 FPS
 @60 fps = 60 FPS

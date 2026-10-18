@@ -87,5 +87,6 @@
 @option_tooltip_keyboard_volume = Stellt die Lautstärke der Tastentöne der Spieltastatur ein.
 @option_tooltip_keyboard_sound = Ton beim Tastendruck auf der Spieltastatur: System = das Klicken der Tastatur deines Geräts, Mechanisch = eine mechanische Tastaturtaste.
 @option_tooltip_keyboard_vibration = Eine kurze Vibration bei jedem Tastendruck auf der Spieltastatur.
+@option_tooltip_selection_menu = Das Menü mit 'Ausschneiden', 'Kopieren' und 'Einsetzen' über markiertem Text. Automatisch = ausgeblendet, solange die Spieltastatur angezeigt wird oder eine Hardware-Tastatur verbunden ist, da beide diese Tasten haben.
 @option_tooltip_keyboard_backlight = Licht, das unter den Tasten der Spieltastatur hervorleuchtet, weiß oder in Regenbogenfarben (RGB), mit einer Lichtwelle bei jedem Tastendruck.
 @option_tooltip_keyboard_squish = Macht die Tasten der Spieltastatur flacher, damit sie weniger vom Bildschirm verdeckt. Beim Maximum sind die Tasten halb so hoch wie normal.

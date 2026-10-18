@@ -86,5 +86,6 @@
 @option_tooltip_keyboard_volume = ゲーム内キーボードのキー音の音量を調整します。
 @option_tooltip_keyboard_sound = ゲーム内キーボードのキーを押したときの音：システム＝端末のキーボードのクリック音、メカニカル＝メカニカルキーボードのキー音。
 @option_tooltip_keyboard_vibration = ゲーム内キーボードのキーを押すたびに短く振動します。
+@option_tooltip_selection_menu = 選択したテキストの上に出る「カット」「コピー」「ペースト」のメニュー。自動＝ゲーム内キーボードの表示中やハードウェアキーボードの接続中は非表示。どちらにもこれらのキーがあるためです。
 @option_tooltip_keyboard_backlight = ゲーム内キーボードのキーの下から光が漏れます。白または虹色（RGB）で、押したキーから光の波紋が広がります。
 @option_tooltip_keyboard_squish = ゲーム内キーボードのキーを平たくして、画面を覆う範囲を減らします。最大でキーの高さは通常の半分になります。

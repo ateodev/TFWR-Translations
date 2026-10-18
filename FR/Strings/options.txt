@@ -3,7 +3,7 @@
 @graphics = Graphismes
 @general = Général
 @controls = Contrôles
-@controls_mobile = Périphériques
+@controls_mobile = Appareils
 @section_mouse = Souris
 @section_shortcuts = Raccourcis
 @section_interface = Interface
@@ -97,6 +97,9 @@
 @Keyboard type = Type de clavier
 @os = Système
 @custom = Intégré
+@Selection menu = Menu de sélection
+@automatic = Automatique
+@on = Activé
 @exit fullscreen on run = Quitter plein écran : Démarrer
 @30 fps = 30 IPS
 @60 fps = 60 IPS

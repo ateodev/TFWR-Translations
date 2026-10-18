@@ -15,3 +15,9 @@
 @max_level = 최대 레벨
 @unlock = 해금
 @locked = 잠김
+@selection_cut = 오려두기
+@selection_copy = 복사하기
+@selection_paste = 붙여넣기
+@selection_search = 검색
+@selection_select = 선택
+@selection_select_all = 전체 선택

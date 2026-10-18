@@ -1,4 +1,4 @@
-@cloud_conflict_title = Конфликт облачных сохранений
+@cloud_conflict_title = Конфликт сохранений
 @cloud_conflict_message = Твои сохранения изменились более чем на одном устройстве.
 @cloud_conflict_versions_total = Всего версий: {0}
 @cloud_conflict_keep = Оставить версию {0}

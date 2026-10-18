@@ -19,4 +19,6 @@
 @right_click_to_open_store = -- 右鍵點擊開啟商店 --
 @tap_here_to_open_store = -- 點選此處開啟商店 --
 @tooltip_button_more_info = 更多資訊
+@tooltip_right_click_for_more_info = 按滑鼠右鍵取得更多資訊
+@tooltip_long_press_for_more_info = 長按取得更多資訊
 @loading_screen = 載入中

@@ -20,4 +20,6 @@
 @right_click_to_open_store = -- щелкни ПКМ, чтобы открыть магазин --
 @tap_here_to_open_store = -- нажми сюда, чтобы открыть магазин --
 @tooltip_button_more_info = Подробнее
+@tooltip_right_click_for_more_info = Щелкни ПКМ, чтобы узнать больше
+@tooltip_long_press_for_more_info = Удерживай, чтобы узнать больше
 @loading_screen = Загрузка

@@ -20,4 +20,6 @@
 @right_click_to_open_store = -- clique com o botão direito para abrir a loja --
 @tap_here_to_open_store = -- toque aqui para abrir a loja --
 @tooltip_button_more_info = Mais informações
+@tooltip_right_click_for_more_info = Clique com o botão direito para mais informações
+@tooltip_long_press_for_more_info = Mantenha pressionado para mais informações
 @loading_screen = Carregando

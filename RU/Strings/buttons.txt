@@ -15,3 +15,9 @@
 @max_level = Макс. уровень
 @unlock = Разблокировать
 @locked = Заблокировано
+@selection_cut = Вырезать
+@selection_copy = Скопировать
+@selection_paste = Вставить
+@selection_search = Найти
+@selection_select = Выбрать
+@selection_select_all = Выбрать все

@@ -15,3 +15,9 @@
 @max_level = Max Úroveň
 @unlock = Odemknout
 @locked = Zamčeno
+@selection_cut = Vyjmout
+@selection_copy = Kopírovat
+@selection_paste = Vložit
+@selection_search = Hledat
+@selection_select = Vybrat
+@selection_select_all = Vybrat vše

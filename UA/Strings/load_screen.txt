@@ -9,7 +9,7 @@
 @load_screen_new = Нова
 @load_screen_no_saves_hint = Натисніть «{0}», щоб почати ферму.
 @load_screen_rename_title = Перейменувати збереження
-@load_screen_rename = Перейменувати
+@load_screen_rename = Змінити
 @load_screen_create_title = Створити збереження
 @load_screen_create = Створити
 @load_screen_rename_empty = Введіть назву.

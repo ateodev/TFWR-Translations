@@ -87,5 +87,6 @@
 @option_tooltip_keyboard_volume = Règle le volume des sons des touches du clavier en jeu.
 @option_tooltip_keyboard_sound = Son d'une pression de touche sur le clavier en jeu : Système = le clic du clavier de votre appareil, Mécanique = une touche de clavier mécanique.
 @option_tooltip_keyboard_vibration = Une courte vibration à chaque pression de touche sur le clavier en jeu.
+@option_tooltip_selection_menu = Le menu avec 'Couper', 'Copier' et 'Coller' au-dessus du texte sélectionné. Automatique = masqué tant que le clavier intégré est affiché ou qu'un clavier physique est connecté, car tous deux ont ces touches.
 @option_tooltip_keyboard_backlight = Lumière qui s'échappe sous les touches du clavier en jeu, blanche ou aux couleurs de l'arc-en-ciel (RGB), avec une onde lumineuse à chaque touche pressée.
 @option_tooltip_keyboard_squish = Rend les touches du clavier en jeu plus plates pour qu'il couvre moins l'écran. Au maximum, les touches font la moitié de leur hauteur normale.

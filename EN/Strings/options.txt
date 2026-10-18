@@ -103,6 +103,9 @@
 @Keyboard type = Keyboard Type
 @os = System
 @custom = In-Game
+@Selection menu = Selection Menu
+@automatic = Automatic
+@on = On
 @exit fullscreen on run = Exit Fullscreen on Run
 @30 fps = 30 FPS
 @60 fps = 60 FPS

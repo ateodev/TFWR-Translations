@@ -1,4 +1,4 @@
-@cloud_conflict_title = Conflito de salvamento na nuvem
+@cloud_conflict_title = Conflito na nuvem
 @cloud_conflict_message = Seus jogos salvos mudaram em mais de um aparelho.
 @cloud_conflict_versions_total = Versões no total: {0}
 @cloud_conflict_keep = Manter a versão {0}

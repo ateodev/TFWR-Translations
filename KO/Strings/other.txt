@@ -20,4 +20,6 @@
 @right_click_to_open_store = -- 상점을 열려면 우클릭하세요 --
 @tap_here_to_open_store = -- 상점을 열려면 여기를 탭하세요 --
 @tooltip_button_more_info = 자세히
+@tooltip_right_click_for_more_info = 자세히 보려면 우클릭하세요
+@tooltip_long_press_for_more_info = 자세히 보려면 길게 누르세요
 @loading_screen = 불러오는 중

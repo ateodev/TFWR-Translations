@@ -17,6 +17,8 @@
 @right_click_to_open_store = -- клацніть ПКМ, щоб відкрити магазин --
 @tap_here_to_open_store = -- натисніть тут, щоб відкрити магазин --
 @tooltip_button_more_info = Докладніше
+@tooltip_right_click_for_more_info = Клацни ПКМ, щоб дізнатися більше
+@tooltip_long_press_for_more_info = Утримуй, щоб дізнатися більше
 @loading_screen = Завантаження
 @new_hat_unlocked = ## Новий капелюх розблоковано
 `change_hat(`{0}`)`

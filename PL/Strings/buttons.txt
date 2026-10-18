@@ -15,3 +15,9 @@
 @max_level = Maks. poziom
 @unlock = Odblokuj
 @locked = Zablokowane
+@selection_cut = Wytnij
+@selection_copy = Kopiuj
+@selection_paste = Wklej
+@selection_search = Szukaj
+@selection_select = Zaznacz
+@selection_select_all = Zaznacz wszystko

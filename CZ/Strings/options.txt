@@ -97,6 +97,9 @@
 @Keyboard type = Typ klávesnice
 @os = Systémová
 @custom = Herní
+@Selection menu = Nabídka výběru
+@automatic = Automaticky
+@on = Zapnuto
 @exit fullscreen on run = Start zavře celou obrazovku
 @30 fps = 30 FPS
 @60 fps = 60 FPS

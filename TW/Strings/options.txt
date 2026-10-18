@@ -97,6 +97,9 @@
 @Keyboard type = 鍵盤類型
 @os = 系統
 @custom = 遊戲內
+@Selection menu = 選取選單
+@automatic = 自動
+@on = 開啟
 @exit fullscreen on run = 執行時離開全螢幕
 @30 fps = 30 FPS
 @60 fps = 60 FPS
