@@ -2,7 +2,7 @@
 ---
 # Eisensuche
 
-Vielleicht ist dir schon aufgefallen, dass Eisenerzadern manchmal schwer zu finden sind. Du könntest einfach auf gut Glück herumgraben, aber es gibt eine bessere Methode: Da Eisen magnetisch ist, können wir es aus großer Entfernung aufspüren.
+Vielleicht ist dir schon aufgefallen, dass Eisenerzadern manchmal schwer zu finden sind. Du könntest einfach auf gut Glück herumgraben, aber es gibt eine bessere Methode: Da Eisen magnetisch ist, können wir es aus der Entfernung aufspüren.
 
 Der Befehl `prospect_iron()` tut genau das. `prospect_iron()` gibt die Himmelsrichtung (`North`, `East`, `South` oder `West`) zurück, in die sich die Drohne bewegen müsste, um dem nächstgelegenen Eisenerz einen Schritt näher zu kommen. Die Ausführung des Befehls kostet 1 Kohle.
 

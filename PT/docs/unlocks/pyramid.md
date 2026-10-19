@@ -45,7 +45,7 @@ for i in range(6):
 
 Os blocos acima da pirâmide são sempre terra. Você pode usar esse fato para escavar uma pirâmide de forma mais eficiente que no código acima.
 
-Como pode ver, há vários buracos na areia que precisam ser preenchidos. Ao restaurar a pirâmide, ela se destrói e você recebe energia como recompensa.
+Como pode ver, há vários buracos na areia que precisam ser preenchidos. Ao preencher esses buracos e restaurar a pirâmide ao seu estado anterior, ela se destrói e um grande girassol surge no meio da base de calcário. Colha-o para receber energia. Quanto maior a pirâmide concluída, mais energia você recebe.
 
 Você pode restaurar uma pirâmide colocando blocos com `place(Grounds.Sand)`. A areia é um bloco especial que desmorona imediatamente sem apoio adequado. Cada bloco de areia deve ser colocado diretamente sobre calcário ou sobre uma área 3x3 de blocos de areia. Veja uma pequena pirâmide construída à mão. Construí-la você mesmo não rende energia:
 
@@ -88,11 +88,8 @@ place(Grounds.Sand)
 
 Uma pirâmide restaurada corretamente tem uma fundação quadrada de calcário com lados de comprimento ímpar, por exemplo 5x5. Acima há uma camada de areia do mesmo tamanho (5x5), seguida de camadas progressivamente menores: 3x3 e depois 1x1.
 
-Quando a pirâmide é concluída, ela desmorona e um grande girassol surge no centro. Colha-o para receber energia. Quanto maior a pirâmide, mais energia você recebe.
-
 ---
 
 [Estatísticas](docs/stats.md)      [Sentidos Subterrâneos](docs/unlocks/underground_senses.md)
 
 [move()](functions/move)      [dig()](functions/dig)      [use_item()](functions/use_item)      [place()](functions/place)
-

@@ -4,11 +4,11 @@
 ---
 # Hierro
 
-Has descubierto vetas de hierro en la capa de roca que hay debajo de la arcilla.
+Después de encontrar carbón en `Grounds.Dirt`, puedes excavar más hondo, más allá de la capa de `Grounds.Clay` y hasta `Grounds.Rock`, para encontrar hierro.
 
-Las vetas de hierro empiezan siendo pequeñas y necesitarás algo de suerte para encontrarlas. A medida que consigas niveles más altos de este desbloqueo, aumentará el tamaño máximo de las vetas. Si quieres una forma más fiable de encontrar hierro, también puedes echar un vistazo al desbloqueo de prospección de minerales.
+A diferencia de las vetas de carbón, las vetas de hierro también se extienden en vertical. Pero todos los bloques de hierro de una veta están siempre justo unos al lado de otros; nunca se conectan solo en diagonal.
 
-Las vetas de hierro siempre son continuas y no dan saltos diagonales. Si encuentras un bloque de hierro, busca más debajo o a su lado para asegurarte de recoger toda la veta.
+Pero las vetas de hierro empiezan siendo pequeñas y necesitarás algo de suerte para encontrarlas. Seguir desbloqueando el hierro aumenta el tamaño máximo de las vetas y hace que sea un poco más fácil encontrarlas por casualidad. Pero para encontrarlas de forma fiable, deberías desbloquear la [prospección de hierro](docs/unlocks/prospecting.md).
 
 {{codeexample 
 {

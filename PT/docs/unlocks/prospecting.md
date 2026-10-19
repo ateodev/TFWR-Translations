@@ -2,7 +2,7 @@
 ---
 # Prospecção de Ferro
 
-Talvez você tenha percebido que às vezes é difícil encontrar veios de ferro. Você poderia escavar ao acaso, mas existe uma forma melhor: como o ferro é magnético, podemos detectá-lo a longa distância.
+Talvez você tenha percebido que às vezes é difícil encontrar veios de ferro. Você poderia escavar ao acaso, mas existe uma forma melhor: como o ferro é magnético, podemos detectá-lo à distância.
 
 O comando `prospect_iron()` faz exatamente isso. `prospect_iron()` retorna a direção cardinal (`North`, `East`, `South` ou `West`) em que o drone deve se mover para dar um passo em direção ao minério de ferro mais próximo. O comando custa 1 carvão.
 

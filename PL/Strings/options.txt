@@ -30,6 +30,7 @@
 @UI volume = Głośność interfejsu
 @ambience volume = Głośność otoczenia
 @drone volume = Głośność drona
+@mute in background = Wycisz w tle
 @fps limit = Maks. FPS
 @autosave = Autozapis kodu
 @autosave progress = Autozapis postępu
@@ -109,6 +110,10 @@
 @30 fps = 30 FPS
 @60 fps = 60 FPS
 @120 fps = 120 FPS
+@automatic autocomplete = Automatyczne podpowiedzi
+@focus errors = Pokazuj błędy
+@window docking = Dokowanie okien
+@autocomplete = Autouzupełnianie
 @keyboard = Klawiatura
 @Keyboard volume = Głośność klawiatury
 @Keyboard sound = Dźwięk klawiszy

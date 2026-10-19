@@ -45,7 +45,7 @@ for i in range(6):
 
 Bloky nad pyramidou jsou vždy hlína. Pokud chceš pyramidu vykopat efektivněji než výše uvedený kód, můžeš toho využít.
 
-Jak vidíš, v písku je několik děr, které bude třeba zaplnit. Když tyto díry zaplníš a obnovíš pyramidu do původního stavu, sama se zničí a ty dostaneš jako odměnu energii.
+Jak vidíš, v písku je několik děr, které bude třeba zaplnit. Když tyto díry zaplníš a obnovíš pyramidu do původního stavu, sama se zničí a uprostřed vápencového základu se objeví velká slunečnice. Sklidíš ji a získáš energii. Čím větší pyramidu dokončíš, tím více energie dostaneš.
 
 Pyramidu obnovíš pokládáním bloků příkazem `place(Grounds.Sand)`. Písek je speciální blok, který se okamžitě sesune, když není správně podepřený. Blok písku musí být položen buď přímo na vápenec, nebo na čtverec 3x3 bloků písku. Pro ukázku malá ručně postavená pyramida. Vlastnoruční stavba ti samozřejmě žádnou energii nedá:
 
@@ -87,8 +87,6 @@ place(Grounds.Sand)
 }}
 
 Správně obnovená pyramida se skládá ze čtvercového vápencového základu s lichou délkou strany, například 5x5. Nad ním je vrstva bloků písku stejné velikosti (5x5) a pak postupně menší vrstvy: 3x3 a potom 1x1.
-
-Když je pyramida dokončena, rozpadne se a uprostřed se objeví velká slunečnice. Sklidíš ji a získáš energii. Čím větší pyramidu dokončíš, tím více energie dostaneš.
 
 ---
 

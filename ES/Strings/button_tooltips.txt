@@ -89,7 +89,12 @@
 @option_tooltip_keyboard_layout = Distribución de las teclas del teclado del juego. Por defecto, la del idioma de tu sistema.
 @option_tooltip_keyboard_type = Con qué teclado escribes el código. El teclado del juego tiene los símbolos que Python necesita; el teclado del sistema es el que usas en otras aplicaciones. Un teclado físico conectado se usa siempre en su lugar.
 @option_tooltip_exit_fullscreen_on_run = Al pulsar Empezar se sale del editor de código a pantalla completa y se muestra la granja. Los puntos de interrupción te llevan igualmente a la línea pausada.
+@option_tooltip_automatic_autocomplete = Muestra sugerencias de autocompletado automáticamente mientras escribes. La tecla de autocompletado sigue funcionando aunque esté desactivado.
+@option_tooltip_focus_errors = Mueve la cámara a los errores que aparecen fuera de la pantalla para que no te los pierdas.
+@option_tooltip_window_docking = Permite que las ventanas se acoplen entre sí al arrastrarlas una junto a otra.
+@keybind_tooltip_autocomplete = Abre la ventana de autocompletado de código.
 @option_tooltip_keyboard_volume = Ajusta el volumen de los sonidos de las teclas del teclado del juego.
+@option_tooltip_mute_in_background = Silencia todo el audio del juego mientras la ventana del juego no está en primer plano.
 @option_tooltip_keyboard_sound = Sonido al pulsar una tecla del teclado del juego: Sistema = el clic del teclado de tu dispositivo, Mecánico = una tecla de teclado mecánico.
 @option_tooltip_keyboard_vibration = Una vibración breve con cada pulsación de tecla del teclado del juego.
 @option_tooltip_selection_menu = El menú con 'Cortar', 'Copiar' y 'Pegar' sobre el texto seleccionado. Automático = oculto mientras se muestra el teclado del juego o hay un teclado físico conectado, ya que ambos tienen estas teclas.

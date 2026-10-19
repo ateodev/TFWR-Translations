@@ -30,6 +30,7 @@
 @UI volume = Hlasitost rozhraní
 @ambience volume = Hlasitost prostředí
 @drone volume = Hlasitost dronu
+@mute in background = Ztlumit na pozadí
 @fps limit = Max snímků za sekundu (FPS)
 @autosave = Automatické ukládání
 @autosave progress = Autom. ukládání postupu
@@ -108,6 +109,10 @@
 @30 fps = 30 FPS
 @60 fps = 60 FPS
 @120 fps = 120 FPS
+@automatic autocomplete = Automatické doplňování
+@focus errors = Ukázat chyby
+@window docking = Ukotvení oken
+@autocomplete = Doplňování
 @keyboard = Klávesnice
 @Keyboard volume = Hlasitost klávesnice
 @Keyboard sound = Zvuk kláves

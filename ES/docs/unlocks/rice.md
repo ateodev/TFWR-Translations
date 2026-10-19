@@ -4,9 +4,11 @@
 ---
 # Arroz
 
-Debajo de la superficie has observado una fina capa de arcilla. Resulta que este terreno fértil es perfecto para plantar brotes de arroz.
+Debajo de la superficie y de la capa de `Grounds.Dirt` puede que hayas visto una fina capa de `Grounds.Clay`. Resulta que este terreno fértil y empapado es perfecto para plantar brotes de arroz.
 
-El arroz secará la arcilla en la que lo plantes. Solo puedes usar cada bloque de arcilla una vez. Por suerte, la capa tiene varios bloques de grosor. Y, por supuesto, siempre puedes usar `clear()` para restaurar la capa de arcilla del mundo.
+Igual que con la hierba o los arbustos, mientras tu dron esté encima de un bloque de `Grounds.Clay`, puedes usar `plant(Entities.Rice)` para plantar brotes de arroz en la arcilla, luego `can_harvest()` para comprobar si el arroz ha crecido del todo y, por último, `harvest()` para obtener arroz.
+
+En cuanto plantas arroz, el terreno se convierte en `Grounds.Rice_Terrace` para ofrecer el entorno perfecto para que el arroz madure. Cuando el arroz ha crecido del todo, el terreno se seca, se convierte en `Grounds.Dry_Rice_Terrace` y ya no sirve para plantar más arroz. Por suerte, la capa tiene varios bloques de grosor, así que puedes quitar el bloque con `dig()` y plantar arroz nuevo en la `Grounds.Clay` de debajo. Y, si la capa se agota, siempre puedes usar `clear()` en el mundo y excavar hasta una capa nueva.
 
 El siguiente código puede resultarte útil para excavar hacia abajo hasta encontrar arcilla.
 

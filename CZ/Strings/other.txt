@@ -1,6 +1,8 @@
 @word_number = číslo
 @word_direction = směr
 @run_cancelled = Spuštění selhalo
+@run_completed = Spuštění dokončeno
+@leaderboard_time_limit = Čas překračuje limit žebříčku
 @average_text = Dokončeno {0} běhů ({2:F1}%)
 {1}
 @average_text2 = Dokončeno {0} běhů

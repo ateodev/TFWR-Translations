@@ -5,6 +5,10 @@
 @button_tooltip_discord = 加入 Discord 與其他玩家和開發者交流、報告 bug 或尋求幫助。
 @button_tooltip_execute = 開始或停止執行此視窗中的程式碼。
 @button_tooltip_step_by_step = 執行單步程式碼。
+@button_tooltip_stop_execution = 停止執行。
+@button_tooltip_pause_execution = 暫停執行。
+@button_tooltip_resume_execution = 繼續執行。
+@button_tooltip_next_step = 執行下一步。
 @button_tooltip_new_function = 建立新的程式碼檔案。
 @button_tooltip_new_info_window = 開啟新的資訊視窗。
 @button_tooltip_minimize = 最小化此視窗。
@@ -21,6 +25,7 @@
 @button_tooltip_previous_search = 前往上一個相符的搜尋詞。
 @button_tooltip_close_search = 關閉搜尋選單。
 @button_tooltip_open_unlock_menu = 開啟科技樹。
+@button_tooltip_open_farm = 返回農場。
 @warning_icon_tooltip = 你的程式碼觸發了警告。按一下圖示在輸出視窗中檢視詳情。
 @warning_icon_tooltip_mobile = 你的程式碼觸發了警告。點選圖示可在「輸出」視窗中查看詳細資訊。
 @option_tooltip_graphics = 影響各種渲染管線設定，如陰影、環境光遮蔽和泛光。
@@ -83,7 +88,12 @@
 @option_tooltip_keyboard_layout = 遊戲內鍵盤的按鍵排列。預設使用你系統語言對應的配置。
 @option_tooltip_keyboard_type = 用哪種鍵盤輸入程式碼。遊戲內鍵盤具備 Python 所需的全部符號；系統鍵盤則是你在其他應用程式中使用的鍵盤。連接實體鍵盤時一律優先使用實體鍵盤。
 @option_tooltip_exit_fullscreen_on_run = 按下執行時離開全螢幕程式碼編輯器並顯示農場。中斷點仍會帶你前往暫停的那一行。
+@option_tooltip_automatic_autocomplete = 輸入時自動顯示自動完成建議。關閉後，自動完成的按鍵仍然可用。
+@option_tooltip_focus_errors = 將鏡頭移到出現在畫面外的錯誤處，以免你錯過。
+@option_tooltip_window_docking = 拖曳視窗靠在一起時，允許它們互相停靠。
+@keybind_tooltip_autocomplete = 開啟程式碼自動完成視窗。
 @option_tooltip_keyboard_volume = 調整遊戲內鍵盤按鍵音的音量。
+@option_tooltip_mute_in_background = 遊戲視窗失去焦點時，將所有遊戲音訊靜音。
 @option_tooltip_keyboard_sound = 按下遊戲內鍵盤按鍵時的聲音：系統 = 裝置內建鍵盤的點擊聲，機械 = 機械鍵盤的按鍵聲。
 @option_tooltip_keyboard_vibration = 每次按下遊戲內鍵盤的按鍵時短暫震動。
 @option_tooltip_selection_menu = 選取文字上方的「剪下」、「拷貝」和「貼上」選單。自動 = 顯示遊戲內鍵盤或連接實體鍵盤時隱藏，因為兩者都有這些按鍵。

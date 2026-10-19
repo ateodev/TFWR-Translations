@@ -4,11 +4,11 @@
 ---
 # Żelazo
 
-Odkryłeś żyły żelaza w warstwie skał pod gliną.
+Po znalezieniu węgla w `Grounds.Dirt` możesz kopać głębiej, przez warstwę `Grounds.Clay` aż do `Grounds.Rock`, aby znaleźć żelazo.
 
-Żyły żelaza są początkowo małe, a ich znalezienie wymaga odrobiny szczęścia. Kolejne poziomy tego odblokowania zwiększają maksymalny rozmiar żyły rudy. Jeśli potrzebujesz bardziej niezawodnej metody znajdowania żelaza, sprawdź także odblokowanie poszukiwania rud.
+W przeciwieństwie do żył węgla żyły żelaza rozciągają się także pionowo. Ale wszystkie bloki żelaza w żyle zawsze przylegają bezpośrednio do siebie; bloki nigdy nie łączą się wyłącznie po przekątnej.
 
-Żyła żelaza jest zawsze ciągła i nie łączy się po przekątnej. Jeśli znajdziesz kawałek żelaza, szukaj kolejnych pod nim lub obok niego, aby wydobyć całą żyłę.
+Żyły żelaza są jednak początkowo małe, a ich znalezienie wymaga odrobiny szczęścia. Dalsze odblokowywanie żelaza zwiększa maksymalny rozmiar żył i sprawia, że trochę łatwiej trafić na nie przypadkiem. Aby jednak znajdować je niezawodnie, odblokuj [poszukiwanie żelaza](docs/unlocks/prospecting.md).
 
 {{codeexample 
 {

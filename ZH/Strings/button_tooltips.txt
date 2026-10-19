@@ -88,7 +88,12 @@
 @option_tooltip_keyboard_layout = 游戏内键盘的按键排列。默认使用你的系统语言对应的布局。
 @option_tooltip_keyboard_type = 用哪种键盘编写代码。游戏内键盘带有 Python 所需的全部符号；系统键盘就是你在其他应用中使用的键盘。连接了实体键盘时总是优先使用实体键盘。
 @option_tooltip_exit_fullscreen_on_run = 按下运行时退出全屏代码编辑器并显示农场。断点仍会把你带到暂停的那一行。
+@option_tooltip_automatic_autocomplete = 输入时自动显示自动补全建议。关闭后，自动补全快捷键仍然可用。
+@option_tooltip_focus_errors = 将镜头移到出现在屏幕外的错误处，以免你错过。
+@option_tooltip_window_docking = 拖动窗口靠在一起时允许它们相互停靠。
+@keybind_tooltip_autocomplete = 打开代码自动补全窗口。
 @option_tooltip_keyboard_volume = 调整游戏内键盘按键音的音量。
+@option_tooltip_mute_in_background = 游戏窗口失去焦点时静音所有游戏音频。
 @option_tooltip_keyboard_sound = 按下游戏内键盘按键时的声音：系统 = 设备自带键盘的点击声，机械 = 机械键盘的按键声。
 @option_tooltip_keyboard_vibration = 每次按下游戏内键盘的按键时短暂振动。
 @option_tooltip_selection_menu = 选中文字上方带有“剪切”、“拷贝”和“粘贴”的菜单。自动 = 显示游戏内键盘或连接实体键盘时隐藏，因为两者都有这些按键。

@@ -30,6 +30,7 @@
 @UI volume = UI音量
 @ambience volume = 環境音量
 @drone volume = ドローン音量
+@mute in background = バックグラウンドでミュート
 @fps limit = 最大フレームレート
 @autosave = コード自動セーブ
 @autosave progress = 進行状況自動セーブ
@@ -108,6 +109,10 @@
 @30 fps = 30 FPS
 @60 fps = 60 FPS
 @120 fps = 120 FPS
+@automatic autocomplete = 自動補完を自動表示
+@focus errors = エラーを表示
+@window docking = ウィンドウのドッキング
+@autocomplete = 自動補完
 @keyboard = キーボード
 @Keyboard volume = キーボード音量
 @Keyboard sound = キー音

@@ -2,13 +2,13 @@
 ---
 # 알록달록 블록
 
-이미 알고 있듯이 `place()`를 사용하면 드론에게 블록을 배치하도록 할 수 있습니다. 이 해금 항목으로 주변과 시각적으로 구분되는 색상 블록을 추가할 수 있습니다.
+이미 알고 있듯이 `place()`를 사용하면 드론에게 블록을 배치하도록 할 수 있습니다. 이 해금 항목으로 주변과 시각적으로 구분되는 세 가지 색상 블록 `Grounds.Red_Block`, `Grounds.Green_Block`, `Grounds.Blue_Block`을 추가할 수 있습니다.
 
 새 블록을 배치하려면
 
 {{codeexample 
 {
-    "camera_position": {"x": -1, "y": 0, "z": 8},
+    "camera_position": {"x": -1, "y": 0, "z": 10},
     "show_image": true,
     "image_size": {"x": 800, "y": 300},
     "show_code": true,
@@ -16,9 +16,9 @@
     "show_output": false,
     "collapsing": false,
     "autoplay": true,
-    "items": [{"item": "hay", "n": 100}, {"item": "wood", "n": 100}],
-    "world_size": {"x": 4, "y": 4},
-    "execution_speed": 1,
+    "items": [{"item": "block", "n": 100}],
+    "world_size": {"x": 5, "y": 5},
+    "execution_speed": 5,
     "digging_speed": 4,
     "action_ticks": 200,
     "operation_ticks": 200,
@@ -29,13 +29,35 @@
 #SETUP
 move(East)
 move(North)
-dig()
-dig()
-dig()
 #CODE
-place(Grounds.Red_Block)
 place(Grounds.Green_Block)
+move(East)
+
 place(Grounds.Blue_Block)
+move(East)
+
+place(Grounds.Green_Block)
+move(North)
+
+place(Grounds.Blue_Block)
+move(North)
+
+place(Grounds.Green_Block)
+move(West)
+
+place(Grounds.Blue_Block)
+move(West)
+
+place(Grounds.Green_Block)
+move(South)
+
+place(Grounds.Blue_Block)
+move(East)
+
+place(Grounds.Red_Block)
+place(Grounds.Red_Block)
+
+do_a_flip()
 }}
 ---
 

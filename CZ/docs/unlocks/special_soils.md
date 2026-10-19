@@ -10,7 +10,7 @@ Perlit vyhovuje rostlinám, které mají rády vzdušnou půdu: kaktusům, bambu
 
 Úrodná hlína vyhovuje mrkvi a slunečnicím. Zasazené tam dávají dvojnásobný výnos.
 
-Další výhodou perlitu a úrodné hlíny je, že před sázením plodin, kterým tyto půdy vyhovují, nemusíš volat `till()`.
+Další výhodou perlitu a úrodné hlíny je, že jsou hned připravené k sázení. Na rozdíl od `Grounds.Grassland`, který musíš nejdřív pomocí `till()` změnit na `Grounds.Soil`.
 
 ---
 

@@ -89,7 +89,12 @@
 @option_tooltip_keyboard_layout = Disposizione dei tasti della tastiera del gioco. Per impostazione predefinita, quella della lingua del tuo sistema.
 @option_tooltip_keyboard_type = Con quale tastiera scrivi il codice. La tastiera del gioco ha i simboli di cui Python ha bisogno; la tastiera di sistema è quella che usi nelle altre app. Una tastiera fisica collegata viene sempre usata al loro posto.
 @option_tooltip_exit_fullscreen_on_run = Premendo Avvia si esce dall'editor di codice a schermo intero e si mostra la fattoria. I breakpoint ti portano comunque alla riga in pausa.
+@option_tooltip_automatic_autocomplete = Mostra i suggerimenti di completamento automaticamente mentre scrivi. Il tasto del completamento funziona anche quando è disattivato.
+@option_tooltip_focus_errors = Sposta la telecamera sugli errori che compaiono fuori dallo schermo, così non te li perdi.
+@option_tooltip_window_docking = Permette alle finestre di agganciarsi tra loro quando le trascini una vicino all'altra.
+@keybind_tooltip_autocomplete = Apri la finestra di completamento del codice.
 @option_tooltip_keyboard_volume = Regola il volume dei suoni dei tasti della tastiera di gioco.
+@option_tooltip_mute_in_background = Silenzia tutto l'audio del gioco quando la finestra del gioco non è in primo piano.
 @option_tooltip_keyboard_sound = Suono alla pressione di un tasto della tastiera di gioco: Sistema = il clic della tastiera del tuo dispositivo, Meccanico = il tasto di una tastiera meccanica.
 @option_tooltip_keyboard_vibration = Una breve vibrazione a ogni pressione di un tasto della tastiera di gioco.
 @option_tooltip_selection_menu = Il menu con 'Taglia', 'Copia' e 'Incolla' sopra il testo selezionato. Automatico = nascosto mentre è visibile la tastiera del gioco o è collegata una tastiera fisica, perché entrambe hanno questi tasti.

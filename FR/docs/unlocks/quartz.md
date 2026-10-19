@@ -2,7 +2,9 @@
 ---
 # Quartz
 
-Le quartz pousse en filons en forme d’aiguilles près du bas de la couche rocheuse et dans la terre dure située dessous. Ces filons forment des colonnes verticales, ce qui les rend assez difficiles à trouver au hasard.
+En continuant après les filons de fer dans `Grounds.Rock`, tu trouves du quartz dans la partie basse de la couche rocheuse et dans la `Grounds.Dirt` dure située dessous (vérifie la dureté avec `get_hardness()` du déblocage [Sens souterrains](docs/unlocks/underground_senses.md)).
+
+Le quartz pousse en filons en forme d’aiguilles qui forment des colonnes verticales, ce qui les rend assez difficiles à trouver au hasard.
 
 Heureusement, nous pouvons utiliser notre fer et le tordre pour fabriquer une sorte de baguette de sourcier qui facilite la localisation de ces filons de quartz. La commande correspondante est `prospect_quartz()`.
 
@@ -43,6 +45,10 @@ do_a_flip()
 do_a_flip()
 print(prospect_quartz())
 }}
+
+Tu peux prospecter et te déplacer à plusieurs reprises et observer comment la distance change, pour savoir si tu te rapproches ou t’éloignes d’un filon. Tu peux utiliser la géométrie 2D pour trouver l’intersection de deux cercles ou plus, afin de connaître la position horizontale d’un filon et creuser vers le bas. Ou tu peux utiliser une trilatération complète pour intersecter trois sphères et trouver la position 3D exacte.
+
+Note qu’il n’existe aucune fonction mathématique de base pour la racine carrée, la trigonométrie ou les vecteurs : tu devras les écrire toi-même. Note aussi qu’il peut y avoir plusieurs filons à proximité : si tu prends plusieurs mesures proches, elles ne pointent peut-être pas vers le même filon et peuvent t’induire en erreur.
 
 ---
 

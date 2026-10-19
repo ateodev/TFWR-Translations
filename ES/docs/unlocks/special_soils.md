@@ -10,7 +10,7 @@ La perlita es adecuada para las plantas que prefieren suelos aireados: cactus, b
 
 El suelo franco es adecuado para las zanahorias y los girasoles. Producen el doble de rendimiento cuando se plantan en él.
 
-Otra ventaja de la perlita y el suelo franco es que no necesitas llamar a `till()` antes de plantar los cultivos adecuados para esos suelos.
+Otra ventaja de la perlita y el suelo franco es que están listos para plantar de inmediato. A diferencia de `Grounds.Grassland`, que primero tienes que convertir en `Grounds.Soil` con `till()`.
 
 ---
 

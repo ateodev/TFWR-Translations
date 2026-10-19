@@ -2,13 +2,13 @@
 ---
 # Barevné bloky
 
-Jak už víš, pomocí `place()` může dron položit blok. Toto odemčení přidává barevné bloky, které se vizuálně odlišují od svého okolí.
+Jak už víš, pomocí `place()` může dron položit blok. Toto odemčení přidává tři barevné bloky, které se vizuálně odlišují od svého okolí: `Grounds.Red_Block`, `Grounds.Green_Block` a `Grounds.Blue_Block`.
 
 Jak položit nové bloky:
 
 {{codeexample 
 {
-    "camera_position": {"x": -1, "y": 0, "z": 8},
+    "camera_position": {"x": -1, "y": 0, "z": 10},
     "show_image": true,
     "image_size": {"x": 800, "y": 300},
     "show_code": true,
@@ -16,9 +16,9 @@ Jak položit nové bloky:
     "show_output": false,
     "collapsing": false,
     "autoplay": true,
-    "items": [{"item": "hay", "n": 100}, {"item": "wood", "n": 100}],
-    "world_size": {"x": 4, "y": 4},
-    "execution_speed": 1,
+    "items": [{"item": "block", "n": 100}],
+    "world_size": {"x": 5, "y": 5},
+    "execution_speed": 5,
     "digging_speed": 4,
     "action_ticks": 200,
     "operation_ticks": 200,
@@ -29,13 +29,35 @@ Jak položit nové bloky:
 #SETUP
 move(East)
 move(North)
-dig()
-dig()
-dig()
 #CODE
-place(Grounds.Red_Block)
 place(Grounds.Green_Block)
+move(East)
+
 place(Grounds.Blue_Block)
+move(East)
+
+place(Grounds.Green_Block)
+move(North)
+
+place(Grounds.Blue_Block)
+move(North)
+
+place(Grounds.Green_Block)
+move(West)
+
+place(Grounds.Blue_Block)
+move(West)
+
+place(Grounds.Green_Block)
+move(South)
+
+place(Grounds.Blue_Block)
+move(East)
+
+place(Grounds.Red_Block)
+place(Grounds.Red_Block)
+
+do_a_flip()
 }}
 ---
 

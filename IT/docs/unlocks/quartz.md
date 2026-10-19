@@ -2,7 +2,9 @@
 ---
 # Quarzo
 
-Il quarzo cresce in vene a forma di ago vicino al fondo dello strato di roccia e nella terra dura sottostante. Le vene formano colonne verticali, perciò sono piuttosto difficili da trovare procedendo per tentativi.
+Proseguendo dalle vene di ferro in `Grounds.Rock`, trovi il quarzo nella parte inferiore dello strato di roccia e nella `Grounds.Dirt` dura sottostante (controlla la durezza con `get_hardness()` dello sblocco [Sensi Sotterranei](docs/unlocks/underground_senses.md)).
+
+Il quarzo cresce in vene a forma di ago che formano colonne verticali, perciò sono piuttosto difficili da trovare procedendo per tentativi.
 
 Per fortuna possiamo prendere il ferro e deformarlo fino a ottenere qualcosa di simile a una bacchetta da rabdomante, così da individuare più facilmente le vene di quarzo. Il comando apposito è `prospect_quartz()`.
 
@@ -43,6 +45,10 @@ do_a_flip()
 do_a_flip()
 print(prospect_quartz())
 }}
+
+Puoi fare prospezioni e spostarti più volte e osservare come cambia la distanza, per capire se ti stai avvicinando o allontanando da una vena. Puoi usare la geometria 2D per trovare l'intersezione tra due o più cerchi, così da individuare la posizione orizzontale di una vena e scavare verso il basso. Oppure puoi usare la trilaterazione completa per intersecare tre sfere e trovare la posizione 3D esatta.
+
+Nota che non esistono funzioni matematiche di base per la radice quadrata, la trigonometria o i vettori: dovrai implementarle da solo. Nota anche che nelle vicinanze possono esserci più vene, quindi se fai più misurazioni vicine, potrebbero non puntare alla stessa vena e portarti fuori strada.
 
 ---
 

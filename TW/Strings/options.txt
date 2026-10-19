@@ -30,6 +30,7 @@
 @UI volume = UI 音量
 @ambience volume = 環境音量
 @drone volume = 無人機音量
+@mute in background = 背景時靜音
 @fps limit = 最高影格率
 @autosave = 自動儲存程式碼
 @autosave progress = 自動存檔
@@ -108,6 +109,10 @@
 @30 fps = 30 FPS
 @60 fps = 60 FPS
 @120 fps = 120 FPS
+@automatic autocomplete = 自動顯示自動完成
+@focus errors = 顯示錯誤
+@window docking = 視窗停靠
+@autocomplete = 自動完成
 @keyboard = 鍵盤
 @Keyboard volume = 鍵盤音量
 @Keyboard sound = 按鍵音

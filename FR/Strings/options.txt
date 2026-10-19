@@ -30,6 +30,7 @@
 @UI volume = Volume UI
 @ambience volume = Volume Ambiance
 @drone volume = Volume Drone
+@mute in background = Muet en arrière-plan
 @fps limit = IPS max
 @autosave = Sauvegarde auto code
 @autosave progress = Sauvegarde auto jeu
@@ -109,6 +110,10 @@
 @30 fps = 30 IPS
 @60 fps = 60 IPS
 @120 fps = 120 IPS
+@automatic autocomplete = Autocomplétion automatique
+@focus errors = Montrer les erreurs
+@window docking = Ancrage des fenêtres
+@autocomplete = Autocomplétion
 @keyboard = Clavier
 @Keyboard volume = Volume du clavier
 @Keyboard sound = Son des touches

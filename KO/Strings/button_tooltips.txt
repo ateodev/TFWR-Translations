@@ -89,7 +89,12 @@
 @option_tooltip_keyboard_layout = 게임 내 키보드의 키 배열입니다. 기본값은 시스템 언어의 배열입니다.
 @option_tooltip_keyboard_type = 코드를 입력할 키보드입니다. 게임 내 키보드에는 Python에 필요한 기호가 있고, 시스템 키보드는 다른 앱에서 쓰는 키보드입니다. 하드웨어 키보드가 연결되어 있으면 항상 그것을 대신 사용합니다.
 @option_tooltip_exit_fullscreen_on_run = 시작을 누르면 전체 화면 코드 편집기를 벗어나 농장을 보여줍니다. 중단점에서는 여전히 멈춘 줄로 이동합니다.
+@option_tooltip_automatic_autocomplete = 입력하는 동안 자동 완성 제안을 자동으로 표시합니다. 꺼져 있어도 자동 완성 단축키는 계속 작동합니다.
+@option_tooltip_focus_errors = 화면 밖에서 발생한 오류로 카메라를 이동해 놓치지 않게 합니다.
+@option_tooltip_window_docking = 창을 서로 끌어다 붙이면 도킹되도록 합니다.
+@keybind_tooltip_autocomplete = 코드 자동 완성 창을 엽니다.
 @option_tooltip_keyboard_volume = 게임 키보드의 키 소리 음량을 조절합니다.
+@option_tooltip_mute_in_background = 게임 창이 활성화되지 않은 동안 모든 게임 오디오를 음소거합니다.
 @option_tooltip_keyboard_sound = 게임 키보드의 키를 누를 때 나는 소리: 시스템 = 기기 키보드의 클릭 소리, 기계식 = 기계식 키보드의 키 소리.
 @option_tooltip_keyboard_vibration = 게임 키보드의 키를 누를 때마다 짧게 진동합니다.
 @option_tooltip_selection_menu = 선택한 텍스트 위에 '오려두기', '복사하기', '붙여넣기'가 있는 메뉴입니다. 자동 = 게임 키보드가 표시되거나 하드웨어 키보드가 연결되어 있으면 숨김. 두 키보드 모두 이 키가 있기 때문입니다.

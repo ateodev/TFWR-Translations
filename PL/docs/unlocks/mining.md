@@ -49,7 +49,9 @@ Aby wrócić na powierzchnię, możesz w dowolnym momencie użyć `clear()`. Prz
 
 W miarę kopania w dół zauważysz, że bloki stają się twardsze, przez co kopanie zajmuje więcej czasu. Na szczęście możemy ulepszyć wiertło!
 
-Za pomocą `get_hardness()` możesz sprawdzić twardość bloku pod dronem. Jeśli trafisz na obszar wyjątkowo twardych bloków, warto go ominąć, aby szybciej posuwać się naprzód:
+Aby pomóc dronowi zorientować się pod ziemią, szybko odblokuj [podziemne zmysły](docs/unlocks/underground_senses.md). Pozwolą mu sprawdzać własną pozycję z, a także rodzaj podłoża pod nim, jego twardość i stabilność.
+
+Na przykład dzięki [podziemnym zmysłom](docs/unlocks/underground_senses.md) możesz za pomocą `get_hardness()` sprawdzić twardość bloku pod dronem. Jeśli trafisz na obszar wyjątkowo twardych bloków, warto go ominąć, aby szybciej posuwać się naprzód:
 
 `while True:
         if get_hardness() < 5:

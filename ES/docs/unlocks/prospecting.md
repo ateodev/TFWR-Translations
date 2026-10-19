@@ -2,7 +2,7 @@
 ---
 # Prospección de hierro
 
-Puede que hayas notado que a veces cuesta encontrar vetas de hierro. Podrías excavar por todas partes y confiar en encontrarlas por casualidad, pero hay una forma mejor: como el hierro es magnético, podemos detectarlo desde lejos.
+Puede que hayas notado que a veces cuesta encontrar vetas de hierro. Podrías excavar por todas partes y confiar en encontrarlas por casualidad, pero hay una forma mejor: como el hierro es magnético, podemos detectarlo a distancia.
 
 El comando `prospect_iron()` sirve precisamente para eso. `prospect_iron()` devuelve la dirección cardinal (`North`, `East`, `South` o `West`) en la que tendría que moverse el dron para dar un paso hacia el mineral de hierro más cercano. Ejecutar el comando cuesta 1 carbón.
 

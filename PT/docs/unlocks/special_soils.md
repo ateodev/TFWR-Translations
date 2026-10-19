@@ -10,7 +10,7 @@ A perlita é adequada para plantas que gostam de solos arejados: cactos, bambus,
 
 O solo franco é adequado para cenouras e girassóis. Eles produzem o dobro quando plantados nele.
 
-Outra vantagem da perlita e do solo franco é que você não precisa chamar `till()` antes de plantar culturas adequadas a esses solos.
+Outra vantagem da perlita e do solo franco é que eles ficam prontos para o plantio na hora. Ao contrário de `Grounds.Grassland`, que você precisa primeiro transformar em `Grounds.Soil` com `till()`.
 
 ---
 

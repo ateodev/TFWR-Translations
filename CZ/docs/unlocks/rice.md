@@ -4,9 +4,11 @@
 ---
 # Rýže
 
-Pod povrchem sis všiml tenké vrstvy jílu. Ukazuje se, že tahle úrodná půda je ideální pro sázení sazenic rýže.
+Pod povrchem a vrstvou `Grounds.Dirt` sis možná všiml tenké vrstvy `Grounds.Clay`. Ukazuje se, že tahle úrodná a nasáklá půda je ideální pro sázení sazenic rýže.
 
-Rýže vysuší jíl, na kterém byla zasazena. Každý blok jílu lze použít jen jednou. Naštěstí je vrstva několik bloků tlustá. A samozřejmě můžeš svět vždy prostě vyčistit pomocí `clear()` a vrstvu jílu tak získat zpět.
+Stejně jako u trávy nebo keřů můžeš, dokud je dron nad blokem `Grounds.Clay`, pomocí `plant(Entities.Rice)` zasadit sazenice rýže do jílu, pak pomocí `can_harvest()` zkontrolovat, jestli rýže úplně vyrostla, a nakonec pomocí `harvest()` rýži sklidit.
+
+Jakmile zasadíš rýži, půda se změní na `Grounds.Rice_Terrace`, aby rýže měla ideální prostředí k dozrání. Když rýže úplně vyroste, půda vyschne, změní se na `Grounds.Dry_Rice_Terrace` a už se na ni nedá sázet další rýže. Naštěstí je vrstva několik bloků tlustá, takže můžeš blok odstranit pomocí `dig()` a zasadit novou rýži na `Grounds.Clay` pod ním. A když vrstva dojde, můžeš svět vždy vyčistit pomocí `clear()` a prokopat se k nové vrstvě.
 
 Následující kód se ti může hodit ke kopání dolů, dokud nenajdeš jíl.
 

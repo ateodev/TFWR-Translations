@@ -2,7 +2,7 @@
 ---
 # Hledání železa
 
-Možná sis všiml, že železné žíly je někdy těžké najít. Mohl bys kopat kolem a zkoušet je najít náhodou, ale existuje lepší způsob: železo je magnetické, takže ho můžeme najít z velké dálky.
+Možná sis všiml, že železné žíly je někdy těžké najít. Mohl bys kopat kolem a zkoušet je najít náhodou, ale existuje lepší způsob: železo je magnetické, takže ho můžeme najít na dálku.
 
 Přesně to dělá příkaz `prospect_iron()`. `prospect_iron()` vrací světovou stranu (`North`, `East`, `South` nebo `West`), kterou by se dron musel vydat, aby udělal krok k nejbližší železné rudě. Provedení příkazu stojí 1 uhlí.
 

@@ -4,9 +4,11 @@
 ---
 # Reis
 
-Unter der Oberfläche hast du eine dünne Tonschicht entdeckt. Wie sich herausstellt, eignet sich dieser fruchtbare Boden perfekt zum Pflanzen von Reissetzlingen.
+Unter der Oberfläche und der Schicht aus `Grounds.Dirt` ist dir vielleicht eine dünne Schicht aus `Grounds.Clay` aufgefallen. Wie sich herausstellt, eignet sich dieser fruchtbare und durchnässte Boden perfekt zum Pflanzen von Reissetzlingen.
 
-Reis trocknet den Ton aus, auf dem er gepflanzt wurde. Du kannst jeden Tonblock nur einmal verwenden. Zum Glück ist die Schicht mehrere Blöcke dick. Und natürlich kannst du jederzeit mit `clear()` die Welt zurücksetzen, um die Tonschicht wiederherzustellen.
+Wie bei Gras oder Büschen kannst du, solange deine Drohne über einem `Grounds.Clay`-Block ist, mit `plant(Entities.Rice)` Reissetzlinge in den Ton pflanzen, dann mit `can_harvest()` prüfen, ob der Reis ausgewachsen ist, und schließlich mit `harvest()` Reis ernten.
+
+Sobald du Reis pflanzt, wird der Boden zu `Grounds.Rice_Terrace`, damit der Reis perfekt reifen kann. Ist der Reis ausgewachsen, trocknet der Boden aus, wird zu `Grounds.Dry_Rice_Terrace` und kann nicht mehr für neuen Reis verwendet werden. Zum Glück ist die Schicht mehrere Blöcke dick, sodass du den Block mit `dig()` abtragen und neuen Reis auf dem `Grounds.Clay` darunter pflanzen kannst. Und wenn die Schicht aufgebraucht ist, kannst du jederzeit mit `clear()` die Welt zurücksetzen und zu einer frischen Schicht hinuntergraben.
 
 Der folgende Code könnte dir helfen, nach unten zu graben, bis du Ton findest.
 

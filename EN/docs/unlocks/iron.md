@@ -4,11 +4,11 @@
 ---
 # Iron
 
-You've discovered iron veins in the stone layer below the clay.
+After finding coal in `Grounds.Dirt`, you can dig further down past the `Grounds.Clay` layer and into `Grounds.Rock` to find iron.
 
-Iron veins start small and you'll need some luck to find them. As you gain higher levels in this unlock, the maximum size of an ore vein increases. For a more consistent way to find iron, you may also want to look at the ore prospecting unlock.
+In contrast to coal veins, iron veins also extend vertically. But all iron blocks in a vein are always directly adjacent to each other, the blocks never connect only diagonally.
 
-An iron vein is always continuous, with no diagonal jumps. If you find a piece of iron, look for more below or next to it to ensure you collect the whole vein.
+But iron veins start small and you'll need some luck to find them. Further unlocking iron will increase the maximum vein size and make them a bit easier to find by chance. But to find them reliably, you should unlock [prospecting](docs/unlocks/prospecting.md).
 
 {{codeexample 
 {

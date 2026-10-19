@@ -45,7 +45,7 @@ for i in range(6):
 
 Bloki nad piramidą są zawsze ziemią. Możesz wykorzystać ten fakt, aby odkopać piramidę wydajniej niż w powyższym kodzie.
 
-Jak widać, w piasku znajduje się kilka dziur, które trzeba wypełnić. Gdy uzupełnisz braki i przywrócisz piramidę do pierwotnego stanu, konstrukcja rozpadnie się, a ty otrzymasz energię w nagrodę.
+Jak widać, w piasku znajduje się kilka dziur, które trzeba wypełnić. Gdy uzupełnisz braki i przywrócisz piramidę do pierwotnego stanu, konstrukcja rozpadnie się, a pośrodku wapiennej podstawy pojawi się duży słonecznik. Zbierz go, aby otrzymać energię. Im większa ukończona piramida, tym więcej energii otrzymasz.
 
 Piramidę można odnowić, umieszczając bloki poleceniem `place(Grounds.Sand)`. Piasek to specjalny blok, który natychmiast się zawali, jeśli nie ma odpowiedniego podparcia. Każdy blok piasku musi leżeć bezpośrednio na wapieniu albo na powierzchni 3x3 z bloków piasku. Oto mała ręcznie zbudowana piramida pokazowa. Oczywiście samodzielne zbudowanie jej nie daje energii:
 
@@ -87,8 +87,6 @@ place(Grounds.Sand)
 }}
 
 Prawidłowo odnowiona piramida ma kwadratowy fundament z wapienia o nieparzystej długości boku, na przykład 5x5. Nad nim znajduje się warstwa bloków piasku tego samego rozmiaru (5x5), a następnie coraz mniejsze warstwy: 3x3 i 1x1.
-
-Po ukończeniu piramida rozpada się, a pośrodku pojawia się duży słonecznik. Możesz go zebrać, aby otrzymać energię. Im większa ukończona piramida, tym więcej energii otrzymasz.
 
 ---
 

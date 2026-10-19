@@ -49,7 +49,9 @@ clear()
 
 越往下挖，地块越坚硬，挖掘所需的时间也越长。好在可以升级钻头来应对！
 
-使用 `get_hardness()` 可以检查下方地块的硬度。如果遇到特别坚硬的一片地块，不妨绕过去，以便更快取得进展：
+为了让无人机看懂地下的情况，你应该尽快解锁[地下感官](docs/unlocks/underground_senses.md)。这样它就能检查自身的 z 坐标，以及下方地块的类型、硬度和稳定性。
+
+例如，有了[地下感官](docs/unlocks/underground_senses.md)，你就可以使用 `get_hardness()` 检查下方地块的硬度。如果遇到特别坚硬的一片地块，不妨绕过去，以便更快取得进展：
 
 `while True:
         if get_hardness() < 5:

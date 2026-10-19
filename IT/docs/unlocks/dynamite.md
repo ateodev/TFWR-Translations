@@ -4,11 +4,11 @@
 
 Il rivoluzionario esplosivo lasciato dalle precedenti spedizioni minerarie. Per (s)fortuna, la tua trivella è perfetta per far esplodere la dinamite e spazzare via tutti i blocchi intorno a te.
 
-Per estrarre la dinamite in sicurezza devi trovare il doppio strato di `Grounds.Dynamite` e `Grounds.Soot`. Il terreno di dinamite superiore è ormai vecchio e alcuni blocchi possono essere scavati senza pericolo. Una parte della dinamite, però, è ancora attiva ed esploderà quando viene scavata.
+Per estrarre la dinamite in sicurezza, trova uno strato di `Grounds.Dynamite` seguito direttamente da un altro strato di `Grounds.Soot` sotto di esso. Lo strato di dinamite superiore è ormai vecchio e alcuni dei suoi blocchi possono essere scavati senza pericolo. Alcuni blocchi di dinamite, però, sono ancora attivi ed esploderanno quando li scavi.
 
 {{codeexample 
 {
-    "camera_position": {"x": -3, "y": -3, "z": 12},
+    "camera_position": {"x": -5, "y": 0, "z": 15},
     "show_image": true,
     "image_size": {"x": 900, "y": 500},
     "show_code": true,
@@ -17,24 +17,36 @@ Per estrarre la dinamite in sicurezza devi trovare il doppio strato di `Grounds.
     "collapsing": false,
     "autoplay": true,
     "items": [{"item": "hay", "n": 100}],
-    "world_size": {"x": 5, "y": 5},
+    "world_size": {"x": 11, "y": 11},
     "execution_speed": 8,
     "digging_speed": 8,
     "action_ticks": 200,
     "operation_ticks": 200,
-    "seed": 4,
+    "seed": 5,
     "exclude_unlocks": ["watering", "fertilizer", "mushrooms", "coal", "quartz", "petrified_pumpkins"]
 }
 #SETUP
 jump(Unlocks.Dynamite)
+for _ in range(5):
+    move(East)
+    move(North)
 #CODE
 while get_ground_type() != Grounds.Soot:
     dig()
-dig()
-dig()
+
+circle_directions = [East, South, West, West, North, North, East, East, South, West]
+def dig_dynamite_neighbors():
+    for dir in circle_directions:
+        move(dir)
+        while get_ground_type() != Grounds.Soot:
+            dig()
+
+while get_ground_type() == Grounds.Soot and measure() == 0:
+    dig_dynamite_neighbors()
+    move(circle_directions[random() * len(circle_directions)])
 }}
 
-Riesci a trovare e scavare tutti i blocchi inerti, lasciando solo quelli attivi? Quando lo strato di dinamite scompare, ogni blocco attivo circondato soltanto da altri blocchi attivi o da blocchi di fuliggine ti darà dinamite extra.
+Riesci a trovare e scavare tutti i blocchi di dinamite inerti, lasciando solo quelli attivi? Quando lo strato di dinamite scompare, ogni blocco attivo circondato soltanto da altri blocchi attivi o da blocchi di fuliggine ti darà dinamite extra.
 
 Per fortuna i blocchi di fuliggine sottostanti ti aiuteranno: possono rilevare quanti blocchi di dinamite vicini contengono dinamite attiva. Non indicano quali blocchi sono attivi, ma solo il totale, quindi dovrai combinare le misurazioni di più blocchi di fuliggine e dedurlo da solo.
 
@@ -58,7 +70,7 @@ def dig_dynamite():
         return None
 `
 
-Il numero di mine attive nello strato di dinamite, e quindi la difficoltà nel trovarle, aumenta con la profondità.
+Il numero di mine attive nello strato di dinamite, e quindi la difficoltà nel trovarle, aumenta con la profondità. Il numero totale di mine aumenta con le dimensioni della fattoria, e con esso anche la resa massima possibile per aver ripulito uno strato di dinamite.
 
 La dinamite raccolta può essere usata con `use_item(Items.Dynamite)` ed esplode immediatamente sotto il drone.
 

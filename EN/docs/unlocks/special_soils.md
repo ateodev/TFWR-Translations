@@ -10,7 +10,7 @@ Perlite is suited to plants that like airy soils: cacti, bamboo, bushes, and tre
 
 Loam is suited to carrots and sunflowers. They produce twice the yield when planted there.
 
-Another advantage of perlite and loam is that you don't need to call `till()` before planting crops suited to those soils.
+Another advantage of perlite and loam is that they're immediately ready for planting. Unlike `Grounds.Grassland`, which you first need to `till()` and turn into `Grounds.Soil`.
 
 ---
 

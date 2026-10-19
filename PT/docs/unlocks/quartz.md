@@ -2,7 +2,9 @@
 ---
 # Quartzo
 
-O quartzo cresce em veios semelhantes a agulhas perto do fundo da camada de pedra e na terra dura abaixo dela. Os veios formam colunas verticais, tornando-os difíceis de encontrar por tentativa e erro.
+Seguindo além dos veios de ferro em `Grounds.Rock`, você encontra quartzo na parte inferior da camada de pedra e na `Grounds.Dirt` dura abaixo dela (verifique a dureza usando `get_hardness()` do desbloqueio [Sentidos Subterrâneos](docs/unlocks/underground_senses.md)).
+
+O quartzo cresce em veios semelhantes a agulhas que formam colunas verticais, tornando-os difíceis de encontrar por tentativa e erro.
 
 Felizmente, podemos transformar nosso ferro em algo parecido com uma vara de radiestesia para localizar esses veios com mais facilidade. O comando é `prospect_quartz()`.
 
@@ -44,9 +46,12 @@ do_a_flip()
 print(prospect_quartz())
 }}
 
+Você pode prospectar e se mover repetidamente e ver como a distância muda, para saber se está se aproximando ou se afastando de um veio. Você pode usar geometria 2D para encontrar a interseção entre dois ou mais círculos, achar a posição horizontal de um veio e escavar para baixo. Ou pode usar trilateração completa para intersectar três esferas e encontrar a posição 3D exata.
+
+Observe que não há funções matemáticas básicas para raiz quadrada, trigonometria ou vetores; você terá que implementá-las por conta própria. Observe também que pode haver vários veios nas proximidades, então, se você fizer várias medições próximas, elas podem não apontar para o mesmo veio e acabar te confundindo.
+
 ---
 
 [Estatísticas](docs/stats.md)      [Mineração](docs/unlocks/mining.md)      [Sentidos Subterrâneos](docs/unlocks/underground_senses.md)      [Variáveis](docs/scripting/variables.md)      [Operadores](docs/scripting/operators.md)
 
 [move()](functions/move)      [dig()](functions/dig)      [get_ground_type()](functions/get_ground_type)      [prospect_quartz()](functions/prospect_quartz)
-

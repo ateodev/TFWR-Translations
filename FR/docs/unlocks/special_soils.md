@@ -10,7 +10,7 @@ La perlite convient aux plantes qui apprécient les sols aérés : cactus, bambo
 
 Le terreau convient aux carottes et aux tournesols. Leur rendement est doublé lorsqu’ils y sont plantés.
 
-Autre avantage de la perlite et du terreau : tu n’as pas besoin d’appeler `till()` avant de planter les cultures adaptées à ces sols.
+Autre avantage de la perlite et du terreau : ils sont immédiatement prêts à être plantés. Contrairement à `Grounds.Grassland`, que tu dois d’abord transformer en `Grounds.Soil` avec `till()`.
 
 ---
 

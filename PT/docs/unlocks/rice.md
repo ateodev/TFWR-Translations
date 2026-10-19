@@ -4,9 +4,11 @@
 ---
 # Arroz
 
-Sob a superfície, você percebeu uma fina camada de argila. Acontece que esse solo fértil é perfeito para plantar mudas de arroz.
+Abaixo da superfície e da camada de `Grounds.Dirt`, talvez você tenha notado uma fina camada de `Grounds.Clay`. Acontece que esse solo fértil e encharcado é perfeito para plantar mudas de arroz.
 
-O arroz seca a argila em que foi plantado. Cada bloco de argila só pode ser usado uma vez. Felizmente, a camada tem alguns blocos de espessura. E, é claro, você sempre pode usar `clear()` para restaurar a camada de argila.
+Assim como com grama ou arbustos, enquanto o drone estiver sobre um bloco de `Grounds.Clay`, você pode usar `plant(Entities.Rice)` para plantar mudas de arroz na argila, depois `can_harvest()` para verificar se o arroz já cresceu totalmente e, por fim, `harvest()` para obter arroz.
+
+Assim que você planta arroz, o solo vira `Grounds.Rice_Terrace` para oferecer o ambiente perfeito para o arroz amadurecer. Quando o arroz cresce totalmente, o solo seca, vira `Grounds.Dry_Rice_Terrace` e não pode mais ser usado para plantar arroz. Felizmente, a camada tem alguns blocos de espessura, então você pode remover o bloco com `dig()` e plantar arroz novo na `Grounds.Clay` abaixo. E, se a camada acabar, você sempre pode usar `clear()` no mundo e escavar até uma camada nova.
 
 O código a seguir pode ajudar você a escavar para baixo até encontrar argila.
 

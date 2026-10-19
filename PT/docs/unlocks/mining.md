@@ -49,7 +49,9 @@ Se quiser voltar à superfície, você pode usar `clear()` a qualquer momento. I
 
 À medida que escava mais fundo, você perceberá que os blocos ficam mais duros, fazendo a escavação levar mais tempo. Ainda bem que podemos melhorar a broca!
 
-Você pode usar `get_hardness()` para verificar a dureza do bloco abaixo. Se encontrar uma área de blocos especialmente duros, pode ser melhor contorná-los para avançar mais rápido:
+Para ajudar o drone a se orientar no subsolo, você deve desbloquear logo os [sentidos subterrâneos](docs/unlocks/underground_senses.md). Com eles, o drone pode verificar a própria posição z, além do tipo de solo abaixo, sua dureza e estabilidade.
+
+Por exemplo, com os [sentidos subterrâneos](docs/unlocks/underground_senses.md) você pode usar `get_hardness()` para verificar a dureza do bloco abaixo. Se encontrar uma área de blocos especialmente duros, pode ser melhor contorná-los para avançar mais rápido:
 
 `while True:
         if get_hardness() < 5:

@@ -89,7 +89,12 @@
 @option_tooltip_keyboard_layout = Disposition des touches du clavier intégré. Par défaut, celle de la langue de ton système.
 @option_tooltip_keyboard_type = Le clavier avec lequel tu écris ton code. Le clavier intégré a tous les symboles dont Python a besoin ; le clavier système est celui que tu utilises dans les autres applis. Un clavier physique connecté est toujours utilisé à la place.
 @option_tooltip_exit_fullscreen_on_run = Appuyer sur Démarrer quitte l'éditeur de code en plein écran et affiche la ferme. Les points d'arrêt te ramènent quand même à la ligne en pause.
+@option_tooltip_automatic_autocomplete = Affiche automatiquement les suggestions d'autocomplétion pendant la saisie. La touche d'autocomplétion fonctionne toujours quand c'est désactivé.
+@option_tooltip_focus_errors = Déplace la caméra vers les erreurs qui apparaissent hors de l'écran pour que tu ne les rates pas.
+@option_tooltip_window_docking = Permet aux fenêtres de s'ancrer les unes aux autres quand on les rapproche en les faisant glisser.
+@keybind_tooltip_autocomplete = Ouvre la fenêtre d'autocomplétion du code.
 @option_tooltip_keyboard_volume = Règle le volume des sons des touches du clavier en jeu.
+@option_tooltip_mute_in_background = Coupe tout le son du jeu tant que la fenêtre du jeu n'est pas au premier plan.
 @option_tooltip_keyboard_sound = Son d'une pression de touche sur le clavier en jeu : Système = le clic du clavier de votre appareil, Mécanique = une touche de clavier mécanique.
 @option_tooltip_keyboard_vibration = Une courte vibration à chaque pression de touche sur le clavier en jeu.
 @option_tooltip_selection_menu = Le menu avec 'Couper', 'Copier' et 'Coller' au-dessus du texte sélectionné. Automatique = masqué tant que le clavier intégré est affiché ou qu'un clavier physique est connecté, car tous deux ont ces touches.

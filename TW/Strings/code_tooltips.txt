@@ -718,3 +718,15 @@ list.insert(0, 0)`
 
 範例：
 `jump(Unlocks.Iron)`
+@code_tooltip_hover = `hover(height)`
+變更無人機在地面上方懸停的高度。
+
+預設高度為 `1`，大多數無人機動作都會將懸停高度重設為預設值。
+
+範例：
+`hover(5)`
+@code_tooltip_get_hover = `get_hover()`
+取得無人機目前在地面上方懸停的高度。
+
+範例：
+`height = get_hover()`

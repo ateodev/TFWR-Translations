@@ -2,7 +2,9 @@
 ---
 # Quarz
 
-Quarz wächst in nadelförmigen Adern nahe dem unteren Ende der Steinschicht und in der harten Erde darunter. Die Adern bilden senkrechte Säulen, wodurch sie durch bloßes Ausprobieren nur schwer zu finden sind.
+Weiter unten als die Eisenadern in `Grounds.Rock` findest du Quarz im unteren Teil der Gesteinsschicht und in der harten `Grounds.Dirt` darunter (prüfe die Härte mit `get_hardness()` aus der Freischaltung [Unterirdische Sinne](docs/unlocks/underground_senses.md)).
+
+Quarz wächst in nadelförmigen Adern, die senkrechte Säulen bilden, wodurch sie durch bloßes Ausprobieren nur schwer zu finden sind.
 
 Zum Glück können wir unser Eisen zu etwas verbiegen, das einer Wünschelrute ähnelt und mit dem wir diese Quarzadern leichter aufspüren können. Der entsprechende Befehl lautet `prospect_quartz()`.
 
@@ -43,6 +45,10 @@ do_a_flip()
 do_a_flip()
 print(prospect_quartz())
 }}
+
+Du kannst wiederholt suchen und dich bewegen und dabei beobachten, wie sich die Entfernung ändert, um zu erkennen, ob du dich einer Ader näherst oder dich von ihr entfernst. Mit 2D-Geometrie kannst du den Schnittpunkt von zwei oder mehr Kreisen bestimmen, um die waagerechte Position einer Ader zu finden und dann nach unten zu graben. Oder du nutzt vollständige Trilateration, um drei Kugeln zu schneiden und die genaue 3D-Position zu finden.
+
+Beachte, dass es keine grundlegenden Mathefunktionen für Quadratwurzeln, Trigonometrie oder Vektoren gibt, die musst du selbst schreiben. Beachte auch, dass in der Nähe mehrere Adern liegen können. Wenn du also mehrere Messungen in der Nähe machst, zeigen sie vielleicht nicht auf dieselbe Ader und führen dich in die Irre.
 
 ---
 

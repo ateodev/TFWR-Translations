@@ -4,11 +4,11 @@
 ---
 # Železo
 
-V kamenné vrstvě pod jílem jsi objevil železné žíly.
+Až najdeš uhlí v `Grounds.Dirt`, můžeš kopat hlouběji, skrz vrstvu `Grounds.Clay` až do `Grounds.Rock`, a najít železo.
 
-Železné žíly jsou zpočátku malé a k jejich nalezení budeš potřebovat trochu štěstí. S vyššími úrovněmi tohoto odemčení roste maximální velikost žíly. Pro spolehlivější způsob hledání železa se podívej i na odemčení hledání rudy.
+Na rozdíl od uhelných žil se železné žíly táhnou i svisle. Všechny bloky železa v žíle ale vždy leží přímo vedle sebe, bloky nikdy nejsou spojené jen úhlopříčně.
 
-Železná žíla je vždy souvislá, bez úhlopříčných skoků. Když najdeš kus železa, hledej další pod ním nebo vedle něj, abys posbíral celou žílu.
+Železné žíly jsou ale zpočátku malé a k jejich nalezení budeš potřebovat trochu štěstí. Další odemykání železa zvětšuje maximální velikost žil a trochu usnadňuje jejich náhodné nalezení. Abys je ale nacházel spolehlivě, měl bys odemknout [hledání železa](docs/unlocks/prospecting.md).
 
 {{codeexample 
 {

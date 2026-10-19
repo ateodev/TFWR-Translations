@@ -30,6 +30,7 @@
 @UI volume = UI-Lautstärke
 @ambience volume = Umgebungslautstärke
 @drone volume = Drohnenlautstärke
+@mute in background = Im Hintergrund stummschalten
 @fps limit = Max. Framerate
 @autosave = Autom. Code-Speichern
 @autosave progress = Autom. Spielfortschritt
@@ -109,6 +110,10 @@
 @30 fps = 30 FPS
 @60 fps = 60 FPS
 @120 fps = 120 FPS
+@automatic autocomplete = Automatisch vervollständigen
+@focus errors = Fehler zeigen
+@window docking = Fenster andocken
+@autocomplete = Autovervollständigung
 @keyboard = Tastatur
 @Keyboard volume = Tastaturlautstärke
 @Keyboard sound = Tastenton

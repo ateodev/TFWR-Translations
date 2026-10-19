@@ -4,9 +4,11 @@
 ---
 # Riso
 
-Sotto la superficie hai notato un sottile strato di argilla. A quanto pare, questo terreno fertile è perfetto per piantare le piantine di riso.
+Sotto la superficie e lo strato di `Grounds.Dirt` potresti aver notato un sottile strato di `Grounds.Clay`. A quanto pare, questo terreno fertile e impregnato d'acqua è perfetto per piantare le piantine di riso.
 
-Il riso prosciuga l'argilla su cui è piantato. Puoi usare ogni blocco d'argilla una sola volta. Per fortuna, lo strato è spesso alcuni blocchi. E naturalmente puoi sempre usare `clear()` per ripristinare lo strato d'argilla.
+Come per l'erba o i cespugli, finché il drone si trova sopra un blocco `Grounds.Clay`, puoi usare `plant(Entities.Rice)` per piantare piantine di riso nell'argilla, poi `can_harvest()` per controllare se il riso è completamente cresciuto e infine `harvest()` per ottenere riso.
+
+Quando pianti il riso, il terreno diventa `Grounds.Rice_Terrace` per offrire al riso l'ambiente perfetto per maturare. Quando il riso è completamente cresciuto, il terreno si secca, diventa `Grounds.Dry_Rice_Terrace` e non può più essere usato per piantare altro riso. Per fortuna lo strato è spesso alcuni blocchi, quindi puoi rimuovere il blocco con `dig()` e piantare nuovo riso sulla `Grounds.Clay` sottostante. E se lo strato finisce, puoi sempre usare `clear()` sul mondo e scavare fino a uno strato nuovo.
 
 Il codice seguente potrebbe esserti utile per scavare verso il basso finché non trovi l'argilla.
 

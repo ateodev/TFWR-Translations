@@ -45,7 +45,7 @@ for i in range(6):
 
 The blocks above the pyramid are always dirt. If you want to dig up a pyramid more efficiently than the above code, you can use that fact.
 
-As you can see, there are several holes in the sand which will need to be filled. When you fill these holes and restore the pyramid to its previous state, it destroys itself and you receive power as a reward.
+As you can see, there are several holes in the sand which will need to be filled. When you fill these holes and restore the pyramid to its previous state, it destroys itself and a large sunflower spawns in the middle of the limestone base. Harvest it to receive power. The larger the pyramid you completed, the more power you receive.
 
 You can restore a pyramid by placing blocks with the command `place(Grounds.Sand)`. Sand is a special block that will cave in immediately when it is not supported properly. Whenever you place a sand block, it must either be placed directly on limestone, or on a 3x3 of sand blocks. Here's a small hand-built pyramid to demonstrate. Of course, building it yourself won't give you any power:
 
@@ -87,8 +87,6 @@ place(Grounds.Sand)
 }}
 
 A correctly restored pyramid consists of a square limestone foundation with odd-numbered side lengths, for example 5x5. Above it is a layer of sand blocks of the same size (5x5), followed by progressively smaller layers: 3x3, then 1x1.
-
-When a pyramid is completed, it crumbles away and a large sunflower is spawned in the middle. You can harvest it to receive power. The larger the pyramid you completed, the more power you receive.
 
 ---
 

@@ -30,6 +30,7 @@
 @UI volume = Гучність інтерфейсу
 @ambience volume = Гучність оточення
 @drone volume = Гучність дрона
+@mute in background = Вимикати звук у фоні
 @fps limit = Макс. кадрів
 @autosave = Код автозбереження
 @autosave progress = Автозбереження прогресу
@@ -107,6 +108,10 @@
 @30 fps = 30 FPS
 @60 fps = 60 FPS
 @120 fps = 120 FPS
+@automatic autocomplete = Автодоповнення під час вводу
+@focus errors = Показувати помилки
+@window docking = Стикування вікон
+@autocomplete = Автодоповнення
 @keyboard = Клавіатура
 @Keyboard volume = Гучність клавіатури
 @Keyboard sound = Звук клавіш

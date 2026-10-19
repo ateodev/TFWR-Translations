@@ -10,7 +10,7 @@ La perlite è adatta alle piante che prediligono terreni ariosi: cactus, bambù,
 
 Il terriccio è adatto a carote e girasoli. Quando vengono piantati lì, producono il doppio della resa.
 
-Un altro vantaggio della perlite e del terriccio è che non devi chiamare `till()` prima di piantare le colture adatte a questi terreni.
+Un altro vantaggio della perlite e del terriccio è che sono subito pronti per la semina. A differenza di `Grounds.Grassland`, che devi prima trasformare in `Grounds.Soil` con `till()`.
 
 ---
 

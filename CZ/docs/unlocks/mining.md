@@ -49,7 +49,9 @@ Pokud se chceš vrátit na povrch, můžeš kdykoli použít `clear()`. To záro
 
 Čím hlouběji kopeš, tím tvrdší jsou bloky a tím déle kopání trvá. Naštěstí si můžeme vrták vylepšit!
 
-Pomocí `get_hardness()` zjistíš tvrdost bloku pod sebou. Pokud narazíš na oblast obzvlášť tvrdých bloků, může být moudré je obejít, abys postupoval rychleji:
+Aby se tvůj dron v podzemí vyznal, měl bys rychle odemknout [podzemní senzory](docs/unlocks/underground_senses.md). Díky nim zjistí svou vlastní pozici z a také druh půdy pod sebou, její tvrdost a stabilitu.
+
+S [podzemními senzory](docs/unlocks/underground_senses.md) například pomocí `get_hardness()` zjistíš tvrdost bloku pod sebou. Pokud narazíš na oblast obzvlášť tvrdých bloků, může být moudré je obejít, abys postupoval rychleji:
 
 `while True:
         if get_hardness() < 5:

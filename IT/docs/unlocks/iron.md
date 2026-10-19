@@ -4,11 +4,11 @@
 ---
 # Ferro
 
-Hai scoperto vene di ferro nello strato di roccia sotto l'argilla.
+Dopo aver trovato il carbone in `Grounds.Dirt`, puoi scavare più in profondità, oltre lo strato di `Grounds.Clay` e fino a `Grounds.Rock`, per trovare il ferro.
 
-All'inizio le vene di ferro sono piccole e avrai bisogno di un po' di fortuna per trovarle. Aumentando il livello di questo sblocco, cresce la dimensione massima delle vene di minerale. Per trovare il ferro in modo più affidabile, potresti anche dare un'occhiata allo sblocco della prospezione mineraria.
+A differenza delle vene di carbone, le vene di ferro si estendono anche in verticale. Però tutti i blocchi di ferro di una vena sono sempre direttamente adiacenti tra loro: i blocchi non sono mai collegati solo in diagonale.
 
-Una vena di ferro è sempre continua, senza salti diagonali. Se trovi un blocco di ferro, cercane altri sotto o accanto per assicurarti di raccogliere l'intera vena.
+All'inizio però le vene di ferro sono piccole e avrai bisogno di un po' di fortuna per trovarle. Continuare a sbloccare il ferro aumenta la dimensione massima delle vene e le rende un po' più facili da trovare per caso. Ma per trovarle in modo affidabile, dovresti sbloccare la [prospezione del ferro](docs/unlocks/prospecting.md).
 
 {{codeexample 
 {

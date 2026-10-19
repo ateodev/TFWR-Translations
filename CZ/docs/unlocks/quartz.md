@@ -2,7 +2,9 @@
 ---
 # Křemen
 
-Křemen roste v jehlicovitých žilách u dna kamenné vrstvy a v tvrdé hlíně pod ní. Žíly tvoří svislé sloupce, takže metodou pokusu a omylu se hledají dost těžko.
+Pod železnými žílami v `Grounds.Rock` najdeš křemen ve spodní části kamenné vrstvy a v tvrdé `Grounds.Dirt` pod ní (tvrdost zjistíš pomocí `get_hardness()` z odemčení [Podzemní senzory](docs/unlocks/underground_senses.md)).
+
+Křemen roste v jehlicovitých žilách, které tvoří svislé sloupce, takže metodou pokusu a omylu se hledají dost těžko.
 
 Naštěstí můžeme vzít železo a zkroutit ho do něčeho jako proutkařskou hůlku, která nám pomůže křemenné žíly najít snadněji. Příkaz k tomu je `prospect_quartz()`.
 
@@ -43,6 +45,10 @@ do_a_flip()
 do_a_flip()
 print(prospect_quartz())
 }}
+
+Můžeš opakovaně hledat a pohybovat se a sledovat, jak se mění vzdálenost, abys poznal, jestli se k žíle přibližuješ, nebo se od ní vzdaluješ. Pomocí 2D geometrie můžeš najít průsečík dvou nebo více kružnic, určit vodorovnou polohu žíly a kopat dolů. Nebo můžeš použít úplnou trilateraci, protnout tři koule a najít přesnou 3D polohu.
+
+Pamatuj, že neexistují žádné základní matematické funkce pro odmocninu, goniometrii ani vektory, ty si musíš napsat sám. Pamatuj také, že poblíž může být víc žil, takže když uděláš několik blízkých měření, nemusí ukazovat na stejnou žílu a mohou tě svést z cesty.
 
 ---
 

@@ -4,11 +4,11 @@
 ---
 # Eisen
 
-Du hast Eisenadern in der Gesteinsschicht unter dem Ton entdeckt.
+Nachdem du Kohle in `Grounds.Dirt` gefunden hast, kannst du tiefer graben, an der Schicht aus `Grounds.Clay` vorbei bis in `Grounds.Rock`, um Eisen zu finden.
 
-Eisenadern sind anfangs klein, und du brauchst etwas Glück, um sie zu finden. Mit höheren Stufen dieser Freischaltung steigt die maximale Größe einer Erzader. Wenn du Eisen zuverlässiger finden möchtest, solltest du dir auch die Freischaltung zur Erzsuche ansehen.
+Anders als Kohleadern erstrecken sich Eisenadern auch senkrecht. Alle Eisenblöcke einer Ader liegen aber immer direkt nebeneinander, die Blöcke sind nie nur diagonal verbunden.
 
-Eine Eisenader ist immer zusammenhängend und weist keine diagonalen Sprünge auf. Wenn du einen Eisenblock findest, suche darunter und daneben nach weiteren, damit du die gesamte Ader abbaust.
+Eisenadern sind anfangs jedoch klein, und du brauchst etwas Glück, um sie zu finden. Wenn du Eisen weiter freischaltest, steigt die maximale Größe der Adern und sie lassen sich etwas leichter zufällig finden. Um sie aber zuverlässig zu finden, solltest du die [Eisensuche](docs/unlocks/prospecting.md) freischalten.
 
 {{codeexample 
 {

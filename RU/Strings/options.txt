@@ -31,6 +31,7 @@
 @UI volume = Громкость интерфейса
 @ambience volume = Громкость окружения
 @drone volume = Громкость дрона
+@mute in background = Без звука в фоне
 @fps limit = Макс. частота кадров
 @autosave = Автосохранение кода
 @autosave progress = Автосохранение прогресса
@@ -110,6 +111,10 @@
 @30 fps = 30 FPS
 @60 fps = 60 FPS
 @120 fps = 120 FPS
+@automatic autocomplete = Автодополнение при вводе
+@focus errors = Показывать ошибки
+@window docking = Стыковка окон
+@autocomplete = Автодополнение
 @keyboard = Клавиатура
 @Keyboard volume = Громкость клавиатуры
 @Keyboard sound = Звук клавиш

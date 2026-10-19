@@ -2,7 +2,7 @@
 ---
 # Prospection du fer
 
-Tu as peut-être remarqué qu’il est parfois difficile de trouver des filons de fer. Tu pourrais creuser au hasard en espérant tomber dessus, mais il existe une meilleure méthode : le fer étant magnétique, nous pouvons le repérer à grande distance.
+Tu as peut-être remarqué qu’il est parfois difficile de trouver des filons de fer. Tu pourrais creuser au hasard en espérant tomber dessus, mais il existe une meilleure méthode : le fer étant magnétique, nous pouvons le repérer à distance.
 
 La commande `prospect_iron()` sert précisément à cela. `prospect_iron()` renvoie la direction cardinale (`North`, `East`, `South` ou `West`) dans laquelle le drone doit se déplacer pour faire un pas vers le minerai de fer le plus proche. L’exécution de la commande coûte 1 charbon.
 

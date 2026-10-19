@@ -1,6 +1,8 @@
 @word_number = номер
 @word_direction = напрямок
 @run_cancelled = Помилка запуску
+@run_completed = Запуск завершено
+@leaderboard_time_limit = Час перевищує ліміт таблиці лідерів
 @average_text = {0} Запуски завершено ({2:F1}%)
 {1}
 @average_text2 = {0} Запуски завершено

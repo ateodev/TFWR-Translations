@@ -45,7 +45,7 @@ for i in range(6):
 
 Über der Pyramide befinden sich ausschließlich Erdblöcke. Wenn du eine Pyramide effizienter ausgraben möchtest als im obigen Code, kannst du diese Tatsache nutzen.
 
-Wie du siehst, weist der Sand mehrere Lücken auf, die gefüllt werden müssen. Wenn du diese Lücken füllst und die Pyramide wieder in ihren ursprünglichen Zustand versetzt, zerstört sie sich selbst und du erhältst zur Belohnung Energie.
+Wie du siehst, weist der Sand mehrere Lücken auf, die gefüllt werden müssen. Wenn du diese Lücken füllst und die Pyramide wieder in ihren ursprünglichen Zustand versetzt, zerstört sie sich selbst und in der Mitte des Kalksteinfundaments erscheint eine große Sonnenblume. Ernte sie, um Energie zu erhalten. Je größer die von dir vervollständigte Pyramide war, desto mehr Energie erhältst du.
 
 Du kannst eine Pyramide wiederherstellen, indem du mit dem Befehl `place(Grounds.Sand)` Blöcke platzierst. Sand ist ein besonderer Block, der sofort einstürzt, wenn er nicht richtig abgestützt wird. Wenn du einen Sandblock platzierst, muss er sich entweder direkt auf Kalkstein oder auf einem 3x3-Feld aus Sandblöcken befinden. Zur Veranschaulichung dient diese kleine, von Hand gebaute Pyramide. Wenn du selbst eine baust, erhältst du natürlich keine Energie:
 
@@ -87,8 +87,6 @@ place(Grounds.Sand)
 }}
 
 Eine korrekt wiederhergestellte Pyramide besteht aus einem quadratischen Kalksteinfundament mit ungerader Seitenlänge, zum Beispiel 5x5. Darauf folgt eine gleich große Schicht aus Sandblöcken (5x5), gefolgt von immer kleineren Schichten: 3x3 und schließlich 1x1.
-
-Wenn eine Pyramide vollständig ist, zerfällt sie und in ihrer Mitte erscheint eine große Sonnenblume. Du kannst sie ernten, um Energie zu erhalten. Je größer die von dir vervollständigte Pyramide war, desto mehr Energie erhältst du.
 
 ---
 

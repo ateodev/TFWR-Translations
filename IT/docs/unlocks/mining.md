@@ -49,7 +49,9 @@ Se vuoi tornare in superficie, puoi usare `clear()` in qualsiasi momento. Questo
 
 Scavando più in profondità noterai che i blocchi diventano più duri e richiedono più tempo per essere scavati. Per fortuna possiamo potenziare la trivella!
 
-Puoi usare `get_hardness()` per controllare la durezza del blocco sotto di te. Se incontri una zona di blocchi particolarmente duri, potrebbe essere meglio aggirarli per avanzare più velocemente:
+Per aiutare il tuo drone a orientarsi sottoterra, dovresti sbloccare presto i [sensi sotterranei](docs/unlocks/underground_senses.md). Gli permetteranno di controllare la propria posizione z e il tipo di terreno sottostante, la sua durezza e la sua stabilità.
+
+Per esempio, con i [sensi sotterranei](docs/unlocks/underground_senses.md) puoi usare `get_hardness()` per controllare la durezza del blocco sotto di te. Se incontri una zona di blocchi particolarmente duri, potrebbe essere meglio aggirarli per avanzare più velocemente:
 
 `while True:
         if get_hardness() < 5:

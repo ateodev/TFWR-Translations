@@ -4,11 +4,11 @@
 
 O explosivo revolucionário, deixado por expedições de mineração anteriores. (In)felizmente, sua broca é perfeita para detonar dinamite e destruir todos os blocos ao redor.
 
-Para minerar dinamite com segurança, encontre o estrato duplo de `Grounds.Dynamite` e `Grounds.Soot`. O solo de dinamite acima envelheceu, e alguns blocos são seguros para escavar. Outros ainda estão ativos e explodem ao serem escavados.
+Para minerar dinamite com segurança, encontre uma camada de `Grounds.Dynamite` seguida diretamente por outra camada de `Grounds.Soot` abaixo dela. A camada de dinamite acima envelheceu, e alguns de seus blocos são seguros para escavar. Porém, alguns blocos de dinamite ainda estão ativos e explodem quando você os escava.
 
 {{codeexample 
 {
-    "camera_position": {"x": -3, "y": -3, "z": 12},
+    "camera_position": {"x": -5, "y": 0, "z": 15},
     "show_image": true,
     "image_size": {"x": 900, "y": 500},
     "show_code": true,
@@ -17,24 +17,36 @@ Para minerar dinamite com segurança, encontre o estrato duplo de `Grounds.Dynam
     "collapsing": false,
     "autoplay": true,
     "items": [{"item": "hay", "n": 100}],
-    "world_size": {"x": 5, "y": 5},
+    "world_size": {"x": 11, "y": 11},
     "execution_speed": 8,
     "digging_speed": 8,
     "action_ticks": 200,
     "operation_ticks": 200,
-    "seed": 4,
+    "seed": 5,
     "exclude_unlocks": ["watering", "fertilizer", "mushrooms", "coal", "quartz", "petrified_pumpkins"]
 }
 #SETUP
 jump(Unlocks.Dynamite)
+for _ in range(5):
+    move(East)
+    move(North)
 #CODE
 while get_ground_type() != Grounds.Soot:
     dig()
-dig()
-dig()
+
+circle_directions = [East, South, West, West, North, North, East, East, South, West]
+def dig_dynamite_neighbors():
+    for dir in circle_directions:
+        move(dir)
+        while get_ground_type() != Grounds.Soot:
+            dig()
+
+while get_ground_type() == Grounds.Soot and measure() == 0:
+    dig_dynamite_neighbors()
+    move(circle_directions[random() * len(circle_directions)])
 }}
 
-Você consegue encontrar e escavar todos os blocos inertes, deixando apenas os ativos? Cada bloco ativo cercado apenas por outros blocos ativos ou por fuligem renderá dinamite extra quando o estrato desaparecer.
+Você consegue encontrar e escavar todos os blocos de dinamite inertes, deixando apenas os ativos? Cada bloco ativo cercado apenas por outros blocos ativos ou por fuligem renderá dinamite extra quando o estrato desaparecer.
 
 Felizmente, os blocos de fuligem abaixo ajudam: eles detectam quantos blocos de dinamite vizinhos estão ativos. Não informam quais, apenas o total, então você precisa combinar leituras de vários blocos de fuligem.
 
@@ -58,7 +70,7 @@ def dig_dynamite():
         return None
 `
 
-O número de minas ativas e a dificuldade de encontrá-las aumentam com a profundidade.
+O número de minas ativas e a dificuldade de encontrá-las aumentam com a profundidade. O número total de minas aumenta com o tamanho da fazenda e, com ele, o rendimento máximo possível ao limpar um estrato de dinamite.
 
 A dinamite coletada pode ser usada com `use_item(Items.Dynamite)` e explode imediatamente abaixo do drone.
 

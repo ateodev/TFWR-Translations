@@ -89,7 +89,12 @@
 @option_tooltip_keyboard_layout = Tastenanordnung der Spieltastatur. Standardmäßig das Layout deiner Systemsprache.
 @option_tooltip_keyboard_type = Mit welcher Tastatur du Code schreibst. Die Spieltastatur hat alle Symbole, die Python braucht; die Systemtastatur ist die aus deinen anderen Apps. Eine angeschlossene Hardware-Tastatur wird immer bevorzugt verwendet.
 @option_tooltip_exit_fullscreen_on_run = Beim Drücken von Start wird der Vollbild-Codeeditor verlassen und die Farm angezeigt. Haltepunkte bringen dich trotzdem zur pausierten Zeile.
+@option_tooltip_automatic_autocomplete = Zeigt beim Tippen automatisch Vorschläge zur Autovervollständigung an. Die Taste für die Autovervollständigung funktioniert auch, wenn dies deaktiviert ist.
+@option_tooltip_focus_errors = Bewegt die Kamera zu Fehlern außerhalb des Bildschirms, damit du sie nicht verpasst.
+@option_tooltip_window_docking = Fenster docken aneinander an, wenn sie zusammengezogen werden.
+@keybind_tooltip_autocomplete = Öffnet das Fenster der Code-Autovervollständigung.
 @option_tooltip_keyboard_volume = Stellt die Lautstärke der Tastentöne der Spieltastatur ein.
+@option_tooltip_mute_in_background = Schaltet den gesamten Spielton stumm, solange das Spielfenster nicht im Fokus ist.
 @option_tooltip_keyboard_sound = Ton beim Tastendruck auf der Spieltastatur: System = das Klicken der Tastatur deines Geräts, Mechanisch = eine mechanische Tastaturtaste.
 @option_tooltip_keyboard_vibration = Eine kurze Vibration bei jedem Tastendruck auf der Spieltastatur.
 @option_tooltip_selection_menu = Das Menü mit 'Ausschneiden', 'Kopieren' und 'Einsetzen' über markiertem Text. Automatisch = ausgeblendet, solange die Spieltastatur angezeigt wird oder eine Hardware-Tastatur verbunden ist, da beide diese Tasten haben.

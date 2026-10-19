@@ -4,9 +4,11 @@
 ---
 # Riz
 
-Sous la surface, tu as remarqué une fine couche d’argile. Il s’avère que ce sol fertile est idéal pour planter des pousses de riz.
+Sous la surface et la couche de `Grounds.Dirt`, tu as peut-être remarqué une fine couche de `Grounds.Clay`. Il s’avère que ce sol fertile et gorgé d’eau est idéal pour planter des pousses de riz.
 
-Le riz assèche l’argile sur laquelle il est planté. Chaque bloc d’argile ne peut être utilisé qu’une seule fois. Heureusement, la couche fait plusieurs blocs d’épaisseur. Et bien sûr, tu peux toujours utiliser `clear()` pour recréer la couche d’argile.
+Comme pour l’herbe ou les buissons, tant que ton drone se trouve au-dessus d’un bloc `Grounds.Clay`, tu peux utiliser `plant(Entities.Rice)` pour planter des pousses de riz dans l’argile, puis `can_harvest()` pour vérifier si le riz a fini de pousser, et enfin `harvest()` pour récolter du riz.
+
+Dès que tu plantes du riz, le sol devient `Grounds.Rice_Terrace` pour offrir au riz l’environnement idéal pour mûrir. Une fois le riz arrivé à maturité, le sol s’assèche, devient `Grounds.Dry_Rice_Terrace` et ne peut plus servir à planter du riz. Heureusement, la couche fait plusieurs blocs d’épaisseur : tu peux donc retirer le bloc avec `dig()` et planter du nouveau riz sur la `Grounds.Clay` en dessous. Et si la couche est épuisée, tu peux toujours utiliser `clear()` sur le monde et creuser jusqu’à une couche neuve.
 
 Le code suivant peut t’aider à creuser jusqu’à trouver de l’argile.
 

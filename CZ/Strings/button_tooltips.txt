@@ -5,6 +5,10 @@
 @button_tooltip_discord = Připoj se na Discord – chat s ostatními hráči a vývojářem, hlášení chyb nebo pomoc.
 @button_tooltip_execute = Spustí nebo zastaví kód v tomto okně.
 @button_tooltip_step_by_step = Provede jeden krok kódu.
+@button_tooltip_stop_execution = Zastaví provádění.
+@button_tooltip_pause_execution = Pozastaví provádění.
+@button_tooltip_resume_execution = Obnoví provádění.
+@button_tooltip_next_step = Provede další krok.
 @button_tooltip_new_function = Vytvoří nový soubor s kódem.
 @button_tooltip_new_info_window = Otevře nové informační okno.
 @button_tooltip_minimize = Minimalizuje toto okno.
@@ -21,6 +25,7 @@
 @button_tooltip_previous_search = Přeskočí na předchozí výskyt hledaného výrazu.
 @button_tooltip_close_search = Zavře nabídku hledání.
 @button_tooltip_open_unlock_menu = Otevře strom odemykání.
+@button_tooltip_open_farm = Vrátí se na farmu.
 @warning_icon_tooltip = Tvůj kód vyvolal varování. Klikni na ikonu pro zobrazení detailů v okně výstupu.
 @warning_icon_tooltip_mobile = Tvůj kód vyvolal varování. Klepni na ikonu pro zobrazení detailů v okně výstupu.
 @option_tooltip_graphics = Ovlivňuje nastavení vykreslování jako stíny, ambientní okluzi a záři.
@@ -84,7 +89,12 @@
 @option_tooltip_keyboard_layout = Rozložení kláves herní klávesnice. Výchozí je rozložení jazyka tvého systému.
 @option_tooltip_keyboard_type = Kterou klávesnicí psát kód. Herní klávesnice má symboly, které Python potřebuje; systémová klávesnice je ta, kterou používáš v jiných aplikacích. Připojená hardwarová klávesnice se vždy použije místo nich.
 @option_tooltip_exit_fullscreen_on_run = Stisk Startu opustí editor kódu na celou obrazovku a ukáže farmu. Breakpointy tě stále přenesou na pozastavený řádek.
+@option_tooltip_automatic_autocomplete = Při psaní automaticky ukazuje návrhy doplňování. Klávesa pro doplňování funguje i tehdy, když je tato volba vypnutá.
+@option_tooltip_focus_errors = Přesune kameru k chybám, které se objeví mimo obrazovku, abys je nepřehlédl.
+@option_tooltip_window_docking = Umožní oknům ukotvit se k sobě, když je přetáhneš k sobě.
+@keybind_tooltip_autocomplete = Otevře okno doplňování kódu.
 @option_tooltip_keyboard_volume = Nastaví hlasitost zvuků kláves herní klávesnice.
+@option_tooltip_mute_in_background = Ztlumí veškerý zvuk hry, když okno hry není aktivní.
 @option_tooltip_keyboard_sound = Zvuk stisku klávesy na herní klávesnici: Systémový = cvaknutí klávesnice tvého zařízení, Mechanický = klávesa mechanické klávesnice.
 @option_tooltip_keyboard_vibration = Krátká vibrace při každém stisku klávesy herní klávesnice.
 @option_tooltip_selection_menu = Nabídka s „Vyjmout“, „Kopírovat“ a „Vložit“ nad vybraným textem. Automaticky = skrytá, když je zobrazena herní klávesnice nebo je připojena hardwarová klávesnice, protože obě tyto klávesy mají.

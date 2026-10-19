@@ -2,13 +2,13 @@
 ---
 # 彩色地块
 
-你已经知道，可以用 `place()` 让无人机放置地块。此解锁项新增了几种颜色鲜明、容易与周围区分的地块。
+你已经知道，可以用 `place()` 让无人机放置地块。此解锁项新增了三种颜色鲜明、容易与周围区分的地块：`Grounds.Red_Block`、`Grounds.Green_Block` 和 `Grounds.Blue_Block`。
 
 放置新地块的方法如下：
 
 {{codeexample 
 {
-    "camera_position": {"x": -1, "y": 0, "z": 8},
+    "camera_position": {"x": -1, "y": 0, "z": 10},
     "show_image": true,
     "image_size": {"x": 800, "y": 300},
     "show_code": true,
@@ -16,9 +16,9 @@
     "show_output": false,
     "collapsing": false,
     "autoplay": true,
-    "items": [{"item": "hay", "n": 100}, {"item": "wood", "n": 100}],
-    "world_size": {"x": 4, "y": 4},
-    "execution_speed": 1,
+    "items": [{"item": "block", "n": 100}],
+    "world_size": {"x": 5, "y": 5},
+    "execution_speed": 5,
     "digging_speed": 4,
     "action_ticks": 200,
     "operation_ticks": 200,
@@ -29,13 +29,35 @@
 #SETUP
 move(East)
 move(North)
-dig()
-dig()
-dig()
 #CODE
-place(Grounds.Red_Block)
 place(Grounds.Green_Block)
+move(East)
+
 place(Grounds.Blue_Block)
+move(East)
+
+place(Grounds.Green_Block)
+move(North)
+
+place(Grounds.Blue_Block)
+move(North)
+
+place(Grounds.Green_Block)
+move(West)
+
+place(Grounds.Blue_Block)
+move(West)
+
+place(Grounds.Green_Block)
+move(South)
+
+place(Grounds.Blue_Block)
+move(East)
+
+place(Grounds.Red_Block)
+place(Grounds.Red_Block)
+
+do_a_flip()
 }}
 ---
 

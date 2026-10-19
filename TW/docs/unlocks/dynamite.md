@@ -4,11 +4,11 @@
 
 這種革命性的爆炸物是以前的採礦隊留下的。（不）幸運的是，你的鑽頭正好能引爆炸藥，把周圍的地塊炸開。
 
-想安全地開採炸藥，你得找到由 `Grounds.Dynamite` 和 `Grounds.Soot` 組成的雙層地層。上層的炸藥已經老化，其中一些地塊是啞彈，可以安全挖掘。不過，還有一些炸藥是實彈，會在挖掘時爆炸。
+想安全地開採炸藥，就要找到一層 `Grounds.Dynamite`，其正下方緊接著一層 `Grounds.Soot`。上層的炸藥已經老化，其中一些地塊可以安全挖掘。不過，還有一些炸藥地塊是實彈，挖到就會爆炸。
 
 {{codeexample 
 {
-    "camera_position": {"x": -3, "y": -3, "z": 12},
+    "camera_position": {"x": -5, "y": 0, "z": 15},
     "show_image": true,
     "image_size": {"x": 900, "y": 500},
     "show_code": true,
@@ -17,24 +17,36 @@
     "collapsing": false,
     "autoplay": true,
     "items": [{"item": "hay", "n": 100}],
-    "world_size": {"x": 5, "y": 5},
+    "world_size": {"x": 11, "y": 11},
     "execution_speed": 8,
     "digging_speed": 8,
     "action_ticks": 200,
     "operation_ticks": 200,
-    "seed": 4,
+    "seed": 5,
     "exclude_unlocks": ["watering", "fertilizer", "mushrooms", "coal", "quartz", "petrified_pumpkins"]
 }
 #SETUP
 jump(Unlocks.Dynamite)
+for _ in range(5):
+    move(East)
+    move(North)
 #CODE
 while get_ground_type() != Grounds.Soot:
     dig()
-dig()
-dig()
+
+circle_directions = [East, South, West, West, North, North, East, East, South, West]
+def dig_dynamite_neighbors():
+    for dir in circle_directions:
+        move(dir)
+        while get_ground_type() != Grounds.Soot:
+            dig()
+
+while get_ground_type() == Grounds.Soot and measure() == 0:
+    dig_dynamite_neighbors()
+    move(circle_directions[random() * len(circle_directions)])
 }}
 
-你能找出並挖掘所有啞彈地塊，只留下實彈炸藥地塊嗎？炸藥層消失時，每個周圍只剩實彈地塊或黑煙地塊的實彈地塊，都會給你產出額外的炸藥。
+你能找出並挖掘所有啞彈炸藥地塊，只留下實彈地塊嗎？炸藥層消失時，每個周圍只剩實彈地塊或黑煙地塊的實彈地塊，都會給你產出額外的炸藥。
 
 好在下方的黑煙地塊可以幫忙：它們能檢測相鄰的炸藥地塊中有多少是實彈炸藥。不過，它們只告訴你總數，不會指出具體是哪些地塊，因此你需要結合多個黑煙地塊的讀數自行推斷。
 
@@ -42,7 +54,7 @@ dig()
 
 炸藥層中第一次挖到的一定是啞彈。每挖掉一個炸藥地塊都會產出少量炸藥。炸藥層被摧毀時，無論是成功挖光啞彈，還是不慎挖中實彈炸藥，你都會獲得額外的炸藥，其數量等於完全顯露的實彈炸藥地塊數的平方。
 
-如果挖到實彈炸藥，兩個地層都會爆炸。在挖入 `Grounds.Dynamite` 後，可以使用 `get_ground_type()` 檢查是否發生了爆炸。如果地塊不是 `Grounds.Soot`，說明解謎失敗。反之，如果挖掉最後一個啞彈地塊，所有炸藥地塊都會消失，你會獲得該謎題獎勵的最大產量。如果黑煙層保留，但 `measure()` 回傳 `None`，則表示謎題已成功解開。
+如果挖到實彈炸藥，兩個地層都會爆炸。在挖入 `Grounds.Dynamite` 後，可以使用 `get_ground_type()` 檢查是否發生了爆炸。如果地塊不是 `Grounds.Soot`，說明解謎失敗。反之，如果挖掉最後一個啞彈地塊，所有炸藥地塊都會消失，你會獲得該謎題獎勵的最大產量。黑煙層會保留，但 `measure()` 回傳 `None`，表示謎題已成功解開。
 
 `# 挖掘炸藥地塊並檢查謎題狀態
 def dig_dynamite():
@@ -58,7 +70,7 @@ def dig_dynamite():
         return None
 `
 
-炸藥層中的實彈炸藥數量會隨著深度增加，找出它們也會越來越難。
+炸藥層中的實彈炸藥數量會隨著深度增加，找出它們也會越來越難。炸藥總數會隨農場規模增加，清理一層炸藥可能獲得的最大產量也隨之增加。
 
 收集到的炸藥可以透過 `use_item(Items.Dynamite)` 使用，並立即在無人機下方爆炸。
 

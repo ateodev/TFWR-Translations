@@ -88,7 +88,12 @@
 @option_tooltip_keyboard_layout = ゲーム内キーボードのキー配列。初期設定はシステム言語の配列です。
 @option_tooltip_keyboard_type = コードを入力するキーボード。ゲーム内キーボードにはPythonに必要な記号がそろっています。システムキーボードは他のアプリで使っているものです。物理キーボードを接続しているときは常にそちらが使われます。
 @option_tooltip_exit_fullscreen_on_run = スタートを押すと全画面のコードエディタを終了して農場を表示します。ブレークポイントで停止した行には引き続き移動します。
+@option_tooltip_automatic_autocomplete = 入力中に補完候補を自動で表示します。オフにしても、補完のキー割り当ては引き続き使えます。
+@option_tooltip_focus_errors = 画面外で発生したエラーにカメラを移動し、見逃さないようにします。
+@option_tooltip_window_docking = ウィンドウ同士をドラッグして近づけたときにドッキングできるようにします。
+@keybind_tooltip_autocomplete = コードの自動補完ウィンドウを開きます。
 @option_tooltip_keyboard_volume = ゲーム内キーボードのキー音の音量を調整します。
+@option_tooltip_mute_in_background = ゲームウィンドウがアクティブでない間、ゲームのすべての音声をミュートします。
 @option_tooltip_keyboard_sound = ゲーム内キーボードのキーを押したときの音：システム＝端末のキーボードのクリック音、メカニカル＝メカニカルキーボードのキー音。
 @option_tooltip_keyboard_vibration = ゲーム内キーボードのキーを押すたびに短く振動します。
 @option_tooltip_selection_menu = 選択したテキストの上に出る「カット」「コピー」「ペースト」のメニュー。自動＝ゲーム内キーボードの表示中やハードウェアキーボードの接続中は非表示。どちらにもこれらのキーがあるためです。

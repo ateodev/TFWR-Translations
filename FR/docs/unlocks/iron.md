@@ -4,11 +4,11 @@
 ---
 # Fer
 
-Tu as découvert des filons de fer dans la couche rocheuse située sous l’argile.
+Après avoir trouvé du charbon dans `Grounds.Dirt`, tu peux creuser plus profond, au-delà de la couche de `Grounds.Clay` et jusque dans `Grounds.Rock`, pour trouver du fer.
 
-Les filons de fer sont petits au début et il te faudra un peu de chance pour les trouver. À mesure que tu augmentes le niveau de ce déblocage, la taille maximale d’un filon de minerai augmente. Pour trouver du fer de façon plus fiable, tu peux aussi consulter le déblocage de la prospection du minerai.
+Contrairement aux filons de charbon, les filons de fer s’étendent aussi verticalement. Mais tous les blocs de fer d’un filon sont toujours directement voisins, les blocs ne sont jamais reliés uniquement en diagonale.
 
-Un filon de fer est toujours continu, sans liaison en diagonale. Si tu trouves un morceau de fer, cherche-en d’autres dessous ou à côté afin de récolter tout le filon.
+Les filons de fer sont toutefois petits au début et il te faudra un peu de chance pour les trouver. Continuer à débloquer le fer augmente la taille maximale des filons et les rend un peu plus faciles à trouver par hasard. Mais pour les trouver de façon fiable, tu devrais débloquer la [prospection du fer](docs/unlocks/prospecting.md).
 
 {{codeexample 
 {

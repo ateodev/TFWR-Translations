@@ -89,7 +89,12 @@
 @option_tooltip_keyboard_layout = Układ klawiszy klawiatury w grze. Domyślnie układ używany w języku twojego systemu.
 @option_tooltip_keyboard_type = Którą klawiaturą piszesz kod. Klawiatura w grze ma symbole potrzebne w Pythonie; klawiatura systemowa to ta, której używasz w innych aplikacjach. Podłączona klawiatura sprzętowa jest zawsze używana zamiast nich.
 @option_tooltip_exit_fullscreen_on_run = Naciśnięcie Start wychodzi z pełnoekranowego edytora kodu i pokazuje farmę. Punkty przerwania nadal przenoszą cię do wstrzymanego wiersza.
+@option_tooltip_automatic_autocomplete = Automatycznie pokazuje podpowiedzi autouzupełniania podczas pisania. Klawisz autouzupełniania działa nawet wtedy, gdy ta opcja jest wyłączona.
+@option_tooltip_focus_errors = Przesuwa kamerę do błędów, które pojawiają się poza ekranem, żeby ich nie przegapić.
+@option_tooltip_window_docking = Pozwala oknom dokować się do siebie nawzajem po przeciągnięciu ich razem.
+@keybind_tooltip_autocomplete = Otwórz okno autouzupełniania kodu.
 @option_tooltip_keyboard_volume = Ustawia głośność dźwięków klawiszy klawiatury w grze.
+@option_tooltip_mute_in_background = Wycisza cały dźwięk gry, gdy okno gry nie jest aktywne.
 @option_tooltip_keyboard_sound = Dźwięk naciśnięcia klawisza klawiatury w grze: Systemowy = kliknięcie klawiatury twojego urządzenia, Mechaniczny = klawisz klawiatury mechanicznej.
 @option_tooltip_keyboard_vibration = Krótka wibracja przy każdym naciśnięciu klawisza klawiatury w grze.
 @option_tooltip_selection_menu = Menu z „Wytnij”, „Kopiuj” i „Wklej” nad zaznaczonym tekstem. Automatycznie = ukryte, gdy widoczna jest klawiatura w grze lub podłączona jest klawiatura sprzętowa, bo obie mają te klawisze.

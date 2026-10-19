@@ -716,3 +716,15 @@ Skočí k podzemnímu útvaru spojenému s `unlock`.
 
 příklad:
 `jump(Unlocks.Iron)`
+@code_tooltip_hover = `hover(height)`
+Změní výšku, ve které se dron vznáší nad zemí.
+
+Výchozí výška je `1` a většina akcí dronu vrátí výšku vznášení na výchozí hodnotu.
+
+příklad:
+`hover(5)`
+@code_tooltip_get_hover = `get_hover()`
+Vrátí aktuální výšku, ve které se dron vznáší nad zemí.
+
+příklad:
+`height = get_hover()`

@@ -2,7 +2,9 @@
 ---
 # Cuarzo
 
-El cuarzo crece en vetas con forma de aguja cerca del fondo de la capa de roca y en la tierra dura que hay debajo. Las vetas forman columnas verticales, por lo que resulta bastante difícil encontrarlas por ensayo y error.
+Más abajo que las vetas de hierro en `Grounds.Rock`, encontrarás cuarzo en la parte inferior de la capa de roca y en la `Grounds.Dirt` dura que hay debajo (comprueba la dureza con `get_hardness()` del desbloqueo [Sentidos subterráneos](docs/unlocks/underground_senses.md)).
+
+El cuarzo crece en vetas con forma de aguja que forman columnas verticales, por lo que resulta bastante difícil encontrarlas por ensayo y error.
 
 Por suerte, podemos usar nuestro hierro y deformarlo hasta convertirlo en algo parecido a una vara de zahorí que nos permita localizar estas vetas de cuarzo más fácilmente. El comando para hacerlo es `prospect_quartz()`.
 
@@ -43,6 +45,10 @@ do_a_flip()
 do_a_flip()
 print(prospect_quartz())
 }}
+
+Puedes hacer prospecciones y moverte varias veces y ver cómo cambia la distancia, para saber si te acercas o te alejas de una veta. Puedes usar geometría 2D para hallar la intersección de dos o más círculos, encontrar la posición horizontal de una veta y excavar hacia abajo. O puedes usar trilateración completa para intersecar tres esferas y encontrar la posición 3D exacta.
+
+Ten en cuenta que no hay funciones matemáticas básicas para raíces cuadradas, trigonometría ni vectores; tendrás que implementarlas tú. Ten en cuenta también que puede haber varias vetas cerca, así que si tomas varias medidas próximas, puede que no apunten a la misma veta y te despisten.
 
 ---
 

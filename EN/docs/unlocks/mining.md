@@ -49,7 +49,9 @@ If you want to return to the surface, you can use `clear()` at any point. This a
 
 As you dig farther down, you'll notice the blocks becoming harder, which causes digging to take more time. It's a good thing we can upgrade our drill to help with this!
 
-You can use `get_hardness()` to check the hardness of the block below you. If you run into a patch of particularly hard blocks, it might be wise to move around them, so you can progress faster:
+To help your drone make sense of the underground, you should quickly unlock [underground senses](docs/unlocks/underground_senses.md). This will allow it to check its own z-position as well as the type of ground below, its hardness and stability.
+
+For example, with [underground senses](docs/unlocks/underground_senses.md) you can use `get_hardness()` to check the hardness of the block below you. If you run into a patch of particularly hard blocks, it might be wise to move around them, so you can progress faster:
 
 `while True:
         if get_hardness() < 5:

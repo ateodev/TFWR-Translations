@@ -30,6 +30,7 @@
 @UI volume = Volume UI
 @ambience volume = Volume Ambiente
 @drone volume = Volume Drone
+@mute in background = Muto in background
 @fps limit = Framerate Massimo
 @autosave = Autosalvataggio Codice
 @autosave progress = Autosalvataggio Progressi
@@ -109,6 +110,10 @@
 @30 fps = 30 FPS
 @60 fps = 60 FPS
 @120 fps = 120 FPS
+@automatic autocomplete = Completamento automatico
+@focus errors = Mostra errori
+@window docking = Aggancio finestre
+@autocomplete = Completamento
 @keyboard = Tastiera
 @Keyboard volume = Volume tastiera
 @Keyboard sound = Suono dei tasti

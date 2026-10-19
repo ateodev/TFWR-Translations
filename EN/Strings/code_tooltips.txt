@@ -718,3 +718,15 @@ You can only execute `jump` once per script.
 
 example:
 `jump(Unlocks.Iron)`
+@code_tooltip_hover = `hover(height)` 
+Change the height the drone hovers above ground.
+
+The default height is `1` and most drone actions will reset the hover height back to the default.
+
+example:
+`hover(5)`
+@code_tooltip_get_hover = `get_hover()` 
+Get the current height the drone hovers above ground.
+
+example:
+`height = get_hover()`

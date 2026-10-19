@@ -2,7 +2,9 @@
 ---
 # Broca Explosiva
 
-Chamar dig() com a broca explosiva equipada consome uma unidade de Items.Dynamite e causa uma explosão semelhante à de use_item(Items.Dynamite). Porém, ao contrário de uma explosão de dinamite comum, ela coleta todos os blocos atingidos pela explosão!
+Equipe a broca explosiva usando `change_hat(Hats.Explosive_Drill)`.
+
+Chamar `dig()` com a broca explosiva equipada consome uma unidade de `Items.Dynamite` e causa uma explosão semelhante à de `use_item(Items.Dynamite)`. Porém, ao contrário de uma explosão de dinamite comum, ela coleta todos os blocos atingidos pela explosão!
 
 Você só tem uma broca explosiva, então apenas um drone pode equipá-la por vez.
 

@@ -4,11 +4,11 @@
 
 かつての採掘隊が残した画期的な爆薬です。幸いなことに（あるいは不幸なことに）、あなたのドリルはダイナマイトを爆発させるのにぴったりで、周囲のブロックを吹き飛ばすことができます。
 
-ダイナマイトを安全に採掘するには、`Grounds.Dynamite`と`Grounds.Soot`の二重の地層を見つける必要があります。上のダイナマイトの地面は古くなっており、安全に掘れるブロックもあります。しかし、まだ爆発するダイナマイトも残っているため、掘ると爆発することもあります。
+ダイナマイトを安全に採掘するには、`Grounds.Dynamite`の層と、そのすぐ下に続く`Grounds.Soot`の層を見つけましょう。上のダイナマイトの層は古くなっており、安全に掘れるブロックもあります。しかし、まだ爆発するダイナマイトブロックも残っていて、掘ると爆発します。
 
 {{codeexample 
 {
-    "camera_position": {"x": -3, "y": -3, "z": 12},
+    "camera_position": {"x": -5, "y": 0, "z": 15},
     "show_image": true,
     "image_size": {"x": 900, "y": 500},
     "show_code": true,
@@ -17,24 +17,36 @@
     "collapsing": false,
     "autoplay": true,
     "items": [{"item": "hay", "n": 100}],
-    "world_size": {"x": 5, "y": 5},
+    "world_size": {"x": 11, "y": 11},
     "execution_speed": 8,
     "digging_speed": 8,
     "action_ticks": 200,
     "operation_ticks": 200,
-    "seed": 4,
+    "seed": 5,
     "exclude_unlocks": ["watering", "fertilizer", "mushrooms", "coal", "quartz", "petrified_pumpkins"]
 }
 #SETUP
 jump(Unlocks.Dynamite)
+for _ in range(5):
+    move(East)
+    move(North)
 #CODE
 while get_ground_type() != Grounds.Soot:
     dig()
-dig()
-dig()
+
+circle_directions = [East, South, West, West, North, North, East, East, South, West]
+def dig_dynamite_neighbors():
+    for dir in circle_directions:
+        move(dir)
+        while get_ground_type() != Grounds.Soot:
+            dig()
+
+while get_ground_type() == Grounds.Soot and measure() == 0:
+    dig_dynamite_neighbors()
+    move(circle_directions[random() * len(circle_directions)])
 }}
 
-不発のブロックをすべて見つけて掘り、爆発するブロックだけを残せますか？ダイナマイトの地層が消えたとき、周囲が爆発するブロック、またはすすのブロックだけになった爆発するブロックからは、追加のダイナマイトが得られます。
+不発のダイナマイトブロックをすべて見つけて掘り、爆発するブロックだけを残せますか？ダイナマイトの地層が消えたとき、周囲が爆発するブロック、またはすすのブロックだけになった爆発するブロックからは、追加のダイナマイトが得られます。
 
 幸い、下のすすのブロックが手掛かりになります。これらは、爆発するダイナマイトを含んだ隣接するダイナマイトの数を検知できます。どのブロックが爆発するかは教えてくれず、わかるのは合計数だけです。複数のすすのブロックの数値を組み合わせて、自分で突き止めましょう。
 
@@ -58,7 +70,7 @@ def dig_dynamite():
         return None
 `
 
-ダイナマイトの地層が深いほど、爆発するダイナマイトの数が増え、見つける難易度も増えます。
+ダイナマイトの地層が深いほど、爆発するダイナマイトの数が増え、見つける難易度も増えます。ダイナマイトの総数は農場の大きさに応じて増えるので、ダイナマイトの地層をクリアしたときに得られる最大の収穫量も増えます。
 
 集めたダイナマイトは`use_item(Items.Dynamite)`で使用でき、ドローンの真下ですぐに爆発します。
 

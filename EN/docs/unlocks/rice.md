@@ -4,9 +4,11 @@
 ---
 # Rice
 
-Underneath the surface you have noticed a thin sheet of clay. As it turns out, this fertile ground is perfect for planting rice seedlings.
+Below the surface and the `Grounds.Dirt` layer you might have noticed a thin sheet of `Grounds.Clay`. As it turns out, this fertile and soaked ground is perfect for planting rice seedlings.
 
-Rice will dry out the clay it was planted on. You can only use each clay block once. Luckily, the sheet is a few blocks thick. And of course, you can always just `clear()` the world to get the clay sheet back.
+As with grass or bushes, as long as your drone is above a `Grounds.Clay` block, you can use `plant(Entities.Rice)` to plant rice seedlings into the clay, then `can_harvest()` to check if the rice has fully grown, and finally `harvest()` to gain rice.
+
+Once you plant rice, the ground will turn into `Grounds.Rice_Terrace` to provide the perfect environment for the rice to mature. Once the rice if fully grown, the ground will dry out and turn into `Grounds.Dry_Rice_Terrace` and cannot be used plant more rice. Luckily, the sheet is a few blocks thick, so you can `dig()` the block away and plant new rice on the `Grounds.Clay` below. And, if the sheet runs out, you can always just `clear()` the world and dig down to a fresh sheet.
 
 You might find the following code useful to dig down until you find clay.
 

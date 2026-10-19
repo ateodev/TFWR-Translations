@@ -4,11 +4,11 @@
 ---
 # Ferro
 
-Você descobriu veios de ferro na camada de pedra abaixo da argila.
+Depois de encontrar carvão em `Grounds.Dirt`, você pode escavar mais fundo, passando pela camada de `Grounds.Clay` até `Grounds.Rock`, para encontrar ferro.
 
-Os veios de ferro começam pequenos, e você precisará de sorte para encontrá-los. Conforme este desbloqueio sobe de nível, o tamanho máximo dos veios aumenta. Para encontrar ferro de forma mais confiável, confira também o desbloqueio de prospecção de minério.
+Ao contrário dos veios de carvão, os veios de ferro também se estendem na vertical. Mas todos os blocos de ferro de um veio estão sempre diretamente lado a lado; os blocos nunca se ligam apenas na diagonal.
 
-Um veio de ferro é sempre contínuo, sem saltos diagonais. Se encontrar um pedaço de ferro, procure mais abaixo ou ao lado para garantir que coletou o veio inteiro.
+Mas os veios de ferro começam pequenos, e você precisará de sorte para encontrá-los. Continuar desbloqueando o ferro aumenta o tamanho máximo dos veios e os torna um pouco mais fáceis de encontrar por acaso. Mas para encontrá-los de forma confiável, você deve desbloquear a [prospecção de ferro](docs/unlocks/prospecting.md).
 
 {{codeexample 
 {
@@ -42,4 +42,3 @@ do_a_flip()
 [Estatísticas](docs/stats.md)      [Mineração](docs/unlocks/mining.md)      [Prospecção de Ferro](docs/unlocks/prospecting.md)      [Sentidos Subterrâneos](docs/unlocks/underground_senses.md)
 
 [move()](functions/move)      [dig()](functions/dig)
-

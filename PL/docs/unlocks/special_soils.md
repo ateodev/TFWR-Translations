@@ -10,7 +10,7 @@ Perlit nadaje się dla roślin lubiących przewiewne gleby: kaktusów, bambusa, 
 
 Gleba próchnicza nadaje się dla marchwi i słoneczników. Posadzone na niej dają dwukrotnie większy plon.
 
-Kolejną zaletą perlitu i gleby próchniczej jest to, że przed posadzeniem odpowiednich dla nich roślin nie musisz wywoływać `till()`.
+Kolejną zaletą perlitu i gleby próchniczej jest to, że od razu nadają się do sadzenia. W przeciwieństwie do `Grounds.Grassland`, które musisz najpierw zamienić w `Grounds.Soil` za pomocą `till()`.
 
 ---
 

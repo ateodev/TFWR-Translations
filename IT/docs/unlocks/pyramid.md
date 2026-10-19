@@ -45,7 +45,7 @@ for i in range(6):
 
 I blocchi sopra la piramide sono sempre di terra. Se vuoi dissotterrare una piramide in modo più efficiente rispetto al codice precedente, puoi sfruttare questo fatto.
 
-Come puoi vedere, nella sabbia ci sono diversi buchi da riempire. Quando li riempi e riporti la piramide al suo stato originale, questa si distrugge e ricevi energia come ricompensa.
+Come puoi vedere, nella sabbia ci sono diversi buchi da riempire. Quando li riempi e riporti la piramide al suo stato originale, questa si distrugge e al centro della base di calcare compare un grande girasole. Raccoglilo per ricevere energia. Più grande è la piramide completata, maggiore è l'energia ottenuta.
 
 Puoi restaurare una piramide posizionando blocchi con il comando `place(Grounds.Sand)`. La sabbia è un blocco speciale che crolla immediatamente se non è sostenuto correttamente. Ogni blocco di sabbia deve essere posizionato direttamente sul calcare oppure sopra una base 3x3 di blocchi di sabbia. Ecco una piccola piramide costruita a mano come dimostrazione. Naturalmente, costruirla da solo non ti darà energia:
 
@@ -87,8 +87,6 @@ place(Grounds.Sand)
 }}
 
 Una piramide restaurata correttamente è composta da fondamenta quadrate di calcare con lati di lunghezza dispari, per esempio 5x5. Sopra si trova uno strato di blocchi di sabbia delle stesse dimensioni (5x5), seguito da strati progressivamente più piccoli: 3x3 e poi 1x1.
-
-Quando una piramide viene completata, si sgretola e al centro compare un grande girasole. Puoi raccoglierlo per ricevere energia. Più grande è la piramide completata, maggiore è l'energia ottenuta.
 
 ---
 

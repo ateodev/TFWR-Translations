@@ -4,11 +4,11 @@
 
 L’explosif révolutionnaire, abandonné par de précédentes expéditions minières. Malheureusement — ou heureusement — ta foreuse est parfaite pour faire exploser la dynamite et pulvériser tous les blocs alentour.
 
-Pour extraire la dynamite sans danger, tu dois trouver la double strate composée de `Grounds.Dynamite` et de `Grounds.Soot`. Le sol de dynamite supérieur a un peu vieilli : certains de ses blocs peuvent être forés sans danger. Mais une partie de la dynamite est encore active et explosera si tu la fores.
+Pour extraire la dynamite sans danger, trouve une couche de `Grounds.Dynamite` directement suivie d’une couche de `Grounds.Soot` en dessous. La couche de dynamite du dessus a un peu vieilli : certains de ses blocs peuvent être forés sans danger. Mais certains blocs de dynamite sont encore actifs et exploseront si tu les fores.
 
 {{codeexample 
 {
-    "camera_position": {"x": -3, "y": -3, "z": 12},
+    "camera_position": {"x": -5, "y": 0, "z": 15},
     "show_image": true,
     "image_size": {"x": 900, "y": 500},
     "show_code": true,
@@ -17,24 +17,36 @@ Pour extraire la dynamite sans danger, tu dois trouver la double strate composé
     "collapsing": false,
     "autoplay": true,
     "items": [{"item": "hay", "n": 100}],
-    "world_size": {"x": 5, "y": 5},
+    "world_size": {"x": 11, "y": 11},
     "execution_speed": 8,
     "digging_speed": 8,
     "action_ticks": 200,
     "operation_ticks": 200,
-    "seed": 4,
+    "seed": 5,
     "exclude_unlocks": ["watering", "fertilizer", "mushrooms", "coal", "quartz", "petrified_pumpkins"]
 }
 #SETUP
 jump(Unlocks.Dynamite)
+for _ in range(5):
+    move(East)
+    move(North)
 #CODE
 while get_ground_type() != Grounds.Soot:
     dig()
-dig()
-dig()
+
+circle_directions = [East, South, West, West, North, North, East, East, South, West]
+def dig_dynamite_neighbors():
+    for dir in circle_directions:
+        move(dir)
+        while get_ground_type() != Grounds.Soot:
+            dig()
+
+while get_ground_type() == Grounds.Soot and measure() == 0:
+    dig_dynamite_neighbors()
+    move(circle_directions[random() * len(circle_directions)])
 }}
 
-Peux-tu trouver et forer tous les blocs inertes en ne laissant que les blocs actifs ? Chaque bloc actif entouré uniquement d’autres blocs actifs ou de blocs de suie te rapportera de la dynamite supplémentaire lorsque la strate de dynamite disparaîtra.
+Peux-tu trouver et forer tous les blocs de dynamite inertes en ne laissant que les blocs actifs ? Chaque bloc actif entouré uniquement d’autres blocs actifs ou de blocs de suie te rapportera de la dynamite supplémentaire lorsque la strate de dynamite disparaîtra.
 
 Heureusement, les blocs de suie situés dessous vont t’aider : ils détectent le nombre de blocs de dynamite voisins contenant de la dynamite active. Ils ne t’indiquent pas lesquels sont actifs, seulement leur nombre total. Tu dois donc combiner les relevés de plusieurs blocs de suie et résoudre le problème toi-même.
 
@@ -58,7 +70,7 @@ def dig_dynamite():
         return None
 `
 
-Le nombre de mines actives dans la strate de dynamite, et donc la difficulté pour les trouver, augmente avec la profondeur.
+Le nombre de mines actives dans la strate de dynamite, et donc la difficulté pour les trouver, augmente avec la profondeur. Le nombre total de mines augmente avec la taille de la ferme, et donc aussi le rendement maximal possible quand tu nettoies une strate de dynamite.
 
 La dynamite récupérée peut être utilisée avec `use_item(Items.Dynamite)` et explose immédiatement sous le drone.
 

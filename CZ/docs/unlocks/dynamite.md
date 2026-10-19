@@ -4,11 +4,11 @@
 
 Revoluční výbušnina, kterou tu nechaly dřívější těžařské výpravy. Naštěstí (nebo bohužel) je tvůj vrták ideální k tomu, aby dynamit odpálil a odstřelil všechny bloky kolem tebe.
 
-Abys dynamit bezpečně vytěžil, musíš najít dvojitou vrstvu `Grounds.Dynamite` a `Grounds.Soot`. Dynamitová půda nahoře už trochu zestárla a do některých jejích bloků se dá bezpečně kopat. Část dynamitu je ale stále živá a při vykopání vybuchne.
+Abys dynamit bezpečně vytěžil, najdi vrstvu `Grounds.Dynamite`, pod kterou hned následuje vrstva `Grounds.Soot`. Dynamitová vrstva nahoře už trochu zestárla a do některých jejích bloků se dá bezpečně kopat. Některé bloky dynamitu jsou ale stále živé a vybuchnou, když do nich kopneš.
 
 {{codeexample 
 {
-    "camera_position": {"x": -3, "y": -3, "z": 12},
+    "camera_position": {"x": -5, "y": 0, "z": 15},
     "show_image": true,
     "image_size": {"x": 900, "y": 500},
     "show_code": true,
@@ -17,24 +17,36 @@ Abys dynamit bezpečně vytěžil, musíš najít dvojitou vrstvu `Grounds.Dynam
     "collapsing": false,
     "autoplay": true,
     "items": [{"item": "hay", "n": 100}],
-    "world_size": {"x": 5, "y": 5},
+    "world_size": {"x": 11, "y": 11},
     "execution_speed": 8,
     "digging_speed": 8,
     "action_ticks": 200,
     "operation_ticks": 200,
-    "seed": 4,
+    "seed": 5,
     "exclude_unlocks": ["watering", "fertilizer", "mushrooms", "coal", "quartz", "petrified_pumpkins"]
 }
 #SETUP
 jump(Unlocks.Dynamite)
+for _ in range(5):
+    move(East)
+    move(North)
 #CODE
 while get_ground_type() != Grounds.Soot:
     dig()
-dig()
-dig()
+
+circle_directions = [East, South, West, West, North, North, East, East, South, West]
+def dig_dynamite_neighbors():
+    for dir in circle_directions:
+        move(dir)
+        while get_ground_type() != Grounds.Soot:
+            dig()
+
+while get_ground_type() == Grounds.Soot and measure() == 0:
+    dig_dynamite_neighbors()
+    move(circle_directions[random() * len(circle_directions)])
 }}
 
-Dokážeš najít a vykopat všechny slepé bloky a nechat jen ty živé? Každý živý blok obklopený jen dalšími živými bloky nebo bloky sazí ti dá dynamit navíc, jakmile dynamitová vrstva zmizí.
+Dokážeš najít a vykopat všechny slepé bloky dynamitu a nechat jen ty živé? Každý živý blok obklopený jen dalšími živými bloky nebo bloky sazí ti dá dynamit navíc, jakmile dynamitová vrstva zmizí.
 
 Naštěstí ti pomohou bloky sazí dole: dokážou zjistit počet sousedních dynamitových bloků, které obsahují živý dynamit. Neřeknou ti přesně, které bloky jsou živé, jen celkový počet, takže musíš zkombinovat údaje z více bloků sazí a vymyslet to sám.
 
@@ -58,7 +70,7 @@ def dig_dynamite():
         return None
 `
 
-Počet živých min v dynamitové vrstvě, a tedy i obtížnost jejich nalezení, roste s hloubkou.
+Počet živých min v dynamitové vrstvě, a tedy i obtížnost jejich nalezení, roste s hloubkou. Celkový počet min roste s velikostí farmy, a s ním i nejvyšší možný výnos za vyčištění dynamitové vrstvy.
 
 Sebraný dynamit lze použít pomocí `use_item(Items.Dynamite)`; vybuchne okamžitě pod dronem.
 

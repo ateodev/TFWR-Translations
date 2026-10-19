@@ -2,7 +2,9 @@
 ---
 # Kwarc
 
-Kwarc występuje w żyłach przypominających igły, w pobliżu dna warstwy skał i w twardej ziemi poniżej. Żyły tworzą pionowe kolumny, dlatego trudno znaleźć je metodą prób i błędów.
+Poniżej żył żelaza w `Grounds.Rock` znajdziesz kwarc w dolnej części warstwy skał i w twardej `Grounds.Dirt` poniżej (twardość sprawdzisz za pomocą `get_hardness()` z odblokowania [Podziemne zmysły](docs/unlocks/underground_senses.md)).
+
+Kwarc występuje w żyłach przypominających igły, które tworzą pionowe kolumny, dlatego trudno znaleźć je metodą prób i błędów.
 
 Na szczęście możemy przerobić żelazo na coś w rodzaju różdżki radiestezyjnej, która ułatwia odnajdywanie żył kwarcu. Służy do tego polecenie `prospect_quartz()`.
 
@@ -43,6 +45,10 @@ do_a_flip()
 do_a_flip()
 print(prospect_quartz())
 }}
+
+Możesz wielokrotnie prowadzić poszukiwania i się przemieszczać, obserwując, jak zmienia się odległość, aby wiedzieć, czy zbliżasz się do żyły, czy się od niej oddalasz. Za pomocą geometrii 2D możesz znaleźć punkt przecięcia dwóch lub więcej okręgów, ustalić poziome położenie żyły i kopać w dół. Możesz też użyć pełnej trilateracji, aby przeciąć trzy sfery i znaleźć dokładną pozycję 3D.
+
+Pamiętaj, że nie ma podstawowych funkcji matematycznych do pierwiastka kwadratowego, trygonometrii ani wektorów, więc musisz je napisać sam. Pamiętaj też, że w pobliżu może być kilka żył, więc jeśli wykonasz kilka pomiarów blisko siebie, mogą nie wskazywać tej samej żyły i wprowadzić cię w błąd.
 
 ---
 

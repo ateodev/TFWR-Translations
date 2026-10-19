@@ -2,7 +2,7 @@
 ---
 # Poszukiwanie żelaza
 
-Być może zauważyłeś, że żyły żelaza czasem trudno znaleźć. Można kopać na oślep i liczyć na szczęście, ale istnieje lepszy sposób: żelazo jest magnetyczne, więc możemy wykrywać je z dużej odległości.
+Być może zauważyłeś, że żyły żelaza czasem trudno znaleźć. Można kopać na oślep i liczyć na szczęście, ale istnieje lepszy sposób: żelazo jest magnetyczne, więc możemy wykrywać je z odległości.
 
 Właśnie do tego służy polecenie `prospect_iron()`. Funkcja `prospect_iron()` zwraca kierunek świata (`North`, `East`, `South` lub `West`), w którym dron musi się poruszyć, aby zrobić krok w stronę najbliższej rudy żelaza. Wykonanie polecenia kosztuje 1 węgiel.
 

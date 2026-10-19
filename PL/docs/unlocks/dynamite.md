@@ -4,11 +4,11 @@
 
 Rewolucyjny materiał wybuchowy pozostawiony przez poprzednie wyprawy górnicze. Na (nie)szczęście twoje wiertło idealnie nadaje się do detonowania dynamitu i wysadzania wszystkich bloków wokół.
 
-Aby bezpiecznie wydobywać dynamit, musisz znaleźć podwójną warstwę `Grounds.Dynamite` i `Grounds.Soot`. Znajdujący się wyżej dynamit nieco się zestarzał i do części jego bloków można bezpiecznie się dokopać. Niektóre ładunki są jednak nadal aktywne i eksplodują po dokopaniu się do nich.
+Aby bezpiecznie wydobywać dynamit, znajdź warstwę `Grounds.Dynamite`, pod którą bezpośrednio leży warstwa `Grounds.Soot`. Górna warstwa dynamitu nieco się zestarzała i do części jej bloków można bezpiecznie się dokopać. Niektóre bloki dynamitu są jednak nadal aktywne i eksplodują, gdy się do nich dokopiesz.
 
 {{codeexample 
 {
-    "camera_position": {"x": -3, "y": -3, "z": 12},
+    "camera_position": {"x": -5, "y": 0, "z": 15},
     "show_image": true,
     "image_size": {"x": 900, "y": 500},
     "show_code": true,
@@ -17,24 +17,36 @@ Aby bezpiecznie wydobywać dynamit, musisz znaleźć podwójną warstwę `Ground
     "collapsing": false,
     "autoplay": true,
     "items": [{"item": "hay", "n": 100}],
-    "world_size": {"x": 5, "y": 5},
+    "world_size": {"x": 11, "y": 11},
     "execution_speed": 8,
     "digging_speed": 8,
     "action_ticks": 200,
     "operation_ticks": 200,
-    "seed": 4,
+    "seed": 5,
     "exclude_unlocks": ["watering", "fertilizer", "mushrooms", "coal", "quartz", "petrified_pumpkins"]
 }
 #SETUP
 jump(Unlocks.Dynamite)
+for _ in range(5):
+    move(East)
+    move(North)
 #CODE
 while get_ground_type() != Grounds.Soot:
     dig()
-dig()
-dig()
+
+circle_directions = [East, South, West, West, North, North, East, East, South, West]
+def dig_dynamite_neighbors():
+    for dir in circle_directions:
+        move(dir)
+        while get_ground_type() != Grounds.Soot:
+            dig()
+
+while get_ground_type() == Grounds.Soot and measure() == 0:
+    dig_dynamite_neighbors()
+    move(circle_directions[random() * len(circle_directions)])
 }}
 
-Czy potrafisz znaleźć i wykopać wszystkie niewypały, pozostawiając tylko aktywne bloki? Każdy aktywny blok otoczony wyłącznie innymi aktywnymi blokami lub blokami sadzy da ci dodatkowy dynamit, gdy warstwa dynamitu zniknie.
+Czy potrafisz znaleźć i wykopać wszystkie niewypały dynamitu, pozostawiając tylko aktywne bloki? Każdy aktywny blok otoczony wyłącznie innymi aktywnymi blokami lub blokami sadzy da ci dodatkowy dynamit, gdy warstwa dynamitu zniknie.
 
 Na szczęście pomogą ci bloki sadzy poniżej: potrafią wykryć liczbę sąsiednich bloków dynamitu zawierających aktywne ładunki. Nie wskażą dokładnie, które bloki są aktywne, a tylko ich łączną liczbę, więc musisz połączyć odczyty z kilku bloków sadzy i samodzielnie znaleźć rozwiązanie.
 
@@ -58,7 +70,7 @@ def dig_dynamite():
         return None
 `
 
-Liczba aktywnych min w warstwie dynamitu, a tym samym trudność ich odnalezienia, rośnie wraz z głębokością.
+Liczba aktywnych min w warstwie dynamitu, a tym samym trudność ich odnalezienia, rośnie wraz z głębokością. Łączna liczba min rośnie wraz z rozmiarem farmy, a z nią maksymalny możliwy plon za oczyszczenie warstwy dynamitu.
 
 Zebranego dynamitu można użyć za pomocą `use_item(Items.Dynamite)`; eksploduje bezpośrednio pod dronem.
 

@@ -3,9 +3,15 @@
 ---
 # Carvão
 
-Acontece que o solo logo abaixo da superfície é um bom lugar para encontrar depósitos de carvão.
+Diferentes minérios estão escondidos no subsolo, esperando que você os encontre e escave. Se você escavar através da superfície até `Grounds.Dirt`, o primeiro minério que encontra é o carvão.
 
-O carvão surge aleatoriamente em camadas horizontais com 1 bloco de espessura. O tamanho da camada cresce proporcionalmente ao tamanho do mundo, então talvez você queira aumentá-lo para encontrar mais carvão!
+Seus veios formam camadas horizontais com 1 bloco de espessura que você precisa encontrar por acaso enquanto escava a terra. Os blocos de carvão de uma camada ficam quase sempre diretamente lado a lado, mas alguns também podem estar ligados apenas na diagonal.
+
+Você não precisa fazer nada de especial para minerar carvão, basta executar `dig()` enquanto o drone está diretamente em cima de um bloco de `Grounds.Coal`. Use `get_ground_type()` para verificar o que está embaixo do drone e `get_ground_type(direction)` para verificar os quatro blocos adjacentes.
+
+Observe que você só recebe carvão pelos blocos de carvão que escava diretamente, e não pelos blocos que desabam ao redor do drone. Lembre-se disso ao pensar em como minerar carvão, para maximizar os blocos de carvão minerados em relação aos que se perdem nos desabamentos.
+
+As minas de carvão crescem proporcionalmente ao tamanho da fazenda, então considere continuar desbloqueando [Expandir](unlocks/expand) para aumentar a quantidade de carvão que você pode minerar.
 
 O programa a seguir é um bom ponto de partida para encontrar carvão. Ele escava para baixo em busca de uma camada de carvão e depois escava a leste e a oeste na esperança de encontrar mais.
 
@@ -34,6 +40,7 @@ move(East)
 #CODE
 while get_ground_type() != Grounds.Coal:
     dig()
+do_a_flip()
 dig()
 move(East)
 dig()
@@ -42,9 +49,10 @@ move(West)
 dig()
 }}
 
+Uma estratégia simples, principalmente para fazendas menores, é escavar todos os blocos na profundidade em que você encontrou um bloco de carvão. Para ser mais eficiente, você pode registrar onde viu blocos de carvão usando `get_ground_type(direction)` e evitar perder tempo passando por blocos de terra. Tome cuidado redobrado para não perder as ligações na diagonal, que você vai perder se andar apenas sobre blocos de carvão.
+
 ---
 
 [Estatísticas](docs/stats.md)      [Mineração](docs/unlocks/mining.md)      [Sentidos Subterrâneos](docs/unlocks/underground_senses.md)
 
 [move()](functions/move)      [get_ground_type()](functions/get_ground_type)      [dig()](functions/dig)
-

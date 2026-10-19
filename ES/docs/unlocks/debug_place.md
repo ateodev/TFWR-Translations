@@ -2,13 +2,13 @@
 ---
 # Bloques de colores
 
-Como ya sabes, puedes usar `place()` para hacer que tu dron coloque un bloque. Este desbloqueo añade bloques de colores que se distinguen visualmente de su entorno.
+Como ya sabes, puedes usar `place()` para hacer que tu dron coloque un bloque. Este desbloqueo añade tres bloques de colores que se distinguen visualmente de su entorno: `Grounds.Red_Block`, `Grounds.Green_Block` y `Grounds.Blue_Block`.
 
 Para colocar los nuevos bloques:
 
 {{codeexample 
 {
-    "camera_position": {"x": -1, "y": 0, "z": 8},
+    "camera_position": {"x": -1, "y": 0, "z": 10},
     "show_image": true,
     "image_size": {"x": 800, "y": 300},
     "show_code": true,
@@ -16,9 +16,9 @@ Para colocar los nuevos bloques:
     "show_output": false,
     "collapsing": false,
     "autoplay": true,
-    "items": [{"item": "hay", "n": 100}, {"item": "wood", "n": 100}],
-    "world_size": {"x": 4, "y": 4},
-    "execution_speed": 1,
+    "items": [{"item": "block", "n": 100}],
+    "world_size": {"x": 5, "y": 5},
+    "execution_speed": 5,
     "digging_speed": 4,
     "action_ticks": 200,
     "operation_ticks": 200,
@@ -29,13 +29,35 @@ Para colocar los nuevos bloques:
 #SETUP
 move(East)
 move(North)
-dig()
-dig()
-dig()
 #CODE
-place(Grounds.Red_Block)
 place(Grounds.Green_Block)
+move(East)
+
 place(Grounds.Blue_Block)
+move(East)
+
+place(Grounds.Green_Block)
+move(North)
+
+place(Grounds.Blue_Block)
+move(North)
+
+place(Grounds.Green_Block)
+move(West)
+
+place(Grounds.Blue_Block)
+move(West)
+
+place(Grounds.Green_Block)
+move(South)
+
+place(Grounds.Blue_Block)
+move(East)
+
+place(Grounds.Red_Block)
+place(Grounds.Red_Block)
+
+do_a_flip()
 }}
 ---
 

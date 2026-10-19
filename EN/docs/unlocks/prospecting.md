@@ -2,7 +2,7 @@
 ---
 # Iron Prospecting
 
-You may have noticed that it is sometimes hard to find iron veins. You could dig around and try to find them by chance, but there's a better way: since iron is magnetic, we can find it from a long distance.
+You may have noticed that it is sometimes hard to find iron veins. You could dig around and try to find them by chance, but there's a better way: since iron is magnetic, we can find it from a distance.
 
 The command `prospect_iron()` does exactly that. `prospect_iron()` returns the cardinal direction (`North`, `East`, `South`, or `West`) that the drone would have to move in to take a step toward the closest iron ore. The command costs 1 coal to execute.
 

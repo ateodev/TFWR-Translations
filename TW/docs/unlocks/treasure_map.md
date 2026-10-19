@@ -13,6 +13,49 @@
 
 在地圖地塊上呼叫 `measure()`，就能得到一串表示寶藏路徑的方向字母。N、E、S、W 分別代表 `North`、`East`、`South`、`West`；D 代表「向下」或「挖掘」。這些字母描述了由 `Grounds.Treasure_Path` 地塊組成、通向寶藏的路徑。
 
+{{codeexample 
+{
+    "camera_position": {"x": -1, "y": 0, "z": 6},
+    "show_image": true,
+    "image_size": {"x": 800, "y": 300},
+    "show_code": true,
+    "show_inventory": true,
+    "show_output": false,
+    "collapsing": true,
+    "autoplay": false,
+    "items": [{"item": "hay", "n": 100}, {"item": "iron", "n": 100}],
+    "world_size": {"x": 4, "y": 4},
+    "execution_speed": 2,
+    "digging_speed": 10,
+    "action_ticks": 200,
+    "operation_ticks": 200,
+    "seed": 3,
+    "exclude_unlocks": ["watering", "fertilizer", "dynamite", "iron"]
+}
+
+#SETUP
+jump(Unlocks.Treasure_Map)
+#CODE
+while get_ground_type() != Grounds.Basalt:
+    dig()
+
+do_a_flip()
+map_pos = measure()
+
+while get_pos_x() < map_pos[0]:
+    move(East)
+while get_pos_y() < map_pos[1]:
+    move(North)
+
+while get_ground_type() != Grounds.Treasure_Map:
+    dig()
+
+do_a_flip()
+instructions = measure()
+dig()
+}}
+
+可以對字串使用 `for` 迴圈，逐個字母地處理它：
 ```
 path = measure()
 for letter in path:

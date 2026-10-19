@@ -49,7 +49,9 @@ Al <desktop>pasar el cursor sobre</desktop><mobile>tocar</mobile> un bloque se m
 
 Al excavar a mayor profundidad, notarás que los bloques se vuelven más duros, por lo que tardas más en excavarlos. ¡Menos mal que podemos mejorar el taladro para ayudarnos!
 
-Puedes usar `get_hardness()` para comprobar la dureza del bloque que tienes debajo. Si encuentras una zona de bloques especialmente duros, puede ser buena idea rodearlos para avanzar más deprisa:
+Para ayudar a tu dron a orientarse bajo tierra, deberías desbloquear pronto los [sentidos subterráneos](docs/unlocks/underground_senses.md). Le permitirán comprobar su propia posición z, así como el tipo de terreno de debajo, su dureza y su estabilidad.
+
+Por ejemplo, con los [sentidos subterráneos](docs/unlocks/underground_senses.md) puedes usar `get_hardness()` para comprobar la dureza del bloque que tienes debajo. Si encuentras una zona de bloques especialmente duros, puede ser buena idea rodearlos para avanzar más deprisa:
 
 `while True:
         if get_hardness() < 5:

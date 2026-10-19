@@ -1,4 +1,5 @@
 @item_tooltip_template_amount = Ви маєте {0}
+@item_tooltip_template_rate = {0} предм./хв (рекорд: {1})
 @item_descr_carrot = Можна отримати зібравши моркву.
 @item_descr_rice = Отримується збором рису.
 @item_descr_fertilizer = Викличте `use_item(Items.Fertilizer)` щоб миттєво скоротити час росту рослин на 2 секунд.

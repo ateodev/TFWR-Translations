@@ -2,7 +2,7 @@
 ---
 # Prospezione del Ferro
 
-Avrai notato che a volte è difficile trovare le vene di ferro. Potresti scavare a caso sperando di incontrarle, ma c'è un modo migliore: dato che il ferro è magnetico, possiamo rilevarlo da molto lontano.
+Avrai notato che a volte è difficile trovare le vene di ferro. Potresti scavare a caso sperando di incontrarle, ma c'è un modo migliore: dato che il ferro è magnetico, possiamo rilevarlo a distanza.
 
 Il comando `prospect_iron()` serve proprio a questo. `prospect_iron()` restituisce la direzione cardinale (`North`, `East`, `South` o `West`) in cui il drone deve muoversi per compiere un passo verso il minerale di ferro più vicino. Eseguire il comando costa 1 carbone.
 

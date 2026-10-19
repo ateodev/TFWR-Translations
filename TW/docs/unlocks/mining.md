@@ -49,7 +49,9 @@ clear()
 
 越往下挖，地塊越堅硬，挖掘所需的時間也越長。好在可以升級鑽頭來應對！
 
-使用 `get_hardness()` 可以檢查下方地塊的硬度。如果遇到特別堅硬的一片地塊，不妨繞過去，以便更快取得進展：
+為了讓無人機看懂地下的情況，你應該盡快解鎖[地下感官](docs/unlocks/underground_senses.md)。這樣它就能檢查自身的 z 座標，以及下方地塊的類型、硬度和穩定性。
+
+例如，有了[地下感官](docs/unlocks/underground_senses.md)，你就可以使用 `get_hardness()` 檢查下方地塊的硬度。如果遇到特別堅硬的一片地塊，不妨繞過去，以便更快取得進展：
 
 `while True:
         if get_hardness() < 5:

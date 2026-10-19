@@ -45,7 +45,7 @@ for i in range(6):
 
 Los bloques que hay encima de la pirámide siempre son de tierra. Puedes aprovechar este dato si quieres desenterrar una pirámide de forma más eficiente que con el código anterior.
 
-Como puedes ver, hay varios agujeros en la arena que tendrás que rellenar. Cuando rellenes estos agujeros y restaures la pirámide a su estado original, esta se destruirá y recibirás energía como recompensa.
+Como puedes ver, hay varios agujeros en la arena que tendrás que rellenar. Cuando rellenes estos agujeros y restaures la pirámide a su estado original, esta se destruirá y aparecerá un gran girasol en el centro de la base de piedra caliza. Coséchalo para recibir energía. Cuanto mayor sea la pirámide que completes, más energía recibirás.
 
 Puedes restaurar una pirámide colocando bloques con el comando `place(Grounds.Sand)`. La arena es un bloque especial que se derrumba inmediatamente si no está bien apoyado. Cada bloque de arena que coloques debe estar directamente sobre piedra caliza o sobre una cuadrícula de 3x3 bloques de arena. Aquí tienes una pequeña pirámide construida a mano como ejemplo. Por supuesto, construirla tú mismo no te dará energía:
 
@@ -87,8 +87,6 @@ place(Grounds.Sand)
 }}
 
 Una pirámide restaurada correctamente consta de un cimiento cuadrado de piedra caliza cuyos lados tienen una longitud impar, por ejemplo, 5x5. Encima hay una capa de bloques de arena del mismo tamaño (5x5), seguida de capas cada vez más pequeñas: 3x3 y luego 1x1.
-
-Cuando se completa una pirámide, esta se desmorona y aparece un gran girasol en el centro. Puedes cosecharlo para recibir energía. Cuanto mayor sea la pirámide que completes, más energía recibirás.
 
 ---
 

@@ -2,7 +2,9 @@
 ---
 # Quartz
 
-Quartz grows in needle-shaped veins near the bottom of the stone layer and in the hard dirt below it. The veins form vertical columns, making them quite difficult to find through trial and error.
+Continuing from the iron veins in `Grounds.Rock`, you find quartz in the lower part of the rock layer and into the hard `Grounds.Dirt` below (check the hardness using `get_hardness()` from the [underground senses](docs/unlocks/underground_senses.md) unlock).
+
+Quartz grows in needle-shaped veins that form vertical columns, making them quite difficult to find through trial and error.
 
 Luckily, we can use our iron and mangle it into something similar to a dowsing rod that allows us to locate these quartz veins more easily. The command for this is `prospect_quartz()`.
 
@@ -43,6 +45,10 @@ do_a_flip()
 do_a_flip()
 print(prospect_quartz())
 }}
+
+You can repeatedly prospect and move and see how the distance changes, to know if you move closer or further away from a vein. You can use 2D geometry to find the intersection between two or more circles to find the horizontal position of a vein and dig down. Or you can use full triliteration to intersect three spheres and find the exact 3D position.
+
+Note that there aren't any basic math functions for square root, trigonometry or vectors, you'll have to implement them yourself. Also note that there can be multiple veins in the vicinity, so if you take multiple nearby measurements, they might not point to the same vein and lead you astray.
 
 ---
 
