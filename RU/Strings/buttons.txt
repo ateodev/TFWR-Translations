@@ -19,5 +19,6 @@
 @selection_copy = Скопировать
 @selection_paste = Вставить
 @selection_search = Найти
+@selection_docs = Документация
 @selection_select = Выбрать
 @selection_select_all = Выбрать все

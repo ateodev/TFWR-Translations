@@ -88,5 +88,6 @@
 @option_tooltip_keyboard_sound = Sonido al pulsar una tecla del teclado del juego: Sistema = el clic del teclado de tu dispositivo, Mecánico = una tecla de teclado mecánico.
 @option_tooltip_keyboard_vibration = Una vibración breve con cada pulsación de tecla del teclado del juego.
 @option_tooltip_selection_menu = El menú con 'Cortar', 'Copiar' y 'Pegar' sobre el texto seleccionado. Automático = oculto mientras se muestra el teclado del juego o hay un teclado físico conectado, ya que ambos tienen estas teclas.
+@option_tooltip_docs_on_select = Lo que seleccionar una palabra del código muestra de su documentación. En el menú = un botón 'Docs' en el menú de selección, Emergente = la documentación al instante. Al pasar el ratón por encima siempre se muestra.
 @option_tooltip_keyboard_backlight = Luz que brilla bajo las teclas del teclado del juego, blanca o en colores del arcoíris (RGB), con una onda de luz en cada tecla que pulsas.
 @option_tooltip_keyboard_squish = Hace las teclas del teclado del juego más planas para que cubra menos pantalla. Al máximo, las teclas tienen la mitad de su altura normal.

@@ -19,5 +19,6 @@
 @selection_copy = 拷贝
 @selection_paste = 粘贴
 @selection_search = 搜索
+@selection_docs = 文档
 @selection_select = 选择
 @selection_select_all = 全选

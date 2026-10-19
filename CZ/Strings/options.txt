@@ -100,6 +100,10 @@
 @Selection menu = Nabídka výběru
 @automatic = Automaticky
 @on = Zapnuto
+@Documentation on select = Dokumentace při výběru
+@never = Nikdy
+@menu button = V nabídce
+@tooltip = Bublina
 @exit fullscreen on run = Start zavře celou obrazovku
 @30 fps = 30 FPS
 @60 fps = 60 FPS

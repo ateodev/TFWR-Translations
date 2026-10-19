@@ -100,6 +100,10 @@
 @Selection menu = Menu de sélection
 @automatic = Automatique
 @on = Activé
+@Documentation on select = Doc à la sélection
+@never = Jamais
+@menu button = Menu
+@tooltip = Info-bulle
 @exit fullscreen on run = Quitter plein écran : Démarrer
 @30 fps = 30 IPS
 @60 fps = 60 IPS

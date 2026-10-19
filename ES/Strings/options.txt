@@ -100,6 +100,10 @@
 @Selection menu = Menú de selección
 @automatic = Automático
 @on = Activado
+@Documentation on select = Docs al seleccionar
+@never = Nunca
+@menu button = En el menú
+@tooltip = Emergente
 @exit fullscreen on run = Ejecutar cierra pant. completa
 @30 fps = 30 FPS
 @60 fps = 60 FPS

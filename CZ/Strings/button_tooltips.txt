@@ -88,5 +88,6 @@
 @option_tooltip_keyboard_sound = Zvuk stisku klávesy na herní klávesnici: Systémový = cvaknutí klávesnice tvého zařízení, Mechanický = klávesa mechanické klávesnice.
 @option_tooltip_keyboard_vibration = Krátká vibrace při každém stisku klávesy herní klávesnice.
 @option_tooltip_selection_menu = Nabídka s „Vyjmout“, „Kopírovat“ a „Vložit“ nad vybraným textem. Automaticky = skrytá, když je zobrazena herní klávesnice nebo je připojena hardwarová klávesnice, protože obě tyto klávesy mají.
+@option_tooltip_docs_on_select = Co výběr slova v kódu ukáže z jeho dokumentace. V nabídce = tlačítko „Dokumentace“ v nabídce výběru, Bublina = dokumentace hned. Najetí myší ji ukáže vždy.
 @option_tooltip_keyboard_backlight = Světlo prosvítající zpod kláves herní klávesnice, bílé nebo v barvách duhy (RGB), s vlnou světla od každé stisknuté klávesy.
 @option_tooltip_keyboard_squish = Zploští klávesy herní klávesnice, aby zakrývala méně obrazovky. Na maximu mají klávesy poloviční výšku.

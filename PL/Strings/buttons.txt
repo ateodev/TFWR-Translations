@@ -19,5 +19,6 @@
 @selection_copy = Kopiuj
 @selection_paste = Wklej
 @selection_search = Szukaj
+@selection_docs = Dokumentacja
 @selection_select = Zaznacz
 @selection_select_all = Zaznacz wszystko

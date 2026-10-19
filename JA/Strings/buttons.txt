@@ -19,5 +19,6 @@
 @selection_copy = コピー
 @selection_paste = ペースト
 @selection_search = 検索
+@selection_docs = ドキュメント
 @selection_select = 選択
 @selection_select_all = すべてを選択

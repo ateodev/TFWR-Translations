@@ -19,5 +19,6 @@
 @selection_copy = Kopírovat
 @selection_paste = Vložit
 @selection_search = Hledat
+@selection_docs = Dokumentace
 @selection_select = Vybrat
 @selection_select_all = Vybrat vše

@@ -99,6 +99,10 @@
 @Selection menu = 選択メニュー
 @automatic = 自動
 @on = オン
+@Documentation on select = 選択時のドキュメント
+@never = なし
+@menu button = メニューボタン
+@tooltip = ツールチップ
 @exit fullscreen on run = 実行時に全画面を終了
 @30 fps = 30 FPS
 @60 fps = 60 FPS

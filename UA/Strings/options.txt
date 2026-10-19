@@ -99,6 +99,10 @@
 @Selection menu = Меню виділення
 @automatic = Авто
 @on = Увімк.
+@Documentation on select = Документація при виділенні
+@never = Ніколи
+@menu button = У меню
+@tooltip = Підказка
 @exit fullscreen on run = Згортати редактор при запуску
 @30 fps = 30 FPS
 @60 fps = 60 FPS

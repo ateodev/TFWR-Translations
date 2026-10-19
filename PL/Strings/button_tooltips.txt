@@ -88,5 +88,6 @@
 @option_tooltip_keyboard_sound = Dźwięk naciśnięcia klawisza klawiatury w grze: Systemowy = kliknięcie klawiatury twojego urządzenia, Mechaniczny = klawisz klawiatury mechanicznej.
 @option_tooltip_keyboard_vibration = Krótka wibracja przy każdym naciśnięciu klawisza klawiatury w grze.
 @option_tooltip_selection_menu = Menu z „Wytnij”, „Kopiuj” i „Wklej” nad zaznaczonym tekstem. Automatycznie = ukryte, gdy widoczna jest klawiatura w grze lub podłączona jest klawiatura sprzętowa, bo obie mają te klawisze.
+@option_tooltip_docs_on_select = Co zaznaczenie słowa w kodzie pokazuje z jego dokumentacji. W menu = przycisk „Dokumentacja” w menu zaznaczenia, Dymek = dokumentacja od razu. Najechanie myszą zawsze ją pokazuje.
 @option_tooltip_keyboard_backlight = Światło spod klawiszy klawiatury w grze, białe lub w kolorach tęczy (RGB), z falą światła od każdego naciśniętego klawisza.
 @option_tooltip_keyboard_squish = Spłaszcza klawisze klawiatury w grze, by zasłaniała mniej ekranu. Na maksimum klawisze mają połowę normalnej wysokości.

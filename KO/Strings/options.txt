@@ -100,6 +100,10 @@
 @Selection menu = 선택 메뉴
 @automatic = 자동
 @on = 켜기
+@Documentation on select = 선택 시 문서
+@never = 안 함
+@menu button = 메뉴 버튼
+@tooltip = 툴팁
 @exit fullscreen on run = 실행 시 전체 화면 종료
 @30 fps = 30 FPS
 @60 fps = 60 FPS

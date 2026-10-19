@@ -99,6 +99,10 @@
 @Selection menu = 选择菜单
 @automatic = 自动
 @on = 开启
+@Documentation on select = 选择时的文档
+@never = 从不
+@menu button = 菜单按钮
+@tooltip = 工具提示
 @exit fullscreen on run = 运行时退出全屏
 @30 fps = 30 FPS
 @60 fps = 60 FPS

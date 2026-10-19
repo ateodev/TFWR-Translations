@@ -100,6 +100,10 @@
 @Selection menu = Menu zaznaczenia
 @automatic = Automatycznie
 @on = Włączone
+@Documentation on select = Dokumentacja po zaznaczeniu
+@never = Nigdy
+@menu button = W menu
+@tooltip = Dymek
 @exit fullscreen on run = Start zamyka pełny ekran
 @30 fps = 30 FPS
 @60 fps = 60 FPS
