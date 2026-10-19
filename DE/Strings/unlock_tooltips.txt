@@ -72,7 +72,7 @@ for item in cost:
     harvest()`
 @unlock_descr_debug = Werkzeuge, die beim Debuggen von Programmen helfen.
 
-`print("hi")`
+`print("Hallo")`
 @unlock_descr_debug2 = Funktionen, um die Ausführung vorübergehend zu verlangsamen und die Farm zu verkleinern.
 
 `set_world_size(3)

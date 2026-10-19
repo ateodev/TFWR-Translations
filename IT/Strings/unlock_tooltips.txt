@@ -72,7 +72,7 @@ for item in cost:
     harvest()`
 @unlock_descr_debug = Strumenti per aiutare a fare il debug dei programmi.
 
-`print("hi")`
+`print("ciao")`
 @unlock_descr_debug2 = Funzioni per rallentare temporaneamente l'esecuzione e rendere la fattoria più piccola.
 
 `set_world_size(3)
@@ -219,7 +219,7 @@ other_file.function()`
 @quartz = Quarzo
 @prospecting = Prospezione del Ferro
 @dynamite = Dinamite
-@explosive_drill = Trivella esplosiva
+@explosive_drill = Trivella Esplosiva
 @bamboo = Bambù
 @treasure_map = Mappa del Tesoro
 @mushrooms = Funghi

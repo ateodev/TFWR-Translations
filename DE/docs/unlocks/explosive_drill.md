@@ -2,9 +2,9 @@
 ---
 # Sprengbohrer
 
-Wenn der Sprengbohrer ausgerüstet ist, verbraucht ein Aufruf von dig() ein Items.Dynamite und löst eine Explosion ähnlich wie use_item(Items.Dynamite) aus. Anders als bei einer normalen Dynamitexplosion werden dabei jedoch alle von der Explosion erfassten Blöcke eingesammelt!
+Wenn du dig() aufrufst, während der Sprengbohrer ausgerüstet ist, wird ein Items.Dynamite verbraucht und eine Explosion ausgelöst, ähnlich wie bei use_item(Items.Dynamite). Anders als bei einer normalen Dynamitexplosion werden jedoch alle Blöcke im Explosionsbereich eingesammelt!
 
-Du hast nur einen Sprengbohrer, deshalb kann ihn immer nur eine Drohne ausrüsten.
+Du hast nur einen Sprengbohrer, daher kann immer nur eine Drohne damit ausgerüstet werden.
 
 ---
 

@@ -72,7 +72,7 @@ for item in cost:
     harvest()`
 @unlock_descr_debug = Herramientas para ayudar a depurar programas.
 
-`print("hi")`
+`print("hola")`
 @unlock_descr_debug2 = Funciones para ralentizar temporalmente la ejecución y hacer la granja más pequeña.
 
 `set_world_size(3)

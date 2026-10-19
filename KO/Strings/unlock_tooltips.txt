@@ -72,7 +72,7 @@ for item in cost:
     harvest()`
 @unlock_descr_debug = 프로그램 디버깅을 돕는 도구입니다.
 
-`print("hi")`
+`print("안녕")`
 @unlock_descr_debug2 = 실행을 일시적으로 늦추고 농장을 더 작게 만드는 함수입니다.
 
 `set_world_size(3)

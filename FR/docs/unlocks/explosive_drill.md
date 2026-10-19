@@ -2,9 +2,9 @@
 ---
 # Foreuse explosive
 
-Appeler dig() avec la foreuse explosive équipée consomme une Items.Dynamite et déclenche une explosion semblable à use_item(Items.Dynamite). Mais contrairement à une explosion de dynamite classique, elle récupère tous les blocs pris dans le souffle !
+Appeler dig() avec la foreuse explosive équipée consomme une Items.Dynamite et déclenche une explosion semblable à use_item(Items.Dynamite). Cependant, contrairement à une explosion de dynamite normale, elle récupère tous les blocs pris dans l’explosion !
 
-Tu n'as qu'une seule foreuse explosive, un seul drone peut donc l'équiper à la fois.
+Tu n’as qu’une seule foreuse explosive, donc un seul drone peut s’en équiper à la fois.
 
 ---
 

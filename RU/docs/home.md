@@ -6,7 +6,7 @@
 [Начало работы](docs/getting_started.md)
 <mobile>[Игровая клавиатура](docs/keyboard.md)</mobile>
 <desktop>[Загрузка резервных копий](docs/backup.md)</desktop>
-<unlock=debug>[Output](docs/output.md)
+<unlock=debug>[Вывод](docs/output.md)
 </unlock><unlock=debug>[Статистика](docs/stats.md)
 </unlock>
 </columns>
@@ -126,6 +126,7 @@
 <columns>
 <unlock=can_push>[can_push()](functions/can_push)
 </unlock><unlock=dig>[dig()](functions/dig)
+</unlock><unlock=hover>[hover()](functions/hover)
 </unlock><unlock=place>[place()](functions/place)
 </unlock><unlock=prospect_iron>[prospect_iron()](functions/prospect_iron)
 </unlock><unlock=prospect_quartz>[prospect_quartz()](functions/prospect_quartz)
@@ -138,6 +139,7 @@
 </unlock><unlock=get_entity_type>[get_entity_type()](functions/get_entity_type)
 </unlock><unlock=get_ground_type>[get_ground_type()](functions/get_ground_type)
 </unlock><dlc><unlock=get_hardness>[get_hardness()](functions/get_hardness)
+</unlock><unlock=get_hover>[get_hover()](functions/get_hover)
 </unlock></dlc><unlock=get_pos_x>[get_pos_x()](functions/get_pos_x)
 </unlock><unlock=get_pos_y>[get_pos_y()](functions/get_pos_y)
 </unlock><dlc><unlock=get_pos_z>[get_pos_z()](functions/get_pos_z)

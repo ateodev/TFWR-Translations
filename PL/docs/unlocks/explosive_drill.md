@@ -2,9 +2,9 @@
 ---
 # Wiertło wybuchowe
 
-Wywołanie dig() z założonym wiertłem wybuchowym zużywa jeden Items.Dynamite i wywołuje eksplozję podobną do use_item(Items.Dynamite). W przeciwieństwie do zwykłej eksplozji dynamitu zbiera jednak wszystkie bloki objęte wybuchem!
+Wywołanie dig(), gdy wiertło wybuchowe jest założone, zużywa jeden Items.Dynamite i wywołuje eksplozję podobną do use_item(Items.Dynamite). Jednak w przeciwieństwie do zwykłej eksplozji dynamitu zbiera wszystkie bloki w zasięgu wybuchu!
 
-Masz tylko jedno wiertło wybuchowe, więc naraz może je założyć tylko jeden dron.
+Masz tylko jedno wiertło wybuchowe, więc może go używać tylko jeden dron naraz.
 
 ---
 
