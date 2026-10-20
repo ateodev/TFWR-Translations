@@ -6,7 +6,7 @@ Veškeré programování probíhá v oknech s kódem. Každé takové okno odpov
 
 Kód lze upravovat stejně jako v běžném textovém editoru, pokud právě neprobíhá jeho spuštění.
 Program můžeš spustit přímo stisknutím zeleného tlačítka přehrát v okně s kódem.
-![](PlayButton50)
+![|x50](PlayButton)
 
 <desktop>Nové soubory s kódem můžeš vytvářet pomocí tlačítka „+“ v pravém horním rohu obrazovky.</desktop>
 <mobile>Nové soubory s kódem můžeš vytvářet pomocí tlačítka „+“ u dolního okraje obrazovky, nebo v pravém horním rohu, když držíš zařízení naležato.</mobile>
