@@ -119,3 +119,5 @@
 @focus errors = Reveal Errors
 @window docking = Window Docking
 @autocomplete = Autocomplete
+@settings_version = Version {0} ({1})
+@settings_version_only = Version {0}
