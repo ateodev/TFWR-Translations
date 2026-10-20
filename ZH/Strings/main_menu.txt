@@ -1,4 +1,5 @@
 @main_menu_play = 开始游戏
+@main_menu_try_game = 试玩游戏
 @main_menu_full_game = 完整版
 @main_menu_free_trial = 免费
 试玩

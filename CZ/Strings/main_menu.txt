@@ -1,4 +1,5 @@
 @main_menu_play = Hrát
+@main_menu_try_game = Vyzkoušet hru
 @main_menu_full_game = Plná verze
 @main_menu_free_trial = Demo
 zdarma

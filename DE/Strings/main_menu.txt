@@ -1,4 +1,5 @@
 @main_menu_play = Spielen
+@main_menu_try_game = Spiel testen
 @main_menu_full_game = Vollversion
 @main_menu_free_trial = Gratis
 testen
