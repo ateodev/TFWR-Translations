@@ -30,3 +30,4 @@
 @load_screen_import_failed_body = Устройство не смогло его прочитать или записать. Попробуйте ещё раз.
 @load_screen_export_failed_title = Не удалось экспортировать сохранение
 @load_screen_export_failed_body = Устройство не смогло его прочитать. Попробуйте ещё раз.
+@load_screen_export_not_written_body = Не удалось сохранить его в выбранное место. Попробуйте ещё раз.

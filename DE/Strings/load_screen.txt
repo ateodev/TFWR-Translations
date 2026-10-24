@@ -30,3 +30,4 @@
 @load_screen_import_failed_body = Das Gerät konnte ihn nicht lesen oder schreiben. Bitte versuche es erneut.
 @load_screen_export_failed_title = Der Spielstand konnte nicht exportiert werden
 @load_screen_export_failed_body = Das Gerät konnte ihn nicht lesen. Bitte versuche es erneut.
+@load_screen_export_not_written_body = Er konnte nicht am gewählten Ort gespeichert werden. Bitte versuche es erneut.

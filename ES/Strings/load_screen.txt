@@ -30,3 +30,4 @@
 @load_screen_import_failed_body = El dispositivo no pudo leerla ni escribirla. Vuelve a intentarlo.
 @load_screen_export_failed_title = No se pudo exportar la partida
 @load_screen_export_failed_body = El dispositivo no pudo leerla. Vuelve a intentarlo.
+@load_screen_export_not_written_body = No se pudo guardar donde elegiste. Vuelve a intentarlo.

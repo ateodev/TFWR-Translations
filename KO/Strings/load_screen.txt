@@ -30,3 +30,4 @@
 @load_screen_import_failed_body = 기기가 파일을 읽거나 쓰지 못했습니다. 다시 시도하세요.
 @load_screen_export_failed_title = 저장 파일을 내보내지 못했습니다
 @load_screen_export_failed_body = 기기가 파일을 읽지 못했습니다. 다시 시도하세요.
+@load_screen_export_not_written_body = 선택한 위치에 저장하지 못했습니다. 다시 시도하세요.

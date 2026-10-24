@@ -30,3 +30,4 @@
 @load_screen_import_failed_body = Zařízení ji nedokázalo přečíst ani zapsat. Zkuste to prosím znovu.
 @load_screen_export_failed_title = Uloženou hru nelze exportovat
 @load_screen_export_failed_body = Zařízení ji nedokázalo přečíst. Zkuste to prosím znovu.
+@load_screen_export_not_written_body = Nepodařilo se ji uložit na zvolené místo. Zkuste to prosím znovu.

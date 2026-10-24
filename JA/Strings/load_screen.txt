@@ -30,3 +30,4 @@
 @load_screen_import_failed_body = デバイスで読み込みまたは書き込みができませんでした。もう一度お試しください。
 @load_screen_export_failed_title = セーブをエクスポートできませんでした
 @load_screen_export_failed_body = デバイスで読み込みができませんでした。もう一度お試しください。
+@load_screen_export_not_written_body = 選んだ場所に保存できませんでした。もう一度お試しください。

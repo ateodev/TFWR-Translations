@@ -30,3 +30,4 @@
 @load_screen_import_failed_body = O dispositivo não conseguiu lê-lo ou gravá-lo. Tente novamente.
 @load_screen_export_failed_title = Não foi possível exportar o jogo salvo
 @load_screen_export_failed_body = O dispositivo não conseguiu lê-lo. Tente novamente.
+@load_screen_export_not_written_body = Não foi possível salvá-lo no local escolhido. Tente novamente.

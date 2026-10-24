@@ -30,3 +30,4 @@
 @load_screen_import_failed_body = 裝置無法讀取或寫入。請再試一次。
 @load_screen_export_failed_title = 無法匯出存檔
 @load_screen_export_failed_body = 裝置無法讀取。請再試一次。
+@load_screen_export_not_written_body = 無法儲存到你選擇的位置。請再試一次。

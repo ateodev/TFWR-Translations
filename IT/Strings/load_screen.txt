@@ -30,3 +30,4 @@
 @load_screen_import_failed_body = Il dispositivo non è riuscito a leggerlo o a scriverlo. Riprova.
 @load_screen_export_failed_title = Impossibile esportare il salvataggio
 @load_screen_export_failed_body = Il dispositivo non è riuscito a leggerlo. Riprova.
+@load_screen_export_not_written_body = Non è stato possibile salvarlo nella posizione scelta. Riprova.

@@ -30,3 +30,4 @@
 @load_screen_import_failed_body = The device couldn't read or write it. Please try again.
 @load_screen_export_failed_title = The save couldn't be exported
 @load_screen_export_failed_body = The device couldn't read it. Please try again.
+@load_screen_export_not_written_body = It couldn't be saved where you chose. Please try again.

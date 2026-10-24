@@ -30,3 +30,4 @@
 @load_screen_import_failed_body = 设备无法读取或写入。请重试。
 @load_screen_export_failed_title = 无法导出存档
 @load_screen_export_failed_body = 设备无法读取。请重试。
+@load_screen_export_not_written_body = 无法保存到你选择的位置。请重试。
