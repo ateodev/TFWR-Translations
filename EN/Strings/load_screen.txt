@@ -16,3 +16,17 @@
 @load_screen_rename_taken = A save with this name already exists.
 @load_screen_delete_title = Delete {0}?
 @load_screen_delete_body = Its farm and its code are deleted. This can't be undone.
+@load_screen_import = Import
+@load_screen_full_game = Full game
+@load_screen_action_rename = Rename
+@load_screen_action_export = Export
+@load_screen_action_delete = Delete
+@load_screen_import_newer_title = Please update the game
+@load_screen_import_newer_body = This save comes from a newer version of the game. Please update the game on this device to import it.
+@load_screen_import_no_save_title = This file can't be imported
+@load_screen_import_no_save_body = It holds no save the game can read. Please choose a save's folder or a zip of one.
+@load_screen_import_no_save_body_zip = It holds no save the game can read. Please choose a zip of a save.
+@load_screen_import_failed_title = The save couldn't be imported
+@load_screen_import_failed_body = The device couldn't read or write it. Please try again.
+@load_screen_export_failed_title = The save couldn't be exported
+@load_screen_export_failed_body = The device couldn't read it. Please try again.

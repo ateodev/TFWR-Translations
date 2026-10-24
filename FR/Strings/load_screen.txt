@@ -16,3 +16,17 @@
 @load_screen_rename_taken = Une sauvegarde porte déjà ce nom.
 @load_screen_delete_title = Supprimer {0} ?
 @load_screen_delete_body = Sa ferme et son code seront supprimés. Cette action est irréversible.
+@load_screen_import = Importer
+@load_screen_full_game = Jeu complet
+@load_screen_action_rename = Renommer
+@load_screen_action_export = Exporter
+@load_screen_action_delete = Supprimer
+@load_screen_import_newer_title = Veuillez mettre à jour le jeu
+@load_screen_import_newer_body = Cette sauvegarde vient d'une version plus récente du jeu. Mettez à jour le jeu sur cet appareil pour l'importer.
+@load_screen_import_no_save_title = Ce fichier ne peut pas être importé
+@load_screen_import_no_save_body = Il ne contient aucune sauvegarde que le jeu peut lire. Choisissez le dossier d'une sauvegarde ou un zip de celui-ci.
+@load_screen_import_no_save_body_zip = Il ne contient aucune sauvegarde que le jeu peut lire. Choisissez le zip d'une sauvegarde.
+@load_screen_import_failed_title = La sauvegarde n'a pas pu être importée
+@load_screen_import_failed_body = L'appareil n'a pas pu la lire ou l'écrire. Veuillez réessayer.
+@load_screen_export_failed_title = La sauvegarde n'a pas pu être exportée
+@load_screen_export_failed_body = L'appareil n'a pas pu la lire. Veuillez réessayer.

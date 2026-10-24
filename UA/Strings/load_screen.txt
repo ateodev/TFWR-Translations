@@ -16,3 +16,17 @@
 @load_screen_rename_taken = Збереження з такою назвою вже існує.
 @load_screen_delete_title = Видалити {0}?
 @load_screen_delete_body = Його ферму та код буде видалено. Це неможливо скасувати.
+@load_screen_import = Імпорт
+@load_screen_full_game = Повна версія
+@load_screen_action_rename = Перейменувати
+@load_screen_action_export = Експортувати
+@load_screen_action_delete = Видалити
+@load_screen_import_newer_title = Оновіть гру
+@load_screen_import_newer_body = Це збереження з новішої версії гри. Оновіть гру на цьому пристрої, щоб імпортувати його.
+@load_screen_import_no_save_title = Цей файл не можна імпортувати
+@load_screen_import_no_save_body = У ньому немає збереження, яке гра може прочитати. Виберіть теку збереження або її zip.
+@load_screen_import_no_save_body_zip = У ньому немає збереження, яке гра може прочитати. Виберіть zip збереження.
+@load_screen_import_failed_title = Не вдалося імпортувати збереження
+@load_screen_import_failed_body = Пристрій не зміг його прочитати або записати. Спробуйте ще раз.
+@load_screen_export_failed_title = Не вдалося експортувати збереження
+@load_screen_export_failed_body = Пристрій не зміг його прочитати. Спробуйте ще раз.

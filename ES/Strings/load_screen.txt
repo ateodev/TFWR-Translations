@@ -16,3 +16,17 @@
 @load_screen_rename_taken = Ya existe una partida con ese nombre.
 @load_screen_delete_title = ¿Eliminar {0}?
 @load_screen_delete_body = Se eliminarán su granja y su código. Esto no se puede deshacer.
+@load_screen_import = Importar
+@load_screen_full_game = Juego completo
+@load_screen_action_rename = Renombrar
+@load_screen_action_export = Exportar
+@load_screen_action_delete = Eliminar
+@load_screen_import_newer_title = Actualiza el juego
+@load_screen_import_newer_body = Esta partida viene de una versión más reciente del juego. Actualiza el juego en este dispositivo para importarla.
+@load_screen_import_no_save_title = No se puede importar este archivo
+@load_screen_import_no_save_body = No contiene ninguna partida que el juego pueda leer. Elige la carpeta de una partida o un zip de ella.
+@load_screen_import_no_save_body_zip = No contiene ninguna partida que el juego pueda leer. Elige un zip de una partida.
+@load_screen_import_failed_title = No se pudo importar la partida
+@load_screen_import_failed_body = El dispositivo no pudo leerla ni escribirla. Vuelve a intentarlo.
+@load_screen_export_failed_title = No se pudo exportar la partida
+@load_screen_export_failed_body = El dispositivo no pudo leerla. Vuelve a intentarlo.

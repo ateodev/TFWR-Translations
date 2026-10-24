@@ -16,3 +16,17 @@
 @load_screen_rename_taken = Save s tímto názvem už existuje.
 @load_screen_delete_title = Smazat {0}?
 @load_screen_delete_body = Jeho farma i kód budou smazány. Nelze to vrátit zpět.
+@load_screen_import = Import
+@load_screen_full_game = Plná verze
+@load_screen_action_rename = Přejmenovat
+@load_screen_action_export = Exportovat
+@load_screen_action_delete = Smazat
+@load_screen_import_newer_title = Aktualizujte prosím hru
+@load_screen_import_newer_body = Tato uložená hra pochází z novější verze hry. Aby šla importovat, aktualizujte prosím hru na tomto zařízení.
+@load_screen_import_no_save_title = Tento soubor nelze importovat
+@load_screen_import_no_save_body = Neobsahuje žádnou uloženou hru, kterou by hra dokázala přečíst. Vyberte prosím složku uložené hry nebo její zip.
+@load_screen_import_no_save_body_zip = Neobsahuje žádnou uloženou hru, kterou by hra dokázala přečíst. Vyberte prosím zip uložené hry.
+@load_screen_import_failed_title = Uloženou hru nelze importovat
+@load_screen_import_failed_body = Zařízení ji nedokázalo přečíst ani zapsat. Zkuste to prosím znovu.
+@load_screen_export_failed_title = Uloženou hru nelze exportovat
+@load_screen_export_failed_body = Zařízení ji nedokázalo přečíst. Zkuste to prosím znovu.

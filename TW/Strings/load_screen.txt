@@ -16,3 +16,17 @@
 @load_screen_rename_taken = 已有同名的存檔。
 @load_screen_delete_title = 刪除 {0}？
 @load_screen_delete_body = 它的農場和程式碼都會被刪除。此操作無法復原。
+@load_screen_import = 匯入
+@load_screen_full_game = 完整版
+@load_screen_action_rename = 重新命名
+@load_screen_action_export = 匯出
+@load_screen_action_delete = 刪除
+@load_screen_import_newer_title = 請更新遊戲
+@load_screen_import_newer_body = 這個存檔來自較新版本的遊戲。請在這部裝置上更新遊戲後再匯入。
+@load_screen_import_no_save_title = 無法匯入這個檔案
+@load_screen_import_no_save_body = 其中沒有遊戲能讀取的存檔。請選擇存檔的資料夾或其 zip。
+@load_screen_import_no_save_body_zip = 其中沒有遊戲能讀取的存檔。請選擇存檔的 zip。
+@load_screen_import_failed_title = 無法匯入存檔
+@load_screen_import_failed_body = 裝置無法讀取或寫入。請再試一次。
+@load_screen_export_failed_title = 無法匯出存檔
+@load_screen_export_failed_body = 裝置無法讀取。請再試一次。

@@ -16,3 +16,17 @@
 @load_screen_rename_taken = Zapis o tej nazwie już istnieje.
 @load_screen_delete_title = Usunąć {0}?
 @load_screen_delete_body = Farma i kod tego zapisu zostaną usunięte. Nie da się tego cofnąć.
+@load_screen_import = Import
+@load_screen_full_game = Pełna wersja
+@load_screen_action_rename = Zmień nazwę
+@load_screen_action_export = Eksportuj
+@load_screen_action_delete = Usuń
+@load_screen_import_newer_title = Zaktualizuj grę
+@load_screen_import_newer_body = Ten zapis pochodzi z nowszej wersji gry. Zaktualizuj grę na tym urządzeniu, aby go zaimportować.
+@load_screen_import_no_save_title = Nie można zaimportować tego pliku
+@load_screen_import_no_save_body = Nie zawiera zapisu, który gra potrafi odczytać. Wybierz folder zapisu lub jego plik zip.
+@load_screen_import_no_save_body_zip = Nie zawiera zapisu, który gra potrafi odczytać. Wybierz plik zip zapisu.
+@load_screen_import_failed_title = Nie udało się zaimportować zapisu
+@load_screen_import_failed_body = Urządzenie nie mogło go odczytać ani zapisać. Spróbuj ponownie.
+@load_screen_export_failed_title = Nie udało się wyeksportować zapisu
+@load_screen_export_failed_body = Urządzenie nie mogło go odczytać. Spróbuj ponownie.

@@ -16,3 +16,17 @@
 @load_screen_rename_taken = Ein Spielstand mit diesem Namen existiert bereits.
 @load_screen_delete_title = {0} löschen?
 @load_screen_delete_body = Die Farm und der Code werden gelöscht. Das kann nicht rückgängig gemacht werden.
+@load_screen_import = Import
+@load_screen_full_game = Vollversion
+@load_screen_action_rename = Umbenennen
+@load_screen_action_export = Exportieren
+@load_screen_action_delete = Löschen
+@load_screen_import_newer_title = Bitte aktualisiere das Spiel
+@load_screen_import_newer_body = Dieser Spielstand stammt aus einer neueren Version des Spiels. Bitte aktualisiere das Spiel auf diesem Gerät, um ihn zu importieren.
+@load_screen_import_no_save_title = Diese Datei lässt sich nicht importieren
+@load_screen_import_no_save_body = Sie enthält keinen Spielstand, den das Spiel lesen kann. Bitte wähle den Ordner eines Spielstands oder ein Zip davon.
+@load_screen_import_no_save_body_zip = Sie enthält keinen Spielstand, den das Spiel lesen kann. Bitte wähle ein Zip eines Spielstands.
+@load_screen_import_failed_title = Der Spielstand konnte nicht importiert werden
+@load_screen_import_failed_body = Das Gerät konnte ihn nicht lesen oder schreiben. Bitte versuche es erneut.
+@load_screen_export_failed_title = Der Spielstand konnte nicht exportiert werden
+@load_screen_export_failed_body = Das Gerät konnte ihn nicht lesen. Bitte versuche es erneut.

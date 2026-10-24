@@ -16,3 +16,17 @@
 @load_screen_rename_taken = 已存在同名存档。
 @load_screen_delete_title = 删除 {0}？
 @load_screen_delete_body = 它的农场和代码都会被删除。此操作无法撤销。
+@load_screen_import = 导入
+@load_screen_full_game = 完整版
+@load_screen_action_rename = 重命名
+@load_screen_action_export = 导出
+@load_screen_action_delete = 删除
+@load_screen_import_newer_title = 请更新游戏
+@load_screen_import_newer_body = 此存档来自更新版本的游戏。请在此设备上更新游戏后再导入。
+@load_screen_import_no_save_title = 无法导入此文件
+@load_screen_import_no_save_body = 其中没有游戏能读取的存档。请选择存档的文件夹或其 zip。
+@load_screen_import_no_save_body_zip = 其中没有游戏能读取的存档。请选择存档的 zip。
+@load_screen_import_failed_title = 无法导入存档
+@load_screen_import_failed_body = 设备无法读取或写入。请重试。
+@load_screen_export_failed_title = 无法导出存档
+@load_screen_export_failed_body = 设备无法读取。请重试。

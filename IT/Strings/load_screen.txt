@@ -16,3 +16,17 @@
 @load_screen_rename_taken = Esiste già un salvataggio con questo nome.
 @load_screen_delete_title = Eliminare {0}?
 @load_screen_delete_body = La sua fattoria e il suo codice verranno eliminati. Non si può annullare.
+@load_screen_import = Importa
+@load_screen_full_game = Gioco completo
+@load_screen_action_rename = Rinomina
+@load_screen_action_export = Esporta
+@load_screen_action_delete = Elimina
+@load_screen_import_newer_title = Aggiorna il gioco
+@load_screen_import_newer_body = Questo salvataggio viene da una versione più recente del gioco. Aggiorna il gioco su questo dispositivo per importarlo.
+@load_screen_import_no_save_title = Impossibile importare questo file
+@load_screen_import_no_save_body = Non contiene alcun salvataggio che il gioco possa leggere. Scegli la cartella di un salvataggio o il suo zip.
+@load_screen_import_no_save_body_zip = Non contiene alcun salvataggio che il gioco possa leggere. Scegli lo zip di un salvataggio.
+@load_screen_import_failed_title = Impossibile importare il salvataggio
+@load_screen_import_failed_body = Il dispositivo non è riuscito a leggerlo o a scriverlo. Riprova.
+@load_screen_export_failed_title = Impossibile esportare il salvataggio
+@load_screen_export_failed_body = Il dispositivo non è riuscito a leggerlo. Riprova.

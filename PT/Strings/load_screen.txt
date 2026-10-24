@@ -16,3 +16,17 @@
 @load_screen_rename_taken = Já existe um jogo salvo com esse nome.
 @load_screen_delete_title = Excluir {0}?
 @load_screen_delete_body = A fazenda e o código dele serão excluídos. Isso não pode ser desfeito.
+@load_screen_import = Importar
+@load_screen_full_game = Jogo completo
+@load_screen_action_rename = Renomear
+@load_screen_action_export = Exportar
+@load_screen_action_delete = Excluir
+@load_screen_import_newer_title = Atualize o jogo
+@load_screen_import_newer_body = Este jogo salvo vem de uma versão mais recente do jogo. Atualize o jogo neste dispositivo para importá-lo.
+@load_screen_import_no_save_title = Não é possível importar este arquivo
+@load_screen_import_no_save_body = Ele não contém nenhum jogo salvo que o jogo consiga ler. Escolha a pasta de um jogo salvo ou um zip dela.
+@load_screen_import_no_save_body_zip = Ele não contém nenhum jogo salvo que o jogo consiga ler. Escolha o zip de um jogo salvo.
+@load_screen_import_failed_title = Não foi possível importar o jogo salvo
+@load_screen_import_failed_body = O dispositivo não conseguiu lê-lo ou gravá-lo. Tente novamente.
+@load_screen_export_failed_title = Não foi possível exportar o jogo salvo
+@load_screen_export_failed_body = O dispositivo não conseguiu lê-lo. Tente novamente.

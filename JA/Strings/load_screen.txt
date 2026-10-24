@@ -16,3 +16,17 @@
 @load_screen_rename_taken = その名前のセーブデータはすでにあります。
 @load_screen_delete_title = {0} を削除しますか？
 @load_screen_delete_body = その農場とコードが削除されます。元に戻すことはできません。
+@load_screen_import = インポート
+@load_screen_full_game = 製品版
+@load_screen_action_rename = 名前を変更
+@load_screen_action_export = エクスポート
+@load_screen_action_delete = 削除
+@load_screen_import_newer_title = ゲームを更新してください
+@load_screen_import_newer_body = このセーブはゲームの新しいバージョンで作られています。インポートするには、このデバイスのゲームを更新してください。
+@load_screen_import_no_save_title = このファイルはインポートできません
+@load_screen_import_no_save_body = ゲームが読み込めるセーブが含まれていません。セーブのフォルダか、その zip を選んでください。
+@load_screen_import_no_save_body_zip = ゲームが読み込めるセーブが含まれていません。セーブの zip を選んでください。
+@load_screen_import_failed_title = セーブをインポートできませんでした
+@load_screen_import_failed_body = デバイスで読み込みまたは書き込みができませんでした。もう一度お試しください。
+@load_screen_export_failed_title = セーブをエクスポートできませんでした
+@load_screen_export_failed_body = デバイスで読み込みができませんでした。もう一度お試しください。
