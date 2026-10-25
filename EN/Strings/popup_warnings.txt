@@ -7,6 +7,8 @@
 @don't save = Don't Save
 @popup_warning_corrupted_save = There seems to have been a problem loading {0}. Check out the section on backups for more information.
 @popup_warning_corrupted_save_mobile = There seems to have been a problem loading {0}.
+@popup_warning_save_restored = The save {0} could not be read, so it was restored from a backup of {1}.
+@popup_warning_save_started_anew = The save {0} could not be read and has no readable backup, so a new farm was started.
 @popup_warning_failed_read_save = Failed to read the save files of {0}. Make sure you close all other programs accessing the files and try again.
 @popup_warning_failed_read_save_mobile = Failed to read the save files of {0}. Please try again.
 @popup_warning_failed_write_save = Failed to write to the save files of {0}. Make sure you close all other programs accessing the files and try again.
