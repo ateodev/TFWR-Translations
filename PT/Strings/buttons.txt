@@ -22,3 +22,4 @@
 @selection_docs = Docs
 @selection_select = Selecionar
 @selection_select_all = Selecionar tudo
+@recenter_view = Centralizar visão

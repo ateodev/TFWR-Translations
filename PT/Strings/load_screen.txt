@@ -7,7 +7,7 @@
 @load_screen_code_file = {0} arquivo de código
 @load_screen_no_saves = Nenhum jogo salvo ainda
 @load_screen_new = Novo
-@load_screen_no_saves_hint = Toque em '{0}' para começar uma fazenda.
+@load_screen_no_saves_hint = Toque em '{0}' para começar um novo jogo.
 @load_screen_rename_title = Renomear jogo salvo
 @load_screen_rename = Renomear
 @load_screen_create_title = Criar jogo salvo

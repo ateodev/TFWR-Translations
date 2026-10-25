@@ -7,6 +7,8 @@
 @don't save = No Guardar
 @popup_warning_corrupted_save = Parece que ha habido un problema al cargar {0}. Consulta la sección de copias de seguridad para más información.
 @popup_warning_corrupted_save_mobile = Parece que ha habido un problema al cargar {0}.
+@popup_warning_save_restored = No se ha podido leer la partida {0}, así que se ha restaurado desde una copia de seguridad del {1}.
+@popup_warning_save_started_anew = No se ha podido leer la partida {0} y no tiene ninguna copia de seguridad legible, así que se ha empezado una nueva partida.
 @popup_warning_failed_read_save = Error al leer los archivos de guardado de {0}. Asegúrate de cerrar todos los demás programas que acceden a los archivos e inténtalo de nuevo.
 @popup_warning_failed_read_save_mobile = Error al leer los archivos de guardado de {0}. Inténtalo de nuevo.
 @popup_warning_failed_write_save = Error al escribir en los archivos de guardado de {0}. Asegúrate de cerrar todos los demás programas que acceden a los archivos e inténtalo de nuevo.

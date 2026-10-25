@@ -22,3 +22,4 @@
 @selection_docs = Dokumentacja
 @selection_select = Zaznacz
 @selection_select_all = Zaznacz wszystko
+@recenter_view = Wyśrodkuj widok

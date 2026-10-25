@@ -7,7 +7,7 @@
 @load_screen_code_file = {0} fichier de code
 @load_screen_no_saves = Aucune sauvegarde
 @load_screen_new = Nouvelle
-@load_screen_no_saves_hint = Appuie sur '{0}' pour commencer une ferme.
+@load_screen_no_saves_hint = Appuie sur '{0}' pour commencer une nouvelle partie.
 @load_screen_rename_title = Renommer la sauvegarde
 @load_screen_rename = Renommer
 @load_screen_create_title = Créer une sauvegarde

@@ -7,6 +7,8 @@
 @don't save = Não Salvar
 @popup_warning_corrupted_save = Parece que houve um problema ao carregar {0}. Confira a seção sobre backups para mais informações.
 @popup_warning_corrupted_save_mobile = Parece que houve um problema ao carregar {0}.
+@popup_warning_save_restored = Não foi possível ler o jogo salvo {0}, então ele foi restaurado a partir de um backup de {1}.
+@popup_warning_save_started_anew = Não foi possível ler o jogo salvo {0} e ele não tem nenhum backup legível, então um novo jogo foi iniciado.
 @popup_warning_failed_read_save = Falha ao ler os arquivos de salvamento de {0}. Certifique-se de fechar todos os outros programas que acessam os arquivos e tente novamente.
 @popup_warning_failed_read_save_mobile = Falha ao ler os arquivos de salvamento de {0}. Tente novamente.
 @popup_warning_failed_write_save = Falha ao escrever nos arquivos de salvamento de {0}. Certifique-se de fechar todos os outros programas que acessam os arquivos e tente novamente.

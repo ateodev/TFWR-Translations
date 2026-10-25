@@ -7,6 +7,8 @@
 @don't save = Nie zapisuj
 @popup_warning_corrupted_save = Wygląda na to, że wystąpił problem z wczytaniem {0}. Sprawdź sekcję dotyczącą kopii zapasowych, aby uzyskać więcej informacji.
 @popup_warning_corrupted_save_mobile = Wygląda na to, że wystąpił problem z wczytaniem {0}.
+@popup_warning_save_restored = Nie udało się odczytać zapisu {0}, więc przywrócono go z kopii zapasowej z {1}.
+@popup_warning_save_started_anew = Nie udało się odczytać zapisu {0}, a nie ma on żadnej czytelnej kopii zapasowej, więc rozpoczęto nową grę.
 @popup_warning_failed_read_save = Nie udało się odczytać plików zapisu {0}. Upewnij się, że zamknąłeś wszystkie inne programy korzystające z tych plików i spróbuj ponownie.
 @popup_warning_failed_read_save_mobile = Nie udało się odczytać plików zapisu {0}. Spróbuj ponownie.
 @popup_warning_failed_write_save = Nie udało się zapisać do plików zapisu {0}. Upewnij się, że zamknąłeś wszystkie inne programy korzystające z tych plików i spróbuj ponownie.

@@ -22,3 +22,4 @@
 @selection_docs = Документація
 @selection_select = Вибрати
 @selection_select_all = Вибрати все
+@recenter_view = Центрувати вид
