@@ -22,4 +22,5 @@
 @selection_docs = 문서
 @selection_select = 선택
 @selection_select_all = 전체 선택
+@error_notice_title = 오류
 @recenter_view = 중앙으로 돌아가기

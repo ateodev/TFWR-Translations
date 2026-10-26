@@ -22,4 +22,5 @@
 @selection_docs = Doku
 @selection_select = Auswählen
 @selection_select_all = Alles auswählen
+@error_notice_title = Fehler
 @recenter_view = Ansicht zentrieren

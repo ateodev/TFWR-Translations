@@ -22,4 +22,5 @@
 @selection_docs = Docs
 @selection_select = Seleccionar
 @selection_select_all = Seleccionar todo
+@error_notice_title = Error
 @recenter_view = Recentrar vista

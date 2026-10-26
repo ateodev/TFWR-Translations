@@ -22,4 +22,5 @@
 @selection_docs = 文档
 @selection_select = 选择
 @selection_select_all = 全选
+@error_notice_title = 错误
 @recenter_view = 重新居中

@@ -22,4 +22,5 @@
 @selection_docs = Документация
 @selection_select = Выбрать
 @selection_select_all = Выбрать все
+@error_notice_title = Ошибка
 @recenter_view = Центрировать вид

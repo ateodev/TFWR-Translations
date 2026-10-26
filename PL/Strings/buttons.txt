@@ -22,4 +22,5 @@
 @selection_docs = Dokumentacja
 @selection_select = Zaznacz
 @selection_select_all = Zaznacz wszystko
+@error_notice_title = Błąd
 @recenter_view = Wyśrodkuj widok

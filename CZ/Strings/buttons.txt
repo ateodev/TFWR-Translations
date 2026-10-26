@@ -22,4 +22,5 @@
 @selection_docs = Dokumentace
 @selection_select = Vybrat
 @selection_select_all = Vybrat vše
+@error_notice_title = Chyba
 @recenter_view = Vycentrovat pohled

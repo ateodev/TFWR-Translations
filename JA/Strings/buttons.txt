@@ -22,4 +22,5 @@
 @selection_docs = ドキュメント
 @selection_select = 選択
 @selection_select_all = すべてを選択
+@error_notice_title = エラー
 @recenter_view = 視点を中央に戻す
