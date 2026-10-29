@@ -26,6 +26,17 @@
 @load_screen_import_no_save_title = Цей файл не можна імпортувати
 @load_screen_import_no_save_body = У ньому немає збереження, яке гра може прочитати. Виберіть теку збереження або її zip.
 @load_screen_import_no_save_body_zip = У ньому немає збереження, яке гра може прочитати. Виберіть zip збереження.
+@load_screen_import_too_large_title = Це збереження завелике
+@load_screen_import_too_large_body = Імпортувати можна лише збереження розміром до 1 МБ. Виберіть менше.
+@load_screen_import_older_title = Це збереження зі старішої версії
+@load_screen_import_older_body = Оновіть гру на своєму ПК, завантажте там це збереження й збережіть його один раз. Потім скопіюйте його теку з теки Saves гри на цей пристрій та імпортуйте його знову.
+@load_screen_import_older_body_zip = Оновіть гру на своєму ПК, завантажте там це збереження й збережіть його один раз. Потім запакуйте його теку з теки Saves гри в zip, скопіюйте zip на цей пристрій та імпортуйте його знову.
+@load_screen_import_changed_title = Це збереження імпортовано зі змінами
+@load_screen_import_changed_unlocks = Розблокування, яких ця версія гри не знає, пропущено.
+@load_screen_import_changed_levels = Рівні розблокувань понад дозволене цією версією знижено.
+@load_screen_import_changed_items = Предмети, яких ця версія не знає або без дійсної кількості, пропущено.
+@load_screen_import_changed_windows = Деякі вікна не вдалося відкрити знову.
+@load_screen_import_changed_fields = Дані, яких ця версія гри не знає, пропущено.
 @load_screen_import_failed_title = Не вдалося імпортувати збереження
 @load_screen_import_failed_body = Пристрій не зміг його прочитати або записати. Спробуйте ще раз.
 @load_screen_export_failed_title = Не вдалося експортувати збереження

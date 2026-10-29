@@ -26,6 +26,17 @@
 @load_screen_import_no_save_title = Diese Datei lässt sich nicht importieren
 @load_screen_import_no_save_body = Sie enthält keinen Spielstand, den das Spiel lesen kann. Bitte wähle den Ordner eines Spielstands oder ein Zip davon.
 @load_screen_import_no_save_body_zip = Sie enthält keinen Spielstand, den das Spiel lesen kann. Bitte wähle ein Zip eines Spielstands.
+@load_screen_import_too_large_title = Dieser Spielstand ist zu groß
+@load_screen_import_too_large_body = Nur ein Spielstand bis 1 MB lässt sich importieren. Bitte wähle einen kleineren.
+@load_screen_import_older_title = Dieser Spielstand stammt aus einer älteren Version
+@load_screen_import_older_body = Bitte aktualisiere das Spiel auf deinem PC, lade diesen Spielstand dort und speichere ihn einmal. Kopiere dann seinen Ordner aus dem Saves-Ordner des Spiels auf dieses Gerät und importiere ihn erneut.
+@load_screen_import_older_body_zip = Bitte aktualisiere das Spiel auf deinem PC, lade diesen Spielstand dort und speichere ihn einmal. Packe dann seinen Ordner aus dem Saves-Ordner des Spiels als Zip, kopiere das Zip auf dieses Gerät und importiere es erneut.
+@load_screen_import_changed_title = Dieser Spielstand wurde mit Änderungen importiert
+@load_screen_import_changed_unlocks = Freischaltungen, die diese Version des Spiels nicht kennt, wurden weggelassen.
+@load_screen_import_changed_levels = Freischaltungsstufen über dem, was diese Version erlaubt, wurden gesenkt.
+@load_screen_import_changed_items = Gegenstände, die diese Version nicht kennt oder die keine gültige Menge haben, wurden weggelassen.
+@load_screen_import_changed_windows = Einige Fenster konnten nicht wieder geöffnet werden.
+@load_screen_import_changed_fields = Daten, die diese Version des Spiels nicht kennt, wurden weggelassen.
 @load_screen_import_failed_title = Der Spielstand konnte nicht importiert werden
 @load_screen_import_failed_body = Das Gerät konnte ihn nicht lesen oder schreiben. Bitte versuche es erneut.
 @load_screen_export_failed_title = Der Spielstand konnte nicht exportiert werden

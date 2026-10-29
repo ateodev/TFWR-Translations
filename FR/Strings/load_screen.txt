@@ -26,6 +26,17 @@
 @load_screen_import_no_save_title = Ce fichier ne peut pas être importé
 @load_screen_import_no_save_body = Il ne contient aucune sauvegarde que le jeu peut lire. Choisissez le dossier d'une sauvegarde ou un zip de celui-ci.
 @load_screen_import_no_save_body_zip = Il ne contient aucune sauvegarde que le jeu peut lire. Choisissez le zip d'une sauvegarde.
+@load_screen_import_too_large_title = Cette sauvegarde est trop volumineuse
+@load_screen_import_too_large_body = Seule une sauvegarde de 1 Mo au maximum peut être importée. Choisissez-en une plus petite.
+@load_screen_import_older_title = Cette sauvegarde provient d'une version plus ancienne
+@load_screen_import_older_body = Mettez à jour le jeu sur votre PC, chargez-y cette sauvegarde et enregistrez-la une fois. Copiez ensuite son dossier depuis le dossier Saves du jeu vers cet appareil et importez-la à nouveau.
+@load_screen_import_older_body_zip = Mettez à jour le jeu sur votre PC, chargez-y cette sauvegarde et enregistrez-la une fois. Compressez ensuite en zip son dossier du dossier Saves du jeu, copiez le zip sur cet appareil et importez-la à nouveau.
+@load_screen_import_changed_title = Cette sauvegarde a été importée avec des modifications
+@load_screen_import_changed_unlocks = Les déblocages que cette version du jeu ne connaît pas ont été omis.
+@load_screen_import_changed_levels = Les niveaux de déblocage au-delà de ce que permet cette version ont été abaissés.
+@load_screen_import_changed_items = Les objets que cette version ne connaît pas, ou sans quantité valide, ont été omis.
+@load_screen_import_changed_windows = Certaines fenêtres n'ont pas pu être rouvertes.
+@load_screen_import_changed_fields = Des données que cette version du jeu ne connaît pas ont été omises.
 @load_screen_import_failed_title = La sauvegarde n'a pas pu être importée
 @load_screen_import_failed_body = L'appareil n'a pas pu la lire ou l'écrire. Veuillez réessayer.
 @load_screen_export_failed_title = La sauvegarde n'a pas pu être exportée

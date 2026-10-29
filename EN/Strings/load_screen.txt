@@ -26,6 +26,17 @@
 @load_screen_import_no_save_title = This file can't be imported
 @load_screen_import_no_save_body = It holds no save the game can read. Please choose a save's folder or a zip of one.
 @load_screen_import_no_save_body_zip = It holds no save the game can read. Please choose a zip of a save.
+@load_screen_import_too_large_title = This save is too large
+@load_screen_import_too_large_body = Only a save of up to 1 MB can be imported. Please choose a smaller one.
+@load_screen_import_older_title = This save comes from an older version
+@load_screen_import_older_body = Please update the game on your PC, load this save there and save it once. Then copy its folder from the game's Saves folder to this device and import it again.
+@load_screen_import_older_body_zip = Please update the game on your PC, load this save there and save it once. Then zip its folder from the game's Saves folder, copy the zip to this device and import it again.
+@load_screen_import_changed_title = This save was imported with changes
+@load_screen_import_changed_unlocks = Unlocks this version of the game doesn't know were left out.
+@load_screen_import_changed_levels = Unlock levels above what this version allows were lowered.
+@load_screen_import_changed_items = Items this version doesn't know, or without a valid amount, were left out.
+@load_screen_import_changed_windows = Some windows couldn't be reopened.
+@load_screen_import_changed_fields = Data this version of the game doesn't know was left out.
 @load_screen_import_failed_title = The save couldn't be imported
 @load_screen_import_failed_body = The device couldn't read or write it. Please try again.
 @load_screen_export_failed_title = The save couldn't be exported

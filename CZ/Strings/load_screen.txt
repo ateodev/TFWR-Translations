@@ -26,6 +26,17 @@
 @load_screen_import_no_save_title = Tento soubor nelze importovat
 @load_screen_import_no_save_body = Neobsahuje žádnou uloženou hru, kterou by hra dokázala přečíst. Vyberte prosím složku uložené hry nebo její zip.
 @load_screen_import_no_save_body_zip = Neobsahuje žádnou uloženou hru, kterou by hra dokázala přečíst. Vyberte prosím zip uložené hry.
+@load_screen_import_too_large_title = Tato uložená hra je příliš velká
+@load_screen_import_too_large_body = Importovat lze jen uloženou hru do velikosti 1 MB. Vyberte prosím menší.
+@load_screen_import_older_title = Tato uložená hra pochází ze starší verze
+@load_screen_import_older_body = Aktualizujte prosím hru na svém PC, načtěte tam tuto uloženou hru a jednou ji uložte. Pak zkopírujte její složku ze složky Saves hry do tohoto zařízení a znovu ji importujte.
+@load_screen_import_older_body_zip = Aktualizujte prosím hru na svém PC, načtěte tam tuto uloženou hru a jednou ji uložte. Pak zabalte její složku ze složky Saves hry do zipu, zkopírujte zip do tohoto zařízení a znovu ji importujte.
+@load_screen_import_changed_title = Uložená hra byla importována se změnami
+@load_screen_import_changed_unlocks = Odemčení, která tato verze hry nezná, byla vynechána.
+@load_screen_import_changed_levels = Úrovně odemčení nad rámec toho, co tato verze dovoluje, byly sníženy.
+@load_screen_import_changed_items = Předměty, které tato verze nezná nebo které nemají platné množství, byly vynechány.
+@load_screen_import_changed_windows = Některá okna nebylo možné znovu otevřít.
+@load_screen_import_changed_fields = Data, která tato verze hry nezná, byla vynechána.
 @load_screen_import_failed_title = Uloženou hru nelze importovat
 @load_screen_import_failed_body = Zařízení ji nedokázalo přečíst ani zapsat. Zkuste to prosím znovu.
 @load_screen_export_failed_title = Uloženou hru nelze exportovat

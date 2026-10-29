@@ -26,6 +26,17 @@
 @load_screen_import_no_save_title = 이 파일은 가져올 수 없습니다
 @load_screen_import_no_save_body = 게임이 읽을 수 있는 저장 파일이 없습니다. 저장 파일의 폴더나 그 zip을 선택하세요.
 @load_screen_import_no_save_body_zip = 게임이 읽을 수 있는 저장 파일이 없습니다. 저장 파일의 zip을 선택하세요.
+@load_screen_import_too_large_title = 이 저장 파일은 너무 큽니다
+@load_screen_import_too_large_body = 1MB 이하의 저장 파일만 가져올 수 있습니다. 더 작은 저장 파일을 선택하세요.
+@load_screen_import_older_title = 이 저장 파일은 이전 버전에서 만들어졌습니다
+@load_screen_import_older_body = PC에서 게임을 업데이트하고, 그곳에서 이 저장 파일을 불러와 한 번 저장하세요. 그런 다음 게임의 Saves 폴더에서 이 저장 파일의 폴더를 이 기기로 복사하고 다시 가져오세요.
+@load_screen_import_older_body_zip = PC에서 게임을 업데이트하고, 그곳에서 이 저장 파일을 불러와 한 번 저장하세요. 그런 다음 게임의 Saves 폴더에서 이 저장 파일의 폴더를 zip으로 압축해 이 기기로 복사하고 다시 가져오세요.
+@load_screen_import_changed_title = 이 저장 파일은 변경된 상태로 가져왔습니다
+@load_screen_import_changed_unlocks = 이 버전의 게임이 모르는 해금은 제외되었습니다.
+@load_screen_import_changed_levels = 이 버전이 허용하는 한도를 넘는 해금 레벨은 낮춰졌습니다.
+@load_screen_import_changed_items = 이 버전이 모르는 아이템이나 올바른 수량이 없는 아이템은 제외되었습니다.
+@load_screen_import_changed_windows = 일부 창을 다시 열 수 없었습니다.
+@load_screen_import_changed_fields = 이 버전의 게임이 모르는 데이터는 제외되었습니다.
 @load_screen_import_failed_title = 저장 파일을 가져오지 못했습니다
 @load_screen_import_failed_body = 기기가 파일을 읽거나 쓰지 못했습니다. 다시 시도하세요.
 @load_screen_export_failed_title = 저장 파일을 내보내지 못했습니다

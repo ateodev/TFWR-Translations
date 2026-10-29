@@ -26,6 +26,17 @@
 @load_screen_import_no_save_title = 无法导入此文件
 @load_screen_import_no_save_body = 其中没有游戏能读取的存档。请选择存档的文件夹或其 zip。
 @load_screen_import_no_save_body_zip = 其中没有游戏能读取的存档。请选择存档的 zip。
+@load_screen_import_too_large_title = 此存档太大了
+@load_screen_import_too_large_body = 只能导入 1 MB 以内的存档。请选择较小的存档。
+@load_screen_import_older_title = 此存档来自较旧的版本
+@load_screen_import_older_body = 请在你的电脑上更新游戏，在那里加载此存档并保存一次。然后将它的文件夹从游戏的 Saves 文件夹复制到此设备，再导入一次。
+@load_screen_import_older_body_zip = 请在你的电脑上更新游戏，在那里加载此存档并保存一次。然后把游戏 Saves 文件夹中它的文件夹压缩成 zip，将 zip 复制到此设备，再导入一次。
+@load_screen_import_changed_title = 此存档已导入，但有所更改
+@load_screen_import_changed_unlocks = 此版本游戏不认识的解锁已被略过。
+@load_screen_import_changed_levels = 超出此版本上限的解锁等级已被调低。
+@load_screen_import_changed_items = 此版本不认识的物品，或没有有效数量的物品已被略过。
+@load_screen_import_changed_windows = 部分窗口无法重新打开。
+@load_screen_import_changed_fields = 此版本游戏不认识的数据已被略过。
 @load_screen_import_failed_title = 无法导入存档
 @load_screen_import_failed_body = 设备无法读取或写入。请重试。
 @load_screen_export_failed_title = 无法导出存档

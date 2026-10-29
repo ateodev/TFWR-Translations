@@ -26,6 +26,17 @@
 @load_screen_import_no_save_title = このファイルはインポートできません
 @load_screen_import_no_save_body = ゲームが読み込めるセーブが含まれていません。セーブのフォルダか、その zip を選んでください。
 @load_screen_import_no_save_body_zip = ゲームが読み込めるセーブが含まれていません。セーブの zip を選んでください。
+@load_screen_import_too_large_title = このセーブは大きすぎます
+@load_screen_import_too_large_body = インポートできるのは 1 MB までのセーブだけです。もっと小さいセーブを選んでください。
+@load_screen_import_older_title = このセーブは古いバージョンのものです
+@load_screen_import_older_body = PC のゲームを最新版に更新し、そこでこのセーブを読み込んで一度保存してください。その後、ゲームの Saves フォルダーからこのセーブのフォルダーをこのデバイスにコピーし、もう一度インポートしてください。
+@load_screen_import_older_body_zip = PC のゲームを最新版に更新し、そこでこのセーブを読み込んで一度保存してください。その後、ゲームの Saves フォルダーにあるこのセーブのフォルダーを zip にまとめ、その zip をこのデバイスにコピーして、もう一度インポートしてください。
+@load_screen_import_changed_title = このセーブは変更を加えてインポートされました
+@load_screen_import_changed_unlocks = このバージョンのゲームが知らないアンロックは省かれました。
+@load_screen_import_changed_levels = このバージョンで許される上限を超えるアンロックのレベルは下げられました。
+@load_screen_import_changed_items = このバージョンが知らないアイテム、または有効な数量のないアイテムは省かれました。
+@load_screen_import_changed_windows = 一部のウィンドウは再び開けませんでした。
+@load_screen_import_changed_fields = このバージョンのゲームが知らないデータは省かれました。
 @load_screen_import_failed_title = セーブをインポートできませんでした
 @load_screen_import_failed_body = デバイスで読み込みまたは書き込みができませんでした。もう一度お試しください。
 @load_screen_export_failed_title = セーブをエクスポートできませんでした

@@ -26,6 +26,17 @@
 @load_screen_import_no_save_title = Nie można zaimportować tego pliku
 @load_screen_import_no_save_body = Nie zawiera zapisu, który gra potrafi odczytać. Wybierz folder zapisu lub jego plik zip.
 @load_screen_import_no_save_body_zip = Nie zawiera zapisu, który gra potrafi odczytać. Wybierz plik zip zapisu.
+@load_screen_import_too_large_title = Ten zapis jest za duży
+@load_screen_import_too_large_body = Można zaimportować tylko zapis o rozmiarze do 1 MB. Wybierz mniejszy.
+@load_screen_import_older_title = Ten zapis pochodzi ze starszej wersji
+@load_screen_import_older_body = Zaktualizuj grę na swoim PC, wczytaj tam ten zapis i zapisz go raz. Następnie skopiuj jego folder z folderu Saves gry na to urządzenie i zaimportuj go ponownie.
+@load_screen_import_older_body_zip = Zaktualizuj grę na swoim PC, wczytaj tam ten zapis i zapisz go raz. Następnie spakuj jego folder z folderu Saves gry do pliku zip, skopiuj ten plik na to urządzenie i zaimportuj go ponownie.
+@load_screen_import_changed_title = Ten zapis zaimportowano ze zmianami
+@load_screen_import_changed_unlocks = Pominięto odblokowania, których ta wersja gry nie zna.
+@load_screen_import_changed_levels = Obniżono poziomy odblokowań przekraczające to, na co pozwala ta wersja.
+@load_screen_import_changed_items = Pominięto przedmioty, których ta wersja nie zna lub które nie mają prawidłowej ilości.
+@load_screen_import_changed_windows = Niektórych okien nie udało się ponownie otworzyć.
+@load_screen_import_changed_fields = Pominięto dane, których ta wersja gry nie zna.
 @load_screen_import_failed_title = Nie udało się zaimportować zapisu
 @load_screen_import_failed_body = Urządzenie nie mogło go odczytać ani zapisać. Spróbuj ponownie.
 @load_screen_export_failed_title = Nie udało się wyeksportować zapisu

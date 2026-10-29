@@ -26,6 +26,17 @@
 @load_screen_import_no_save_title = Não é possível importar este arquivo
 @load_screen_import_no_save_body = Ele não contém nenhum jogo salvo que o jogo consiga ler. Escolha a pasta de um jogo salvo ou um zip dela.
 @load_screen_import_no_save_body_zip = Ele não contém nenhum jogo salvo que o jogo consiga ler. Escolha o zip de um jogo salvo.
+@load_screen_import_too_large_title = Este jogo salvo é grande demais
+@load_screen_import_too_large_body = Só é possível importar um jogo salvo de até 1 MB. Escolha um menor.
+@load_screen_import_older_title = Este jogo salvo é de uma versão anterior
+@load_screen_import_older_body = Atualize o jogo no seu PC, carregue este jogo salvo lá e salve-o uma vez. Depois copie a pasta dele da pasta Saves do jogo para este dispositivo e importe-o novamente.
+@load_screen_import_older_body_zip = Atualize o jogo no seu PC, carregue este jogo salvo lá e salve-o uma vez. Depois compacte em um zip a pasta dele da pasta Saves do jogo, copie o zip para este dispositivo e importe-o novamente.
+@load_screen_import_changed_title = Este jogo salvo foi importado com alterações
+@load_screen_import_changed_unlocks = Desbloqueios que esta versão do jogo não conhece foram deixados de fora.
+@load_screen_import_changed_levels = Níveis de desbloqueio acima do que esta versão permite foram reduzidos.
+@load_screen_import_changed_items = Itens que esta versão não conhece, ou sem uma quantidade válida, foram deixados de fora.
+@load_screen_import_changed_windows = Algumas janelas não puderam ser reabertas.
+@load_screen_import_changed_fields = Dados que esta versão do jogo não conhece foram deixados de fora.
 @load_screen_import_failed_title = Não foi possível importar o jogo salvo
 @load_screen_import_failed_body = O dispositivo não conseguiu lê-lo ou gravá-lo. Tente novamente.
 @load_screen_export_failed_title = Não foi possível exportar o jogo salvo
