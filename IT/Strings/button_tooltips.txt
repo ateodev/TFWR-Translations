@@ -58,6 +58,8 @@
 @option_tooltip_language = Cambia la lingua del gioco.
 @option_tooltip_code_highlights = Disattiva le evidenziazioni lampeggianti quando il codice è in esecuzione.
 @option_tooltip_resolution = Cambia la risoluzione dello schermo.
+@option_tooltip_mobile_resolution = Renderizza la fattoria a metà, a due terzi o a piena risoluzione. Una più bassa è più fluida e consuma meno batteria.
+@option_tooltip_shadows = Il livello di dettaglio delle ombre della fattoria. Disattivale per risparmiare batteria.
 @option_tooltip_increment_number_effect = Disabilita gli effetti nell'inventario che si attivano quando i numeri cambiano.
 @option_tooltip_color_theme = Cambia il tema dei colori dell'interfaccia. Puoi aggiungere temi personalizzati nella cartella "Themes" nella directory dei salvataggi.
 @option_tooltip_color_theme_mobile = Cambia il tema dei colori dell'interfaccia.

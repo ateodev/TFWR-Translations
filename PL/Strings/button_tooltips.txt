@@ -58,6 +58,8 @@
 @option_tooltip_language = Zmień język gry.
 @option_tooltip_code_highlights = Wyłącz migające podświetlenia podczas działania kodu.
 @option_tooltip_resolution = Zmień rozdzielczość ekranu.
+@option_tooltip_mobile_resolution = Renderuje farmę w połowie, dwóch trzecich lub pełnej rozdzielczości. Niższa działa płynniej i zużywa mniej baterii.
+@option_tooltip_shadows = Jak szczegółowe są cienie na farmie. Wyłącz je, aby oszczędzać baterię.
 @option_tooltip_increment_number_effect = Wyłącz efekty w ekwipunku, które odtwarzają się, gdy zmieniają się liczby.
 @option_tooltip_color_theme = Zmień motyw kolorystyczny interfejsu. Własne motywy można dodać w folderze „Themes” w katalogu zapisu.
 @option_tooltip_color_theme_mobile = Zmień motyw kolorystyczny interfejsu.

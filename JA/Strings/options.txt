@@ -76,6 +76,7 @@
 @print warnings = 警告を表示
 @code highlights = コードのハイライト
 @resolution = 解像度
+@shadows = 影
 @increment number effect = 数値増加エフェクト
 @hide UI = HUD切り替え
 @color theme = カラーテーマ

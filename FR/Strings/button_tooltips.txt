@@ -58,6 +58,8 @@
 @option_tooltip_language = Change la langue du jeu.
 @option_tooltip_code_highlights = Désactive la surbrillance clignotante lorsque le code s'exécute.
 @option_tooltip_resolution = Change la résolution de l'écran.
+@option_tooltip_mobile_resolution = Affiche la ferme à la moitié, aux deux tiers ou à la totalité de la résolution. Plus basse, elle est plus fluide et consomme moins de batterie.
+@option_tooltip_shadows = Le niveau de détail des ombres de la ferme. Désactive-les pour économiser la batterie.
 @option_tooltip_increment_number_effect = Désactive les effets dans l'inventaire qui se jouent lorsque les nombres changent.
 @option_tooltip_color_theme = Change le thème de couleur de l'interface. Tu peux ajouter tes propres thèmes dans le dossier "Themes" de ton dossier de sauvegarde.
 @option_tooltip_color_theme_mobile = Change le thème de couleur de l'interface.

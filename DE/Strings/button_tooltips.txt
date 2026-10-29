@@ -58,6 +58,8 @@
 @option_tooltip_language = Ändert die Sprache des Spiels.
 @option_tooltip_code_highlights = Schaltet die blinkenden Hervorhebungen aus, wenn der Code ausgeführt wird.
 @option_tooltip_resolution = Ändert die Bildschirmauflösung.
+@option_tooltip_mobile_resolution = Rendert die Farm mit halber, Zweidrittel- oder voller Auflösung. Eine niedrigere läuft flüssiger und verbraucht weniger Akku.
+@option_tooltip_shadows = Wie detailliert die Schatten der Farm sind. Schalte sie aus, um Akku zu sparen.
 @option_tooltip_increment_number_effect = Deaktiviert die Effekte im Inventar, die abgespielt werden, wenn sich die Zahlen ändern.
 @option_tooltip_color_theme = Ändere das Farbschema der UI. Eigene Themes können im Ordner "Themes" im Speicherverzeichnis hinzugefügt werden.
 @option_tooltip_color_theme_mobile = Ändere das Farbschema der UI.

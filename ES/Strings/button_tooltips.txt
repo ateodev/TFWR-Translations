@@ -58,6 +58,8 @@
 @option_tooltip_language = Cambia el idioma del juego.
 @option_tooltip_code_highlights = Desactiva los resaltados parpadeantes cuando el código se está ejecutando.
 @option_tooltip_resolution = Cambia la resolución de la pantalla.
+@option_tooltip_mobile_resolution = Renderiza la granja a la mitad, a dos tercios o a la resolución completa. Una más baja va más fluida y consume menos batería.
+@option_tooltip_shadows = El nivel de detalle de las sombras de la granja. Desactívalas para ahorrar batería.
 @option_tooltip_increment_number_effect = Desactiva los efectos en el inventario que se reproducen cuando los números cambian.
 @option_tooltip_color_theme = Cambia el tema de color de la interfaz. Puedes añadir temas personalizados en la carpeta "Themes" dentro del directorio de guardado.
 @option_tooltip_color_theme_mobile = Cambia el tema de color de la interfaz.

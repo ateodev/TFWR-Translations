@@ -78,6 +78,7 @@
 @print warnings = Print Warnings
 @code highlights = Code highlights
 @resolution = Resolution
+@shadows = Shadows
 @increment number effect = Increment Number Effect
 @hide UI = Toggle HUD
 @color theme = Color Theme

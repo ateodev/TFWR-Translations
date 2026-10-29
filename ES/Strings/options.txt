@@ -76,6 +76,7 @@
 @print warnings = Mostrar advertencias
 @code highlights = Resaltado de código
 @resolution = Resolución
+@shadows = Sombras
 @increment number effect = Efecto de incremento
 @hide UI = Alternar HUD
 @color theme = Tema de color

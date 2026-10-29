@@ -58,6 +58,8 @@
 @option_tooltip_language = Změní jazyk hry.
 @option_tooltip_code_highlights = Vypne blikající zvýraznění při běhu kódu.
 @option_tooltip_resolution = Změní rozlišení obrazovky.
+@option_tooltip_mobile_resolution = Vykresluje farmu v polovičním, dvoutřetinovém nebo plném rozlišení. Nižší rozlišení běží plynuleji a šetří baterii.
+@option_tooltip_shadows = Jak podrobné jsou stíny na farmě. Vypnutím ušetříš baterii.
 @option_tooltip_increment_number_effect = Vypne efekt v inventáři při změně počtu položek.
 @option_tooltip_color_theme = Změní barevné téma rozhraní. Vlastní témata můžeš přidat do složky „Themes“ v adresáři se savy.
 @option_tooltip_color_theme_mobile = Změní barevné téma rozhraní.

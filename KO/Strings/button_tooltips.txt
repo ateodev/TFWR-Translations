@@ -58,6 +58,8 @@
 @option_tooltip_language = 게임의 언어를 변경합니다.
 @option_tooltip_code_highlights = 코드가 실행될 때 깜빡이는 하이라이트를 끕니다.
 @option_tooltip_resolution = 화면 해상도를 변경합니다.
+@option_tooltip_mobile_resolution = 농장을 절반, 3분의 2 또는 전체 해상도로 렌더링합니다. 낮을수록 더 부드럽게 실행되고 배터리를 덜 사용합니다.
+@option_tooltip_shadows = 농장 그림자의 세밀함입니다. 끄면 배터리를 절약할 수 있습니다.
 @option_tooltip_increment_number_effect = 숫자가 바뀔 때 인벤토리에서 재생되는 효과를 비활성화합니다.
 @option_tooltip_color_theme = UI 색상 테마를 변경합니다. 커스텀 테마는 저장 디렉토리의 "Themes" 폴더에 추가할 수 있습니다.
 @option_tooltip_color_theme_mobile = UI 색상 테마를 변경합니다.

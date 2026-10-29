@@ -75,6 +75,7 @@
 @print warnings = Друкувати попередження
 @code highlights = Виділення коду
 @resolution = Роздільна здатність
+@shadows = Тіні
 @increment number effect = Ефект приросту числа
 @hide UI = Перемикання інтерфейсу
 @color theme = Колір теми

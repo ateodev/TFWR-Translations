@@ -76,6 +76,7 @@
 @print warnings = Afficher avertissements
 @code highlights = Surlignage code
 @resolution = Résolution
+@shadows = Ombres
 @increment number effect = Effet d'incrémentation
 @hide UI = Basculer ATH
 @color theme = Thème de couleur

@@ -58,6 +58,8 @@
 @option_tooltip_language = 更改遊戲語言。
 @option_tooltip_code_highlights = 關閉程式碼執行時的醒目顯示閃爍。
 @option_tooltip_resolution = 更改螢幕解析度。
+@option_tooltip_mobile_resolution = 以一半、三分之二或完整解析度渲染農場。越低越流暢，也越省電。
+@option_tooltip_shadows = 農場陰影的精細程度。關閉可節省電量。
 @option_tooltip_increment_number_effect = 停用物品欄中數字變化時播放的特效。
 @option_tooltip_color_theme = 更改 UI 的顏色主題。你可以在存檔目錄下的「Themes」資料夾中新增自訂主題。
 @option_tooltip_color_theme_mobile = 變更 UI 的色彩主題。

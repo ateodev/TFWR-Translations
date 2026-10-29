@@ -76,6 +76,7 @@
 @print warnings = 打印警告
 @code highlights = 代码高亮
 @resolution = 分辨率
+@shadows = 阴影
 @increment number effect = 数字变化效果
 @hide UI = 切换 HUD
 @color theme = 颜色主题

@@ -58,6 +58,8 @@
 @option_tooltip_language = Altera o idioma do jogo.
 @option_tooltip_code_highlights = Desliga os destaques piscantes quando o código está em execução.
 @option_tooltip_resolution = Altera a resolução da tela.
+@option_tooltip_mobile_resolution = Renderiza a fazenda com metade, dois terços ou a resolução total. Uma mais baixa roda mais suave e gasta menos bateria.
+@option_tooltip_shadows = O nível de detalhe das sombras da fazenda. Desative-as para economizar bateria.
 @option_tooltip_increment_number_effect = Desativa os efeitos no inventário que são reproduzidos quando os números mudam.
 @option_tooltip_color_theme = Altere o tema de cores da interface. Temas personalizados podem ser adicionados na pasta "Themes" no diretório de salvamento.
 @option_tooltip_color_theme_mobile = Altere o tema de cores da interface.

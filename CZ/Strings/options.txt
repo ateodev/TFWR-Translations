@@ -75,6 +75,7 @@
 @print warnings = Zobrazovat varování
 @code highlights = Zvýraznění kódu
 @resolution = Rozlišení
+@shadows = Stíny
 @increment number effect = Efekt změny čísel
 @hide UI = Přepnout zobrazení HUD
 

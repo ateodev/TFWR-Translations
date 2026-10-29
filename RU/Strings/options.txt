@@ -77,6 +77,7 @@
 @print warnings = Показывать предупреждения
 @code highlights = Подсветка кода
 @resolution = Разрешение
+@shadows = Тени
 @increment number effect = Эффект увеличения чисел
 @hide UI = Скрыть интерфейс
 @color theme = Цветовая тема

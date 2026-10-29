@@ -58,6 +58,8 @@
 @option_tooltip_language = ゲームの言語を変更します。
 @option_tooltip_code_highlights = コード実行中の点滅するハイライトをオフにします。
 @option_tooltip_resolution = 画面の解像度を変更します。
+@option_tooltip_mobile_resolution = 農場を半分、3分の2、またはフル解像度で描画します。低いほど動作が滑らかになり、バッテリーの消費が減ります。
+@option_tooltip_shadows = 農場の影の細かさです。オフにするとバッテリーを節約できます。
 @option_tooltip_increment_number_effect = インベントリで数字が変わるときに再生されるエフェクトを無効にします。
 @option_tooltip_color_theme = UIのカラーテーマを変更します。カスタムテーマはセーブディレクトリ内の「Themes」フォルダーに追加できます。
 @option_tooltip_color_theme_mobile = UIのカラーテーマを変更します。

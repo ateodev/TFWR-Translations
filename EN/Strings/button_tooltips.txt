@@ -60,6 +60,8 @@
 @option_tooltip_language = Change the language of the game.
 @option_tooltip_code_highlights = Turn off the flashing highlights when the code is running.
 @option_tooltip_resolution = Change the screen resolution.
+@option_tooltip_mobile_resolution = Renders the farm at half, two thirds or full resolution. Lower runs smoother and uses less battery.
+@option_tooltip_shadows = How detailed the farm's shadows are. Turn them off to save battery.
 @option_tooltip_increment_number_effect = Disable the effects in the inventory that play when the numbers change.
 @option_tooltip_color_theme = Change the color theme of the UI. Custom themes can be added in the "Themes" folder in the save directory.
 @option_tooltip_color_theme_mobile = Change the color theme of the UI.

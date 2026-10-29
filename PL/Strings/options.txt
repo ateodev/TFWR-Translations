@@ -76,6 +76,7 @@
 @print warnings = Wyświetlaj ostrzeżenia
 @code highlights = Podświetlanie kodu
 @resolution = Rozdzielczość
+@shadows = Cienie
 @increment number effect = Efekt inkrementacji liczb
 @hide UI = Przełącz HUD
 @color theme = Motyw kolorystyczny

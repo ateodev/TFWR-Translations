@@ -76,6 +76,7 @@
 @print warnings = 列印警告
 @code highlights = 程式碼醒目顯示
 @resolution = 解析度
+@shadows = 陰影
 @increment number effect = 數字變化效果
 @hide UI = 切換 HUD
 @color theme = 顏色主題

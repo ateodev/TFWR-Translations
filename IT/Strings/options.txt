@@ -76,6 +76,7 @@
 @print warnings = Mostra Avvisi
 @code highlights = Evidenziazione Codice
 @resolution = Risoluzione
+@shadows = Ombre
 @increment number effect = Effetto Incremento Numeri
 @hide UI = Mostra/Nascondi HUD
 @color theme = Tema colori
