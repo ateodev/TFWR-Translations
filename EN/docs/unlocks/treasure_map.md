@@ -15,15 +15,15 @@ Call `measure()` on the map block to get the treasure path as a string of direct
 
 {{codeexample 
 {
-    "camera_position": {"x": -1, "y": 0, "z": 6},
+    "camera_position": {"x": -1.5, "y": 0, "z": 6},
     "show_image": true,
     "image_size": {"x": 800, "y": 300},
     "show_code": true,
     "show_inventory": true,
-    "show_output": false,
+    "show_output": true,
     "collapsing": true,
     "autoplay": false,
-    "items": [{"item": "hay", "n": 100}, {"item": "iron", "n": 100}],
+    "items": [],
     "world_size": {"x": 4, "y": 4},
     "execution_speed": 2,
     "digging_speed": 10,
@@ -52,21 +52,60 @@ while get_ground_type() != Grounds.Treasure_Map:
 
 do_a_flip()
 instructions = measure()
+print("instructions: ", instructions)
 dig()
 }}
 
 You can use the `for` loop on the string to process it letter by letter:
-```
+{{codeexample 
+{
+    "camera_position": {"x": -1.5, "y": 0, "z": 6},
+    "show_image": false,
+    "image_size": {"x": 800, "y": 300},
+    "show_code": true,
+    "show_inventory": true,
+    "show_output": true,
+    "collapsing": true,
+    "autoplay": false,
+    "items": [],
+    "world_size": {"x": 4, "y": 4},
+    "execution_speed": 2,
+    "digging_speed": 10,
+    "action_ticks": 200,
+    "operation_ticks": 200,
+    "seed": 3,
+    "exclude_unlocks": ["watering", "fertilizer", "dynamite", "iron"]
+}
+#SETUP
+jump(Unlocks.Treasure_Map)
+while get_ground_type() != Grounds.Basalt:
+    dig()
+
+map_pos = measure()
+
+while get_pos_x() < map_pos[0]:
+    move(East)
+while get_pos_y() < map_pos[1]:
+    move(North)
+
+while get_ground_type() != Grounds.Treasure_Map:
+    dig()
+#CODE
 path = measure()
 for letter in path:
-    do_something(letter)
-```
+    print(letter)
+}}
 
-The drone that digs into the treasure map block is the drone that has to find the treasure. It has to stay on top of `Grounds.Treasure_Path` blocks the whole time. If it moves to other ground, the path will break and the treasure will be lost.
+The drone has to stay on top of `Grounds.Treasure_Path` blocks the whole time. If it moves to other ground, the path will break and the treasure will be lost.
 
+## Goal
 At the end of the path is a `Grounds.Treasure_Goal` block. If the drone hasn't strayed from the path, an `Entities.Underground_Treasure` will appear on top of it. The drone can `harvest()` the chest to collect its gold.
 
+## Reward
 The amount of gold is proportional to the length of the treasure path. Upgrading the Treasure Map unlock increases the path's depth, while upgrading Expand gives it more room to move laterally. Both upgrades increase the treasure path's length and the amount of gold you will find.
+
+## Multiple Drones
+The drone that digs into the treasure map block is the drone that has to find the treasure without leaving the path blocks.
 </spoiler>
 
 ---

@@ -3,15 +3,11 @@
 <right>[Perlite and Loam ->](docs/unlocks/special_soils.md)
 ---
 # Rice
-
 Below the surface and the `Grounds.Dirt` layer you might have noticed a thin sheet of `Grounds.Clay`. As it turns out, this fertile and soaked ground is perfect for planting rice seedlings.
 
 As with grass or bushes, as long as your drone is above a `Grounds.Clay` block, you can use `plant(Entities.Rice)` to plant rice seedlings into the clay, then `can_harvest()` to check if the rice has fully grown, and finally `harvest()` to gain rice.
 
-Once you plant rice, the ground will turn into `Grounds.Rice_Terrace` to provide the perfect environment for the rice to mature. Once the rice if fully grown, the ground will dry out and turn into `Grounds.Dry_Rice_Terrace` and cannot be used plant more rice. Luckily, the sheet is a few blocks thick, so you can `dig()` the block away and plant new rice on the `Grounds.Clay` below. And, if the sheet runs out, you can always just `clear()` the world and dig down to a fresh sheet.
-
-You might find the following code useful to dig down until you find clay.
-
+You might find the following code useful to dig down until you find clay and plant rice.
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -20,9 +16,9 @@ You might find the following code useful to dig down until you find clay.
     "show_code": true,
     "show_inventory": true,
     "show_output": false,
-    "collapsing": false,
-    "autoplay": true,
-    "items": [{"item": "hay", "n": 100}, {"item": "wood", "n": 100}],
+    "collapsing": true,
+    "autoplay": false,
+    "items": [{"item": "hay", "n": 1}],
     "exclude_unlocks": ["watering", "fertilizer"],
     "world_size": {"x": 4, "y": 4},
     "execution_speed": 8,
@@ -37,9 +33,10 @@ move(East)
 while get_ground_type() != Grounds.Clay:
     dig()
 plant(Entities.Rice)
-move(North)
-do_a_flip()
 }}
+
+## Terraces
+Once you plant rice, the ground will turn into `Grounds.Rice_Terrace` to provide the perfect environment for the rice to mature. Once the rice if fully grown, the ground will dry out and turn into `Grounds.Dry_Rice_Terrace` and cannot be used plant more rice. Luckily, the sheet is a few blocks thick, so you can `dig()` the block away and plant new rice on the `Grounds.Clay` below. And, if the sheet runs out, you can always just `clear()` the world and dig down to a fresh sheet.
 
 ---
 

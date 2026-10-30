@@ -1,10 +1,9 @@
 [<- Bamboo](docs/unlocks/bamboo.md)
 ---
 # Pyramids
+The underground now contains ancient pyramidal structures from which you can harvest power!
 
-The underground now contains ancient pyramidal structures from which you can harvest energy!
-
-Pyramids are made from sand blocks (`Grounds.Sand`). Below the pyramid itself is a foundation layer of limestone (`Grounds.Limestone`). Because they are old and eroded, you will find them only in a partially destroyed state. The foundation layer is always present, but there will be holes in the sand. Here's how a pyramid looks when you dig it up:
+Pyramids are made from sand blocks (`Grounds.Sand`). Below the pyramid itself is a foundation layer of limestone (`Grounds.Limestone`). Because they are old and eroded, you will find them only in a partially destroyed state. The foundation layer is always present, but there will be holes in the sand. Here's what a pyramid ruin looks like when you dig it up:
 
 {{codeexample 
 {
@@ -31,7 +30,6 @@ move(North)
 #CODE
 while get_ground_type() != Grounds.Limestone:
     dig()
-do_a_flip()
 z = get_pos_z()
 for i in range(6):
     for j in range(6):
@@ -42,8 +40,6 @@ for i in range(6):
         move(North)
     move(East)
 }}
-
-The blocks above the pyramid are always dirt. If you want to dig up a pyramid more efficiently than the above code, you can use that fact.
 
 As you can see, there are several holes in the sand which will need to be filled. When you fill these holes and restore the pyramid to its previous state, it destroys itself and a large sunflower spawns in the middle of the limestone base. Harvest it to receive power. The larger the pyramid you completed, the more power you receive.
 
@@ -87,6 +83,8 @@ place(Grounds.Sand)
 }}
 
 A correctly restored pyramid consists of a square limestone foundation with odd-numbered side lengths, for example 5x5. Above it is a layer of sand blocks of the same size (5x5), followed by progressively smaller layers: 3x3, then 1x1.
+
+The blocks above the pyramid are always dirt. If you want to dig up a pyramid more efficiently than the above code, you can use that fact.
 
 ---
 
