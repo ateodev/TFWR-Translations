@@ -8,7 +8,7 @@
 @popup_warning_corrupted_save = 載入 {0} 時似乎出了問題。請參閱備份章節以取得更多資訊。
 @popup_warning_corrupted_save_mobile = 載入 {0} 時似乎出現問題。
 @popup_warning_save_restored = 無法讀取存檔 {0}，因此已從 {1} 的備份還原。
-@popup_warning_save_started_anew = 無法讀取存檔 {0}，且沒有可讀取的備份，因此已開始新遊戲。
+@popup_warning_save_started_anew = 無法讀取存檔 {0}，且沒有可讀取的備份，因此已開始新的存檔。
 @popup_warning_failed_read_save = 讀取 {0} 的存檔檔案失敗。請確保關閉所有其他正在存取這些檔案的程式，然後重試。
 @popup_warning_failed_read_save_mobile = 無法讀取 {0} 的存檔。請再試一次。
 @popup_warning_failed_write_save = 寫入 {0} 的存檔檔案失敗。請確保關閉所有其他正在存取這些檔案的程式，然後重試。

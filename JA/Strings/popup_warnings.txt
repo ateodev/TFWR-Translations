@@ -8,7 +8,7 @@
 @popup_warning_corrupted_save = {0} のロード中に問題が発生したようです。詳細については、バックアップに関するセクションを確認してください。
 @popup_warning_corrupted_save_mobile = {0} のロード中に問題が発生したようです。
 @popup_warning_save_restored = セーブデータ {0} を読み込めなかったため、{1} のバックアップから復元しました。
-@popup_warning_save_started_anew = セーブデータ {0} を読み込めず、読み込めるバックアップもなかったため、ニューゲームを開始しました。
+@popup_warning_save_started_anew = セーブデータ {0} を読み込めず、読み込めるバックアップもなかったため、新しいセーブデータを開始しました。
 @popup_warning_failed_read_save = {0} のセーブファイルの読み込みに失敗しました。ファイルにアクセスしている他のすべてのプログラムを閉じて、もう一度試してください。
 @popup_warning_failed_read_save_mobile = {0} のセーブファイルの読み込みに失敗しました。もう一度お試しください。
 @popup_warning_failed_write_save = {0} のセーブファイルへの書き込みに失敗しました。ファイルにアクセスしている他のすべてのプログラムを閉じて、もう一度試してください。

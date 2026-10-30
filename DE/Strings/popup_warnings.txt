@@ -8,7 +8,7 @@
 @popup_warning_corrupted_save = Es scheint ein Problem beim Laden von {0} gegeben zu haben. Weitere Informationen findest du im Abschnitt über Backups.
 @popup_warning_corrupted_save_mobile = Es scheint ein Problem beim Laden von {0} gegeben zu haben.
 @popup_warning_save_restored = Der Spielstand {0} konnte nicht gelesen werden und wurde daher aus einem Backup vom {1} wiederhergestellt.
-@popup_warning_save_started_anew = Der Spielstand {0} konnte nicht gelesen werden und hat kein lesbares Backup, daher wurde ein neues Spiel gestartet.
+@popup_warning_save_started_anew = Der Spielstand {0} konnte nicht gelesen werden und hat kein lesbares Backup, daher wurde ein neuer Spielstand begonnen.
 @popup_warning_failed_read_save = Fehler beim Lesen der Speicherdateien von {0}. Stelle sicher, dass du alle anderen Programme schließt, die auf die Dateien zugreifen, und versuche es erneut.
 @popup_warning_failed_read_save_mobile = Fehler beim Lesen der Speicherdateien von {0}. Bitte versuche es erneut.
 @popup_warning_failed_write_save = Fehler beim Schreiben in die Speicherdateien von {0}. Stelle sicher, dass du alle anderen Programme schließt, die auf die Dateien zugreifen, und versuche es erneut.
