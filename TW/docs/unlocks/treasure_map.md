@@ -15,15 +15,15 @@
 
 {{codeexample 
 {
-    "camera_position": {"x": -1, "y": 0, "z": 6},
+    "camera_position": {"x": -1.5, "y": 0, "z": 6},
     "show_image": true,
     "image_size": {"x": 800, "y": 300},
     "show_code": true,
     "show_inventory": true,
-    "show_output": false,
+    "show_output": true,
     "collapsing": true,
     "autoplay": false,
-    "items": [{"item": "hay", "n": 100}, {"item": "iron", "n": 100}],
+    "items": [],
     "world_size": {"x": 4, "y": 4},
     "execution_speed": 2,
     "digging_speed": 10,
@@ -52,21 +52,60 @@ while get_ground_type() != Grounds.Treasure_Map:
 
 do_a_flip()
 instructions = measure()
+print("指示：", instructions)
 dig()
 }}
 
 可以對字串使用 `for` 迴圈，逐個字母地處理它：
-```
+{{codeexample 
+{
+    "camera_position": {"x": -1.5, "y": 0, "z": 6},
+    "show_image": false,
+    "image_size": {"x": 800, "y": 300},
+    "show_code": true,
+    "show_inventory": true,
+    "show_output": true,
+    "collapsing": true,
+    "autoplay": false,
+    "items": [],
+    "world_size": {"x": 4, "y": 4},
+    "execution_speed": 2,
+    "digging_speed": 10,
+    "action_ticks": 200,
+    "operation_ticks": 200,
+    "seed": 3,
+    "exclude_unlocks": ["watering", "fertilizer", "dynamite", "iron"]
+}
+#SETUP
+jump(Unlocks.Treasure_Map)
+while get_ground_type() != Grounds.Basalt:
+    dig()
+
+map_pos = measure()
+
+while get_pos_x() < map_pos[0]:
+    move(East)
+while get_pos_y() < map_pos[1]:
+    move(North)
+
+while get_ground_type() != Grounds.Treasure_Map:
+    dig()
+#CODE
 path = measure()
 for letter in path:
-    do_something(letter)
-```
+    print(letter)
+}}
 
-寶藏必須由挖到藏寶圖地塊的那架無人機尋找。它必須一直待在 `Grounds.Treasure_Path` 地塊上方。如果移動到其他地塊，路徑就會斷開，寶藏也會遺失。
+無人機必須一直待在 `Grounds.Treasure_Path` 地塊上方。如果移動到其他地塊，路徑就會斷開，寶藏也會遺失。
 
+## 目標
 路徑盡頭是一個 `Grounds.Treasure_Goal` 地塊。如果無人機沒有偏離路徑，其上方就會出現 `Entities.Underground_Treasure`。無人機可以使用 `harvest()` 收穫寶箱，獲得黃金。
 
+## 獎勵
 黃金數量與寶藏路徑的長度成正比。升級藏寶圖解鎖項會增加路徑的深度，升級擴張則能讓路徑有更多橫向延伸的空間。兩種升級都會延長寶藏路徑，讓你找到更多黃金。
+
+## 多架無人機
+寶藏必須由挖到藏寶圖地塊的那架無人機尋找，而且它不能離開路徑地塊。
 </spoiler>
 
 ---

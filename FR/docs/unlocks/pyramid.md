@@ -1,10 +1,9 @@
 [<- Bambou](docs/unlocks/bamboo.md)
 ---
 # Pyramides
+Le sous-sol contient désormais d’anciennes structures pyramidales dont tu peux récolter de la puissance !
 
-Le sous-sol contient désormais d’anciennes structures pyramidales dont tu peux récolter l’énergie !
-
-Les pyramides sont constituées de blocs de sable (`Grounds.Sand`). Sous la pyramide elle-même se trouve une couche de fondation en calcaire (`Grounds.Limestone`). Comme elles sont anciennes et érodées, tu ne les trouveras que partiellement détruites. La couche de fondation est toujours présente, mais le sable comporte des trous. Voici à quoi ressemble une pyramide une fois dégagée :
+Les pyramides sont constituées de blocs de sable (`Grounds.Sand`). Sous la pyramide elle-même se trouve une couche de fondation en calcaire (`Grounds.Limestone`). Comme elles sont anciennes et érodées, tu ne les trouveras que partiellement détruites. La couche de fondation est toujours présente, mais le sable comporte des trous. Voici à quoi ressemble une ruine de pyramide une fois dégagée :
 
 {{codeexample 
 {
@@ -31,7 +30,6 @@ move(North)
 #CODE
 while get_ground_type() != Grounds.Limestone:
     dig()
-do_a_flip()
 z = get_pos_z()
 for i in range(6):
     for j in range(6):
@@ -42,8 +40,6 @@ for i in range(6):
         move(North)
     move(East)
 }}
-
-Les blocs situés au-dessus de la pyramide sont toujours en terre. Tu peux exploiter cette information pour dégager une pyramide plus efficacement qu’avec le code ci-dessus.
 
 Comme tu peux le voir, le sable présente plusieurs trous qu’il faudra combler. Lorsque tu les remplis et restaures la pyramide dans son état d’origine, elle se détruit et un grand tournesol apparaît au centre de la base en calcaire. Récolte-le pour recevoir de la puissance. Plus la pyramide achevée est grande, plus tu reçois de puissance.
 
@@ -87,6 +83,8 @@ place(Grounds.Sand)
 }}
 
 Une pyramide correctement restaurée possède une fondation carrée en calcaire dont les côtés ont une longueur impaire, par exemple 5x5. Elle est surmontée d’une couche de blocs de sable de même taille (5x5), puis de couches de plus en plus petites : 3x3, puis 1x1.
+
+Les blocs situés au-dessus de la pyramide sont toujours en terre. Tu peux exploiter cette information pour dégager une pyramide plus efficacement qu’avec le code ci-dessus.
 
 ---
 

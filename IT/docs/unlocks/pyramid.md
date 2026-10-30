@@ -1,10 +1,9 @@
 [<- Bambù](docs/unlocks/bamboo.md)
 ---
 # Piramidi
-
 Il sottosuolo ora contiene antiche strutture piramidali da cui puoi raccogliere energia!
 
-Le piramidi sono fatte di blocchi di sabbia (`Grounds.Sand`). Sotto la piramide si trova uno strato di fondamenta in calcare (`Grounds.Limestone`). Essendo antiche ed erose, le troverai sempre parzialmente distrutte. Lo strato di fondamenta è sempre presente, ma nella sabbia ci saranno dei buchi. Ecco che aspetto ha una piramide quando la dissotterri:
+Le piramidi sono fatte di blocchi di sabbia (`Grounds.Sand`). Sotto la piramide si trova uno strato di fondamenta in calcare (`Grounds.Limestone`). Essendo antiche ed erose, le troverai sempre parzialmente distrutte. Lo strato di fondamenta è sempre presente, ma nella sabbia ci saranno dei buchi. Ecco che aspetto hanno i resti di una piramide quando li dissotterri:
 
 {{codeexample 
 {
@@ -31,7 +30,6 @@ move(North)
 #CODE
 while get_ground_type() != Grounds.Limestone:
     dig()
-do_a_flip()
 z = get_pos_z()
 for i in range(6):
     for j in range(6):
@@ -42,8 +40,6 @@ for i in range(6):
         move(North)
     move(East)
 }}
-
-I blocchi sopra la piramide sono sempre di terra. Se vuoi dissotterrare una piramide in modo più efficiente rispetto al codice precedente, puoi sfruttare questo fatto.
 
 Come puoi vedere, nella sabbia ci sono diversi buchi da riempire. Quando li riempi e riporti la piramide al suo stato originale, questa si distrugge e al centro della base di calcare compare un grande girasole. Raccoglilo per ricevere energia. Più grande è la piramide completata, maggiore è l'energia ottenuta.
 
@@ -87,6 +83,8 @@ place(Grounds.Sand)
 }}
 
 Una piramide restaurata correttamente è composta da fondamenta quadrate di calcare con lati di lunghezza dispari, per esempio 5x5. Sopra si trova uno strato di blocchi di sabbia delle stesse dimensioni (5x5), seguito da strati progressivamente più piccoli: 3x3 e poi 1x1.
+
+I blocchi sopra la piramide sono sempre di terra. Se vuoi dissotterrare una piramide in modo più efficiente rispetto al codice precedente, puoi sfruttare questo fatto.
 
 ---
 

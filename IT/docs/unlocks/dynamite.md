@@ -6,46 +6,48 @@ Il rivoluzionario esplosivo lasciato dalle precedenti spedizioni minerarie. Per 
 
 Per estrarre la dinamite in sicurezza, trova uno strato di `Grounds.Dynamite` seguito direttamente da un altro strato di `Grounds.Soot` sotto di esso. Lo strato di dinamite superiore è ormai vecchio e alcuni dei suoi blocchi possono essere scavati senza pericolo. Alcuni blocchi di dinamite, però, sono ancora attivi ed esploderanno quando li scavi.
 
+La dinamite raccolta può essere usata con `use_item(Items.Dynamite)` ed esplode immediatamente sotto il drone.
+
+Questo esempio scava nella dinamite e tutto intorno al punto di scavo iniziale, stampando la misurazione dei blocchi di fuliggine sottostanti:
 {{codeexample 
 {
-    "camera_position": {"x": -5, "y": 0, "z": 15},
+    "camera_position": {"x": -3, "y": 0, "z": 15},
     "show_image": true,
-    "image_size": {"x": 900, "y": 500},
+    "image_size": {"x": 800, "y": 500},
     "show_code": true,
     "show_inventory": true,
     "show_output": false,
-    "collapsing": false,
-    "autoplay": true,
-    "items": [{"item": "hay", "n": 100}],
-    "world_size": {"x": 11, "y": 11},
-    "execution_speed": 8,
-    "digging_speed": 8,
+    "collapsing": true,
+    "autoplay": false,
+    "items": [],
+    "world_size": {"x": 7, "y": 7},
+    "execution_speed": 2,
+    "digging_speed": 2,
     "action_ticks": 200,
     "operation_ticks": 200,
-    "seed": 5,
+    "seed": 6,
     "exclude_unlocks": ["watering", "fertilizer", "mushrooms", "coal", "quartz", "petrified_pumpkins"]
 }
 #SETUP
 jump(Unlocks.Dynamite)
-for _ in range(5):
+for _ in range(3):
     move(East)
     move(North)
 #CODE
 while get_ground_type() != Grounds.Soot:
     dig()
 
-circle_directions = [East, South, West, West, North, North, East, East, South, West]
-def dig_dynamite_neighbors():
-    for dir in circle_directions:
-        move(dir)
-        while get_ground_type() != Grounds.Soot:
-            dig()
-
-while get_ground_type() == Grounds.Soot and measure() == 0:
-    dig_dynamite_neighbors()
-    move(circle_directions[random() * len(circle_directions)])
+circle_directions = [
+    East, South, West, West, 
+    North, North, East, East
+]
+for dir in circle_directions:
+    move(dir)
+    dig()
+    print(measure())
 }}
 
+## Campo Minato di Dinamite
 Riesci a trovare e scavare tutti i blocchi di dinamite inerti, lasciando solo quelli attivi? Quando lo strato di dinamite scompare, ogni blocco attivo circondato soltanto da altri blocchi attivi o da blocchi di fuliggine ti darà dinamite extra.
 
 Per fortuna i blocchi di fuliggine sottostanti ti aiuteranno: possono rilevare quanti blocchi di dinamite vicini contengono dinamite attiva. Non indicano quali blocchi sono attivi, ma solo il totale, quindi dovrai combinare le misurazioni di più blocchi di fuliggine e dedurlo da solo.
@@ -54,6 +56,12 @@ Chiamare `measure()` su un blocco di fuliggine restituisce il numero di mine nel
 
 Il primo blocco scavato nello strato di dinamite è sempre inerte. Ogni blocco di dinamite scavato produce un po' di dinamite. Quando lo strato viene distrutto, dopo aver scavato tutti i blocchi inerti oppure colpendo per errore della dinamite attiva, ricevi anche una quantità di dinamite pari al quadrato del numero di blocchi attivi completamente scoperti.
 
+## Struttura degli Strati
+Il numero di mine attive nello strato di dinamite, e quindi la difficoltà nel trovarle, aumenta con la profondità. Il numero totale di mine aumenta con le dimensioni della fattoria, e con esso anche la resa massima possibile per aver ripulito uno strato di dinamite.
+
+Potenzia la dinamite per aumentare la resa ottenuta scavando i blocchi di dinamite e scoprendo completamente quelli attivi. Il potenziamento aumenta anche del 30% l'energia delle esplosioni.
+
+## Rilevare Successo e Fallimento
 Se scavi nella dinamite attiva, entrambi gli strati esplodono. Puoi verificarlo usando `get_ground_type()` dopo aver scavato in `Grounds.Dynamite`. Se il terreno non è `Grounds.Soot`, non hai risolto l'enigma. Se invece viene scavato l'ultimo blocco di dinamite inerte, tutti i blocchi di dinamite scompaiono e ottieni la resa massima dell'enigma. Lo strato di fuliggine rimane, ma `measure()` restituisce `None`, indicando che l'enigma è stato risolto correttamente.
 
 `# Scava un blocco di dinamite e controlla lo stato dell'enigma
@@ -70,11 +78,50 @@ def dig_dynamite():
         return None
 `
 
-Il numero di mine attive nello strato di dinamite, e quindi la difficoltà nel trovarle, aumenta con la profondità. Il numero totale di mine aumenta con le dimensioni della fattoria, e con esso anche la resa massima possibile per aver ripulito uno strato di dinamite.
+## Strategia
+<spoiler=suggerimento>
+Il codice qui sotto scava nello strato di dinamite e cerca blocchi di fuliggine la cui misurazione è `0`. Per ogni blocco di questo tipo che trova, scava via tutti i blocchi di dinamite che lo circondano:
+{{codeexample 
+{
+    "camera_position": {"x": -5, "y": 0, "z": 15},
+    "show_image": true,
+    "image_size": {"x": 800, "y": 500},
+    "show_code": true,
+    "show_inventory": true,
+    "show_output": false,
+    "collapsing": true,
+    "autoplay": false,
+    "items": [],
+    "world_size": {"x": 7, "y": 7},
+    "execution_speed": 4,
+    "digging_speed": 8,
+    "action_ticks": 200,
+    "operation_ticks": 20,
+    "seed": 6,
+    "exclude_unlocks": ["watering", "fertilizer", "mushrooms", "coal", "quartz", "petrified_pumpkins"]
+}
+#SETUP
+jump(Unlocks.Dynamite)
+for _ in range(3):
+    move(East)
+    move(North)
+#CODE
+while get_ground_type() != Grounds.Soot:
+    dig()
 
-La dinamite raccolta può essere usata con `use_item(Items.Dynamite)` ed esplode immediatamente sotto il drone.
-
-Potenzia la dinamite per aumentare la resa ottenuta scavando i blocchi di dinamite e scoprendo completamente quelli attivi. Il potenziamento aumenta anche del 30% l'energia delle esplosioni.
+circle_directions = [
+    East, South, West, West, North,
+    North, East, East, South, West
+]
+for dir in circle_directions:
+    if get_ground_type() == Grounds.Soot and measure() == 0:
+        for dir2 in circle_directions:
+            move(dir2)
+            while get_ground_type() != Grounds.Soot:
+                dig()
+    move(dir)
+}}
+</spoiler>
 
 ---
 

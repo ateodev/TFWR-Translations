@@ -2,9 +2,9 @@
 
 # Perlit und Lehmboden
 
-Einige Pflanzen liefern auf luftigen oder nährstoffreichen Böden einen höheren Ertrag. Diese Freischaltung fügt zwei neue unterirdische Blocktypen hinzu: Perlit und Lehmboden (`Grounds.Perlite` und `Grounds.Loam`).
+Diese Freischaltung fügt zwei neue unterirdische Blocktypen hinzu: Perlit und Lehmboden (`Grounds.Perlite` und `Grounds.Loam`). Wenn du Pflanzen erntest, die auf diesen Böden gepflanzt wurden, erhältst du den doppelten Ertrag.
 
-Diese neuen Blocktypen kommen ähnlich wie Ton in dünnen unterirdischen Schichten vor.
+Perlit und Lehmboden kommen ähnlich wie Ton in dünnen unterirdischen Schichten vor, sind aber etwas seltener.
 
 Perlit eignet sich für Pflanzen, die luftige Böden bevorzugen: Kakteen, Bambus, Büsche und Bäume. Auf Perlit liefern diese Pflanzen den doppelten Ertrag.
 

@@ -4,16 +4,7 @@
 
 Seguindo além dos veios de ferro em `Grounds.Rock`, você encontra quartzo na parte inferior da camada de pedra e na `Grounds.Dirt` dura abaixo dela (verifique a dureza usando `get_hardness()` do desbloqueio [Sentidos Subterrâneos](docs/unlocks/underground_senses.md)).
 
-O quartzo cresce em veios semelhantes a agulhas que formam colunas verticais, tornando-os difíceis de encontrar por tentativa e erro.
-
-Felizmente, podemos transformar nosso ferro em algo parecido com uma vara de radiestesia para localizar esses veios com mais facilidade. O comando é `prospect_quartz()`.
-
-`prospect_quartz()` funciona de forma diferente de `prospect_iron()`. Em vez de retornar a direção do quartzo mais próximo, retorna a distância euclidiana (distância 3D) até ele. Executar `prospect_quartz()` custa 1 ferro, então use-o com moderação.
-
-Se `prospect_quartz()` não encontrar quartzo por perto ou você não tiver ferro suficiente, ele retorna `None`.
-
 O código a seguir faz o drone atravessar a terra e escavar fundo na camada de rocha. Com um pouco de sorte, haverá um veio de quartzo por perto, e o drone imprimirá a distância até ele.
-
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -24,7 +15,7 @@ O código a seguir faz o drone atravessar a terra e escavar fundo na camada de r
     "show_output": false,
     "collapsing": true,
     "autoplay": false,
-    "items": [{"item": "hay", "n": 100}, {"item": "iron", "n": 100}],
+    "items": [],
     "world_size": {"x": 3, "y": 3},
     "execution_speed": 8,
     "digging_speed": 16,
@@ -33,22 +24,38 @@ O código a seguir faz o drone atravessar a terra e escavar fundo na camada de r
     "seed": 9,
     "exclude_unlocks": ["watering", "fertilizer", "mushrooms", "dynamite"]
 }
-
-#CODE
+#SETUP
 move(East)
 move(North)
+#CODE
 while get_ground_type() != Grounds.Rock:
     dig()
 for i in range(30):
     dig()
-do_a_flip()
-do_a_flip()
+
+print(prospect_quartz())
+move(South)
 print(prospect_quartz())
 }}
 
-Você pode prospectar e se mover repetidamente e ver como a distância muda, para saber se está se aproximando ou se afastando de um veio. Você pode usar geometria 2D para encontrar a interseção entre dois ou mais círculos, achar a posição horizontal de um veio e escavar para baixo. Ou pode usar trilateração completa para intersectar três esferas e encontrar a posição 3D exata.
+## Estrutura dos Veios
+O quartzo cresce em veios semelhantes a agulhas que formam colunas verticais, tornando-os difíceis de encontrar por tentativa e erro.
 
-Observe que não há funções matemáticas básicas para raiz quadrada, trigonometria ou vetores; você terá que implementá-las por conta própria. Observe também que pode haver vários veios nas proximidades, então, se você fizer várias medições próximas, elas podem não apontar para o mesmo veio e acabar te confundindo.
+## Prospecção de Quartzo
+Felizmente, podemos transformar nosso ferro em algo parecido com uma vara de radiestesia para localizar esses veios com mais facilidade. O comando é `prospect_quartz()`.
+
+`prospect_quartz()` funciona de forma diferente de `prospect_iron()`. Em vez de retornar a direção em que o drone deve se mover rumo ao minério de ferro mais próximo, retorna a distância 3D exata entre o bloco de quartzo mais próximo e o drone (distância euclidiana).
+
+Executar `prospect_quartz()` custa 1 ferro, então use-o com moderação.
+
+Se `prospect_quartz()` não encontrar quartzo por perto ou você não tiver ferro suficiente, ele retorna `None`.
+
+## Estratégia
+<spoiler=mostrar dica>
+Você pode prospectar e se mover repetidamente para ver como a distância muda, o que indica se você está se aproximando ou se afastando de um veio. Você pode usar geometria 2D para encontrar a interseção entre dois ou mais círculos, achar a posição horizontal de um veio e escavar para baixo. Ou pode usar trilateração completa para intersectar três esferas e encontrar a posição 3D exata.
+
+Observe que não há funções matemáticas embutidas para raiz quadrada, trigonometria ou vetores; você terá que implementá-las por conta própria. Observe também que pode haver vários veios nas proximidades, então, se você fizer várias medições próximas, elas podem não apontar para o mesmo veio e acabar te confundindo.
+</spoiler>
 
 ---
 

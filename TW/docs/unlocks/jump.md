@@ -2,11 +2,11 @@
 ---
 # 跳轉
 
-無人機已解鎖 `jump()` 指令。
+無人機已解鎖 `jump()` 指令。使用時，傳入一個解鎖項作為參數，例如 `Unlocks.Iron`。
 
-此指令可以指定某些解鎖項，讓無人機直接跳轉到它們附近。偵錯程式，或者回頭尋找剛剛錯過的礦脈時，這特別有用。使用時，傳入一個解鎖項作為參數，例如 `Unlocks.Iron`。
+此指令可以指定某些藏在地下的解鎖項，讓無人機立即跳轉下去。偵錯程式，或者回頭尋找剛剛錯過的礦脈時，這特別有用。
 
-`jump()` 只能用於出現在地下的解鎖項，例如 `jump(Unlocks.Rice)` 或 `jump(Unlocks.Iron)`。
+跳轉後，目標解鎖項應該位於最上層地塊表面以下 3 個地塊之內。每次執行程式只能使用一次 `jump()`，再次嘗試跳轉會產生錯誤。
 
 {{codeexample 
 {
@@ -18,27 +18,40 @@
     "show_output": false,
     "collapsing": true,
     "autoplay": false,
-    "items": [],
+    "items": [{"item": "hay", "n": 10}],
     "world_size": {"x": 4, "y": 4},
     "execution_speed": 1,
-    "digging_speed": 3,
+    "digging_speed": 4,
     "action_ticks": 200,
-    "operation_ticks": 200,
+    "operation_ticks": 20,
     "seed": 1,
     "exclude_unlocks": ["watering", "fertilizer", "mushrooms"],
     "starting_chunk": 0
 }
 #CODE
-dig()
-dig()
-dig()
-jump(Unlocks.Iron)
-do_a_flip()
+jump(Unlocks.Rice)
+
+for i in range(get_world_size()):
+    while get_ground_type() != Grounds.Clay:
+        dig()
+
+    plant(Entities.Rice)
+
+    move(East)
 }}
 
-跳轉不一定能直接到達目標解鎖項，因此你可能還得在附近找一找；但目標一定就在附近。
-
-每次執行程式只能使用一次 `jump()`。
+## 相容的解鎖項
+`jump()` 只適用於以下採礦解鎖項：
+- Coal（煤炭）
+- Iron（鐵礦）
+- Quartz（石英）
+- Rice（水稻）
+- Petrified_Pumpkins（石化南瓜）
+- Special_Soils（特殊土壤）
+- Pyramid（金字塔）
+- Treasure_Map（藏寶圖）
+- Mushrooms（蘑菇）
+- Dynamite（炸藥）
 
 ---
 

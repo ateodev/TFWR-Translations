@@ -2,9 +2,9 @@
 
 # Perlit i gleba próchnicza
 
-Niektóre rośliny dają większe plony na przewiewnych lub bogatych w składniki odżywcze glebach. To odblokowanie dodaje dwa nowe rodzaje podziemnych bloków: perlit i glebę próchniczą (`Grounds.Perlite` i `Grounds.Loam`).
+To odblokowanie dodaje dwa nowe rodzaje podziemnych bloków: perlit i glebę próchniczą (`Grounds.Perlite` i `Grounds.Loam`). Gdy zbierzesz rośliny posadzone na tych glebach, otrzymasz podwójny plon.
 
-Te nowe rodzaje bloków występują w cienkich podziemnych warstwach, podobnie jak glina.
+Perlit i gleba próchnicza występują w cienkich podziemnych warstwach, podobnie jak glina, ale są nieco rzadsze.
 
 Perlit nadaje się dla roślin lubiących przewiewne gleby: kaktusów, bambusa, krzewów i drzew. Posadzone na perlicie dają dwukrotnie większy plon.
 

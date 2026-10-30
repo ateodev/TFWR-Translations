@@ -2,11 +2,11 @@
 ---
 # Skok
 
-Twój dron odblokował polecenie `jump()`.
+Twój dron odblokował polecenie `jump()`. Używa się go, przekazując odblokowanie jako argument, na przykład `Unlocks.Iron`.
 
-To polecenie pozwala wskazać określone odblokowania i przenieść się do nich. Jest szczególnie przydatne podczas debugowania lub do powrotu do niedawno pominiętej żyły rudy. Używa się go, przekazując odblokowanie jako argument, na przykład `Unlocks.Iron`.
+To polecenie pozwala wskazać określone odblokowania ukryte w ziemi i natychmiast przenieść się w dół prosto do nich. Jest szczególnie przydatne podczas debugowania lub do szybkiego dotarcia do niedawno pominiętej żyły rudy.
 
-`jump()` działa tylko z odblokowaniami występującymi pod ziemią, na przykład `jump(Unlocks.Rice)` lub `jump(Unlocks.Iron)`.
+Po skoku docelowe odblokowanie powinno znajdować się w odległości do 3 bloków od najwyższej powierzchni bloków. `jump()` można użyć tylko raz podczas jednego wykonania programu, a kolejne próby skoku spowodują błąd.
 
 {{codeexample 
 {
@@ -18,27 +18,40 @@ To polecenie pozwala wskazać określone odblokowania i przenieść się do nich
     "show_output": false,
     "collapsing": true,
     "autoplay": false,
-    "items": [],
+    "items": [{"item": "hay", "n": 10}],
     "world_size": {"x": 4, "y": 4},
     "execution_speed": 1,
-    "digging_speed": 3,
+    "digging_speed": 4,
     "action_ticks": 200,
-    "operation_ticks": 200,
+    "operation_ticks": 20,
     "seed": 1,
     "exclude_unlocks": ["watering", "fertilizer", "mushrooms"],
     "starting_chunk": 0
 }
 #CODE
-dig()
-dig()
-dig()
-jump(Unlocks.Iron)
-do_a_flip()
+jump(Unlocks.Rice)
+
+for i in range(get_world_size()):
+    while get_ground_type() != Grounds.Clay:
+        dig()
+
+    plant(Entities.Rice)
+
+    move(East)
 }}
 
-Skok nie zawsze przeniesie cię bezpośrednio do docelowego odblokowania, więc być może trzeba będzie trochę się rozejrzeć, ale cel na pewno znajduje się w pobliżu.
-
-`jump()` można użyć tylko raz podczas jednego wykonania programu.
+## Zgodne odblokowania
+`jump()` działa tylko z następującymi odblokowaniami górniczymi:
+- Coal
+- Iron
+- Quartz
+- Rice
+- Petrified_Pumpkins
+- Special_Soils
+- Pyramid
+- Treasure_Map
+- Mushrooms
+- Dynamite
 
 ---
 

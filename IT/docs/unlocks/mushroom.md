@@ -2,8 +2,9 @@
 ---
 # Funghi
 
-Molti tipi di funghi crescono in colonie sotterranee. Mentre scavi, cerca uno strato di `Grounds.Mushroom`. Puoi quindi usare `measure()` sul terreno per ottenere il tipo di fungo sotto forma di numero, a partire da `0`.
+Molti tipi di funghi crescono in colonie sotterranee. Mentre scavi, cerca uno strato di `Grounds.Mushroom`. Puoi quindi usare `measure()` sul terreno per ottenere il tipo di fungo sotto forma di numero, da `0` a `5`.
 
+Il codice seguente trova alcuni funghi e ne stampa il tipo:
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 6},
@@ -14,7 +15,7 @@ Molti tipi di funghi crescono in colonie sotterranee. Mentre scavi, cerca uno st
     "show_output": false,
     "collapsing": true,
     "autoplay": false,
-    "items": [{"item": "hay", "n": 100}, {"item": "iron", "n": 100}],
+    "items": [],
     "world_size": {"x": 4, "y": 4},
     "execution_speed": 2,
     "digging_speed": 6,
@@ -23,23 +24,69 @@ Molti tipi di funghi crescono in colonie sotterranee. Mentre scavi, cerca uno st
     "seed": 9,
     "exclude_unlocks": ["watering", "fertilizer", "dynamite", "iron"]
 }
+#SETUP
+jump(Unlocks.Mushrooms)
+#CODE
+for i in range(get_world_size()):
+    while get_ground_type() != Grounds.Mushroom:
+        dig()
 
+    print(measure())
+
+    move(East)
+}}
+
+I funghi dello stesso tipo amano stare insieme, ma sono troppo timidi per crescere uno sopra l'altro. Spingi il blocco di funghi sotto il drone con `push(direction)`.
+
+Impila due blocchi di funghi dello stesso tipo uno sopra l'altro e i blocchi verranno raccolti automaticamente, dandoti i loro funghi.
+
+Il codice qui sotto fa spazio e poi spinge un fungo finché non corrisponde al fungo sottostante:
+{{codeexample 
+{
+    "camera_position": {"x": -1, "y": 0, "z": 6},
+    "show_image": true,
+    "image_size": {"x": 800, "y": 300},
+    "show_code": true,
+    "show_inventory": true,
+    "show_output": false,
+    "collapsing": true,
+    "autoplay": false,
+    "items": [],
+    "world_size": {"x": 4, "y": 4},
+    "execution_speed": 2,
+    "digging_speed": 6,
+    "action_ticks": 200,
+    "operation_ticks": 200,
+    "seed": 3,
+    "exclude_unlocks": ["watering", "fertilizer", "dynamite", "iron", "special_soils"]
+}
 #SETUP
 jump(Unlocks.Mushrooms)
 #CODE
 while get_ground_type() != Grounds.Mushroom:
     dig()
-do_a_flip()
-print(measure())
+
+depth = get_pos_z()
+for i in range(2):
+    move(East)
+    while get_pos_z() > depth - 1:
+        dig()
+    move(West)
+    push(East)
+    move(East)
 }}
 
-I funghi dello stesso tipo amano stare insieme, ma sono troppo timidi per crescere uno sopra l'altro. Spingi un blocco di funghi sopra un altro blocco dello stesso tipo: scompariranno e riceverai funghi come ricompensa.
+# Spingere i Blocchi
+Puoi usare `can_push(direction)` per controllare se il blocco sotto il drone può essere spinto e se qualcosa lo ostacola nella direzione indicata.
 
-Puoi usare `can_push(direction)` per controllare se il blocco sotto il drone può essere spinto e se qualcosa lo ostacola nella direzione indicata. `push(direction)` spinge il blocco e restituisce se l'operazione è riuscita.
+`push(direction)` spinge il blocco e restituisce se l'operazione è riuscita.
 
-I blocchi non possono essere spinti verso l'alto e l'operazione fallisce se un altro blocco ostacola il percorso. Se vengono spinti nel vuoto, i blocchi cadono e atterrano sul blocco successivo sotto di loro.
+Solo i blocchi di funghi possono essere spinti, i blocchi non possono essere spinti verso l'alto e l'operazione fallisce se un altro blocco ostacola il percorso. Se vengono spinti nel vuoto, i blocchi cadono e atterrano sul blocco successivo sotto di loro.
 
+# Strategia
+<spoiler=suggerimento>
 Ricorda che puoi chiamare `place(Grounds.Dirt)` per posizionare blocchi sotto il drone. Può essere utile per riempire le buche e spingervi sopra altri blocchi.
+</spoiler>
 
 ---
 

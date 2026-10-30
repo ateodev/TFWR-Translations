@@ -15,15 +15,15 @@ Rufe `measure()` auf dem Kartenblock auf, um den Weg zum Schatz als Zeichenfolge
 
 {{codeexample 
 {
-    "camera_position": {"x": -1, "y": 0, "z": 6},
+    "camera_position": {"x": -1.5, "y": 0, "z": 6},
     "show_image": true,
     "image_size": {"x": 800, "y": 300},
     "show_code": true,
     "show_inventory": true,
-    "show_output": false,
+    "show_output": true,
     "collapsing": true,
     "autoplay": false,
-    "items": [{"item": "hay", "n": 100}, {"item": "iron", "n": 100}],
+    "items": [],
     "world_size": {"x": 4, "y": 4},
     "execution_speed": 2,
     "digging_speed": 10,
@@ -52,21 +52,60 @@ while get_ground_type() != Grounds.Treasure_Map:
 
 do_a_flip()
 instructions = measure()
+print("Anweisungen: ", instructions)
 dig()
 }}
 
 Mit einer `for`-Schleife kannst du die Zeichenfolge Buchstabe für Buchstabe verarbeiten:
-```
+{{codeexample 
+{
+    "camera_position": {"x": -1.5, "y": 0, "z": 6},
+    "show_image": false,
+    "image_size": {"x": 800, "y": 300},
+    "show_code": true,
+    "show_inventory": true,
+    "show_output": true,
+    "collapsing": true,
+    "autoplay": false,
+    "items": [],
+    "world_size": {"x": 4, "y": 4},
+    "execution_speed": 2,
+    "digging_speed": 10,
+    "action_ticks": 200,
+    "operation_ticks": 200,
+    "seed": 3,
+    "exclude_unlocks": ["watering", "fertilizer", "dynamite", "iron"]
+}
+#SETUP
+jump(Unlocks.Treasure_Map)
+while get_ground_type() != Grounds.Basalt:
+    dig()
+
+map_pos = measure()
+
+while get_pos_x() < map_pos[0]:
+    move(East)
+while get_pos_y() < map_pos[1]:
+    move(North)
+
+while get_ground_type() != Grounds.Treasure_Map:
+    dig()
+#CODE
 path = measure()
 for letter in path:
-    do_something(letter)
-```
+    print(letter)
+}}
 
-Die Drohne, die sich bis zum Schatzkartenblock durchgräbt, muss auch den Schatz finden. Sie muss sich die ganze Zeit auf `Grounds.Treasure_Path`-Blöcken befinden. Wenn sie sich auf einen anderen Untergrund bewegt, bricht der Pfad zusammen und der Schatz ist verloren.
+Die Drohne muss sich die ganze Zeit auf `Grounds.Treasure_Path`-Blöcken befinden. Wenn sie sich auf einen anderen Untergrund bewegt, bricht der Pfad zusammen und der Schatz ist verloren.
 
+## Ziel
 Am Ende des Pfades befindet sich ein `Grounds.Treasure_Goal`-Block. Wenn die Drohne den Pfad nicht verlassen hat, erscheint darauf eine `Entities.Underground_Treasure`. Die Drohne kann die Truhe mit `harvest()` ernten und ihr Gold einsammeln.
 
+## Belohnung
 Die Goldmenge ist proportional zur Länge des Schatzpfades. Wenn du die Schatzkarten-Freischaltung verbesserst, wird der Pfad tiefer. Verbesserst du Erweitern, erhält er mehr Platz, um sich seitwärts auszubreiten. Beide Verbesserungen verlängern den Schatzpfad und erhöhen die Goldmenge, die du findest.
+
+## Mehrere Drohnen
+Die Drohne, die sich bis zum Schatzkartenblock durchgräbt, muss auch den Schatz finden, ohne die Pfadblöcke zu verlassen.
 </spoiler>
 
 ---

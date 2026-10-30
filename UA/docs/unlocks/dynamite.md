@@ -6,46 +6,48 @@
 
 Щоб безпечно видобувати динаміт, знайдіть шар `Grounds.Dynamite`, під яким одразу лежить шар `Grounds.Soot`. Динамітний шар угорі трохи застарів, і деякі його блоки можна копати безпечно. Проте деякі блоки динаміту досі живі й вибухнуть, якщо в них копнути.
 
+Зібраний динаміт можна використати через `use_item(Items.Dynamite)`; він вибухає одразу під дроном.
+
+Цей приклад копає в динаміт і навколо початкової точки копання, виводячи вимірювання блоків сажі внизу:
 {{codeexample 
 {
-    "camera_position": {"x": -5, "y": 0, "z": 15},
+    "camera_position": {"x": -3, "y": 0, "z": 15},
     "show_image": true,
-    "image_size": {"x": 900, "y": 500},
+    "image_size": {"x": 800, "y": 500},
     "show_code": true,
     "show_inventory": true,
     "show_output": false,
-    "collapsing": false,
-    "autoplay": true,
-    "items": [{"item": "hay", "n": 100}],
-    "world_size": {"x": 11, "y": 11},
-    "execution_speed": 8,
-    "digging_speed": 8,
+    "collapsing": true,
+    "autoplay": false,
+    "items": [],
+    "world_size": {"x": 7, "y": 7},
+    "execution_speed": 2,
+    "digging_speed": 2,
     "action_ticks": 200,
     "operation_ticks": 200,
-    "seed": 5,
+    "seed": 6,
     "exclude_unlocks": ["watering", "fertilizer", "mushrooms", "coal", "quartz", "petrified_pumpkins"]
 }
 #SETUP
 jump(Unlocks.Dynamite)
-for _ in range(5):
+for _ in range(3):
     move(East)
     move(North)
 #CODE
 while get_ground_type() != Grounds.Soot:
     dig()
 
-circle_directions = [East, South, West, West, North, North, East, East, South, West]
-def dig_dynamite_neighbors():
-    for dir in circle_directions:
-        move(dir)
-        while get_ground_type() != Grounds.Soot:
-            dig()
-
-while get_ground_type() == Grounds.Soot and measure() == 0:
-    dig_dynamite_neighbors()
-    move(circle_directions[random() * len(circle_directions)])
+circle_directions = [
+    East, South, West, West, 
+    North, North, East, East
+]
+for dir in circle_directions:
+    move(dir)
+    dig()
+    print(measure())
 }}
 
+## Динамітний сапер
 Чи зможете ви знайти й викопати всі динамітні блоки-пустишки, залишивши тільки живі? Кожен живий блок, оточений лише іншими живими блоками або блоками сажі, дасть вам додатковий динаміт, коли динамітний шар зникне.
 
 На щастя, блоки сажі внизу допоможуть вам: вони визначають кількість сусідніх динамітних блоків із живим динамітом. Вони не скажуть, які саме блоки живі, лише загальну кількість, тож вам доведеться поєднати показники кількох блоків сажі й розібратися самостійно.
@@ -54,6 +56,12 @@ while get_ground_type() == Grounds.Soot and measure() == 0:
 
 Перше копання в динамітний шар — завжди пустишка. Кожен викопаний блок динаміту дає трохи динаміту. Коли динамітний шар зникає — чи то після успішного викопування всіх пустишок, чи через випадкове копання в живий динаміт — ви також отримуєте динаміт у кількості, що дорівнює квадрату числа повністю відкритих живих блоків.
 
+## Будова шарів
+Кількість живих мін у динамітному шарі, а отже й складність їх пошуку, зростає з глибиною. Загальна кількість мін зростає з розміром ферми, а разом із нею й максимально можлива винагорода за розчищення динамітного шару.
+
+Покращуйте динаміт, щоб підвищити вихід від копання динамітних блоків і повного відкриття живих блоків. Покращення також збільшує енергію вибухів динаміту на 30%.
+
+## Як розпізнати успіх і провал
 Якщо копнути в живий динаміт, обидва шари вибухнуть. Це можна перевірити за допомогою `get_ground_type()` після копання в `Grounds.Dynamite`. Якщо ґрунт не `Grounds.Soot`, ви не розв'язали головоломку. З іншого боку, якщо викопано останній неживий блок динаміту, усі динамітні блоки зникають, і ви отримуєте максимальну винагороду за головоломку. Шар сажі залишається, але `measure()` повертає `None`, що означає успішне розв'язання головоломки.
 
 `# Копаємо динамітний блок і перевіряємо стан головоломки
@@ -70,11 +78,50 @@ def dig_dynamite():
         return None
 `
 
-Кількість живих мін у динамітному шарі, а отже й складність їх пошуку, зростає з глибиною. Загальна кількість мін зростає з розміром ферми, а разом із нею й максимально можлива винагорода за розчищення динамітного шару.
+## Стратегія
+<spoiler=підказка>
+Наведений нижче код копає в динамітний шар і шукає блоки сажі, вимірювання яких дає `0`. Для кожного такого блоку він викопує всі динамітні блоки навколо нього:
+{{codeexample 
+{
+    "camera_position": {"x": -5, "y": 0, "z": 15},
+    "show_image": true,
+    "image_size": {"x": 800, "y": 500},
+    "show_code": true,
+    "show_inventory": true,
+    "show_output": false,
+    "collapsing": true,
+    "autoplay": false,
+    "items": [],
+    "world_size": {"x": 7, "y": 7},
+    "execution_speed": 4,
+    "digging_speed": 8,
+    "action_ticks": 200,
+    "operation_ticks": 20,
+    "seed": 6,
+    "exclude_unlocks": ["watering", "fertilizer", "mushrooms", "coal", "quartz", "petrified_pumpkins"]
+}
+#SETUP
+jump(Unlocks.Dynamite)
+for _ in range(3):
+    move(East)
+    move(North)
+#CODE
+while get_ground_type() != Grounds.Soot:
+    dig()
 
-Зібраний динаміт можна використати через `use_item(Items.Dynamite)`; він вибухає одразу під дроном.
-
-Покращуйте динаміт, щоб підвищити вихід від копання динамітних блоків і повного відкриття живих блоків. Покращення також збільшує енергію вибухів динаміту на 30%.
+circle_directions = [
+    East, South, West, West, North,
+    North, East, East, South, West
+]
+for dir in circle_directions:
+    if get_ground_type() == Grounds.Soot and measure() == 0:
+        for dir2 in circle_directions:
+            move(dir2)
+            while get_ground_type() != Grounds.Soot:
+                dig()
+    move(dir)
+}}
+</spoiler>
 
 ---
 

@@ -2,11 +2,11 @@
 ---
 # Salto
 
-Il tuo drone ha sbloccato il comando `jump()`.
+Il tuo drone ha sbloccato il comando `jump()`. Per usarlo, passa uno sblocco come argomento, per esempio `Unlocks.Iron`.
 
-Questo comando permette di scegliere determinati sblocchi come bersaglio e saltare direttamente verso di essi. È particolarmente utile per il debug o per tornare a una vena mineraria che hai appena mancato. Per usarlo, passa uno sblocco come argomento, per esempio `Unlocks.Iron`.
+Questo comando permette di scegliere come bersaglio determinati sblocchi nascosti nel terreno e saltare istantaneamente giù fino a essi. È particolarmente utile per il debug o per tornare a una vena mineraria che hai appena mancato.
 
-`jump()` funziona solo con gli sblocchi presenti nel sottosuolo, come `jump(Unlocks.Rice)` o `jump(Unlocks.Iron)`.
+Dopo il salto, lo sblocco bersaglio dovrebbe trovarsi entro 3 blocchi dalla superficie del blocco più in alto. `jump()` può essere usato una sola volta per esecuzione del programma: ulteriori tentativi di salto producono un errore.
 
 {{codeexample 
 {
@@ -18,27 +18,40 @@ Questo comando permette di scegliere determinati sblocchi come bersaglio e salta
     "show_output": false,
     "collapsing": true,
     "autoplay": false,
-    "items": [],
+    "items": [{"item": "hay", "n": 10}],
     "world_size": {"x": 4, "y": 4},
     "execution_speed": 1,
-    "digging_speed": 3,
+    "digging_speed": 4,
     "action_ticks": 200,
-    "operation_ticks": 200,
+    "operation_ticks": 20,
     "seed": 1,
     "exclude_unlocks": ["watering", "fertilizer", "mushrooms"],
     "starting_chunk": 0
 }
 #CODE
-dig()
-dig()
-dig()
-jump(Unlocks.Iron)
-do_a_flip()
+jump(Unlocks.Rice)
+
+for i in range(get_world_size()):
+    while get_ground_type() != Grounds.Clay:
+        dig()
+
+    plant(Entities.Rice)
+
+    move(East)
 }}
 
-Non è garantito che il salto ti porti direttamente allo sblocco bersaglio, quindi potresti dover cercare un po' nei dintorni, ma il bersaglio sarà sicuramente nelle vicinanze.
-
-`jump()` può essere usato una sola volta per esecuzione del programma.
+## Sblocchi Compatibili
+`jump()` funziona solo con i seguenti sblocchi minerari:
+- Coal
+- Iron
+- Quartz
+- Rice
+- Petrified_Pumpkins
+- Special_Soils
+- Pyramid
+- Treasure_Map
+- Mushrooms
+- Dynamite
 
 ---
 

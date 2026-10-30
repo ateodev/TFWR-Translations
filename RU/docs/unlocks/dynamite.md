@@ -6,46 +6,48 @@
 
 Чтобы безопасно добывать динамит, найди слой `Grounds.Dynamite`, под которым сразу идет слой `Grounds.Soot`. Верхний динамитный слой состарился, поэтому некоторые его блоки можно безопасно копать. Но некоторые динамитные блоки все еще активны и взорвутся, если в них копать.
 
+Собранный динамит можно применить командой `use_item(Items.Dynamite)`: он взорвется прямо под дроном.
+
+Этот пример раскапывает динамит в начальной точке и вокруг нее, выводя показания блоков сажи под ними:
 {{codeexample 
 {
-    "camera_position": {"x": -5, "y": 0, "z": 15},
+    "camera_position": {"x": -3, "y": 0, "z": 15},
     "show_image": true,
-    "image_size": {"x": 900, "y": 500},
+    "image_size": {"x": 800, "y": 500},
     "show_code": true,
     "show_inventory": true,
     "show_output": false,
-    "collapsing": false,
-    "autoplay": true,
-    "items": [{"item": "hay", "n": 100}],
-    "world_size": {"x": 11, "y": 11},
-    "execution_speed": 8,
-    "digging_speed": 8,
+    "collapsing": true,
+    "autoplay": false,
+    "items": [],
+    "world_size": {"x": 7, "y": 7},
+    "execution_speed": 2,
+    "digging_speed": 2,
     "action_ticks": 200,
     "operation_ticks": 200,
-    "seed": 5,
+    "seed": 6,
     "exclude_unlocks": ["watering", "fertilizer", "mushrooms", "coal", "quartz", "petrified_pumpkins"]
 }
 #SETUP
 jump(Unlocks.Dynamite)
-for _ in range(5):
+for _ in range(3):
     move(East)
     move(North)
 #CODE
 while get_ground_type() != Grounds.Soot:
     dig()
 
-circle_directions = [East, South, West, West, North, North, East, East, South, West]
-def dig_dynamite_neighbors():
-    for dir in circle_directions:
-        move(dir)
-        while get_ground_type() != Grounds.Soot:
-            dig()
-
-while get_ground_type() == Grounds.Soot and measure() == 0:
-    dig_dynamite_neighbors()
-    move(circle_directions[random() * len(circle_directions)])
+circle_directions = [
+    East, South, West, West, 
+    North, North, East, East
+]
+for dir in circle_directions:
+    move(dir)
+    dig()
+    print(measure())
 }}
 
+## Динамитный сапер
 Сможешь ли ты найти и раскопать все динамитные блоки-пустышки, оставив только активные заряды? Когда динамитный слой исчезнет, каждый активный блок, окруженный только другими активными блоками или сажей, даст дополнительный динамит.
 
 К счастью, помогут расположенные ниже блоки сажи: они способны опознавать соседние динамитные блоки с активными зарядами. Какие именно блоки активны, они не сообщат — только общее число, поэтому придется сопоставить показания нескольких блоков сажи.
@@ -54,6 +56,12 @@ while get_ground_type() == Grounds.Soot and measure() == 0:
 
 Первый раскопанный блок динамитного слоя всегда оказывается пустышкой. Каждый добытый блок дает немного динамита. Когда слой уничтожается — после успешной добычи всех пустышек или случайного попадания в активный заряд, — ты также получишь количество динамита, равное квадрату числа полностью открытых активных блоков.
 
+## Строение слоев
+Чем больше глубина, тем больше активных зарядов окажется в динамитном слое, а также выше сложность их поиска. Общее число зарядов растет вместе с размером фермы, а с ним и максимально возможная награда за расчистку динамитного слоя.
+
+Улучшай динамит, чтобы получать большее его количество при раскопках динамитных блоков и полном открытии активных зарядов. Каждое улучшение также повышает энергию взрыва динамита на 30%.
+
+## Как распознать успех и провал
 Если прокопать активный динамит, оба слоя взорвутся. Проверить это можно, использовав `get_ground_type()` после раскопок `Grounds.Dynamite`. Если земля не `Grounds.Soot`, решить головоломку не удалось. Если же раскопать последний неактивный динамитный блок, все динамитные блоки исчезнут, а ты получишь максимальный урожай за головоломку. Слой сажи останется, но `measure()` вернет `None`, показывая, что головоломка успешно решена.
 
 `# Раскопать динамитный блок и проверить состояние головоломки
@@ -70,11 +78,50 @@ def dig_dynamite():
         return None
 `
 
-Чем больше глубина, тем больше активных зарядов окажется в динамитном слое, а также выше сложность их поиска. Общее число зарядов растет вместе с размером фермы, а с ним и максимально возможная награда за расчистку динамитного слоя.
+## Стратегия
+<spoiler=подсказка>
+Код ниже раскапывает динамитный слой и ищет блоки сажи, измерение которых дает `0`. Для каждого найденного такого блока он раскапывает все окружающие его динамитные блоки:
+{{codeexample 
+{
+    "camera_position": {"x": -5, "y": 0, "z": 15},
+    "show_image": true,
+    "image_size": {"x": 800, "y": 500},
+    "show_code": true,
+    "show_inventory": true,
+    "show_output": false,
+    "collapsing": true,
+    "autoplay": false,
+    "items": [],
+    "world_size": {"x": 7, "y": 7},
+    "execution_speed": 4,
+    "digging_speed": 8,
+    "action_ticks": 200,
+    "operation_ticks": 20,
+    "seed": 6,
+    "exclude_unlocks": ["watering", "fertilizer", "mushrooms", "coal", "quartz", "petrified_pumpkins"]
+}
+#SETUP
+jump(Unlocks.Dynamite)
+for _ in range(3):
+    move(East)
+    move(North)
+#CODE
+while get_ground_type() != Grounds.Soot:
+    dig()
 
-Собранный динамит можно применить командой `use_item(Items.Dynamite)`: он взорвется прямо под дроном.
-
-Улучшай динамит, чтобы получать большее его количество при раскопках динамитных блоков и полном открытии активных зарядов. Каждое улучшение также повышает энергию взрыва динамита на 30%.
+circle_directions = [
+    East, South, West, West, North,
+    North, East, East, South, West
+]
+for dir in circle_directions:
+    if get_ground_type() == Grounds.Soot and measure() == 0:
+        for dir2 in circle_directions:
+            move(dir2)
+            while get_ground_type() != Grounds.Soot:
+                dig()
+    move(dir)
+}}
+</spoiler>
 
 ---
 

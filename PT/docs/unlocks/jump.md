@@ -2,11 +2,11 @@
 ---
 # Salto
 
-Seu drone desbloqueou o comando `jump()`.
+Seu drone desbloqueou o comando `jump()`. Use-o passando um desbloqueio como argumento, como `Unlocks.Iron`.
 
-Este comando permite escolher certos desbloqueios como alvo e saltar até eles. É especialmente útil para depuração ou para saltar até um veio de minério que você acabou de deixar passar. Use-o passando um desbloqueio como argumento, como `Unlocks.Iron`.
+Este comando permite escolher como alvo certos desbloqueios escondidos no solo e saltar instantaneamente até eles. É especialmente útil para depuração ou para pular direto para um veio de minério que você acabou de deixar passar.
 
-`jump()` funciona apenas com desbloqueios que aparecem no subsolo, como `jump(Unlocks.Rice)` ou `jump(Unlocks.Iron)`.
+Depois do salto, o desbloqueio escolhido deve estar a no máximo 3 blocos da superfície. `jump()` só pode ser usado uma vez por execução do programa; novas tentativas de salto produzem um erro.
 
 {{codeexample 
 {
@@ -18,29 +18,41 @@ Este comando permite escolher certos desbloqueios como alvo e saltar até eles. 
     "show_output": false,
     "collapsing": true,
     "autoplay": false,
-    "items": [],
+    "items": [{"item": "hay", "n": 10}],
     "world_size": {"x": 4, "y": 4},
     "execution_speed": 1,
-    "digging_speed": 3,
+    "digging_speed": 4,
     "action_ticks": 200,
-    "operation_ticks": 200,
+    "operation_ticks": 20,
     "seed": 1,
     "exclude_unlocks": ["watering", "fertilizer", "mushrooms"],
     "starting_chunk": 0
 }
 #CODE
-dig()
-dig()
-dig()
-jump(Unlocks.Iron)
-do_a_flip()
+jump(Unlocks.Rice)
+
+for i in range(get_world_size()):
+    while get_ground_type() != Grounds.Clay:
+        dig()
+
+    plant(Entities.Rice)
+
+    move(East)
 }}
 
-Não há garantia de que o salto leve você diretamente ao desbloqueio escolhido, então talvez ainda seja preciso procurar um pouco, mas o alvo certamente estará por perto.
-
-`jump()` só pode ser usado uma vez por execução do programa.
+## Desbloqueios Compatíveis
+`jump()` só funciona com os seguintes desbloqueios de mineração:
+- Coal
+- Iron
+- Quartz
+- Rice
+- Petrified_Pumpkins
+- Special_Soils
+- Pyramid
+- Treasure_Map
+- Mushrooms
+- Dynamite
 
 ---
 
 [jump()](functions/jump)
-

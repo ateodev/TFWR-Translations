@@ -21,7 +21,7 @@ příklad:
 @code_tooltip_range = `range(start = 0, end, step = 1)`
 Generuje posloupnost čísel začínající na `start`, končící těsně před `end` (tedy `end` je vyloučeno) s krokem `step`.
 
-Poznámka: výchozí hodnota `start` je `0`, a pokud je zadán pouze jeden argument, použije se jako `end`. To obvykle není možné.  
+Poznámka: výchozí hodnota start je `0`, a pokud je zadán pouze jeden argument, použije se jako `end`. To obvykle není možné.
 V Pythonu je `range` konstruktor třídy, který toto zvláštní chování umožňuje.
 
 Provádění trvá `1` tick.
@@ -46,13 +46,13 @@ Provádění trvá `200` ticků, pokud se povedlo, jinak `1` tick.
 příklad:
 `plant(Entities.Bush)`
 @code_tooltip_move = `move(direction)`
-Posune dron o jedno pole v daném směru.  
+Posune dron o jedno pole ve směru `direction`.
 Pokud dron přejede okraj farmy, objeví se na druhé straně.
 
-`East`  =  vpravo  
-`West`  =  vlevo  
-`North` =  nahoru  
-`South` =  dolů  
+`East `  =  vpravo
+`West `  =  vlevo
+`North`  =  nahoru
+`South`  =  dolů
 
 Vrací `True`, pokud se dron pohnul, jinak `False`.
 
@@ -61,7 +61,7 @@ Provádění trvá `200` ticků, pokud se dron pohnul, jinak `1` tick.
 příklad:
 `move(North)`
 @code_tooltip_can_move = `can_move(direction)`
-Kontroluje, zda se dron může pohnout daným směrem.
+Kontroluje, zda se dron může pohnout ve směru `direction`.
 
 Vrací `True`, pokud může, jinak `False`.
 
@@ -71,8 +71,8 @@ příklad:
 `if can_move(North):
     move(North)`
 @code_tooltip_swap = `swap(direction)`
-Vymění entitu pod dronem s entitou vedle dronu v daném směru.  
-Neplatí pro všechny entity.  
+Vymění entitu pod dronem s entitou vedle dronu ve směru `direction`.
+Neplatí pro všechny entity.
 Funguje i tehdy, pokud jedna (nebo obě) z entit jsou `None`.
 
 Vrací `True`, pokud se výměna povedla, jinak `False`.
@@ -117,7 +117,7 @@ Souřadnice z začíná na `0` a při kopání dolů klesá.
 
 vrací číslo odpovídající aktuální souřadnici z dronu.
 
-trvá `1` tik.
+Provádění trvá `1` tick.
 
 příklad:
 `x, y, z = get_pos_x(), get_pos_y(), get_pos_z()`
@@ -131,20 +131,24 @@ Provádění trvá `1` tick.
 příklad:
 `for i in range(get_world_size()):
     move(North)`
-@code_tooltip_get_entity_type = `get_entity_type()` 
+@code_tooltip_get_entity_type = `get_entity_type(direction = None)`
 Zjistí, jaký typ entity je pod dronem.
 
-Vrací `None`, pokud je pole prázdné, jinak typ entity pod dronem.
+Pokud `direction` není `None`, zkontroluje místo toho sousední pole v daném směru.
+
+Vrací `None`, pokud je kontrolované pole prázdné, jinak typ entity na tomto poli.
 
 Provádění trvá `1` tick.
 
 příklad:
 `if get_entity_type() == Entities.Grass:
     harvest()`
-@code_tooltip_get_ground_type = `get_ground_type()` 
+@code_tooltip_get_ground_type = `get_ground_type(direction = None)`
 Zjistí, jaký typ půdy je pod dronem.
 
-Vrací typ půdy pod dronem.
+Pokud `direction` není `None`, zkontroluje místo toho sousední pole v daném směru.
+
+Vrací typ půdy na kontrolovaném poli.
 
 Provádění trvá `1` tick.
 
@@ -156,7 +160,7 @@ Zjistí, jak tvrdá je půda pod dronem.
 
 vrací tvrdost půdy pod dronem.
 
-trvá `1` tik.
+Provádění trvá `1` tick.
 
 příklad:
 `if get_hardness() < 5:
@@ -166,19 +170,19 @@ Zjistí, jak stabilní je půda pod dronem.
 
 vrací stabilitu půdy pod dronem.
 
-trvá `1` tik.
+Provádění trvá `1` tick.
 
 příklad:
 `if get_stability() > 3:
     dig()`
-@code_tooltip_get_time = `get_time()` 
+@code_tooltip_get_time = `get_time()`
 Získá aktuální herní čas.
 
 Vrací čas v sekundách od začátku hry.
 
-Provádění trvá `1` tick.
+Provádění trvá `0` ticků.
 
-example:
+příklad:
 `start = get_time()
 
 do_something()
@@ -191,7 +195,7 @@ Vrací počet ticků od začátku vykonávání programu.
 
 Provádění trvá `0` ticků.
 
-example:
+příklad:
 `do_something()
 
 print(get_tick_count())`
@@ -202,7 +206,7 @@ Vrací `True`, pokud byl předmět použit, jinak `False`.
 
 Provádění trvá `200` ticků při úspěchu, jinak `1` tick.
 
-example:
+příklad:
 `use_item(Items.Fertilizer)`
 @code_tooltip_get_water = `get_water()` 
 Získá aktuální hladinu vody pod dronem.
@@ -211,7 +215,7 @@ Vrací hodnotu hladiny vody jako číslo mezi `0` a `1`.
 
 Provádění trvá `1` tick.
 
-example:
+příklad:
 `if get_water() < 0.5:
     use_item(Items.Water)`
 @code_tooltip_do_a_flip = `do_a_flip()` 
@@ -221,7 +225,7 @@ Vrací `None`.
 
 Trvá 1 sekundu na provedení.
 
-example:
+příklad:
 `while True:
     do_a_flip()`
 @code_tooltip_pet_the_piggy = `pet_the_piggy()` 
@@ -231,7 +235,7 @@ Vrací `None`.
 
 Trvá 1 sekundu na provedení.
 
-example:
+příklad:
 `while True:
     pet_the_piggy()`
 @code_tooltip_print = `print(*args)` 
@@ -242,8 +246,8 @@ Vrací `None`.
 
 Trvá 1 sekundu na provedení.
 
-example:
-`print("ground:", get_ground_type())`
+příklad:
+`print("půda:", get_ground_type())`
 @code_tooltip_len = `len(collection)` 
 Získá počet prvků v seznamu, množině, slovníku nebo n-tici.
 
@@ -251,7 +255,7 @@ Vrací délku `collection`.
 
 Provádění trvá `1` tick.
 
-example:
+příklad:
 `for i in range(len(list)):
     list[i] += 1`
 @code_tooltip_list = `list(collection = None)`
@@ -263,7 +267,7 @@ Vrací seznam.
 
 Provádění trvá `1 + len(collection)` ticků.
 
-example:
+příklad:
 `new_list = list((1,2,3))`
 @code_tooltip_dict = `dict(dictionary = None)`
 Vytvoří nový slovník.
@@ -272,9 +276,9 @@ Pokud je `dictionary` slovník, vytvoří jeho kopii.
 
 Vrací slovník.
 
-Provádění trvá `1 + len(dictionary)` ticků.
+Provádění trvá `1 + 2*len(dictionary)` ticků.
 
-example:
+příklad:
 `new_dict = dict()`
 @code_tooltip_set = `set(collection = None)`
 Vytvoří novou množinu.
@@ -285,7 +289,7 @@ Vrací množinu.
 
 Provádění trvá `1 + len(collection)` ticků.
 
-example:
+příklad:
 `new_set = set((1,2,3))`
 @code_tooltip_str = `str(object)`
 
@@ -293,14 +297,14 @@ Vrací textovou reprezentaci objektu `object`.
 
 Provádění trvá `1` tick.
 
-example:
+příklad:
 `string = str(1000)`
 @code_tooltip_set_execution_speed = `set_execution_speed(speed)`
 Omezuje rychlost, jakou se program provádí, aby bylo lépe vidět, co se děje.
 
-Hodnota `speed` = `1` odpovídá rychlosti dronu bez vylepšení.
-`speed` = `8` provádí kód osmkrát rychleji a odpovídá rychlosti po třech vylepšeních.
-`speed` = `0.5` provádí kód poloviční rychlostí. To může být užitečné pro sledování, co kód dělá.
+Hodnota `speed` = `1` odpovídá rychlosti dronu bez vylepšení rychlosti.
+`speed` = `8` provádí kód `8`krát rychleji a odpovídá rychlosti dronu po `3` vylepšeních rychlosti.
+`speed` = `0.5` provádí kód poloviční rychlostí oproti rychlosti bez vylepšení. To může být užitečné pro sledování, co kód dělá.
 
 Pokud je `speed` vyšší, než aktuálně lze dosáhnout, poběží maximální rychlostí.
 
@@ -311,21 +315,21 @@ Vrací `None`.
 
 Provádění trvá `200` ticků.
 
-example:
+příklad:
 `set_execution_speed(1)`
 @code_tooltip_set_world_size = `set_world_size(size)`
 Omezuje velikost farmy pro lepší přehled.
-Zároveň farmu vyčistí a resetuje pozici dronu.
 Nastaví farmu na mřížku `size` × `size`.
 Nejmenší možná hodnota `size` je `3`.
-Menší hodnota než `3` obnoví plnou velikost farmy.
+Hodnota `size` menší než `3` obnoví plnou velikost farmy.
 Efekt skončí, když se provádění zastaví.
+Zároveň farmu vyčistí a resetuje pozici dronu, ale jen pokud se velikost opravdu změnila.
 
 Vrací `None`.
 
 Provádění trvá `200` ticků.
 
-example:
+příklad:
 `set_world_size(5)`
 @code_tooltip_num_items = `num_items(item)` 
 Zjistí, kolik daného `item` momentálně máš.
@@ -352,7 +356,7 @@ příklad:
 `cost = get_cost(Unlocks.Carrots)
 for item in cost:
     if num_items(item) < cost[item]:
-        print("not enough items to unlock carrots")`
+        print("nedostatek předmětů k odemčení mrkve")`
 @code_tooltip_clear = `clear()` 
 Odstraní vše z farmy, přesune dron zpět na pozici `(0,0)` a nasadí mu zpět slaměný klobouk.
 
@@ -362,7 +366,7 @@ Provádění trvá `200` ticků.
 
 příklad:
 `clear()`
-@code_tooltip_get_companion = `get_companion()` 
+@code_tooltip_get_companion = `get_companion()`
 Získá preferovaného společníka rostliny pod dronem.
 
 Vrací dvojici ve tvaru `(companion_type, (companion_x_position, companion_y_position))`.
@@ -372,7 +376,8 @@ Provádění trvá `1` tick.
 příklad:
 `companion = get_companion()
 if companion != None:
-	print(companion)`
+    plant_type, (x, y) = companion
+    print("Společník:", plant_type, "na", x, ",", y)`
 @code_tooltip_unlock = `unlock(unlock)` 
 Má stejný účinek jako kliknutí na tlačítko `unlock` ve stromu výzkumu.
 
@@ -385,7 +390,7 @@ příklad:
 @code_tooltip_num_unlocked = `num_unlocked(thing)`
 Slouží ke kontrole, zda je dané odemknutí, entita, půda, předmět nebo klobouk již odemčen.
 
-Vrací `1` plus počet vylepšení, pokud je `thing` vylepšitelný. Jinak vrací `1`, pokud je odemčen, nebo `0`, pokud není.
+Vrací `1` plus počet vylepšení `thing`, pokud je `thing` vylepšitelný. Jinak vrací `1`, pokud je `thing` odemčen, nebo `0`, pokud není.
 
 Provádění trvá `1` tick.
 
@@ -450,23 +455,25 @@ seed = 0
 speedup = 64
 
 run_time = simulate(filename, sim_unlocks, sim_items, sim_globals, seed, speedup)`
-@code_tooltip_spawn_drone = `spawn_drone(filename)`
-Vytvoří nový dron na stejné pozici jako ten, který spustil příkaz `spawn_drone(function)`.  
-Nový dron začne provádět uvedenou funkci. Po dokončení se automaticky odstraní.
+@code_tooltip_spawn_drone = `spawn_drone(function, *args)`
+Vytvoří nový dron na stejné pozici jako ten, který spustil příkaz `spawn_drone(function, *args)`. Nový dron začne provádět uvedenou funkci. Ostatní argumenty se zkopírují a předají uvedené funkci. Po dokončení se dron automaticky odstraní.
 
 Vrací referenci na nového drona nebo `None`, pokud jsou již všichni droni aktivní.
 
-Provádění trvá `200` ticků, pokud byl dron vytvořen, jinak `1` tick.
+Provádění trvá `200` ticků, pokud byl dron vytvořen, jinak `1`.
 
 příklad:
-`def harvest_column():
+`def harvest_column(message):
     for _ in range(get_world_size()):
         harvest()
         move(North)
+    print(message)
 
+i = 0
 while True:
-    if spawn_drone(harvest_column):
-        move(East)`
+    if spawn_drone(harvest_column, i):
+        move(East)
+        i = (i + 1) % 10`
 
 @code_tooltip_wait_for = `wait_for(drone)`
 Čeká, dokud daný `drone` nedokončí činnost.
@@ -477,7 +484,7 @@ Provádění trvá `1` tick, pokud daný `drone` již skončil.
 
 příklad:
 `def get_entity_type_in_direction(dir):
-    move(dir)`
+    move(dir)
     return get_entity_type()
 
 def zero_arg_wrapper():
@@ -488,7 +495,7 @@ print(wait_for(handle))`
 @code_tooltip_has_finished = `has_finished(drone)`
 Zjišťuje, zda daný `drone` dokončil svou činnost.
 
-Vrací `True`, pokud dron dokončil, jinak `False`.
+Vrací `True`, pokud `drone` dokončil, jinak `False`.
 
 Provádění trvá `1` tick.
 
@@ -506,7 +513,7 @@ Provádění trvá `1` tick.
 
 příklad:
 `while num_drones() < max_drones():
-    spawn_drone("some_file_name")
+    spawn_drone(task)
     move(East)`
 
 @code_tooltip_num_drones = `num_drones()`
@@ -517,7 +524,7 @@ Provádění trvá `1` tick.
 
 příklad:
 `while num_drones() < max_drones():
-    spawn_drone("some_file_name")
+    spawn_drone(task)
     move(East)`
 
 @code_tooltip_quick_print = `quick_print(*args)`
@@ -528,7 +535,7 @@ Vrací `None`.
 Provádění trvá `0` ticků.
 
 příklad:
-`quick_print("hi mom")`
+`quick_print("ahoj mami")`
 @code_tooltip_change_hat = `change_hat(hat)`
 Změní klobouk dronu na `hat`.
 
@@ -564,9 +571,9 @@ příklad:
 @code_tooltip_abs = `abs(number)`
 Vrací absolutní hodnotu čísla.
 
-Vrací `number`, pokud je kladné, jinak `-number`.
+Vrací `number`, pokud je `number` kladné, jinak `-number`.
 
-Provádění trvá `1` tick.
+Provádění trvá 1 tick.
 
 příklad:
 `abs(-69)`
@@ -591,33 +598,33 @@ Provádění trvá `1` tick.
 příklad:
 `list = []
 list.append(1)`
-@code_tooltip_add = `set.add(element)` 
+@code_tooltip_add = `set.add(element)`
 Přidá `element` do množiny `set`.
 
 Vrací `None`.
 
-Provádění trvá počet ticků odpovídající velikosti prvku.
+Provádění trvá `velikost prvku` ticků.
 
 příklad:
 `set = {0}
 set.add(1)`
-@code_tooltip_remove = `collection.remove(element)` 
+@code_tooltip_remove = `collection.remove(element)`
 Odstraní první výskyt `element` z kolekce `collection`.
 
 Vrací `None`.
 
-Provádění trvá počet ticků dle velikosti prvku u množiny, nebo #porovnání + #posunů u seznamu.
+Provádění trvá `velikost prvku` ticků u množiny, nebo #porovnání + #posunů ticků u seznamu.
 
 příklad:
 `list = [True, False, None]
 list.remove(False)`
-@code_tooltip_pop = `collection.pop()` 
-Odstraní poslední prvek ze seznamu nebo zadaný prvek ze slovníku.  
+@code_tooltip_pop = `collection.pop()`
+Odstraní poslední prvek ze seznamu nebo zadaný prvek ze slovníku.
 `list.pop(i)` odstraní prvek na indexu `i` ze seznamu `list`.
 
 Vrací odstraněný prvek.
 
-Provádění trvá podle velikosti klíče u slovníku, nebo `len(list) - i + 1` ticků u seznamu.
+Provádění trvá `velikost klíče` ticků u slovníku, nebo `len(list) - i + 1` ticků u seznamu.
 
 příklad:
 `list = [True, False, None]
@@ -644,7 +651,7 @@ list.insert(0, 0)`
 @code_tooltip_True = Logická hodnota, která je vždy pravdivá.
 @code_tooltip_False = Logická hodnota, která je vždy nepravdivá.
 @code_tooltip_if = Spustí kód, pokud je podmínka `True`.
-@code_tooltip_else = Spustí kód, pokud byla předchozí podmínka `if` nepravdivá.
+@code_tooltip_else = Spustí kód, pokud byla předchozí podmínka `if` `False`.
 @code_tooltip_elif = Dělá totéž jako:
 `else:
     if condition:`
@@ -665,6 +672,8 @@ Vykope políčko směrem dolů.
 
 Rychlost kopání závisí na tvrdosti bloku a na síle vrtáku dronu.
 
+Vykopání bloku trvá `tvrdost / síla vrtáku` sekund. Doba kopání není ovlivněna vylepšeními rychlosti.
+
 příklad:
 `dig()`
 @code_tooltip_prospect_iron = `prospect_iron()`
@@ -673,6 +682,8 @@ Používá uhlí k hledání železa.
 vrací směr k nejbližší železné rudě (`North`, `East`, `South` nebo `West`), pokud je nějaká poblíž. Vrací `None`, pokud poblíž žádné železo není, pokud nemáš dost uhlí nebo pokud je dron už přímo nad kusem železa.
 
 stojí 1 uhlí za provedení.
+
+Provádění trvá `1` tick.
 
 příklad:
 `while prospect_iron() != None:
@@ -684,12 +695,18 @@ vrací eukleidovskou vzdálenost (vzdálenost ve 3D) od dronu k nejbližšímu b
 
 stojí 1 železo za provedení.
 
+Provádění trvá `1` tick.
+
 příklad:
 `print(prospect_quartz())`
 @code_tooltip_place = `place(ground)`
 Položí bloky.
 
 Můžeš určit, který blok se má položit. Položit lze jen bloky bez zvláštní funkce. Můžeš například `place(Grounds.Rock)`, ale ne `place(Grounds.Clay)`.
+
+Vrací `True`, pokud byl blok položen, jinak `False`.
+
+Provádění trvá `200` ticků při úspěchu, jinak `1` tick.
 
 příklad:
 `place(Grounds.Rock)`
@@ -700,12 +717,16 @@ Bloky nelze posouvat nahoru.
 
 vrací `True`, pokud byl blok posunut, jinak `False`.
 
+Provádění trvá `200` ticků, pokud byl blok posunut, jinak `1` tick.
+
 příklad:
 `push(North)`
 @code_tooltip_can_push = `can_push(direction)`
 Zkontroluje, zda lze blok pod dronem posunout.
 
 vrací `True`, pokud lze blok pod dronem posunout, jinak `False`.
+
+Provádění trvá `1` tick.
 
 příklad:
 `can_push(North)`
@@ -714,6 +735,8 @@ Skočí k podzemnímu útvaru spojenému s `unlock`.
 
 `jump` lze provést jen jednou za skript.
 
+Provádění trvá `200` ticků.
+
 příklad:
 `jump(Unlocks.Iron)`
 @code_tooltip_hover = `hover(height)`
@@ -721,10 +744,14 @@ Změní výšku, ve které se dron vznáší nad zemí.
 
 Výchozí výška je `1` a většina akcí dronu vrátí výšku vznášení na výchozí hodnotu.
 
+Provádění trvá `200` ticků při úspěchu, jinak `1` tick.
+
 příklad:
 `hover(5)`
 @code_tooltip_get_hover = `get_hover()`
 Vrátí aktuální výšku, ve které se dron vznáší nad zemí.
+
+Provádění trvá `1` tick.
 
 příklad:
 `height = get_hover()`

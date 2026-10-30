@@ -23,3 +23,11 @@
 @hat_descr_golden_pumpkin_hat = 金色版南瓜帽。
 @hat_descr_golden_sunflower_hat = 金色版向日葵帽。
 @hat_descr_the_farmers_remains = 发生了什么？
+@hat_descr_bucket = 戴在头上的铁桶。
+@hat_descr_coal_hat = 一顶煤块形状的帽子。有点沾灰。
+@hat_descr_rice_hat = 一顶稻米形状的帽子。
+@hat_descr_quartz_hat = 一顶闪闪发光的石英帽。
+@hat_descr_bamboo_hat = 一顶经典的竹帽。
+@hat_descr_dynamite_hat = 造型火爆。
+@hat_descr_mushroom_hat = 一顶可爱的蘑菇帽。
+@hat_descr_mining_hat = 一顶安全帽，能保护无人机免受落石伤害。

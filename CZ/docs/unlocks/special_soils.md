@@ -2,9 +2,9 @@
 
 # Perlit a hlína
 
-Některé rostliny dávají vyšší výnos na vzdušných půdách nebo půdách bohatých na živiny. Toto odemčení přidává dva nové typy podzemních bloků: perlit a úrodnou hlínu (`Grounds.Perlite` a `Grounds.Loam`).
+Toto odemčení přidává dva nové typy podzemních bloků: perlit a úrodnou hlínu (`Grounds.Perlite` a `Grounds.Loam`). Když sklidíš plodiny zasazené na těchto půdách, dostaneš dvojnásobný výnos.
 
-Tyto nové typy bloků se vyskytují v tenkých podzemních vrstvách, podobně jako jíl.
+Perlit a úrodná hlína se vyskytují v tenkých podzemních vrstvách, podobně jako jíl, jsou ale o něco vzácnější.
 
 Perlit vyhovuje rostlinám, které mají rády vzdušnou půdu: kaktusům, bambusu, keřům a stromům. Zasazené na perlitu dávají tyto rostliny dvojnásobný výnos.
 

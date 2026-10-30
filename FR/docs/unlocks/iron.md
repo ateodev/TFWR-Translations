@@ -18,23 +18,22 @@ Les filons de fer sont toutefois petits au début et il te faudra un peu de chan
     "show_code": true,
     "show_inventory": true,
     "show_output": false,
-    "collapsing": false,
-    "autoplay": true,
+    "collapsing": true,
+    "autoplay": false,
     "items": [{"item": "hay", "n": 100}, {"item": "wood", "n": 100}],
     "world_size": {"x": 5, "y": 5},
     "execution_speed": 1,
-    "digging_speed": 4,
+    "digging_speed": 10,
     "action_ticks": 200,
-    "operation_ticks": 200,
-    "seed": 9,
-    "exclude_unlocks": ["watering", "fertilizer", "mushrooms", "coal", "quartz"]
+    "operation_ticks": 50,
+    "seed": 5,
+    "exclude_unlocks": ["watering", "fertilizer", "mushrooms", "quartz"]
 }
 #SETUP
-jump(Unlocks.Iron)
 #CODE
-for i in range(4):
+while get_ground_type() != Grounds.Iron:
     dig()
-do_a_flip()
+dig()
 }}
 
 ---

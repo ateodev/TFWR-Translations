@@ -23,3 +23,11 @@
 @hat_descr_golden_pumpkin_hat = Zlatá verze dýňového klobouku.
 @hat_descr_golden_sunflower_hat = Zlatá verze slunečnicového klobouku.
 @hat_descr_the_farmers_remains = Co se stalo?
+@hat_descr_bucket = Železný kbelík na hlavu.
+@hat_descr_coal_hat = Klobouk ve tvaru uhlí. Trochu začazený.
+@hat_descr_rice_hat = Klobouk ve tvaru rýže.
+@hat_descr_quartz_hat = Třpytivý křemenný klobouk.
+@hat_descr_bamboo_hat = Klasický bambusový klobouk.
+@hat_descr_dynamite_hat = Výbušný vzhled.
+@hat_descr_mushroom_hat = Roztomilý houbový klobouček.
+@hat_descr_mining_hat = Přilba, která dron ochrání před padajícím kamením.

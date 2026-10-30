@@ -15,15 +15,15 @@ Llama a `measure()` sobre el bloque del mapa para obtener el camino del tesoro c
 
 {{codeexample 
 {
-    "camera_position": {"x": -1, "y": 0, "z": 6},
+    "camera_position": {"x": -1.5, "y": 0, "z": 6},
     "show_image": true,
     "image_size": {"x": 800, "y": 300},
     "show_code": true,
     "show_inventory": true,
-    "show_output": false,
+    "show_output": true,
     "collapsing": true,
     "autoplay": false,
-    "items": [{"item": "hay", "n": 100}, {"item": "iron", "n": 100}],
+    "items": [],
     "world_size": {"x": 4, "y": 4},
     "execution_speed": 2,
     "digging_speed": 10,
@@ -52,21 +52,60 @@ while get_ground_type() != Grounds.Treasure_Map:
 
 do_a_flip()
 instructions = measure()
+print("instrucciones: ", instructions)
 dig()
 }}
 
 Puedes usar el bucle `for` sobre la cadena para procesarla letra por letra:
-```
+{{codeexample 
+{
+    "camera_position": {"x": -1.5, "y": 0, "z": 6},
+    "show_image": false,
+    "image_size": {"x": 800, "y": 300},
+    "show_code": true,
+    "show_inventory": true,
+    "show_output": true,
+    "collapsing": true,
+    "autoplay": false,
+    "items": [],
+    "world_size": {"x": 4, "y": 4},
+    "execution_speed": 2,
+    "digging_speed": 10,
+    "action_ticks": 200,
+    "operation_ticks": 200,
+    "seed": 3,
+    "exclude_unlocks": ["watering", "fertilizer", "dynamite", "iron"]
+}
+#SETUP
+jump(Unlocks.Treasure_Map)
+while get_ground_type() != Grounds.Basalt:
+    dig()
+
+map_pos = measure()
+
+while get_pos_x() < map_pos[0]:
+    move(East)
+while get_pos_y() < map_pos[1]:
+    move(North)
+
+while get_ground_type() != Grounds.Treasure_Map:
+    dig()
+#CODE
 path = measure()
 for letter in path:
-    do_something(letter)
-```
+    print(letter)
+}}
 
-El dron que excave el bloque del mapa del tesoro es el que tendrá que encontrar el tesoro. Debe permanecer sobre bloques de `Grounds.Treasure_Path` en todo momento. Si se desplaza a otro terreno, el camino se romperá y el tesoro se perderá.
+El dron debe permanecer sobre bloques de `Grounds.Treasure_Path` en todo momento. Si se desplaza a otro terreno, el camino se romperá y el tesoro se perderá.
 
+## Objetivo
 Al final del camino hay un bloque de `Grounds.Treasure_Goal`. Si el dron no se ha desviado del camino, aparecerá un `Entities.Underground_Treasure` encima. El dron puede usar `harvest()` sobre el cofre para recoger su oro.
 
+## Recompensa
 La cantidad de oro es proporcional a la longitud del camino del tesoro. Mejorar el desbloqueo Mapa del tesoro aumenta la profundidad del camino, mientras que mejorar Expandir le proporciona más espacio para moverse lateralmente. Ambas mejoras aumentan la longitud del camino del tesoro y la cantidad de oro que encontrarás.
+
+## Varios drones
+El dron que excave el bloque del mapa del tesoro es el que tendrá que encontrar el tesoro sin salirse de los bloques del camino.
 </spoiler>
 
 ---

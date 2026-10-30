@@ -4,16 +4,7 @@
 
 Proseguendo dalle vene di ferro in `Grounds.Rock`, trovi il quarzo nella parte inferiore dello strato di roccia e nella `Grounds.Dirt` dura sottostante (controlla la durezza con `get_hardness()` dello sblocco [Sensi Sotterranei](docs/unlocks/underground_senses.md)).
 
-Il quarzo cresce in vene a forma di ago che formano colonne verticali, perciò sono piuttosto difficili da trovare procedendo per tentativi.
-
-Per fortuna possiamo prendere il ferro e deformarlo fino a ottenere qualcosa di simile a una bacchetta da rabdomante, così da individuare più facilmente le vene di quarzo. Il comando apposito è `prospect_quartz()`.
-
-`prospect_quartz()` funziona diversamente da `prospect_iron()`. Invece di restituire la direzione del minerale di quarzo più vicino, restituisce la distanza euclidea (distanza 3D) dal quarzo più vicino. Eseguire `prospect_quartz()` costa 1 ferro, quindi conviene usare il comando con parsimonia.
-
-Se `prospect_quartz()` non trova quarzo nelle vicinanze oppure non hai abbastanza ferro per eseguire la ricerca, restituisce `None`.
-
 Il codice seguente fa scavare il drone oltre la terra e in profondità nello strato di roccia. Con un po' di fortuna ci sarà una vena di quarzo nelle vicinanze e il drone ne stamperà la distanza.
-
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -24,7 +15,7 @@ Il codice seguente fa scavare il drone oltre la terra e in profondità nello str
     "show_output": false,
     "collapsing": true,
     "autoplay": false,
-    "items": [{"item": "hay", "n": 100}, {"item": "iron", "n": 100}],
+    "items": [],
     "world_size": {"x": 3, "y": 3},
     "execution_speed": 8,
     "digging_speed": 16,
@@ -33,22 +24,38 @@ Il codice seguente fa scavare il drone oltre la terra e in profondità nello str
     "seed": 9,
     "exclude_unlocks": ["watering", "fertilizer", "mushrooms", "dynamite"]
 }
-
-#CODE
+#SETUP
 move(East)
 move(North)
+#CODE
 while get_ground_type() != Grounds.Rock:
     dig()
 for i in range(30):
     dig()
-do_a_flip()
-do_a_flip()
+
+print(prospect_quartz())
+move(South)
 print(prospect_quartz())
 }}
 
-Puoi fare prospezioni e spostarti più volte e osservare come cambia la distanza, per capire se ti stai avvicinando o allontanando da una vena. Puoi usare la geometria 2D per trovare l'intersezione tra due o più cerchi, così da individuare la posizione orizzontale di una vena e scavare verso il basso. Oppure puoi usare la trilaterazione completa per intersecare tre sfere e trovare la posizione 3D esatta.
+## Struttura delle Vene
+Il quarzo cresce in vene a forma di ago che formano colonne verticali, perciò sono piuttosto difficili da trovare procedendo per tentativi.
 
-Nota che non esistono funzioni matematiche di base per la radice quadrata, la trigonometria o i vettori: dovrai implementarle da solo. Nota anche che nelle vicinanze possono esserci più vene, quindi se fai più misurazioni vicine, potrebbero non puntare alla stessa vena e portarti fuori strada.
+## Prospezione del Quarzo
+Per fortuna possiamo prendere il ferro e deformarlo fino a ottenere qualcosa di simile a una bacchetta da rabdomante, così da individuare più facilmente le vene di quarzo. Il comando apposito è `prospect_quartz()`.
+
+`prospect_quartz()` funziona diversamente da `prospect_iron()`. Invece di restituire la direzione in cui il drone deve muoversi per avvicinarsi al minerale di ferro più vicino, restituisce la distanza 3D esatta tra il blocco di quarzo più vicino e il drone (distanza euclidea).
+
+Eseguire `prospect_quartz()` costa 1 ferro, quindi conviene usare il comando con parsimonia.
+
+Se `prospect_quartz()` non trova quarzo nelle vicinanze oppure non hai abbastanza ferro per eseguire la ricerca, restituisce `None`.
+
+## Strategia
+<spoiler=mostra suggerimento>
+Puoi fare prospezioni e spostarti più volte per osservare come cambia la distanza, così da capire se ti stai avvicinando o allontanando da una vena. Puoi usare la geometria 2D per trovare l'intersezione tra due o più cerchi, così da individuare la posizione orizzontale di una vena e scavare verso il basso. Oppure puoi usare la trilaterazione completa per intersecare tre sfere e trovare la posizione 3D esatta.
+
+Nota che non esistono funzioni matematiche integrate per la radice quadrata, la trigonometria o i vettori: dovrai implementarle da solo. Nota anche che nelle vicinanze possono esserci più vene, quindi se fai più misurazioni vicine, potrebbero non puntare alla stessa vena e portarti fuori strada.
+</spoiler>
 
 ---
 

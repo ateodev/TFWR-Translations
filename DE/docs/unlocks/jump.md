@@ -2,11 +2,11 @@
 ---
 # Springen
 
-Deine Drohne hat den Befehl `jump()` freigeschaltet.
+Deine Drohne hat den Befehl `jump()` freigeschaltet. Du verwendest ihn, indem du ihm eine Freischaltung als Argument übergibst, beispielsweise `Unlocks.Iron`.
 
-Mit diesem Befehl kannst du bestimmte Freischaltungen anvisieren und direkt zu ihnen springen. Das ist besonders beim Debuggen praktisch oder wenn du zu einer Erzader zurückspringen möchtest, die du kurz zuvor verpasst hast. Übergib dazu eine Freischaltung als Argument, beispielsweise `Unlocks.Iron`.
+Mit diesem Befehl kannst du bestimmte Freischaltungen anvisieren, die im Boden verborgen sind, und sofort zu ihnen hinunterspringen. Das ist besonders beim Debuggen praktisch oder wenn du zu einer Erzader springen möchtest, die du kurz zuvor verpasst hast.
 
-`jump()` funktioniert nur mit Freischaltungen, die unterirdisch vorkommen, beispielsweise `jump(Unlocks.Rice)` oder `jump(Unlocks.Iron)`.
+Nach dem Sprung sollte sich die anvisierte Freischaltung höchstens 3 Blöcke unter der obersten Blockoberfläche befinden. `jump()` kann pro Programmausführung nur einmal verwendet werden, weitere Sprungversuche führen zu einem Fehler.
 
 {{codeexample 
 {
@@ -18,27 +18,40 @@ Mit diesem Befehl kannst du bestimmte Freischaltungen anvisieren und direkt zu i
     "show_output": false,
     "collapsing": true,
     "autoplay": false,
-    "items": [],
+    "items": [{"item": "hay", "n": 10}],
     "world_size": {"x": 4, "y": 4},
     "execution_speed": 1,
-    "digging_speed": 3,
+    "digging_speed": 4,
     "action_ticks": 200,
-    "operation_ticks": 200,
+    "operation_ticks": 20,
     "seed": 1,
     "exclude_unlocks": ["watering", "fertilizer", "mushrooms"],
     "starting_chunk": 0
 }
 #CODE
-dig()
-dig()
-dig()
-jump(Unlocks.Iron)
-do_a_flip()
+jump(Unlocks.Rice)
+
+for i in range(get_world_size()):
+    while get_ground_type() != Grounds.Clay:
+        dig()
+
+    plant(Entities.Rice)
+
+    move(East)
 }}
 
-Ein Sprung bringt dich nicht garantiert direkt zur anvisierten Freischaltung. Möglicherweise musst du noch ein wenig in der Umgebung suchen, das Ziel befindet sich aber garantiert in der Nähe.
-
-`jump()` kann pro Programmausführung nur einmal verwendet werden.
+## Kompatible Freischaltungen
+`jump()` funktioniert nur mit den folgenden Bergbau-Freischaltungen:
+- Coal
+- Iron
+- Quartz
+- Rice
+- Petrified_Pumpkins
+- Special_Soils
+- Pyramid
+- Treasure_Map
+- Mushrooms
+- Dynamite
 
 ---
 

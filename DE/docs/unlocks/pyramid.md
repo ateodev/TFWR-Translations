@@ -1,10 +1,9 @@
 [<- Bambus](docs/unlocks/bamboo.md)
 ---
 # Pyramiden
-
 Unter der Erde befinden sich nun uralte pyramidenförmige Bauwerke, aus denen du Energie gewinnen kannst!
 
-Pyramiden bestehen aus Sandblöcken (`Grounds.Sand`). Unter der eigentlichen Pyramide liegt ein Fundament aus Kalkstein (`Grounds.Limestone`). Weil die Pyramiden alt und verwittert sind, findest du sie nur in teilweise zerstörtem Zustand. Das Fundament ist immer vollständig, im Sand befinden sich jedoch Lücken. So sieht eine Pyramide aus, wenn du sie ausgräbst:
+Pyramiden bestehen aus Sandblöcken (`Grounds.Sand`). Unter der eigentlichen Pyramide liegt ein Fundament aus Kalkstein (`Grounds.Limestone`). Weil die Pyramiden alt und verwittert sind, findest du sie nur in teilweise zerstörtem Zustand. Das Fundament ist immer vollständig, im Sand befinden sich jedoch Lücken. So sieht eine Pyramidenruine aus, wenn du sie ausgräbst:
 
 {{codeexample 
 {
@@ -31,7 +30,6 @@ move(North)
 #CODE
 while get_ground_type() != Grounds.Limestone:
     dig()
-do_a_flip()
 z = get_pos_z()
 for i in range(6):
     for j in range(6):
@@ -42,8 +40,6 @@ for i in range(6):
         move(North)
     move(East)
 }}
-
-Über der Pyramide befinden sich ausschließlich Erdblöcke. Wenn du eine Pyramide effizienter ausgraben möchtest als im obigen Code, kannst du diese Tatsache nutzen.
 
 Wie du siehst, weist der Sand mehrere Lücken auf, die gefüllt werden müssen. Wenn du diese Lücken füllst und die Pyramide wieder in ihren ursprünglichen Zustand versetzt, zerstört sie sich selbst und in der Mitte des Kalksteinfundaments erscheint eine große Sonnenblume. Ernte sie, um Energie zu erhalten. Je größer die von dir vervollständigte Pyramide war, desto mehr Energie erhältst du.
 
@@ -87,6 +83,8 @@ place(Grounds.Sand)
 }}
 
 Eine korrekt wiederhergestellte Pyramide besteht aus einem quadratischen Kalksteinfundament mit ungerader Seitenlänge, zum Beispiel 5x5. Darauf folgt eine gleich große Schicht aus Sandblöcken (5x5), gefolgt von immer kleineren Schichten: 3x3 und schließlich 1x1.
+
+Über der Pyramide befinden sich ausschließlich Erdblöcke. Wenn du eine Pyramide effizienter ausgraben möchtest als im obigen Code, kannst du diese Tatsache nutzen.
 
 ---
 

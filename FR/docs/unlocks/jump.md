@@ -2,11 +2,11 @@
 ---
 # Saut
 
-Ton drone a débloqué la commande `jump()`.
+Ton drone a débloqué la commande `jump()`. Pour l’utiliser, passe-lui un déblocage en argument, par exemple `Unlocks.Iron`.
 
-Cette commande te permet de cibler certains déblocages et de sauter directement jusqu’à eux. Elle est particulièrement utile pour le débogage ou pour revenir à un filon de minerai que tu viens de manquer. Pour l’utiliser, passe-lui un déblocage en argument, par exemple `Unlocks.Iron`.
+Cette commande te permet de cibler certains déblocages cachés dans le sol et de sauter instantanément jusqu’à eux. Elle est particulièrement utile pour le débogage ou pour revenir à un filon de minerai que tu viens de manquer.
 
-`jump()` ne fonctionne qu’avec les déblocages qui apparaissent sous terre, comme `jump(Unlocks.Rice)` ou `jump(Unlocks.Iron)`.
+Après le saut, le déblocage ciblé devrait se trouver à 3 blocs au plus sous la surface des blocs supérieurs. `jump()` ne peut être utilisée qu’une seule fois par exécution du programme : toute autre tentative de saut produira une erreur.
 
 {{codeexample 
 {
@@ -18,27 +18,40 @@ Cette commande te permet de cibler certains déblocages et de sauter directement
     "show_output": false,
     "collapsing": true,
     "autoplay": false,
-    "items": [],
+    "items": [{"item": "hay", "n": 10}],
     "world_size": {"x": 4, "y": 4},
     "execution_speed": 1,
-    "digging_speed": 3,
+    "digging_speed": 4,
     "action_ticks": 200,
-    "operation_ticks": 200,
+    "operation_ticks": 20,
     "seed": 1,
     "exclude_unlocks": ["watering", "fertilizer", "mushrooms"],
     "starting_chunk": 0
 }
 #CODE
-dig()
-dig()
-dig()
-jump(Unlocks.Iron)
-do_a_flip()
+jump(Unlocks.Rice)
+
+for i in range(get_world_size()):
+    while get_ground_type() != Grounds.Clay:
+        dig()
+
+    plant(Entities.Rice)
+
+    move(East)
 }}
 
-Il n’est pas garanti que le saut t’amène directement au déblocage ciblé. Tu devras peut-être encore chercher un peu, mais la cible se trouvera forcément à proximité.
-
-`jump()` ne peut être utilisée qu’une seule fois par exécution du programme.
+## Déblocages compatibles
+`jump()` ne fonctionne qu’avec les déblocages miniers suivants :
+- Coal
+- Iron
+- Quartz
+- Rice
+- Petrified_Pumpkins
+- Special_Soils
+- Pyramid
+- Treasure_Map
+- Mushrooms
+- Dynamite
 
 ---
 

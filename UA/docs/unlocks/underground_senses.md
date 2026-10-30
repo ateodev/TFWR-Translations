@@ -8,7 +8,7 @@
 
 {{codeexample 
 {
-    "camera_position": {"x": -1, "y": 0, "z": 8},
+    "camera_position": {"x": -1.5, "y": 0, "z": 8},
     "show_image": true,
     "image_size": {"x": 800, "y": 300},
     "show_code": true,
@@ -17,17 +17,18 @@
     "collapsing": true,
     "autoplay": false,
     "exclude_unlocks": ["watering", "fertilizer"],
-    "items": [{"item": "hay", "n": 100}, {"item": "wood", "n": 100}],
+    "items": [],
     "world_size": {"x": 4, "y": 4},
     "execution_speed": 2,
     "action_ticks": 200,
     "operation_ticks": 200,
     "seed": 1
 }
-#CODE
+#SETUP
 move(North)
 move(North)
 move(East)
+#CODE
 dig()
 dig()
 dig()
@@ -40,7 +41,7 @@ print(get_pos_z())
 
 {{codeexample 
 {
-    "camera_position": {"x": -1, "y": 0, "z": 8},
+    "camera_position": {"x": -1.5, "y": 0, "z": 8},
     "show_image": true,
     "image_size": {"x": 800, "y": 300},
     "show_code": true,
@@ -48,7 +49,8 @@ print(get_pos_z())
     "show_output": false,
     "collapsing": true,
     "autoplay": false,
-    "items": [{"item": "hay", "n": 100}, {"item": "wood", "n": 100}],
+    "items": [],
+    "exclude_unlocks": ["watering", "fertilizer"],
     "world_size": {"x": 4, "y": 4},
     "execution_speed": 2,
     "action_ticks": 200,
@@ -61,10 +63,40 @@ if get_ground_type() == Grounds.Dirt:
     do_a_flip()
 }}
 
+## Твердість і стійкість
+`get_hardness()` повертає твердість клітинки ґрунту під дроном. Що вища твердість клітинки, то довше її копати. Можна передати аргумент напрямку, наприклад `get_hardness(North)`.
 
-`get_hardness()` повертає твердість клітинки ґрунту під дроном. Можна передати аргумент напрямку, наприклад `get_hardness(North)`. Що вища твердість клітинки, то довше її копати.
+`get_stability()` повертає стійкість клітинки ґрунту під дроном. Стійкість 1 означає, що блок витримує перепад висоти 1, перш ніж обвалиться. Можна передати аргумент напрямку, наприклад `get_stability(North)`.
 
-`get_stability()` повертає стійкість клітинки ґрунту під дроном. Можна передати аргумент напрямку, наприклад `get_stability(North)`. Стійкість 1 означає, що блок витримує перепад висоти 1, перш ніж обвалиться.
+{{codeexample 
+{
+    "camera_position": {"x": -1, "y": 0, "z": 8},
+    "show_image": true,
+    "image_size": {"x": 800, "y": 250},
+    "show_code": true,
+    "show_inventory": true,
+    "show_output": false,
+    "collapsing": true,
+    "autoplay": false,
+    "items": [],
+    "exclude_unlocks": ["watering", "fertilizer"],
+    "world_size": {"x": 3, "y": 3},
+    "execution_speed": 2,
+    "action_ticks": 200,
+    "operation_ticks": 20,
+    "seed": 0
+}
+#SETUP
+jump(Unlocks.Rice)
+#CODE
+print(get_hardness(), "|", get_stability())
+while get_hardness() == 1:
+    dig()
+
+print(get_hardness(), "|", get_stability())
+while get_hardness() == 2 and get_stability() == 3:
+    dig()
+}}
 
 Зауважте, що чотири блоки безпосередньо поруч із дроном зникають незалежно від їхньої стійкості, коли дрон копає вниз, якщо тільки блок не має особливої функції. Наприклад, глина, залізо та кварц за цим правилом не зникають. Проте вони все одно можуть обвалитися через недостатню стійкість блоку.
 ---

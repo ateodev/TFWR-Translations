@@ -15,15 +15,15 @@
 
 {{codeexample 
 {
-    "camera_position": {"x": -1, "y": 0, "z": 6},
+    "camera_position": {"x": -1.5, "y": 0, "z": 6},
     "show_image": true,
     "image_size": {"x": 800, "y": 300},
     "show_code": true,
     "show_inventory": true,
-    "show_output": false,
+    "show_output": true,
     "collapsing": true,
     "autoplay": false,
-    "items": [{"item": "hay", "n": 100}, {"item": "iron", "n": 100}],
+    "items": [],
     "world_size": {"x": 4, "y": 4},
     "execution_speed": 2,
     "digging_speed": 10,
@@ -52,21 +52,60 @@ while get_ground_type() != Grounds.Treasure_Map:
 
 do_a_flip()
 instructions = measure()
+print("指示：", instructions)
 dig()
 }}
 
 可以对字符串使用 `for` 循环，逐个字母地处理它：
-```
+{{codeexample 
+{
+    "camera_position": {"x": -1.5, "y": 0, "z": 6},
+    "show_image": false,
+    "image_size": {"x": 800, "y": 300},
+    "show_code": true,
+    "show_inventory": true,
+    "show_output": true,
+    "collapsing": true,
+    "autoplay": false,
+    "items": [],
+    "world_size": {"x": 4, "y": 4},
+    "execution_speed": 2,
+    "digging_speed": 10,
+    "action_ticks": 200,
+    "operation_ticks": 200,
+    "seed": 3,
+    "exclude_unlocks": ["watering", "fertilizer", "dynamite", "iron"]
+}
+#SETUP
+jump(Unlocks.Treasure_Map)
+while get_ground_type() != Grounds.Basalt:
+    dig()
+
+map_pos = measure()
+
+while get_pos_x() < map_pos[0]:
+    move(East)
+while get_pos_y() < map_pos[1]:
+    move(North)
+
+while get_ground_type() != Grounds.Treasure_Map:
+    dig()
+#CODE
 path = measure()
 for letter in path:
-    do_something(letter)
-```
+    print(letter)
+}}
 
-宝藏必须由挖到藏宝图地块的那架无人机寻找。它必须一直待在 `Grounds.Treasure_Path` 地块上方。如果移动到其他地块，路径就会断开，宝藏也会丢失。
+无人机必须一直待在 `Grounds.Treasure_Path` 地块上方。如果移动到其他地块，路径就会断开，宝藏也会丢失。
 
+## 目标
 路径尽头是一个 `Grounds.Treasure_Goal` 地块。如果无人机没有偏离路径，其上方就会出现 `Entities.Underground_Treasure`。无人机可以使用 `harvest()` 收获宝箱，获得黄金。
 
+## 奖励
 黄金数量与宝藏路径的长度成正比。升级藏宝图解锁项会增加路径的深度，升级扩张则能让路径有更多横向延伸的空间。两种升级都会延长宝藏路径，让你找到更多黄金。
+
+## 多架无人机
+宝藏必须由挖到藏宝图地块的那架无人机寻找，而且它不能离开路径地块。
 </spoiler>
 
 ---

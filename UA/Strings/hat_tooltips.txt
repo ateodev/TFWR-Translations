@@ -23,3 +23,11 @@
 @hat_descr_golden_pumpkin_hat = Золота версія капелюха-гарбуза.
 @hat_descr_golden_sunflower_hat = Золота версія капелюха-соняшника.
 @hat_descr_the_farmers_remains = Що сталося?
+@hat_descr_bucket = Залізне відро для вашої голови.
+@hat_descr_coal_hat = Капелюх у формі вугілля. Трохи закіптявлений.
+@hat_descr_rice_hat = Капелюх у формі рису.
+@hat_descr_quartz_hat = Блискучий кварцовий капелюх.
+@hat_descr_bamboo_hat = Класичний бамбуковий капелюх.
+@hat_descr_dynamite_hat = Вибуховий образ.
+@hat_descr_mushroom_hat = Милий грибний капелюшок.
+@hat_descr_mining_hat = Каска, що захистить дрона від каміння, яке падає.

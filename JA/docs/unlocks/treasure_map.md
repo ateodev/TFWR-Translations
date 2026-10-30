@@ -15,15 +15,15 @@
 
 {{codeexample 
 {
-    "camera_position": {"x": -1, "y": 0, "z": 6},
+    "camera_position": {"x": -1.5, "y": 0, "z": 6},
     "show_image": true,
     "image_size": {"x": 800, "y": 300},
     "show_code": true,
     "show_inventory": true,
-    "show_output": false,
+    "show_output": true,
     "collapsing": true,
     "autoplay": false,
-    "items": [{"item": "hay", "n": 100}, {"item": "iron", "n": 100}],
+    "items": [],
     "world_size": {"x": 4, "y": 4},
     "execution_speed": 2,
     "digging_speed": 10,
@@ -52,21 +52,60 @@ while get_ground_type() != Grounds.Treasure_Map:
 
 do_a_flip()
 instructions = measure()
+print("指示: ", instructions)
 dig()
 }}
 
 文字列に`for`ループを使えば、1文字ずつ処理できます：
-```
+{{codeexample 
+{
+    "camera_position": {"x": -1.5, "y": 0, "z": 6},
+    "show_image": false,
+    "image_size": {"x": 800, "y": 300},
+    "show_code": true,
+    "show_inventory": true,
+    "show_output": true,
+    "collapsing": true,
+    "autoplay": false,
+    "items": [],
+    "world_size": {"x": 4, "y": 4},
+    "execution_speed": 2,
+    "digging_speed": 10,
+    "action_ticks": 200,
+    "operation_ticks": 200,
+    "seed": 3,
+    "exclude_unlocks": ["watering", "fertilizer", "dynamite", "iron"]
+}
+#SETUP
+jump(Unlocks.Treasure_Map)
+while get_ground_type() != Grounds.Basalt:
+    dig()
+
+map_pos = measure()
+
+while get_pos_x() < map_pos[0]:
+    move(East)
+while get_pos_y() < map_pos[1]:
+    move(North)
+
+while get_ground_type() != Grounds.Treasure_Map:
+    dig()
+#CODE
 path = measure()
 for letter in path:
-    do_something(letter)
-```
+    print(letter)
+}}
 
-宝物の地図ブロックを掘ったドローンは、宝物を探す必要があります。その間ドローンは、ずっと`Grounds.Treasure_Path`ブロックの上にいなければなりません。別の地面へ移動すると道が途切れ、宝物は失われます。
+ドローンは、ずっと`Grounds.Treasure_Path`ブロックの上にいなければなりません。別の地面へ移動すると道が途切れ、宝物は失われます。
 
+## ゴール
 道の終点には`Grounds.Treasure_Goal`ブロックがあります。ドローンが道を外れていなければ、その上に`Entities.Underground_Treasure`が現れます。ドローンが宝箱を`harvest()`すると、ゴールドを回収できます。
 
+## 報酬
 得られるゴールドの量は、宝物の道の長さに比例します。宝物の地図のアンロックをアップグレードすると道が深くなり、拡張をアップグレードすると横方向に進める範囲が広がります。どちらもアップグレードすることで、道が長くなり見つかるゴールドの量が増えます。
+
+## 複数のドローン
+宝物の地図ブロックを掘ったドローンが、道のブロックから離れずに宝物を見つけなければなりません。
 </spoiler>
 
 ---

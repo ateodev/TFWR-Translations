@@ -2,11 +2,11 @@
 ---
 # Skok
 
-Tvůj dron odemkl příkaz `jump()`.
+Tvůj dron odemkl příkaz `jump()`. Používá se tak, že mu jako argument předáš odemčení, například `Unlocks.Iron`.
 
-Tento příkaz ti umožňuje zacílit na určitá odemčení a skočit rovnou k nim. Hodí se zejména při ladění nebo pro skok k rudné žíle, kterou jsi nedávno minul. Používá se tak, že mu jako argument předáš odemčení, například `Unlocks.Iron`.
+Tento příkaz ti umožňuje zacílit na určitá odemčení skrytá v zemi a okamžitě k nim skočit dolů. Hodí se zejména při ladění nebo pro skok k rudné žíle, kterou jsi nedávno minul.
 
-`jump()` funguje jen pro odemčení, která se vyskytují v podzemí, například `jump(Unlocks.Rice)` nebo `jump(Unlocks.Iron)`.
+Po skoku by cílové odemčení mělo být do 3 bloků od povrchu nejvyššího bloku. `jump()` lze použít jen jednou za běh programu, další pokusy o skok skončí chybou.
 
 {{codeexample 
 {
@@ -18,27 +18,40 @@ Tento příkaz ti umožňuje zacílit na určitá odemčení a skočit rovnou k 
     "show_output": false,
     "collapsing": true,
     "autoplay": false,
-    "items": [],
+    "items": [{"item": "hay", "n": 10}],
     "world_size": {"x": 4, "y": 4},
     "execution_speed": 1,
-    "digging_speed": 3,
+    "digging_speed": 4,
     "action_ticks": 200,
-    "operation_ticks": 200,
+    "operation_ticks": 20,
     "seed": 1,
     "exclude_unlocks": ["watering", "fertilizer", "mushrooms"],
     "starting_chunk": 0
 }
 #CODE
-dig()
-dig()
-dig()
-jump(Unlocks.Iron)
-do_a_flip()
+jump(Unlocks.Rice)
+
+for i in range(get_world_size()):
+    while get_ground_type() != Grounds.Clay:
+        dig()
+
+    plant(Entities.Rice)
+
+    move(East)
 }}
 
-Není zaručeno, že tě skok přenese přímo k cílovému odemčení, takže se možná budeš muset trochu porozhlédnout, ale je zaručeno, že cíl je poblíž.
-
-`jump()` lze použít jen jednou za běh programu.
+## Kompatibilní odemčení
+`jump()` funguje jen s následujícími odemčeními pro těžbu:
+- Coal
+- Iron
+- Quartz
+- Rice
+- Petrified_Pumpkins
+- Special_Soils
+- Pyramid
+- Treasure_Map
+- Mushrooms
+- Dynamite
 
 ---
 

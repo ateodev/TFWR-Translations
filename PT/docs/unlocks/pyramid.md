@@ -1,10 +1,9 @@
 [<- Bambu](docs/unlocks/bamboo.md)
 ---
 # Pirâmides
-
 O subsolo agora contém antigas estruturas piramidais das quais você pode colher energia!
 
-As pirâmides são feitas de blocos de areia (`Grounds.Sand`). Abaixo da pirâmide há uma camada de fundação de calcário (`Grounds.Limestone`). Como são antigas e erodidas, você as encontra parcialmente destruídas. A fundação está sempre presente, mas haverá buracos na areia. Veja como uma pirâmide fica ao ser escavada:
+As pirâmides são feitas de blocos de areia (`Grounds.Sand`). Abaixo da pirâmide há uma camada de fundação de calcário (`Grounds.Limestone`). Como são antigas e erodidas, você as encontra parcialmente destruídas. A fundação está sempre presente, mas haverá buracos na areia. Veja como fica uma ruína de pirâmide ao ser escavada:
 
 {{codeexample 
 {
@@ -31,7 +30,6 @@ move(North)
 #CODE
 while get_ground_type() != Grounds.Limestone:
     dig()
-do_a_flip()
 z = get_pos_z()
 for i in range(6):
     for j in range(6):
@@ -42,8 +40,6 @@ for i in range(6):
         move(North)
     move(East)
 }}
-
-Os blocos acima da pirâmide são sempre terra. Você pode usar esse fato para escavar uma pirâmide de forma mais eficiente que no código acima.
 
 Como pode ver, há vários buracos na areia que precisam ser preenchidos. Ao preencher esses buracos e restaurar a pirâmide ao seu estado anterior, ela se destrói e um grande girassol surge no meio da base de calcário. Colha-o para receber energia. Quanto maior a pirâmide concluída, mais energia você recebe.
 
@@ -87,6 +83,8 @@ place(Grounds.Sand)
 }}
 
 Uma pirâmide restaurada corretamente tem uma fundação quadrada de calcário com lados de comprimento ímpar, por exemplo 5x5. Acima há uma camada de areia do mesmo tamanho (5x5), seguida de camadas progressivamente menores: 3x3 e depois 1x1.
+
+Os blocos acima da pirâmide são sempre terra. Você pode usar esse fato para escavar uma pirâmide de forma mais eficiente que no código acima.
 
 ---
 

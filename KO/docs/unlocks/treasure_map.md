@@ -15,15 +15,15 @@
 
 {{codeexample 
 {
-    "camera_position": {"x": -1, "y": 0, "z": 6},
+    "camera_position": {"x": -1.5, "y": 0, "z": 6},
     "show_image": true,
     "image_size": {"x": 800, "y": 300},
     "show_code": true,
     "show_inventory": true,
-    "show_output": false,
+    "show_output": true,
     "collapsing": true,
     "autoplay": false,
-    "items": [{"item": "hay", "n": 100}, {"item": "iron", "n": 100}],
+    "items": [],
     "world_size": {"x": 4, "y": 4},
     "execution_speed": 2,
     "digging_speed": 10,
@@ -52,21 +52,60 @@ while get_ground_type() != Grounds.Treasure_Map:
 
 do_a_flip()
 instructions = measure()
+print("지시 사항: ", instructions)
 dig()
 }}
 
 문자열에 `for` 반복문을 사용하면 한 글자씩 처리할 수 있습니다.
-```
+{{codeexample 
+{
+    "camera_position": {"x": -1.5, "y": 0, "z": 6},
+    "show_image": false,
+    "image_size": {"x": 800, "y": 300},
+    "show_code": true,
+    "show_inventory": true,
+    "show_output": true,
+    "collapsing": true,
+    "autoplay": false,
+    "items": [],
+    "world_size": {"x": 4, "y": 4},
+    "execution_speed": 2,
+    "digging_speed": 10,
+    "action_ticks": 200,
+    "operation_ticks": 200,
+    "seed": 3,
+    "exclude_unlocks": ["watering", "fertilizer", "dynamite", "iron"]
+}
+#SETUP
+jump(Unlocks.Treasure_Map)
+while get_ground_type() != Grounds.Basalt:
+    dig()
+
+map_pos = measure()
+
+while get_pos_x() < map_pos[0]:
+    move(East)
+while get_pos_y() < map_pos[1]:
+    move(North)
+
+while get_ground_type() != Grounds.Treasure_Map:
+    dig()
+#CODE
 path = measure()
 for letter in path:
-    do_something(letter)
-```
+    print(letter)
+}}
 
-보물지도 블록을 굴착하는 드론이 보물을 찾아야 합니다. 이 드론은 항상 `Grounds.Treasure_Path` 블록 위에 머물러야 합니다. 다른 땅으로 이동하면 길이 끊어지고 보물을 잃습니다.
+드론은 항상 `Grounds.Treasure_Path` 블록 위에 머물러야 합니다. 다른 땅으로 이동하면 길이 끊어지고 보물을 잃습니다.
 
+## 목표
 길 끝에는 `Grounds.Treasure_Goal` 블록이 있습니다. 드론이 길을 벗어나지 않았다면 그 위에 `Entities.Underground_Treasure`가 나타납니다. 드론은 상자를 `harvest()`해 황금을 모을 수 있습니다.
 
+## 보상
 황금의 양은 보물 길의 길이에 비례합니다. 보물지도 해금을 업그레이드하면 보물 길이 더 깊어지고, 확장을 업그레이드하면 좌우로 더 넓게 움직일 수 있습니다. 두 업그레이드 모두 보물 길의 길이와 발견하는 황금의 양을 늘려줍니다.
+
+## 여러 대의 드론
+보물지도 블록을 굴착한 드론이 길 블록을 벗어나지 않고 보물을 찾아야 합니다.
 </spoiler>
 
 ---

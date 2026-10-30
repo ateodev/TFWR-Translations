@@ -6,46 +6,48 @@
 
 ダイナマイトを安全に採掘するには、`Grounds.Dynamite`の層と、そのすぐ下に続く`Grounds.Soot`の層を見つけましょう。上のダイナマイトの層は古くなっており、安全に掘れるブロックもあります。しかし、まだ爆発するダイナマイトブロックも残っていて、掘ると爆発します。
 
+集めたダイナマイトは`use_item(Items.Dynamite)`で使用でき、ドローンの真下ですぐに爆発します。
+
+この例では、ダイナマイトを掘ってから最初に掘った地点の周りをぐるりと掘り、下にあるすすのブロックの測定値を表示します。
 {{codeexample 
 {
-    "camera_position": {"x": -5, "y": 0, "z": 15},
+    "camera_position": {"x": -3, "y": 0, "z": 15},
     "show_image": true,
-    "image_size": {"x": 900, "y": 500},
+    "image_size": {"x": 800, "y": 500},
     "show_code": true,
     "show_inventory": true,
     "show_output": false,
-    "collapsing": false,
-    "autoplay": true,
-    "items": [{"item": "hay", "n": 100}],
-    "world_size": {"x": 11, "y": 11},
-    "execution_speed": 8,
-    "digging_speed": 8,
+    "collapsing": true,
+    "autoplay": false,
+    "items": [],
+    "world_size": {"x": 7, "y": 7},
+    "execution_speed": 2,
+    "digging_speed": 2,
     "action_ticks": 200,
     "operation_ticks": 200,
-    "seed": 5,
+    "seed": 6,
     "exclude_unlocks": ["watering", "fertilizer", "mushrooms", "coal", "quartz", "petrified_pumpkins"]
 }
 #SETUP
 jump(Unlocks.Dynamite)
-for _ in range(5):
+for _ in range(3):
     move(East)
     move(North)
 #CODE
 while get_ground_type() != Grounds.Soot:
     dig()
 
-circle_directions = [East, South, West, West, North, North, East, East, South, West]
-def dig_dynamite_neighbors():
-    for dir in circle_directions:
-        move(dir)
-        while get_ground_type() != Grounds.Soot:
-            dig()
-
-while get_ground_type() == Grounds.Soot and measure() == 0:
-    dig_dynamite_neighbors()
-    move(circle_directions[random() * len(circle_directions)])
+circle_directions = [
+    East, South, West, West, 
+    North, North, East, East
+]
+for dir in circle_directions:
+    move(dir)
+    dig()
+    print(measure())
 }}
 
+## ダイナマイトスイーパー
 不発のダイナマイトブロックをすべて見つけて掘り、爆発するブロックだけを残せますか？ダイナマイトの地層が消えたとき、周囲が爆発するブロック、またはすすのブロックだけになった爆発するブロックからは、追加のダイナマイトが得られます。
 
 幸い、下のすすのブロックが手掛かりになります。これらは、爆発するダイナマイトを含んだ隣接するダイナマイトの数を検知できます。どのブロックが爆発するかは教えてくれず、わかるのは合計数だけです。複数のすすのブロックの数値を組み合わせて、自分で突き止めましょう。
@@ -54,6 +56,12 @@ while get_ground_type() == Grounds.Soot and measure() == 0:
 
 ダイナマイトの地層で最初に掘るブロックは必ず不発です。掘ったダイナマイトのブロックからは少量のダイナマイトが得られます。不発のブロックをすべて掘り終えた場合も、誤って爆発するダイナマイトを掘った場合も、地層が壊れると、完全に露出した爆発するブロックの数の2乗に相当するダイナマイトも得られます。
 
+## 地層の構造
+ダイナマイトの地層が深いほど、爆発するダイナマイトの数が増え、見つける難易度も増えます。ダイナマイトの総数は農場の大きさに応じて増えるので、ダイナマイトの地層をクリアしたときに得られる最大の収穫量も増えます。
+
+ダイナマイトをアップグレードすると、ブロックを掘ったときや爆発するブロックを完全に露出させたときの収穫量が増えます。アップグレードで爆発のエネルギーも30%上がります。
+
+## 成功と失敗の判定
 爆発するダイナマイトを掘ると、2つの地層が爆発します。`Grounds.Dynamite`を掘った後に`get_ground_type()`を使うと、爆発したかどうかを確認できます。地面が`Grounds.Soot`でなければ、パズルは失敗です。一方、最後の不発のダイナマイトブロックを掘ると、すべてのダイナマイトブロックが消え、パズルで得られる最大の収穫量を獲得します。すすの地層は残りますが、`measure()`は`None`を返し、パズルを解くのに成功したことを示します。
 
 `# ダイナマイトブロックを掘り、パズルの状態を確認する
@@ -70,11 +78,50 @@ def dig_dynamite():
         return None
 `
 
-ダイナマイトの地層が深いほど、爆発するダイナマイトの数が増え、見つける難易度も増えます。ダイナマイトの総数は農場の大きさに応じて増えるので、ダイナマイトの地層をクリアしたときに得られる最大の収穫量も増えます。
+## 戦略
+<spoiler=ヒント>
+以下のコードはダイナマイトの地層を掘り、測定値が`0`になるすすのブロックを探します。そのようなブロックを見つけるたびに、その周りのダイナマイトブロックをすべて掘り取ります。
+{{codeexample 
+{
+    "camera_position": {"x": -5, "y": 0, "z": 15},
+    "show_image": true,
+    "image_size": {"x": 800, "y": 500},
+    "show_code": true,
+    "show_inventory": true,
+    "show_output": false,
+    "collapsing": true,
+    "autoplay": false,
+    "items": [],
+    "world_size": {"x": 7, "y": 7},
+    "execution_speed": 4,
+    "digging_speed": 8,
+    "action_ticks": 200,
+    "operation_ticks": 20,
+    "seed": 6,
+    "exclude_unlocks": ["watering", "fertilizer", "mushrooms", "coal", "quartz", "petrified_pumpkins"]
+}
+#SETUP
+jump(Unlocks.Dynamite)
+for _ in range(3):
+    move(East)
+    move(North)
+#CODE
+while get_ground_type() != Grounds.Soot:
+    dig()
 
-集めたダイナマイトは`use_item(Items.Dynamite)`で使用でき、ドローンの真下ですぐに爆発します。
-
-ダイナマイトをアップグレードすると、ブロックを掘ったときや爆発するブロックを完全に露出させたときの収穫量が増えます。アップグレードで爆発のエネルギーも30%上がります。
+circle_directions = [
+    East, South, West, West, North,
+    North, East, East, South, West
+]
+for dir in circle_directions:
+    if get_ground_type() == Grounds.Soot and measure() == 0:
+        for dir2 in circle_directions:
+            move(dir2)
+            while get_ground_type() != Grounds.Soot:
+                dig()
+    move(dir)
+}}
+</spoiler>
 
 ---
 

@@ -2,13 +2,13 @@
 
 # Perlite e Terriccio
 
-Alcune piante producono una resa maggiore su terreni ariosi o ricchi di nutrienti. Questo sblocco aggiunge due nuovi tipi di blocchi sotterranei: perlite e terriccio (`Grounds.Perlite` e `Grounds.Loam`).
+Questo sblocco aggiunge due nuovi tipi di blocchi sotterranei: perlite e terriccio (`Grounds.Perlite` e `Grounds.Loam`). Quando raccogli le colture piantate su questi terreni, ottieni il doppio della resa.
 
-Questi nuovi tipi di blocchi si trovano in sottili strati sotterranei, simili all'argilla.
+La perlite e il terriccio si trovano in sottili strati sotterranei, simili all'argilla, ma sono un po' più rari.
 
 La perlite è adatta alle piante che prediligono terreni ariosi: cactus, bambù, cespugli e alberi. Queste piante producono il doppio della resa quando vengono piantate sulla perlite.
 
-Il terriccio è adatto a carote e girasoli. Quando vengono piantati lì, producono il doppio della resa.
+Il terriccio è adatto a carote e girasoli. Quando vengono piantati sul terriccio, producono il doppio della resa.
 
 Un altro vantaggio della perlite e del terriccio è che sono subito pronti per la semina. A differenza di `Grounds.Grassland`, che devi prima trasformare in `Grounds.Soil` con `till()`.
 

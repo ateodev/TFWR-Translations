@@ -2,8 +2,9 @@
 ---
 # Houby
 
-V podzemí rostou v koloniích mnohé druhy hub. Při kopání hledej vrstvu `Grounds.Mushroom`. Pak můžeš půdu změřit pomocí `measure()` a získat typ houby jako číslo počínaje `0`.
+V podzemí rostou v koloniích mnohé druhy hub. Při kopání hledej vrstvu `Grounds.Mushroom`. Pak můžeš půdu změřit pomocí `measure()` a získat typ houby jako číslo od `0` do `5`.
 
+Následující kód najde několik hub a vypíše jejich typ:
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 6},
@@ -14,7 +15,7 @@ V podzemí rostou v koloniích mnohé druhy hub. Při kopání hledej vrstvu `Gr
     "show_output": false,
     "collapsing": true,
     "autoplay": false,
-    "items": [{"item": "hay", "n": 100}, {"item": "iron", "n": 100}],
+    "items": [],
     "world_size": {"x": 4, "y": 4},
     "execution_speed": 2,
     "digging_speed": 6,
@@ -23,23 +24,69 @@ V podzemí rostou v koloniích mnohé druhy hub. Při kopání hledej vrstvu `Gr
     "seed": 9,
     "exclude_unlocks": ["watering", "fertilizer", "dynamite", "iron"]
 }
+#SETUP
+jump(Unlocks.Mushrooms)
+#CODE
+for i in range(get_world_size()):
+    while get_ground_type() != Grounds.Mushroom:
+        dig()
 
+    print(measure())
+
+    move(East)
+}}
+
+Houby stejného typu jsou rády pohromadě, ale jsou trochu příliš plaché na to, aby rostly na sobě. Houbový blok pod dronem posuneš pomocí `push(direction)`.
+
+Polož na sebe dva houbové bloky stejného typu a bloky se automaticky sklidí a dostaneš z nich houby.
+
+Následující kód udělá místo a pak posouvá houbu, dokud neodpovídá houbě pod ní:
+{{codeexample 
+{
+    "camera_position": {"x": -1, "y": 0, "z": 6},
+    "show_image": true,
+    "image_size": {"x": 800, "y": 300},
+    "show_code": true,
+    "show_inventory": true,
+    "show_output": false,
+    "collapsing": true,
+    "autoplay": false,
+    "items": [],
+    "world_size": {"x": 4, "y": 4},
+    "execution_speed": 2,
+    "digging_speed": 6,
+    "action_ticks": 200,
+    "operation_ticks": 200,
+    "seed": 3,
+    "exclude_unlocks": ["watering", "fertilizer", "dynamite", "iron", "special_soils"]
+}
 #SETUP
 jump(Unlocks.Mushrooms)
 #CODE
 while get_ground_type() != Grounds.Mushroom:
     dig()
-do_a_flip()
-print(measure())
+
+depth = get_pos_z()
+for i in range(2):
+    move(East)
+    while get_pos_z() > depth - 1:
+        dig()
+    move(West)
+    push(East)
+    move(East)
 }}
 
-Houby stejného typu jsou rády pohromadě, ale jsou příliš plaché na to, aby rostly na sobě. Posuň houbový blok na jiný houbový blok stejného typu a oba zmizí, přičemž jako odměnu dostaneš houby.
+# Posouvání bloků
+Pomocí `can_push(direction)` zjistíš, zda lze blok pod dronem posunout a zda mu v daném směru něco nebrání.
 
-Pomocí `can_push(direction)` zjistíš, zda lze blok pod dronem posunout a zda mu v daném směru něco nebrání. `push(direction)` blok posune a vrátí, zda se posun zdařil.
+`push(direction)` blok posune a vrátí, zda se posun zdařil.
 
-Bloky nelze posouvat nahoru a posun se nezdaří, pokud je v cestě jiný blok. Bloky posunuté do vzduchu spadnou a dopadnou na nejbližší blok pod sebou.
+Posouvat lze jen houbové bloky, bloky nelze posouvat nahoru a posun se nezdaří, pokud je v cestě jiný blok. Bloky posunuté do vzduchu spadnou a dopadnou na nejbližší blok pod sebou.
 
+# Strategie
+<spoiler=nápověda>
 Pamatuj, že voláním `place(Grounds.Dirt)` můžeš pokládat bloky pod dron. To se hodí k zaplnění děr, abys přes ně mohl bloky posouvat.
+</spoiler>
 
 ---
 

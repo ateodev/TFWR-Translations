@@ -2,8 +2,9 @@
 ---
 # Cogumelo
 
-Muitos tipos de cogumelo crescem em colônias no subsolo. Procure um estrato de `Grounds.Mushroom` ao escavar. Depois, use `measure()` no solo para obter o tipo de cogumelo como um número a partir de `0`.
+Muitos tipos de cogumelo crescem em colônias no subsolo. Procure um estrato de `Grounds.Mushroom` ao escavar. Depois, use `measure()` no solo para obter o tipo de cogumelo como um número de `0` a `5`.
 
+O código a seguir encontra alguns cogumelos e imprime o tipo deles:
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 6},
@@ -14,7 +15,7 @@ Muitos tipos de cogumelo crescem em colônias no subsolo. Procure um estrato de 
     "show_output": false,
     "collapsing": true,
     "autoplay": false,
-    "items": [{"item": "hay", "n": 100}, {"item": "iron", "n": 100}],
+    "items": [],
     "world_size": {"x": 4, "y": 4},
     "execution_speed": 2,
     "digging_speed": 6,
@@ -23,23 +24,69 @@ Muitos tipos de cogumelo crescem em colônias no subsolo. Procure um estrato de 
     "seed": 9,
     "exclude_unlocks": ["watering", "fertilizer", "dynamite", "iron"]
 }
+#SETUP
+jump(Unlocks.Mushrooms)
+#CODE
+for i in range(get_world_size()):
+    while get_ground_type() != Grounds.Mushroom:
+        dig()
 
+    print(measure())
+
+    move(East)
+}}
+
+Cogumelos do mesmo tipo gostam de ficar juntos, mas são tímidos demais para crescer uns sobre os outros. Empurre o bloco de cogumelo abaixo do drone com `push(direction)`.
+
+Empilhe dois blocos de cogumelo do mesmo tipo um sobre o outro, e os blocos serão colhidos automaticamente, rendendo seus cogumelos.
+
+O código abaixo abre espaço e depois empurra um cogumelo até que ele combine com o cogumelo de baixo:
+{{codeexample 
+{
+    "camera_position": {"x": -1, "y": 0, "z": 6},
+    "show_image": true,
+    "image_size": {"x": 800, "y": 300},
+    "show_code": true,
+    "show_inventory": true,
+    "show_output": false,
+    "collapsing": true,
+    "autoplay": false,
+    "items": [],
+    "world_size": {"x": 4, "y": 4},
+    "execution_speed": 2,
+    "digging_speed": 6,
+    "action_ticks": 200,
+    "operation_ticks": 200,
+    "seed": 3,
+    "exclude_unlocks": ["watering", "fertilizer", "dynamite", "iron", "special_soils"]
+}
 #SETUP
 jump(Unlocks.Mushrooms)
 #CODE
 while get_ground_type() != Grounds.Mushroom:
     dig()
-do_a_flip()
-print(measure())
+
+depth = get_pos_z()
+for i in range(2):
+    move(East)
+    while get_pos_z() > depth - 1:
+        dig()
+    move(West)
+    push(East)
+    move(East)
 }}
 
-Cogumelos do mesmo tipo gostam de ficar juntos, mas são tímidos demais para crescer uns sobre os outros. Empurre um bloco de cogumelo sobre outro do mesmo tipo; ambos desaparecerão e renderão cogumelos como recompensa.
+# Empurrando Blocos
+Use `can_push(direction)` para verificar se o bloco sob o drone pode ser empurrado e se há algo bloqueando a direção.
 
-Use `can_push(direction)` para verificar se o bloco sob o drone pode ser empurrado e se há algo bloqueando a direção. `push(direction)` empurra o bloco e informa se a ação foi bem-sucedida.
+`push(direction)` empurra o bloco e informa se a ação foi bem-sucedida.
 
-Blocos não podem ser empurrados para cima, e o empurrão falha se houver outro bloco no caminho. Quando empurrados para o ar, eles caem e pousam no próximo bloco abaixo.
+Só é possível empurrar blocos de cogumelo. Blocos não podem ser empurrados para cima, e o empurrão falha se houver outro bloco no caminho. Quando empurrados para o ar, eles caem e pousam no próximo bloco abaixo.
 
+# Estratégia
+<spoiler=dica>
 Lembre-se de que você pode chamar `place(Grounds.Dirt)` para colocar blocos sob o drone. Isso ajuda a preencher buracos e empurrar blocos por cima deles.
+</spoiler>
 
 ---
 

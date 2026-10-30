@@ -1,10 +1,9 @@
 [<- Bambus](docs/unlocks/bamboo.md)
 ---
 # Pyramidy
-
 V podzemí se teď nacházejí starověké pyramidové stavby, ze kterých můžeš získávat energii!
 
-Pyramidy jsou z bloků písku (`Grounds.Sand`). Pod samotnou pyramidou je základová vrstva vápence (`Grounds.Limestone`). Protože jsou staré a zvětralé, najdeš je jen částečně zničené. Základová vrstva je vždy přítomná, ale v písku budou díry. Takhle vypadá pyramida, když ji vykopeš:
+Pyramidy jsou z bloků písku (`Grounds.Sand`). Pod samotnou pyramidou je základová vrstva vápence (`Grounds.Limestone`). Protože jsou staré a zvětralé, najdeš je jen částečně zničené. Základová vrstva je vždy přítomná, ale v písku budou díry. Takhle vypadá ruina pyramidy, když ji vykopeš:
 
 {{codeexample 
 {
@@ -31,7 +30,6 @@ move(North)
 #CODE
 while get_ground_type() != Grounds.Limestone:
     dig()
-do_a_flip()
 z = get_pos_z()
 for i in range(6):
     for j in range(6):
@@ -42,8 +40,6 @@ for i in range(6):
         move(North)
     move(East)
 }}
-
-Bloky nad pyramidou jsou vždy hlína. Pokud chceš pyramidu vykopat efektivněji než výše uvedený kód, můžeš toho využít.
 
 Jak vidíš, v písku je několik děr, které bude třeba zaplnit. Když tyto díry zaplníš a obnovíš pyramidu do původního stavu, sama se zničí a uprostřed vápencového základu se objeví velká slunečnice. Sklidíš ji a získáš energii. Čím větší pyramidu dokončíš, tím více energie dostaneš.
 
@@ -87,6 +83,8 @@ place(Grounds.Sand)
 }}
 
 Správně obnovená pyramida se skládá ze čtvercového vápencového základu s lichou délkou strany, například 5x5. Nad ním je vrstva bloků písku stejné velikosti (5x5) a pak postupně menší vrstvy: 3x3 a potom 1x1.
+
+Bloky nad pyramidou jsou vždy hlína. Pokud chceš pyramidu vykopat efektivněji než výše uvedený kód, můžeš toho využít.
 
 ---
 

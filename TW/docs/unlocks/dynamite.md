@@ -6,46 +6,48 @@
 
 想安全地開採炸藥，就要找到一層 `Grounds.Dynamite`，其正下方緊接著一層 `Grounds.Soot`。上層的炸藥已經老化，其中一些地塊可以安全挖掘。不過，還有一些炸藥地塊是實彈，挖到就會爆炸。
 
+收集到的炸藥可以透過 `use_item(Items.Dynamite)` 使用，並立即在無人機下方爆炸。
+
+這個範例會挖入炸藥層，再沿著最初挖掘點周圍挖一圈，並列印下方各個黑煙地塊的測量值：
 {{codeexample 
 {
-    "camera_position": {"x": -5, "y": 0, "z": 15},
+    "camera_position": {"x": -3, "y": 0, "z": 15},
     "show_image": true,
-    "image_size": {"x": 900, "y": 500},
+    "image_size": {"x": 800, "y": 500},
     "show_code": true,
     "show_inventory": true,
     "show_output": false,
-    "collapsing": false,
-    "autoplay": true,
-    "items": [{"item": "hay", "n": 100}],
-    "world_size": {"x": 11, "y": 11},
-    "execution_speed": 8,
-    "digging_speed": 8,
+    "collapsing": true,
+    "autoplay": false,
+    "items": [],
+    "world_size": {"x": 7, "y": 7},
+    "execution_speed": 2,
+    "digging_speed": 2,
     "action_ticks": 200,
     "operation_ticks": 200,
-    "seed": 5,
+    "seed": 6,
     "exclude_unlocks": ["watering", "fertilizer", "mushrooms", "coal", "quartz", "petrified_pumpkins"]
 }
 #SETUP
 jump(Unlocks.Dynamite)
-for _ in range(5):
+for _ in range(3):
     move(East)
     move(North)
 #CODE
 while get_ground_type() != Grounds.Soot:
     dig()
 
-circle_directions = [East, South, West, West, North, North, East, East, South, West]
-def dig_dynamite_neighbors():
-    for dir in circle_directions:
-        move(dir)
-        while get_ground_type() != Grounds.Soot:
-            dig()
-
-while get_ground_type() == Grounds.Soot and measure() == 0:
-    dig_dynamite_neighbors()
-    move(circle_directions[random() * len(circle_directions)])
+circle_directions = [
+    East, South, West, West, 
+    North, North, East, East
+]
+for dir in circle_directions:
+    move(dir)
+    dig()
+    print(measure())
 }}
 
+## 炸藥踩地雷
 你能找出並挖掘所有啞彈炸藥地塊，只留下實彈地塊嗎？炸藥層消失時，每個周圍只剩實彈地塊或黑煙地塊的實彈地塊，都會給你產出額外的炸藥。
 
 好在下方的黑煙地塊可以幫忙：它們能檢測相鄰的炸藥地塊中有多少是實彈炸藥。不過，它們只告訴你總數，不會指出具體是哪些地塊，因此你需要結合多個黑煙地塊的讀數自行推斷。
@@ -54,6 +56,12 @@ while get_ground_type() == Grounds.Soot and measure() == 0:
 
 炸藥層中第一次挖到的一定是啞彈。每挖掉一個炸藥地塊都會產出少量炸藥。炸藥層被摧毀時，無論是成功挖光啞彈，還是不慎挖中實彈炸藥，你都會獲得額外的炸藥，其數量等於完全顯露的實彈炸藥地塊數的平方。
 
+## 地層結構
+炸藥層中的實彈炸藥數量會隨著深度增加，找出它們也會越來越難。炸藥總數會隨農場規模增加，清理一層炸藥可能獲得的最大產量也隨之增加。
+
+升級炸藥後，挖掘炸藥地塊和完全顯露的實彈地塊時的產量會提高，還會使炸藥爆炸的能量提高 30%。
+
+## 偵測成功與失敗
 如果挖到實彈炸藥，兩個地層都會爆炸。在挖入 `Grounds.Dynamite` 後，可以使用 `get_ground_type()` 檢查是否發生了爆炸。如果地塊不是 `Grounds.Soot`，說明解謎失敗。反之，如果挖掉最後一個啞彈地塊，所有炸藥地塊都會消失，你會獲得該謎題獎勵的最大產量。黑煙層會保留，但 `measure()` 回傳 `None`，表示謎題已成功解開。
 
 `# 挖掘炸藥地塊並檢查謎題狀態
@@ -70,11 +78,50 @@ def dig_dynamite():
         return None
 `
 
-炸藥層中的實彈炸藥數量會隨著深度增加，找出它們也會越來越難。炸藥總數會隨農場規模增加，清理一層炸藥可能獲得的最大產量也隨之增加。
+## 策略
+<spoiler=提示>
+下面的程式碼會挖入炸藥層，尋找測量值為 `0` 的黑煙地塊。每找到一個這樣的地塊，就挖掉它周圍的所有炸藥地塊：
+{{codeexample 
+{
+    "camera_position": {"x": -5, "y": 0, "z": 15},
+    "show_image": true,
+    "image_size": {"x": 800, "y": 500},
+    "show_code": true,
+    "show_inventory": true,
+    "show_output": false,
+    "collapsing": true,
+    "autoplay": false,
+    "items": [],
+    "world_size": {"x": 7, "y": 7},
+    "execution_speed": 4,
+    "digging_speed": 8,
+    "action_ticks": 200,
+    "operation_ticks": 20,
+    "seed": 6,
+    "exclude_unlocks": ["watering", "fertilizer", "mushrooms", "coal", "quartz", "petrified_pumpkins"]
+}
+#SETUP
+jump(Unlocks.Dynamite)
+for _ in range(3):
+    move(East)
+    move(North)
+#CODE
+while get_ground_type() != Grounds.Soot:
+    dig()
 
-收集到的炸藥可以透過 `use_item(Items.Dynamite)` 使用，並立即在無人機下方爆炸。
-
-升級炸藥後，挖掘炸藥地塊和完全顯露的實彈地塊時的產量會提高，還會使炸藥爆炸的能量提高 30%。
+circle_directions = [
+    East, South, West, West, North,
+    North, East, East, South, West
+]
+for dir in circle_directions:
+    if get_ground_type() == Grounds.Soot and measure() == 0:
+        for dir2 in circle_directions:
+            move(dir2)
+            while get_ground_type() != Grounds.Soot:
+                dig()
+    move(dir)
+}}
+</spoiler>
 
 ---
 

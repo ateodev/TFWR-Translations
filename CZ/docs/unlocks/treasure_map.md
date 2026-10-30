@@ -15,15 +15,15 @@ Zavolej `measure()` na bloku mapy a získáš cestu k pokladu jako řetězec pí
 
 {{codeexample 
 {
-    "camera_position": {"x": -1, "y": 0, "z": 6},
+    "camera_position": {"x": -1.5, "y": 0, "z": 6},
     "show_image": true,
     "image_size": {"x": 800, "y": 300},
     "show_code": true,
     "show_inventory": true,
-    "show_output": false,
+    "show_output": true,
     "collapsing": true,
     "autoplay": false,
-    "items": [{"item": "hay", "n": 100}, {"item": "iron", "n": 100}],
+    "items": [],
     "world_size": {"x": 4, "y": 4},
     "execution_speed": 2,
     "digging_speed": 10,
@@ -52,25 +52,64 @@ while get_ground_type() != Grounds.Treasure_Map:
 
 do_a_flip()
 instructions = measure()
+print("pokyny: ", instructions)
 dig()
 }}
 
 Pomocí cyklu `for` můžeš řetězec zpracovat písmeno po písmenu:
-```
+{{codeexample 
+{
+    "camera_position": {"x": -1.5, "y": 0, "z": 6},
+    "show_image": false,
+    "image_size": {"x": 800, "y": 300},
+    "show_code": true,
+    "show_inventory": true,
+    "show_output": true,
+    "collapsing": true,
+    "autoplay": false,
+    "items": [],
+    "world_size": {"x": 4, "y": 4},
+    "execution_speed": 2,
+    "digging_speed": 10,
+    "action_ticks": 200,
+    "operation_ticks": 200,
+    "seed": 3,
+    "exclude_unlocks": ["watering", "fertilizer", "dynamite", "iron"]
+}
+#SETUP
+jump(Unlocks.Treasure_Map)
+while get_ground_type() != Grounds.Basalt:
+    dig()
+
+map_pos = measure()
+
+while get_pos_x() < map_pos[0]:
+    move(East)
+while get_pos_y() < map_pos[1]:
+    move(North)
+
+while get_ground_type() != Grounds.Treasure_Map:
+    dig()
+#CODE
 path = measure()
 for letter in path:
-    do_something(letter)
-```
+    print(letter)
+}}
 
-Dron, který kopne do bloku mapy pokladu, je ten, který musí poklad najít. Musí celou dobu zůstat nad bloky `Grounds.Treasure_Path`. Pokud přejde na jinou půdu, cesta se přeruší a poklad bude ztracen.
+Dron musí celou dobu zůstat nad bloky `Grounds.Treasure_Path`. Pokud přejde na jinou půdu, cesta se přeruší a poklad bude ztracen.
 
+## Cíl
 Na konci cesty je blok `Grounds.Treasure_Goal`. Pokud dron z cesty nesešel, objeví se na něm `Entities.Underground_Treasure`. Dron může truhlu sklidit pomocí `harvest()` a sebrat její zlato.
 
+## Odměna
 Množství zlata je úměrné délce cesty k pokladu. Vylepšení odemčení Mapa pokladu zvětšuje hloubku cesty, zatímco vylepšení Rozšíření jí dává více prostoru do stran. Obě vylepšení prodlužují cestu k pokladu a zvyšují množství zlata, které najdeš.
+
+## Více dronů
+Dron, který kopne do bloku mapy pokladu, je ten, který musí poklad najít, aniž by opustil bloky cesty.
 </spoiler>
 
 ---
 
-[Statistiky](docs/stats.md)      [For Loop](docs/scripting/for.md)      [Tuples](docs/scripting/tuples.md)      [Podzemní senzory](docs/unlocks/underground_senses.md)
+[Statistiky](docs/stats.md)      [Cyklus for](docs/scripting/for.md)      [N-tice](docs/scripting/tuples.md)      [Podzemní senzory](docs/unlocks/underground_senses.md)
 
 [harvest()](functions/harvest)      [move()](functions/move)      [dig()](functions/dig)      [measure()](functions/measure)

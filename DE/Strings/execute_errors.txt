@@ -66,7 +66,7 @@ Dies ist eine Schutz-Fehlermeldung, du kannst sie in den Optionen ausschalten, w
 @error_division_by_zero = Oh nein! Du hast durch `0` geteilt. Du hast es nur knapp überlebt.
 @error_negative_use_item = Die Menge der zu verwendenden Items muss mindestens `1` sein. Sie war {0}.
 @error_use_before_assign = Es wurde versucht, die Variable {0} zu lesen, bevor ihr ein Wert zugewiesen wurde. 
-Wenn du eine globale Variable ändern möchtest, musst du das Schlüsselwort `global` verwenden, um in den globalen Geltungsbereich zu schreiben.
+Wenn du eine globale Variable ändern möchtest, musst du das Schlüsselwort global verwenden, um in den globalen Geltungsbereich zu schreiben.
 
 `global x
 x += 1`
@@ -81,3 +81,6 @@ x += 1`
 @error_non_jumpable_unlock = Zu dieser Freischaltung kann nicht gesprungen werden.
 @error_only_first_drone_can_jump = Nur die erste Drohne kann `jump()` ausführen.
 @error_can_only_jump_once = Du kannst `jump()` nur einmal pro Programm ausführen.
+@error_dig_not_allowed = Die Verwendung von `dig()` ist in dieser Bestenliste nicht erlaubt.
+@error_plant_not_allowed = Die Verwendung von `plant()` ist in dieser Bestenliste nicht erlaubt.
+@error_jump_not_allowed = Die Verwendung von `jump()` ist in Bestenlisten nicht erlaubt.

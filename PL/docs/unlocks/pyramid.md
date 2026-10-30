@@ -1,10 +1,9 @@
 [<- Bambus](docs/unlocks/bamboo.md)
 ---
 # Piramidy
+Pod ziemią znajdują się teraz starożytne piramidy, z których można pozyskiwać moc!
 
-Pod ziemią znajdują się teraz starożytne piramidy, z których można pozyskiwać energię!
-
-Piramidy są zbudowane z bloków piasku (`Grounds.Sand`). Pod samą piramidą znajduje się fundament z wapienia (`Grounds.Limestone`). Są stare i zerodowane, dlatego znajdziesz je tylko w częściowo zniszczonym stanie. Warstwa fundamentu jest zawsze kompletna, ale w piasku będą dziury. Tak wygląda odkopana piramida:
+Piramidy są zbudowane z bloków piasku (`Grounds.Sand`). Pod samą piramidą znajduje się fundament z wapienia (`Grounds.Limestone`). Są stare i zerodowane, dlatego znajdziesz je tylko w częściowo zniszczonym stanie. Warstwa fundamentu jest zawsze kompletna, ale w piasku będą dziury. Tak wyglądają ruiny piramidy po odkopaniu:
 
 {{codeexample 
 {
@@ -31,7 +30,6 @@ move(North)
 #CODE
 while get_ground_type() != Grounds.Limestone:
     dig()
-do_a_flip()
 z = get_pos_z()
 for i in range(6):
     for j in range(6):
@@ -42,8 +40,6 @@ for i in range(6):
         move(North)
     move(East)
 }}
-
-Bloki nad piramidą są zawsze ziemią. Możesz wykorzystać ten fakt, aby odkopać piramidę wydajniej niż w powyższym kodzie.
 
 Jak widać, w piasku znajduje się kilka dziur, które trzeba wypełnić. Gdy uzupełnisz braki i przywrócisz piramidę do pierwotnego stanu, konstrukcja rozpadnie się, a pośrodku wapiennej podstawy pojawi się duży słonecznik. Zbierz go, aby otrzymać energię. Im większa ukończona piramida, tym więcej energii otrzymasz.
 
@@ -87,6 +83,8 @@ place(Grounds.Sand)
 }}
 
 Prawidłowo odnowiona piramida ma kwadratowy fundament z wapienia o nieparzystej długości boku, na przykład 5x5. Nad nim znajduje się warstwa bloków piasku tego samego rozmiaru (5x5), a następnie coraz mniejsze warstwy: 3x3 i 1x1.
+
+Bloki nad piramidą są zawsze ziemią. Możesz wykorzystać ten fakt, aby odkopać piramidę wydajniej niż w powyższym kodzie.
 
 ---
 

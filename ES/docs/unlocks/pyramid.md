@@ -1,10 +1,9 @@
 [<- Bambú](docs/unlocks/bamboo.md)
 ---
 # Pirámides
-
 ¡El subsuelo contiene ahora antiguas estructuras piramidales de las que puedes cosechar energía!
 
-Las pirámides están hechas de bloques de arena (`Grounds.Sand`). Debajo de la propia pirámide hay una capa de piedra caliza (`Grounds.Limestone`) que sirve como cimiento. Como son antiguas y están erosionadas, solo las encontrarás parcialmente destruidas. La capa de cimientos siempre está presente, pero habrá agujeros en la arena. Este es el aspecto de una pirámide al desenterrarla:
+Las pirámides están hechas de bloques de arena (`Grounds.Sand`). Debajo de la propia pirámide hay una capa de piedra caliza (`Grounds.Limestone`) que sirve como cimiento. Como son antiguas y están erosionadas, solo las encontrarás parcialmente destruidas. La capa de cimientos siempre está presente, pero habrá agujeros en la arena. Este es el aspecto de una pirámide en ruinas al desenterrarla:
 
 {{codeexample 
 {
@@ -31,7 +30,6 @@ move(North)
 #CODE
 while get_ground_type() != Grounds.Limestone:
     dig()
-do_a_flip()
 z = get_pos_z()
 for i in range(6):
     for j in range(6):
@@ -42,8 +40,6 @@ for i in range(6):
         move(North)
     move(East)
 }}
-
-Los bloques que hay encima de la pirámide siempre son de tierra. Puedes aprovechar este dato si quieres desenterrar una pirámide de forma más eficiente que con el código anterior.
 
 Como puedes ver, hay varios agujeros en la arena que tendrás que rellenar. Cuando rellenes estos agujeros y restaures la pirámide a su estado original, esta se destruirá y aparecerá un gran girasol en el centro de la base de piedra caliza. Coséchalo para recibir energía. Cuanto mayor sea la pirámide que completes, más energía recibirás.
 
@@ -87,6 +83,8 @@ place(Grounds.Sand)
 }}
 
 Una pirámide restaurada correctamente consta de un cimiento cuadrado de piedra caliza cuyos lados tienen una longitud impar, por ejemplo, 5x5. Encima hay una capa de bloques de arena del mismo tamaño (5x5), seguida de capas cada vez más pequeñas: 3x3 y luego 1x1.
+
+Los bloques que hay encima de la pirámide siempre son de tierra. Puedes aprovechar este dato si quieres desenterrar una pirámide de forma más eficiente que con el código anterior.
 
 ---
 
