@@ -54,10 +54,10 @@ Aby pomóc dronowi zorientować się pod ziemią, szybko odblokuj [podziemne zmy
 Na przykład dzięki [podziemnym zmysłom](docs/unlocks/underground_senses.md) możesz za pomocą `get_hardness()` sprawdzić twardość bloku pod dronem. Jeśli trafisz na obszar wyjątkowo twardych bloków, warto go ominąć, aby szybciej posuwać się naprzód:
 
 `while True:
-        if get_hardness() < 5:
-                dig()
-        else:
-                move(East)`
+    if get_hardness() < 5:
+        dig()
+    else:
+        move(East)`
 
 Oczywiście im głębiej schodzisz, tym twardsze stają się bloki, więc ta strategia pomaga tylko do pewnego momentu.
 

@@ -54,10 +54,10 @@ clear()
 たとえば[地下の感覚](docs/unlocks/underground_senses.md)があれば、`get_hardness()`で真下のブロックの硬さを確認できます。特に硬いブロックにぶつかったら、賢く回り道をしたほうが速く進めるかもしれません：
 
 `while True:
-        if get_hardness() < 5:
-                dig()
-        else:
-                move(East)`
+    if get_hardness() < 5:
+        dig()
+    else:
+        move(East)`
 
 もちろん、下に進むほどブロックは硬くなるので、便利であるこの方法にも限界があります。
 

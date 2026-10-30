@@ -54,10 +54,10 @@ Damit sich deine Drohne im Untergrund zurechtfindet, solltest du schnell die [un
 Mit den [unterirdischen Sinnen](docs/unlocks/underground_senses.md) kannst du zum Beispiel mit `get_hardness()` die Härte des Blocks unter dir prüfen. Wenn du auf einen Bereich mit besonders harten Blöcken stößt, kann es sinnvoll sein, sie zu umgehen, um schneller voranzukommen:
 
 `while True:
-        if get_hardness() < 5:
-                dig()
-        else:
-                move(East)`
+    if get_hardness() < 5:
+        dig()
+    else:
+        move(East)`
 
 Natürlich werden die Blöcke nach unten hin immer härter. Diese Strategie hilft also nur bis zu einem gewissen Punkt.
 

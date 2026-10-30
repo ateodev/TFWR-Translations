@@ -54,10 +54,10 @@ Per aiutare il tuo drone a orientarsi sottoterra, dovresti sbloccare presto i [s
 Per esempio, con i [sensi sotterranei](docs/unlocks/underground_senses.md) puoi usare `get_hardness()` per controllare la durezza del blocco sotto di te. Se incontri una zona di blocchi particolarmente duri, potrebbe essere meglio aggirarli per avanzare più velocemente:
 
 `while True:
-        if get_hardness() < 5:
-                dig()
-        else:
-                move(East)`
+    if get_hardness() < 5:
+        dig()
+    else:
+        move(East)`
 
 Naturalmente i blocchi diventano sempre più duri scendendo, quindi questa strategia è utile solo fino a un certo punto.
 

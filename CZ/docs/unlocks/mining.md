@@ -54,10 +54,10 @@ Aby se tvůj dron v podzemí vyznal, měl bys rychle odemknout [podzemní senzor
 S [podzemními senzory](docs/unlocks/underground_senses.md) například pomocí `get_hardness()` zjistíš tvrdost bloku pod sebou. Pokud narazíš na oblast obzvlášť tvrdých bloků, může být moudré je obejít, abys postupoval rychleji:
 
 `while True:
-        if get_hardness() < 5:
-                dig()
-        else:
-                move(East)`
+    if get_hardness() < 5:
+        dig()
+    else:
+        move(East)`
 
 Bloky jsou samozřejmě čím dál tvrdší, takže tahle strategie sice pomáhá, ale jen do určité míry.
 

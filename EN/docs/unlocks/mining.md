@@ -54,10 +54,10 @@ To help your drone make sense of the underground, you should quickly unlock [und
 For example, with [underground senses](docs/unlocks/underground_senses.md) you can use `get_hardness()` to check the hardness of the block below you. If you run into a patch of particularly hard blocks, it might be wise to move around them, so you can progress faster:
 
 `while True:
-        if get_hardness() < 5:
-                dig()
-        else:
-                move(East)`
+    if get_hardness() < 5:
+        dig()
+    else:
+        move(East)`
 
 Of course, blocks get tougher and tougher as you move down, so while this strategy helps, it can only get you so far.
 

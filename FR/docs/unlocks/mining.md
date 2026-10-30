@@ -54,10 +54,10 @@ Pour aider ton drone à se repérer sous terre, tu devrais vite débloquer les [
 Par exemple, avec les [sens souterrains](docs/unlocks/underground_senses.md), tu peux utiliser `get_hardness()` pour connaître la dureté du bloc situé sous toi. Si tu rencontres une zone de blocs particulièrement durs, il peut être judicieux de les contourner afin de progresser plus vite :
 
 `while True:
-        if get_hardness() < 5:
-                dig()
-        else:
-                move(East)`
+    if get_hardness() < 5:
+        dig()
+    else:
+        move(East)`
 
 Bien sûr, plus tu descends, plus les blocs deviennent résistants. Cette stratégie est utile, mais elle a ses limites.
 
