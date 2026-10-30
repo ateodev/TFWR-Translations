@@ -2,15 +2,15 @@
 
 # Perlite and Loam
 
-Some plants produce higher yields on airy or nutrient-rich soils. This unlock adds two new underground block types: perlite and loam (`Grounds.Perlite` and `Grounds.Loam`).
+This unlock adds two new underground block types: perlite and loam (`Grounds.Perlite` and `Grounds.Loam`). When you harvest crops that were planted on these soils, you'll get double the yield.
 
-These new block types occur in thin underground sheets, similar to clay.
+Perlite and loam occur in thin underground sheets, similar to clay, but they're a bit rarer. You might have to dig for a bit until you find them.
 
-Perlite is suited to plants that like airy soils: cacti, bamboo, bushes, and trees. These plants produce twice the yield when planted on perlite.
+Perlite is suited for plants that like airy soils: cacti, bamboo, bushes, and trees. These plants produce double their usual yield when planted on perlite.
 
-Loam is suited to carrots and sunflowers. They produce twice the yield when planted there.
+Loam is suited for carrots and sunflowers. These produce twice the yield when planted on loam.
 
-Another advantage of perlite and loam is that they're immediately ready for planting. Unlike `Grounds.Grassland`, which you first need to `till()` and turn into `Grounds.Soil`.
+Another advantage of perlite and loam is that they're immediately ready for planting - unlike `Grounds.Grassland`, which you first need to `till()` and turn into `Grounds.Soil`.
 
 ---
 

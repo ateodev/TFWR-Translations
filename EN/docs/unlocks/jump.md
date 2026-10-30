@@ -2,23 +2,11 @@
 ---
 # Jumping
 
-Your drone has unlocked the `jump()` command.
+Your drone has unlocked the `jump()` command. You use it by passing it an unlock as an argument, such as `Unlocks.Iron`.
 
-This command allows you to target certain unlocks and jump forward to them. It is especially useful for debugging or jumping forward to an ore vein that you have recently missed. You use it by passing it an unlock as an argument, such as `Unlocks.Iron`.
+This command allows you to target certain unlocks that are hidden in the ground and instantly jump down to them. It is especially useful for debugging or skipping to an ore vein that you have recently missed.
 
 After jumping, the target unlock should be within 3 blocks of the top block surface. `jump()` can only be used once per program execution, further jump attempts will produce an error.
-
-`jump()` only works with the following mining unlocks:
-- Coal
-- Iron
-- Quartz
-- Rice
-- Petrified_Pumpkins
-- Special_Soils
-- Pyramid
-- Treasure_Map
-- Mushrooms
-- Dynamite
 
 {{codeexample 
 {
@@ -30,23 +18,40 @@ After jumping, the target unlock should be within 3 blocks of the top block surf
     "show_output": false,
     "collapsing": true,
     "autoplay": false,
-    "items": [],
+    "items": [{"item": "hay", "n": 10}],
     "world_size": {"x": 4, "y": 4},
     "execution_speed": 1,
-    "digging_speed": 3,
+    "digging_speed": 4,
     "action_ticks": 200,
-    "operation_ticks": 200,
+    "operation_ticks": 20,
     "seed": 1,
     "exclude_unlocks": ["watering", "fertilizer", "mushrooms"],
     "starting_chunk": 0
 }
 #CODE
-dig()
-dig()
-dig()
-jump(Unlocks.Iron)
-do_a_flip()
+jump(Unlocks.Rice)
+
+for i in range(get_world_size()):
+    while get_ground_type() != Grounds.Clay:
+        dig()
+
+    plant(Entities.Rice)
+
+    move(East)
 }}
+
+## Compatible Unlocks
+`jump()` only works with the following mining unlocks:
+- Coal
+- Iron
+- Quartz
+- Rice
+- Petrified_Pumpkins
+- Special_Soils
+- Pyramid
+- Treasure_Map
+- Mushrooms
+- Dynamite
 
 ---
 
