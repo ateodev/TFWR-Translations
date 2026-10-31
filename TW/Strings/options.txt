@@ -104,7 +104,7 @@
 @on = 開啟
 @Documentation on select = 選取時的說明文件
 @never = 永不
-@menu button = 選單按鈕
+@menu button = 選單內
 @tooltip = 工具提示
 @exit fullscreen on run = 執行時離開全螢幕
 @30 fps = 30 FPS

@@ -105,7 +105,7 @@
 @on = Ligado
 @Documentation on select = Docs ao selecionar
 @never = Nunca
-@menu button = Botão no menu
+@menu button = No menu
 @tooltip = Dica
 @exit fullscreen on run = Sair da tela cheia ao executar
 @30 fps = 30 FPS

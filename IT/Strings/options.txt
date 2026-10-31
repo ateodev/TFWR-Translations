@@ -105,7 +105,7 @@
 @on = Attivato
 @Documentation on select = Docs alla selezione
 @never = Mai
-@menu button = Pulsante menu
+@menu button = Nel menu
 @tooltip = Tooltip
 @exit fullscreen on run = Avvio esce da schermo intero
 @30 fps = 30 FPS

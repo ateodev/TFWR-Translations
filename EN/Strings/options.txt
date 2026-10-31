@@ -110,7 +110,7 @@
 @on = On
 @Documentation on select = Documentation on Select
 @never = Never
-@menu button = Menu Button
+@menu button = In Menu
 @tooltip = Tooltip
 @exit fullscreen on run = Exit Fullscreen on Run
 @30 fps = 30 FPS
