@@ -3,11 +3,12 @@
 # Underground Senses
 Let's add a few sensors so your drone can find its way around underground.
 
+## Z-Position
 You can now use `get_pos_z()` to get the drone's height (starting at 0 and becoming negative as the drone descends).
 
 {{codeexample 
 {
-    "camera_position": {"x": -1.5, "y": 0, "z": 8},
+    "camera_position": {"x": -1.5, "y": 0, "z": 10},
     "show_image": true,
     "image_size": {"x": 800, "y": 300},
     "show_code": true,
@@ -17,7 +18,7 @@ You can now use `get_pos_z()` to get the drone's height (starting at 0 and becom
     "autoplay": false,
     "exclude_unlocks": ["watering", "fertilizer"],
     "items": [],
-    "world_size": {"x": 4, "y": 4},
+    "world_size": {"x": 5, "y": 5},
     "execution_speed": 2,
     "action_ticks": 200,
     "operation_ticks": 200,
@@ -27,14 +28,17 @@ You can now use `get_pos_z()` to get the drone's height (starting at 0 and becom
 move(North)
 move(North)
 move(East)
+move(East)
 #CODE
+print(get_pos_z())
 dig()
 dig()
 dig()
 print(get_pos_z())
 }}
 
-`get_ground_type()` returns the type of ground under the drone. You can pass it a direction argument—for example, `get_ground_type(North)`—to get the ground type of a neighboring tile.
+## Ground Type
+`get_ground_type()` returns the type of ground under the drone. You can pass it a direction argument - for example, `get_ground_type(North)` - to get the ground type of a neighboring tile.
 
 Here's how you would check if the block under the drone is dirt:
 
@@ -69,7 +73,7 @@ if get_ground_type() == Grounds.Dirt:
 
 {{codeexample 
 {
-    "camera_position": {"x": -1, "y": 0, "z": 8},
+    "camera_position": {"x": -1, "y": 0, "z": 10},
     "show_image": true,
     "image_size": {"x": 800, "y": 250},
     "show_code": true,
@@ -79,7 +83,7 @@ if get_ground_type() == Grounds.Dirt:
     "autoplay": false,
     "items": [],
     "exclude_unlocks": ["watering", "fertilizer"],
-    "world_size": {"x": 3, "y": 3},
+    "world_size": {"x": 5, "y": 5},
     "execution_speed": 2,
     "action_ticks": 200,
     "operation_ticks": 20,

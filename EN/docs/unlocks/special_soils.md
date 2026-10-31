@@ -1,7 +1,6 @@
 [<- Rice](docs/unlocks/rice.md)
 
 # Perlite and Loam
-
 This unlock adds two new underground block types: perlite and loam (`Grounds.Perlite` and `Grounds.Loam`). When you harvest crops that were planted on these soils, you'll get double the yield.
 
 Perlite and loam occur in thin underground sheets, similar to clay, but they're a bit rarer.

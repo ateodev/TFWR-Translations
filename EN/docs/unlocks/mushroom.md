@@ -1,7 +1,6 @@
 [<- Quartz](docs/unlocks/quartz.md) <right>[Dynamite ->](docs/unlocks/dynamite.md)
 ---
 # Mushroom
-
 Many types of mushrooms grow in colonies underground. Look for a stratum of `Grounds.Mushroom` while digging. You can then `measure()` the ground to get the mushroom type as a number, ranging from `0` to `5`.
 
 The following code finds some mushrooms and prints their type:
@@ -27,15 +26,19 @@ The following code finds some mushrooms and prints their type:
 #SETUP
 jump(Unlocks.Mushrooms)
 #CODE
+# Process a row of mushrooms
 for i in range(get_world_size()):
+    # Dig down to the top mushroom block
     while get_ground_type() != Grounds.Mushroom:
         dig()
 
+    # Print the mushroom type number
     print(measure())
 
     move(East)
 }}
 
+## How to Collect Mushrooms
 Mushrooms of the same type like to be together, but they are a bit too shy to grow on top of each other. Push the mushroom block below the drone with `push(direction)`.
 
 Stack two mushroom blocks of the same type on top of each other and the blocks will be harvested automatically for their mushrooms.
@@ -68,11 +71,13 @@ while get_ground_type() != Grounds.Mushroom:
 
 depth = get_pos_z()
 for i in range(2):
+    # Make space to push the mushroom block east
     move(East)
     while get_pos_z() > depth - 1:
         dig()
+    # Move back, push, and follow the pushed block
     move(West)
-    push(East)
+    push(East) # Push the mushroom!
     move(East)
 }}
 

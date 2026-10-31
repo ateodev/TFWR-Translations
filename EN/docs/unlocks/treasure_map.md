@@ -1,15 +1,16 @@
 [<- Iron](docs/unlocks/iron.md)
 ---
 # Treasure Map
+Legends tell of an elusive treasure hidden by a long-dead, forgetful pirate – or something like that. What if they wrote the path to the treasure on a map and then lost it? Maybe they dropped the map when cornered by a river of lava, and it was preserved below a layer of basalt.
 
-Legends tell of an elusive treasure hidden by a long-dead, forgetful pirate—or something like that. What if they wrote the path to the treasure on a map and then lost it? Maybe they dropped the map when cornered by a river of lava, and it was preserved below a layer of basalt. Measuring the basalt might reveal something.
+Measuring the basalt blocks might reveal something!
 
 <spoiler=tell me more>
 You should look out for a layer of `Grounds.Basalt`. Try measuring the basalt and see what it tells you. The hint might lead you to the treasure map and measuring the map will surely return you the path to the treasure itself – but can you decipher the instructions the map gives you?
 </spoiler>
 
 <spoiler=just tell me how>
-Okay, here's the deal: find the `Grounds.Basalt` stratum and the `Grounds.Treasure_Map` block directly below it. You can `measure()` the basalt to get the `(x, y)` position of the map block below.
+Okay, here's the deal: Find the `Grounds.Basalt` stratum and the `Grounds.Treasure_Map` block directly below it. You can `measure()` the basalt to get the `(x, y)` position of the map block below.
 
 Call `measure()` on the map block to get the treasure path as a string of direction letters. N, E, S, and W stand for `North`, `East`, `South`, and `West`, respectively, while D stands for "Down" or "Dig." These letters describe a path made of `Grounds.Treasure_Path` blocks that leads to the treasure.
 
@@ -36,10 +37,11 @@ Call `measure()` on the map block to get the treasure path as a string of direct
 #SETUP
 jump(Unlocks.Treasure_Map)
 #CODE
+# Find the basalt layer
 while get_ground_type() != Grounds.Basalt:
     dig()
 
-do_a_flip()
+# Measuring the basalt returns the position of the treasure map
 map_pos = measure()
 
 while get_pos_x() < map_pos[0]:
@@ -50,13 +52,16 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 
+# Found the map, measure it to get the path
 do_a_flip()
 instructions = measure()
 print("instructions: ", instructions)
+
+# Dig into the map to start the treasure hunt
 dig()
 }}
 
-You can use the `for` loop on the string to process it letter by letter:
+You can use a `for` loop on the string to process it letter by letter:
 {{codeexample 
 {
     "camera_position": {"x": -1.5, "y": 0, "z": 6},
@@ -91,8 +96,10 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 #CODE
-path = measure()
-for letter in path:
+# The map instructions are returned as a single string
+instructions = measure()
+# Use for-in to split the string into letters
+for letter in instructions:
     print(letter)
 }}
 

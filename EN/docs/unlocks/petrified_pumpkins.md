@@ -62,7 +62,7 @@ for _ in range(3):
     move(West)
 }}
 
-Petrified pumpkins occur underground in blocks of 3x3x3 or 5x5x5. There is no surefire way to find them, so you just have to hope your drone digs into one, but they occur in the hard dirt under the stone-and-iron layer, about the same height where quartz occurs (if you have it unlocked).
+Petrified pumpkins occur underground in blocks of 3x3x3 or 5x5x5. There is no surefire way to find them, so you just have to hope your drone digs into one, but they occur in the hard dirt under the stone-and-iron layer, about the same height as quartz (if you have it unlocked).
 
 ---
 

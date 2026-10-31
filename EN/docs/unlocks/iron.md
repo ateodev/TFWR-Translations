@@ -3,7 +3,6 @@
 <right>[Treasure Map ->](docs/unlocks/treasure_map.md)
 ---
 # Iron
-
 After finding coal in `Grounds.Dirt`, you can dig further down past the `Grounds.Clay` layer and into `Grounds.Rock` to find iron.
 
 In contrast to coal veins, iron veins also extend vertically. But all iron blocks in a vein are always directly adjacent to each other, the blocks never connect only diagonally.
@@ -31,8 +30,11 @@ But iron veins start small and you'll need some luck to find them. Further unloc
 }
 #SETUP
 #CODE
+# Dig until an iron block appears
 while get_ground_type() != Grounds.Iron:
     dig()
+
+# Mine the iron
 dig()
 }}
 

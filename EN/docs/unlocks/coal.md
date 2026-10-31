@@ -2,7 +2,6 @@
 <right>[Jumping ->](docs/unlocks/jump.md)
 ---
 # Coal
-
 Different ores are hidden underground, waiting for you to find them and dig them up. If you dig through the surface into `Grounds.Dirt`, the first ore you find is coal.
 
 You don't have to do anything special to mine coal, just execute `dig()` while the drone is directly on top of a `Grounds.Coal` block. Use `get_ground_type()` to check what is under the drone and `get_ground_type(direction)` to check the four adjacent blocks.
@@ -32,8 +31,11 @@ move(North)
 move(East)
 move(East)
 #CODE
+# Dig until coal block appears
 while get_ground_type() != Grounds.Coal:
     dig()
+
+# Mine the coal
 dig()
 }}
 

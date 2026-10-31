@@ -1,14 +1,11 @@
 [<- Mushroom](docs/unlocks/mushroom.md) <right>[Explosive Drill ->](docs/unlocks/explosive_drill.md)
 ---
 # Dynamite
+The revolutionary explosive, left behind by previous mining expeditions. Unfortunately, your drill is perfect to make dynamite explode, blasting away all the blocks around you. Collected dynamite can be used with `use_item(Items.Dynamite)` and explodes immediately below the drone.
 
-The revolutionary explosive, left behind by previous mining expeditions. (Un‑)fortunately, your drill is perfect to make dynamite explode, blasting away all the blocks around you.
+To safely mine dynamite, find a layer of `Grounds.Dynamite`, directly followed by a layer of `Grounds.Soot` below it. The dynamite layer above has gotten a bit old, and some of its blocks are safe to dig into. However, some of the dynamite blocks are still live and will explode when you dig into them.
 
-To safely mine dynamite, find a layer of `Grounds.Dynamite`, directly followed by another layer of `Grounds.Soot` below it. The dynamite layer above has gotten a bit old, and some of its blocks are safe to dig into. However, some of the dynamite blocks are still live and will explode when you dig into them.
-
-Collected dynamite can be used with `use_item(Items.Dynamite)` and explodes immediately below the drone.
-
-This example digs into dynamite and all around the initial dig point, printing the measurement of the soot blocks below:
+This example digs into dynamite and all around the initial dig point, revealing the soot layer with numbers on it, printing the measurement:
 {{codeexample 
 {
     "camera_position": {"x": -3, "y": 0, "z": 15},
@@ -34,9 +31,11 @@ for _ in range(3):
     move(East)
     move(North)
 #CODE
+# Dig down to the soot layer, through the dynamite layer above
 while get_ground_type() != Grounds.Soot:
     dig()
 
+# List of directions that make the drone move in a circle
 circle_directions = [
     East, South, West, West, 
     North, North, East, East
@@ -44,7 +43,7 @@ circle_directions = [
 for dir in circle_directions:
     move(dir)
     dig()
-    print(measure())
+    print(measure()) # The number on the soot block
 }}
 
 ## Dynamite Sweeper
@@ -113,10 +112,15 @@ circle_directions = [
     East, South, West, West, North,
     North, East, East, South, West
 ]
+# Go around the block we initially dug into
 for dir in circle_directions:
+    # If the soot measures 0,
+    # we know all surrounding dynamite blocks are duds
     if get_ground_type() == Grounds.Soot and measure() == 0:
+        # Do another circle through the surrounding blocks
         for dir2 in circle_directions:
             move(dir2)
+            # Dig up the dynamite dud block
             while get_ground_type() != Grounds.Soot:
                 dig()
     move(dir)

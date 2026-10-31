@@ -1,7 +1,6 @@
 [<- Iron](docs/unlocks/iron.md)
 ---
 # Iron Prospecting
-
 You may have noticed that it is sometimes hard to find iron veins. You could dig around and try to find them by chance, but there's a better way: since iron is magnetic, we can find it from a distance.
 
 The command `prospect_iron()` does exactly that. `prospect_iron()` returns the direction (`North`, `East`, `South`, or `West`) that the drone would have to move in to take a step toward the closest iron ore.
@@ -34,8 +33,9 @@ You can use the following code to move one step closer to the next iron ore:
 #SETUP
 jump(Unlocks.Iron)
 #CODE
+# Make sure prospect returns a direction
 if prospect_iron() != None:
-    move(prospect_iron())
+    move(prospect_iron()) # Move closer to the iron vein
 }}
 
 You may want to optimize this code with a variable because it currently calls `prospect_iron()` twice, costing 2 coal.
