@@ -57,7 +57,7 @@ Das nennt sich <b>Dokumentation</b>. Sie weiß mehr über dieses Spiel als ich.
 Schließe sie mit <b>x</b>, wenn du fertig bist.
 @tutorial_docs_reopen = Du kannst sie jederzeit mit <b>i</b> wieder öffnen.
 @tutorial_loop_tap_main = Jetzt bauen wir eine Schleife um das Ernten.
-Tippe auf <b>main</b>.
+Tippe noch einmal auf das Codefenster.
 @tutorial_loop_caret_swipe = Bewege zuerst den Cursor an den Anfang der Zeile.
 Wische seitwärts über die Tastatur, um den Cursor zu bewegen. Jede Taste geht.
 @tutorial_loop_caret_tap = Bewege zuerst den Cursor an den Anfang der Zeile.

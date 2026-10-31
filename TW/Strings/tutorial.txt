@@ -57,7 +57,7 @@
 看完後點選 <b>x</b> 關閉它。
 @tutorial_docs_reopen = 你隨時可以用 <b>i</b> 再次開啟它。
 @tutorial_loop_tap_main = 現在來讓收割循環起來。
-點選 <b>main</b>。
+再點選一次程式碼視窗。
 @tutorial_loop_caret_swipe = 首先，把游標移到行首。
 在鍵盤上橫向滑動可以移動游標。任何按鍵都可以。
 @tutorial_loop_caret_tap = 首先，把游標移到行首。

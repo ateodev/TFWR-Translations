@@ -57,7 +57,7 @@
 다 봤으면 <b>x</b>로 닫으세요.
 @tutorial_docs_reopen = 언제든 <b>i</b>로 다시 열 수 있어요.
 @tutorial_loop_tap_main = 이제 수확을 반복시켜 봐요.
-<b>main</b>을 탭하세요.
+코드 창을 다시 탭하세요.
 @tutorial_loop_caret_swipe = 먼저 커서를 줄 맨 앞으로 옮기세요.
 키보드에서 옆으로 드래그하면 커서가 움직여요. 아무 키나 괜찮아요.
 @tutorial_loop_caret_tap = 먼저 커서를 줄 맨 앞으로 옮기세요.

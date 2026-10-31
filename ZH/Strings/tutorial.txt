@@ -57,7 +57,7 @@
 看完后点按 <b>x</b> 关闭它。
 @tutorial_docs_reopen = 你随时可以用 <b>i</b> 再次打开它。
 @tutorial_loop_tap_main = 现在来让收割循环起来。
-点按 <b>main</b>。
+再点按一次代码窗口。
 @tutorial_loop_caret_swipe = 首先，把光标移到行首。
 在键盘上横向滑动可以移动光标。任意按键都可以。
 @tutorial_loop_caret_tap = 首先，把光标移到行首。

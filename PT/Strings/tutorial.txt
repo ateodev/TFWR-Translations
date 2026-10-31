@@ -57,7 +57,7 @@ Isso se chama <b>documentação</b>. Ela sabe mais sobre este jogo do que eu.
 Feche com <b>x</b> quando terminar.
 @tutorial_docs_reopen = Você pode abri-la de novo a qualquer momento com <b>i</b>.
 @tutorial_loop_tap_main = Agora vamos colocar essa colheita em um loop.
-Toque em <b>main</b>.
+Toque de novo na janela de código.
 @tutorial_loop_caret_swipe = Primeiro, mova o cursor para o início da linha.
 Arraste para o lado no teclado para mover o cursor. Qualquer tecla serve.
 @tutorial_loop_caret_tap = Primeiro, mova o cursor para o início da linha.

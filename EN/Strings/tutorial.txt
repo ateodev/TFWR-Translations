@@ -57,7 +57,7 @@ This is called the <b>documentation</b>. It knows more about this game than I do
 Close it with <b>x</b> when you're done.
 @tutorial_docs_reopen = You can open it again anytime with <b>i</b>.
 @tutorial_loop_tap_main = Now let's loop that harvest.
-Tap <b>main</b>.
+Tap the code window again.
 @tutorial_loop_caret_swipe = First, move the cursor to the start of the line.
 Drag sideways on the keyboard to move the cursor. Any key works.
 @tutorial_loop_caret_tap = First, move the cursor to the start of the line.

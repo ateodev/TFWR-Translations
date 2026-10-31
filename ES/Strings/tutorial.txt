@@ -57,7 +57,7 @@ Esto es la <b>documentación</b>. Sabe más de este juego que yo.
 Ciérrala con <b>x</b> cuando termines.
 @tutorial_docs_reopen = Puedes volver a abrirla cuando quieras con <b>i</b>.
 @tutorial_loop_tap_main = Ahora vamos a repetir esa cosecha en bucle.
-Toca <b>main</b>.
+Toca otra vez la ventana de código.
 @tutorial_loop_caret_swipe = Primero, mueve el cursor al principio de la línea.
 Desliza el dedo de lado sobre el teclado para mover el cursor. Vale cualquier tecla.
 @tutorial_loop_caret_tap = Primero, mueve el cursor al principio de la línea.

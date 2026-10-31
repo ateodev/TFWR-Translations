@@ -57,7 +57,7 @@ To <b>dokumentacja</b>. Wie o tej grze więcej niż ja.
 Zamknij ją przyciskiem <b>x</b>, gdy skończysz.
 @tutorial_docs_reopen = Możesz ją otworzyć w każdej chwili przyciskiem <b>i</b>.
 @tutorial_loop_tap_main = Teraz zapętlijmy te zbiory.
-Dotknij <b>main</b>.
+Dotknij ponownie okna kodu.
 @tutorial_loop_caret_swipe = Najpierw przesuń kursor na początek wiersza.
 Przeciągnij palcem w bok po klawiaturze, aby przesunąć kursor. Dowolny klawisz zadziała.
 @tutorial_loop_caret_tap = Najpierw przesuń kursor na początek wiersza.

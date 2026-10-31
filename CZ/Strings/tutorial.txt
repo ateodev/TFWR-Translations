@@ -57,7 +57,7 @@ Tomu se říká <b>dokumentace</b>. Ví o téhle hře víc než já.
 Až skončíš, zavři ji pomocí <b>x</b>.
 @tutorial_docs_reopen = Kdykoli ji znovu otevřeš pomocí <b>i</b>.
 @tutorial_loop_tap_main = Teď tu sklizeň zacyklíme.
-Klepni na <b>main</b>.
+Klepni znovu na okno s kódem.
 @tutorial_loop_caret_swipe = Nejdřív přesuň kurzor na začátek řádku.
 Táhni prstem do strany po klávesnici a kurzor se posune. Funguje to na jakékoli klávese.
 @tutorial_loop_caret_tap = Nejdřív přesuň kurzor na začátek řádku.

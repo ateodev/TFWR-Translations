@@ -57,7 +57,7 @@
 読み終わったら <b>x</b> で閉じてください。
 @tutorial_docs_reopen = <b>i</b> でいつでも開き直せます。
 @tutorial_loop_tap_main = では、収穫をループさせましょう。
-<b>main</b> をタップしてください。
+もう一度コードウィンドウをタップしてください。
 @tutorial_loop_caret_swipe = まず、カーソルを行の先頭に動かします。
 キーボードの上で横にドラッグするとカーソルが動きます。どのキーでも大丈夫です。
 @tutorial_loop_caret_tap = まず、カーソルを行の先頭に動かします。

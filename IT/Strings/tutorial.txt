@@ -57,7 +57,7 @@ Questa è la <b>documentazione</b>. Sa più cose di questo gioco di me.
 Chiudila con <b>x</b> quando hai finito.
 @tutorial_docs_reopen = Puoi riaprirla in qualsiasi momento con <b>i</b>.
 @tutorial_loop_tap_main = Ora mettiamo quel raccolto in un ciclo.
-Tocca <b>main</b>.
+Tocca di nuovo la finestra di codice.
 @tutorial_loop_caret_swipe = Prima, sposta il cursore all'inizio della riga.
 Trascina di lato sulla tastiera per spostare il cursore. Va bene qualsiasi tasto.
 @tutorial_loop_caret_tap = Prima, sposta il cursore all'inizio della riga.
