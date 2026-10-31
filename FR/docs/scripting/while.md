@@ -6,7 +6,7 @@ Tu as débloqué la boucle `while` et les valeurs `True` et `False`. La boucle `
 `while condition:
 	#corps de la boucle`
 
-Ne t'inquiète pas de créer des boucles infinies. Les délais dans l'exécution empêcheront le programme de se figer.
+Ne t'inquiète pas de créer des boucles infinies. Le drone risque de rester bloqué, mais le jeu entier ne se figera pas : tu peux simplement arrêter le programme en cours et réessayer.
 
 ## Pour les Débutants
 Peut-être as-tu déjà essayé de mettre plusieurs appels `harvest()` à la suite :
@@ -39,9 +39,8 @@ harvest()
 harvest()
 harvest()
 }}
-
 Cela te permet de récolter plusieurs fois en une seule exécution du programme.
-Cependant, ce serait bien de récolter plus de trois fois, et écrire le même code plusieurs fois est une mauvaise pratique.
+Cependant, ce serait bien de récolter plus de trois fois, et écrire le même code plusieurs fois rend vite le programme brouillon.
 La solution est une boucle.
 Une boucle te permet d'exécuter le même code plusieurs fois.
 
@@ -89,7 +88,6 @@ Donc tu pourrais soit écrire
 while False:
 	do_a_flip()
 }}
-
 ou
 
 {{codeexample 
@@ -118,13 +116,12 @@ ou
 while True:
 	do_a_flip()
 }}
-
 Le premier ne fera jamais de looping et le second en fera pour toujours (une boucle infinie).
 
 Normalement, créer une boucle infinie est une mauvaise idée car cela figera le programme, mais dans ce jeu, il y a des délais entre chaque itération de la boucle, donc cela fera que le drone continuera à faire des loopings jusqu'à ce que tu l'arrêtes manuellement en appuyant à nouveau sur le bouton d'exécution.
 
 Remarque comment la ligne après les deux-points est indentée. Une indentation comme celle-ci est utilisée pour séparer les blocs de code.
-Appuie simplement sur Tab pour ajouter une indentation et sur Maj + Tab (ou <desktop>Retour arrière</desktop><mobile>Supprimer</mobile>) pour la supprimer.
+Appuie simplement sur Tab pour ajouter une indentation et sur Maj + Tab (ou <desktop>Retour arrière</desktop><mobile>Supprimer</mobile>) pour la supprimer. Si plusieurs lignes sont sélectionnées, Tab et Maj + Tab s'appliquent à toutes.
 
 <desktop>Remarque : si tu joues via Steam, appuyer sur Maj + Tab ouvre plutôt l’interface Steam. Tu peux réassigner le raccourci de désindentation dans les options du jeu, ou le raccourci de l’interface dans les options de l’interface Steam.
 </desktop>

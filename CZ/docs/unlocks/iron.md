@@ -3,7 +3,6 @@
 <right>[Mapa pokladu ->](docs/unlocks/treasure_map.md)
 ---
 # Železo
-
 Až najdeš uhlí v `Grounds.Dirt`, můžeš kopat hlouběji, skrz vrstvu `Grounds.Clay` až do `Grounds.Rock`, a najít železo.
 
 Na rozdíl od uhelných žil se železné žíly táhnou i svisle. Všechny bloky železa v žíle ale vždy leží přímo vedle sebe, bloky nikdy nejsou spojené jen úhlopříčně.
@@ -31,8 +30,11 @@ Na rozdíl od uhelných žil se železné žíly táhnou i svisle. Všechny blok
 }
 #SETUP
 #CODE
+# Kopej, dokud se neobjeví blok železa
 while get_ground_type() != Grounds.Iron:
     dig()
+
+# Vytěž železo
 dig()
 }}
 

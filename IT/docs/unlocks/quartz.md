@@ -1,10 +1,9 @@
 [<- Ferro](docs/unlocks/iron.md) <right>[Funghi ->](docs/unlocks/mushroom.md)
 ---
 # Quarzo
-
 Proseguendo dalle vene di ferro in `Grounds.Rock`, trovi il quarzo nella parte inferiore dello strato di roccia e nella `Grounds.Dirt` dura sottostante (controlla la durezza con `get_hardness()` dello sblocco [Sensi Sotterranei](docs/unlocks/underground_senses.md)).
 
-Il codice seguente fa scavare il drone oltre la terra e in profondità nello strato di roccia. Con un po' di fortuna ci sarà una vena di quarzo nelle vicinanze e il drone ne stamperà la distanza.
+Il codice seguente scava oltre la terra e nello strato di roccia. Lì continua a fare prospezioni per il quarzo mentre scava, finché la distanza non è inferiore a 2. Infine stampa la distanza di prospezione raggiunta.
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -15,7 +14,7 @@ Il codice seguente fa scavare il drone oltre la terra e in profondità nello str
     "show_output": false,
     "collapsing": true,
     "autoplay": false,
-    "items": [],
+    "items": [{"item": "block", "n": 1}, {"item": "iron", "n": 100}],
     "world_size": {"x": 3, "y": 3},
     "execution_speed": 8,
     "digging_speed": 16,
@@ -28,13 +27,16 @@ Il codice seguente fa scavare il drone oltre la terra e in profondità nello str
 move(East)
 move(North)
 #CODE
+# Scava fino allo strato di roccia
 while get_ground_type() != Grounds.Rock:
     dig()
-for i in range(30):
-    dig()
 
-print(prospect_quartz())
-move(South)
+# Continua a scavare finché una vena di quarzo non è vicina
+while prospect_quartz() == None or prospect_quartz() >= 2:
+    for i in range(10):
+        dig()
+
+# Stampa la distanza finale dalla vena
 print(prospect_quartz())
 }}
 
@@ -51,11 +53,13 @@ Eseguire `prospect_quartz()` costa 1 ferro, quindi conviene usare il comando con
 Se `prospect_quartz()` non trova quarzo nelle vicinanze oppure non hai abbastanza ferro per eseguire la ricerca, restituisce `None`.
 
 ## Strategia
-<spoiler=mostra suggerimento>
-Puoi fare prospezioni e spostarti più volte per osservare come cambia la distanza, così da capire se ti stai avvicinando o allontanando da una vena. Puoi usare la geometria 2D per trovare l'intersezione tra due o più cerchi, così da individuare la posizione orizzontale di una vena e scavare verso il basso. Oppure puoi usare la trilaterazione completa per intersecare tre sfere e trovare la posizione 3D esatta.
+<spoiler=mostra suggerimento>Puoi fare prospezioni e spostarti più volte per osservare come cambia la distanza. Su una superficie piana, cercare di ridurre al minimo la distanza può portarti sopra una vena di quarzo. Puoi usare una strategia simile alla ricerca binaria per ridurre al minimo il numero di chiamate a `prospect_quartz()` e la quantità di ferro che consumano.
 
-Nota che non esistono funzioni matematiche integrate per la radice quadrata, la trigonometria o i vettori: dovrai implementarle da solo. Nota anche che nelle vicinanze possono esserci più vene, quindi se fai più misurazioni vicine, potrebbero non puntare alla stessa vena e portarti fuori strada.
-</spoiler>
+Strategie più elaborate possono usare la geometria 2D per trovare l'intersezione tra due o più cerchi, oppure puoi scegliere la via difficile e usare la trilaterazione completa per intersecare tre sfere e trovare la posizione 3D esatta della vena.
+
+Nota che per calcolare una radice quadrata puoi usare l'operatore di potenza: per esempio, per ottenere la radice quadrata di 16, usa `16**0.5`. Non esistono funzioni matematiche integrate per la trigonometria o i vettori: dovrai implementarle da solo.
+
+Nota anche che nelle vicinanze possono esserci più vene, quindi se fai più misurazioni vicine, potrebbero non puntare alla stessa vena.</spoiler>
 
 ---
 

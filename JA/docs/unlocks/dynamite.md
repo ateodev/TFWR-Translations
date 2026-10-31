@@ -1,14 +1,11 @@
 [<- キノコ](docs/unlocks/mushroom.md) <right>[爆発ドリル ->](docs/unlocks/explosive_drill.md)
 ---
 # ダイナマイト
-
-かつての採掘隊が残した画期的な爆薬です。幸いなことに（あるいは不幸なことに）、あなたのドリルはダイナマイトを爆発させるのにぴったりで、周囲のブロックを吹き飛ばすことができます。
+かつての採掘隊が残した画期的な爆薬です。残念なことに、あなたのドリルはダイナマイトを爆発させるのにぴったりで、周囲のブロックを吹き飛ばしてしまいます。集めたダイナマイトは`use_item(Items.Dynamite)`で使用でき、ドローンの真下ですぐに爆発します。
 
 ダイナマイトを安全に採掘するには、`Grounds.Dynamite`の層と、そのすぐ下に続く`Grounds.Soot`の層を見つけましょう。上のダイナマイトの層は古くなっており、安全に掘れるブロックもあります。しかし、まだ爆発するダイナマイトブロックも残っていて、掘ると爆発します。
 
-集めたダイナマイトは`use_item(Items.Dynamite)`で使用でき、ドローンの真下ですぐに爆発します。
-
-この例では、ダイナマイトを掘ってから最初に掘った地点の周りをぐるりと掘り、下にあるすすのブロックの測定値を表示します。
+この例では、ダイナマイトを掘ってから最初に掘った地点の周りをぐるりと掘り、数字の書かれたすすの層を露出させて、その測定値を表示します。
 {{codeexample 
 {
     "camera_position": {"x": -3, "y": 0, "z": 15},
@@ -34,9 +31,11 @@ for _ in range(3):
     move(East)
     move(North)
 #CODE
+# 上のダイナマイトの層を掘り抜いて、すすの層まで掘り下げる
 while get_ground_type() != Grounds.Soot:
     dig()
 
+# ドローンを円を描くように動かす方向のリスト
 circle_directions = [
     East, South, West, West, 
     North, North, East, East
@@ -44,7 +43,7 @@ circle_directions = [
 for dir in circle_directions:
     move(dir)
     dig()
-    print(measure())
+    print(measure()) # すすのブロックに書かれた数字
 }}
 
 ## ダイナマイトスイーパー
@@ -113,10 +112,15 @@ circle_directions = [
     East, South, West, West, North,
     North, East, East, South, West
 ]
+# 最初に掘ったブロックの周りを回る
 for dir in circle_directions:
+    # すすの測定値が0なら、
+    # 周囲のダイナマイトブロックはすべて不発だとわかる
     if get_ground_type() == Grounds.Soot and measure() == 0:
+        # 周囲のブロックをもう一周する
         for dir2 in circle_directions:
             move(dir2)
+            # 不発のダイナマイトブロックを掘り出す
             while get_ground_type() != Grounds.Soot:
                 dig()
     move(dir)

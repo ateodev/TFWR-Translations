@@ -1,7 +1,6 @@
 [<- 鉄](docs/unlocks/iron.md)
 ---
 # 鉄の探査
-
 すでに気づかれたかもしれませんが、鉄の鉱脈はなかなか見つからないことがあります。手当たり次第に掘って偶然見つけることもできますが、もっとよい方法があります。鉄は磁性を持つので、離れた場所から探せるのです。
 
 `prospect_iron()`コマンドがその役割を果たします。`prospect_iron()`は、最も近い鉄鉱石に1ステップ近づくためにドローンが進むべき方向（`North`、`East`、`South`、`West`）を返します。
@@ -34,8 +33,9 @@
 #SETUP
 jump(Unlocks.Iron)
 #CODE
+# 探査で方向が返ることを確認する
 if prospect_iron() != None:
-    move(prospect_iron())
+    move(prospect_iron()) # 鉄の鉱脈に近づく
 }}
 
 このコードでは`prospect_iron()`を2回呼ぶため、石炭を2個消費しているので、変数を使って最適化したほうがよいかもしれません。

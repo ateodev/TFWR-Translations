@@ -1,8 +1,9 @@
 [<- 鉄](docs/unlocks/iron.md)
 ---
 # 宝物の地図
+伝説によれば、ずっと昔に死んだ忘れっぽい海賊か、それに似たような誰かが幻の宝物を隠したそうです。もし、彼らが宝物までの道を地図に書いて、その地図をなくしたとしたらどうなるでしょうか？溶岩の川に追い詰められて地図を落とし、玄武岩の層の下に保存されたのかもしれません。
 
-伝説によれば、ずっと昔に死んだ忘れっぽい海賊か、それに似たような誰かが幻の宝物を隠したそうです。もし、彼らが宝物までの道を地図に書いて、その地図をなくしたとしたらどうなるでしょうか？溶岩の川に追い詰められて地図を落とし、玄武岩の層の下に保存されたのかもしれません。玄武岩を測定すれば何かわかるかもしれません。
+玄武岩のブロックを測定すれば何かわかるかもしれません！
 
 <spoiler=もう少し教えてください>
 `Grounds.Basalt`の層を探してください。玄武岩を測定し、何がわかるか見てみましょう。手掛かりをたどれば宝物の地図に行き着くかもしれません。地図を測定すれば宝物までの道がわかるはずですが、その指示を読み解けるでしょうか？
@@ -36,10 +37,11 @@
 #SETUP
 jump(Unlocks.Treasure_Map)
 #CODE
+# 玄武岩の層を探す
 while get_ground_type() != Grounds.Basalt:
     dig()
 
-do_a_flip()
+# 玄武岩を測定すると宝物の地図の位置が返る
 map_pos = measure()
 
 while get_pos_x() < map_pos[0]:
@@ -50,9 +52,12 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 
+# 地図を見つけたので、測定して道を調べる
 do_a_flip()
 instructions = measure()
 print("指示: ", instructions)
+
+# 地図を掘って宝探しを始める
 dig()
 }}
 
@@ -91,8 +96,10 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 #CODE
-path = measure()
-for letter in path:
+# 地図の指示は1つの文字列として返る
+instructions = measure()
+# for-inで文字列を1文字ずつに分ける
+for letter in instructions:
     print(letter)
 }}
 

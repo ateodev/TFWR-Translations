@@ -3,7 +3,6 @@
 <right>[藏宝图->](docs/unlocks/treasure_map.md)
 ---
 # 铁矿
-
 在 `Grounds.Dirt` 中找到煤炭后，你可以继续往下挖，穿过 `Grounds.Clay` 层进入 `Grounds.Rock`，寻找铁矿。
 
 与煤炭矿脉不同，铁矿脉也会纵向延伸。但同一条矿脉中的铁矿地块总是直接相邻，从不只以对角线相连。
@@ -31,8 +30,11 @@
 }
 #SETUP
 #CODE
+# 挖到出现铁矿地块为止
 while get_ground_type() != Grounds.Iron:
     dig()
+
+# 开采铁矿
 dig()
 }}
 

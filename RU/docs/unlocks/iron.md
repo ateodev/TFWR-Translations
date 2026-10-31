@@ -31,8 +31,11 @@
 }
 #SETUP
 #CODE
+# Копать, пока не появится блок железа
 while get_ground_type() != Grounds.Iron:
     dig()
+
+# Добыть железо
 dig()
 }}
 

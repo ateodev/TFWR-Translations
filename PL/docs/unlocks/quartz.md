@@ -4,7 +4,7 @@
 
 Poniżej żył żelaza w `Grounds.Rock` znajdziesz kwarc w dolnej części warstwy skał i w twardej `Grounds.Dirt` poniżej (twardość sprawdzisz za pomocą `get_hardness()` z odblokowania [Podziemne zmysły](docs/unlocks/underground_senses.md)).
 
-Poniższy fragment kodu pozwala dronowi przekopać się przez ziemię i głęboko wejść w warstwę skał. Przy odrobinie szczęścia w pobliżu znajdzie się żyła kwarcu, a dron wyświetli odległość do niej.
+Poniższy fragment kodu przekopuje się przez ziemię do warstwy skał. Tam podczas kopania nieustannie szuka kwarcu, dopóki odległość nie spadnie poniżej 2. Na koniec wypisuje odległość, na której się zatrzymał.
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -15,7 +15,7 @@ Poniższy fragment kodu pozwala dronowi przekopać się przez ziemię i głębok
     "show_output": false,
     "collapsing": true,
     "autoplay": false,
-    "items": [],
+    "items": [{"item": "block", "n": 1}, {"item": "iron", "n": 100}],
     "world_size": {"x": 3, "y": 3},
     "execution_speed": 8,
     "digging_speed": 16,
@@ -28,13 +28,16 @@ Poniższy fragment kodu pozwala dronowi przekopać się przez ziemię i głębok
 move(East)
 move(North)
 #CODE
+# Kop w dół do warstwy skał
 while get_ground_type() != Grounds.Rock:
     dig()
-for i in range(30):
-    dig()
 
-print(prospect_quartz())
-move(South)
+# Kop dalej, aż żyła kwarcu będzie blisko
+while prospect_quartz() == None or prospect_quartz() >= 2:
+    for i in range(10):
+        dig()
+
+# Wypisz końcową odległość do żyły
 print(prospect_quartz())
 }}
 
@@ -51,11 +54,13 @@ Wykonanie `prospect_quartz()` kosztuje 1 żelazo, więc warto używać go oszcz�
 Jeśli `prospect_quartz()` nie znajdzie kwarcu w pobliżu albo nie masz dość żelaza na poszukiwanie, zwróci `None`.
 
 ## Strategia
-<spoiler=pokaż podpowiedź>
-Możesz wielokrotnie prowadzić poszukiwania i się przemieszczać, obserwując, jak zmienia się odległość, aby wiedzieć, czy zbliżasz się do żyły, czy się od niej oddalasz. Za pomocą geometrii 2D możesz znaleźć punkt przecięcia dwóch lub więcej okręgów, ustalić poziome położenie żyły i kopać w dół. Możesz też użyć pełnej trilateracji, aby przeciąć trzy sfery i znaleźć dokładną pozycję 3D.
+<spoiler=pokaż podpowiedź>Możesz wielokrotnie prowadzić poszukiwania i się przemieszczać, obserwując, jak zmienia się odległość. Na płaskiej powierzchni dążenie do jak najmniejszej odległości może doprowadzić cię nad żyłę kwarcu. Możesz użyć strategii podobnej do wyszukiwania binarnego, aby ograniczyć liczbę wywołań `prospect_quartz()` i ilość zużywanego przez nie żelaza.
 
-Pamiętaj, że nie ma wbudowanych funkcji matematycznych do pierwiastka kwadratowego, trygonometrii ani wektorów, więc musisz je napisać sam. Pamiętaj też, że w pobliżu może być kilka żył, więc jeśli wykonasz kilka pomiarów blisko siebie, mogą nie wskazywać tej samej żyły i wprowadzić cię w błąd.
-</spoiler>
+Bardziej złożone strategie mogą wykorzystywać geometrię 2D do znalezienia punktu przecięcia dwóch lub więcej okręgów. Możesz też pójść trudniejszą drogą i użyć pełnej trilateracji, aby przeciąć trzy sfery i znaleźć dokładną pozycję 3D żyły.
+
+Pamiętaj, że pierwiastek kwadratowy możesz obliczyć za pomocą operatora potęgowania, na przykład pierwiastek kwadratowy z 16 to `16**0.5`. Nie ma wbudowanych funkcji matematycznych do trygonometrii ani wektorów, więc musisz je napisać sam.
+
+Pamiętaj też, że w pobliżu może być kilka żył, więc jeśli wykonasz kilka pomiarów blisko siebie, mogą nie wskazywać tej samej żyły.</spoiler>
 
 ---
 

@@ -4,7 +4,7 @@
 
 Seguindo além dos veios de ferro em `Grounds.Rock`, você encontra quartzo na parte inferior da camada de pedra e na `Grounds.Dirt` dura abaixo dela (verifique a dureza usando `get_hardness()` do desbloqueio [Sentidos Subterrâneos](docs/unlocks/underground_senses.md)).
 
-O código a seguir faz o drone atravessar a terra e escavar fundo na camada de rocha. Com um pouco de sorte, haverá um veio de quartzo por perto, e o drone imprimirá a distância até ele.
+O código a seguir atravessa a terra e escava até a camada de rocha. Lá, ele prospecta quartzo continuamente enquanto escava, até que a distância seja menor que 2. Por fim, imprime a distância de prospecção a que chegou.
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -15,7 +15,7 @@ O código a seguir faz o drone atravessar a terra e escavar fundo na camada de r
     "show_output": false,
     "collapsing": true,
     "autoplay": false,
-    "items": [],
+    "items": [{"item": "block", "n": 1}, {"item": "iron", "n": 100}],
     "world_size": {"x": 3, "y": 3},
     "execution_speed": 8,
     "digging_speed": 16,
@@ -28,13 +28,16 @@ O código a seguir faz o drone atravessar a terra e escavar fundo na camada de r
 move(East)
 move(North)
 #CODE
+# Escave até a camada de rocha
 while get_ground_type() != Grounds.Rock:
     dig()
-for i in range(30):
-    dig()
 
-print(prospect_quartz())
-move(South)
+# Continue escavando até um veio de quartzo estar perto
+while prospect_quartz() == None or prospect_quartz() >= 2:
+    for i in range(10):
+        dig()
+
+# Imprima a distância final até o veio
 print(prospect_quartz())
 }}
 
@@ -51,11 +54,13 @@ Executar `prospect_quartz()` custa 1 ferro, então use-o com moderação.
 Se `prospect_quartz()` não encontrar quartzo por perto ou você não tiver ferro suficiente, ele retorna `None`.
 
 ## Estratégia
-<spoiler=mostrar dica>
-Você pode prospectar e se mover repetidamente para ver como a distância muda, o que indica se você está se aproximando ou se afastando de um veio. Você pode usar geometria 2D para encontrar a interseção entre dois ou mais círculos, achar a posição horizontal de um veio e escavar para baixo. Ou pode usar trilateração completa para intersectar três esferas e encontrar a posição 3D exata.
+<spoiler=mostrar dica>Você pode prospectar e se mover repetidamente para ver como a distância muda. Em uma superfície plana, tentar minimizar a distância pode colocar você acima de um veio de quartzo. Você pode usar uma estratégia parecida com a busca binária para minimizar o número de chamadas de `prospect_quartz()` e a quantidade de ferro que elas consomem.
 
-Observe que não há funções matemáticas embutidas para raiz quadrada, trigonometria ou vetores; você terá que implementá-las por conta própria. Observe também que pode haver vários veios nas proximidades, então, se você fizer várias medições próximas, elas podem não apontar para o mesmo veio e acabar te confundindo.
-</spoiler>
+Estratégias mais elaboradas podem usar geometria 2D para encontrar a interseção entre dois ou mais círculos, ou você pode seguir o caminho difícil e usar trilateração completa para intersectar três esferas e encontrar a posição 3D exata do veio.
+
+Observe que, para calcular uma raiz quadrada, você pode usar o operador de exponenciação. Por exemplo, para obter a raiz quadrada de 16, use `16**0.5`. Não há funções matemáticas embutidas para trigonometria ou vetores; você terá que implementá-las por conta própria. 
+
+Observe também que pode haver vários veios nas proximidades, então, se você fizer várias medições próximas, elas podem não apontar para o mesmo veio.</spoiler>
 
 ---
 

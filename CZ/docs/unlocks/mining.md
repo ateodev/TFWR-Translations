@@ -3,7 +3,6 @@
 <right>[Uhlí ->](docs/unlocks/coal.md)
 ---
 # Těžba
-
 Tvůj dron získal primitivní vrták, se kterým může hledat poklady v podzemí.
 
 Příkazem `dig()` kopeš do bloku pod sebou.
@@ -46,7 +45,6 @@ Pokud se chceš vrátit na povrch, můžeš kdykoli použít `clear()`. To záro
 <desktop>Najetí myší na blok</desktop><mobile>Klepnutí na blok</mobile> zobrazí jeho název, stabilitu a tvrdost.
 
 # Vrták
-
 Čím hlouběji kopeš, tím tvrdší jsou bloky a tím déle kopání trvá. Naštěstí si můžeme vrták vylepšit!
 
 Aby se tvůj dron v podzemí vyznal, měl bys rychle odemknout [podzemní senzory](docs/unlocks/underground_senses.md). Díky nim zjistí svou vlastní pozici z a také druh půdy pod sebou, její tvrdost a stabilitu.
@@ -62,7 +60,6 @@ S [podzemními senzory](docs/unlocks/underground_senses.md) například pomocí 
 Bloky jsou samozřejmě čím dál tvrdší, takže tahle strategie sice pomáhá, ale jen do určité míry.
 
 ## Sesuvy
-
 Kopání dolů způsobí sesuv okolních bloků. Čtyři bloky vedle dronu jsou zničeny vždy. Poté se sesuv šíří podle stability půdy. Blok se stabilitou 1, například louka, vydrží výškový rozdíl 1. Jinými slovy, pokud má louka svislého nebo vodorovného souseda, jehož souřadnice z je o 2 nebo více bloků hlouběji, louka se zničí.
 
 Stabilita bloku je uvedena v jeho nápovědě<desktop> po najetí myší</desktop>.

@@ -4,10 +4,11 @@
 
 Seu drone desbloqueou o comando `jump()`. Use-o passando um desbloqueio como argumento, como `Unlocks.Iron`.
 
-Este comando permite escolher como alvo certos desbloqueios escondidos no solo e saltar instantaneamente até eles. É especialmente útil para depuração ou para pular direto para um veio de minério que você acabou de deixar passar.
+Este comando permite escolher como alvo certos recursos escondidos no solo e saltar instantaneamente até eles. É especialmente útil para depuração ou para pular direto para um veio de minério que você acabou de deixar passar.
 
-Depois do salto, o desbloqueio escolhido deve estar a no máximo 3 blocos da superfície. `jump()` só pode ser usado uma vez por execução do programa; novas tentativas de salto produzem um erro.
+Depois do salto, o recurso escolhido deve estar a no máximo 3 blocos da superfície. `jump()` só pode ser usado uma vez por execução do programa; novas tentativas de salto produzem um erro.
 
+O exemplo a seguir salta até o [arroz](docs/unlocks/rice.md), encontra a camada de argila e planta uma fileira de terraços de arroz:
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -29,9 +30,12 @@ Depois do salto, o desbloqueio escolhido deve estar a no máximo 3 blocos da sup
     "starting_chunk": 0
 }
 #CODE
+# Salte para perto do recurso de arroz
 jump(Unlocks.Rice)
 
+# Plante uma fileira de terraços de arroz
 for i in range(get_world_size()):
+    # O salto não é exato, escave os últimos blocos
     while get_ground_type() != Grounds.Clay:
         dig()
 

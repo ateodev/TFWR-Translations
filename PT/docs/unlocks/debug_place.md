@@ -2,7 +2,9 @@
 ---
 # Blocos Coloridos
 
-Como você já sabe, pode usar `place()` para fazer o drone colocar um bloco. Este desbloqueio adiciona três blocos coloridos visualmente distintos dos arredores: `Grounds.Red_Block`, `Grounds.Green_Block` e `Grounds.Blue_Block`.
+Como você talvez já saiba, pode usar `place()` para fazer o drone colocar um bloco. Este desbloqueio adiciona três blocos coloridos visualmente distintos dos arredores: `Grounds.Block_Red`, `Grounds.Block_Green` e `Grounds.Block_Blue`.
+
+Blocos coloridos podem ser usados para marcar coisas ou criar padrões bonitos.
 
 Para colocar os novos blocos:
 
@@ -30,32 +32,32 @@ Para colocar os novos blocos:
 move(East)
 move(North)
 #CODE
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(East)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(East)
 
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(North)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(North)
 
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(West)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(West)
 
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(South)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(East)
 
-place(Grounds.Red_Block)
-place(Grounds.Red_Block)
+place(Grounds.Block_Red)
+place(Grounds.Block_Red)
 
 do_a_flip()
 }}

@@ -1,7 +1,6 @@
 [<- Riz](docs/unlocks/rice.md)
 
 # Perlite et terreau
-
 Ce déblocage ajoute deux nouveaux types de blocs souterrains : la perlite et le terreau (`Grounds.Perlite` et `Grounds.Loam`). Lorsque tu récoltes des cultures plantées sur ces sols, tu obtiens un rendement double.
 
 La perlite et le terreau apparaissent en fines couches souterraines, comme l’argile, mais ils sont un peu plus rares.

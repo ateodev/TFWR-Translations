@@ -1,7 +1,6 @@
 [<-石英](docs/unlocks/quartz.md) <right>[炸藥->](docs/unlocks/dynamite.md)
 ---
 # 蘑菇
-
 地下有許多種蘑菇成群生長。挖掘時尋找一層 `Grounds.Mushroom`。隨後，可以對地塊使用 `measure()`，以數字形式取得蘑菇類型，範圍從 `0` 到 `5`。
 
 下面的程式碼會找到一些蘑菇，並列印它們的類型：
@@ -27,15 +26,19 @@
 #SETUP
 jump(Unlocks.Mushrooms)
 #CODE
+# 處理一排蘑菇
 for i in range(get_world_size()):
+    # 往下挖到最上方的蘑菇地塊
     while get_ground_type() != Grounds.Mushroom:
         dig()
 
+    # 列印蘑菇類型的編號
     print(measure())
 
     move(East)
 }}
 
+## 如何收集蘑菇
 同類蘑菇喜歡待在一起，卻又有點太害羞，不會疊著長。使用 `push(direction)` 可以推動無人機下方的蘑菇地塊。
 
 把兩個相同類型的蘑菇地塊疊在一起，它們就會被自動收穫，讓你獲得蘑菇。
@@ -68,11 +71,13 @@ while get_ground_type() != Grounds.Mushroom:
 
 depth = get_pos_z()
 for i in range(2):
+    # 騰出空間，以便把蘑菇地塊往東推
     move(East)
     while get_pos_z() > depth - 1:
         dig()
+    # 移回去、推動，再跟上被推動的地塊
     move(West)
-    push(East)
+    push(East) # 推動蘑菇！
     move(East)
 }}
 

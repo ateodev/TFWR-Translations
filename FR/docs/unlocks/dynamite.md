@@ -1,14 +1,11 @@
 [<- Champignon](docs/unlocks/mushroom.md) <right>[Foreuse explosive ->](docs/unlocks/explosive_drill.md)
 ---
 # Dynamite
-
-L’explosif révolutionnaire, abandonné par de précédentes expéditions minières. Malheureusement — ou heureusement — ta foreuse est parfaite pour faire exploser la dynamite et pulvériser tous les blocs alentour.
+L’explosif révolutionnaire, abandonné par de précédentes expéditions minières. Malheureusement, ta foreuse est parfaite pour faire exploser la dynamite et pulvériser tous les blocs alentour. La dynamite récupérée peut être utilisée avec `use_item(Items.Dynamite)` et explose immédiatement sous le drone.
 
 Pour extraire la dynamite sans danger, trouve une couche de `Grounds.Dynamite` directement suivie d’une couche de `Grounds.Soot` en dessous. La couche de dynamite du dessus a un peu vieilli : certains de ses blocs peuvent être forés sans danger. Mais certains blocs de dynamite sont encore actifs et exploseront si tu les fores.
 
-La dynamite récupérée peut être utilisée avec `use_item(Items.Dynamite)` et explose immédiatement sous le drone.
-
-Cet exemple fore dans la dynamite et tout autour du point de forage initial, en affichant la mesure des blocs de suie situés dessous :
+Cet exemple fore dans la dynamite et tout autour du point de forage initial, ce qui révèle la couche de suie et ses nombres, et affiche la mesure :
 {{codeexample 
 {
     "camera_position": {"x": -3, "y": 0, "z": 15},
@@ -34,9 +31,11 @@ for _ in range(3):
     move(East)
     move(North)
 #CODE
+# Creuser jusqu’à la couche de suie, à travers la couche de dynamite du dessus
 while get_ground_type() != Grounds.Soot:
     dig()
 
+# Liste de directions qui font tourner le drone en cercle
 circle_directions = [
     East, South, West, West, 
     North, North, East, East
@@ -44,7 +43,7 @@ circle_directions = [
 for dir in circle_directions:
     move(dir)
     dig()
-    print(measure())
+    print(measure()) # Le nombre sur le bloc de suie
 }}
 
 ## Démineur de dynamite
@@ -113,10 +112,15 @@ circle_directions = [
     East, South, West, West, North,
     North, East, East, South, West
 ]
+# Faire le tour du bloc foré au départ
 for dir in circle_directions:
+    # Si la suie mesure 0,
+    # tous les blocs de dynamite voisins sont inertes
     if get_ground_type() == Grounds.Soot and measure() == 0:
+        # Refaire un tour par les blocs voisins
         for dir2 in circle_directions:
             move(dir2)
+            # Extraire le bloc de dynamite inerte
             while get_ground_type() != Grounds.Soot:
                 dig()
     move(dir)

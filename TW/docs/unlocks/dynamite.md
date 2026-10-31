@@ -1,14 +1,11 @@
 [<- 蘑菇](docs/unlocks/mushroom.md) <right>[爆破鑽頭 ->](docs/unlocks/explosive_drill.md)
 ---
 # 炸藥
-
-這種革命性的爆炸物是以前的採礦隊留下的。（不）幸運的是，你的鑽頭正好能引爆炸藥，把周圍的地塊炸開。
+這種革命性的爆炸物是以前的採礦隊留下的。不幸的是，你的鑽頭正好能引爆炸藥，把周圍的地塊炸開。收集到的炸藥可以透過 `use_item(Items.Dynamite)` 使用，並立即在無人機下方爆炸。
 
 想安全地開採炸藥，就要找到一層 `Grounds.Dynamite`，其正下方緊接著一層 `Grounds.Soot`。上層的炸藥已經老化，其中一些地塊可以安全挖掘。不過，還有一些炸藥地塊是實彈，挖到就會爆炸。
 
-收集到的炸藥可以透過 `use_item(Items.Dynamite)` 使用，並立即在無人機下方爆炸。
-
-這個範例會挖入炸藥層，再沿著最初挖掘點周圍挖一圈，並列印下方各個黑煙地塊的測量值：
+這個範例會挖入炸藥層，再沿著最初挖掘點周圍挖一圈，露出帶有數字的黑煙層，並列印測量值：
 {{codeexample 
 {
     "camera_position": {"x": -3, "y": 0, "z": 15},
@@ -34,9 +31,11 @@ for _ in range(3):
     move(East)
     move(North)
 #CODE
+# 穿過上方的炸藥層，往下挖到黑煙層
 while get_ground_type() != Grounds.Soot:
     dig()
 
+# 讓無人機繞一圈移動的方向串列
 circle_directions = [
     East, South, West, West, 
     North, North, East, East
@@ -44,7 +43,7 @@ circle_directions = [
 for dir in circle_directions:
     move(dir)
     dig()
-    print(measure())
+    print(measure()) # 黑煙地塊上的數字
 }}
 
 ## 炸藥踩地雷
@@ -113,10 +112,15 @@ circle_directions = [
     East, South, West, West, North,
     North, East, East, South, West
 ]
+# 繞著最初挖入的地塊走一圈
 for dir in circle_directions:
+    # 如果黑煙的測量值為 0，
+    # 就代表周圍的炸藥地塊全都是啞彈
     if get_ground_type() == Grounds.Soot and measure() == 0:
+        # 再穿過周圍的地塊繞一圈
         for dir2 in circle_directions:
             move(dir2)
+            # 挖掉啞彈炸藥地塊
             while get_ground_type() != Grounds.Soot:
                 dig()
     move(dir)

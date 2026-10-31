@@ -32,8 +32,11 @@ move(North)
 move(East)
 move(East)
 #CODE
+# Escave até aparecer um bloco de carvão
 while get_ground_type() != Grounds.Coal:
     dig()
+
+# Minere o carvão
 dig()
 }}
 

@@ -27,15 +27,19 @@ Poniższy kod znajduje kilka grzybów i wypisuje ich rodzaj:
 #SETUP
 jump(Unlocks.Mushrooms)
 #CODE
+# Przetwórz rząd grzybów
 for i in range(get_world_size()):
+    # Kop w dół do najwyższego bloku grzyba
     while get_ground_type() != Grounds.Mushroom:
         dig()
 
+    # Wypisz numer rodzaju grzyba
     print(measure())
 
     move(East)
 }}
 
+## Jak zbierać grzyby
 Grzyby tego samego rodzaju lubią być razem, ale są zbyt nieśmiałe, by rosnąć jeden na drugim. Popchnij blok grzyba pod dronem za pomocą `push(direction)`.
 
 Ułóż dwa bloki grzybów tego samego rodzaju jeden na drugim, a zostaną automatycznie zebrane i dadzą ci grzyby.
@@ -68,11 +72,13 @@ while get_ground_type() != Grounds.Mushroom:
 
 depth = get_pos_z()
 for i in range(2):
+    # Zrób miejsce, aby popchnąć blok grzyba na wschód
     move(East)
     while get_pos_z() > depth - 1:
         dig()
+    # Wróć, popchnij i podążaj za popchniętym blokiem
     move(West)
-    push(East)
+    push(East) # Popchnij grzyba!
     move(East)
 }}
 

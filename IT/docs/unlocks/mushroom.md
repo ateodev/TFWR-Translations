@@ -1,7 +1,6 @@
 [<- Quarzo](docs/unlocks/quartz.md) <right>[Dinamite ->](docs/unlocks/dynamite.md)
 ---
 # Funghi
-
 Molti tipi di funghi crescono in colonie sotterranee. Mentre scavi, cerca uno strato di `Grounds.Mushroom`. Puoi quindi usare `measure()` sul terreno per ottenere il tipo di fungo sotto forma di numero, da `0` a `5`.
 
 Il codice seguente trova alcuni funghi e ne stampa il tipo:
@@ -27,15 +26,19 @@ Il codice seguente trova alcuni funghi e ne stampa il tipo:
 #SETUP
 jump(Unlocks.Mushrooms)
 #CODE
+# Elabora una fila di funghi
 for i in range(get_world_size()):
+    # Scava fino al blocco di funghi più in alto
     while get_ground_type() != Grounds.Mushroom:
         dig()
 
+    # Stampa il numero del tipo di fungo
     print(measure())
 
     move(East)
 }}
 
+## Come Raccogliere i Funghi
 I funghi dello stesso tipo amano stare insieme, ma sono troppo timidi per crescere uno sopra l'altro. Spingi il blocco di funghi sotto il drone con `push(direction)`.
 
 Impila due blocchi di funghi dello stesso tipo uno sopra l'altro e i blocchi verranno raccolti automaticamente, dandoti i loro funghi.
@@ -68,11 +71,13 @@ while get_ground_type() != Grounds.Mushroom:
 
 depth = get_pos_z()
 for i in range(2):
+    # Fai spazio per spingere il blocco di funghi verso est
     move(East)
     while get_pos_z() > depth - 1:
         dig()
+    # Torna indietro, spingi e segui il blocco spinto
     move(West)
-    push(East)
+    push(East) # Spingi il fungo!
     move(East)
 }}
 

@@ -1,10 +1,11 @@
 [<- Bambou](docs/unlocks/bamboo.md)
 ---
 # Pyramides
-Le sous-sol contient désormais d’anciennes structures pyramidales dont tu peux récolter de la puissance !
+Le sous-sol contient désormais d’anciennes structures pyramidales dont tu peux récolter de la puissance pour accélérer ton drone !
 
-Les pyramides sont constituées de blocs de sable (`Grounds.Sand`). Sous la pyramide elle-même se trouve une couche de fondation en calcaire (`Grounds.Limestone`). Comme elles sont anciennes et érodées, tu ne les trouveras que partiellement détruites. La couche de fondation est toujours présente, mais le sable comporte des trous. Voici à quoi ressemble une ruine de pyramide une fois dégagée :
+Les pyramides sont constituées de blocs de sable (`Grounds.Sand`). Sous la pyramide elle-même se trouve une couche de fondation en calcaire (`Grounds.Limestone`). Comme elles sont anciennes et érodées, tu ne les trouveras que partiellement détruites. La couche de fondation est toujours présente, mais le sable comporte des trous.
 
+Voici à quoi ressemble une ruine de pyramide une fois dégagée :
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -28,9 +29,13 @@ Les pyramides sont constituées de blocs de sable (`Grounds.Sand`). Sous la pyra
 jump(Unlocks.Pyramid)
 move(North)
 #CODE
+# Creuser jusqu’à trouver la fondation d’une pyramide
 while get_ground_type() != Grounds.Limestone:
     dig()
-z = get_pos_z()
+
+z = get_pos_z() # Retenir la profondeur de la fondation
+
+# Dégager tout ce qui ne fait pas partie de la pyramide
 for i in range(6):
     for j in range(6):
         while (get_ground_type() != Grounds.Limestone
@@ -41,7 +46,8 @@ for i in range(6):
     move(East)
 }}
 
-Comme tu peux le voir, le sable présente plusieurs trous qu’il faudra combler. Lorsque tu les remplis et restaures la pyramide dans son état d’origine, elle se détruit et un grand tournesol apparaît au centre de la base en calcaire. Récolte-le pour recevoir de la puissance. Plus la pyramide achevée est grande, plus tu reçois de puissance.
+## Restaurer la pyramide
+Comme tu peux le voir, le sable présente plusieurs trous qu’il faudra combler. Lorsque tu les remplis et restaures la pyramide dans son état d’origine, elle se détruit et un grand tournesol apparaît au centre de la base en calcaire. Récolte-le pour recevoir de la `Items.Power`. Plus la pyramide achevée est grande, plus tu reçois de puissance.
 
 Tu peux restaurer une pyramide en plaçant des blocs avec la commande `place(Grounds.Sand)`. Le sable est un bloc spécial qui s’effondre immédiatement s’il n’est pas correctement soutenu. Chaque bloc de sable doit être placé soit directement sur du calcaire, soit sur une surface de sable de 3x3. Voici une petite pyramide construite à la main pour illustrer le principe. Bien sûr, la construire toi-même ne te rapportera aucune puissance :
 
@@ -65,26 +71,42 @@ Tu peux restaurer une pyramide en plaçant des blocs avec la commande `place(Gro
     "exclude_unlocks": ["watering", "fertilizer", "mushrooms", "coal", "quartz"]
 }
 #CODE
+# Il faut une fondation en calcaire pour y poser du sable
 for i in range(3):
     for j in range(3):
         place(Grounds.Limestone)
         move(North)
     move(East)
 
+# Poser une couche de sable de 3x3 sur le calcaire
 for i in range(3):
     for j in range(3):
         place(Grounds.Sand)
         move(North)
     move(East)
 
-move(North)
-move(East)
-place(Grounds.Sand)
+# Essayer de poser une autre couche de 3x3
+# Seul le bloc du milieu est soutenu et reste en place
+for i in range(3):
+    for j in range(3):
+        place(Grounds.Sand)
+        move(North)
+    move(East)
 }}
 
 Une pyramide correctement restaurée possède une fondation carrée en calcaire dont les côtés ont une longueur impaire, par exemple 5x5. Elle est surmontée d’une couche de blocs de sable de même taille (5x5), puis de couches de plus en plus petites : 3x3, puis 1x1.
 
-Les blocs situés au-dessus de la pyramide sont toujours en terre. Tu peux exploiter cette information pour dégager une pyramide plus efficacement qu’avec le code ci-dessus.
+Les blocs situés au-dessus de la pyramide sont toujours en terre. Tu peux exploiter cette information pour dégager une pyramide efficacement.
+
+## Puissance
+Tant que tu as de la puissance, le drone l’utilise pour fonctionner deux fois plus vite.
+Il consomme 1 de puissance toutes les 30 actions, comme les déplacements, les récoltes ou les plantations.
+Exécuter d’autres instructions de code peut aussi utiliser de la puissance, mais beaucoup moins que les actions du drone.
+
+En général, tout ce qui est accéléré par les améliorations de vitesse est aussi accéléré par la puissance.
+Tout ce qui est accéléré par la puissance utilise aussi de la puissance proportionnellement au temps nécessaire à son exécution, sans tenir compte des améliorations de vitesse.
+
+La puissance n’a aucun effet sur `dig()`.
 
 ---
 

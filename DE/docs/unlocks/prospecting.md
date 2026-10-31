@@ -1,7 +1,6 @@
 [<- Eisen](docs/unlocks/iron.md)
 ---
 # Eisensuche
-
 Vielleicht ist dir schon aufgefallen, dass Eisenerzadern manchmal schwer zu finden sind. Du könntest einfach auf gut Glück herumgraben, aber es gibt eine bessere Methode: Da Eisen magnetisch ist, können wir es aus der Entfernung aufspüren.
 
 Der Befehl `prospect_iron()` tut genau das. `prospect_iron()` gibt die Richtung (`North`, `East`, `South` oder `West`) zurück, in die sich die Drohne bewegen müsste, um dem nächstgelegenen Eisenerz einen Schritt näher zu kommen.
@@ -34,8 +33,9 @@ Mit dem folgenden Code kannst du dich dem nächsten Eisenerz um einen Schritt n�
 #SETUP
 jump(Unlocks.Iron)
 #CODE
+# Sicherstellen, dass prospect eine Richtung zurückgibt
 if prospect_iron() != None:
-    move(prospect_iron())
+    move(prospect_iron()) # Näher an die Eisenader heranbewegen
 }}
 
 Du solltest diesen Code vielleicht mithilfe einer Variable optimieren, denn momentan ruft er `prospect_iron()` zweimal auf und kostet daher 2 Kohle.

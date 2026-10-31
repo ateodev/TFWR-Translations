@@ -19,13 +19,13 @@ Si tu récoltes un tournesol avec le nombre maximum de pétales, tu obtiens un b
 @object_descr_treasure = Un trésor qui contient une quantité d’or égale à l’aire du labyrinthe dans lequel il est caché. Il peut être récolté comme une plante.
 @object_descr_dinosaur = Un morceau de la queue du chapeau de dinosaure.
 @object_descr_grassland = Le sol par défaut. L'herbe y poussera automatiquement.
-@object_descr_soil = Appeler `till()` transforme le sol en terre labourée. L'appeler à nouveau le retransforme en prairie.
+@object_descr_soil = Appeler `till()` transforme le sol en terre labourée. Appeler à nouveau `till()` le retransforme en prairie.
 @object_descr_dirt = C’est de la terre.
 @object_descr_rock = C’est une roche dure.
 @object_descr_clay = Un bloc d’argile. Un sol fertile, idéal pour le riz. Lorsqu’un plant de riz arrive à maturité, il retransforme l’argile située dessous en terre.
-@object_descr_blue_block = Un bloc bleu.
-@object_descr_red_block = Un bloc rouge.
-@object_descr_green_block = Un bloc vert.
+@object_descr_block_blue = Un bloc bleu.
+@object_descr_block_red = Un bloc rouge.
+@object_descr_block_green = Un bloc vert.
 @object_descr_coal = Un bloc riche en charbon sédimentaire.
 @object_descr_iron = Un bloc contenant de la magnétite brute.
 @object_descr_quartz = Un bloc renfermant du quartz cristallin.

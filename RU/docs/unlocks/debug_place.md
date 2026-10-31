@@ -2,7 +2,9 @@
 ---
 # Цветные блоки
 
-Как ты уже знаешь, с помощью `place()` дрон может устанавливать блоки. Эта технология добавляет три цветных блока, заметно отличающихся от окружения: `Grounds.Red_Block`, `Grounds.Green_Block` и `Grounds.Blue_Block`.
+Как ты, возможно, уже знаешь, с помощью `place()` дрон может устанавливать блоки. Эта технология добавляет три цветных блока, заметно отличающихся от окружения: `Grounds.Block_Red`, `Grounds.Block_Green` и `Grounds.Block_Blue`.
+
+Цветными блоками можно что-нибудь помечать или выкладывать красивые узоры.
 
 Чтобы установить новые блоки:
 
@@ -30,32 +32,32 @@
 move(East)
 move(North)
 #CODE
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(East)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(East)
 
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(North)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(North)
 
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(West)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(West)
 
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(South)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(East)
 
-place(Grounds.Red_Block)
-place(Grounds.Red_Block)
+place(Grounds.Block_Red)
+place(Grounds.Block_Red)
 
 do_a_flip()
 }}

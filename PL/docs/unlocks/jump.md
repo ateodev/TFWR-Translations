@@ -4,10 +4,11 @@
 
 Twój dron odblokował polecenie `jump()`. Używa się go, przekazując odblokowanie jako argument, na przykład `Unlocks.Iron`.
 
-To polecenie pozwala wskazać określone odblokowania ukryte w ziemi i natychmiast przenieść się w dół prosto do nich. Jest szczególnie przydatne podczas debugowania lub do szybkiego dotarcia do niedawno pominiętej żyły rudy.
+To polecenie pozwala wskazać określone zasoby ukryte w ziemi i natychmiast przenieść się w dół prosto do nich. Jest szczególnie przydatne podczas debugowania lub do szybkiego dotarcia do niedawno pominiętej żyły rudy.
 
-Po skoku docelowe odblokowanie powinno znajdować się w odległości do 3 bloków od najwyższej powierzchni bloków. `jump()` można użyć tylko raz podczas jednego wykonania programu, a kolejne próby skoku spowodują błąd.
+Po skoku docelowy zasób powinien znajdować się w odległości do 3 bloków od najwyższej powierzchni bloków. `jump()` można użyć tylko raz podczas jednego wykonania programu, a kolejne próby skoku spowodują błąd.
 
+Poniższy przykład przenosi drona w dół do [ryżu](docs/unlocks/rice.md), znajduje warstwę gliny i sadzi rząd tarasów ryżowych:
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -29,9 +30,12 @@ Po skoku docelowe odblokowanie powinno znajdować się w odległości do 3 blok�
     "starting_chunk": 0
 }
 #CODE
+# Skocz blisko zasobu ryżu
 jump(Unlocks.Rice)
 
+# Posadź rząd tarasów ryżowych
 for i in range(get_world_size()):
+    # Skok nie jest dokładny, wykop ostatnie bloki
     while get_ground_type() != Grounds.Clay:
         dig()
 

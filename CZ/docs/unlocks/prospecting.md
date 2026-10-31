@@ -1,7 +1,6 @@
 [<- Železo](docs/unlocks/iron.md)
 ---
 # Hledání železa
-
 Možná sis všiml, že železné žíly je někdy těžké najít. Mohl bys kopat kolem a zkoušet je najít náhodou, ale existuje lepší způsob: železo je magnetické, takže ho můžeme najít na dálku.
 
 Přesně to dělá příkaz `prospect_iron()`. `prospect_iron()` vrací světovou stranu (`North`, `East`, `South` nebo `West`), kterou by se dron musel vydat, aby udělal krok k nejbližší železné rudě.
@@ -34,8 +33,9 @@ Následující kód posune dron o krok blíž k nejbližší železné rudě:
 #SETUP
 jump(Unlocks.Iron)
 #CODE
+# Ověř, že prospect vrací směr
 if prospect_iron() != None:
-    move(prospect_iron())
+    move(prospect_iron()) # Přesuň se blíž k železné žíle
 }}
 
 Tento kód bys mohl optimalizovat pomocí proměnné, protože teď volá `prospect_iron()` dvakrát, což stojí 2 uhlí.

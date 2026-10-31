@@ -1,14 +1,11 @@
 [<- Funghi](docs/unlocks/mushroom.md) <right>[Trivella Esplosiva ->](docs/unlocks/explosive_drill.md)
 ---
 # Dinamite
+Il rivoluzionario esplosivo lasciato dalle precedenti spedizioni minerarie. Sfortunatamente, la tua trivella è perfetta per far esplodere la dinamite e spazzare via tutti i blocchi intorno a te. La dinamite raccolta può essere usata con `use_item(Items.Dynamite)` ed esplode immediatamente sotto il drone.
 
-Il rivoluzionario esplosivo lasciato dalle precedenti spedizioni minerarie. Per (s)fortuna, la tua trivella è perfetta per far esplodere la dinamite e spazzare via tutti i blocchi intorno a te.
+Per estrarre la dinamite in sicurezza, trova uno strato di `Grounds.Dynamite` seguito direttamente da uno strato di `Grounds.Soot` sotto di esso. Lo strato di dinamite superiore è ormai vecchio e alcuni dei suoi blocchi possono essere scavati senza pericolo. Alcuni blocchi di dinamite, però, sono ancora attivi ed esploderanno quando li scavi.
 
-Per estrarre la dinamite in sicurezza, trova uno strato di `Grounds.Dynamite` seguito direttamente da un altro strato di `Grounds.Soot` sotto di esso. Lo strato di dinamite superiore è ormai vecchio e alcuni dei suoi blocchi possono essere scavati senza pericolo. Alcuni blocchi di dinamite, però, sono ancora attivi ed esploderanno quando li scavi.
-
-La dinamite raccolta può essere usata con `use_item(Items.Dynamite)` ed esplode immediatamente sotto il drone.
-
-Questo esempio scava nella dinamite e tutto intorno al punto di scavo iniziale, stampando la misurazione dei blocchi di fuliggine sottostanti:
+Questo esempio scava nella dinamite e tutto intorno al punto di scavo iniziale, scoprendo lo strato di fuliggine con i numeri sopra e stampando la misurazione:
 {{codeexample 
 {
     "camera_position": {"x": -3, "y": 0, "z": 15},
@@ -34,9 +31,11 @@ for _ in range(3):
     move(East)
     move(North)
 #CODE
+# Scava fino allo strato di fuliggine, attraverso lo strato di dinamite sopra
 while get_ground_type() != Grounds.Soot:
     dig()
 
+# Elenco di direzioni che fanno muovere il drone in cerchio
 circle_directions = [
     East, South, West, West, 
     North, North, East, East
@@ -44,7 +43,7 @@ circle_directions = [
 for dir in circle_directions:
     move(dir)
     dig()
-    print(measure())
+    print(measure()) # Il numero sul blocco di fuliggine
 }}
 
 ## Campo Minato di Dinamite
@@ -113,10 +112,15 @@ circle_directions = [
     East, South, West, West, North,
     North, East, East, South, West
 ]
+# Gira intorno al blocco in cui abbiamo scavato all'inizio
 for dir in circle_directions:
+    # Se la fuliggine misura 0,
+    # sappiamo che tutti i blocchi di dinamite intorno sono inerti
     if get_ground_type() == Grounds.Soot and measure() == 0:
+        # Fai un altro giro attraverso i blocchi circostanti
         for dir2 in circle_directions:
             move(dir2)
+            # Scava il blocco di dinamite inerte
             while get_ground_type() != Grounds.Soot:
                 dig()
     move(dir)

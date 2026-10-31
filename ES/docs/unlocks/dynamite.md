@@ -1,14 +1,11 @@
 [<- Hongo](docs/unlocks/mushroom.md) <right>[Taladro explosivo ->](docs/unlocks/explosive_drill.md)
 ---
 # Dinamita
+El explosivo revolucionario que dejaron atrás expediciones mineras anteriores. Por desgracia, tu taladro es perfecto para hacer explotar la dinamita y volar todos los bloques que te rodean. La dinamita recogida se puede usar con `use_item(Items.Dynamite)` y explota inmediatamente debajo del dron.
 
-El explosivo revolucionario que dejaron atrás expediciones mineras anteriores. Por (mala) suerte, tu taladro es perfecto para hacer explotar la dinamita y volar todos los bloques que te rodean.
+Para extraer dinamita de forma segura, encuentra una capa de `Grounds.Dynamite` seguida justo debajo de una capa de `Grounds.Soot`. La capa de dinamita de arriba se ha quedado algo vieja y es seguro excavar algunos de sus bloques. Sin embargo, algunos de los bloques de dinamita siguen activos y explotarán al excavarlos.
 
-Para extraer dinamita de forma segura, encuentra una capa de `Grounds.Dynamite` seguida justo debajo de otra capa de `Grounds.Soot`. La capa de dinamita de arriba se ha quedado algo vieja y es seguro excavar algunos de sus bloques. Sin embargo, algunos de los bloques de dinamita siguen activos y explotarán al excavarlos.
-
-La dinamita recogida se puede usar con `use_item(Items.Dynamite)` y explota inmediatamente debajo del dron.
-
-Este ejemplo excava en la dinamita y en todas las casillas alrededor del punto inicial de excavación, e imprime la medición de los bloques de hollín que hay debajo:
+Este ejemplo excava en la dinamita y en todas las casillas alrededor del punto inicial de excavación, deja al descubierto la capa de hollín con sus números e imprime la medición:
 {{codeexample 
 {
     "camera_position": {"x": -3, "y": 0, "z": 15},
@@ -34,9 +31,11 @@ for _ in range(3):
     move(East)
     move(North)
 #CODE
+# Excava hasta la capa de hollín, atravesando la capa de dinamita de arriba
 while get_ground_type() != Grounds.Soot:
     dig()
 
+# Lista de direcciones que hacen que el dron se mueva en círculo
 circle_directions = [
     East, South, West, West, 
     North, North, East, East
@@ -44,7 +43,7 @@ circle_directions = [
 for dir in circle_directions:
     move(dir)
     dig()
-    print(measure())
+    print(measure()) # El número del bloque de hollín
 }}
 
 ## Buscaminas de dinamita
@@ -113,10 +112,15 @@ circle_directions = [
     East, South, West, West, North,
     North, East, East, South, West
 ]
+# Rodea el bloque que excavamos al principio
 for dir in circle_directions:
+    # Si la medición del hollín es 0,
+    # sabemos que todos los bloques de dinamita de alrededor son inertes
     if get_ground_type() == Grounds.Soot and measure() == 0:
+        # Da otra vuelta por los bloques de alrededor
         for dir2 in circle_directions:
             move(dir2)
+            # Excava el bloque de dinamita inerte
             while get_ground_type() != Grounds.Soot:
                 dig()
     move(dir)

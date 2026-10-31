@@ -1,4 +1,4 @@
-@unlock_tooltip_template_cost = ### Unlock Cost {{{{itemblock cost unlock {0}}}}}
+@unlock_tooltip_template_cost = ### Вартість розблокування {{{{itemblock cost unlock {0}}}}}
 @unlock_tooltip_template_additional_requirement = ### Вимоги до розблокування
 Розблокування {0} має бути на рівні {1} або вище.
 @unlock_descr_trees = Розблоковує дерева.
@@ -90,10 +90,13 @@ set_execution_speed(1)`
 @unlock_descr_leaderboard = Відкрийте таблицю лідерів, щоб подивитися найшвидший час.
 
 `leaderboard_run(Leaderboards.Hay, "hay_file", speedup)`
+@unlock_descr_underground_leaderboard = Відкрийте підземну таблицю лідерів, щоб подивитися найшвидший час.
+
+`leaderboard_run(Leaderboards.Rice, "rice_file", speedup)`
 @unlock_descr_dicts = Отримайте доступ до словників та наборів.
 
 `right_of = {North:East, East:South, South:West, West:North}`
-@unlock_descr_utilities = Розблоковує `min()`, `max()`, `abs()` and `random()` функції.
+@unlock_descr_utilities = Розблоковує функції `min()`, `max()`, `abs()` і `random()`.
 
 `random_index = random() * len(list) // 1`
 @unlock_descr_cactus = Кактуси!
@@ -128,7 +131,7 @@ other_file.function()`
 @unlock_descr_drill = Підвищує силу бура.
 @unlock_descr_debug_place = Розміщуйте кольорові блоки.
 
-`place(Grounds.Red_Block)`
+`place(Grounds.Block_Blue)`
 @unlock_descr_underground_senses = Сенсори дрона для взаємодії з підземними клітинками
 
 `while get_pos_z() < 100:
@@ -187,6 +190,7 @@ other_file.function()`
 @hats = Капелюхи
 @import = Імпорт
 @leaderboard = Дошка лідерів
+@underground_leaderboard = Підземна дошка лідерів
 @lists = Перелік
 @loops = Цикли
 @mazes = Лабіринти

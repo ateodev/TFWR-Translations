@@ -1,11 +1,11 @@
 [<- Bambus](docs/unlocks/bamboo.md)
 ---
 # Barevné bloky
+Jak už možná víš, pomocí `place()` může dron položit blok. Toto odemčení přidává tři barevné bloky, které se vizuálně odlišují od svého okolí: `Grounds.Block_Red`, `Grounds.Block_Green` a `Grounds.Block_Blue`.
 
-Jak už víš, pomocí `place()` může dron položit blok. Toto odemčení přidává tři barevné bloky, které se vizuálně odlišují od svého okolí: `Grounds.Red_Block`, `Grounds.Green_Block` a `Grounds.Blue_Block`.
+Barevné bloky můžeš použít k označení věcí nebo k vytváření pěkných vzorů.
 
 Jak položit nové bloky:
-
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 10},
@@ -30,32 +30,32 @@ Jak položit nové bloky:
 move(East)
 move(North)
 #CODE
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(East)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(East)
 
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(North)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(North)
 
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(West)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(West)
 
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(South)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(East)
 
-place(Grounds.Red_Block)
-place(Grounds.Red_Block)
+place(Grounds.Block_Red)
+place(Grounds.Block_Red)
 
 do_a_flip()
 }}

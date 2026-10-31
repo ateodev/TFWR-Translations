@@ -1,7 +1,6 @@
 [<- Fer](docs/unlocks/iron.md)
 ---
 # Prospection du fer
-
 Tu as peut-être remarqué qu’il est parfois difficile de trouver des filons de fer. Tu pourrais creuser au hasard en espérant tomber dessus, mais il existe une meilleure méthode : le fer étant magnétique, nous pouvons le repérer à distance.
 
 La commande `prospect_iron()` sert précisément à cela. `prospect_iron()` renvoie la direction (`North`, `East`, `South` ou `West`) dans laquelle le drone doit se déplacer pour faire un pas vers le minerai de fer le plus proche.
@@ -34,8 +33,9 @@ Tu peux utiliser le code suivant pour te rapprocher d’un pas du prochain miner
 #SETUP
 jump(Unlocks.Iron)
 #CODE
+# S’assurer que la prospection renvoie une direction
 if prospect_iron() != None:
-    move(prospect_iron())
+    move(prospect_iron()) # Se rapprocher du filon de fer
 }}
 
 Tu peux optimiser ce code avec une variable, car il appelle actuellement `prospect_iron()` deux fois et coûte donc 2 charbons.

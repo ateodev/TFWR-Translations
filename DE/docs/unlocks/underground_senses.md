@@ -3,11 +3,12 @@
 # Unterirdische Sinne
 Statten wir deine Drohne mit einigen Sensoren aus, damit sie sich unter der Erde zurechtfindet.
 
+## Z-Position
 Du kannst jetzt mit `get_pos_z()` die Höhe der Drohne abfragen. Sie beginnt bei 0 und wird negativ, während die Drohne nach unten fliegt.
 
 {{codeexample 
 {
-    "camera_position": {"x": -1.5, "y": 0, "z": 8},
+    "camera_position": {"x": -1.5, "y": 0, "z": 10},
     "show_image": true,
     "image_size": {"x": 800, "y": 300},
     "show_code": true,
@@ -17,7 +18,7 @@ Du kannst jetzt mit `get_pos_z()` die Höhe der Drohne abfragen. Sie beginnt bei
     "autoplay": false,
     "exclude_unlocks": ["watering", "fertilizer"],
     "items": [],
-    "world_size": {"x": 4, "y": 4},
+    "world_size": {"x": 5, "y": 5},
     "execution_speed": 2,
     "action_ticks": 200,
     "operation_ticks": 200,
@@ -27,13 +28,16 @@ Du kannst jetzt mit `get_pos_z()` die Höhe der Drohne abfragen. Sie beginnt bei
 move(North)
 move(North)
 move(East)
+move(East)
 #CODE
+print(get_pos_z())
 dig()
 dig()
 dig()
 print(get_pos_z())
 }}
 
+## Bodenart
 `get_ground_type()` gibt die Art des Bodens unter der Drohne zurück. Du kannst eine Richtung als Argument übergeben – zum Beispiel `get_ground_type(North)` –, um die Bodenart eines benachbarten Feldes abzufragen.
 
 So prüfst du, ob der Block unter der Drohne aus Erde besteht:
@@ -69,7 +73,7 @@ if get_ground_type() == Grounds.Dirt:
 
 {{codeexample 
 {
-    "camera_position": {"x": -1, "y": 0, "z": 8},
+    "camera_position": {"x": -1, "y": 0, "z": 10},
     "show_image": true,
     "image_size": {"x": 800, "y": 250},
     "show_code": true,
@@ -79,7 +83,7 @@ if get_ground_type() == Grounds.Dirt:
     "autoplay": false,
     "items": [],
     "exclude_unlocks": ["watering", "fertilizer"],
-    "world_size": {"x": 3, "y": 3},
+    "world_size": {"x": 5, "y": 5},
     "execution_speed": 2,
     "action_ticks": 200,
     "operation_ticks": 20,

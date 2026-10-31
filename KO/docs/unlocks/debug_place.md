@@ -1,11 +1,11 @@
 [<- 대나무](docs/unlocks/bamboo.md)
 ---
 # 알록달록 블록
+이미 알고 있을 수도 있지만 `place()`를 사용하면 드론에게 블록을 배치하도록 할 수 있습니다. 이 해금 항목으로 주변과 시각적으로 구분되는 세 가지 색상 블록 `Grounds.Block_Red`, `Grounds.Block_Green`, `Grounds.Block_Blue`를 추가할 수 있습니다.
 
-이미 알고 있듯이 `place()`를 사용하면 드론에게 블록을 배치하도록 할 수 있습니다. 이 해금 항목으로 주변과 시각적으로 구분되는 세 가지 색상 블록 `Grounds.Red_Block`, `Grounds.Green_Block`, `Grounds.Blue_Block`을 추가할 수 있습니다.
+색상 블록은 무언가를 표시하거나 예쁜 무늬를 만드는 데 사용할 수 있습니다.
 
 새 블록을 배치하려면
-
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 10},
@@ -30,32 +30,32 @@
 move(East)
 move(North)
 #CODE
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(East)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(East)
 
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(North)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(North)
 
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(West)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(West)
 
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(South)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(East)
 
-place(Grounds.Red_Block)
-place(Grounds.Red_Block)
+place(Grounds.Block_Red)
+place(Grounds.Block_Red)
 
 do_a_flip()
 }}

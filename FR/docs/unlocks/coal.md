@@ -2,7 +2,6 @@
 <right>[Saut ->](docs/unlocks/jump.md)
 ---
 # Charbon
-
 Différents minerais sont cachés sous terre et n’attendent que toi pour être trouvés et extraits. Si tu creuses à travers la surface jusque dans `Grounds.Dirt`, le premier minerai que tu trouves est le charbon.
 
 Tu n’as rien de spécial à faire pour extraire du charbon : exécute simplement `dig()` pendant que le drone se trouve juste au-dessus d’un bloc `Grounds.Coal`. Utilise `get_ground_type()` pour vérifier ce qu’il y a sous le drone et `get_ground_type(direction)` pour vérifier les quatre blocs adjacents.
@@ -32,8 +31,11 @@ move(North)
 move(East)
 move(East)
 #CODE
+# Creuser jusqu’à ce qu’un bloc de charbon apparaisse
 while get_ground_type() != Grounds.Coal:
     dig()
+
+# Extraire le charbon
 dig()
 }}
 

@@ -2,7 +2,6 @@
 <right>[跳转->](docs/unlocks/jump.md)
 ---
 # 煤炭
-
 地下藏着各种矿石，等着你去发现和挖掘。如果你挖穿地表进入 `Grounds.Dirt`，最先找到的矿石就是煤炭。
 
 开采煤炭无需任何特殊操作，只要在无人机正好位于 `Grounds.Coal` 地块上方时执行 `dig()` 即可。使用 `get_ground_type()` 检查无人机下方是什么，使用 `get_ground_type(direction)` 检查四个相邻地块。
@@ -32,8 +31,11 @@ move(North)
 move(East)
 move(East)
 #CODE
+# 挖到出现煤炭地块为止
 while get_ground_type() != Grounds.Coal:
     dig()
+
+# 开采煤炭
 dig()
 }}
 

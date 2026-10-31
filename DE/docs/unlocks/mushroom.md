@@ -1,7 +1,6 @@
 [<- Quarz](docs/unlocks/quartz.md) <right>[Dynamit ->](docs/unlocks/dynamite.md)
 ---
 # Pilze
-
 Viele Pilzarten wachsen unterirdisch in Kolonien. Suche beim Graben nach einer Schicht aus `Grounds.Mushroom`. Mit `measure()` kannst du dann den Pilztyp als Zahl von `0` bis `5` ermitteln.
 
 Der folgende Code findet einige Pilze und gibt ihren Typ aus:
@@ -27,15 +26,19 @@ Der folgende Code findet einige Pilze und gibt ihren Typ aus:
 #SETUP
 jump(Unlocks.Mushrooms)
 #CODE
+# Eine Reihe Pilze abarbeiten
 for i in range(get_world_size()):
+    # Bis zum obersten Pilzblock hinuntergraben
     while get_ground_type() != Grounds.Mushroom:
         dig()
 
+    # Die Nummer des Pilztyps ausgeben
     print(measure())
 
     move(East)
 }}
 
+## So sammelst du Pilze
 Pilze desselben Typs sind gern zusammen, aber etwas zu schüchtern, um übereinander zu wachsen. Schiebe den Pilzblock unter der Drohne mit `push(direction)`.
 
 Staple zwei Pilzblöcke desselben Typs übereinander, dann werden die Blöcke automatisch geerntet und du erhältst ihre Pilze.
@@ -68,11 +71,13 @@ while get_ground_type() != Grounds.Mushroom:
 
 depth = get_pos_z()
 for i in range(2):
+    # Platz schaffen, um den Pilzblock nach Osten zu schieben
     move(East)
     while get_pos_z() > depth - 1:
         dig()
+    # Zurückgehen, schieben und dem geschobenen Block folgen
     move(West)
-    push(East)
+    push(East) # Schieb den Pilz!
     move(East)
 }}
 

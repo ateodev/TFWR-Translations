@@ -3,11 +3,9 @@
 <right>[Perlit i gleba próchnicza ->](docs/unlocks/special_soils.md)
 ---
 # Ryż
-Pod powierzchnią i warstwą `Grounds.Dirt` mogłeś zauważyć cienką warstwę `Grounds.Clay`. Okazuje się, że to żyzne i nasiąknięte podłoże idealnie nadaje się do sadzenia ryżu.
+Pod powierzchnią i warstwą `Grounds.Dirt` znajdziesz cienką warstwę `Grounds.Clay`. Okazuje się, że to żyzne i nasiąknięte podłoże idealnie nadaje się do sadzenia ryżu.
 
-Tak jak w przypadku trawy czy krzewów, dopóki dron znajduje się nad blokiem `Grounds.Clay`, możesz użyć `plant(Entities.Rice)`, aby posadzić sadzonki ryżu w glinie, następnie `can_harvest()`, aby sprawdzić, czy ryż w pełni urósł, a na koniec `harvest()`, aby zebrać ryż.
-
-Poniższy kod może pomóc ci kopać w dół, aż znajdziesz glinę, i posadzić ryż.
+Poniższy kod może pomóc ci kopać w dół, aż znajdziesz glinę, i posadzić ryż:
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -18,7 +16,7 @@ Poniższy kod może pomóc ci kopać w dół, aż znajdziesz glinę, i posadzić
     "show_output": false,
     "collapsing": true,
     "autoplay": false,
-    "items": [{"item": "hay", "n": 1}],
+    "items": [],
     "exclude_unlocks": ["watering", "fertilizer"],
     "world_size": {"x": 4, "y": 4},
     "execution_speed": 8,
@@ -34,6 +32,8 @@ while get_ground_type() != Grounds.Clay:
     dig()
 plant(Entities.Rice)
 }}
+
+Dopóki dron znajduje się nad blokiem `Grounds.Clay`, możesz użyć `plant(Entities.Rice)`, aby posadzić sadzonki ryżu w glinie, następnie `can_harvest()`, aby sprawdzić, czy ryż w pełni urósł, a na koniec `harvest()`, aby zebrać ryż.
 
 ## Tarasy
 Gdy posadzisz ryż, podłoże zmieni się w `Grounds.Rice_Terrace`, aby zapewnić ryżowi idealne warunki do dojrzewania. Gdy ryż w pełni urośnie, podłoże wyschnie, zmieni się w `Grounds.Dry_Rice_Terrace` i nie można już na nim sadzić ryżu. Na szczęście warstwa ma grubość kilku bloków, więc możesz usunąć blok za pomocą `dig()` i posadzić nowy ryż na `Grounds.Clay` poniżej. A jeśli warstwa się skończy, zawsze możesz użyć `clear()` na świecie i dokopać się do świeżej warstwy.

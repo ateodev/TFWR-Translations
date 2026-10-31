@@ -1,10 +1,9 @@
 [<- Eisen](docs/unlocks/iron.md) <right>[Pilze ->](docs/unlocks/mushroom.md)
 ---
 # Quarz
-
 Weiter unten als die Eisenadern in `Grounds.Rock` findest du Quarz im unteren Teil der Gesteinsschicht und in der harten `Grounds.Dirt` darunter (prüfe die Härte mit `get_hardness()` aus der Freischaltung [Unterirdische Sinne](docs/unlocks/underground_senses.md)).
 
-Mit dem folgenden Code gräbt sich deine Drohne durch die Erde und tief in die Steinschicht. Mit etwas Glück befindet sich dort eine Quarzader in der Nähe. In diesem Fall gibt deine Drohne die Entfernung zu ihr aus.
+Der folgende Code gräbt sich durch die Erde bis in die Steinschicht. Dort sucht er beim Graben fortlaufend nach Quarz, bis die Entfernung kleiner als 2 ist. Zum Schluss gibt er die erreichte Entfernung aus.
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -15,7 +14,7 @@ Mit dem folgenden Code gräbt sich deine Drohne durch die Erde und tief in die S
     "show_output": false,
     "collapsing": true,
     "autoplay": false,
-    "items": [],
+    "items": [{"item": "block", "n": 1}, {"item": "iron", "n": 100}],
     "world_size": {"x": 3, "y": 3},
     "execution_speed": 8,
     "digging_speed": 16,
@@ -28,13 +27,16 @@ Mit dem folgenden Code gräbt sich deine Drohne durch die Erde und tief in die S
 move(East)
 move(North)
 #CODE
+# Bis zur Steinschicht hinuntergraben
 while get_ground_type() != Grounds.Rock:
     dig()
-for i in range(30):
-    dig()
 
-print(prospect_quartz())
-move(South)
+# Weitergraben, bis eine Quarzader nah ist
+while prospect_quartz() == None or prospect_quartz() >= 2:
+    for i in range(10):
+        dig()
+
+# Die endgültige Entfernung zur Ader ausgeben
 print(prospect_quartz())
 }}
 
@@ -51,11 +53,13 @@ Die Ausführung von `prospect_quartz()` kostet 1 Eisen, daher solltest du den Be
 Wenn `prospect_quartz()` keinen Quarz in der Nähe findet oder du nicht genug Eisen für die Suche hast, gibt der Befehl `None` zurück.
 
 ## Strategie
-<spoiler=zeige Hinweis>
-Du kannst wiederholt suchen und dich bewegen und dabei beobachten, wie sich die Entfernung ändert, um zu erkennen, ob du dich einer Ader näherst oder dich von ihr entfernst. Mit 2D-Geometrie kannst du den Schnittpunkt von zwei oder mehr Kreisen bestimmen, um die waagerechte Position einer Ader zu finden und dann nach unten zu graben. Oder du nutzt vollständige Trilateration, um drei Kugeln zu schneiden und die genaue 3D-Position zu finden.
+<spoiler=zeige Hinweis>Du kannst wiederholt suchen und dich bewegen und dabei beobachten, wie sich die Entfernung ändert. Auf einer ebenen Fläche kann dich der Versuch, die Entfernung zu minimieren, über eine Quarzader bringen. Mit einer Strategie ähnlich der binären Suche kannst du die Anzahl der `prospect_quartz()`-Aufrufe und das dafür verbrauchte Eisen gering halten.
 
-Beachte, dass es keine eingebauten Mathefunktionen für Quadratwurzeln, Trigonometrie oder Vektoren gibt, die musst du selbst schreiben. Beachte auch, dass in der Nähe mehrere Adern liegen können. Wenn du also mehrere Messungen in der Nähe machst, zeigen sie vielleicht nicht auf dieselbe Ader und führen dich in die Irre.
-</spoiler>
+Aufwendigere Strategien bestimmen mit 2D-Geometrie den Schnittpunkt von zwei oder mehr Kreisen. Oder du gehst den schweren Weg und nutzt vollständige Trilateration, um drei Kugeln zu schneiden und die genaue 3D-Position der Ader zu finden.
+
+Für eine Quadratwurzel kannst du den Potenzoperator verwenden. Die Quadratwurzel von 16 erhältst du zum Beispiel mit `16**0.5`. Es gibt keine eingebauten Mathefunktionen für Trigonometrie oder Vektoren, die musst du selbst schreiben. 
+
+Beachte auch, dass in der Nähe mehrere Adern liegen können. Wenn du also mehrere Messungen in der Nähe machst, zeigen sie vielleicht nicht auf dieselbe Ader.</spoiler>
 
 ---
 

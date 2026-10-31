@@ -1,7 +1,6 @@
 [<- Rýže](docs/unlocks/rice.md)
 
 # Perlit a hlína
-
 Toto odemčení přidává dva nové typy podzemních bloků: perlit a úrodnou hlínu (`Grounds.Perlite` a `Grounds.Loam`). Když sklidíš plodiny zasazené na těchto půdách, dostaneš dvojnásobný výnos.
 
 Perlit a úrodná hlína se vyskytují v tenkých podzemních vrstvách, podobně jako jíl, jsou ale o něco vzácnější.

@@ -3,7 +3,6 @@
 <right>[宝物の地図 ->](docs/unlocks/treasure_map.md)
 ---
 # 鉄
-
 `Grounds.Dirt`で石炭を見つけたら、さらに下へ、`Grounds.Clay`の層を越えて`Grounds.Rock`まで掘ると鉄が見つかります。
 
 石炭の鉱脈と違い、鉄の鉱脈は縦方向にも伸びています。ただし、鉱脈の中の鉄ブロックは必ず隣り合っていて、斜めにしかつながっていないことはありません。
@@ -31,8 +30,11 @@
 }
 #SETUP
 #CODE
+# 鉄ブロックが現れるまで掘る
 while get_ground_type() != Grounds.Iron:
     dig()
+
+# 鉄を採掘する
 dig()
 }}
 

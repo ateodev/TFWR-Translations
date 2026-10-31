@@ -1,8 +1,9 @@
 [<- Železo](docs/unlocks/iron.md)
 ---
 # Mapa pokladu
+Legendy vyprávějí o nepolapitelném pokladu, který ukryl dávno mrtvý, zapomnětlivý pirát, nebo tak nějak. Co když cestu k pokladu zapsal na mapu a tu pak ztratil? Možná mapu upustil, když ho zahnala do kouta řeka lávy, a ta se zachovala pod vrstvou čediče.
 
-Legendy vyprávějí o nepolapitelném pokladu, který ukryl dávno mrtvý, zapomnětlivý pirát, nebo tak nějak. Co když cestu k pokladu zapsal na mapu a tu pak ztratil? Možná mapu upustil, když ho zahnala do kouta řeka lávy, a ta se zachovala pod vrstvou čediče. Změření čediče by mohlo něco prozradit.
+Měření bloků čediče by mohlo něco prozradit!
 
 <spoiler=řekni mi víc>
 Hledej vrstvu `Grounds.Basalt`. Zkus čedič změřit a uvidíš, co ti řekne. Nápověda tě může dovést k mapě pokladu a změření mapy ti jistě vrátí cestu k samotnému pokladu – ale dokážeš rozluštit pokyny, které ti mapa dává?
@@ -36,10 +37,11 @@ Zavolej `measure()` na bloku mapy a získáš cestu k pokladu jako řetězec pí
 #SETUP
 jump(Unlocks.Treasure_Map)
 #CODE
+# Najdi vrstvu čediče
 while get_ground_type() != Grounds.Basalt:
     dig()
 
-do_a_flip()
+# Změření čediče vrátí pozici mapy pokladu
 map_pos = measure()
 
 while get_pos_x() < map_pos[0]:
@@ -50,9 +52,12 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 
+# Mapa nalezena, změř ji a získej cestu
 do_a_flip()
 instructions = measure()
 print("pokyny: ", instructions)
+
+# Kopni do mapy a začni hledat poklad
 dig()
 }}
 
@@ -91,8 +96,10 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 #CODE
-path = measure()
-for letter in path:
+# Pokyny z mapy se vrátí jako jediný řetězec
+instructions = measure()
+# Pomocí for-in rozděl řetězec na písmena
+for letter in instructions:
     print(letter)
 }}
 

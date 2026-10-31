@@ -3,11 +3,12 @@
 # Podzemní senzory
 Přidáme pár senzorů, aby se tvůj dron v podzemí vyznal.
 
+## Pozice z
 Nyní můžeš pomocí `get_pos_z()` zjistit výšku dronu (začíná na 0 a při sestupu dronu je záporná).
 
 {{codeexample 
 {
-    "camera_position": {"x": -1.5, "y": 0, "z": 8},
+    "camera_position": {"x": -1.5, "y": 0, "z": 10},
     "show_image": true,
     "image_size": {"x": 800, "y": 300},
     "show_code": true,
@@ -17,7 +18,7 @@ Nyní můžeš pomocí `get_pos_z()` zjistit výšku dronu (začíná na 0 a př
     "autoplay": false,
     "exclude_unlocks": ["watering", "fertilizer"],
     "items": [],
-    "world_size": {"x": 4, "y": 4},
+    "world_size": {"x": 5, "y": 5},
     "execution_speed": 2,
     "action_ticks": 200,
     "operation_ticks": 200,
@@ -27,13 +28,16 @@ Nyní můžeš pomocí `get_pos_z()` zjistit výšku dronu (začíná na 0 a př
 move(North)
 move(North)
 move(East)
+move(East)
 #CODE
+print(get_pos_z())
 dig()
 dig()
 dig()
 print(get_pos_z())
 }}
 
+## Typ půdy
 `get_ground_type()` vrací typ půdy pod dronem. Můžeš mu předat argument směru, například `get_ground_type(North)`, a získat typ půdy sousedního políčka.
 
 Takhle zkontroluješ, zda je blok pod dronem hlína:
@@ -69,7 +73,7 @@ if get_ground_type() == Grounds.Dirt:
 
 {{codeexample 
 {
-    "camera_position": {"x": -1, "y": 0, "z": 8},
+    "camera_position": {"x": -1, "y": 0, "z": 10},
     "show_image": true,
     "image_size": {"x": 800, "y": 250},
     "show_code": true,
@@ -79,7 +83,7 @@ if get_ground_type() == Grounds.Dirt:
     "autoplay": false,
     "items": [],
     "exclude_unlocks": ["watering", "fertilizer"],
-    "world_size": {"x": 3, "y": 3},
+    "world_size": {"x": 5, "y": 5},
     "execution_speed": 2,
     "action_ticks": 200,
     "operation_ticks": 20,

@@ -1,7 +1,6 @@
 [<- Riso](docs/unlocks/rice.md)
 
 # Perlite e Terriccio
-
 Questo sblocco aggiunge due nuovi tipi di blocchi sotterranei: perlite e terriccio (`Grounds.Perlite` e `Grounds.Loam`). Quando raccogli le colture piantate su questi terreni, ottieni il doppio della resa.
 
 La perlite e il terriccio si trovano in sottili strati sotterranei, simili all'argilla, ma sono un po' più rari.

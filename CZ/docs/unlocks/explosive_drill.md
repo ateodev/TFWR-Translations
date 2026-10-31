@@ -1,7 +1,6 @@
 [<- Dynamit](docs/unlocks/dynamite.md)
 ---
 # Výbušný vrták
-
 Výbušný vrták si nasadíš pomocí `change_hat(Hats.Explosive_Drill)`.
 
 Volání `dig()` s nasazeným výbušným vrtákem spotřebuje jeden `Items.Dynamite` a spustí explozi podobnou `use_item(Items.Dynamite)`. Na rozdíl od běžné exploze dynamitu ale sebere všechny bloky zasažené výbuchem!

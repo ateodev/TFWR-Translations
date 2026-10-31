@@ -1,7 +1,6 @@
 [<- Ferro](docs/unlocks/iron.md)
 ---
 # Prospezione del Ferro
-
 Avrai notato che a volte è difficile trovare le vene di ferro. Potresti scavare a caso sperando di incontrarle, ma c'è un modo migliore: dato che il ferro è magnetico, possiamo rilevarlo a distanza.
 
 Il comando `prospect_iron()` serve proprio a questo. `prospect_iron()` restituisce la direzione (`North`, `East`, `South` o `West`) in cui il drone deve muoversi per compiere un passo verso il minerale di ferro più vicino.
@@ -34,8 +33,9 @@ Puoi usare il codice seguente per avvicinarti di un passo al prossimo minerale d
 #SETUP
 jump(Unlocks.Iron)
 #CODE
+# Assicurati che la prospezione restituisca una direzione
 if prospect_iron() != None:
-    move(prospect_iron())
+    move(prospect_iron()) # Avvicinati alla vena di ferro
 }}
 
 Potresti ottimizzare questo codice con una variabile, perché al momento chiama `prospect_iron()` due volte e costa 2 unità di carbone.

@@ -2,7 +2,9 @@
 ---
 # Mapa skarbu
 
-Legendy mówią o nieuchwytnym skarbie ukrytym przez dawno zmarłego, zapominalskiego pirata — albo jakoś tak. A co, jeśli zapisał drogę do skarbu na mapie, a potem ją zgubił? Może upuścił mapę, gdy odcięła mu drogę rzeka lawy, i zachowała się ona pod warstwą bazaltu. Pomiar bazaltu może coś ujawnić.
+Legendy mówią o nieuchwytnym skarbie ukrytym przez dawno zmarłego, zapominalskiego pirata — albo jakoś tak. A co, jeśli zapisał drogę do skarbu na mapie, a potem ją zgubił? Może upuścił mapę, gdy odcięła mu drogę rzeka lawy, i zachowała się ona pod warstwą bazaltu.
+
+Pomiar bloków bazaltu może coś ujawnić!
 
 <spoiler=powiedz mi więcej>
 Wypatruj warstwy `Grounds.Basalt`. Spróbuj zmierzyć bazalt i sprawdź, co ci powie. Wskazówka może zaprowadzić cię do mapy skarbu, a zmierzenie mapy z pewnością zwróci drogę do samego skarbu — tylko czy uda ci się rozszyfrować jej instrukcje?
@@ -36,10 +38,11 @@ Wywołaj `measure()` na bloku mapy, aby otrzymać drogę do skarbu jako ciąg li
 #SETUP
 jump(Unlocks.Treasure_Map)
 #CODE
+# Znajdź warstwę bazaltu
 while get_ground_type() != Grounds.Basalt:
     dig()
 
-do_a_flip()
+# Pomiar bazaltu zwraca pozycję mapy skarbu
 map_pos = measure()
 
 while get_pos_x() < map_pos[0]:
@@ -50,9 +53,12 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 
+# Znaleziono mapę, zmierz ją, aby uzyskać drogę
 do_a_flip()
 instructions = measure()
 print("instrukcje: ", instructions)
+
+# Dokop się do mapy, aby rozpocząć poszukiwanie skarbu
 dig()
 }}
 
@@ -91,8 +97,10 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 #CODE
-path = measure()
-for letter in path:
+# Instrukcje z mapy są zwracane jako jeden ciąg znaków
+instructions = measure()
+# Użyj for-in, aby podzielić ciąg znaków na litery
+for letter in instructions:
     print(letter)
 }}
 

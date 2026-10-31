@@ -3,11 +3,12 @@
 # 지하 감지
 드론이 지하에서 길을 찾을 수 있도록 센서를 몇 개 추가해 보죠.
 
+## Z 위치
 이제 `get_pos_z()`로 드론의 높이를 알 수 있습니다. 0에서 시작하며 드론이 내려갈수록 음수가 됩니다.
 
 {{codeexample 
 {
-    "camera_position": {"x": -1.5, "y": 0, "z": 8},
+    "camera_position": {"x": -1.5, "y": 0, "z": 10},
     "show_image": true,
     "image_size": {"x": 800, "y": 300},
     "show_code": true,
@@ -17,7 +18,7 @@
     "autoplay": false,
     "exclude_unlocks": ["watering", "fertilizer"],
     "items": [],
-    "world_size": {"x": 4, "y": 4},
+    "world_size": {"x": 5, "y": 5},
     "execution_speed": 2,
     "action_ticks": 200,
     "operation_ticks": 200,
@@ -27,13 +28,16 @@
 move(North)
 move(North)
 move(East)
+move(East)
 #CODE
+print(get_pos_z())
 dig()
 dig()
 dig()
 print(get_pos_z())
 }}
 
+## 땅 종류
 `get_ground_type()`은 드론 아래의 땅 종류를 반환합니다. `get_ground_type(North)` 같은 방향 인수를 전달하면 인접한 타일의 땅 종류를 알 수 있습니다.
 
 드론 아래의 블록이 흙인지 확인하는 방법은 다음과 같습니다.
@@ -69,7 +73,7 @@ if get_ground_type() == Grounds.Dirt:
 
 {{codeexample 
 {
-    "camera_position": {"x": -1, "y": 0, "z": 8},
+    "camera_position": {"x": -1, "y": 0, "z": 10},
     "show_image": true,
     "image_size": {"x": 800, "y": 250},
     "show_code": true,
@@ -79,7 +83,7 @@ if get_ground_type() == Grounds.Dirt:
     "autoplay": false,
     "items": [],
     "exclude_unlocks": ["watering", "fertilizer"],
-    "world_size": {"x": 3, "y": 3},
+    "world_size": {"x": 5, "y": 5},
     "execution_speed": 2,
     "action_ticks": 200,
     "operation_ticks": 20,

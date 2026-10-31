@@ -1,14 +1,11 @@
 [<- Houby](docs/unlocks/mushroom.md) <right>[Výbušný vrták ->](docs/unlocks/explosive_drill.md)
 ---
 # Dynamit
-
-Revoluční výbušnina, kterou tu nechaly dřívější těžařské výpravy. Naštěstí (nebo bohužel) je tvůj vrták ideální k tomu, aby dynamit odpálil a odstřelil všechny bloky kolem tebe.
+Revoluční výbušnina, kterou tu nechaly dřívější těžařské výpravy. Bohužel je tvůj vrták ideální k tomu, aby dynamit odpálil a odstřelil všechny bloky kolem tebe. Sebraný dynamit lze použít pomocí `use_item(Items.Dynamite)` a vybuchne okamžitě pod dronem.
 
 Abys dynamit bezpečně vytěžil, najdi vrstvu `Grounds.Dynamite`, pod kterou hned následuje vrstva `Grounds.Soot`. Dynamitová vrstva nahoře už trochu zestárla a do některých jejích bloků se dá bezpečně kopat. Některé bloky dynamitu jsou ale stále živé a vybuchnou, když do nich kopneš.
 
-Sebraný dynamit lze použít pomocí `use_item(Items.Dynamite)`; vybuchne okamžitě pod dronem.
-
-Tento příklad kopne do dynamitu a pak všude kolem prvního místa kopnutí a vypisuje naměřené hodnoty bloků sazí pod ním:
+Tento příklad kopne do dynamitu a pak všude kolem prvního místa kopnutí, čímž odkryje vrstvu sazí s čísly, a vypisuje naměřené hodnoty:
 {{codeexample 
 {
     "camera_position": {"x": -3, "y": 0, "z": 15},
@@ -34,9 +31,11 @@ for _ in range(3):
     move(East)
     move(North)
 #CODE
+# Prokopej se dolů přes dynamitovou vrstvu až k vrstvě sazí
 while get_ground_type() != Grounds.Soot:
     dig()
 
+# Seznam směrů, díky kterým se dron pohybuje v kruhu
 circle_directions = [
     East, South, West, West, 
     North, North, East, East
@@ -44,7 +43,7 @@ circle_directions = [
 for dir in circle_directions:
     move(dir)
     dig()
-    print(measure())
+    print(measure()) # Číslo na bloku sazí
 }}
 
 ## Dynamitové hledání min
@@ -113,10 +112,15 @@ circle_directions = [
     East, South, West, West, North,
     North, East, East, South, West
 ]
+# Obejdi blok, do kterého jsme kopli jako první
 for dir in circle_directions:
+    # Pokud saze naměří 0,
+    # víme, že všechny okolní dynamitové bloky jsou slepé
     if get_ground_type() == Grounds.Soot and measure() == 0:
+        # Udělej další kruh přes okolní bloky
         for dir2 in circle_directions:
             move(dir2)
+            # Vykopej slepý blok dynamitu
             while get_ground_type() != Grounds.Soot:
                 dig()
     move(dir)

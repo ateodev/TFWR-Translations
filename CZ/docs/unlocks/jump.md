@@ -1,13 +1,13 @@
 [<- Uhlí](docs/unlocks/coal.md)
 ---
 # Skok
-
 Tvůj dron odemkl příkaz `jump()`. Používá se tak, že mu jako argument předáš odemčení, například `Unlocks.Iron`.
 
-Tento příkaz ti umožňuje zacílit na určitá odemčení skrytá v zemi a okamžitě k nim skočit dolů. Hodí se zejména při ladění nebo pro skok k rudné žíle, kterou jsi nedávno minul.
+Tento příkaz ti umožňuje zacílit na určité suroviny skryté v zemi a okamžitě k nim skočit dolů. Hodí se zejména při ladění nebo pro skok k rudné žíle, kterou jsi nedávno minul.
 
-Po skoku by cílové odemčení mělo být do 3 bloků od povrchu nejvyššího bloku. `jump()` lze použít jen jednou za běh programu, další pokusy o skok skončí chybou.
+Po skoku by cílová surovina měla být do 3 bloků od povrchu nejvyššího bloku. `jump()` lze použít jen jednou za běh programu, další pokusy o skok skončí chybou.
 
+Následující příklad skočí dolů k [rýži](docs/unlocks/rice.md), najde vrstvu jílu a zasadí řadu rýžových teras:
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -29,9 +29,12 @@ Po skoku by cílové odemčení mělo být do 3 bloků od povrchu nejvyššího 
     "starting_chunk": 0
 }
 #CODE
+# Skoč blízko k rýži
 jump(Unlocks.Rice)
 
+# Zasaď řadu rýžových teras
 for i in range(get_world_size()):
+    # Skok není přesný, vykopej poslední bloky
     while get_ground_type() != Grounds.Clay:
         dig()
 

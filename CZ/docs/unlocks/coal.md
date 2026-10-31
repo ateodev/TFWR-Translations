@@ -2,7 +2,6 @@
 <right>[Skok ->](docs/unlocks/jump.md)
 ---
 # Uhlí
-
 Pod zemí se skrývají různé rudy a čekají, až je najdeš a vykopeš. Když se prokopeš povrchem do `Grounds.Dirt`, první rudou, kterou najdeš, je uhlí.
 
 K těžbě uhlí nemusíš dělat nic zvláštního, stačí provést `dig()`, když je dron přímo nad blokem `Grounds.Coal`. Pomocí `get_ground_type()` zjistíš, co je pod dronem, a pomocí `get_ground_type(direction)` zkontroluješ čtyři sousední bloky.
@@ -32,8 +31,11 @@ move(North)
 move(East)
 move(East)
 #CODE
+# Kopej, dokud se neobjeví blok uhlí
 while get_ground_type() != Grounds.Coal:
     dig()
+
+# Vytěž uhlí
 dig()
 }}
 

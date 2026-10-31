@@ -53,7 +53,7 @@ plant(Entities.Carrot)`
     plant(Entities.Rice)`
 @unlock_descr_lists = Používej seznamy pro ukládání více hodnot.
 
-`plants = [Entities.Hay, Entities.Bush, Entities.Tree]
+`plants = [Entities.Grass, Entities.Bush, Entities.Tree]
 
 for p in plants:
     plant(p)
@@ -90,6 +90,9 @@ set_execution_speed(1)`
 @unlock_descr_leaderboard = Zapiš se do žebříčku s nejrychlejšími časy.
 
 `leaderboard_run(Leaderboards.Hay, "hay_file", speedup)`
+@unlock_descr_underground_leaderboard = Zapiš se do podzemního žebříčku s nejrychlejšími časy.
+
+`leaderboard_run(Leaderboards.Rice, "rice_file", speedup)`
 @unlock_descr_dicts = Umožňuje používat slovníky a množiny.
 
 `right_of = {North:East, East:South, South:West, West:North}`
@@ -128,7 +131,7 @@ other_file.function()`
 @unlock_descr_drill = Zvyšuje sílu vrtáku.
 @unlock_descr_debug_place = Pokládej barevné bloky.
 
-`place(Grounds.Red_Block)`
+`place(Grounds.Block_Blue)`
 @unlock_descr_underground_senses = Senzory dronu pro práci s podzemními políčky
 
 `while get_pos_z() < 100:
@@ -187,6 +190,7 @@ other_file.function()`
 @hats = Klobouky
 @import = Import
 @leaderboard = Žebříček
+@underground_leaderboard = Podzemní žebříček
 @lists = Seznamy
 @loops = Smyčky
 @mazes = Bludiště

@@ -31,8 +31,11 @@ Mas os veios de ferro começam pequenos, e você precisará de sorte para encont
 }
 #SETUP
 #CODE
+# Escave até aparecer um bloco de ferro
 while get_ground_type() != Grounds.Iron:
     dig()
+
+# Minere o ferro
 dig()
 }}
 

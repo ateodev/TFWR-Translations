@@ -32,8 +32,11 @@ move(North)
 move(East)
 move(East)
 #CODE
+# Копать, пока не появится блок угля
 while get_ground_type() != Grounds.Coal:
     dig()
+
+# Добыть уголь
 dig()
 }}
 

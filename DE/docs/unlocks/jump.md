@@ -1,13 +1,13 @@
 [<- Kohle](docs/unlocks/coal.md)
 ---
 # Springen
-
 Deine Drohne hat den Befehl `jump()` freigeschaltet. Du verwendest ihn, indem du ihm eine Freischaltung als Argument übergibst, beispielsweise `Unlocks.Iron`.
 
-Mit diesem Befehl kannst du bestimmte Freischaltungen anvisieren, die im Boden verborgen sind, und sofort zu ihnen hinunterspringen. Das ist besonders beim Debuggen praktisch oder wenn du zu einer Erzader springen möchtest, die du kurz zuvor verpasst hast.
+Mit diesem Befehl kannst du bestimmte Ressourcen anvisieren, die im Boden verborgen sind, und sofort zu ihnen hinunterspringen. Das ist besonders beim Debuggen praktisch oder wenn du zu einer Erzader springen möchtest, die du kurz zuvor verpasst hast.
 
-Nach dem Sprung sollte sich die anvisierte Freischaltung höchstens 3 Blöcke unter der obersten Blockoberfläche befinden. `jump()` kann pro Programmausführung nur einmal verwendet werden, weitere Sprungversuche führen zu einem Fehler.
+Nach dem Sprung sollte sich die anvisierte Ressource höchstens 3 Blöcke unter der obersten Blockoberfläche befinden. `jump()` kann pro Programmausführung nur einmal verwendet werden, weitere Sprungversuche führen zu einem Fehler.
 
+Das folgende Beispiel springt hinunter zum [Reis](docs/unlocks/rice.md), findet die Tonschicht und pflanzt eine Reihe Reisterrassen:
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -29,9 +29,12 @@ Nach dem Sprung sollte sich die anvisierte Freischaltung höchstens 3 Blöcke un
     "starting_chunk": 0
 }
 #CODE
+# Nahe an die Reis-Ressource springen
 jump(Unlocks.Rice)
 
+# Eine Reihe Reisterrassen pflanzen
 for i in range(get_world_size()):
+    # Der Sprung ist nicht exakt, die letzten Blöcke weggraben
     while get_ground_type() != Grounds.Clay:
         dig()
 

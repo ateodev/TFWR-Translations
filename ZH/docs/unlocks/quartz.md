@@ -1,10 +1,9 @@
 [<-铁矿](docs/unlocks/iron.md) <right>[蘑菇->](docs/unlocks/mushroom.md)
 ---
 # 石英
-
 从 `Grounds.Rock` 中的铁矿脉继续往下，你会在岩石层下部及其下方坚硬的 `Grounds.Dirt` 中找到石英（可以用[地下感官](docs/unlocks/underground_senses.md)解锁项中的 `get_hardness()` 检查硬度）。
 
-下面的代码片段会让无人机挖穿泥土，深入岩石层。运气好的话，附近就有一条石英矿脉，无人机会打印出到它的距离。
+下面的代码片段会挖穿泥土，进入岩石层。接着它会一边挖掘一边不断探查石英，直到距离小于 2。最后，它会打印最终得到的探查距离。
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -15,7 +14,7 @@
     "show_output": false,
     "collapsing": true,
     "autoplay": false,
-    "items": [],
+    "items": [{"item": "block", "n": 1}, {"item": "iron", "n": 100}],
     "world_size": {"x": 3, "y": 3},
     "execution_speed": 8,
     "digging_speed": 16,
@@ -28,13 +27,16 @@
 move(East)
 move(North)
 #CODE
+# 向下挖到岩石层
 while get_ground_type() != Grounds.Rock:
     dig()
-for i in range(30):
-    dig()
 
-print(prospect_quartz())
-move(South)
+# 继续挖掘，直到靠近石英矿脉
+while prospect_quartz() == None or prospect_quartz() >= 2:
+    for i in range(10):
+        dig()
+
+# 打印到矿脉的最终距离
 print(prospect_quartz())
 }}
 
@@ -51,11 +53,13 @@ print(prospect_quartz())
 如果附近没有石英，或者铁矿不足以执行探查，`prospect_quartz()` 就会返回 `None`。
 
 ## 策略
-<spoiler=显示提示>
-你可以反复探查并移动，观察距离如何变化，从而判断自己是在靠近还是远离矿脉。可以用二维几何求出两个或多个圆的交点，找到矿脉的水平位置后向下挖。也可以用完整的三边测量求三个球体的交点，找出精确的三维位置。
+<spoiler=显示提示>你可以反复探查并移动，观察距离如何变化。在平坦的地面上，尽量让距离变小，就有可能来到石英矿脉的上方。你可以采用类似二分查找的策略，尽量减少 `prospect_quartz()` 的调用次数以及它们消耗的铁矿。
 
-注意，游戏没有提供平方根、三角函数或向量等内置数学函数，你需要自己实现。另外，附近可能有多条矿脉，所以在相近位置多次测量时，结果未必指向同一条矿脉，可能会把你带偏。
-</spoiler>
+更复杂的策略可以用二维几何求出两个或多个圆的交点。你也可以挑战高难度，用完整的三边测量求三个球体的交点，找出矿脉精确的三维位置。
+
+注意，求平方根可以使用幂运算符，例如要求 16 的平方根，可以用 `16**0.5`。游戏没有提供三角函数或向量等内置数学函数，你需要自己实现。
+
+另外，附近可能有多条矿脉，所以在相近位置多次测量时，结果未必指向同一条矿脉。</spoiler>
 
 ---
 

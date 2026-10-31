@@ -34,8 +34,9 @@ Você pode usar o código a seguir para se aproximar um passo do próximo minér
 #SETUP
 jump(Unlocks.Iron)
 #CODE
+# Garanta que a prospecção retorne uma direção
 if prospect_iron() != None:
-    move(prospect_iron())
+    move(prospect_iron()) # Aproxime-se do veio de ferro
 }}
 
 Talvez você queira otimizar este código com uma variável, pois ele chama `prospect_iron()` duas vezes e custa 2 carvões.

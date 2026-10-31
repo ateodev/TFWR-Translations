@@ -1,8 +1,9 @@
 [<-鐵礦](docs/unlocks/iron.md)
 ---
 # 藏寶圖
+傳說有位早已離世的健忘海盜將一份寶藏藏了起來——大概是這麼回事吧。如果他把通往寶藏的路徑畫在地圖上，後來又弄丟了呢？也許他被熔岩河逼到絕境時弄掉了地圖，地圖便埋藏在一層玄武岩下。
 
-傳說有位早已離世的健忘海盜將一份寶藏藏了起來——大概是這麼回事吧。如果他把通往寶藏的路徑畫在地圖上，後來又弄丟了呢？也許他被熔岩河逼到絕境時弄掉了地圖，地圖便埋藏在一層玄武岩下。測量玄武岩或許能發現線索。
+測量玄武岩地塊或許能發現些什麼！
 
 <spoiler=告訴我更多>
 留意一層 `Grounds.Basalt`。試著測量玄武岩，看看能發現什麼。線索或許會引你找到藏寶圖；測量藏寶圖一定能得到通往寶藏的路徑——但你能解讀地圖給出的指示嗎？
@@ -36,10 +37,11 @@
 #SETUP
 jump(Unlocks.Treasure_Map)
 #CODE
+# 找到玄武岩層
 while get_ground_type() != Grounds.Basalt:
     dig()
 
-do_a_flip()
+# 測量玄武岩會回傳藏寶圖的位置
 map_pos = measure()
 
 while get_pos_x() < map_pos[0]:
@@ -50,9 +52,12 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 
+# 找到地圖了，測量它來取得路徑
 do_a_flip()
 instructions = measure()
 print("指示：", instructions)
+
+# 挖入地圖，開始尋寶
 dig()
 }}
 
@@ -91,8 +96,10 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 #CODE
-path = measure()
-for letter in path:
+# 地圖的指示會以單一字串回傳
+instructions = measure()
+# 用 for-in 把字串拆成一個個字母
+for letter in instructions:
     print(letter)
 }}
 

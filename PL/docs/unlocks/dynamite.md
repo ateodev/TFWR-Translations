@@ -2,13 +2,11 @@
 ---
 # Dynamit
 
-Rewolucyjny materiał wybuchowy pozostawiony przez poprzednie wyprawy górnicze. Na (nie)szczęście twoje wiertło idealnie nadaje się do detonowania dynamitu i wysadzania wszystkich bloków wokół.
+Rewolucyjny materiał wybuchowy pozostawiony przez poprzednie wyprawy górnicze. Niestety twoje wiertło idealnie nadaje się do detonowania dynamitu i wysadzania wszystkich bloków wokół. Zebranego dynamitu można użyć za pomocą `use_item(Items.Dynamite)`; eksploduje bezpośrednio pod dronem.
 
 Aby bezpiecznie wydobywać dynamit, znajdź warstwę `Grounds.Dynamite`, pod którą bezpośrednio leży warstwa `Grounds.Soot`. Górna warstwa dynamitu nieco się zestarzała i do części jej bloków można bezpiecznie się dokopać. Niektóre bloki dynamitu są jednak nadal aktywne i eksplodują, gdy się do nich dokopiesz.
 
-Zebranego dynamitu można użyć za pomocą `use_item(Items.Dynamite)`; eksploduje bezpośrednio pod dronem.
-
-Ten przykład dokopuje się do dynamitu i kopie dookoła początkowego miejsca kopania, wypisując pomiary bloków sadzy poniżej:
+Ten przykład dokopuje się do dynamitu i kopie dookoła początkowego miejsca kopania, odsłaniając warstwę sadzy z liczbami i wypisując pomiary:
 {{codeexample 
 {
     "camera_position": {"x": -3, "y": 0, "z": 15},
@@ -34,9 +32,11 @@ for _ in range(3):
     move(East)
     move(North)
 #CODE
+# Dokop się do warstwy sadzy przez warstwę dynamitu powyżej
 while get_ground_type() != Grounds.Soot:
     dig()
 
+# Lista kierunków, które sprawiają, że dron porusza się po okręgu
 circle_directions = [
     East, South, West, West, 
     North, North, East, East
@@ -44,7 +44,7 @@ circle_directions = [
 for dir in circle_directions:
     move(dir)
     dig()
-    print(measure())
+    print(measure()) # Liczba na bloku sadzy
 }}
 
 ## Dynamitowy saper
@@ -113,10 +113,15 @@ circle_directions = [
     East, South, West, West, North,
     North, East, East, South, West
 ]
+# Okrąż blok, do którego dokopaliśmy się na początku
 for dir in circle_directions:
+    # Jeśli pomiar sadzy wynosi 0,
+    # wiemy, że wszystkie otaczające bloki dynamitu to niewypały
     if get_ground_type() == Grounds.Soot and measure() == 0:
+        # Zrób kolejne okrążenie przez otaczające bloki
         for dir2 in circle_directions:
             move(dir2)
+            # Wykop niewypał dynamitu
             while get_ground_type() != Grounds.Soot:
                 dig()
     move(dir)

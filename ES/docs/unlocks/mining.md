@@ -3,7 +3,6 @@
 <right>[Carbón ->](docs/unlocks/coal.md)
 ---
 # Minería
-
 Tu dron ha conseguido un taladro primitivo que le permite buscar tesoros bajo tierra.
 
 Puedes usar el comando `dig()` para excavar el bloque que tienes debajo.
@@ -46,7 +45,6 @@ Si quieres volver a la superficie, puedes usar `clear()` en cualquier momento. E
 Al <desktop>pasar el cursor sobre</desktop><mobile>tocar</mobile> un bloque se mostrarán su nombre, estabilidad y dureza.
 
 # Taladro
-
 Al excavar a mayor profundidad, notarás que los bloques se vuelven más duros, por lo que tardas más en excavarlos. ¡Menos mal que podemos mejorar el taladro para ayudarnos!
 
 Para ayudar a tu dron a orientarse bajo tierra, deberías desbloquear pronto los [sentidos subterráneos](docs/unlocks/underground_senses.md). Le permitirán comprobar su propia posición z, así como el tipo de terreno de debajo, su dureza y su estabilidad.
@@ -62,7 +60,6 @@ Por ejemplo, con los [sentidos subterráneos](docs/unlocks/underground_senses.md
 Por supuesto, los bloques se vuelven cada vez más duros a medida que bajas, así que, aunque esta estrategia ayuda, solo te servirá hasta cierto punto.
 
 ## Derrumbes
-
 Excavar hacia abajo hará que los bloques de alrededor se derrumben. Los cuatro bloques adyacentes al dron siempre se destruyen. Después, el derrumbe se propaga en función de la estabilidad del terreno. Un bloque con estabilidad 1, como la pradera, puede soportar una diferencia de altura de 1. En otras palabras, si la pradera tiene un vecino vertical u horizontal cuya coordenada z está 2 o más bloques por debajo, la pradera se destruirá.
 
 La estabilidad de un bloque aparece en su descripción<desktop> al pasar el cursor sobre él</desktop>.

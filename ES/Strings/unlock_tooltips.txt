@@ -8,7 +8,7 @@ El desbloqueo {0} debe estar en el nivel {1} o superior.
 @unlock_descr_plant = Desbloquea la siembra.
 
 `plant(Entities.Bush)`
-@unlock_descr_loops = Desbloquea un bucle `while` simple.
+@unlock_descr_loops = Desbloquea un bucle while simple.
 
 `while True:
     harvest()`
@@ -87,7 +87,12 @@ set_execution_speed(1)`
 @unlock_descr_sunflowers = Girasoles y Energía.
 
 `plant(Entities.Sunflowers)`
-@unlock_descr_leaderboard = Únete a la tabla de clasificación para los tiempos más rápidos.\n\n`leaderboard_run(Leaderboards.Hay, "hay_file", speedup)`
+@unlock_descr_leaderboard = Únete a la tabla de clasificación para los tiempos más rápidos.
+
+`leaderboard_run(Leaderboards.Hay, "hay_file", speedup)`
+@unlock_descr_underground_leaderboard = Únete a la tabla de clasificación subterránea para los tiempos más rápidos.
+
+`leaderboard_run(Leaderboards.Rice, "rice_file", speedup)`
 @unlock_descr_dicts = Obtén acceso a diccionarios y conjuntos.
 
 `right_of = {North:East, East:South, South:West, West:North}`
@@ -126,7 +131,7 @@ other_file.function()`
 @unlock_descr_drill = Mejora la potencia del taladro.
 @unlock_descr_debug_place = Coloca bloques de colores.
 
-`place(Grounds.Red_Block)`
+`place(Grounds.Block_Blue)`
 @unlock_descr_underground_senses = Sensores para que el dron interactúe con casillas subterráneas.
 
 `while get_pos_z() < 100:
@@ -185,6 +190,7 @@ other_file.function()`
 @hats = Sombreros
 @import = Importar
 @leaderboard = Tabla de Clasificación
+@underground_leaderboard = Tabla de Clasificación Subterránea
 @lists = Listas
 @loops = Bucles
 @mazes = Laberintos

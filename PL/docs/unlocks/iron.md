@@ -31,8 +31,11 @@ W przeciwieństwie do żył węgla żyły żelaza rozciągają się także piono
 }
 #SETUP
 #CODE
+# Kop, dopóki nie pojawi się blok żelaza
 while get_ground_type() != Grounds.Iron:
     dig()
+
+# Wydobądź żelazo
 dig()
 }}
 

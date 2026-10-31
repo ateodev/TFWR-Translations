@@ -1,7 +1,6 @@
 [<- 石英](docs/unlocks/quartz.md) <right>[ダイナマイト ->](docs/unlocks/dynamite.md)
 ---
 # キノコ
-
 地下にはさまざまな種類のキノコが群生しています。掘り進めながら`Grounds.Mushroom`の地層を探しましょう。その地面で`measure()`を使うと、`0`から`5`までの番号でキノコの種類を調べられます。
 
 次のコードはキノコを見つけて、その種類を表示します。
@@ -27,15 +26,19 @@
 #SETUP
 jump(Unlocks.Mushrooms)
 #CODE
+# キノコを1列処理する
 for i in range(get_world_size()):
+    # 一番上のキノコのブロックまで掘り下げる
     while get_ground_type() != Grounds.Mushroom:
         dig()
 
+    # キノコの種類の番号を表示する
     print(measure())
 
     move(East)
 }}
 
+## キノコの集め方
 同じ種類のキノコは一緒にいたいようですが、互いの上に生えるのは少し恥ずかしいようです。`push(direction)`で、ドローンの下にあるキノコのブロックを押しましょう。
 
 同じ種類のキノコのブロックを2つ積み重ねると、ブロックは自動的に収穫され、キノコが手に入ります。
@@ -68,11 +71,13 @@ while get_ground_type() != Grounds.Mushroom:
 
 depth = get_pos_z()
 for i in range(2):
+    # キノコのブロックを東へ押せるように場所を空ける
     move(East)
     while get_pos_z() > depth - 1:
         dig()
+    # 戻って押し、押したブロックについていく
     move(West)
-    push(East)
+    push(East) # キノコを押す！
     move(East)
 }}
 

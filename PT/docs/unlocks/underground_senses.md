@@ -3,11 +3,12 @@
 # Sentidos Subterrâneos
 Vamos adicionar alguns sensores para que o drone consiga se orientar no subsolo.
 
+## Posição Z
 Agora você pode usar `get_pos_z()` para obter a altura do drone (começa em 0 e fica negativa conforme ele desce).
 
 {{codeexample 
 {
-    "camera_position": {"x": -1.5, "y": 0, "z": 8},
+    "camera_position": {"x": -1.5, "y": 0, "z": 10},
     "show_image": true,
     "image_size": {"x": 800, "y": 300},
     "show_code": true,
@@ -17,7 +18,7 @@ Agora você pode usar `get_pos_z()` para obter a altura do drone (começa em 0 e
     "autoplay": false,
     "exclude_unlocks": ["watering", "fertilizer"],
     "items": [],
-    "world_size": {"x": 4, "y": 4},
+    "world_size": {"x": 5, "y": 5},
     "execution_speed": 2,
     "action_ticks": 200,
     "operation_ticks": 200,
@@ -27,13 +28,16 @@ Agora você pode usar `get_pos_z()` para obter a altura do drone (começa em 0 e
 move(North)
 move(North)
 move(East)
+move(East)
 #CODE
+print(get_pos_z())
 dig()
 dig()
 dig()
 print(get_pos_z())
 }}
 
+## Tipo de Solo
 `get_ground_type()` retorna o tipo de solo sob o drone. Você pode passar uma direção, como `get_ground_type(North)`, para obter o tipo de solo de um bloco vizinho.
 
 Veja como verificar se o bloco sob o drone é terra:
@@ -69,7 +73,7 @@ if get_ground_type() == Grounds.Dirt:
 
 {{codeexample 
 {
-    "camera_position": {"x": -1, "y": 0, "z": 8},
+    "camera_position": {"x": -1, "y": 0, "z": 10},
     "show_image": true,
     "image_size": {"x": 800, "y": 250},
     "show_code": true,
@@ -79,7 +83,7 @@ if get_ground_type() == Grounds.Dirt:
     "autoplay": false,
     "items": [],
     "exclude_unlocks": ["watering", "fertilizer"],
-    "world_size": {"x": 3, "y": 3},
+    "world_size": {"x": 5, "y": 5},
     "execution_speed": 2,
     "action_ticks": 200,
     "operation_ticks": 20,

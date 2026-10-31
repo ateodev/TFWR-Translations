@@ -2,7 +2,6 @@
 <right>[跳轉->](docs/unlocks/jump.md)
 ---
 # 煤炭
-
 地下藏著各種礦石，等著你去發現和挖掘。如果你挖穿地表進入 `Grounds.Dirt`，最先找到的礦石就是煤炭。
 
 開採煤炭不需要任何特殊操作，只要在無人機正好位於 `Grounds.Coal` 地塊上方時執行 `dig()` 即可。使用 `get_ground_type()` 檢查無人機下方是什麼，使用 `get_ground_type(direction)` 檢查四個相鄰地塊。
@@ -32,8 +31,11 @@ move(North)
 move(East)
 move(East)
 #CODE
+# 一直挖，直到出現煤炭地塊
 while get_ground_type() != Grounds.Coal:
     dig()
+
+# 開採煤炭
 dig()
 }}
 

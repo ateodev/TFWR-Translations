@@ -1,8 +1,9 @@
 [<- Fer](docs/unlocks/iron.md)
 ---
 # Carte au trésor
+Les légendes parlent d’un trésor insaisissable caché par un pirate distrait mort depuis longtemps — ou quelque chose comme ça. Et s’il avait tracé le chemin vers son trésor sur une carte avant de la perdre ? Peut-être l’a-t-il laissée tomber au bord d’une rivière de lave, et la carte a-t-elle été préservée sous une couche de basalte.
 
-Les légendes parlent d’un trésor insaisissable caché par un pirate distrait mort depuis longtemps — ou quelque chose comme ça. Et s’il avait tracé le chemin vers son trésor sur une carte avant de la perdre ? Peut-être l’a-t-il laissée tomber au bord d’une rivière de lave, et la carte a-t-elle été préservée sous une couche de basalte. Mesurer le basalte pourrait révéler quelque chose.
+Mesurer les blocs de basalte pourrait révéler quelque chose !
 
 <spoiler=dis-m’en plus>
 Cherche une couche de `Grounds.Basalt`. Essaie de mesurer le basalte pour voir ce qu’il t’indique. L’indice pourrait te mener à la carte au trésor, et mesurer la carte te donnera certainement le chemin du trésor lui-même — mais sauras-tu déchiffrer ses instructions ?
@@ -36,10 +37,11 @@ Appelle `measure()` sur le bloc de carte pour obtenir le chemin du trésor sous 
 #SETUP
 jump(Unlocks.Treasure_Map)
 #CODE
+# Trouver la couche de basalte
 while get_ground_type() != Grounds.Basalt:
     dig()
 
-do_a_flip()
+# Mesurer le basalte renvoie la position de la carte au trésor
 map_pos = measure()
 
 while get_pos_x() < map_pos[0]:
@@ -50,9 +52,12 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 
+# Carte trouvée, la mesurer pour obtenir le chemin
 do_a_flip()
 instructions = measure()
 print("instructions : ", instructions)
+
+# Creuser dans la carte pour lancer la chasse au trésor
 dig()
 }}
 
@@ -91,8 +96,10 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 #CODE
-path = measure()
-for letter in path:
+# Les instructions de la carte sont renvoyées sous forme d’une seule chaîne
+instructions = measure()
+# Utiliser for-in pour découper la chaîne en lettres
+for letter in instructions:
     print(letter)
 }}
 

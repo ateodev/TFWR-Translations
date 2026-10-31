@@ -1,7 +1,6 @@
 [<- Cuarzo](docs/unlocks/quartz.md) <right>[Dinamita ->](docs/unlocks/dynamite.md)
 ---
 # Hongo
-
 Muchos tipos de hongos crecen en colonias bajo tierra. Busca un estrato de `Grounds.Mushroom` mientras excavas. Después puedes usar `measure()` sobre el terreno para obtener el tipo de hongo como un número, del `0` al `5`.
 
 El siguiente código encuentra algunos hongos e imprime su tipo:
@@ -27,15 +26,19 @@ El siguiente código encuentra algunos hongos e imprime su tipo:
 #SETUP
 jump(Unlocks.Mushrooms)
 #CODE
+# Procesa una fila de hongos
 for i in range(get_world_size()):
+    # Excava hasta el bloque de hongo superior
     while get_ground_type() != Grounds.Mushroom:
         dig()
 
+    # Imprime el número del tipo de hongo
     print(measure())
 
     move(East)
 }}
 
+## Cómo recoger hongos
 A los hongos del mismo tipo les gusta estar juntos, pero les da demasiada vergüenza crecer unos encima de otros. Empuja el bloque de hongo que hay debajo del dron con `push(direction)`.
 
 Apila dos bloques de hongo del mismo tipo uno encima de otro y los bloques se cosecharán automáticamente para darte sus hongos.
@@ -68,11 +71,13 @@ while get_ground_type() != Grounds.Mushroom:
 
 depth = get_pos_z()
 for i in range(2):
+    # Haz sitio para empujar el bloque de hongo hacia el este
     move(East)
     while get_pos_z() > depth - 1:
         dig()
+    # Vuelve atrás, empuja y sigue al bloque empujado
     move(West)
-    push(East)
+    push(East) # ¡Empuja el hongo!
     move(East)
 }}
 

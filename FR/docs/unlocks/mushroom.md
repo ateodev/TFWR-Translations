@@ -1,7 +1,6 @@
 [<- Quartz](docs/unlocks/quartz.md) <right>[Dynamite ->](docs/unlocks/dynamite.md)
 ---
 # Champignon
-
 De nombreux types de champignons poussent en colonies sous terre. En creusant, cherche une strate de `Grounds.Mushroom`. Tu peux ensuite appeler `measure()` sur le sol pour obtenir le type de champignon sous forme d’un nombre allant de `0` à `5`.
 
 Le code suivant trouve quelques champignons et affiche leur type :
@@ -27,15 +26,19 @@ Le code suivant trouve quelques champignons et affiche leur type :
 #SETUP
 jump(Unlocks.Mushrooms)
 #CODE
+# Traiter une rangée de champignons
 for i in range(get_world_size()):
+    # Creuser jusqu’au bloc de champignon supérieur
     while get_ground_type() != Grounds.Mushroom:
         dig()
 
+    # Afficher le numéro du type de champignon
     print(measure())
 
     move(East)
 }}
 
+## Comment récolter des champignons
 Les champignons du même type aiment se retrouver, mais ils sont un peu trop timides pour pousser les uns sur les autres. Pousse le bloc de champignon situé sous le drone avec `push(direction)`.
 
 Empile deux blocs de champignon du même type l’un sur l’autre : les blocs seront automatiquement récoltés et te rapporteront leurs champignons.
@@ -68,11 +71,13 @@ while get_ground_type() != Grounds.Mushroom:
 
 depth = get_pos_z()
 for i in range(2):
+    # Faire de la place pour pousser le bloc de champignon vers l’est
     move(East)
     while get_pos_z() > depth - 1:
         dig()
+    # Revenir, pousser et suivre le bloc poussé
     move(West)
-    push(East)
+    push(East) # Pousse le champignon !
     move(East)
 }}
 

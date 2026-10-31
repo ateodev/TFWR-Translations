@@ -3,7 +3,6 @@
 <right>[보물지도 ->](docs/unlocks/treasure_map.md)
 ---
 # 철
-
 `Grounds.Dirt`에서 석탄을 찾았다면 `Grounds.Clay` 층을 지나 `Grounds.Rock`까지 더 깊이 파 내려가 철을 찾을 수 있습니다.
 
 석탄 광맥과 달리 철 광맥은 수직으로도 뻗어 있습니다. 하지만 한 광맥의 철 블록은 항상 서로 바로 붙어 있으며, 대각선으로만 이어지는 일은 없습니다.
@@ -31,8 +30,11 @@
 }
 #SETUP
 #CODE
+# 철 블록이 나올 때까지 파기
 while get_ground_type() != Grounds.Iron:
     dig()
+
+# 철 캐기
 dig()
 }}
 

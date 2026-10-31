@@ -1,8 +1,9 @@
 [<- Hierro](docs/unlocks/iron.md)
 ---
 # Mapa del tesoro
+Las leyendas hablan de un escurridizo tesoro escondido por un pirata olvidadizo que murió hace mucho... o algo así. ¿Y si trazó en un mapa el camino hacia el tesoro y luego lo perdió? Quizá dejó caer el mapa al verse acorralado por un río de lava y este quedó conservado bajo una capa de basalto.
 
-Las leyendas hablan de un escurridizo tesoro escondido por un pirata olvidadizo que murió hace mucho... o algo así. ¿Y si trazó en un mapa el camino hacia el tesoro y luego lo perdió? Quizá dejó caer el mapa al verse acorralado por un río de lava y este quedó conservado bajo una capa de basalto. Medir el basalto podría revelar algo.
+¡Medir los bloques de basalto podría revelar algo!
 
 <spoiler=cuéntame más>
 Deberías buscar una capa de `Grounds.Basalt`. Prueba a medir el basalto y comprueba qué te dice. Puede que la pista te lleve hasta el mapa del tesoro, y medir el mapa sin duda te dará el camino hacia el propio tesoro... pero ¿serás capaz de descifrar sus instrucciones?
@@ -36,10 +37,11 @@ Llama a `measure()` sobre el bloque del mapa para obtener el camino del tesoro c
 #SETUP
 jump(Unlocks.Treasure_Map)
 #CODE
+# Encuentra la capa de basalto
 while get_ground_type() != Grounds.Basalt:
     dig()
 
-do_a_flip()
+# Medir el basalto devuelve la posición del mapa del tesoro
 map_pos = measure()
 
 while get_pos_x() < map_pos[0]:
@@ -50,13 +52,16 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 
+# Has encontrado el mapa: mídelo para obtener el camino
 do_a_flip()
 instructions = measure()
 print("instrucciones: ", instructions)
+
+# Excava en el mapa para empezar la búsqueda del tesoro
 dig()
 }}
 
-Puedes usar el bucle `for` sobre la cadena para procesarla letra por letra:
+Puedes usar un bucle `for` sobre la cadena para procesarla letra por letra:
 {{codeexample 
 {
     "camera_position": {"x": -1.5, "y": 0, "z": 6},
@@ -91,8 +96,10 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 #CODE
-path = measure()
-for letter in path:
+# Las instrucciones del mapa se devuelven como una única cadena
+instructions = measure()
+# Usa for-in para dividir la cadena en letras
+for letter in instructions:
     print(letter)
 }}
 

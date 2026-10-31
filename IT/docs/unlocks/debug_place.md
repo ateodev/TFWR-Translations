@@ -1,11 +1,11 @@
 [<- Bambù](docs/unlocks/bamboo.md)
 ---
 # Blocchi Colorati
+Come forse già sai, puoi usare `place()` per far posizionare un blocco al drone. Questo sblocco aggiunge tre blocchi colorati che si distinguono visivamente dall'ambiente circostante: `Grounds.Block_Red`, `Grounds.Block_Green` e `Grounds.Block_Blue`.
 
-Come già sai, puoi usare `place()` per far posizionare un blocco al drone. Questo sblocco aggiunge tre blocchi colorati che si distinguono visivamente dall'ambiente circostante: `Grounds.Red_Block`, `Grounds.Green_Block` e `Grounds.Blue_Block`.
+I blocchi colorati si possono usare per segnare punti o creare bei motivi.
 
 Per posizionare i nuovi blocchi:
-
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 10},
@@ -30,32 +30,32 @@ Per posizionare i nuovi blocchi:
 move(East)
 move(North)
 #CODE
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(East)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(East)
 
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(North)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(North)
 
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(West)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(West)
 
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(South)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(East)
 
-place(Grounds.Red_Block)
-place(Grounds.Red_Block)
+place(Grounds.Block_Red)
+place(Grounds.Block_Red)
 
 do_a_flip()
 }}

@@ -2,7 +2,9 @@
 ---
 # Mapa do Tesouro
 
-Lendas falam de um tesouro esquivo escondido por um pirata esquecido, morto há muito tempo — ou algo assim. E se ele anotou o caminho em um mapa e depois o perdeu? Talvez tenha deixado o mapa cair ao ser encurralado por um rio de lava, e ele ficou preservado sob uma camada de basalto. Medir o basalto pode revelar algo.
+Lendas falam de um tesouro esquivo escondido por um pirata esquecido, morto há muito tempo — ou algo assim. E se ele anotou o caminho em um mapa e depois o perdeu? Talvez tenha deixado o mapa cair ao ser encurralado por um rio de lava, e ele ficou preservado sob uma camada de basalto.
+
+Medir os blocos de basalto pode revelar algo!
 
 <spoiler=conte mais>
 Procure uma camada de `Grounds.Basalt`. Tente medir o basalto e veja o que ele informa. A pista pode levar ao mapa do tesouro, e medir o mapa certamente revelará o caminho até o tesouro — mas você consegue decifrar as instruções?
@@ -36,10 +38,11 @@ Chame `measure()` no bloco do mapa para obter o caminho como uma sequência de l
 #SETUP
 jump(Unlocks.Treasure_Map)
 #CODE
+# Encontre a camada de basalto
 while get_ground_type() != Grounds.Basalt:
     dig()
 
-do_a_flip()
+# Medir o basalto retorna a posição do mapa do tesouro
 map_pos = measure()
 
 while get_pos_x() < map_pos[0]:
@@ -50,13 +53,16 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 
+# Encontramos o mapa, meça-o para obter o caminho
 do_a_flip()
 instructions = measure()
 print("instruções: ", instructions)
+
+# Escave o mapa para começar a caça ao tesouro
 dig()
 }}
 
-Você pode usar o laço `for` na string para processá-la letra por letra:
+Você pode usar um laço `for` na string para processá-la letra por letra:
 {{codeexample 
 {
     "camera_position": {"x": -1.5, "y": 0, "z": 6},
@@ -91,8 +97,10 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 #CODE
-path = measure()
-for letter in path:
+# As instruções do mapa são retornadas como uma única string
+instructions = measure()
+# Use for-in para dividir a string em letras
+for letter in instructions:
     print(letter)
 }}
 

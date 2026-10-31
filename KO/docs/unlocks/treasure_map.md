@@ -1,8 +1,9 @@
 [<- 철](docs/unlocks/iron.md)
 ---
 # 보물지도
+전설에 따르면 오래전에 죽은 건망증 심한 해적이 찾기 힘든 보물을 숨겼다고 합니다. 뭐, 대충 그런 얘기였던 것 같은데요. 해적이 보물로 가는 길을 지도에 적어 놓고 그 지도를 잃어버린 건 아닐까요? 용암의 강까지 몰렸을 때 지도를 떨어뜨렸고, 그 위에 현무암층이 쌓이면서 보존되었을지도 모르죠.
 
-전설에 따르면 오래전에 죽은 건망증 심한 해적이 찾기 힘든 보물을 숨겼다고 합니다. 뭐, 대충 그런 얘기였던 것 같은데요. 해적이 보물로 가는 길을 지도에 적어 놓고 그 지도를 잃어버린 건 아닐까요? 용암의 강까지 몰렸을 때 지도를 떨어뜨렸고, 그 위에 현무암층이 쌓이면서 보존되었을지도 모르죠. 현무암을 측정하면 뭔가를 더 알아낼 수 있을 겁니다.
+현무암 블록을 측정하면 뭔가를 알아낼 수 있을지도 몰라요!
 
 <spoiler=자세히 알려주세요>
 `Grounds.Basalt`층을 찾아보세요. 현무암을 측정해 무엇을 알려주는지 확인해 보세요. 단서를 따라가면 보물지도를 찾을 수 있을지도 모릅니다. 지도를 측정하면 틀림없이 보물로 가는 길을 알아낼 수 있죠. 지도의 지시를 해독할 수 있는지는 또 다른 문제겠지만요.
@@ -36,10 +37,11 @@
 #SETUP
 jump(Unlocks.Treasure_Map)
 #CODE
+# 현무암층 찾기
 while get_ground_type() != Grounds.Basalt:
     dig()
 
-do_a_flip()
+# 현무암을 측정하면 보물지도의 위치가 반환됨
 map_pos = measure()
 
 while get_pos_x() < map_pos[0]:
@@ -50,9 +52,12 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 
+# 지도를 찾았으니 측정해서 길 알아내기
 do_a_flip()
 instructions = measure()
 print("지시 사항: ", instructions)
+
+# 지도를 굴착해 보물찾기 시작하기
 dig()
 }}
 
@@ -91,8 +96,10 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 #CODE
-path = measure()
-for letter in path:
+# 지도의 지시 사항은 하나의 문자열로 반환됨
+instructions = measure()
+# for-in으로 문자열을 글자 단위로 나누기
+for letter in instructions:
     print(letter)
 }}
 

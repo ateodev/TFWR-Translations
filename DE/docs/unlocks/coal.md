@@ -2,7 +2,6 @@
 <right>[Springen ->](docs/unlocks/jump.md)
 ---
 # Kohle
-
 Unter der Erde liegen verschiedene Erze verborgen und warten darauf, dass du sie findest und ausgräbst. Wenn du dich durch die Oberfläche in `Grounds.Dirt` gräbst, ist Kohle das erste Erz, das du findest.
 
 Um Kohle abzubauen, musst du nichts Besonderes tun. Führe einfach `dig()` aus, während die Drohne direkt auf einem `Grounds.Coal`-Block steht. Mit `get_ground_type()` prüfst du, was unter der Drohne liegt, und mit `get_ground_type(direction)` die vier angrenzenden Blöcke.
@@ -32,8 +31,11 @@ move(North)
 move(East)
 move(East)
 #CODE
+# Graben, bis ein Kohleblock erscheint
 while get_ground_type() != Grounds.Coal:
     dig()
+
+# Die Kohle abbauen
 dig()
 }}
 

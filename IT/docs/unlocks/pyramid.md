@@ -1,10 +1,11 @@
 [<- Bambù](docs/unlocks/bamboo.md)
 ---
 # Piramidi
-Il sottosuolo ora contiene antiche strutture piramidali da cui puoi raccogliere energia!
+Il sottosuolo ora contiene antiche strutture piramidali da cui puoi raccogliere energia per velocizzare il drone!
 
-Le piramidi sono fatte di blocchi di sabbia (`Grounds.Sand`). Sotto la piramide si trova uno strato di fondamenta in calcare (`Grounds.Limestone`). Essendo antiche ed erose, le troverai sempre parzialmente distrutte. Lo strato di fondamenta è sempre presente, ma nella sabbia ci saranno dei buchi. Ecco che aspetto hanno i resti di una piramide quando li dissotterri:
+Le piramidi sono fatte di blocchi di sabbia (`Grounds.Sand`). Sotto la piramide si trova uno strato di fondamenta in calcare (`Grounds.Limestone`). Essendo antiche ed erose, le troverai sempre parzialmente distrutte. Lo strato di fondamenta è sempre presente, ma nella sabbia ci saranno dei buchi.
 
+Ecco che aspetto hanno i resti di una piramide quando li dissotterri:
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -28,9 +29,13 @@ Le piramidi sono fatte di blocchi di sabbia (`Grounds.Sand`). Sotto la piramide 
 jump(Unlocks.Pyramid)
 move(North)
 #CODE
+# Scava verso il basso per trovare le fondamenta di una piramide
 while get_ground_type() != Grounds.Limestone:
     dig()
-z = get_pos_z()
+
+z = get_pos_z() # Ricorda la profondità delle fondamenta
+
+# Scava via tutto ciò che non fa parte della piramide
 for i in range(6):
     for j in range(6):
         while (get_ground_type() != Grounds.Limestone
@@ -41,7 +46,8 @@ for i in range(6):
     move(East)
 }}
 
-Come puoi vedere, nella sabbia ci sono diversi buchi da riempire. Quando li riempi e riporti la piramide al suo stato originale, questa si distrugge e al centro della base di calcare compare un grande girasole. Raccoglilo per ricevere energia. Più grande è la piramide completata, maggiore è l'energia ottenuta.
+## Restaurare la Piramide
+Come puoi vedere, nella sabbia ci sono diversi buchi da riempire. Quando li riempi e riporti la piramide al suo stato originale, questa si distrugge e al centro della base di calcare compare un grande girasole. Raccoglilo per ricevere `Items.Power`. Più grande è la piramide completata, maggiore è l'energia ottenuta.
 
 Puoi restaurare una piramide posizionando blocchi con il comando `place(Grounds.Sand)`. La sabbia è un blocco speciale che crolla immediatamente se non è sostenuto correttamente. Ogni blocco di sabbia deve essere posizionato direttamente sul calcare oppure sopra una base 3x3 di blocchi di sabbia. Ecco una piccola piramide costruita a mano come dimostrazione. Naturalmente, costruirla da solo non ti darà energia:
 
@@ -65,26 +71,42 @@ Puoi restaurare una piramide posizionando blocchi con il comando `place(Grounds.
     "exclude_unlocks": ["watering", "fertilizer", "mushrooms", "coal", "quartz"]
 }
 #CODE
+# Ci servono fondamenta di calcare su cui mettere la sabbia
 for i in range(3):
     for j in range(3):
         place(Grounds.Limestone)
         move(North)
     move(East)
 
+# Metti uno strato 3x3 di sabbia sul calcare
 for i in range(3):
     for j in range(3):
         place(Grounds.Sand)
         move(North)
     move(East)
 
-move(North)
-move(East)
-place(Grounds.Sand)
+# Prova a mettere un altro strato 3x3
+# Nota che solo il blocco centrale è sostenuto e rimane
+for i in range(3):
+    for j in range(3):
+        place(Grounds.Sand)
+        move(North)
+    move(East)
 }}
 
 Una piramide restaurata correttamente è composta da fondamenta quadrate di calcare con lati di lunghezza dispari, per esempio 5x5. Sopra si trova uno strato di blocchi di sabbia delle stesse dimensioni (5x5), seguito da strati progressivamente più piccoli: 3x3 e poi 1x1.
 
-I blocchi sopra la piramide sono sempre di terra. Se vuoi dissotterrare una piramide in modo più efficiente rispetto al codice precedente, puoi sfruttare questo fatto.
+I blocchi sopra la piramide sono sempre di terra. Se vuoi dissotterrare una piramide in modo efficiente, puoi sfruttare questo fatto.
+
+## Energia
+Finché hai energia, il drone la usa per funzionare al doppio della velocità.
+Consuma 1 unità di energia ogni 30 azioni, come movimenti, raccolti o semine.
+Anche l'esecuzione di altre istruzioni di codice può consumare energia, ma molto meno delle azioni del drone.
+
+In generale, tutto ciò che è accelerato dai potenziamenti di velocità è anche accelerato dall'energia.
+Qualsiasi cosa accelerata dall'energia consuma anche energia in proporzione al tempo necessario per eseguirla, ignorando i potenziamenti di velocità.
+
+L'energia non ha effetto su `dig()`.
 
 ---
 

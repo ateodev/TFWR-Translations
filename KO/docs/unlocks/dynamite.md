@@ -1,14 +1,11 @@
 [<- 버섯](docs/unlocks/mushroom.md) <right>[폭발 드릴 ->](docs/unlocks/explosive_drill.md)
 ---
 # 다이너마이트
-
-이전의 채광 탐사대가 남긴 획기적인 폭발물입니다. 다행이라고 해야 할지 불행이라고 해야 할지, 드론의 드릴은 다이너마이트를 폭발시켜 주변의 모든 블록을 날려 버리기에 안성맞춤이죠.
+이전의 채광 탐사대가 남긴 획기적인 폭발물입니다. 안타깝게도 드론의 드릴은 다이너마이트를 폭발시켜 주변의 모든 블록을 날려 버리기에 안성맞춤이죠. 모은 다이너마이트는 `use_item(Items.Dynamite)`로 사용할 수 있으며 드론 바로 아래에서 즉시 폭발합니다.
 
 다이너마이트를 안전하게 굴착하려면 `Grounds.Dynamite` 층과 그 바로 아래에 이어지는 `Grounds.Soot` 층을 찾으세요. 위쪽의 다이너마이트 층은 조금 오래되었기 때문에 일부 블록은 안전하게 굴착할 수 있습니다. 하지만 일부 다이너마이트 블록은 아직 활성 상태이므로 파면 폭발합니다.
 
-모은 다이너마이트는 `use_item(Items.Dynamite)`로 사용할 수 있으며 드론 바로 아래에서 즉시 폭발합니다.
-
-이 예시는 다이너마이트를 파 내려간 뒤 처음 굴착한 지점의 주변을 모두 굴착하면서 아래에 있는 그을음 블록의 측정값을 출력합니다.
+이 예시는 다이너마이트를 파 내려간 뒤 처음 굴착한 지점의 주변을 모두 굴착해 숫자가 적힌 그을음 층을 드러내고, 그 측정값을 출력합니다.
 {{codeexample 
 {
     "camera_position": {"x": -3, "y": 0, "z": 15},
@@ -34,9 +31,11 @@ for _ in range(3):
     move(East)
     move(North)
 #CODE
+# 위쪽 다이너마이트 층을 뚫고 그을음 층까지 파 내려가기
 while get_ground_type() != Grounds.Soot:
     dig()
 
+# 드론이 원을 그리며 이동하게 하는 방향 리스트
 circle_directions = [
     East, South, West, West, 
     North, North, East, East
@@ -44,7 +43,7 @@ circle_directions = [
 for dir in circle_directions:
     move(dir)
     dig()
-    print(measure())
+    print(measure()) # 그을음 블록에 적힌 숫자
 }}
 
 ## 다이너마이트 찾기
@@ -113,10 +112,15 @@ circle_directions = [
     East, South, West, West, North,
     North, East, East, South, West
 ]
+# 처음 파 들어간 블록 주위를 한 바퀴 돌기
 for dir in circle_directions:
+    # 그을음의 측정값이 0이면
+    # 주변의 다이너마이트 블록이 모두 불발탄이라는 뜻
     if get_ground_type() == Grounds.Soot and measure() == 0:
+        # 주변 블록을 따라 한 바퀴 더 돌기
         for dir2 in circle_directions:
             move(dir2)
+            # 불발 다이너마이트 블록 파내기
             while get_ground_type() != Grounds.Soot:
                 dig()
     move(dir)

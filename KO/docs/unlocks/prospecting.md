@@ -1,7 +1,6 @@
 [<- 철](docs/unlocks/iron.md)
 ---
 # 철 탐사
-
 철 광맥을 찾기가 어려울 때가 있다는 걸 눈치채셨을 겁니다. 운에 맡기고 주변을 파볼 수도 있지만, 더 좋은 방법이 있죠. 철은 자성을 띠므로 떨어진 곳에서도 찾을 수 있습니다.
 
 바로 `prospect_iron()` 명령으로 가능합니다. `prospect_iron()`은 가장 가까운 철광석으로 한 걸음 다가가기 위해 드론이 이동해야 하는 방위(`North`, `East`, `South`, `West`)를 반환합니다.
@@ -34,8 +33,9 @@
 #SETUP
 jump(Unlocks.Iron)
 #CODE
+# 탐사 결과로 방향이 반환되는지 확인하기
 if prospect_iron() != None:
-    move(prospect_iron())
+    move(prospect_iron()) # 철 광맥에 더 가까이 이동하기
 }}
 
 이 코드는 현재 `prospect_iron()`을 두 번 호출해 석탄 2개를 소모하므로 변수를 사용해 최적화하는 것이 좋습니다.

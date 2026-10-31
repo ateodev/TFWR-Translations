@@ -3,7 +3,6 @@
 <right>[Mapa del tesoro ->](docs/unlocks/treasure_map.md)
 ---
 # Hierro
-
 Después de encontrar carbón en `Grounds.Dirt`, puedes excavar más hondo, más allá de la capa de `Grounds.Clay` y hasta `Grounds.Rock`, para encontrar hierro.
 
 A diferencia de las vetas de carbón, las vetas de hierro también se extienden en vertical. Pero todos los bloques de hierro de una veta están siempre justo unos al lado de otros; nunca se conectan solo en diagonal.
@@ -31,8 +30,11 @@ Pero las vetas de hierro empiezan siendo pequeñas y necesitarás algo de suerte
 }
 #SETUP
 #CODE
+# Excava hasta que aparezca un bloque de hierro
 while get_ground_type() != Grounds.Iron:
     dig()
+
+# Extrae el hierro
 dig()
 }}
 

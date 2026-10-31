@@ -1,14 +1,11 @@
 [<- Pilze](docs/unlocks/mushroom.md) <right>[Sprengbohrer ->](docs/unlocks/explosive_drill.md)
 ---
 # Dynamit
-
-Der revolutionäre Sprengstoff, zurückgelassen von früheren Bergbauexpeditionen. Dein Bohrer ist (un-)glücklicherweise perfekt dafür geeignet, Dynamit zur Explosion zu bringen und alle Blöcke um dich herum wegzusprengen.
+Der revolutionäre Sprengstoff, zurückgelassen von früheren Bergbauexpeditionen. Leider ist dein Bohrer perfekt dafür geeignet, Dynamit zur Explosion zu bringen und alle Blöcke um dich herum wegzusprengen. Gesammeltes Dynamit kann mit `use_item(Items.Dynamite)` verwendet werden und explodiert direkt unter der Drohne.
 
 Um Dynamit sicher abzubauen, finde eine Schicht aus `Grounds.Dynamite`, unter der direkt eine Schicht aus `Grounds.Soot` folgt. Die Dynamitschicht darüber ist etwas in die Jahre gekommen, weshalb sich einige ihrer Blöcke gefahrlos aufgraben lassen. Einige der Dynamitblöcke sind jedoch noch aktiv und explodieren, wenn du in sie gräbst.
 
-Gesammeltes Dynamit kann mit `use_item(Items.Dynamite)` verwendet werden und explodiert direkt unter der Drohne.
-
-Dieses Beispiel gräbt in das Dynamit und rund um die erste Grabstelle und gibt dabei die Messwerte der darunterliegenden Rußblöcke aus:
+Dieses Beispiel gräbt in das Dynamit und rund um die erste Grabstelle. Dabei wird die Rußschicht mit ihren Zahlen freigelegt, und die Messwerte werden ausgegeben:
 {{codeexample 
 {
     "camera_position": {"x": -3, "y": 0, "z": 15},
@@ -34,9 +31,11 @@ for _ in range(3):
     move(East)
     move(North)
 #CODE
+# Durch die Dynamitschicht darüber bis zur Rußschicht hinuntergraben
 while get_ground_type() != Grounds.Soot:
     dig()
 
+# Liste von Richtungen, mit denen sich die Drohne im Kreis bewegt
 circle_directions = [
     East, South, West, West, 
     North, North, East, East
@@ -44,7 +43,7 @@ circle_directions = [
 for dir in circle_directions:
     move(dir)
     dig()
-    print(measure())
+    print(measure()) # Die Zahl auf dem Rußblock
 }}
 
 ## Dynamit-Minensucher
@@ -113,10 +112,15 @@ circle_directions = [
     East, South, West, West, North,
     North, East, East, South, West
 ]
+# Um den Block herumgehen, in den wir zuerst gegraben haben
 for dir in circle_directions:
+    # Wenn der Ruß 0 misst,
+    # wissen wir, dass alle umliegenden Dynamitblöcke Blindgänger sind
     if get_ground_type() == Grounds.Soot and measure() == 0:
+        # Noch einen Kreis durch die umliegenden Blöcke drehen
         for dir2 in circle_directions:
             move(dir2)
+            # Den Dynamit-Blindgänger ausgraben
             while get_ground_type() != Grounds.Soot:
                 dig()
     move(dir)

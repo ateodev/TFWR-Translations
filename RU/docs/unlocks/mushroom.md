@@ -27,15 +27,19 @@
 #SETUP
 jump(Unlocks.Mushrooms)
 #CODE
+# Обработать ряд грибов
 for i in range(get_world_size()):
+    # Прокопать до верхнего грибного блока
     while get_ground_type() != Grounds.Mushroom:
         dig()
 
+    # Вывести номер типа гриба
     print(measure())
 
     move(East)
 }}
 
+## Как собирать грибы
 Грибы одного типа селятся рядом, но стесняются расти друг на друге. Толкай грибной блок под дроном с помощью `push(direction)`.
 
 Поставь друг на друга два грибных блока одного типа, и они автоматически соберутся, принеся тебе грибы.
@@ -68,11 +72,13 @@ while get_ground_type() != Grounds.Mushroom:
 
 depth = get_pos_z()
 for i in range(2):
+    # Освободить место, чтобы толкнуть грибной блок на восток
     move(East)
     while get_pos_z() > depth - 1:
         dig()
+    # Вернуться, толкнуть и последовать за блоком
     move(West)
-    push(East)
+    push(East) # Толкнуть гриб!
     move(East)
 }}
 

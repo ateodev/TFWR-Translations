@@ -3,11 +3,12 @@
 # Podziemne zmysły
 Dodajmy kilka czujników, aby dron potrafił poruszać się pod ziemią.
 
+## Pozycja Z
 Możesz teraz użyć `get_pos_z()`, aby odczytać wysokość drona (zaczyna od 0 i przyjmuje ujemne wartości, gdy dron schodzi niżej).
 
 {{codeexample 
 {
-    "camera_position": {"x": -1.5, "y": 0, "z": 8},
+    "camera_position": {"x": -1.5, "y": 0, "z": 10},
     "show_image": true,
     "image_size": {"x": 800, "y": 300},
     "show_code": true,
@@ -17,7 +18,7 @@ Możesz teraz użyć `get_pos_z()`, aby odczytać wysokość drona (zaczyna od 0
     "autoplay": false,
     "exclude_unlocks": ["watering", "fertilizer"],
     "items": [],
-    "world_size": {"x": 4, "y": 4},
+    "world_size": {"x": 5, "y": 5},
     "execution_speed": 2,
     "action_ticks": 200,
     "operation_ticks": 200,
@@ -27,13 +28,16 @@ Możesz teraz użyć `get_pos_z()`, aby odczytać wysokość drona (zaczyna od 0
 move(North)
 move(North)
 move(East)
+move(East)
 #CODE
+print(get_pos_z())
 dig()
 dig()
 dig()
 print(get_pos_z())
 }}
 
+## Rodzaj podłoża
 `get_ground_type()` zwraca rodzaj podłoża pod dronem. Możesz przekazać tej funkcji kierunek — na przykład `get_ground_type(North)` — aby uzyskać rodzaj podłoża na sąsiednim polu.
 
 W ten sposób możesz sprawdzić, czy blok pod dronem jest ziemią:
@@ -69,7 +73,7 @@ if get_ground_type() == Grounds.Dirt:
 
 {{codeexample 
 {
-    "camera_position": {"x": -1, "y": 0, "z": 8},
+    "camera_position": {"x": -1, "y": 0, "z": 10},
     "show_image": true,
     "image_size": {"x": 800, "y": 250},
     "show_code": true,
@@ -79,7 +83,7 @@ if get_ground_type() == Grounds.Dirt:
     "autoplay": false,
     "items": [],
     "exclude_unlocks": ["watering", "fertilizer"],
-    "world_size": {"x": 3, "y": 3},
+    "world_size": {"x": 5, "y": 5},
     "execution_speed": 2,
     "action_ticks": 200,
     "operation_ticks": 20,

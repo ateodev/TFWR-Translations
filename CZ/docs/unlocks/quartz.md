@@ -1,10 +1,9 @@
 [<- Železo](docs/unlocks/iron.md) <right>[Houby ->](docs/unlocks/mushroom.md)
 ---
 # Křemen
-
 Pod železnými žílami v `Grounds.Rock` najdeš křemen ve spodní části kamenné vrstvy a v tvrdé `Grounds.Dirt` pod ní (tvrdost zjistíš pomocí `get_hardness()` z odemčení [Podzemní senzory](docs/unlocks/underground_senses.md)).
 
-Následující úryvek kódu nechá dron prokopat se hlínou hluboko do kamenné vrstvy. Pak s trochou štěstí bude poblíž křemenná žíla a dron vypíše vzdálenost k ní.
+Následující úryvek kódu se prokope hlínou do kamenné vrstvy. Tam při kopání neustále hledá křemen, dokud není vzdálenost menší než 2. Nakonec vypíše vzdálenost, ke které dospěl.
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -15,7 +14,7 @@ Následující úryvek kódu nechá dron prokopat se hlínou hluboko do kamenné
     "show_output": false,
     "collapsing": true,
     "autoplay": false,
-    "items": [],
+    "items": [{"item": "block", "n": 1}, {"item": "iron", "n": 100}],
     "world_size": {"x": 3, "y": 3},
     "execution_speed": 8,
     "digging_speed": 16,
@@ -28,13 +27,16 @@ Následující úryvek kódu nechá dron prokopat se hlínou hluboko do kamenné
 move(East)
 move(North)
 #CODE
+# Prokopej se dolů ke kamenné vrstvě
 while get_ground_type() != Grounds.Rock:
     dig()
-for i in range(30):
-    dig()
 
-print(prospect_quartz())
-move(South)
+# Kopej dál, dokud není křemenná žíla blízko
+while prospect_quartz() == None or prospect_quartz() >= 2:
+    for i in range(10):
+        dig()
+
+# Vypiš konečnou vzdálenost k žíle
 print(prospect_quartz())
 }}
 
@@ -51,11 +53,13 @@ Provedení `prospect_quartz()` stojí 1 železo, takže je dobré příkaz použ
 Pokud `prospect_quartz()` poblíž žádný křemen nenajde nebo pokud nemáš dost železa na hledání, vrátí `None`.
 
 ## Strategie
-<spoiler=zobrazit nápovědu>
-Můžeš opakovaně hledat a pohybovat se a sledovat, jak se mění vzdálenost, abys poznal, jestli se k žíle přibližuješ, nebo se od ní vzdaluješ. Pomocí 2D geometrie můžeš najít průsečík dvou nebo více kružnic, určit vodorovnou polohu žíly a kopat dolů. Nebo můžeš použít úplnou trilateraci, protnout tři koule a najít přesnou 3D polohu.
+<spoiler=zobrazit nápovědu>Můžeš opakovaně hledat a pohybovat se a sledovat, jak se mění vzdálenost. Na rovném povrchu tě snaha o co nejmenší vzdálenost může dovést nad křemennou žílu. Abys co nejvíc omezil počet volání `prospect_quartz()` a množství železa, které spotřebují, můžeš použít strategii podobnou binárnímu vyhledávání.
 
-Pamatuj, že neexistují žádné základní matematické funkce pro odmocninu, goniometrii ani vektory, ty si musíš napsat sám. Pamatuj také, že poblíž může být víc žil, takže když uděláš několik blízkých měření, nemusí ukazovat na stejnou žílu a mohou tě svést z cesty.
-</spoiler>
+Pokročilejší strategie mohou pomocí 2D geometrie najít průsečík dvou nebo více kružnic, nebo se můžeš vydat obtížnější cestou a použít úplnou trilateraci, protnout tři koule a najít přesnou 3D polohu žíly.
+
+Pamatuj, že odmocninu můžeš spočítat pomocí operátoru mocniny, například odmocninu ze 16 získáš jako `16**0.5`. Neexistují žádné základní matematické funkce pro goniometrii ani vektory, ty si musíš napsat sám. 
+
+Pamatuj také, že poblíž může být víc žil, takže když uděláš několik blízkých měření, nemusí ukazovat na stejnou žílu.</spoiler>
 
 ---
 

@@ -1,11 +1,11 @@
 [<-竹子](docs/unlocks/bamboo.md)
 ---
 # 彩色地塊
+你或許已經知道，可以用 `place()` 讓無人機放置地塊。此解鎖項新增了三種顏色鮮明、容易與周圍區分的地塊：`Grounds.Block_Red`、`Grounds.Block_Green` 和 `Grounds.Block_Blue`。
 
-你已經知道，可以用 `place()` 讓無人機放置地塊。此解鎖項新增了三種顏色鮮明、容易與周圍區分的地塊：`Grounds.Red_Block`、`Grounds.Green_Block` 和 `Grounds.Blue_Block`。
+彩色地塊可以用來標記東西，或排出漂亮的圖案。
 
 放置新地塊的方法如下：
-
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 10},
@@ -30,32 +30,32 @@
 move(East)
 move(North)
 #CODE
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(East)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(East)
 
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(North)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(North)
 
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(West)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(West)
 
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(South)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(East)
 
-place(Grounds.Red_Block)
-place(Grounds.Red_Block)
+place(Grounds.Block_Red)
+place(Grounds.Block_Red)
 
 do_a_flip()
 }}

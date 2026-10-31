@@ -1,7 +1,6 @@
 [<- Arroz](docs/unlocks/rice.md)
 
 # Perlita y suelo franco
-
 Este desbloqueo añade dos nuevos tipos de bloques subterráneos: perlita y suelo franco (`Grounds.Perlite` y `Grounds.Loam`). Cuando coseches cultivos que se plantaron en estos suelos, obtendrás el doble de rendimiento.
 
 La perlita y el suelo franco aparecen en finas capas subterráneas, similares a la arcilla, pero son algo más escasos.

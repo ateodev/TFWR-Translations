@@ -2,7 +2,6 @@
 <right>[Saltar ->](docs/unlocks/jump.md)
 ---
 # Carbón
-
 Bajo tierra hay distintos minerales escondidos, esperando a que los encuentres y los extraigas. Si excavas a través de la superficie hasta `Grounds.Dirt`, el primer mineral que encuentras es el carbón.
 
 No tienes que hacer nada especial para extraer carbón: basta con ejecutar `dig()` mientras el dron está justo encima de un bloque de `Grounds.Coal`. Usa `get_ground_type()` para comprobar qué hay debajo del dron y `get_ground_type(direction)` para comprobar los cuatro bloques adyacentes.
@@ -32,8 +31,11 @@ move(North)
 move(East)
 move(East)
 #CODE
+# Excava hasta que aparezca un bloque de carbón
 while get_ground_type() != Grounds.Coal:
     dig()
+
+# Extrae el carbón
 dig()
 }}
 

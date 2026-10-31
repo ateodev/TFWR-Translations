@@ -3,11 +3,12 @@
 # Sentidos subterráneos
 Vamos a añadir algunos sensores para que tu dron pueda orientarse bajo tierra.
 
+## Posición z
 Ahora puedes usar `get_pos_z()` para obtener la altura del dron (empieza en 0 y se vuelve negativa a medida que el dron desciende).
 
 {{codeexample 
 {
-    "camera_position": {"x": -1.5, "y": 0, "z": 8},
+    "camera_position": {"x": -1.5, "y": 0, "z": 10},
     "show_image": true,
     "image_size": {"x": 800, "y": 300},
     "show_code": true,
@@ -17,7 +18,7 @@ Ahora puedes usar `get_pos_z()` para obtener la altura del dron (empieza en 0 y 
     "autoplay": false,
     "exclude_unlocks": ["watering", "fertilizer"],
     "items": [],
-    "world_size": {"x": 4, "y": 4},
+    "world_size": {"x": 5, "y": 5},
     "execution_speed": 2,
     "action_ticks": 200,
     "operation_ticks": 200,
@@ -27,13 +28,16 @@ Ahora puedes usar `get_pos_z()` para obtener la altura del dron (empieza en 0 y 
 move(North)
 move(North)
 move(East)
+move(East)
 #CODE
+print(get_pos_z())
 dig()
 dig()
 dig()
 print(get_pos_z())
 }}
 
+## Tipo de terreno
 `get_ground_type()` devuelve el tipo de terreno que hay debajo del dron. Puedes pasarle un argumento de dirección (por ejemplo, `get_ground_type(North)`) para obtener el tipo de terreno de una casilla vecina.
 
 Así comprobarías si el bloque que hay debajo del dron es tierra:
@@ -69,7 +73,7 @@ if get_ground_type() == Grounds.Dirt:
 
 {{codeexample 
 {
-    "camera_position": {"x": -1, "y": 0, "z": 8},
+    "camera_position": {"x": -1, "y": 0, "z": 10},
     "show_image": true,
     "image_size": {"x": 800, "y": 250},
     "show_code": true,
@@ -79,7 +83,7 @@ if get_ground_type() == Grounds.Dirt:
     "autoplay": false,
     "items": [],
     "exclude_unlocks": ["watering", "fertilizer"],
-    "world_size": {"x": 3, "y": 3},
+    "world_size": {"x": 5, "y": 5},
     "execution_speed": 2,
     "action_ticks": 200,
     "operation_ticks": 20,

@@ -1,7 +1,6 @@
 [<- Křemen](docs/unlocks/quartz.md) <right>[Dynamit ->](docs/unlocks/dynamite.md)
 ---
 # Houby
-
 V podzemí rostou v koloniích mnohé druhy hub. Při kopání hledej vrstvu `Grounds.Mushroom`. Pak můžeš půdu změřit pomocí `measure()` a získat typ houby jako číslo od `0` do `5`.
 
 Následující kód najde několik hub a vypíše jejich typ:
@@ -27,15 +26,19 @@ Následující kód najde několik hub a vypíše jejich typ:
 #SETUP
 jump(Unlocks.Mushrooms)
 #CODE
+# Zpracuj řadu hub
 for i in range(get_world_size()):
+    # Prokopej se dolů k hornímu houbovému bloku
     while get_ground_type() != Grounds.Mushroom:
         dig()
 
+    # Vypiš číslo typu houby
     print(measure())
 
     move(East)
 }}
 
+## Jak sbírat houby
 Houby stejného typu jsou rády pohromadě, ale jsou trochu příliš plaché na to, aby rostly na sobě. Houbový blok pod dronem posuneš pomocí `push(direction)`.
 
 Polož na sebe dva houbové bloky stejného typu a bloky se automaticky sklidí a dostaneš z nich houby.
@@ -68,11 +71,13 @@ while get_ground_type() != Grounds.Mushroom:
 
 depth = get_pos_z()
 for i in range(2):
+    # Udělej místo pro posunutí houbového bloku na východ
     move(East)
     while get_pos_z() > depth - 1:
         dig()
+    # Vrať se, posuň blok a následuj ho
     move(West)
-    push(East)
+    push(East) # Posuň houbu!
     move(East)
 }}
 

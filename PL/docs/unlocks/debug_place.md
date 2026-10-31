@@ -2,7 +2,9 @@
 ---
 # Kolorowe bloki
 
-Jak już wiesz, za pomocą `place()` możesz nakazać dronowi umieszczenie bloku. To odblokowanie dodaje trzy kolorowe bloki, które wizualnie odróżniają się od otoczenia: `Grounds.Red_Block`, `Grounds.Green_Block` i `Grounds.Blue_Block`.
+Jak być może już wiesz, za pomocą `place()` możesz nakazać dronowi umieszczenie bloku. To odblokowanie dodaje trzy kolorowe bloki, które wizualnie odróżniają się od otoczenia: `Grounds.Block_Red`, `Grounds.Block_Green` i `Grounds.Block_Blue`.
+
+Kolorowych bloków możesz używać do oznaczania różnych rzeczy lub tworzenia ładnych wzorów.
 
 Aby umieścić nowe bloki:
 
@@ -30,32 +32,32 @@ Aby umieścić nowe bloki:
 move(East)
 move(North)
 #CODE
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(East)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(East)
 
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(North)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(North)
 
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(West)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(West)
 
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(South)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(East)
 
-place(Grounds.Red_Block)
-place(Grounds.Red_Block)
+place(Grounds.Block_Red)
+place(Grounds.Block_Red)
 
 do_a_flip()
 }}

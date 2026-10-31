@@ -2,7 +2,6 @@
 <right>[Salto ->](docs/unlocks/jump.md)
 ---
 # Carbone
-
 Sottoterra sono nascosti diversi minerali che aspettano solo di essere trovati e scavati. Se scavi attraverso la superficie fino a `Grounds.Dirt`, il primo minerale che trovi è il carbone.
 
 Per estrarre il carbone non devi fare nulla di speciale: basta eseguire `dig()` mentre il drone si trova direttamente sopra un blocco `Grounds.Coal`. Usa `get_ground_type()` per controllare cosa c'è sotto il drone e `get_ground_type(direction)` per controllare i quattro blocchi adiacenti.
@@ -32,8 +31,11 @@ move(North)
 move(East)
 move(East)
 #CODE
+# Scava finché non compare un blocco di carbone
 while get_ground_type() != Grounds.Coal:
     dig()
+
+# Estrai il carbone
 dig()
 }}
 

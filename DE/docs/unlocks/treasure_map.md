@@ -1,8 +1,9 @@
 [<- Eisen](docs/unlocks/iron.md)
 ---
 # Schatzkarte
+Legenden erzählen von einem schwer auffindbaren Schatz, den ein längst verstorbener, vergesslicher Pirat versteckt haben soll – oder so ähnlich. Was, wenn er den Weg zum Schatz auf einer Karte eingezeichnet und diese dann verloren hat? Vielleicht ließ er die Karte fallen, als ihn ein Lavafluss in die Enge trieb, und sie blieb unter einer Basaltschicht erhalten.
 
-Legenden erzählen von einem schwer auffindbaren Schatz, den ein längst verstorbener, vergesslicher Pirat versteckt haben soll – oder so ähnlich. Was, wenn er den Weg zum Schatz auf einer Karte eingezeichnet und diese dann verloren hat? Vielleicht ließ er die Karte fallen, als ihn ein Lavafluss in die Enge trieb, und sie blieb unter einer Basaltschicht erhalten. Wenn man den Basalt misst, könnte man etwas herausfinden.
+Wenn man die Basaltblöcke misst, könnte man etwas herausfinden!
 
 <spoiler=Erzähl mir mehr>
 Halte nach einer Schicht aus `Grounds.Basalt` Ausschau. Versuche, den Basalt zu messen, und sieh nach, was er dir verrät. Der Hinweis könnte dich zur Schatzkarte führen. Wenn du die Karte misst, erhältst du bestimmt den Weg zum Schatz – doch kannst du ihre Anweisungen auch entschlüsseln?
@@ -36,10 +37,11 @@ Rufe `measure()` auf dem Kartenblock auf, um den Weg zum Schatz als Zeichenfolge
 #SETUP
 jump(Unlocks.Treasure_Map)
 #CODE
+# Die Basaltschicht finden
 while get_ground_type() != Grounds.Basalt:
     dig()
 
-do_a_flip()
+# Das Messen des Basalts liefert die Position der Schatzkarte
 map_pos = measure()
 
 while get_pos_x() < map_pos[0]:
@@ -50,9 +52,12 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 
+# Karte gefunden, sie messen, um den Weg zu erhalten
 do_a_flip()
 instructions = measure()
 print("Anweisungen: ", instructions)
+
+# In die Karte graben, um die Schatzsuche zu starten
 dig()
 }}
 
@@ -91,8 +96,10 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 #CODE
-path = measure()
-for letter in path:
+# Die Anweisungen der Karte werden als eine einzige Zeichenfolge zurückgegeben
+instructions = measure()
+# Mit for-in die Zeichenfolge in Buchstaben zerlegen
+for letter in instructions:
     print(letter)
 }}
 

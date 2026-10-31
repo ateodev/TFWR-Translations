@@ -1,11 +1,11 @@
 [<- Bambus](docs/unlocks/bamboo.md)
 ---
 # Farbige Blöcke
+Wie du vielleicht schon weißt, kannst du deine Drohne mit `place()` einen Block platzieren lassen. Diese Freischaltung fügt drei farbige Blöcke hinzu, die sich deutlich von ihrer Umgebung abheben: `Grounds.Block_Red`, `Grounds.Block_Green` und `Grounds.Block_Blue`.
 
-Wie du bereits weißt, kannst du deine Drohne mit `place()` einen Block platzieren lassen. Diese Freischaltung fügt drei farbige Blöcke hinzu, die sich deutlich von ihrer Umgebung abheben: `Grounds.Red_Block`, `Grounds.Green_Block` und `Grounds.Blue_Block`.
+Mit farbigen Blöcken kannst du Dinge markieren oder hübsche Muster gestalten.
 
 So platzierst du die neuen Blöcke:
-
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 10},
@@ -30,32 +30,32 @@ So platzierst du die neuen Blöcke:
 move(East)
 move(North)
 #CODE
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(East)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(East)
 
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(North)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(North)
 
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(West)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(West)
 
-place(Grounds.Green_Block)
+place(Grounds.Block_Green)
 move(South)
 
-place(Grounds.Blue_Block)
+place(Grounds.Block_Blue)
 move(East)
 
-place(Grounds.Red_Block)
-place(Grounds.Red_Block)
+place(Grounds.Block_Red)
+place(Grounds.Block_Red)
 
 do_a_flip()
 }}

@@ -2,7 +2,6 @@
 <right>[ジャンプ ->](docs/unlocks/jump.md)
 ---
 # 石炭
-
 地下にはさまざまな鉱石が隠れていて、見つけて掘り出されるのを待っています。地表を掘り抜いて`Grounds.Dirt`に入ると、最初に見つかる鉱石は石炭です。
 
 石炭を採掘するのに特別なことは必要ありません。ドローンが`Grounds.Coal`ブロックの真上にいるときに`dig()`を実行するだけです。`get_ground_type()`でドローンの下にあるものを、`get_ground_type(direction)`で隣接する4つのブロックを確認できます。
@@ -32,8 +31,11 @@ move(North)
 move(East)
 move(East)
 #CODE
+# 石炭ブロックが現れるまで掘る
 while get_ground_type() != Grounds.Coal:
     dig()
+
+# 石炭を採掘する
 dig()
 }}
 

@@ -1,7 +1,6 @@
 [<- Reis](docs/unlocks/rice.md)
 
 # Perlit und Lehmboden
-
 Diese Freischaltung fügt zwei neue unterirdische Blocktypen hinzu: Perlit und Lehmboden (`Grounds.Perlite` und `Grounds.Loam`). Wenn du Pflanzen erntest, die auf diesen Böden gepflanzt wurden, erhältst du den doppelten Ertrag.
 
 Perlit und Lehmboden kommen ähnlich wie Ton in dünnen unterirdischen Schichten vor, sind aber etwas seltener.

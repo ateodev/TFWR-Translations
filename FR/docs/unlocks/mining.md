@@ -3,7 +3,6 @@
 <right>[Charbon ->](docs/unlocks/coal.md)
 ---
 # Exploitation minière
-
 Ton drone a désormais accès à une foreuse rudimentaire qui lui permet de chercher des trésors sous terre.
 
 Tu peux utiliser la commande `dig()` pour forer le bloc situé sous toi.
@@ -46,7 +45,6 @@ Si tu veux retourner à la surface, tu peux utiliser `clear()` à tout moment. C
 <desktop>Survoler</desktop><mobile>Toucher</mobile> un bloc affiche son nom, sa stabilité et sa dureté.
 
 # Foreuse
-
 À mesure que tu creuses, tu remarqueras que les blocs deviennent plus durs et que leur forage prend donc plus de temps. Heureusement, nous pouvons améliorer notre foreuse !
 
 Pour aider ton drone à se repérer sous terre, tu devrais vite débloquer les [sens souterrains](docs/unlocks/underground_senses.md). Ils lui permettent de connaître sa propre position z ainsi que le type de sol en dessous, sa dureté et sa stabilité.
@@ -62,7 +60,6 @@ Par exemple, avec les [sens souterrains](docs/unlocks/underground_senses.md), tu
 Bien sûr, plus tu descends, plus les blocs deviennent résistants. Cette stratégie est utile, mais elle a ses limites.
 
 ## Effondrements
-
 Forer vers le bas provoque l’effondrement des blocs alentour. Les quatre blocs adjacents au drone sont toujours détruits. Ensuite, l’effondrement se propage selon la stabilité du sol. Un bloc de stabilité 1, comme une prairie, supporte une différence de hauteur de 1. Autrement dit, si une prairie a un voisin vertical ou horizontal dont la coordonnée z est inférieure d’au moins 2 blocs, elle est détruite.
 
 La stabilité d’un bloc figure dans son infobulle<desktop> au survol</desktop>.

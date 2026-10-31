@@ -9,7 +9,7 @@ Você desbloqueou o loop `while` e os valores `True` e `False`. O loop `while` c
 `while condition:
 	#corpo do loop`
 
-Não se preocupe em criar loops infinitos. Os atrasos na execução impedirão que o programa congele.
+Não se preocupe em criar loops infinitos. O drone pode ficar preso, mas não vai travar o jogo inteiro: você pode simplesmente parar o programa em execução e tentar de novo.
 
 ## Para Iniciantes
 
@@ -45,7 +45,7 @@ harvest()
 }}
 
 Isso permite que você colha várias vezes em uma única execução do programa. 
-No entanto, seria bom colher mais de três vezes, e escrever o mesmo código várias vezes é uma má prática. 
+No entanto, seria bom colher mais de três vezes, e escrever o mesmo código várias vezes logo deixa o programa uma bagunça. 
 A solução é um loop. 
 Um loop permite que você execute o mesmo código várias vezes.
 

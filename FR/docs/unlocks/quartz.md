@@ -1,10 +1,9 @@
 [<- Fer](docs/unlocks/iron.md) <right>[Champignon ->](docs/unlocks/mushroom.md)
 ---
 # Quartz
-
 En continuant après les filons de fer dans `Grounds.Rock`, tu trouves du quartz dans la partie basse de la couche rocheuse et dans la `Grounds.Dirt` dure située dessous (vérifie la dureté avec `get_hardness()` du déblocage [Sens souterrains](docs/unlocks/underground_senses.md)).
 
-L’extrait de code suivant permet à ton drone de traverser la terre et de s’enfoncer dans la couche rocheuse. Avec un peu de chance, un filon de quartz se trouvera à proximité et ton drone affichera sa distance.
+L’extrait de code suivant traverse la terre et s’enfonce dans la couche rocheuse. Là, il prospecte le quartz en continu tout en creusant, jusqu’à ce que la distance soit inférieure à 2. Pour finir, il affiche la distance de prospection obtenue.
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -15,7 +14,7 @@ L’extrait de code suivant permet à ton drone de traverser la terre et de s’
     "show_output": false,
     "collapsing": true,
     "autoplay": false,
-    "items": [],
+    "items": [{"item": "block", "n": 1}, {"item": "iron", "n": 100}],
     "world_size": {"x": 3, "y": 3},
     "execution_speed": 8,
     "digging_speed": 16,
@@ -28,13 +27,16 @@ L’extrait de code suivant permet à ton drone de traverser la terre et de s’
 move(East)
 move(North)
 #CODE
+# Creuser jusqu’à la couche rocheuse
 while get_ground_type() != Grounds.Rock:
     dig()
-for i in range(30):
-    dig()
 
-print(prospect_quartz())
-move(South)
+# Continuer à creuser jusqu’à ce qu’un filon de quartz soit proche
+while prospect_quartz() == None or prospect_quartz() >= 2:
+    for i in range(10):
+        dig()
+
+# Afficher la distance finale jusqu’au filon
 print(prospect_quartz())
 }}
 
@@ -51,11 +53,13 @@ Exécuter `prospect_quartz()` coûte 1 fer : mieux vaut donc utiliser cette comm
 Si `prospect_quartz()` ne trouve aucun quartz à proximité, ou si tu n’as pas assez de fer pour effectuer la recherche, elle renvoie `None`.
 
 ## Stratégie
-<spoiler=afficher l’indice>
-Tu peux prospecter et te déplacer à plusieurs reprises pour observer comment la distance change, ce qui t’indique si tu te rapproches ou t’éloignes d’un filon. Tu peux utiliser la géométrie 2D pour trouver l’intersection de deux cercles ou plus, afin de connaître la position horizontale d’un filon et creuser vers le bas. Ou tu peux utiliser une trilatération complète pour intersecter trois sphères et trouver la position 3D exacte.
+<spoiler=afficher l’indice>Tu peux prospecter et te déplacer à plusieurs reprises pour observer comment la distance change. Sur une surface plane, chercher à réduire la distance au minimum peut te placer au-dessus d’un filon de quartz. Tu peux utiliser une stratégie proche de la recherche dichotomique pour réduire au minimum le nombre d’appels à `prospect_quartz()` et la quantité de fer qu’ils consomment.
 
-Note qu’il n’existe aucune fonction mathématique intégrée pour la racine carrée, la trigonométrie ou les vecteurs : tu devras les écrire toi-même. Note aussi qu’il peut y avoir plusieurs filons à proximité : si tu prends plusieurs mesures proches, elles ne pointent peut-être pas vers le même filon et peuvent t’induire en erreur.
-</spoiler>
+Des stratégies plus poussées peuvent utiliser la géométrie 2D pour trouver l’intersection de deux cercles ou plus. Tu peux aussi choisir la voie difficile et faire une trilatération complète, pour intersecter trois sphères et trouver la position 3D exacte du filon.
+
+Note que pour calculer une racine carrée, tu peux utiliser l’opérateur d’exposant : par exemple, pour obtenir la racine carrée de 16, utilise `16**0.5`. Il n’existe aucune fonction mathématique intégrée pour la trigonométrie ou les vecteurs : tu devras les écrire toi-même.
+
+Note aussi qu’il peut y avoir plusieurs filons à proximité : si tu prends plusieurs mesures proches, elles ne pointent peut-être pas vers le même filon.</spoiler>
 
 ---
 

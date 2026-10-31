@@ -3,7 +3,6 @@
 <right>[Carte au trésor ->](docs/unlocks/treasure_map.md)
 ---
 # Fer
-
 Après avoir trouvé du charbon dans `Grounds.Dirt`, tu peux creuser plus profond, au-delà de la couche de `Grounds.Clay` et jusque dans `Grounds.Rock`, pour trouver du fer.
 
 Contrairement aux filons de charbon, les filons de fer s’étendent aussi verticalement. Mais tous les blocs de fer d’un filon sont toujours directement voisins, les blocs ne sont jamais reliés uniquement en diagonale.
@@ -31,8 +30,11 @@ Les filons de fer sont toutefois petits au début et il te faudra un peu de chan
 }
 #SETUP
 #CODE
+# Creuser jusqu’à ce qu’un bloc de fer apparaisse
 while get_ground_type() != Grounds.Iron:
     dig()
+
+# Extraire le fer
 dig()
 }}
 

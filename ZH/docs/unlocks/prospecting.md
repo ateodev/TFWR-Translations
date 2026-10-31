@@ -1,7 +1,6 @@
 [<-铁矿](docs/unlocks/iron.md)
 ---
 # 铁矿探查
-
 你可能已经发现，铁矿脉有时很难找。你可以四处挖掘碰碰运气，但还有更好的办法：铁矿有磁性，因此可以从远处探测到它。
 
 `prospect_iron()` 命令正是为此而设。`prospect_iron()` 会返回一个方向（`North`、`East`、`South` 或 `West`），指示无人机该往哪边走一步才能接近最近的铁矿石。
@@ -34,8 +33,9 @@
 #SETUP
 jump(Unlocks.Iron)
 #CODE
+# 确保探查结果是一个方向
 if prospect_iron() != None:
-    move(prospect_iron())
+    move(prospect_iron()) # 向铁矿脉靠近
 }}
 
 这段代码当前会调用两次 `prospect_iron()`，消耗 2 份煤炭。你可以考虑用变量来优化它。

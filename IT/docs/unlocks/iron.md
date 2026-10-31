@@ -3,7 +3,6 @@
 <right>[Mappa del Tesoro ->](docs/unlocks/treasure_map.md)
 ---
 # Ferro
-
 Dopo aver trovato il carbone in `Grounds.Dirt`, puoi scavare più in profondità, oltre lo strato di `Grounds.Clay` e fino a `Grounds.Rock`, per trovare il ferro.
 
 A differenza delle vene di carbone, le vene di ferro si estendono anche in verticale. Però tutti i blocchi di ferro di una vena sono sempre direttamente adiacenti tra loro: i blocchi non sono mai collegati solo in diagonale.
@@ -31,8 +30,11 @@ All'inizio però le vene di ferro sono piccole e avrai bisogno di un po' di fort
 }
 #SETUP
 #CODE
+# Scava finché non compare un blocco di ferro
 while get_ground_type() != Grounds.Iron:
     dig()
+
+# Estrai il ferro
 dig()
 }}
 

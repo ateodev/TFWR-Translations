@@ -1,10 +1,9 @@
 [<-鐵礦](docs/unlocks/iron.md) <right>[蘑菇->](docs/unlocks/mushroom.md)
 ---
 # 石英
-
 從 `Grounds.Rock` 中的鐵礦脈繼續往下，你會在岩石層下部及其下方堅硬的 `Grounds.Dirt` 中找到石英（可以用[地下感官](docs/unlocks/underground_senses.md)解鎖項中的 `get_hardness()` 檢查硬度）。
 
-下面的程式碼片段會讓無人機挖穿泥土，深入岩石層。運氣好的話，附近就有一條石英礦脈，無人機會列印出到它的距離。
+下面的程式碼片段會挖穿泥土，進入岩石層。接著它會一邊挖掘一邊持續探查石英，直到距離小於 2 為止。最後，它會列印出最終得到的探查距離。
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -15,7 +14,7 @@
     "show_output": false,
     "collapsing": true,
     "autoplay": false,
-    "items": [],
+    "items": [{"item": "block", "n": 1}, {"item": "iron", "n": 100}],
     "world_size": {"x": 3, "y": 3},
     "execution_speed": 8,
     "digging_speed": 16,
@@ -28,13 +27,16 @@
 move(East)
 move(North)
 #CODE
+# 往下挖到岩石層
 while get_ground_type() != Grounds.Rock:
     dig()
-for i in range(30):
-    dig()
 
-print(prospect_quartz())
-move(South)
+# 繼續挖，直到石英礦脈就在附近
+while prospect_quartz() == None or prospect_quartz() >= 2:
+    for i in range(10):
+        dig()
+
+# 列印到礦脈的最終距離
 print(prospect_quartz())
 }}
 
@@ -51,11 +53,13 @@ print(prospect_quartz())
 如果附近沒有石英，或者鐵礦不足以執行探查，`prospect_quartz()` 就會回傳 `None`。
 
 ## 策略
-<spoiler=顯示提示>
-你可以反覆探查並移動，觀察距離如何變化，從而判斷自己是在靠近還是遠離礦脈。可以用二維幾何求出兩個或多個圓的交點，找到礦脈的水平位置後向下挖。也可以用完整的三邊測量求三個球體的交點，找出精確的三維位置。
+<spoiler=顯示提示>你可以反覆探查並移動，觀察距離如何變化。在平坦的表面上，設法讓距離縮到最小，就能讓你來到石英礦脈的上方。你可以使用類似二分搜尋的策略，盡量減少 `prospect_quartz()` 的呼叫次數，以及這些呼叫消耗的鐵礦。
 
-注意，遊戲沒有提供平方根、三角函數或向量等基礎數學函數，你需要自己實作。另外，附近可能有多條礦脈，所以在相近位置多次測量時，結果未必指向同一條礦脈，可能會把你帶偏。
-</spoiler>
+更進階的策略可以用二維幾何求出兩個或多個圓的交點，你也可以挑戰困難路線，用完整的三邊測量求三個球體的交點，找出礦脈精確的三維位置。
+
+注意，要計算平方根，可以使用冪運算子，例如要取得 16 的平方根，就用 `16**0.5`。遊戲沒有提供三角函數或向量的內建數學函數，你需要自己實作。
+
+另外，附近可能有多條礦脈，所以在相近位置多次測量時，結果未必指向同一條礦脈。</spoiler>
 
 ---
 

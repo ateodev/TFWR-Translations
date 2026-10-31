@@ -1,7 +1,6 @@
 [<-鐵礦](docs/unlocks/iron.md)
 ---
 # 鐵礦探查
-
 你可能已經發現，鐵礦脈有時很難找。你可以四處挖掘碰碰運氣，但還有更好的辦法：鐵礦有磁性，因此可以從遠處探測到它。
 
 `prospect_iron()` 指令正是為此而設。`prospect_iron()` 會回傳一個方向（`North`、`East`、`South` 或 `West`），指示無人機該往哪邊走一步才能接近最近的鐵礦石。
@@ -34,8 +33,9 @@
 #SETUP
 jump(Unlocks.Iron)
 #CODE
+# 確認探查有回傳方向
 if prospect_iron() != None:
-    move(prospect_iron())
+    move(prospect_iron()) # 往鐵礦脈靠近
 }}
 
 這段程式碼目前會呼叫兩次 `prospect_iron()`，消耗 2 份煤炭。你可以考慮用變數來最佳化它。

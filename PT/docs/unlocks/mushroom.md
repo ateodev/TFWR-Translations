@@ -27,15 +27,19 @@ O código a seguir encontra alguns cogumelos e imprime o tipo deles:
 #SETUP
 jump(Unlocks.Mushrooms)
 #CODE
+# Processe uma fileira de cogumelos
 for i in range(get_world_size()):
+    # Escave até o bloco de cogumelo do topo
     while get_ground_type() != Grounds.Mushroom:
         dig()
 
+    # Imprima o número do tipo de cogumelo
     print(measure())
 
     move(East)
 }}
 
+## Como Coletar Cogumelos
 Cogumelos do mesmo tipo gostam de ficar juntos, mas são tímidos demais para crescer uns sobre os outros. Empurre o bloco de cogumelo abaixo do drone com `push(direction)`.
 
 Empilhe dois blocos de cogumelo do mesmo tipo um sobre o outro, e os blocos serão colhidos automaticamente, rendendo seus cogumelos.
@@ -68,11 +72,13 @@ while get_ground_type() != Grounds.Mushroom:
 
 depth = get_pos_z()
 for i in range(2):
+    # Abra espaço para empurrar o bloco de cogumelo para o leste
     move(East)
     while get_pos_z() > depth - 1:
         dig()
+    # Volte, empurre e siga o bloco empurrado
     move(West)
-    push(East)
+    push(East) # Empurre o cogumelo!
     move(East)
 }}
 

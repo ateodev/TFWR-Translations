@@ -2,7 +2,6 @@
 <right>[점프 ->](docs/unlocks/jump.md)
 ---
 # 석탄
-
 땅속에는 여러 광석이 숨겨져 있어 당신이 찾아내 캐내기를 기다리고 있습니다. 지표를 뚫고 `Grounds.Dirt`까지 파 내려가면 가장 먼저 찾게 되는 광석은 석탄입니다.
 
 석탄을 캐는 데 특별한 것은 필요 없습니다. 드론이 `Grounds.Coal` 블록 바로 위에 있을 때 `dig()`를 실행하기만 하면 됩니다. `get_ground_type()`로 드론 아래에 무엇이 있는지, `get_ground_type(direction)`로 인접한 네 블록을 확인할 수 있습니다.
@@ -32,8 +31,11 @@ move(North)
 move(East)
 move(East)
 #CODE
+# 석탄 블록이 나올 때까지 파기
 while get_ground_type() != Grounds.Coal:
     dig()
+
+# 석탄 캐기
 dig()
 }}
 

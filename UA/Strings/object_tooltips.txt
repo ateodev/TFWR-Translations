@@ -2,7 +2,7 @@
 
 Базовий час росту між {1} та {2} секундами.
 Може рости далі {3}.
-@object_tooltip_template_cost = ### Plant Cost {{{{itemblock cost object {0}}}}}
+@object_tooltip_template_cost = ### Вартість посадки {{{{itemblock cost object {0}}}}}
 @object_descr_apple = Мабуть, динозаври їх обожнювали.
 @object_descr_grass = Росте автоматично на пасовищах. Збирайте врожай, щоб отримати `Items.Hay`.
 @object_descr_bush = Невеликий кущ, з якого падають `Items.Wood`.
@@ -23,9 +23,9 @@
 @object_descr_dirt = Це земля.
 @object_descr_rock = Це твердий камінь.
 @object_descr_clay = Блок глини. Родючий ґрунт, ідеальний для рису. Коли рис дозріває, він перетворює глину під собою назад на землю.
-@object_descr_blue_block = Синій блок.
-@object_descr_red_block = Червоний блок.
-@object_descr_green_block = Зелений блок.
+@object_descr_block_blue = Синій блок.
+@object_descr_block_red = Червоний блок.
+@object_descr_block_green = Зелений блок.
 @object_descr_coal = Блок, багатий на осадове вугілля.
 @object_descr_iron = Блок із сирим магнетитом.
 @object_descr_quartz = Блок із кристалічним кварцом усередині.
@@ -37,6 +37,10 @@
 @object_descr_perlite = Земля з високим вмістом перліту, ідеальна для вирощування певних рослин. Кущі, кактуси, бамбук і дерева дають подвійний урожай, якщо посадити їх тут.
 @runtime_entity_tooltip = Під час збору дає:
 {{itemblock tooltip}}
+@runtime_ground_tooltip = Під час видобутку дає:
+{{itemblock tooltip_ground}}
+@runtime_mushroom_tooltip = Коли два грибні блоки одного типу складено один на одного, вони дають:
+{{itemblock tooltip_ground}}
 @runtime_growable_tooltip = Загальний час росту: {0} секунд
 Ріст: {1}%
 @runtime_ground_hardness_tooltip = Твердість: {0}
@@ -51,6 +55,3 @@
 @object_descr_treasure_goal_ground = Ціль наприкінці шляху з карти скарбів. Що тут може бути заховано?
 @object_descr_underground_treasure = Невловимий скарб, знайдений наприкінці шляху з карти скарбів.
 @object_descr_mushroom = Гриби, що ростуть під землею. Використайте `measure()`, щоб визначити, який це тип гриба.
-@runtime_ground_tooltip = Рівень води: {0}
-@runtime_mushroom_tooltip = Коли два грибні блоки одного типу складено один на одного, вони дають:
-{{itemblock tooltip_ground}}

@@ -1,14 +1,11 @@
 [<-蘑菇](docs/unlocks/mushroom.md) <right>[爆破钻头 ->](docs/unlocks/explosive_drill.md)
 ---
 # 炸药
-
-这种革命性的爆炸物是以前的采矿队留下的。（不）幸运的是，你的钻头正好能引爆炸药，把周围的地块炸开。
+这种革命性的爆炸物是以前的采矿队留下的。不幸的是，你的钻头正好能引爆炸药，把周围的地块炸开。收集到的炸药可以通过 `use_item(Items.Dynamite)` 使用，并立即在无人机下方爆炸。
 
 想安全地开采炸药，就要找到一层 `Grounds.Dynamite`，其正下方紧接着一层 `Grounds.Soot`。上层的炸药已经老化，其中一些地块可以安全挖掘。不过，还有一些炸药地块是实弹，挖到就会爆炸。
 
-收集到的炸药可以通过 `use_item(Items.Dynamite)` 使用，并立即在无人机下方爆炸。
-
-这个示例会挖入炸药，再挖开最初挖掘点周围的一圈地块，同时打印下方黑烟地块的测量值：
+这个示例会挖入炸药，再挖开最初挖掘点周围的一圈地块，露出带有数字的黑烟层，并打印测量值：
 {{codeexample 
 {
     "camera_position": {"x": -3, "y": 0, "z": 15},
@@ -34,9 +31,11 @@ for _ in range(3):
     move(East)
     move(North)
 #CODE
+# 穿过上方的炸药层，向下挖到黑烟层
 while get_ground_type() != Grounds.Soot:
     dig()
 
+# 让无人机绕圈移动的方向列表
 circle_directions = [
     East, South, West, West, 
     North, North, East, East
@@ -44,7 +43,7 @@ circle_directions = [
 for dir in circle_directions:
     move(dir)
     dig()
-    print(measure())
+    print(measure()) # 黑烟地块上的数字
 }}
 
 ## 炸药扫雷
@@ -113,10 +112,15 @@ circle_directions = [
     East, South, West, West, North,
     North, East, East, South, West
 ]
+# 绕着最初挖掘的地块转一圈
 for dir in circle_directions:
+    # 如果黑烟的测量值为 0，
+    # 就说明周围的炸药地块都是哑弹
     if get_ground_type() == Grounds.Soot and measure() == 0:
+        # 再绕周围的地块转一圈
         for dir2 in circle_directions:
             move(dir2)
+            # 挖掉哑弹炸药地块
             while get_ground_type() != Grounds.Soot:
                 dig()
     move(dir)

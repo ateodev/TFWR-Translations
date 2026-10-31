@@ -1,7 +1,6 @@
 [<- Hierro](docs/unlocks/iron.md)
 ---
 # Prospección de hierro
-
 Puede que hayas notado que a veces cuesta encontrar vetas de hierro. Podrías excavar por todas partes y confiar en encontrarlas por casualidad, pero hay una forma mejor: como el hierro es magnético, podemos detectarlo a distancia.
 
 El comando `prospect_iron()` sirve precisamente para eso. `prospect_iron()` devuelve la dirección (`North`, `East`, `South` o `West`) en la que tendría que moverse el dron para dar un paso hacia el mineral de hierro más cercano.
@@ -34,8 +33,9 @@ Puedes usar el siguiente código para acercarte un paso al siguiente mineral de 
 #SETUP
 jump(Unlocks.Iron)
 #CODE
+# Asegúrate de que la prospección devuelve una dirección
 if prospect_iron() != None:
-    move(prospect_iron())
+    move(prospect_iron()) # Acércate a la veta de hierro
 }}
 
 Quizá te convenga optimizar este código con una variable, porque ahora llama dos veces a `prospect_iron()` y cuesta 2 de carbón.

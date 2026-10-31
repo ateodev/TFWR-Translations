@@ -34,8 +34,9 @@ Poniższy kod przesuwa drona o jeden krok bliżej następnej rudy żelaza:
 #SETUP
 jump(Unlocks.Iron)
 #CODE
+# Upewnij się, że prospect zwraca kierunek
 if prospect_iron() != None:
-    move(prospect_iron())
+    move(prospect_iron()) # Przesuń się bliżej żyły żelaza
 }}
 
 Warto zoptymalizować ten kod za pomocą zmiennej, ponieważ obecnie wywołuje `prospect_iron()` dwukrotnie, co kosztuje 2 sztuki węgla.

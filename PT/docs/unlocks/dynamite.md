@@ -2,13 +2,11 @@
 ---
 # Dinamite
 
-O explosivo revolucionário, deixado por expedições de mineração anteriores. (In)felizmente, sua broca é perfeita para detonar dinamite e destruir todos os blocos ao redor.
+O explosivo revolucionário, deixado por expedições de mineração anteriores. Infelizmente, sua broca é perfeita para detonar dinamite e destruir todos os blocos ao redor. A dinamite coletada pode ser usada com `use_item(Items.Dynamite)` e explode imediatamente abaixo do drone.
 
-Para minerar dinamite com segurança, encontre uma camada de `Grounds.Dynamite` seguida diretamente por outra camada de `Grounds.Soot` abaixo dela. A camada de dinamite acima envelheceu, e alguns de seus blocos são seguros para escavar. Porém, alguns blocos de dinamite ainda estão ativos e explodem quando você os escava.
+Para minerar dinamite com segurança, encontre uma camada de `Grounds.Dynamite` seguida diretamente por uma camada de `Grounds.Soot` abaixo dela. A camada de dinamite acima envelheceu, e alguns de seus blocos são seguros para escavar. Porém, alguns blocos de dinamite ainda estão ativos e explodem quando você os escava.
 
-A dinamite coletada pode ser usada com `use_item(Items.Dynamite)` e explode imediatamente abaixo do drone.
-
-Este exemplo escava a dinamite e todo o entorno do ponto inicial de escavação, imprimindo a medição dos blocos de fuligem abaixo:
+Este exemplo escava a dinamite e todo o entorno do ponto inicial de escavação, revelando a camada de fuligem com números e imprimindo a medição:
 {{codeexample 
 {
     "camera_position": {"x": -3, "y": 0, "z": 15},
@@ -34,9 +32,11 @@ for _ in range(3):
     move(East)
     move(North)
 #CODE
+# Escave até a camada de fuligem, atravessando a camada de dinamite acima
 while get_ground_type() != Grounds.Soot:
     dig()
 
+# Lista de direções que fazem o drone se mover em círculo
 circle_directions = [
     East, South, West, West, 
     North, North, East, East
@@ -44,7 +44,7 @@ circle_directions = [
 for dir in circle_directions:
     move(dir)
     dig()
-    print(measure())
+    print(measure()) # O número no bloco de fuligem
 }}
 
 ## Campo Minado de Dinamite
@@ -113,10 +113,15 @@ circle_directions = [
     East, South, West, West, North,
     North, East, East, South, West
 ]
+# Dê a volta no bloco que escavamos primeiro
 for dir in circle_directions:
+    # Se a fuligem medir 0,
+    # sabemos que todos os blocos de dinamite ao redor são inertes
     if get_ground_type() == Grounds.Soot and measure() == 0:
+        # Dê outra volta pelos blocos ao redor
         for dir2 in circle_directions:
             move(dir2)
+            # Escave o bloco de dinamite inerte
             while get_ground_type() != Grounds.Soot:
                 dig()
     move(dir)
