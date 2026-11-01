@@ -59,6 +59,10 @@ place(Grounds.Block_Red)
 
 do_a_flip()
 }}
+
+## Výškový limit pokládání
+Výška, do které můžeš pokládat bloky, je omezená, a to přibližně tam, kde bloky při úplném oddálení začínají přecházet do černé. Závisí na průměrné hloubce odkrytých bloků, takže pokud farmu stavíš rovnoměrně, tomuto limitu se vyhneš.
+
 ---
 
 [Debug](docs/scripting/debug.md)      [Debug 2](docs/unlocks/debug2.md)      [Bambus](docs/unlocks/bamboo.md)

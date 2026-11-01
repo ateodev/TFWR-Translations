@@ -59,6 +59,10 @@ place(Grounds.Block_Red)
 
 do_a_flip()
 }}
+
+## Limit wysokości umieszczania
+Pamiętaj, że wysokość, do której możesz umieszczać bloki, jest ograniczona: mniej więcej do miejsca, w którym bloki zaczynają przechodzić w czerń po całkowitym oddaleniu widoku. Zależy ona od średniej głębokości odsłoniętych bloków, więc dopóki budujesz farmę równomiernie, możesz uniknąć tego limitu.
+
 ---
 
 [Debugowanie](docs/scripting/debug.md)      [Debugowanie 2](docs/unlocks/debug2.md)      [Bambus](docs/unlocks/bamboo.md)

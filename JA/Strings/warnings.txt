@@ -6,6 +6,7 @@
 @warning_not_enough_iron = 石英を探査するための鉄が足りませんでした。
 @warning_no_item_to_use = {0} を使おうとしましたが、量が足りませんでした。
 @warning_cannot_place_ground = {0}は特殊なブロックなので配置できません。
+@warning_place_too_high = Z >= {0} には配置できません。農場の平均深度より高すぎます。
 @warning_failed_swap_wrap = 農場の境界を越えて入れ替えをしようとしましたが、これは許可されていません。
 @warning_failed_swap_unswappable = {0} を入れ替えようとしましたが、これは入れ替えられません。
 @warning_weird_substance_not_divisible = 迷路生成の必要数とは多少異なる数の奇妙な物質を使用しました。迷路をアップグレードするにつれて、奇妙な物質の必要量が増えることを忘れないでください。

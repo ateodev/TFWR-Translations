@@ -6,6 +6,7 @@
 @warning_not_enough_iron = Didn't have enough iron to prospect for quartz.
 @warning_no_item_to_use = Tried to use {0} but didn't have enough of it.
 @warning_cannot_place_ground = Cannot place {0}, because it's a special block.
+@warning_place_too_high = Cannot place at Z >= {0}, too high above the farm average depth.
 @warning_failed_swap_wrap = Tried to do a swap over the farm boundaries. That is not allowed.
 @warning_failed_swap_unswappable = Tried to swap {0}, which cannot be swapped.
 @warning_weird_substance_not_divisible = You used a number of Weird Substance that isn't exactly the number needed to create the maze. Don't forget that the amount of Weird Substance required increases as you upgrade the maze.

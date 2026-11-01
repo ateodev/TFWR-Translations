@@ -59,6 +59,10 @@ place(Grounds.Block_Red)
 
 do_a_flip()
 }}
+
+## 放置高度限制
+請注意，可放置地塊的高度有限，大約到完全縮小視角時地塊開始漸暗變黑的位置。此限制取決於已露出地塊的平均深度，因此只要均勻地堆高農場，就能避開這個限制。
+
 ---
 
 [偵錯](docs/scripting/debug.md)      [偵錯 2](docs/unlocks/debug2.md)      [竹子](docs/unlocks/bamboo.md)

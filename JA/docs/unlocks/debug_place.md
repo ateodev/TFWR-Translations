@@ -59,6 +59,10 @@ place(Grounds.Block_Red)
 
 do_a_flip()
 }}
+
+## 配置の高さ制限
+ブロックを配置できる高さには制限があり、完全にズームアウトしたときにブロックが黒くフェードし始めるあたりまでです。この制限は露出しているブロックの平均深度によって決まるので、農場を均一に積み上げていけば、この制限を避けられます。
+
 ---
 
 [デバッグ](docs/scripting/debug.md)      [デバッグ 2](docs/unlocks/debug2.md)      [竹](docs/unlocks/bamboo.md)

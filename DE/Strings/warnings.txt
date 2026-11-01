@@ -6,6 +6,7 @@
 @warning_not_enough_iron = Nicht genug Eisen, um nach Quarz zu suchen.
 @warning_no_item_to_use = Versucht, {0} zu verwenden, hatte aber nicht genug davon.
 @warning_cannot_place_ground = {0} kann nicht platziert werden, weil es ein besonderer Block ist.
+@warning_place_too_high = Platzieren bei Z >= {0} nicht möglich, zu hoch über der durchschnittlichen Tiefe der Farm.
 @warning_failed_swap_wrap = Versucht, über die Farmgrenzen hinweg zu tauschen. Das ist nicht erlaubt.
 @warning_failed_swap_unswappable = Versucht, {0} zu tauschen, was nicht getauscht werden kann.
 @warning_weird_substance_not_divisible = Du hast eine Anzahl von Seltsamer Substanz verwendet, die nicht genau der benötigten Menge zum Erstellen des Labyrinths entspricht. Vergiss nicht, dass die erforderliche Menge an Seltsamer Substanz mit jedem Upgrade des Labyrinths steigt.

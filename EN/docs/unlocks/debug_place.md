@@ -59,6 +59,10 @@ place(Grounds.Block_Red)
 
 do_a_flip()
 }}
+
+## Place Height Limit
+Note that the height up to which you can place blocks is limited, to around the place where the blocks start fading to black when you fully zoom out. This depends on the average depth of the blocks that are uncovered, so as long as you build up the farm uniformly, you can avoid this limit.
+
 ---
 
 [Debug](docs/scripting/debug.md)      [Debug 2](docs/unlocks/debug2.md)      [Bamboo](docs/unlocks/bamboo.md)

@@ -59,6 +59,10 @@ place(Grounds.Block_Red)
 
 do_a_flip()
 }}
+
+## 배치 높이 제한
+블록을 배치할 수 있는 높이에는 제한이 있으며, 완전히 축소했을 때 블록이 검게 흐려지기 시작하는 지점 정도까지입니다. 이 제한은 드러난 블록들의 평균 깊이에 따라 달라지므로, 농장을 고르게 쌓아 올리면 이 제한을 피할 수 있습니다.
+
 ---
 
 [디버그](docs/scripting/debug.md)      [디버그 2](docs/unlocks/debug2.md)      [대나무](docs/unlocks/bamboo.md)

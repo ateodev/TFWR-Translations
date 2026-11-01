@@ -59,6 +59,10 @@ place(Grounds.Block_Red)
 
 do_a_flip()
 }}
+
+## Höhengrenze beim Platzieren
+Beachte, dass die Höhe, bis zu der du Blöcke platzieren kannst, begrenzt ist: etwa bis dorthin, wo die Blöcke beim vollständigen Herauszoomen ins Schwarze übergehen. Sie hängt von der durchschnittlichen Tiefe der freigelegten Blöcke ab. Solange du die Farm gleichmäßig aufbaust, kannst du diese Grenze vermeiden.
+
 ---
 
 [Debug](docs/scripting/debug.md)      [Debug 2](docs/unlocks/debug2.md)      [Bambus](docs/unlocks/bamboo.md)

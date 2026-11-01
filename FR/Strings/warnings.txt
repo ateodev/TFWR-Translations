@@ -6,6 +6,7 @@
 @warning_not_enough_iron = Pas assez de fer pour prospecter du quartz.
 @warning_no_item_to_use = Tentative d'utiliser {0} mais n'en avais pas assez.
 @warning_cannot_place_ground = Impossible de placer {0}, car c’est un bloc spécial.
+@warning_place_too_high = Impossible de placer à Z >= {0}, trop haut au-dessus de la profondeur moyenne de la ferme.
 @warning_failed_swap_wrap = Tentative de faire un échange au-delà des limites de la ferme. Ce n'est pas autorisé.
 @warning_failed_swap_unswappable = Tentative d'échanger {0}, qui ne peut pas être échangé.
 @warning_weird_substance_not_divisible = Tu as utilisé un nombre de Substance Étrange qui n'est pas exactement le nombre nécessaire pour créer le labyrinthe. N'oublie pas que la quantité de Substance Étrange requise augmente à mesure que tu améliores le labyrinthe.
