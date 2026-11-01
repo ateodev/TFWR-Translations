@@ -59,10 +59,6 @@ place(Grounds.Block_Red)
 
 do_a_flip()
 }}
-
-## Límite de altura al colocar
-Ten en cuenta que la altura hasta la que puedes colocar bloques está limitada, aproximadamente hasta donde los bloques empiezan a fundirse a negro cuando alejas la cámara por completo. Depende de la profundidad media de los bloques descubiertos, así que mientras construyas la granja de forma uniforme, podrás evitar este límite.
-
 ---
 
 [Depuración](docs/scripting/debug.md)      [Depuración 2](docs/unlocks/debug2.md)      [Bambú](docs/unlocks/bamboo.md)

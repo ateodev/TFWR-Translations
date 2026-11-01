@@ -85,3 +85,5 @@ x += 1`
 @error_dig_not_allowed = Použití `dig()` není v tomto žebříčku povoleno.
 @error_plant_not_allowed = Použití `plant()` není v tomto žebříčku povoleno.
 @error_jump_not_allowed = Použití `jump()` není v žebříčcích povoleno.
+@error_place_too_high = V této výšce nelze položit blok, je příliš vysoko nad průměrnou hloubkou bloků.
+Pokládej bloky rovnoměrně po celé farmě, tím zvýšíš průměr a budeš moct pokládat výš.

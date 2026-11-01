@@ -59,10 +59,6 @@ place(Grounds.Block_Red)
 
 do_a_flip()
 }}
-
-## Limite de hauteur de placement
-Note que la hauteur jusqu’à laquelle tu peux placer des blocs est limitée, à peu près là où les blocs commencent à disparaître dans le noir quand tu dézoomes complètement. Elle dépend de la profondeur moyenne des blocs découverts : tant que tu construis la ferme de manière uniforme, tu peux éviter cette limite.
-
 ---
 
 [Débogage](docs/scripting/debug.md)      [Débogage 2](docs/unlocks/debug2.md)      [Bambou](docs/unlocks/bamboo.md)

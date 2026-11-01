@@ -6,7 +6,6 @@
 @warning_not_enough_iron = No había suficiente hierro para buscar cuarzo.
 @warning_no_item_to_use = Se intentó usar {0} pero no había suficiente.
 @warning_cannot_place_ground = No se puede colocar {0} porque es un bloque especial.
-@warning_place_too_high = No se puede colocar en Z >= {0}, demasiado alto sobre la profundidad media de la granja.
 @warning_failed_swap_wrap = Se intentó hacer un intercambio fuera de los límites de la granja. Eso no está permitido.
 @warning_failed_swap_unswappable = Se intentó intercambiar {0}, que no puede ser intercambiado.
 @warning_weird_substance_not_divisible = Usaste una cantidad de Sustancia Extraña que no es exactamente la necesaria para crear el laberinto. No olvides que la cantidad de Sustancia Extraña requerida aumenta a medida que mejoras el laberinto.

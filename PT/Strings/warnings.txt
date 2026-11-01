@@ -6,7 +6,6 @@
 @warning_not_enough_iron = Não tinha ferro suficiente para prospectar quartzo.
 @warning_no_item_to_use = Tentou usar {0} mas não tinha o suficiente.
 @warning_cannot_place_ground = Não é possível colocar {0}, pois é um bloco especial.
-@warning_place_too_high = Não é possível colocar em Z >= {0}, alto demais acima da profundidade média da fazenda.
 @warning_failed_swap_wrap = Tentou fazer uma troca além dos limites da fazenda. Isso não é permitido.
 @warning_failed_swap_unswappable = Tentou trocar {0}, que não pode ser trocado.
 @warning_weird_substance_not_divisible = Você usou uma quantidade de Substância Estranha que não é exatamente a necessária para criar o labirinto. Não se esqueça que a quantidade de Substância Estranha necessária aumenta conforme você melhora o labirinto.

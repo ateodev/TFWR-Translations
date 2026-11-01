@@ -59,10 +59,6 @@ place(Grounds.Block_Red)
 
 do_a_flip()
 }}
-
-## Limite di altezza per il posizionamento
-Nota che l'altezza fino a cui puoi posizionare blocchi è limitata, più o meno al punto in cui i blocchi iniziano a sfumare nel nero quando allontani completamente la visuale. Dipende dalla profondità media dei blocchi scoperti, quindi finché costruisci la fattoria in modo uniforme puoi evitare questo limite.
-
 ---
 
 [Debug](docs/scripting/debug.md)      [Debug 2](docs/unlocks/debug2.md)      [Bambù](docs/unlocks/bamboo.md)

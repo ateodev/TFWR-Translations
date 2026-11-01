@@ -59,10 +59,6 @@ place(Grounds.Block_Red)
 
 do_a_flip()
 }}
-
-## Limite de altura para colocar
-Observe que a altura até a qual você pode colocar blocos é limitada, mais ou menos até onde os blocos começam a escurecer até o preto quando você afasta o zoom por completo. Isso depende da profundidade média dos blocos descobertos, então, desde que você construa a fazenda de forma uniforme, poderá evitar esse limite.
-
 ---
 
 [Depuração](docs/scripting/debug.md)      [Depuração 2](docs/unlocks/debug2.md)      [Bambu](docs/unlocks/bamboo.md)

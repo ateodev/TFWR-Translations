@@ -6,7 +6,6 @@
 @warning_not_enough_iron = 鐵礦不足，無法探查石英。
 @warning_no_item_to_use = 嘗試使用 {0} 但數量不足。
 @warning_cannot_place_ground = 無法放置 {0}，因為它是特殊地塊。
-@warning_place_too_high = 無法在 Z >= {0} 處放置，高出農場平均深度太多。
 @warning_failed_swap_wrap = 嘗試跨過農場邊界進行交換，但這是不允許的。
 @warning_failed_swap_unswappable = 嘗試交換 {0}，但這是不可交換的。
 @warning_weird_substance_not_divisible = 你使用的奇異物質數量與建立迷宮所需的數量不完全一致。別忘了，所需的奇異物質數量會隨著迷宮升級而增加。
