@@ -18,7 +18,7 @@
 @lb_descr_rice = Здобудьте 2М рису.
 @lb_descr_rice_single = Здобудьте 100000 рису.
 @lb_descr_ores = Здобудьте 20000 кварцу.
-@lb_descr_ores_single = Здобудьте 200 кварцу.
+@lb_descr_ores_single = Здобудьте 4000 кварцу.
 @lb_descr_bamboo = Здобудьте 500М бамбуку.
 @lb_descr_bamboo_single = Здобудьте 25М бамбуку.
 @lb_descr_dynamite = Здобудьте 10М динаміту.

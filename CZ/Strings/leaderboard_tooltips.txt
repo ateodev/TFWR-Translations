@@ -18,7 +18,7 @@
 @lb_descr_rice = Nasbírej 2 mil. rýže.
 @lb_descr_rice_single = Nasbírej 100 000 rýže.
 @lb_descr_ores = Nasbírej 20 000 křemene.
-@lb_descr_ores_single = Nasbírej 200 křemene.
+@lb_descr_ores_single = Nasbírej 4 000 křemene.
 @lb_descr_bamboo = Nasbírej 500 mil. bambusu.
 @lb_descr_bamboo_single = Nasbírej 25 mil. bambusu.
 @lb_descr_dynamite = Nasbírej 10 mil. dynamitu.

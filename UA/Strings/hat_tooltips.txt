@@ -24,8 +24,8 @@
 @hat_descr_golden_sunflower_hat = Золота версія капелюха-соняшника.
 @hat_descr_the_farmers_remains = Що сталося?
 @hat_descr_bucket = Залізне відро для вашої голови.
-@hat_descr_coal_hat = Капелюх у формі вугілля. Трохи закіптявлений.
-@hat_descr_rice_hat = Капелюх у формі рису.
+@hat_descr_coal_hat = Беріть вугілля з собою, куди б ви не йшли.
+@hat_descr_rice_hat = Їжа, яку можна носити.
 @hat_descr_quartz_hat = Блискучий кварцовий капелюх.
 @hat_descr_bamboo_hat = Класичний бамбуковий капелюх.
 @hat_descr_dynamite_hat = Вибуховий образ.

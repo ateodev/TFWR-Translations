@@ -9,7 +9,7 @@ Může růst na {3}.
 @object_descr_tree = Stromy dávají více dřeva než keře. Rostou však déle, pokud vedle nich rostou jiné stromy.
 @object_descr_carrot = Mrkve!
 @object_descr_rice = Rýži lze sázet na vrstvu jílu, kterou najdeš v podzemí.
-@object_descr_bamboo = Bambus může vyrůst docela vysoko, ale kvete v jedné určité výšce. Výnos je největší, když ho sklidíš přesně tam, kde kvete.
+@object_descr_bamboo = Bambus může vyrůst docela vysoko, ale jen když sklidíš jeho plody.
 @object_descr_pumpkin = Dýně rostou společně, když jsou vedle jiných plně vyrostlých dýní. Přibližně jedna z pěti dýní při růstu zahyne.
 @object_descr_dead_pumpkin = Jedna z pěti dýní při růstu zahyne a zůstane po ní mrtvá dýně. Mrtvé dýně jsou k ničemu a zmizí, když se zasadí něco nového.
 @object_descr_sunflower = Slunečnice sbírají energii ze slunce. Jejich sklizní získáš `Items.Power`.

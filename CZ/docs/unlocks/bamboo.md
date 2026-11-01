@@ -37,7 +37,7 @@ move(East) # odleť pryč, aby bambus mohl růst
 ## Plody
 Bambus roste přesně o 1 blok za sekundu.
 
-Každých pár bloků bambus vytvoří plod. Když se to stane, bambus přestane růst a budeš do něj muset s dronem vletět, abys plod zničil.
+Každých pár bloků bambus vytvoří plod. Když se to stane, bambus přestane růst a budeš do něj muset s dronem vletět, abys plod zničil. Bambus může růst vzhůru až do svého třetího plodu, potom už výš neroste, ani když ho otrháš.
 
 Abys plody otrhal, musíš se nejdřív pomocí `hover` dostat do správné výšky. Pak se pomocí `move` přesuň do plodu, čímž ho otrháš, a pomocí `move` zase odleť, aby bambus mohl dál růst.
 
