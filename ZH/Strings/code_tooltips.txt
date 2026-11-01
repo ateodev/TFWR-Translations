@@ -133,9 +133,9 @@ z 坐标从 `0` 开始，向下挖掘时递减。
 @code_tooltip_get_entity_type = `get_entity_type(direction = None)`
 判断无人机下方实体的类型。
 
-如果 `direction` 不为 `None`，则改为检查给定方向上的相邻地块。
+如果 `direction` 不是 `None`，则改为检查指定方向的相邻地块。
 
-如果被检查的地块为空，则返回 `None`，否则返回该地块上实体的类型。
+如果检查的地块为空，返回 `None`；否则返回该地块上的实体类型。
 
 需要 `1` tick 执行。
 
@@ -145,9 +145,9 @@ z 坐标从 `0` 开始，向下挖掘时递减。
 @code_tooltip_get_ground_type = `get_ground_type(direction = None)`
 判断无人机下方地块的类型。
 
-如果 `direction` 不为 `None`，则改为检查给定方向上的相邻地块。
+如果 `direction` 不是 `None`，则改为检查指定方向的相邻地块。
 
-返回被检查地块的类型。
+返回所检查地块的地面类型。
 
 需要 `1` tick 执行。
 
@@ -671,7 +671,7 @@ list.insert(0, 0)`
 
 挖掘速度取决于地块的硬度和无人机的钻头强度。
 
-挖掘一个地块需要 `hardness / drill strength`（硬度 / 钻头强度）秒。挖掘时间不受速度升级的影响。
+挖掘一个地块需要 `hardness / drill strength` 秒。速度升级不会影响挖掘时间。
 
 示例：
 `dig()`
@@ -703,7 +703,7 @@ list.insert(0, 0)`
 
 你可以指定要放置的地块，但只能放置没有特殊功能的地块。例如，你可以使用 `place(Grounds.Rock)`，却不能使用 `place(Grounds.Clay)`。
 
-如果成功放置地块，则返回 `True`，否则返回 `False`。
+成功放置地块时返回 `True`，否则返回 `False`。
 
 如果成功，需要 `200` ticks 执行，否则需要 `1` tick。
 
@@ -716,7 +716,7 @@ list.insert(0, 0)`
 
 如果成功推动地块，则返回 `True`，否则返回 `False`。
 
-如果推动了地块，需要 `200` ticks 执行，否则需要 `1` tick。
+成功推动地块需要 `200` tick，否则需要 `1` tick。
 
 示例：
 `push(North)`

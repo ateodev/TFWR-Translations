@@ -3,11 +3,11 @@
 <right>[藏寶圖->](docs/unlocks/treasure_map.md)
 ---
 # 鐵礦
-在 `Grounds.Dirt` 中找到煤炭後，你可以繼續往下挖，穿過 `Grounds.Clay` 層進入 `Grounds.Rock`，尋找鐵礦。
+在 `Grounds.Dirt` 中找到煤炭後，繼續向下穿過 `Grounds.Clay` 層，進入 `Grounds.Rock` 就能找到鐵礦。
 
-與煤炭礦脈不同，鐵礦脈也會縱向延伸。但同一條礦脈中的鐵礦地塊總是直接相鄰，從不只以對角線相連。
+與煤礦脈不同，鐵礦脈也會沿垂直方向延伸。礦脈內的鐵礦地塊始終直接相鄰，絕不會只有對角連接。
 
-不過鐵礦脈一開始很小，要找到還需要一點運氣。繼續解鎖鐵礦會增大礦脈的最大規模，也會讓它們更容易碰巧找到。但想穩定地找到它們，你應該解鎖[鐵礦探查](docs/unlocks/prospecting.md)。
+鐵礦脈的礦頭很小，要找到還需要一點運氣。繼續升級鐵礦可以增加礦脈的最大規模，讓你更容易偶然遇到。想穩定找到鐵礦，應該解鎖[鐵礦探查](docs/unlocks/prospecting.md)。
 
 {{codeexample 
 {
@@ -30,7 +30,7 @@
 }
 #SETUP
 #CODE
-# 一直挖，直到出現鐵礦地塊
+# 挖到出現鐵礦地塊
 while get_ground_type() != Grounds.Iron:
     dig()
 

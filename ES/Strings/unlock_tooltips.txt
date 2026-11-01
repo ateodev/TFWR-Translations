@@ -90,7 +90,7 @@ set_execution_speed(1)`
 @unlock_descr_leaderboard = Únete a la tabla de clasificación para los tiempos más rápidos.
 
 `leaderboard_run(Leaderboards.Hay, "hay_file", speedup)`
-@unlock_descr_underground_leaderboard = Únete a la tabla de clasificación subterránea para los tiempos más rápidos.
+@unlock_descr_underground_leaderboard = Compite en la clasificación subterránea por los mejores tiempos.
 
 `leaderboard_run(Leaderboards.Rice, "rice_file", speedup)`
 @unlock_descr_dicts = Obtén acceso a diccionarios y conjuntos.
@@ -190,7 +190,7 @@ other_file.function()`
 @hats = Sombreros
 @import = Importar
 @leaderboard = Tabla de Clasificación
-@underground_leaderboard = Tabla de Clasificación Subterránea
+@underground_leaderboard = Clasificación subterránea
 @lists = Listas
 @loops = Bucles
 @mazes = Laberintos
@@ -228,7 +228,6 @@ other_file.function()`
 @treasure_map = Mapa del tesoro
 @mushrooms = Hongo
 @jump = Salto
-
 @unlock_button_unlock = Desbloquear
 @unlock_button_upgrade = Mejorar
 @unlock_button_get_full_game = Conseguir el juego completo

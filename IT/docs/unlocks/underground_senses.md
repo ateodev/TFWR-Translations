@@ -67,9 +67,9 @@ if get_ground_type() == Grounds.Dirt:
 }}
 
 ## Durezza e Stabilità
-`get_hardness()` restituisce la durezza della casella di terreno sotto il drone. Più alta è la durezza della casella, più tempo serve per scavarla. Puoi passargli una direzione come argomento, per esempio `get_hardness(North)`.
+`get_hardness()` restituisce la durezza della casella di terreno sotto il drone. Puoi passargli una direzione come argomento, per esempio `get_hardness(North)`. Più alta è la durezza della casella, più tempo serve per scavarla.
 
-`get_stability()` restituisce la stabilità della casella di terreno sotto il drone. Una stabilità pari a 1 significa che il blocco può sopportare una differenza di altezza pari a 1 prima di crollare. Puoi passargli una direzione come argomento, per esempio `get_stability(North)`.
+`get_stability()` restituisce la stabilità della casella di terreno sotto il drone. Puoi passargli una direzione come argomento, per esempio `get_stability(North)`. Una stabilità pari a 1 significa che il blocco può sopportare una differenza di altezza pari a 1 prima di crollare.
 
 {{codeexample 
 {

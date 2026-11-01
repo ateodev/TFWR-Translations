@@ -3,11 +3,11 @@
 <right>[Schatzkarte ->](docs/unlocks/treasure_map.md)
 ---
 # Eisen
-Nachdem du Kohle in `Grounds.Dirt` gefunden hast, kannst du tiefer graben, an der Schicht aus `Grounds.Clay` vorbei bis in `Grounds.Rock`, um Eisen zu finden.
+Nachdem du Kohle in `Grounds.Dirt` gefunden hast, kannst du tiefer durch die `Grounds.Clay`-Schicht in `Grounds.Rock` graben, um Eisen zu finden.
 
-Anders als Kohleadern erstrecken sich Eisenadern auch senkrecht. Alle Eisenblöcke einer Ader liegen aber immer direkt nebeneinander, die Blöcke sind nie nur diagonal verbunden.
+Im Gegensatz zu Kohleadern erstrecken sich Eisenadern auch senkrecht. Alle Eisenblöcke einer Ader grenzen jedoch immer direkt aneinander und sind nie nur diagonal verbunden.
 
-Eisenadern sind anfangs jedoch klein, und du brauchst etwas Glück, um sie zu finden. Wenn du Eisen weiter freischaltest, steigt die maximale Größe der Adern und sie lassen sich etwas leichter zufällig finden. Um sie aber zuverlässig zu finden, solltest du die [Eisensuche](docs/unlocks/prospecting.md) freischalten.
+Eisenadern sind anfangs klein, und du brauchst etwas Glück, um sie zu finden. Weitere Eisen-Upgrades erhöhen die maximale Größe der Adern, sodass du etwas leichter zufällig auf sie stößt. Um sie zuverlässig zu finden, solltest du aber [Erzsuche](docs/unlocks/prospecting.md) freischalten.
 
 {{codeexample 
 {
@@ -34,7 +34,7 @@ Eisenadern sind anfangs jedoch klein, und du brauchst etwas Glück, um sie zu fi
 while get_ground_type() != Grounds.Iron:
     dig()
 
-# Das Eisen abbauen
+# Eisen abbauen
 dig()
 }}
 

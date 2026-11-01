@@ -3,11 +3,11 @@
 # Saut
 Ton drone a débloqué la commande `jump()`. Pour l’utiliser, passe-lui un déblocage en argument, par exemple `Unlocks.Iron`.
 
-Cette commande te permet de cibler certaines ressources cachées dans le sol et de sauter instantanément jusqu’à elles. Elle est particulièrement utile pour le débogage ou pour revenir à un filon de minerai que tu viens de manquer.
+Cette commande permet de cibler certaines ressources cachées dans le sol et de sauter instantanément jusqu’à elles. Elle est particulièrement utile pour le débogage ou pour rejoindre un filon que tu viens de manquer.
 
-Après le saut, la ressource ciblée devrait se trouver à 3 blocs au plus sous la surface des blocs supérieurs. `jump()` ne peut être utilisée qu’une seule fois par exécution du programme : toute autre tentative de saut produira une erreur.
+Après le saut, la ressource ciblée devrait se trouver à 3 blocs au maximum de la surface supérieure. `jump()` ne peut être utilisée qu’une seule fois par exécution du programme ; toute tentative supplémentaire provoquera une erreur.
 
-L’exemple suivant saute jusqu’au [riz](docs/unlocks/rice.md), trouve la couche d’argile et plante une rangée de rizières en terrasses :
+L’exemple suivant saute vers le [riz](docs/unlocks/rice.md), trouve l’argile et plante une rangée de rizières en terrasses :
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -29,12 +29,12 @@ L’exemple suivant saute jusqu’au [riz](docs/unlocks/rice.md), trouve la couc
     "starting_chunk": 0
 }
 #CODE
-# Sauter près de la ressource de riz
+# Sauter près du riz
 jump(Unlocks.Rice)
 
 # Planter une rangée de rizières en terrasses
 for i in range(get_world_size()):
-    # Le saut n’est pas exact, creuser les derniers blocs
+    # Le saut est imprécis, creuser les derniers blocs
     while get_ground_type() != Grounds.Clay:
         dig()
 
@@ -44,16 +44,16 @@ for i in range(get_world_size()):
 }}
 
 ## Déblocages compatibles
-`jump()` ne fonctionne qu’avec les déblocages miniers suivants :
-- Coal
-- Iron
+`jump()` fonctionne uniquement avec les déblocages miniers suivants :
+- Charbon
+- Fer
 - Quartz
-- Rice
-- Petrified_Pumpkins
-- Special_Soils
-- Pyramid
-- Treasure_Map
-- Mushrooms
+- Riz
+- Citrouilles pétrifiées
+- Sols spéciaux
+- Pyramide
+- Carte au trésor
+- Champignons
 - Dynamite
 
 ---

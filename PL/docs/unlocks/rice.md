@@ -3,9 +3,9 @@
 <right>[Perlit i gleba próchnicza ->](docs/unlocks/special_soils.md)
 ---
 # Ryż
-Pod powierzchnią i warstwą `Grounds.Dirt` znajdziesz cienką warstwę `Grounds.Clay`. Okazuje się, że to żyzne i nasiąknięte podłoże idealnie nadaje się do sadzenia ryżu.
+Pod powierzchnią i warstwą `Grounds.Dirt` znajdziesz cienką warstwę `Grounds.Clay`. Okazuje się, że to żyzne, nasiąknięte wodą podłoże idealnie nadaje się do sadzenia ryżu.
 
-Poniższy kod może pomóc ci kopać w dół, aż znajdziesz glinę, i posadzić ryż:
+Poniższy kod może pomóc ci kopać w dół, aż znajdziesz glinę, a następnie posadzić ryż:
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -33,10 +33,10 @@ while get_ground_type() != Grounds.Clay:
 plant(Entities.Rice)
 }}
 
-Dopóki dron znajduje się nad blokiem `Grounds.Clay`, możesz użyć `plant(Entities.Rice)`, aby posadzić sadzonki ryżu w glinie, następnie `can_harvest()`, aby sprawdzić, czy ryż w pełni urósł, a na koniec `harvest()`, aby zebrać ryż.
+Gdy dron jest nad blokiem `Grounds.Clay`, użyj `plant(Entities.Rice)`, aby posadzić ryż, `can_harvest()`, aby sprawdzić dojrzałość, a następnie `harvest()`, aby go zebrać.
 
 ## Tarasy
-Gdy posadzisz ryż, podłoże zmieni się w `Grounds.Rice_Terrace`, aby zapewnić ryżowi idealne warunki do dojrzewania. Gdy ryż w pełni urośnie, podłoże wyschnie, zmieni się w `Grounds.Dry_Rice_Terrace` i nie można już na nim sadzić ryżu. Na szczęście warstwa ma grubość kilku bloków, więc możesz usunąć blok za pomocą `dig()` i posadzić nowy ryż na `Grounds.Clay` poniżej. A jeśli warstwa się skończy, zawsze możesz użyć `clear()` na świecie i dokopać się do świeżej warstwy.
+Po zasadzeniu ryżu podłoże zmienia się w `Grounds.Rice_Terrace`, zapewniając idealne warunki dojrzewania. Gdy ryż dojrzeje, podłoże wysycha i zmienia się w `Grounds.Dry_Rice_Terrace`, na którym nie można sadzić kolejnego ryżu. Na szczęście warstwa ma kilka bloków grubości: usuń blok przez `dig()` i posadź ryż na `Grounds.Clay` poniżej. Gdy warstwa się skończy, zawsze możesz odtworzyć świat przez `clear()` i dokopać się do nowej.
 
 ---
 

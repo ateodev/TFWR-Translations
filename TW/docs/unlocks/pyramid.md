@@ -5,7 +5,7 @@
 
 金字塔由沙地塊（`Grounds.Sand`）構成，下方是一層石灰岩（`Grounds.Limestone`）地基。由於年代久遠、遭受侵蝕，找到時總有一部分損壞。石灰岩地基始終完整，但沙層會出現坑洞。
 
-下面展示了一座金字塔遺跡挖出後的樣子：
+挖出的金字塔遺跡是這樣的：
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -29,13 +29,13 @@
 jump(Unlocks.Pyramid)
 move(North)
 #CODE
-# 往下挖，尋找金字塔地基
+# 向下挖掘，尋找金字塔地基
 while get_ground_type() != Grounds.Limestone:
     dig()
 
 z = get_pos_z() # 記住地基的深度
 
-# 挖掉所有不屬於金字塔的地塊
+# 挖掉不屬於金字塔的部分
 for i in range(6):
     for j in range(6):
         while (get_ground_type() != Grounds.Limestone
@@ -47,7 +47,7 @@ for i in range(6):
 }}
 
 ## 修復金字塔
-如你所見，沙層裡有幾個坑洞需要填補。填滿這些坑洞、將金字塔修復還原後，金字塔會自行崩塌，並在石灰岩底座中央產生一株巨大的向日葵。收穫它即可獲得 `Items.Power`。修復的金字塔越大，獲得的能量越多。
+如你所見，沙層裡有幾個坑洞需要填補。填補空洞並修復金字塔後，它會自行消失，石灰岩底座中央會出現一株大向日葵。收穫它即可獲得 `Items.Power`。修復的金字塔越大，獲得的能量越多。
 
 使用 `place(Grounds.Sand)` 指令放置地塊，就能修復金字塔。沙是特殊地塊，缺乏適當支撐時會立即塌方。每次放置沙地塊時，必須將其直接放在石灰岩上，或放在 3x3 的沙地塊上。下面是一座用於演示的手工建造小金字塔。當然，自己建造的金字塔不會提供能量：
 
@@ -71,22 +71,22 @@ for i in range(6):
     "exclude_unlocks": ["watering", "fertilizer", "mushrooms", "coal", "quartz"]
 }
 #CODE
-# 我們需要一個石灰岩地基來放沙
+# 放置沙子需要石灰岩地基
 for i in range(3):
     for j in range(3):
         place(Grounds.Limestone)
         move(North)
     move(East)
 
-# 在石灰岩上放一層 3x3 的沙
+# 在石灰岩上鋪一層 3x3 的沙子
 for i in range(3):
     for j in range(3):
         place(Grounds.Sand)
         move(North)
     move(East)
 
-# 嘗試再放一層 3x3 的沙
-# 注意，只有中間的地塊有支撐並留下來
+# 嘗試再鋪一層 3x3 的沙子
+# 只有中間地塊有支撐並保留下來
 for i in range(3):
     for j in range(3):
         place(Grounds.Sand)
@@ -96,7 +96,7 @@ for i in range(3):
 
 正確修復的金字塔，底部是一塊邊長為奇數（如 5x5）的正方形石灰岩地基。其上是一層同樣規模的沙地塊（5x5），再向上逐層縮小：3x3，最後是 1x1。
 
-金字塔上方的地塊總是泥土。如果想更有效率地挖出金字塔，可以利用這一點。
+金字塔上方的地塊總是泥土。你可以利用這一點，有效地挖掘金字塔。
 
 ## 能量
 只要有能量，無人機就會以兩倍的速度執行。

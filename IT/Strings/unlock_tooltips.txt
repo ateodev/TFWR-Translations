@@ -90,7 +90,7 @@ set_execution_speed(1)`
 @unlock_descr_leaderboard = Unisciti alla leaderboard per i tempi più veloci.
 
 `leaderboard_run(Leaderboards.Hay, "hay_file", speedup)`
-@unlock_descr_underground_leaderboard = Unisciti alla leaderboard sotterranea per i tempi più veloci.
+@unlock_descr_underground_leaderboard = Entra nella classifica sotterranea per i tempi migliori.
 
 `leaderboard_run(Leaderboards.Rice, "rice_file", speedup)`
 @unlock_descr_dicts = Ottieni accesso a dizionari e set.
@@ -189,8 +189,8 @@ other_file.function()`
 @grass = Erba
 @hats = Cappelli
 @import = Import
-@leaderboard = Leaderboard
-@underground_leaderboard = Leaderboard Sotterranea
+@leaderboard = Classifica
+@underground_leaderboard = Classifica Sotterranea
 @lists = Liste
 @loops = Cicli
 @mazes = Labirinti
@@ -228,7 +228,6 @@ other_file.function()`
 @treasure_map = Mappa del Tesoro
 @mushrooms = Funghi
 @jump = Salto
-
 @unlock_button_unlock = Sblocca
 @unlock_button_upgrade = Potenzia
 @unlock_button_get_full_game = Ottieni il gioco completo

@@ -2,9 +2,9 @@
 <right>[Pirámides ->](docs/unlocks/pyramid.md)
 ---
 # Bambú
-El bambú es una planta que crece hacia arriba. Tu dron tendrá que arrancar sus frutos marrones con regularidad para que pueda seguir creciendo. Podemos conseguirlo con el comando `hover` que acabas de desbloquear.
+El bambú es una planta que crece hacia arriba. El dron tendrá que retirar sus frutos marrones con regularidad para que siga creciendo. Podemos hacerlo con el comando `hover` que acabas de desbloquear.
 
-El bambú debe plantarse en tierra arada (`Grounds.Soil`) y plantarlo cuesta arroz.
+El bambú debe plantarse en terreno labrado (`Grounds.Soil`) y plantarlo cuesta arroz.
 
 El siguiente código planta bambú y espera a que crezca hasta su primer fruto.
 {{codeexample
@@ -31,17 +31,17 @@ move(East)
 #CODE
 till()
 plant(Entities.Bamboo)
-move(East) # apártate para que el bambú pueda crecer
+move(East) # apártate para que el bambú crezca
 }}
 
 ## Frutos
 El bambú crece exactamente 1 bloque por segundo.
 
-El bambú produce frutos cada pocos bloques. Cuando eso ocurre, el bambú deja de crecer y tendrás que volar hacia él con tu dron para destruir el fruto.
+El bambú produce frutos cada pocos bloques. Cuando esto ocurre, deja de crecer y tendrás que entrar en él con el dron para destruir el fruto. El bambú puede crecer hasta su tercer fruto. A partir de ahí no crecerá más alto, aunque lo retires.
 
-Para arrancar frutos, primero tendrás que usar `hover` para ponerte a la altura correcta. Después, usa `move` para entrar en el fruto y arrancarlo, y vuelve a usar `move` para apartarte y que el bambú pueda seguir creciendo.
+Para retirar frutos, primero debes usar `hover` para situarte a la altura correcta. Después usa `move` para entrar en el fruto y retirarlo, y de nuevo `move` para apartarte y dejar que el bambú siga creciendo.
 
-Puedes usar `measure()` en el bambú para comprobar a qué altura aparecerá el siguiente fruto. `measure()` empieza a contar desde `0`, así que `hover(measure())` llevará a tu dron a la altura en la que estará el fruto.
+Puedes usar `measure()` sobre el bambú para comprobar a qué altura aparecerá el siguiente fruto. `measure()` empieza a contar desde `0`, así que `hover(measure())` llevará al dron a la altura del fruto.
 
 {{codeexample
 {
@@ -67,33 +67,33 @@ move(East)
 #CODE
 till()
 plant(Entities.Bamboo)
-hover(measure()) # flota a la altura en la que el dron quedará junto al fruto
+hover(measure()) # flota a la altura del fruto
 
 move(East) # apártate y espera a que crezca
 for i in range(3):
     do_a_flip()
 
-move(West) # arranca el fruto
+move(West) # retira el fruto
 move(East) # vuelve a apartarte
 }}
 
 ## Flotar
-El comando `hover` recibe un argumento, la altura a la que flotar, que es un número de `0` a `18`. La altura de vuelo predeterminada del dron es `1`. `hover` no puede bajar hacia entidades sólidas, así que si tu dron ya está encima de un bambú, no puedes entrar en él ejecutando `hover(0)`.
+El comando `hover` recibe un argumento: la altura a la que flotar, un número entre `0` y `18`. La altura de vuelo predeterminada del dron es `1`. `hover` no permite descender dentro de entidades sólidas: si el dron ya está sobre un bambú, no puedes introducirlo en él con `hover(0)`.
 
-`hover` devuelve `True` si el dron consiguió flotar a la altura indicada y `False` en caso contrario.
+`hover` devuelve `True` si el dron alcanzó la altura indicada, y `False` en caso contrario.
 
-Además, existe el comando `get_hover`, que devuelve la altura de vuelo actual del dron.
+También está el comando `get_hover`, que devuelve la altura de vuelo actual del dron.
 
 Si usas `dig`, `harvest` o `plant` mientras flotas, el dron volverá a su altura de vuelo predeterminada (`1`).
 
-Por último, `hover` no afecta a `get_pos_z()`. Siempre devuelve la posición z del bloque que hay bajo el dron.
+Por último, la altura de vuelo no afecta a `get_pos_z()`. Siempre devuelve la posición z del bloque debajo del dron.
 
 ## Cosechar bambú
-Aunque podrías usar `harvest()`, la forma recomendada de cosechar campos de bambú es entrar en un bambú con tu dron a la altura de vuelo `0` (`hover(0)`). Así se cosecha toda la planta de una vez.
+Aunque puedes usar `harvest()`, lo recomendable es entrar en el bambú con el dron a una altura de vuelo de `0` (`hover(0)`). Así cosecharás toda la planta de una vez.
 
-Si quieres cosechar el bambú sin destruirlo, puedes usar `move` para entrar en él a cualquier altura, por ejemplo con `hover(3)`. Así se cosechan todos los trozos de bambú desde esa altura hacia arriba, pero el bambú sigue vivo. Un bambú cosechado parcialmente de esta forma volverá a producir sus frutos, así que tendrás que arrancarlos de nuevo.
+Si quieres cosechar el bambú sin destruirlo, puedes entrar en él con `move` a cualquier altura, por ejemplo con `hover(3)`. Así cosecharás todos los segmentos desde esa altura hacia arriba, pero la planta seguirá viva. El bambú cosechado parcialmente vuelve a producir frutos, así que tendrás que retirarlos otra vez.
 
-En ambos casos, el rendimiento es igual al cuadrado del número de trozos de bambú destruidos, así que cuanto más alta sea la planta de bambú, mejor será tu rendimiento.
+En ambos casos, el rendimiento equivale al cuadrado del número de segmentos de bambú destruidos: cuanto más alto sea el bambú, mayor será el rendimiento.
 
 ---
 

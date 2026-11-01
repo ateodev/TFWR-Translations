@@ -86,7 +86,6 @@
 @Light = Светлая
 @Lunar New Year = Лунный Новый год
 @Custom = Своя
-
 @Keyboard switches = Отклик клавиш
 @blue clicky = Клик + вибрация
 @brown tactile = Вибрация
@@ -112,7 +111,7 @@
 @30 fps = 30 FPS
 @60 fps = 60 FPS
 @120 fps = 120 FPS
-@automatic autocomplete = Автодополнение при вводе
+@automatic autocomplete = Автоматическое автодополнение
 @focus errors = Показывать ошибки
 @window docking = Стыковка окон
 @autocomplete = Автодополнение

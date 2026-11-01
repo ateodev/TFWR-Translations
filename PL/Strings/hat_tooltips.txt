@@ -24,10 +24,10 @@
 @hat_descr_golden_sunflower_hat = Złota wersja kapelusza-słonecznika.
 @hat_descr_the_farmers_remains = Co się stało?
 @hat_descr_bucket = Żelazne wiadro na twoją głowę.
-@hat_descr_coal_hat = Kapelusz w kształcie węgla. Trochę osmolony.
-@hat_descr_rice_hat = Kapelusz w kształcie ryżu.
-@hat_descr_quartz_hat = Lśniący kapelusz z kwarcu.
-@hat_descr_bamboo_hat = Klasyczny kapelusz z bambusa.
+@hat_descr_coal_hat = Zabierz węgiel ze sobą, dokądkolwiek się wybierasz.
+@hat_descr_rice_hat = Posiłek do noszenia na głowie.
+@hat_descr_quartz_hat = Lśniący kwarcowy kapelusz.
+@hat_descr_bamboo_hat = Klasyczny bambusowy kapelusz.
 @hat_descr_dynamite_hat = Wybuchowy wygląd.
-@hat_descr_mushroom_hat = Uroczy kapelusz grzyba.
-@hat_descr_mining_hat = Kask, który ochroni drona przed spadającymi kamieniami.
+@hat_descr_mushroom_hat = Uroczy grzybowy kapelusz.
+@hat_descr_mining_hat = Kask chroniący drona przed spadającymi kamieniami.

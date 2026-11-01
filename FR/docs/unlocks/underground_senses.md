@@ -3,7 +3,7 @@
 # Sens souterrains
 Ajoutons quelques capteurs pour que ton drone puisse s’orienter sous terre.
 
-## Position z
+## Position Z
 Tu peux maintenant utiliser `get_pos_z()` pour connaître la hauteur du drone (elle commence à 0 et devient négative à mesure que le drone descend).
 
 {{codeexample 
@@ -67,9 +67,9 @@ if get_ground_type() == Grounds.Dirt:
 }}
 
 ## Dureté et stabilité
-`get_hardness()` renvoie la dureté de la case de sol sous le drone. Plus la dureté d’une case est élevée, plus elle est longue à forer. Tu peux lui passer une direction en argument, comme `get_hardness(North)`.
+`get_hardness()` renvoie la dureté de la case de sol sous le drone. Tu peux lui passer une direction en argument, comme `get_hardness(North)`. Plus la dureté d’une case est élevée, plus elle est longue à forer.
 
-`get_stability()` renvoie la stabilité de la case de sol sous le drone. Une stabilité de 1 signifie que le bloc peut supporter une différence de hauteur de 1 avant de s’effondrer. Tu peux lui passer une direction en argument, comme `get_stability(North)`.
+`get_stability()` renvoie la stabilité de la case de sol sous le drone. Tu peux lui passer une direction en argument, comme `get_stability(North)`. Une stabilité de 1 signifie que le bloc peut supporter une différence de hauteur de 1 avant de s’effondrer.
 
 {{codeexample 
 {

@@ -3,11 +3,11 @@
 <right>[Mappa del Tesoro ->](docs/unlocks/treasure_map.md)
 ---
 # Ferro
-Dopo aver trovato il carbone in `Grounds.Dirt`, puoi scavare più in profondità, oltre lo strato di `Grounds.Clay` e fino a `Grounds.Rock`, per trovare il ferro.
+Dopo aver trovato carbone in `Grounds.Dirt`, puoi scavare oltre lo strato di `Grounds.Clay` fino a `Grounds.Rock` per trovare ferro.
 
-A differenza delle vene di carbone, le vene di ferro si estendono anche in verticale. Però tutti i blocchi di ferro di una vena sono sempre direttamente adiacenti tra loro: i blocchi non sono mai collegati solo in diagonale.
+A differenza delle vene di carbone, quelle di ferro si estendono anche in verticale. Tutti i blocchi di una vena di ferro sono sempre direttamente adiacenti; non sono mai collegati solo in diagonale.
 
-All'inizio però le vene di ferro sono piccole e avrai bisogno di un po' di fortuna per trovarle. Continuare a sbloccare il ferro aumenta la dimensione massima delle vene e le rende un po' più facili da trovare per caso. Ma per trovarle in modo affidabile, dovresti sbloccare la [prospezione del ferro](docs/unlocks/prospecting.md).
+All'inizio le vene di ferro sono piccole e avrai bisogno di un po' di fortuna per trovarle. Potenziare il ferro aumenta la dimensione massima delle vene e rende più facile trovarle per caso. Per trovarle in modo affidabile, sblocca la [prospezione](docs/unlocks/prospecting.md).
 
 {{codeexample 
 {
@@ -30,7 +30,7 @@ All'inizio però le vene di ferro sono piccole e avrai bisogno di un po' di fort
 }
 #SETUP
 #CODE
-# Scava finché non compare un blocco di ferro
+# Scava finché non appare un blocco di ferro
 while get_ground_type() != Grounds.Iron:
     dig()
 

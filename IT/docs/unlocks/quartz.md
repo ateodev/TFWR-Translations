@@ -1,9 +1,9 @@
 [<- Ferro](docs/unlocks/iron.md) <right>[Funghi ->](docs/unlocks/mushroom.md)
 ---
 # Quarzo
-Proseguendo dalle vene di ferro in `Grounds.Rock`, trovi il quarzo nella parte inferiore dello strato di roccia e nella `Grounds.Dirt` dura sottostante (controlla la durezza con `get_hardness()` dello sblocco [Sensi Sotterranei](docs/unlocks/underground_senses.md)).
+Dopo le vene di ferro in `Grounds.Rock`, trovi quarzo nella parte inferiore dello strato di roccia e nella `Grounds.Dirt` dura sottostante (controlla la durezza con `get_hardness()` dei [Sensi Sotterranei](docs/unlocks/underground_senses.md)).
 
-Il codice seguente scava oltre la terra e nello strato di roccia. Lì continua a fare prospezioni per il quarzo mentre scava, finché la distanza non è inferiore a 2. Infine stampa la distanza di prospezione raggiunta.
+Il codice seguente scava oltre la terra, fino allo strato di roccia. Lì continua a cercare quarzo mentre scava, finché la distanza non è inferiore a 2. Infine stampa la distanza raggiunta.
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -31,7 +31,7 @@ move(North)
 while get_ground_type() != Grounds.Rock:
     dig()
 
-# Continua a scavare finché una vena di quarzo non è vicina
+# Continua a scavare finché una vena di quarzo è vicina
 while prospect_quartz() == None or prospect_quartz() >= 2:
     for i in range(10):
         dig()
@@ -41,25 +41,25 @@ print(prospect_quartz())
 }}
 
 ## Struttura delle Vene
-Il quarzo cresce in vene a forma di ago che formano colonne verticali, perciò sono piuttosto difficili da trovare procedendo per tentativi.
+Il quarzo cresce in vene a forma di ago che formano colonne verticali, rendendole difficili da trovare per tentativi.
 
-## Prospezione del Quarzo
+## Cercare il Quarzo
 Per fortuna possiamo prendere il ferro e deformarlo fino a ottenere qualcosa di simile a una bacchetta da rabdomante, così da individuare più facilmente le vene di quarzo. Il comando apposito è `prospect_quartz()`.
 
-`prospect_quartz()` funziona diversamente da `prospect_iron()`. Invece di restituire la direzione in cui il drone deve muoversi per avvicinarsi al minerale di ferro più vicino, restituisce la distanza 3D esatta tra il blocco di quarzo più vicino e il drone (distanza euclidea).
+`prospect_quartz()` funziona diversamente da `prospect_iron()`. Invece di restituire la direzione verso il ferro più vicino, restituisce la distanza 3D esatta tra il blocco di quarzo più vicino e il drone (distanza euclidea).
 
 Eseguire `prospect_quartz()` costa 1 ferro, quindi conviene usare il comando con parsimonia.
 
 Se `prospect_quartz()` non trova quarzo nelle vicinanze oppure non hai abbastanza ferro per eseguire la ricerca, restituisce `None`.
 
 ## Strategia
-<spoiler=mostra suggerimento>Puoi fare prospezioni e spostarti più volte per osservare come cambia la distanza. Su una superficie piana, cercare di ridurre al minimo la distanza può portarti sopra una vena di quarzo. Puoi usare una strategia simile alla ricerca binaria per ridurre al minimo il numero di chiamate a `prospect_quartz()` e la quantità di ferro che consumano.
+<spoiler=mostra suggerimento>Puoi ripetere la prospezione e muoverti per vedere come cambia la distanza. Su una superficie piana, minimizzare la distanza può portarti sopra una vena di quarzo. Una strategia simile alla ricerca binaria può ridurre al minimo le chiamate a `prospect_quartz()` e il ferro che consumano.
 
-Strategie più elaborate possono usare la geometria 2D per trovare l'intersezione tra due o più cerchi, oppure puoi scegliere la via difficile e usare la trilaterazione completa per intersecare tre sfere e trovare la posizione 3D esatta della vena.
+Strategie più elaborate possono usare la geometria 2D per trovare l'intersezione di due o più cerchi. Oppure puoi scegliere la via difficile: una trilaterazione completa, intersecando tre sfere per trovare la posizione 3D esatta della vena.
 
-Nota che per calcolare una radice quadrata puoi usare l'operatore di potenza: per esempio, per ottenere la radice quadrata di 16, usa `16**0.5`. Non esistono funzioni matematiche integrate per la trigonometria o i vettori: dovrai implementarle da solo.
+Per una radice quadrata puoi usare l'operatore di potenza: ad esempio, `16**0.5` calcola la radice quadrata di 16. Non ci sono funzioni matematiche integrate per trigonometria o vettori: dovrai implementarle.
 
-Nota anche che nelle vicinanze possono esserci più vene, quindi se fai più misurazioni vicine, potrebbero non puntare alla stessa vena.</spoiler>
+Ricorda che nelle vicinanze possono esserci più vene: misurazioni vicine potrebbero quindi non indicare la stessa vena.</spoiler>
 
 ---
 

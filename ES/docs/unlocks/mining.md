@@ -47,7 +47,7 @@ Al <desktop>pasar el cursor sobre</desktop><mobile>tocar</mobile> un bloque se m
 # Taladro
 Al excavar a mayor profundidad, notarás que los bloques se vuelven más duros, por lo que tardas más en excavarlos. ¡Menos mal que podemos mejorar el taladro para ayudarnos!
 
-Para ayudar a tu dron a orientarse bajo tierra, deberías desbloquear pronto los [sentidos subterráneos](docs/unlocks/underground_senses.md). Le permitirán comprobar su propia posición z, así como el tipo de terreno de debajo, su dureza y su estabilidad.
+Para que tu dron se oriente bajo tierra, conviene desbloquear pronto los [sentidos subterráneos](docs/unlocks/underground_senses.md). Así podrá comprobar su posición z y el tipo, la dureza y la estabilidad del terreno que hay debajo.
 
 Por ejemplo, con los [sentidos subterráneos](docs/unlocks/underground_senses.md) puedes usar `get_hardness()` para comprobar la dureza del bloque que tienes debajo. Si encuentras una zona de bloques especialmente duros, puede ser buena idea rodearlos para avanzar más deprisa:
 

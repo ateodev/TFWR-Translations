@@ -41,7 +41,7 @@ jump(Unlocks.Treasure_Map)
 while get_ground_type() != Grounds.Basalt:
     dig()
 
-# Misurare il basalto restituisce la posizione della mappa del tesoro
+# Misurare il basalto restituisce la posizione della mappa
 map_pos = measure()
 
 while get_pos_x() < map_pos[0]:
@@ -52,7 +52,7 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 
-# Trovata la mappa, misurala per ottenere il percorso
+# Mappa trovata: misurala per ottenere il percorso
 do_a_flip()
 instructions = measure()
 print("istruzioni: ", instructions)
@@ -61,7 +61,7 @@ print("istruzioni: ", instructions)
 dig()
 }}
 
-Puoi usare un ciclo `for` sulla stringa per elaborarla lettera per lettera:
+Puoi scorrere la stringa con un ciclo `for` per elaborarla lettera per lettera:
 {{codeexample 
 {
     "camera_position": {"x": -1.5, "y": 0, "z": 6},
@@ -96,23 +96,23 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 #CODE
-# Le istruzioni della mappa vengono restituite come un'unica stringa
+# Le istruzioni della mappa sono restituite in un'unica stringa
 instructions = measure()
 # Usa for-in per dividere la stringa in lettere
 for letter in instructions:
     print(letter)
 }}
 
-Il drone deve rimanere sempre sopra i blocchi `Grounds.Treasure_Path`. Se si sposta su un altro terreno, il percorso si interrompe e il tesoro va perduto.
+Deve rimanere sempre sopra i blocchi `Grounds.Treasure_Path`. Se si sposta su un altro terreno, il percorso si interrompe e il tesoro va perduto.
 
-## Traguardo
+## Obiettivo
 Alla fine del percorso si trova un blocco `Grounds.Treasure_Goal`. Se il drone non si è allontanato dal percorso, sopra di esso apparirà un `Entities.Underground_Treasure`. Il drone può usare `harvest()` sul forziere per raccoglierne l'oro.
 
 ## Ricompensa
 La quantità d'oro è proporzionale alla lunghezza del percorso del tesoro. Potenziare lo sblocco Mappa del Tesoro aumenta la profondità del percorso, mentre potenziare Espandi gli dà più spazio per muoversi lateralmente. Entrambi i potenziamenti aumentano la lunghezza del percorso e la quantità d'oro che troverai.
 
 ## Più Droni
-Il drone che scava nel blocco della mappa del tesoro è quello che deve trovare il tesoro senza lasciare i blocchi del percorso.
+Il drone che scava nel blocco della mappa del tesoro deve trovare il tesoro senza abbandonare i blocchi del percorso.
 </spoiler>
 
 ---

@@ -1,8 +1,7 @@
 [<- Żelazo](docs/unlocks/iron.md)
 ---
 # Poszukiwanie żelaza
-
-Być może zauważyłeś, że żyły żelaza czasem trudno znaleźć. Można kopać na oślep i liczyć na szczęście, ale istnieje lepszy sposób: żelazo jest magnetyczne, więc możemy wykrywać je z odległości.
+Być może zauważyłeś, że żyły żelaza czasem trudno znaleźć. Można kopać na oślep i liczyć na szczęście, ale istnieje lepszy sposób: żelazo jest magnetyczne, więc możemy wykrywać je na odległość.
 
 Właśnie do tego służy polecenie `prospect_iron()`. Funkcja `prospect_iron()` zwraca kierunek (`North`, `East`, `South` lub `West`), w którym dron musi się poruszyć, aby zrobić krok w stronę najbliższej rudy żelaza.
 
@@ -34,9 +33,9 @@ Poniższy kod przesuwa drona o jeden krok bliżej następnej rudy żelaza:
 #SETUP
 jump(Unlocks.Iron)
 #CODE
-# Upewnij się, że prospect zwraca kierunek
+# Upewnij się, że poszukiwanie zwraca kierunek
 if prospect_iron() != None:
-    move(prospect_iron()) # Przesuń się bliżej żyły żelaza
+    move(prospect_iron()) # Zbliż się do żyły żelaza
 }}
 
 Warto zoptymalizować ten kod za pomocą zmiennej, ponieważ obecnie wywołuje `prospect_iron()` dwukrotnie, co kosztuje 2 sztuki węgla.

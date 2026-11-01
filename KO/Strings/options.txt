@@ -85,7 +85,6 @@
 @Light = 라이트
 @Lunar New Year = 설날
 @Custom = 커스텀
-
 @Keyboard switches = 키 피드백
 @blue clicky = 클릭음 + 진동
 @brown tactile = 진동
@@ -113,7 +112,7 @@
 @120 fps = 120 FPS
 @automatic autocomplete = 자동 완성 자동 표시
 @focus errors = 오류 표시
-@window docking = 창 도킹
+@window docking = 창 붙이기
 @autocomplete = 자동 완성
 @keyboard = 키보드
 @Keyboard volume = 키보드 음량

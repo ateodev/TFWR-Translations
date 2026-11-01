@@ -3,9 +3,9 @@
 <right>[Perlit und Lehmboden ->](docs/unlocks/special_soils.md)
 ---
 # Reis
-Unter der Oberfläche und der Schicht aus `Grounds.Dirt` findest du eine dünne Schicht aus `Grounds.Clay`. Wie sich herausstellt, eignet sich dieser fruchtbare und durchnässte Boden perfekt zum Pflanzen von Reissetzlingen.
+Unter der Oberfläche und der `Grounds.Dirt`-Schicht findest du eine dünne Schicht `Grounds.Clay`. Dieser fruchtbare, durchnässte Boden eignet sich hervorragend zum Pflanzen von Reis.
 
-Der folgende Code könnte dir helfen, nach unten zu graben, bis du Ton findest, und Reis zu pflanzen:
+Der folgende Code kann dir helfen, bis zum Ton zu graben und Reis zu pflanzen:
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -33,10 +33,10 @@ while get_ground_type() != Grounds.Clay:
 plant(Entities.Rice)
 }}
 
-Solange deine Drohne über einem `Grounds.Clay`-Block ist, kannst du mit `plant(Entities.Rice)` Reissetzlinge in den Ton pflanzen, dann mit `can_harvest()` prüfen, ob der Reis ausgewachsen ist, und schließlich mit `harvest()` Reis ernten.
+Solange deine Drohne über einem `Grounds.Clay`-Block schwebt, kannst du mit `plant(Entities.Rice)` Reis in den Ton pflanzen, mit `can_harvest()` prüfen, ob er ausgewachsen ist, und ihn schließlich mit `harvest()` ernten.
 
 ## Terrassen
-Sobald du Reis pflanzt, wird der Boden zu `Grounds.Rice_Terrace`, damit der Reis perfekt reifen kann. Ist der Reis ausgewachsen, trocknet der Boden aus, wird zu `Grounds.Dry_Rice_Terrace` und kann nicht mehr für neuen Reis verwendet werden. Zum Glück ist die Schicht mehrere Blöcke dick, sodass du den Block mit `dig()` abtragen und neuen Reis auf dem `Grounds.Clay` darunter pflanzen kannst. Und wenn die Schicht aufgebraucht ist, kannst du jederzeit mit `clear()` die Welt zurücksetzen und zu einer frischen Schicht hinuntergraben.
+Sobald du Reis pflanzt, wird der Boden zu `Grounds.Rice_Terrace`, damit der Reis unter idealen Bedingungen reifen kann. Sobald der Reis ausgewachsen ist, trocknet der Boden aus, wird zu `Grounds.Dry_Rice_Terrace` und kann nicht mehr zum Pflanzen von Reis verwendet werden. Zum Glück ist die Schicht einige Blöcke dick. Du kannst den Block also mit `dig()` abbauen und auf der `Grounds.Clay` darunter neuen Reis pflanzen. Wenn die Schicht aufgebraucht ist, kannst du die Welt jederzeit mit `clear()` zurücksetzen und bis zu einer neuen Schicht graben.
 
 ---
 

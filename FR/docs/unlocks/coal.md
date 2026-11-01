@@ -2,9 +2,9 @@
 <right>[Saut ->](docs/unlocks/jump.md)
 ---
 # Charbon
-Différents minerais sont cachés sous terre et n’attendent que toi pour être trouvés et extraits. Si tu creuses à travers la surface jusque dans `Grounds.Dirt`, le premier minerai que tu trouves est le charbon.
+Différents minerais se cachent sous terre, attendant que tu les trouves et les extraies. En traversant la surface pour creuser dans `Grounds.Dirt`, le premier minerai que tu trouveras sera le charbon.
 
-Tu n’as rien de spécial à faire pour extraire du charbon : exécute simplement `dig()` pendant que le drone se trouve juste au-dessus d’un bloc `Grounds.Coal`. Utilise `get_ground_type()` pour vérifier ce qu’il y a sous le drone et `get_ground_type(direction)` pour vérifier les quatre blocs adjacents.
+Extraire du charbon ne demande rien de spécial : exécute simplement `dig()` lorsque le drone est juste au-dessus d’un bloc de `Grounds.Coal`. Utilise `get_ground_type()` pour examiner le sol sous le drone et `get_ground_type(direction)` pour examiner les quatre blocs voisins.
 
 Le programme suivant est un bon point de départ pour chercher du charbon. Il creuse vers le bas à la recherche d’une couche de charbon.
 {{codeexample 
@@ -31,7 +31,7 @@ move(North)
 move(East)
 move(East)
 #CODE
-# Creuser jusqu’à ce qu’un bloc de charbon apparaisse
+# Creuser jusqu’à l’apparition d’un bloc de charbon
 while get_ground_type() != Grounds.Coal:
     dig()
 
@@ -39,17 +39,17 @@ while get_ground_type() != Grounds.Coal:
 dig()
 }}
 
-## Remarque sur les effondrements
-Note que tu n’obtiens du charbon que pour les blocs de charbon dans lesquels tu creuses directement, pas pour les blocs qui s’effondrent autour du drone. Garde-le en tête quand tu réfléchis à la façon d’extraire le charbon, afin de maximiser les blocs de charbon que tu extrais par rapport à ceux perdus dans les effondrements.
+## À propos des effondrements
+Tu ne reçois du charbon que pour les blocs que tu creuses directement, pas pour ceux qui s’effondrent autour du drone. Garde cela à l’esprit pour extraire un maximum de charbon et en perdre le moins possible dans les effondrements.
 
 ## Structure des filons
-Ses filons forment des couches horizontales de 1 bloc d’épaisseur que tu dois trouver par hasard en creusant dans la terre. Les blocs de charbon d’une couche sont le plus souvent directement voisins, mais certains peuvent aussi n’être reliés qu’en diagonale.
+Les filons forment des couches horizontales d’un bloc d’épaisseur, que tu dois découvrir par hasard en creusant la terre. La plupart des blocs de charbon d’une couche se touchent directement, mais certains ne sont reliés qu’en diagonale.
 
-Les mines de charbon grandissent proportionnellement à la taille de la ferme : pense donc à continuer de débloquer [Agrandir](unlocks/expand) pour augmenter la quantité de charbon que tu peux extraire.
+Les gisements de charbon grandissent avec la ferme : améliore encore [Agrandir](unlocks/expand) pour pouvoir extraire davantage de charbon.
 
 ## Stratégie
-<spoiler=afficher l’indice>
-Une stratégie simple, surtout pour les petites fermes, consiste à creuser tous les blocs à la profondeur où tu as trouvé un bloc de charbon. Pour gagner en efficacité, tu peux noter où tu as vu des blocs de charbon grâce à `get_ground_type(direction)` et éviter de perdre du temps à passer sur des blocs de terre. Fais bien attention à ne pas manquer les liaisons en diagonale, que tu rates si tu ne te déplaces que sur des blocs de charbon.
+<spoiler=afficher un indice>
+Une stratégie simple, surtout pour les petites fermes, consiste à creuser tous les blocs à la profondeur où tu as trouvé du charbon. Pour gagner en efficacité, repère les blocs de charbon avec `get_ground_type(direction)` et évite de perdre du temps à passer sur la terre. Fais attention aux connexions diagonales, que tu manqueras si tu ne te déplaces que sur les blocs de charbon.
 </spoiler>
 
 ---

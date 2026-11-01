@@ -67,9 +67,9 @@ if get_ground_type() == Grounds.Dirt:
 }}
 
 ## Dureza e Estabilidade
-`get_hardness()` retorna a dureza do bloco de solo sob o drone. Quanto maior a dureza, mais tempo leva para escavar. Você pode passar uma direção, como `get_hardness(North)`.
+`get_hardness()` retorna a dureza do bloco de solo sob o drone. Você pode passar uma direção, como `get_hardness(North)`. Quanto maior a dureza, mais tempo leva para escavar.
 
-`get_stability()` retorna a estabilidade do bloco de solo sob o drone. Estabilidade 1 significa que o bloco suporta uma diferença de altura de 1 antes de desmoronar. Você pode passar uma direção, como `get_stability(North)`.
+`get_stability()` retorna a estabilidade do bloco de solo sob o drone. Você pode passar uma direção, como `get_stability(North)`. Estabilidade 1 significa que o bloco suporta uma diferença de altura de 1 antes de desmoronar.
 
 {{codeexample 
 {
@@ -107,4 +107,3 @@ Observe que os quatro blocos diretamente ao lado do drone são removidos durante
 [Mineração](docs/unlocks/mining.md)      [Sentidos](docs/unlocks/senses.md)
 
 [get_pos_z()](functions/get_pos_z)      [get_ground_type()](functions/get_ground_type)      [get_hardness()](functions/get_hardness)      [get_stability()](functions/get_stability)
-

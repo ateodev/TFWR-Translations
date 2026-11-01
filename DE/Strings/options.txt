@@ -85,7 +85,6 @@
 @Light = Hell
 @Lunar New Year = Mondneujahr
 @Custom = Benutzerdefiniert
-
 @Keyboard switches = Tastenfeedback
 @blue clicky = Klick + Vibration
 @brown tactile = Vibration
@@ -111,10 +110,10 @@
 @30 fps = 30 FPS
 @60 fps = 60 FPS
 @120 fps = 120 FPS
-@automatic autocomplete = Automatisch vervollständigen
-@focus errors = Fehler zeigen
+@automatic autocomplete = Autom. Codevervollständigung
+@focus errors = Fehler einblenden
 @window docking = Fenster andocken
-@autocomplete = Autovervollständigung
+@autocomplete = Codevervollständigung
 @keyboard = Tastatur
 @Keyboard volume = Tastaturlautstärke
 @Keyboard sound = Tastenton

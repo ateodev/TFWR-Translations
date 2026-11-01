@@ -1,12 +1,11 @@
 [<- Grzyby](docs/unlocks/mushroom.md) <right>[Wiertło wybuchowe ->](docs/unlocks/explosive_drill.md)
 ---
 # Dynamit
-
 Rewolucyjny materiał wybuchowy pozostawiony przez poprzednie wyprawy górnicze. Niestety twoje wiertło idealnie nadaje się do detonowania dynamitu i wysadzania wszystkich bloków wokół. Zebranego dynamitu można użyć za pomocą `use_item(Items.Dynamite)`; eksploduje bezpośrednio pod dronem.
 
 Aby bezpiecznie wydobywać dynamit, znajdź warstwę `Grounds.Dynamite`, pod którą bezpośrednio leży warstwa `Grounds.Soot`. Górna warstwa dynamitu nieco się zestarzała i do części jej bloków można bezpiecznie się dokopać. Niektóre bloki dynamitu są jednak nadal aktywne i eksplodują, gdy się do nich dokopiesz.
 
-Ten przykład dokopuje się do dynamitu i kopie dookoła początkowego miejsca kopania, odsłaniając warstwę sadzy z liczbami i wypisując pomiary:
+Ten przykład kopie w dynamicie i wokół pierwszego wykopu, odsłania warstwę sadzy z liczbami i wypisuje pomiar:
 {{codeexample 
 {
     "camera_position": {"x": -3, "y": 0, "z": 15},
@@ -32,11 +31,11 @@ for _ in range(3):
     move(East)
     move(North)
 #CODE
-# Dokop się do warstwy sadzy przez warstwę dynamitu powyżej
+# Przekop się przez dynamit do warstwy sadzy
 while get_ground_type() != Grounds.Soot:
     dig()
 
-# Lista kierunków, które sprawiają, że dron porusza się po okręgu
+# Lista kierunków prowadzących drona po okręgu
 circle_directions = [
     East, South, West, West, 
     North, North, East, East
@@ -48,7 +47,7 @@ for dir in circle_directions:
 }}
 
 ## Dynamitowy saper
-Czy potrafisz znaleźć i wykopać wszystkie niewypały dynamitu, pozostawiając tylko aktywne bloki? Każdy aktywny blok otoczony wyłącznie innymi aktywnymi blokami lub blokami sadzy da ci dodatkowy dynamit, gdy warstwa dynamitu zniknie.
+Czy potrafisz znaleźć i wykopać wszystkie niewypały, pozostawiając tylko aktywne bloki? Każdy aktywny blok otoczony wyłącznie innymi aktywnymi blokami lub blokami sadzy da ci dodatkowy dynamit, gdy warstwa dynamitu zniknie.
 
 Na szczęście pomogą ci bloki sadzy poniżej: potrafią wykryć liczbę sąsiednich bloków dynamitu zawierających aktywne ładunki. Nie wskażą dokładnie, które bloki są aktywne, a tylko ich łączną liczbę, więc musisz połączyć odczyty z kilku bloków sadzy i samodzielnie znaleźć rozwiązanie.
 
@@ -56,8 +55,8 @@ Wywołanie `measure()` na bloku sadzy zwraca liczbę min na ośmiu sąsiednich p
 
 Pierwszy wykopany blok w warstwie dynamitu jest zawsze niewypałem. Każdy wydobyty blok daje trochę dynamitu. Gdy warstwa zostanie zniszczona — przez wykopanie wszystkich niewypałów lub przypadkowe dokopanie się do aktywnego dynamitu — otrzymasz także ilość dynamitu równą kwadratowi liczby całkowicie odsłoniętych aktywnych bloków.
 
-## Struktura warstw
-Liczba aktywnych min w warstwie dynamitu, a tym samym trudność ich odnalezienia, rośnie wraz z głębokością. Łączna liczba min rośnie wraz z rozmiarem farmy, a z nią maksymalny możliwy plon za oczyszczenie warstwy dynamitu.
+## Budowa warstw
+Liczba aktywnych min w warstwie dynamitu, a tym samym trudność ich odnalezienia, rośnie wraz z głębokością. Całkowita liczba min rośnie z rozmiarem farmy, podobnie jak maksymalny plon za oczyszczenie warstwy dynamitu.
 
 Ulepszaj dynamit, aby zwiększyć plon z wykopywania bloków dynamitu i całkowitego odsłaniania aktywnych bloków. Ulepszenie zwiększa też energię eksplozji o 30%.
 
@@ -79,8 +78,8 @@ def dig_dynamite():
 `
 
 ## Strategia
-<spoiler=podpowiedź>
-Poniższy kod dokopuje się do warstwy dynamitu i szuka bloków sadzy, których pomiar wynosi `0`. Dla każdego takiego bloku wykopuje wszystkie otaczające go bloki dynamitu:
+<spoiler=wskazówka>
+Poniższy kod wkopuje się w warstwę dynamitu i szuka bloków sadzy o pomiarze `0`. Dla każdego z nich wykopuje wszystkie otaczające bloki dynamitu:
 {{codeexample 
 {
     "camera_position": {"x": -5, "y": 0, "z": 15},
@@ -113,15 +112,15 @@ circle_directions = [
     East, South, West, West, North,
     North, East, East, South, West
 ]
-# Okrąż blok, do którego dokopaliśmy się na początku
+# Okrąż pierwszy wykopany blok
 for dir in circle_directions:
     # Jeśli pomiar sadzy wynosi 0,
-    # wiemy, że wszystkie otaczające bloki dynamitu to niewypały
+    # wszystkie otaczające bloki dynamitu są niewybuchami
     if get_ground_type() == Grounds.Soot and measure() == 0:
-        # Zrób kolejne okrążenie przez otaczające bloki
+        # Wykonaj kolejne okrążenie po sąsiednich blokach
         for dir2 in circle_directions:
             move(dir2)
-            # Wykop niewypał dynamitu
+            # Wykop blok dynamitu będący niewybuchem
             while get_ground_type() != Grounds.Soot:
                 dig()
     move(dir)

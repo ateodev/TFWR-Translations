@@ -1,9 +1,9 @@
 [<-石英](docs/unlocks/quartz.md) <right>[炸藥->](docs/unlocks/dynamite.md)
 ---
 # 蘑菇
-地下有許多種蘑菇成群生長。挖掘時尋找一層 `Grounds.Mushroom`。隨後，可以對地塊使用 `measure()`，以數字形式取得蘑菇類型，範圍從 `0` 到 `5`。
+地下有許多種蘑菇成群生長。挖掘時尋找一層 `Grounds.Mushroom`。隨後，可以對地塊使用 `measure()`，取得編號範圍為 `0` 到 `5` 的蘑菇類型。
 
-下面的程式碼會找到一些蘑菇，並列印它們的類型：
+以下程式碼找到一些蘑菇並輸出類型：
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 6},
@@ -28,22 +28,22 @@ jump(Unlocks.Mushrooms)
 #CODE
 # 處理一排蘑菇
 for i in range(get_world_size()):
-    # 往下挖到最上方的蘑菇地塊
+    # 挖到最上方的蘑菇地塊
     while get_ground_type() != Grounds.Mushroom:
         dig()
 
-    # 列印蘑菇類型的編號
+    # 輸出蘑菇類型編號
     print(measure())
 
     move(East)
 }}
 
-## 如何收集蘑菇
-同類蘑菇喜歡待在一起，卻又有點太害羞，不會疊著長。使用 `push(direction)` 可以推動無人機下方的蘑菇地塊。
+## 收集蘑菇
+同類蘑菇喜歡長在一起，卻又很害羞，不會疊著長。用 `push(direction)` 推動無人機下方的蘑菇地塊。
 
-把兩個相同類型的蘑菇地塊疊在一起，它們就會被自動收穫，讓你獲得蘑菇。
+將兩個同類蘑菇地塊疊起來，地塊就會自動收穫，產出蘑菇。
 
-下面的程式碼會先騰出空間，然後推動一個蘑菇地塊，直到它與下方的蘑菇相符為止：
+以下程式碼先騰出空間，再推動蘑菇，直到它與下方蘑菇的類型相同：
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 6},
@@ -71,11 +71,11 @@ while get_ground_type() != Grounds.Mushroom:
 
 depth = get_pos_z()
 for i in range(2):
-    # 騰出空間，以便把蘑菇地塊往東推
+    # 騰出空間，將蘑菇向東推
     move(East)
     while get_pos_z() > depth - 1:
         dig()
-    # 移回去、推動，再跟上被推動的地塊
+    # 返回、推動並跟上地塊
     move(West)
     push(East) # 推動蘑菇！
     move(East)
@@ -86,7 +86,7 @@ for i in range(2):
 
 `push(direction)` 會推動地塊，並回傳是否成功。
 
-只有蘑菇地塊可以推動。地塊不能向上推動；如果有其他地塊擋路，推動也會失敗。地塊被推到空中後，會落到下方的第一個地塊上。
+只有蘑菇地塊能被推動。地塊不能向上推，若有其他地塊擋路，推動也會失敗。地塊被推到空中後，會落到下方的第一個地塊上。
 
 # 策略
 <spoiler=提示>

@@ -3,7 +3,7 @@
 # Bloques de colores
 Como quizá ya sepas, puedes usar `place()` para hacer que tu dron coloque un bloque. Este desbloqueo añade tres bloques de colores que se distinguen visualmente de su entorno: `Grounds.Block_Red`, `Grounds.Block_Green` y `Grounds.Block_Blue`.
 
-Los bloques de colores sirven para marcar cosas o crear patrones bonitos.
+Los bloques de colores sirven para marcar cosas o crear dibujos bonitos.
 
 Para colocar los nuevos bloques:
 {{codeexample 

@@ -1,10 +1,9 @@
 [<- Ferro](docs/unlocks/iron.md) <right>[Cogumelo ->](docs/unlocks/mushroom.md)
 ---
 # Quartzo
+Depois dos veios de ferro em `Grounds.Rock`, você encontra quartzo no fundo da camada de rocha e na `Grounds.Dirt` dura abaixo (verifique a dureza com `get_hardness()` dos [Sentidos Subterrâneos](docs/unlocks/underground_senses.md)).
 
-Seguindo além dos veios de ferro em `Grounds.Rock`, você encontra quartzo na parte inferior da camada de pedra e na `Grounds.Dirt` dura abaixo dela (verifique a dureza usando `get_hardness()` do desbloqueio [Sentidos Subterrâneos](docs/unlocks/underground_senses.md)).
-
-O código a seguir atravessa a terra e escava até a camada de rocha. Lá, ele prospecta quartzo continuamente enquanto escava, até que a distância seja menor que 2. Por fim, imprime a distância de prospecção a que chegou.
+O código abaixo atravessa a terra e entra na camada de rocha. Lá, prospecta quartzo continuamente enquanto escava, até a distância ser menor que 2. Por fim, imprime a distância alcançada.
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -32,7 +31,7 @@ move(North)
 while get_ground_type() != Grounds.Rock:
     dig()
 
-# Continue escavando até um veio de quartzo estar perto
+# Continue até um veio de quartzo estar perto
 while prospect_quartz() == None or prospect_quartz() >= 2:
     for i in range(10):
         dig()
@@ -42,25 +41,25 @@ print(prospect_quartz())
 }}
 
 ## Estrutura dos Veios
-O quartzo cresce em veios semelhantes a agulhas que formam colunas verticais, tornando-os difíceis de encontrar por tentativa e erro.
+O quartzo cresce em veios semelhantes a agulhas. Os veios formam colunas verticais, tornando-os difíceis de encontrar por tentativa e erro.
 
-## Prospecção de Quartzo
+## Prospectando Quartzo
 Felizmente, podemos transformar nosso ferro em algo parecido com uma vara de radiestesia para localizar esses veios com mais facilidade. O comando é `prospect_quartz()`.
 
-`prospect_quartz()` funciona de forma diferente de `prospect_iron()`. Em vez de retornar a direção em que o drone deve se mover rumo ao minério de ferro mais próximo, retorna a distância 3D exata entre o bloco de quartzo mais próximo e o drone (distância euclidiana).
+`prospect_quartz()` funciona de forma diferente de `prospect_iron()`. Em vez da direção para o ferro mais próximo, retorna a distância 3D exata entre o bloco de quartzo mais próximo e o drone (distância euclidiana).
 
 Executar `prospect_quartz()` custa 1 ferro, então use-o com moderação.
 
 Se `prospect_quartz()` não encontrar quartzo por perto ou você não tiver ferro suficiente, ele retorna `None`.
 
 ## Estratégia
-<spoiler=mostrar dica>Você pode prospectar e se mover repetidamente para ver como a distância muda. Em uma superfície plana, tentar minimizar a distância pode colocar você acima de um veio de quartzo. Você pode usar uma estratégia parecida com a busca binária para minimizar o número de chamadas de `prospect_quartz()` e a quantidade de ferro que elas consomem.
+<spoiler=mostrar dica>Você pode prospectar e se mover repetidamente para observar como a distância muda. Em uma superfície plana, minimizar a distância pode levar você para cima de um veio de quartzo. Uma estratégia semelhante à busca binária pode minimizar as chamadas a `prospect_quartz()` e o ferro consumido.
 
-Estratégias mais elaboradas podem usar geometria 2D para encontrar a interseção entre dois ou mais círculos, ou você pode seguir o caminho difícil e usar trilateração completa para intersectar três esferas e encontrar a posição 3D exata do veio.
+Estratégias mais elaboradas podem usar geometria 2D para encontrar a interseção de dois ou mais círculos. Você também pode escolher o caminho difícil: uma trilateração completa, cruzando três esferas para encontrar a posição 3D exata do veio.
 
-Observe que, para calcular uma raiz quadrada, você pode usar o operador de exponenciação. Por exemplo, para obter a raiz quadrada de 16, use `16**0.5`. Não há funções matemáticas embutidas para trigonometria ou vetores; você terá que implementá-las por conta própria. 
+Para calcular uma raiz quadrada, use o operador de potência: por exemplo, `16**0.5` dá a raiz quadrada de 16. Não existem funções matemáticas integradas para trigonometria ou vetores; você terá que implementá-las.
 
-Observe também que pode haver vários veios nas proximidades, então, se você fizer várias medições próximas, elas podem não apontar para o mesmo veio.</spoiler>
+Pode haver vários veios por perto, então medições próximas nem sempre apontam para o mesmo veio.</spoiler>
 
 ---
 

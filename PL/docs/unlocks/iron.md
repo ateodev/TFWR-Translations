@@ -3,12 +3,11 @@
 <right>[Mapa skarbu ->](docs/unlocks/treasure_map.md)
 ---
 # Żelazo
+Po znalezieniu węgla w `Grounds.Dirt` kop dalej przez warstwę `Grounds.Clay` do `Grounds.Rock`, aby znaleźć żelazo.
 
-Po znalezieniu węgla w `Grounds.Dirt` możesz kopać głębiej, przez warstwę `Grounds.Clay` aż do `Grounds.Rock`, aby znaleźć żelazo.
+W przeciwieństwie do węgla żyły żelaza rozciągają się także pionowo. Wszystkie bloki żelaza w żyle zawsze stykają się bezpośrednio; nigdy nie łączą się tylko po skosie.
 
-W przeciwieństwie do żył węgla żyły żelaza rozciągają się także pionowo. Ale wszystkie bloki żelaza w żyle zawsze przylegają bezpośrednio do siebie; bloki nigdy nie łączą się wyłącznie po przekątnej.
-
-Żyły żelaza są jednak początkowo małe, a ich znalezienie wymaga odrobiny szczęścia. Dalsze odblokowywanie żelaza zwiększa maksymalny rozmiar żył i sprawia, że trochę łatwiej trafić na nie przypadkiem. Aby jednak znajdować je niezawodnie, odblokuj [poszukiwanie żelaza](docs/unlocks/prospecting.md).
+Żyły żelaza są początkowo małe, a ich znalezienie wymaga odrobiny szczęścia. Dalsze ulepszanie żelaza zwiększa maksymalny rozmiar żył i ułatwia przypadkowe trafienie na nie. Aby znajdować je niezawodnie, odblokuj [poszukiwanie rud](docs/unlocks/prospecting.md).
 
 {{codeexample 
 {
@@ -31,7 +30,7 @@ W przeciwieństwie do żył węgla żyły żelaza rozciągają się także piono
 }
 #SETUP
 #CODE
-# Kop, dopóki nie pojawi się blok żelaza
+# Kop, aż pojawi się blok żelaza
 while get_ground_type() != Grounds.Iron:
     dig()
 

@@ -1,10 +1,9 @@
 [<- Żelazo](docs/unlocks/iron.md) <right>[Grzyby ->](docs/unlocks/mushroom.md)
 ---
 # Kwarc
+Za żyłami żelaza w `Grounds.Rock` znajdziesz kwarc u dołu warstwy skał oraz w twardej `Grounds.Dirt` pod nią (sprawdź twardość przez `get_hardness()` z [Podziemnych zmysłów](docs/unlocks/underground_senses.md)).
 
-Poniżej żył żelaza w `Grounds.Rock` znajdziesz kwarc w dolnej części warstwy skał i w twardej `Grounds.Dirt` poniżej (twardość sprawdzisz za pomocą `get_hardness()` z odblokowania [Podziemne zmysły](docs/unlocks/underground_senses.md)).
-
-Poniższy fragment kodu przekopuje się przez ziemię do warstwy skał. Tam podczas kopania nieustannie szuka kwarcu, dopóki odległość nie spadnie poniżej 2. Na koniec wypisuje odległość, na której się zatrzymał.
+Poniższy kod przekopuje się przez ziemię do warstwy skał. Tam nieustannie szuka kwarcu podczas kopania, aż odległość spadnie poniżej 2. Na koniec wypisuje uzyskaną odległość.
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -28,7 +27,7 @@ Poniższy fragment kodu przekopuje się przez ziemię do warstwy skał. Tam podc
 move(East)
 move(North)
 #CODE
-# Kop w dół do warstwy skał
+# Kop do warstwy skał
 while get_ground_type() != Grounds.Rock:
     dig()
 
@@ -41,26 +40,26 @@ while prospect_quartz() == None or prospect_quartz() >= 2:
 print(prospect_quartz())
 }}
 
-## Struktura żył
-Kwarc występuje w żyłach przypominających igły, które tworzą pionowe kolumny, dlatego trudno znaleźć je metodą prób i błędów.
+## Budowa żył
+Kwarc występuje w igłowatych żyłach tworzących pionowe kolumny, dlatego trudno znaleźć go metodą prób i błędów.
 
 ## Poszukiwanie kwarcu
 Na szczęście możemy przerobić żelazo na coś w rodzaju różdżki radiestezyjnej, która ułatwia odnajdywanie żył kwarcu. Służy do tego polecenie `prospect_quartz()`.
 
-`prospect_quartz()` działa inaczej niż `prospect_iron()`. Zamiast kierunku, w którym dron ma się poruszyć, aby zbliżyć się do najbliższej rudy żelaza, zwraca dokładną odległość 3D między najbliższym blokiem kwarcu a dronem (odległość euklidesową).
+`prospect_quartz()` działa inaczej niż `prospect_iron()`. Zamiast kierunku ruchu do najbliższej rudy żelaza zwraca dokładną odległość 3D między najbliższym blokiem kwarcu a dronem (odległość euklidesową).
 
 Wykonanie `prospect_quartz()` kosztuje 1 żelazo, więc warto używać go oszczędnie.
 
 Jeśli `prospect_quartz()` nie znajdzie kwarcu w pobliżu albo nie masz dość żelaza na poszukiwanie, zwróci `None`.
 
 ## Strategia
-<spoiler=pokaż podpowiedź>Możesz wielokrotnie prowadzić poszukiwania i się przemieszczać, obserwując, jak zmienia się odległość. Na płaskiej powierzchni dążenie do jak najmniejszej odległości może doprowadzić cię nad żyłę kwarcu. Możesz użyć strategii podobnej do wyszukiwania binarnego, aby ograniczyć liczbę wywołań `prospect_quartz()` i ilość zużywanego przez nie żelaza.
+<spoiler=pokaż wskazówkę>Możesz wielokrotnie szukać rud i się poruszać, obserwując zmiany odległości. Na płaskiej powierzchni minimalizowanie odległości może doprowadzić cię nad żyłę kwarcu. Strategia podobna do wyszukiwania binarnego pozwala ograniczyć wywołania `prospect_quartz()` i zużycie żelaza.
 
-Bardziej złożone strategie mogą wykorzystywać geometrię 2D do znalezienia punktu przecięcia dwóch lub więcej okręgów. Możesz też pójść trudniejszą drogą i użyć pełnej trilateracji, aby przeciąć trzy sfery i znaleźć dokładną pozycję 3D żyły.
+Bardziej złożone strategie mogą wykorzystywać geometrię 2D do znalezienia przecięcia co najmniej dwóch okręgów. Możesz też wybrać trudniejszą drogę pełnej trilateracji: przeciąć trzy sfery i wyznaczyć dokładną pozycję 3D żyły.
 
-Pamiętaj, że pierwiastek kwadratowy możesz obliczyć za pomocą operatora potęgowania, na przykład pierwiastek kwadratowy z 16 to `16**0.5`. Nie ma wbudowanych funkcji matematycznych do trygonometrii ani wektorów, więc musisz je napisać sam.
+Pierwiastek kwadratowy obliczysz operatorem potęgowania, na przykład `16**0.5` daje pierwiastek z 16. Nie ma wbudowanych funkcji do trygonometrii ani wektorów — musisz napisać je samodzielnie.
 
-Pamiętaj też, że w pobliżu może być kilka żył, więc jeśli wykonasz kilka pomiarów blisko siebie, mogą nie wskazywać tej samej żyły.</spoiler>
+Pamiętaj, że w pobliżu może być kilka żył, więc pomiary w sąsiednich miejscach nie muszą wskazywać tej samej.</spoiler>
 
 ---
 

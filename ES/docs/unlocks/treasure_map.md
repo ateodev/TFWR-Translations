@@ -41,7 +41,7 @@ jump(Unlocks.Treasure_Map)
 while get_ground_type() != Grounds.Basalt:
     dig()
 
-# Medir el basalto devuelve la posición del mapa del tesoro
+# Medir el basalto devuelve la posición del mapa
 map_pos = measure()
 
 while get_pos_x() < map_pos[0]:
@@ -52,16 +52,16 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 
-# Has encontrado el mapa: mídelo para obtener el camino
+# Mapa encontrado; mídelo para obtener el camino
 do_a_flip()
 instructions = measure()
 print("instrucciones: ", instructions)
 
-# Excava en el mapa para empezar la búsqueda del tesoro
+# Excava el mapa para iniciar la búsqueda del tesoro
 dig()
 }}
 
-Puedes usar un bucle `for` sobre la cadena para procesarla letra por letra:
+Puedes recorrer la cadena con un bucle `for` para procesarla letra por letra:
 {{codeexample 
 {
     "camera_position": {"x": -1.5, "y": 0, "z": 6},
@@ -96,14 +96,14 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 #CODE
-# Las instrucciones del mapa se devuelven como una única cadena
+# Las instrucciones del mapa se devuelven en una sola cadena
 instructions = measure()
-# Usa for-in para dividir la cadena en letras
+# Usa for-in para separar la cadena en letras
 for letter in instructions:
     print(letter)
 }}
 
-El dron debe permanecer sobre bloques de `Grounds.Treasure_Path` en todo momento. Si se desplaza a otro terreno, el camino se romperá y el tesoro se perderá.
+Debe permanecer sobre bloques de `Grounds.Treasure_Path` en todo momento. Si se desplaza a otro terreno, el camino se romperá y el tesoro se perderá.
 
 ## Objetivo
 Al final del camino hay un bloque de `Grounds.Treasure_Goal`. Si el dron no se ha desviado del camino, aparecerá un `Entities.Underground_Treasure` encima. El dron puede usar `harvest()` sobre el cofre para recoger su oro.
@@ -112,7 +112,7 @@ Al final del camino hay un bloque de `Grounds.Treasure_Goal`. Si el dron no se h
 La cantidad de oro es proporcional a la longitud del camino del tesoro. Mejorar el desbloqueo Mapa del tesoro aumenta la profundidad del camino, mientras que mejorar Expandir le proporciona más espacio para moverse lateralmente. Ambas mejoras aumentan la longitud del camino del tesoro y la cantidad de oro que encontrarás.
 
 ## Varios drones
-El dron que excave el bloque del mapa del tesoro es el que tendrá que encontrar el tesoro sin salirse de los bloques del camino.
+El dron que excave el bloque del mapa del tesoro es el que debe encontrar el tesoro sin abandonar los bloques del camino.
 </spoiler>
 
 ---

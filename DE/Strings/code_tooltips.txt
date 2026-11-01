@@ -665,7 +665,7 @@ Gräbt ein Feld nach unten.
 
 Die Grabgeschwindigkeit hängt von der Härte des Blocks und der Stärke des Drohnenbohrers ab.
 
-dauert `hardness / drill strength` Sekunden, um einen Block abzugraben. Grabzeiten werden von Geschwindigkeits-Upgrades nicht beeinflusst.
+benötigt `hardness / drill strength` Sekunden, um einen Block abzubauen. Geschwindigkeits-Upgrades beeinflussen die Grabdauer nicht.
 
 Beispiel:
 `dig()`
@@ -676,7 +676,7 @@ gibt die Richtung zum nächsten Eisenerz (`North`, `East`, `South` oder `West`) 
 
 kostet bei der Ausführung 1 Kohle.
 
-dauert `1` Tick.
+benötigt `1` Tick zur Ausführung.
 
 Beispiel:
 `while prospect_iron() != None:
@@ -688,7 +688,7 @@ gibt die euklidische Entfernung (3D-Entfernung) von der Drohne zum nächsten Qua
 
 kostet bei der Ausführung 1 Eisen.
 
-dauert `1` Tick.
+benötigt `1` Tick zur Ausführung.
 
 Beispiel:
 `print(prospect_quartz())`
@@ -719,7 +719,7 @@ Prüft, ob der Block unter der Drohne geschoben werden kann.
 
 gibt `True` zurück, wenn der Block unter der Drohne geschoben werden kann, andernfalls `False`.
 
-dauert `1` Tick.
+benötigt `1` Tick zur Ausführung.
 
 Beispiel:
 `can_push(North)`
@@ -744,7 +744,7 @@ Beispiel:
 @code_tooltip_get_hover = `get_hover()`
 Gibt die aktuelle Höhe zurück, in der die Drohne über dem Boden schwebt.
 
-dauert `1` Tick.
+benötigt `1` Tick zur Ausführung.
 
 Beispiel:
 `height = get_hover()`

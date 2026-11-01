@@ -1,11 +1,11 @@
 [<- Funghi](docs/unlocks/mushroom.md) <right>[Trivella Esplosiva ->](docs/unlocks/explosive_drill.md)
 ---
 # Dinamite
-Il rivoluzionario esplosivo lasciato dalle precedenti spedizioni minerarie. Sfortunatamente, la tua trivella è perfetta per far esplodere la dinamite e spazzare via tutti i blocchi intorno a te. La dinamite raccolta può essere usata con `use_item(Items.Dynamite)` ed esplode immediatamente sotto il drone.
+Il rivoluzionario esplosivo lasciato dalle precedenti spedizioni minerarie. Purtroppo, la tua trivella è perfetta per far esplodere la dinamite e spazzare via tutti i blocchi intorno a te. La dinamite raccolta può essere usata con `use_item(Items.Dynamite)` ed esplode immediatamente sotto il drone.
 
-Per estrarre la dinamite in sicurezza, trova uno strato di `Grounds.Dynamite` seguito direttamente da uno strato di `Grounds.Soot` sotto di esso. Lo strato di dinamite superiore è ormai vecchio e alcuni dei suoi blocchi possono essere scavati senza pericolo. Alcuni blocchi di dinamite, però, sono ancora attivi ed esploderanno quando li scavi.
+Per estrarre la dinamite in sicurezza devi trovare il doppio strato di `Grounds.Dynamite` e `Grounds.Soot`. Il terreno di dinamite superiore è ormai vecchio e alcuni blocchi possono essere scavati senza pericolo. Una parte della dinamite, però, è ancora attiva ed esploderà quando viene scavata.
 
-Questo esempio scava nella dinamite e tutto intorno al punto di scavo iniziale, scoprendo lo strato di fuliggine con i numeri sopra e stampando la misurazione:
+Questo esempio scava nella dinamite e intorno al punto iniziale, rivela lo strato di fuliggine con i numeri e stampa la misura:
 {{codeexample 
 {
     "camera_position": {"x": -3, "y": 0, "z": 15},
@@ -31,11 +31,11 @@ for _ in range(3):
     move(East)
     move(North)
 #CODE
-# Scava fino allo strato di fuliggine, attraverso lo strato di dinamite sopra
+# Scava fino alla fuliggine attraversando la dinamite
 while get_ground_type() != Grounds.Soot:
     dig()
 
-# Elenco di direzioni che fanno muovere il drone in cerchio
+# Lista di direzioni per muovere il drone in cerchio
 circle_directions = [
     East, South, West, West, 
     North, North, East, East
@@ -47,7 +47,7 @@ for dir in circle_directions:
 }}
 
 ## Campo Minato di Dinamite
-Riesci a trovare e scavare tutti i blocchi di dinamite inerti, lasciando solo quelli attivi? Quando lo strato di dinamite scompare, ogni blocco attivo circondato soltanto da altri blocchi attivi o da blocchi di fuliggine ti darà dinamite extra.
+Riesci a trovare e scavare tutti i blocchi inerti, lasciando solo quelli attivi? Quando lo strato di dinamite scompare, ogni blocco attivo circondato soltanto da altri blocchi attivi o da blocchi di fuliggine ti darà dinamite extra.
 
 Per fortuna i blocchi di fuliggine sottostanti ti aiuteranno: possono rilevare quanti blocchi di dinamite vicini contengono dinamite attiva. Non indicano quali blocchi sono attivi, ma solo il totale, quindi dovrai combinare le misurazioni di più blocchi di fuliggine e dedurlo da solo.
 
@@ -56,7 +56,7 @@ Chiamare `measure()` su un blocco di fuliggine restituisce il numero di mine nel
 Il primo blocco scavato nello strato di dinamite è sempre inerte. Ogni blocco di dinamite scavato produce un po' di dinamite. Quando lo strato viene distrutto, dopo aver scavato tutti i blocchi inerti oppure colpendo per errore della dinamite attiva, ricevi anche una quantità di dinamite pari al quadrato del numero di blocchi attivi completamente scoperti.
 
 ## Struttura degli Strati
-Il numero di mine attive nello strato di dinamite, e quindi la difficoltà nel trovarle, aumenta con la profondità. Il numero totale di mine aumenta con le dimensioni della fattoria, e con esso anche la resa massima possibile per aver ripulito uno strato di dinamite.
+Il numero di mine attive nello strato di dinamite, e quindi la difficoltà nel trovarle, aumenta con la profondità. Il numero totale di mine aumenta con le dimensioni della fattoria, così come la resa massima possibile per ripulire uno strato di dinamite.
 
 Potenzia la dinamite per aumentare la resa ottenuta scavando i blocchi di dinamite e scoprendo completamente quelli attivi. Il potenziamento aumenta anche del 30% l'energia delle esplosioni.
 
@@ -79,7 +79,7 @@ def dig_dynamite():
 
 ## Strategia
 <spoiler=suggerimento>
-Il codice qui sotto scava nello strato di dinamite e cerca blocchi di fuliggine la cui misurazione è `0`. Per ogni blocco di questo tipo che trova, scava via tutti i blocchi di dinamite che lo circondano:
+Il codice seguente scava nello strato di dinamite e cerca blocchi di fuliggine che misurano `0`. Per ciascuno, scava tutti i blocchi di dinamite circostanti:
 {{codeexample 
 {
     "camera_position": {"x": -5, "y": 0, "z": 15},
@@ -112,12 +112,12 @@ circle_directions = [
     East, South, West, West, North,
     North, East, East, South, West
 ]
-# Gira intorno al blocco in cui abbiamo scavato all'inizio
+# Gira intorno al primo blocco scavato
 for dir in circle_directions:
     # Se la fuliggine misura 0,
-    # sappiamo che tutti i blocchi di dinamite intorno sono inerti
+    # tutti i blocchi di dinamite circostanti sono inerti
     if get_ground_type() == Grounds.Soot and measure() == 0:
-        # Fai un altro giro attraverso i blocchi circostanti
+        # Fai un altro giro nei blocchi circostanti
         for dir2 in circle_directions:
             move(dir2)
             # Scava il blocco di dinamite inerte

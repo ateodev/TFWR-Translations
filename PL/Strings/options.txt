@@ -85,7 +85,6 @@
 @Light = Jasny
 @Lunar New Year = Księżycowy Nowy Rok
 @Custom = Własny
-
 @Keyboard switches = Reakcja klawiszy
 @blue clicky = Klik + wibracja
 @brown tactile = Wibracja
@@ -111,8 +110,8 @@
 @30 fps = 30 FPS
 @60 fps = 60 FPS
 @120 fps = 120 FPS
-@automatic autocomplete = Automatyczne podpowiedzi
-@focus errors = Pokazuj błędy
+@automatic autocomplete = Automatyczne autouzupełnianie
+@focus errors = Pokaż błędy
 @window docking = Dokowanie okien
 @autocomplete = Autouzupełnianie
 @keyboard = Klawiatura

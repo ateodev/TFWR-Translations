@@ -3,7 +3,7 @@
 # Schatzkarte
 Legenden erzählen von einem schwer auffindbaren Schatz, den ein längst verstorbener, vergesslicher Pirat versteckt haben soll – oder so ähnlich. Was, wenn er den Weg zum Schatz auf einer Karte eingezeichnet und diese dann verloren hat? Vielleicht ließ er die Karte fallen, als ihn ein Lavafluss in die Enge trieb, und sie blieb unter einer Basaltschicht erhalten.
 
-Wenn man die Basaltblöcke misst, könnte man etwas herausfinden!
+Das Messen der Basaltblöcke könnte etwas verraten!
 
 <spoiler=Erzähl mir mehr>
 Halte nach einer Schicht aus `Grounds.Basalt` Ausschau. Versuche, den Basalt zu messen, und sieh nach, was er dir verrät. Der Hinweis könnte dich zur Schatzkarte führen. Wenn du die Karte misst, erhältst du bestimmt den Weg zum Schatz – doch kannst du ihre Anweisungen auch entschlüsseln?
@@ -41,7 +41,7 @@ jump(Unlocks.Treasure_Map)
 while get_ground_type() != Grounds.Basalt:
     dig()
 
-# Das Messen des Basalts liefert die Position der Schatzkarte
+# Das Messen von Basalt liefert die Position der Schatzkarte
 map_pos = measure()
 
 while get_pos_x() < map_pos[0]:
@@ -52,7 +52,7 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 
-# Karte gefunden, sie messen, um den Weg zu erhalten
+# Karte gefunden, messen, um den Pfad zu erhalten
 do_a_flip()
 instructions = measure()
 print("Anweisungen: ", instructions)
@@ -61,7 +61,7 @@ print("Anweisungen: ", instructions)
 dig()
 }}
 
-Mit einer `for`-Schleife kannst du die Zeichenfolge Buchstabe für Buchstabe verarbeiten:
+Mit einer `for`-Schleife kannst du den String Buchstabe für Buchstabe verarbeiten:
 {{codeexample 
 {
     "camera_position": {"x": -1.5, "y": 0, "z": 6},
@@ -96,9 +96,9 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 #CODE
-# Die Anweisungen der Karte werden als eine einzige Zeichenfolge zurückgegeben
+# Die Kartenanweisungen werden als einzelner String zurückgegeben
 instructions = measure()
-# Mit for-in die Zeichenfolge in Buchstaben zerlegen
+# Den String mit for-in in Buchstaben zerlegen
 for letter in instructions:
     print(letter)
 }}
@@ -112,7 +112,7 @@ Am Ende des Pfades befindet sich ein `Grounds.Treasure_Goal`-Block. Wenn die Dro
 Die Goldmenge ist proportional zur Länge des Schatzpfades. Wenn du die Schatzkarten-Freischaltung verbesserst, wird der Pfad tiefer. Verbesserst du Erweitern, erhält er mehr Platz, um sich seitwärts auszubreiten. Beide Verbesserungen verlängern den Schatzpfad und erhöhen die Goldmenge, die du findest.
 
 ## Mehrere Drohnen
-Die Drohne, die sich bis zum Schatzkartenblock durchgräbt, muss auch den Schatz finden, ohne die Pfadblöcke zu verlassen.
+Die Drohne, die in den Schatzkartenblock gräbt, muss den Schatz finden, ohne die Pfadblöcke zu verlassen.
 </spoiler>
 
 ---

@@ -37,7 +37,7 @@ dig()
 print(get_pos_z())
 }}
 
-## Bodenart
+## Bodentyp
 `get_ground_type()` gibt die Art des Bodens unter der Drohne zurück. Du kannst eine Richtung als Argument übergeben – zum Beispiel `get_ground_type(North)` –, um die Bodenart eines benachbarten Feldes abzufragen.
 
 So prüfst du, ob der Block unter der Drohne aus Erde besteht:
@@ -67,9 +67,9 @@ if get_ground_type() == Grounds.Dirt:
 }}
 
 ## Härte und Stabilität
-`get_hardness()` gibt die Härte des Bodenfeldes unter der Drohne zurück. Je härter ein Feld ist, desto länger dauert es, es abzubauen. Du kannst eine Richtung als Argument übergeben, etwa `get_hardness(North)`.
+`get_hardness()` gibt die Härte des Bodenfeldes unter der Drohne zurück. Du kannst eine Richtung als Argument übergeben, etwa `get_hardness(North)`. Je härter ein Feld ist, desto länger dauert es, es abzubauen.
 
-`get_stability()` gibt die Stabilität des Bodenfeldes unter der Drohne zurück. Eine Stabilität von 1 bedeutet, dass der Block einen Höhenunterschied von 1 aushält, bevor er einstürzt. Du kannst eine Richtung als Argument übergeben, etwa `get_stability(North)`.
+`get_stability()` gibt die Stabilität des Bodenfeldes unter der Drohne zurück. Du kannst eine Richtung als Argument übergeben, etwa `get_stability(North)`. Eine Stabilität von 1 bedeutet, dass der Block einen Höhenunterschied von 1 aushält, bevor er einstürzt.
 
 {{codeexample 
 {

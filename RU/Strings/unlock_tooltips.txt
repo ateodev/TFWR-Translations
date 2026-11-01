@@ -90,7 +90,7 @@ set_execution_speed(1)`
 @unlock_descr_leaderboard = Разблокирует рейтинг лучших результатов по времени.
 
 `leaderboard_run(Leaderboards.Hay, "hay_file", speedup)`
-@unlock_descr_underground_leaderboard = Разблокирует подземный рейтинг лучших результатов по времени.
+@unlock_descr_underground_leaderboard = Соревнуйся за лучшее время в подземном рейтинге.
 
 `leaderboard_run(Leaderboards.Rice, "rice_file", speedup)`
 @unlock_descr_dicts = Возможность пользоваться словарями и множествами.

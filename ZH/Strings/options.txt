@@ -110,10 +110,10 @@
 @30 fps = 30 FPS
 @60 fps = 60 FPS
 @120 fps = 120 FPS
-@automatic autocomplete = 自动显示补全
-@focus errors = 显示错误
-@window docking = 窗口停靠
-@autocomplete = 自动补全
+@automatic autocomplete = 自动代码补全
+@focus errors = 显示错误位置
+@window docking = 窗口吸附
+@autocomplete = 代码补全
 @keyboard = 键盘
 @Keyboard volume = 键盘音量
 @Keyboard sound = 按键音

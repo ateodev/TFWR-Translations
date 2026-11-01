@@ -1,16 +1,15 @@
 [<- Ryż](docs/unlocks/rice.md)
 
 # Perlit i gleba próchnicza
+To odblokowanie dodaje dwa nowe rodzaje podziemnych bloków: perlit i glebę próchniczą (`Grounds.Perlite` i `Grounds.Loam`). Zbierając rośliny posadzone na tych glebach, uzyskasz podwójny plon.
 
-To odblokowanie dodaje dwa nowe rodzaje podziemnych bloków: perlit i glebę próchniczą (`Grounds.Perlite` i `Grounds.Loam`). Gdy zbierzesz rośliny posadzone na tych glebach, otrzymasz podwójny plon.
-
-Perlit i gleba próchnicza występują w cienkich podziemnych warstwach, podobnie jak glina, ale są nieco rzadsze.
+Perlit i gleba próchnicza występują w cienkich warstwach pod ziemią, podobnie jak glina, ale są nieco rzadsze.
 
 Perlit nadaje się dla roślin lubiących przewiewne gleby: kaktusów, bambusa, krzewów i drzew. Posadzone na perlicie dają dwukrotnie większy plon.
 
 Gleba próchnicza nadaje się dla marchwi i słoneczników. Posadzone na niej dają dwukrotnie większy plon.
 
-Kolejną zaletą perlitu i gleby próchniczej jest to, że od razu nadają się do sadzenia. W przeciwieństwie do `Grounds.Grassland`, które musisz najpierw zamienić w `Grounds.Soil` za pomocą `till()`.
+Kolejną zaletą perlitu i gleby próchniczej jest natychmiastowa gotowość do sadzenia, w przeciwieństwie do `Grounds.Grassland`, które trzeba najpierw zmienić w `Grounds.Soil` przez `till()`.
 
 ---
 

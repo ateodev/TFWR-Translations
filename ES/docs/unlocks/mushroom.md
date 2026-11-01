@@ -1,9 +1,9 @@
 [<- Cuarzo](docs/unlocks/quartz.md) <right>[Dinamita ->](docs/unlocks/dynamite.md)
 ---
 # Hongo
-Muchos tipos de hongos crecen en colonias bajo tierra. Busca un estrato de `Grounds.Mushroom` mientras excavas. Después puedes usar `measure()` sobre el terreno para obtener el tipo de hongo como un número, del `0` al `5`.
+Muchos tipos de hongos crecen en colonias bajo tierra. Busca un estrato de `Grounds.Mushroom` mientras excavas. Después puedes usar `measure()` sobre el terreno para obtener el tipo de hongo como un número entre `0` y `5`.
 
-El siguiente código encuentra algunos hongos e imprime su tipo:
+El siguiente código encuentra hongos e imprime su tipo:
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 6},
@@ -28,7 +28,7 @@ jump(Unlocks.Mushrooms)
 #CODE
 # Procesa una fila de hongos
 for i in range(get_world_size()):
-    # Excava hasta el bloque de hongo superior
+    # Excava hasta el bloque de hongos superior
     while get_ground_type() != Grounds.Mushroom:
         dig()
 
@@ -39,11 +39,11 @@ for i in range(get_world_size()):
 }}
 
 ## Cómo recoger hongos
-A los hongos del mismo tipo les gusta estar juntos, pero les da demasiada vergüenza crecer unos encima de otros. Empuja el bloque de hongo que hay debajo del dron con `push(direction)`.
+A los hongos del mismo tipo les gusta estar juntos, pero les da demasiada vergüenza crecer unos encima de otros. Empuja el bloque de hongo debajo del dron con `push(direction)`.
 
-Apila dos bloques de hongo del mismo tipo uno encima de otro y los bloques se cosecharán automáticamente para darte sus hongos.
+Apila dos bloques de hongos del mismo tipo y se cosecharán automáticamente para obtener sus hongos.
 
-El código de abajo hace sitio y luego empuja un hongo hasta que coincide con el hongo de debajo:
+El código siguiente hace espacio y empuja un hongo hasta que coincida con el que tiene debajo:
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 6},
@@ -71,11 +71,11 @@ while get_ground_type() != Grounds.Mushroom:
 
 depth = get_pos_z()
 for i in range(2):
-    # Haz sitio para empujar el bloque de hongo hacia el este
+    # Haz espacio para empujar el hongo hacia el este
     move(East)
     while get_pos_z() > depth - 1:
         dig()
-    # Vuelve atrás, empuja y sigue al bloque empujado
+    # Vuelve, empuja y sigue el bloque empujado
     move(West)
     push(East) # ¡Empuja el hongo!
     move(East)
@@ -86,7 +86,7 @@ Puedes usar `can_push(direction)` para comprobar si se puede empujar el bloque q
 
 `push(direction)` empuja el bloque y devuelve si el empujón tuvo éxito.
 
-Solo se pueden empujar bloques de hongo, los bloques no se pueden empujar hacia arriba y el empujón fallará si hay otro bloque en medio. Al empujarlos al aire, los bloques caen y aterrizan sobre el siguiente bloque que haya debajo.
+Solo se pueden empujar bloques de hongos. Los bloques no se pueden empujar hacia arriba, y el empujón fallará si hay otro bloque en medio. Al empujarlos al aire, los bloques caen y aterrizan sobre el siguiente bloque que haya debajo.
 
 # Estrategia
 <spoiler=pista>

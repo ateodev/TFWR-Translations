@@ -1,13 +1,11 @@
 [<- Bambus](docs/unlocks/bamboo.md)
 ---
 # Kolorowe bloki
-
 Jak być może już wiesz, za pomocą `place()` możesz nakazać dronowi umieszczenie bloku. To odblokowanie dodaje trzy kolorowe bloki, które wizualnie odróżniają się od otoczenia: `Grounds.Block_Red`, `Grounds.Block_Green` i `Grounds.Block_Blue`.
 
-Kolorowych bloków możesz używać do oznaczania różnych rzeczy lub tworzenia ładnych wzorów.
+Kolorowymi blokami możesz oznaczać miejsca lub tworzyć ładne wzory.
 
 Aby umieścić nowe bloki:
-
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 10},

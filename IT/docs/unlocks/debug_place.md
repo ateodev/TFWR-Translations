@@ -1,9 +1,9 @@
 [<- Bambù](docs/unlocks/bamboo.md)
 ---
 # Blocchi Colorati
-Come forse già sai, puoi usare `place()` per far posizionare un blocco al drone. Questo sblocco aggiunge tre blocchi colorati che si distinguono visivamente dall'ambiente circostante: `Grounds.Block_Red`, `Grounds.Block_Green` e `Grounds.Block_Blue`.
+Come forse sai già, puoi usare `place()` per far posizionare un blocco al drone. Questo sblocco aggiunge tre blocchi colorati che risaltano rispetto all'ambiente: `Grounds.Block_Red`, `Grounds.Block_Green` e `Grounds.Block_Blue`.
 
-I blocchi colorati si possono usare per segnare punti o creare bei motivi.
+I blocchi colorati servono per segnare posizioni o creare bei motivi.
 
 Per posizionare i nuovi blocchi:
 {{codeexample 

@@ -6,7 +6,7 @@ Tu as débloqué la boucle `while` et les valeurs `True` et `False`. La boucle `
 `while condition:
 	#corps de la boucle`
 
-Ne t'inquiète pas de créer des boucles infinies. Le drone risque de rester bloqué, mais le jeu entier ne se figera pas : tu peux simplement arrêter le programme en cours et réessayer.
+Ne t'inquiète pas de créer des boucles infinies. Le drone peut rester bloqué, mais le jeu entier ne se figera pas : il suffit d’arrêter le programme et de réessayer.
 
 ## Pour les Débutants
 Peut-être as-tu déjà essayé de mettre plusieurs appels `harvest()` à la suite :
@@ -40,7 +40,7 @@ harvest()
 harvest()
 }}
 Cela te permet de récolter plusieurs fois en une seule exécution du programme.
-Cependant, ce serait bien de récolter plus de trois fois, et écrire le même code plusieurs fois rend vite le programme brouillon.
+Mais ce serait bien de récolter plus de trois fois, et répéter le même code rend vite le programme brouillon.
 La solution est une boucle.
 Une boucle te permet d'exécuter le même code plusieurs fois.
 

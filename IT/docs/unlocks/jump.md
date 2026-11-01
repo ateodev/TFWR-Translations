@@ -3,11 +3,11 @@
 # Salto
 Il tuo drone ha sbloccato il comando `jump()`. Per usarlo, passa uno sblocco come argomento, per esempio `Unlocks.Iron`.
 
-Questo comando permette di scegliere come bersaglio determinate risorse nascoste nel terreno e saltare istantaneamente giù fino a esse. È particolarmente utile per il debug o per tornare a una vena mineraria che hai appena mancato.
+Questo comando permette di puntare a determinate risorse nascoste nel terreno e saltare istantaneamente fino a esse. È particolarmente utile per il debug o per raggiungere una vena che hai appena mancato.
 
-Dopo il salto, la risorsa bersaglio dovrebbe trovarsi entro 3 blocchi dalla superficie del blocco più in alto. `jump()` può essere usato una sola volta per esecuzione del programma: ulteriori tentativi di salto producono un errore.
+Dopo il salto, la risorsa cercata dovrebbe trovarsi entro 3 blocchi dalla superficie superiore. `jump()` può essere usato una sola volta per esecuzione del programma; ulteriori tentativi causano un errore.
 
-L'esempio seguente salta giù fino al [riso](docs/unlocks/rice.md), trova lo strato di argilla e pianta una fila di terrazze di riso:
+L'esempio seguente salta fino al [riso](docs/unlocks/rice.md), trova l'argilla e pianta una fila di terrazze di riso:
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -29,12 +29,12 @@ L'esempio seguente salta giù fino al [riso](docs/unlocks/rice.md), trova lo str
     "starting_chunk": 0
 }
 #CODE
-# Salta vicino alla risorsa del riso
+# Salta vicino al riso
 jump(Unlocks.Rice)
 
 # Pianta una fila di terrazze di riso
 for i in range(get_world_size()):
-    # Il salto non è preciso, scava via gli ultimi blocchi
+    # Il salto non è preciso: scava gli ultimi blocchi
     while get_ground_type() != Grounds.Clay:
         dig()
 
@@ -45,16 +45,16 @@ for i in range(get_world_size()):
 
 ## Sblocchi Compatibili
 `jump()` funziona solo con i seguenti sblocchi minerari:
-- Coal
-- Iron
-- Quartz
-- Rice
-- Petrified_Pumpkins
-- Special_Soils
-- Pyramid
-- Treasure_Map
-- Mushrooms
-- Dynamite
+- Carbone
+- Ferro
+- Quarzo
+- Riso
+- Zucche Pietrificate
+- Terreni Speciali
+- Piramide
+- Mappa del Tesoro
+- Funghi
+- Dinamite
 
 ---
 

@@ -1,7 +1,7 @@
 [<- Bambus](docs/unlocks/bamboo.md)
 ---
 # Farbige Blöcke
-Wie du vielleicht schon weißt, kannst du deine Drohne mit `place()` einen Block platzieren lassen. Diese Freischaltung fügt drei farbige Blöcke hinzu, die sich deutlich von ihrer Umgebung abheben: `Grounds.Block_Red`, `Grounds.Block_Green` und `Grounds.Block_Blue`.
+Wie du vielleicht schon weißt, kannst du mit `place()` deine Drohne einen Block platzieren lassen. Diese Freischaltung fügt drei farbige Blöcke hinzu, die sich optisch von ihrer Umgebung abheben: `Grounds.Block_Red`, `Grounds.Block_Green` und `Grounds.Block_Blue`.
 
 Mit farbigen Blöcken kannst du Dinge markieren oder hübsche Muster gestalten.
 

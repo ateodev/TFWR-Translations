@@ -35,7 +35,7 @@ for i in range(2,6):
 
 for i in range(10, 0, -1):
     print(i)`
-@code_tooltip_plant = `plant(entity)`
+@code_tooltip_plant = `plant(entity)` 
 消耗指定 `entity` 所需的成本，並將其種植在無人機下方。
 如果成本資源不足、地塊類型錯誤或下方已有植物，則種植會失敗。
 
@@ -81,7 +81,7 @@ for i in range(10, 0, -1):
 
 範例：
 `swap(North)`
-@code_tooltip_till = `till()`
+@code_tooltip_till = `till()` 
 將無人機下方的地塊耕成 `Grounds.Soil`。如果已經是土壤，則會把地塊變回 `Grounds.Grassland`。
 
 回傳 `None`。
@@ -90,7 +90,7 @@ for i in range(10, 0, -1):
 
 範例：
 `till()`
-@code_tooltip_get_pos_x = `get_pos_x()`
+@code_tooltip_get_pos_x = `get_pos_x()` 
 取得無人機目前的 x 座標。
 x 座標從西邊的 `0` 開始，向東遞增。
 
@@ -100,7 +100,7 @@ x 座標從西邊的 `0` 開始，向東遞增。
 
 範例：
 `x, y = get_pos_x(), get_pos_y()`
-@code_tooltip_get_pos_y = `get_pos_y()`
+@code_tooltip_get_pos_y = `get_pos_y()` 
 取得無人機目前的 y 座標。
 y 座標從南邊的 `0` 開始，向北遞增。
 
@@ -120,7 +120,7 @@ z 座標從 `0` 開始，向下挖掘時遞減。
 
 範例：
 `x, y, z = get_pos_x(), get_pos_y(), get_pos_z()`
-@code_tooltip_get_world_size = `get_world_size()`
+@code_tooltip_get_world_size = `get_world_size()` 
 取得農場的目前大小。
 
 回傳網格的南北方向邊長。
@@ -133,9 +133,9 @@ z 座標從 `0` 開始，向下挖掘時遞減。
 @code_tooltip_get_entity_type = `get_entity_type(direction = None)`
 判斷無人機下方實體的類型。
 
-如果 `direction` 不為 `None`，則改為檢查給定方向上的相鄰地塊。
+如果 `direction` 不是 `None`，則改為檢查指定方向的相鄰地塊。
 
-如果所檢查的地塊為空，則回傳 `None`，否則回傳該地塊上實體的類型。
+若檢查的地塊為空，傳回 `None`；否則傳回該地塊上的實體類型。
 
 需要 `1` tick 執行。
 
@@ -145,9 +145,9 @@ z 座標從 `0` 開始，向下挖掘時遞減。
 @code_tooltip_get_ground_type = `get_ground_type(direction = None)`
 判斷無人機下方地塊的類型。
 
-如果 `direction` 不為 `None`，則改為檢查給定方向上的相鄰地塊。
+如果 `direction` 不是 `None`，則改為檢查指定方向的相鄰地塊。
 
-回傳所檢查地塊的地面類型。
+傳回所檢查地塊的地面類型。
 
 需要 `1` tick 執行。
 
@@ -174,7 +174,7 @@ z 座標從 `0` 開始，向下挖掘時遞減。
 範例：
 `if get_stability() > 3:
     dig()`
-@code_tooltip_get_time = `get_time()`
+@code_tooltip_get_time = `get_time()` 
 取得目前遊戲時間。
 
 回傳自遊戲開始以來的秒數。
@@ -198,7 +198,7 @@ time_passed = get_time() - start`
 `do_something()
 
 print(get_tick_count())`
-@code_tooltip_use_item = `use_item(item, n=1)`
+@code_tooltip_use_item = `use_item(item, n=1)` 
 嘗試使用指定的 `item` `n` 次。只能用於某些物品，包括 `Items.Water`、`Items.Fertilizer`。
 
 如果使用了物品，則回傳 `True`，否則回傳 `False`。
@@ -207,7 +207,7 @@ print(get_tick_count())`
 
 範例：
 `use_item(Items.Fertilizer)`
-@code_tooltip_get_water = `get_water()`
+@code_tooltip_get_water = `get_water()` 
 取得無人機下方地塊的目前含水量。
 
 回傳無人機下方地塊的含水量，為一個介於 `0` 和 `1` 之間的數字。
@@ -217,7 +217,7 @@ print(get_tick_count())`
 範例：
 `if get_water() < 0.5:
     use_item(Items.Water)`
-@code_tooltip_do_a_flip = `do_a_flip()`
+@code_tooltip_do_a_flip = `do_a_flip()` 
 讓無人機做一次翻轉！此操作不受速度升級影響。
 
 回傳 `None`。
@@ -227,7 +227,7 @@ print(get_tick_count())`
 範例：
 `while True:
     do_a_flip()`
-@code_tooltip_pet_the_piggy = `pet_the_piggy()`
+@code_tooltip_pet_the_piggy = `pet_the_piggy()` 
 摸摸小豬！此操作不受速度升級影響。
 
 回傳 `None`。
@@ -237,7 +237,7 @@ print(get_tick_count())`
 範例：
 `while True:
     pet_the_piggy()`
-@code_tooltip_print = `print(*args)`
+@code_tooltip_print = `print(*args)` 
 用煙霧將所有 `args` 列印在無人機上方的空中。此操作不受速度升級影響。
 可以一次列印多個值。
 
@@ -247,7 +247,7 @@ print(get_tick_count())`
 
 範例：
 `print("地塊：", get_ground_type())`
-@code_tooltip_len = `len(collection)`
+@code_tooltip_len = `len(collection)` 
 取得串列、集合、字典或元組中的元素數量。
 
 回傳 `collection` 的長度。
@@ -330,7 +330,7 @@ print(get_tick_count())`
 
 範例：
 `set_world_size(5)`
-@code_tooltip_num_items = `num_items(item)`
+@code_tooltip_num_items = `num_items(item)` 
 查詢你目前擁有多少 `item`。
 
 回傳你物品欄中目前 `item` 的數量。
@@ -340,7 +340,7 @@ print(get_tick_count())`
 範例：
 `if num_items(Items.Fertilizer) > 0:
     use_item(Items.Fertilizer)`
-@code_tooltip_get_cost = `get_cost(thing)`
+@code_tooltip_get_cost = `get_cost(thing)` 
 取得一個 `thing` 的成本。
 
 如果 `thing` 是一個實體，取得種植它的成本。
@@ -356,7 +356,7 @@ print(get_tick_count())`
 for item in cost:
     if num_items(item) < cost[item]:
         print("物品不足，無法解鎖胡蘿蔔")`
-@code_tooltip_clear = `clear()`
+@code_tooltip_clear = `clear()` 
 移除農場上的一切，將無人機移回 `(0,0)` 位置，並將帽子換回草帽。
 
 回傳 `None`。
@@ -365,7 +365,7 @@ for item in cost:
 
 範例：
 `clear()`
-@code_tooltip_get_companion = `get_companion()`
+@code_tooltip_get_companion = `get_companion()` 
 取得無人機下方植物的偏好伴生植物。
 
 回傳一個形式為 `(companion_type, (companion_x_position, companion_y_position))` 的元組。
@@ -377,7 +377,7 @@ for item in cost:
 if companion != None:
     plant_type, (x, y) = companion
     print("伴生植物：", plant_type, "位置", x, ",", y)`
-@code_tooltip_unlock = `unlock(unlock)`
+@code_tooltip_unlock = `unlock(unlock)` 
 效果與在科技樹中按一下對應 `unlock` 的按鈕完全相同。
 
 如果解鎖成功，則回傳 `True`，否則回傳 `False`。
@@ -397,7 +397,7 @@ if companion != None:
 `plant(Entities.Bush)
 n_substance = get_world_size() * num_unlocked(Unlocks.Mazes)
 use_item(Items.Weird_Substance, n_substance)`
-@code_tooltip_reset = `reset()`
+@code_tooltip_reset = `reset()` 
 將農場重設為 1x1 的方塊，移除所有資源並鎖定大部分解鎖項。
 此操作不會移除你的任何程式碼。
 
@@ -407,7 +407,7 @@ use_item(Items.Weird_Substance, n_substance)`
 
 範例：
 `reset()`
-@code_tooltip_measure = `measure(direction = None)`
+@code_tooltip_measure = `measure(direction = None)` 
 可以測量某些實體的一些值。效果取決於實體。
 
 如果 `direction` 不為 `None`，則測量給定方向上的相鄰實體。
@@ -587,7 +587,7 @@ result = wait_for(drone)`
 `def random_elem(list):
 	index = random() * len(list) // 1
 	return list[index]`
-@code_tooltip_append = `list.append(element)`
+@code_tooltip_append = `list.append(element)` 
 將 `element` 新增到 `list` 的末尾。
 
 回傳 `None`。
@@ -597,7 +597,7 @@ result = wait_for(drone)`
 範例：
 `list = []
 list.append(1)`
-@code_tooltip_add = `set.add(element)`
+@code_tooltip_add = `set.add(element)` 
 將 `element` 新增到 `set` 中。
 
 回傳 `None`。
@@ -607,7 +607,7 @@ list.append(1)`
 範例：
 `set = {0}
 set.add(1)`
-@code_tooltip_remove = `collection.remove(element)`
+@code_tooltip_remove = `collection.remove(element)` 
 從 `collection` 中移除第一次出現的 `element`。
 
 回傳 `None`。
@@ -617,7 +617,7 @@ set.add(1)`
 範例：
 `list = [True, False, None]
 list.remove(False)`
-@code_tooltip_pop = `collection.pop()`
+@code_tooltip_pop = `collection.pop()` 
 從串列中移除最後一個元素，或從字典中移除指定的元素。
 `list.pop(i)` 從 `list` 中移除索引為 `i` 的元素。
 
@@ -628,7 +628,7 @@ list.remove(False)`
 範例：
 `list = [True, False, None]
 list.pop(0)`
-@code_tooltip_insert = `list.insert(i, element)`
+@code_tooltip_insert = `list.insert(i, element)` 
 將 `element` 插入到 `list` 的索引 `i` 處。
 
 回傳 `None`。
@@ -671,7 +671,7 @@ list.insert(0, 0)`
 
 挖掘速度取決於地塊的硬度和無人機的鑽頭強度。
 
-挖掘一個地塊需要 `hardness / drill strength` 秒。挖掘時間不受速度升級影響。
+挖掘一個地塊需要 `hardness / drill strength` 秒。速度升級不會影響挖掘時間。
 
 範例：
 `dig()`
@@ -703,7 +703,7 @@ list.insert(0, 0)`
 
 你可以指定要放置的地塊，但只能放置沒有特殊功能的地塊。例如，你可以使用 `place(Grounds.Rock)`，卻不能使用 `place(Grounds.Clay)`。
 
-如果成功放置地塊，則回傳 `True`，否則回傳 `False`。
+成功放置地塊時傳回 `True`，否則傳回 `False`。
 
 如果成功，需要 `200` ticks 執行，否則需要 `1` tick。
 
@@ -716,7 +716,7 @@ list.insert(0, 0)`
 
 如果成功推動地塊，則回傳 `True`，否則回傳 `False`。
 
-如果推動了地塊，需要 `200` ticks 執行，否則需要 `1` tick。
+成功推動地塊需要 `200` tick，否則需要 `1` tick。
 
 範例：
 `push(North)`
@@ -739,7 +739,7 @@ list.insert(0, 0)`
 範例：
 `jump(Unlocks.Iron)`
 @code_tooltip_hover = `hover(height)`
-變更無人機在地面上方懸停的高度。
+變更無人機懸停於地面上方的高度。
 
 預設高度為 `1`，大多數無人機動作都會將懸停高度重設為預設值。
 
@@ -748,7 +748,7 @@ list.insert(0, 0)`
 範例：
 `hover(5)`
 @code_tooltip_get_hover = `get_hover()`
-取得無人機目前在地面上方懸停的高度。
+取得無人機目前懸停於地面上方的高度。
 
 需要 `1` tick 執行。
 

@@ -1,10 +1,9 @@
 [<- Kwarc](docs/unlocks/quartz.md) <right>[Dynamit ->](docs/unlocks/dynamite.md)
 ---
 # Grzyby
-
 W podziemnych koloniach rośnie wiele rodzajów grzybów. Podczas kopania szukaj warstwy `Grounds.Mushroom`. Następnie możesz użyć `measure()` na podłożu, aby uzyskać rodzaj grzyba jako liczbę od `0` do `5`.
 
-Poniższy kod znajduje kilka grzybów i wypisuje ich rodzaj:
+Poniższy kod znajduje grzyby i wypisuje ich typ:
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 6},
@@ -29,22 +28,22 @@ jump(Unlocks.Mushrooms)
 #CODE
 # Przetwórz rząd grzybów
 for i in range(get_world_size()):
-    # Kop w dół do najwyższego bloku grzyba
+    # Kop do górnego bloku grzybów
     while get_ground_type() != Grounds.Mushroom:
         dig()
 
-    # Wypisz numer rodzaju grzyba
+    # Wypisz numer typu grzyba
     print(measure())
 
     move(East)
 }}
 
-## Jak zbierać grzyby
-Grzyby tego samego rodzaju lubią być razem, ale są zbyt nieśmiałe, by rosnąć jeden na drugim. Popchnij blok grzyba pod dronem za pomocą `push(direction)`.
+## Zbieranie grzybów
+Grzyby tego samego rodzaju lubią być razem, ale są zbyt nieśmiałe, by rosnąć jeden na drugim. Przesuń blok grzybów pod dronem przez `push(direction)`.
 
-Ułóż dwa bloki grzybów tego samego rodzaju jeden na drugim, a zostaną automatycznie zebrane i dadzą ci grzyby.
+Ustaw dwa bloki grzybów tego samego typu jeden na drugim, a zostaną automatycznie zebrane.
 
-Poniższy kod robi miejsce, a następnie popycha grzyb, aż będzie pasował do grzyba pod nim:
+Poniższy kod robi miejsce, a następnie przesuwa grzyba, aż trafi na taki sam typ poniżej:
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 6},
@@ -72,25 +71,25 @@ while get_ground_type() != Grounds.Mushroom:
 
 depth = get_pos_z()
 for i in range(2):
-    # Zrób miejsce, aby popchnąć blok grzyba na wschód
+    # Zrób miejsce na pchnięcie grzyba na wschód
     move(East)
     while get_pos_z() > depth - 1:
         dig()
-    # Wróć, popchnij i podążaj za popchniętym blokiem
+    # Wróć, popchnij i podążaj za przesuniętym blokiem
     move(West)
     push(East) # Popchnij grzyba!
     move(East)
 }}
 
-# Popychanie bloków
+# Przesuwanie bloków
 Za pomocą `can_push(direction)` możesz sprawdzić, czy blok pod dronem można popchnąć i czy coś nie blokuje go w danym kierunku.
 
 `push(direction)` popycha blok i zwraca informację, czy operacja się powiodła.
 
-Popychać można tylko bloki grzybów. Bloków nie można popychać w górę, a pchnięcie nie powiedzie się, jeśli na drodze znajduje się inny blok. Bloki wypchnięte w powietrze spadają i lądują na najbliższym bloku poniżej.
+Przesuwać można tylko bloki grzybów. Bloków nie można popychać w górę, a pchnięcie nie powiedzie się, jeśli na drodze znajduje się inny blok. Bloki wypchnięte w powietrze spadają i lądują na najbliższym bloku poniżej.
 
 # Strategia
-<spoiler=podpowiedź>
+<spoiler=wskazówka>
 Pamiętaj, że możesz wywołać `place(Grounds.Dirt)`, aby umieszczać bloki pod dronem. Przydaje się to do wypełniania dziur, tak aby można było przepychać nad nimi inne bloki.
 </spoiler>
 

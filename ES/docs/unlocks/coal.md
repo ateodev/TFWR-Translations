@@ -2,9 +2,9 @@
 <right>[Saltar ->](docs/unlocks/jump.md)
 ---
 # Carbón
-Bajo tierra hay distintos minerales escondidos, esperando a que los encuentres y los extraigas. Si excavas a través de la superficie hasta `Grounds.Dirt`, el primer mineral que encuentras es el carbón.
+Bajo tierra hay distintos minerales esperando a que los encuentres y los extraigas. Si atraviesas la superficie y excavas en `Grounds.Dirt`, el primer mineral que encontrarás es carbón.
 
-No tienes que hacer nada especial para extraer carbón: basta con ejecutar `dig()` mientras el dron está justo encima de un bloque de `Grounds.Coal`. Usa `get_ground_type()` para comprobar qué hay debajo del dron y `get_ground_type(direction)` para comprobar los cuatro bloques adyacentes.
+No hace falta nada especial para extraer carbón: ejecuta `dig()` cuando el dron esté justo encima de un bloque de `Grounds.Coal`. Usa `get_ground_type()` para comprobar qué hay debajo del dron y `get_ground_type(direction)` para comprobar los cuatro bloques adyacentes.
 
 El siguiente programa es un buen punto de partida para encontrar carbón. Excava hacia abajo en busca de una capa de carbón.
 {{codeexample 
@@ -40,16 +40,16 @@ dig()
 }}
 
 ## Nota sobre los derrumbes
-Ten en cuenta que solo obtienes carbón por los bloques de carbón que excavas directamente, no por los bloques que se derrumban alrededor del dron. Tenlo presente al pensar cómo extraer carbón, para maximizar los bloques de carbón que extraes frente a los que se pierden en derrumbes.
+Solo obtienes carbón de los bloques que excavas directamente, no de los que se derrumban alrededor del dron. Tenlo en cuenta al planificar la extracción para excavar el máximo de carbón y perder el mínimo por derrumbes.
 
 ## Estructura de las vetas
-Sus vetas forman capas horizontales de 1 bloque de grosor que tienes que encontrar por casualidad mientras excavas en la tierra. Los bloques de carbón de una capa suelen estar justo unos al lado de otros, pero algunos también pueden estar conectados solo en diagonal.
+Sus vetas forman capas horizontales de 1 bloque de grosor que debes encontrar por casualidad al excavar tierra. Los bloques de carbón de una capa suelen estar pegados unos a otros, pero algunos solo se conectan en diagonal.
 
-Las minas de carbón crecen en proporción al tamaño de la granja, así que plantéate seguir desbloqueando [Expandir](unlocks/expand) para aumentar la cantidad de carbón que puedes extraer.
+Los depósitos de carbón crecen en proporción al tamaño de la granja; sigue mejorando [Expandir](unlocks/expand) para poder extraer más carbón.
 
 ## Estrategia
-<spoiler=mostrar pista>
-Una estrategia sencilla, sobre todo en granjas pequeñas, es excavar todos los bloques a la profundidad en la que encontraste un bloque de carbón. Para ser más eficiente, puedes llevar la cuenta de dónde has visto bloques de carbón con `get_ground_type(direction)` y no perder tiempo pasando por bloques de tierra. Tendrás que poner especial cuidado en no pasar por alto las conexiones en diagonal, que se te escaparán si solo te mueves sobre bloques de carbón.
+<spoiler=mostrar pista> 
+Una estrategia sencilla, sobre todo en granjas pequeñas, es excavar todos los bloques a la profundidad donde encontraste carbón. Para mejorar la eficiencia, puedes registrar dónde has visto carbón con `get_ground_type(direction)` y evitar perder tiempo pasando sobre tierra. Ten cuidado de no pasar por alto las conexiones diagonales, que perderás si solo te mueves sobre bloques de carbón.
 </spoiler>
 
 ---

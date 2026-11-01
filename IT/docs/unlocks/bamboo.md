@@ -2,11 +2,11 @@
 <right>[Piramidi ->](docs/unlocks/pyramid.md)
 ---
 # Bambù
-Il bambù è una pianta che cresce verso l'alto. Il drone dovrà raccoglierne regolarmente i frutti marroni perché possa continuare a crescere. Possiamo farlo con il comando appena sbloccato `hover`.
+Il bambù è una pianta che cresce verso l'alto. Il drone dovrà staccare regolarmente i suoi frutti marroni perché continui a crescere. Possiamo farlo con il comando `hover` appena sbloccato.
 
-Il bambù va piantato su terreno arato (`Grounds.Soil`) e piantarlo costa riso.
+Il bambù va piantato sul terreno arato (`Grounds.Soil`) e piantarlo costa riso.
 
-Il codice seguente pianta un bambù e aspetta che cresca fino al suo primo frutto.
+Il codice seguente pianta il bambù e aspetta che cresca fino al primo frutto.
 {{codeexample
 {
 "camera_position": {"x": -1, "y": 0, "z": 10},
@@ -31,17 +31,17 @@ move(East)
 #CODE
 till()
 plant(Entities.Bamboo)
-move(East) # spostati così il bambù può crescere
+move(East) # allontanati per lasciare crescere il bambù
 }}
 
 ## Frutti
 Il bambù cresce esattamente di 1 blocco al secondo.
 
-Il bambù produce frutti ogni pochi blocchi. Quando succede, il bambù smette di crescere e dovrai volarci dentro con il drone per distruggere il frutto.
+Il bambù produce frutti ogni pochi blocchi. Quando succede, smette di crescere e devi entrarci con il drone per distruggere il frutto. Il bambù può crescere fino al terzo frutto. Da quel momento non crescerà più in altezza, anche se lo stacchi.
 
-Per raccogliere i frutti, devi prima portarti con `hover` all'altezza giusta. Poi usa `move` per entrare nel frutto e raccoglierlo, e di nuovo `move` per allontanarti, così il bambù può continuare a crescere.
+Per staccare i frutti, devi prima usare `hover` per raggiungere l'altezza giusta. Poi usa `move` per entrare nel frutto e staccarlo, e ancora `move` per allontanarti e lasciare crescere il bambù.
 
-Puoi usare `measure()` sul bambù per sapere a quale altezza comparirà il prossimo frutto. `measure()` inizia a contare da `0`, quindi `hover(measure())` porterà il drone all'altezza in cui si troverà il frutto.
+Puoi usare `measure()` sul bambù per sapere a quale altezza apparirà il prossimo frutto. `measure()` conta da `0`, quindi `hover(measure())` porterà il drone all'altezza del frutto.
 
 {{codeexample
 {
@@ -67,33 +67,33 @@ move(East)
 #CODE
 till()
 plant(Entities.Bamboo)
-hover(measure()) # librati in modo che il drone sia accanto al frutto
+hover(measure()) # vola all'altezza del frutto
 
-move(East) # spostati e aspetta che cresca
+move(East) # allontanati e aspetta che cresca
 for i in range(3):
     do_a_flip()
 
-move(West) # raccogli il frutto
-move(East) # spostati di nuovo
+move(West) # stacca il frutto
+move(East) # allontanati di nuovo
 }}
 
-## Librarsi
-Il comando `hover` accetta un argomento, l'altezza a cui librarsi, che è un numero da `0` a `18`. L'altezza predefinita a cui si libra il drone è `1`. `hover` non può scendere dentro entità solide, quindi se il drone si trova già sopra un bambù, non puoi entrarci eseguendo `hover(0)`.
+## Volo Stazionario
+Il comando `hover` accetta un argomento: l'altezza di volo, un numero da `0` a `18`. L'altezza di volo predefinita del drone è `1`. `hover` non può far scendere il drone dentro entità solide: se è già sopra il bambù, non puoi farlo entrare eseguendo `hover(0)`.
 
-`hover` restituisce `True` se il drone è riuscito a librarsi all'altezza indicata, e `False` altrimenti.
+`hover` restituisce `True` se il drone ha raggiunto l'altezza indicata, altrimenti `False`.
 
-Inoltre c'è il comando `get_hover`, che restituisce l'altezza attuale a cui si libra il drone.
+Esiste anche il comando `get_hover`, che restituisce l'altezza di volo attuale del drone.
 
-Se usi `dig`, `harvest` o `plant` mentre il drone si libra, tornerà alla sua altezza predefinita (`1`).
+Se usi `dig`, `harvest` o `plant` mentre il drone è in volo stazionario, tornerà alla sua altezza predefinita (`1`).
 
-Infine, `get_pos_z()` non è influenzato dal librarsi. Restituisce sempre la posizione z del blocco sotto il drone.
+Infine, l'altezza di volo non influisce su `get_pos_z()`. Restituisce sempre la posizione z del blocco sotto il drone.
 
 ## Raccogliere il Bambù
-Anche se potresti usare `harvest()`, il modo consigliato per raccogliere i campi di bambù è entrare in un bambù con il drone ad altezza `0` (`hover(0)`). In questo modo raccogli l'intera pianta in una volta.
+Puoi usare `harvest()`, ma il metodo consigliato per raccogliere il bambù è entrarci con il drone a un'altezza di volo di `0` (`hover(0)`). In questo modo raccogli tutta la pianta in una volta.
 
-Se vuoi raccogliere il bambù senza distruggerlo, puoi entrarci con `move` a qualsiasi altezza, per esempio `hover(3)`. Così raccogli tutti i pezzi di bambù da quell'altezza in su, ma il bambù resta in vita. Un bambù raccolto parzialmente in questo modo farà ricrescere i suoi frutti, quindi dovrai raccoglierli di nuovo.
+Se vuoi raccogliere il bambù senza distruggerlo, puoi entrarci con `move` a qualsiasi altezza, per esempio con `hover(3)`. Raccoglierai tutti i segmenti da quell'altezza in su, ma il bambù resterà vivo. Un bambù raccolto parzialmente in questo modo produrrà di nuovo i frutti, che dovrai quindi staccare ancora.
 
-In entrambi i casi, la resa è uguale al quadrato del numero di pezzi di bambù distrutti, quindi più alta è la pianta di bambù, migliore sarà la resa.
+In entrambi i casi, la resa è uguale al quadrato del numero di segmenti di bambù distrutti: più alta è la pianta, maggiore è la resa.
 
 ---
 

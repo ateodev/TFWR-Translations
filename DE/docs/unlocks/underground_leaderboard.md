@@ -1,8 +1,8 @@
-# Untergrund-Bestenliste
-Der Untergrund hält noch größere Herausforderungen bereit. Bist du bereit, deine Bergbau- und Farmprogramme zu optimieren?
-Mit dieser Freischaltung kannst du in der Tiefe um die effizientesten Methoden wetteifern.
+# Unterirdische Bestenliste
+Unter der Erde warten noch größere Herausforderungen. Bist du bereit, deine Bergbau- und Farmprogramme zu optimieren?
+Mit dieser Freischaltung kannst du um die effizientesten Methoden in der Tiefe wetteifern.
 
-Du kannst einen Untergrund-Bestenlisten-Lauf starten, indem du `leaderboard_run(leaderboard, filename, speedup)` aufrufst.
+Du kannst einen unterirdischen Bestenlisten-Lauf starten, indem du `leaderboard_run(leaderboard, filename, speedup)` aufrufst.
 Dies startet eine [Simulation](docs/unlocks/simulation.md), ähnlich wie `simulate()`, außer dass die Startbedingungen festgelegt sind. Jede Bestenlisten-Kategorie hat unterschiedliche Start- und Erfolgsbedingungen.
 
 Der Bestenlisten-Lauf ist erfolgreich, wenn die Erfolgsbedingung am Ende der Simulation `True` ist. 
@@ -16,12 +16,12 @@ Hier ist ein Beispiel-Setup, das dich auf die Bestenliste `Leaderboards.Rice_Sin
 
 ![|x400](UndergroundLeaderboardSetup)
 
-## Schnellster Untergrund-Reset
-Der Untergrund-Reset ist die prestigeträchtigste Kategorie. In dieser Kategorie automatisierst du den Bergbau-Forschungsbaum vollständig. Du beginnst mit einem einzelnen Farmfeld, und der Lauf endet, wenn du `Unlocks.Underground_Leaderboard` erneut freischaltest.
+## Schnellster unterirdischer Reset
+Der unterirdische Reset ist die prestigeträchtigste Kategorie. In dieser Kategorie automatisierst du den Bergbau-Forschungsbaum vollständig, von einem einzelnen Farmfeld bis zum erneuten Freischalten von `Unlocks.Underground_Leaderboard`.
 
 Du musst nicht alles freischalten, versuche einfach, `Unlocks.Underground_Leaderboard` so schnell wie möglich freizuschalten.
 
-Denke daran, dass du `num_unlocked(unlock) > 0` verwenden kannst, um zu prüfen, ob etwas freigeschaltet ist. Außerdem kannst du `get_cost()` auf Freischaltungen anwenden, um zu sehen, was sie kosten, damit du automatisch die richtigen Gegenstände farmen kannst.
+Denke daran, dass du `num_unlocked(unlock) > 0` verwenden kannst, um zu prüfen, ob etwas freigeschaltet ist, und `get_cost()` auf Freischaltungen anwenden kannst, um zu sehen, was sie kosten, damit du automatisch die richtigen Gegenstände farmen kannst.
 
 `unlock()` berücksichtigt Abhängigkeiten im Forschungsbaum nicht. Du kannst beispielsweise `Unlocks.Fertilizer` vor `Unlocks.Water` freischalten.
 
@@ -40,7 +40,7 @@ Erfolgsbedingung:
 `num_unlocked(Unlocks.Underground_Leaderboard) > 0`
 
 ## Erze
-Diese Bestenliste testet dein Können beim Farmen von Erzen, insbesondere von Quarz. Sie verändert die Bodengenerierung so, dass dir die Bodenschichten zuerst Kohle, dann Eisen und dann Quarz liefern, in genau dieser Reihenfolge.
+Diese Bestenliste prüft deine Fähigkeiten beim Farmen von Erzen, besonders Quarz. Sie ändert die Bodengenerierung so, dass die Schichten zuerst Kohle, dann Eisen und schließlich Quarz bereitstellen.
 
 Beginne mit allem freigeschaltet und farme `20000` Quarz so schnell du kannst.
 
@@ -58,9 +58,9 @@ Erfolgsbedingung:
 `num_items(Items.Quartz) >= 20000`
 
 ## Schatzkarte
-Diese Bestenliste beginnt mit allem freigeschaltet und viel Energie. Sie verändert die Bodengenerierung so, dass es sehr viele Schatzkarten gibt.
+Diese Bestenliste startet mit allen Freischaltungen und viel Energie. Sie ändert die Bodengenerierung so, dass besonders viele Schatzkarten vorkommen.
 
-Sie findet auf einer 8x8-Welt mit einer einzelnen Drohne statt. Das Ziel ist es, `115000` Gold so schnell wie möglich zu farmen.
+Sie findet auf einer 8x8-Welt mit einer einzelnen Drohne statt. Das Ziel ist es, so schnell wie möglich `115000` Gold zu farmen.
 
 Funktionsaufruf:
 `leaderboard_run(Leaderboards.Treasure_Map, filename, speedup)`
@@ -76,20 +76,20 @@ Erfolgsbedingung:
 `num_items(Items.Gold) >= 115000`
 
 ## Ressourcen-Bestenlisten
-Diese Bestenlisten drehen sich darum, bestimmte Ressourcen so schnell wie möglich zu farmen. Du startest mit allen Freischaltungen und viel Energie. Die einzige Ausnahme ist die Pyramiden-Bestenliste, bei der du die Energie selbst erzeugen musst, indem du Pyramiden wiederherstellst.
+Bei diesen Bestenlisten geht es darum, bestimmte Ressourcen so schnell wie möglich zu farmen. Du startest mit allen Freischaltungen und viel Energie. Die einzige Ausnahme ist die Pyramiden-Bestenliste, bei der du durch das Wiederherstellen von Pyramiden selbst Energie erzeugen musst.
 
 Das Ziel ist es, eine festgelegte Menge an Ressourcen zu farmen.
 
 Wie immer musst du sicherstellen, dass dein Programm terminiert, wenn du das Ziel erreichst. Ein Lauf ist nicht beendet, bis das Programm endet, auch wenn das Ziel erreicht ist.
 
-Diese Bestenlisten verändern die Bodengenerierung so, dass die gewünschte Ressource immer wieder gefunden werden kann. Du musst also nicht `clear()` verwenden. Die Reis-Bestenliste besteht zum Beispiel nur aus Tonschichten.
+Diese Bestenlisten ändern die Bodengenerierung so, dass die gewünschte Ressource immer wieder vorkommt. Du musst also nicht `clear()` verwenden. Die Reis-Bestenliste besteht zum Beispiel ausschließlich aus Tonschichten.
 
 ### `Leaderboards.Rice`
 `leaderboard_run(Leaderboards.Rice, filename, speedup)`
 Erfolgsbedingung: `num_items(Items.Rice) >= 2000000`
 
 ### `Leaderboards.Bamboo`
-Beachte, dass in der Bambus-Bestenliste das Graben nicht erlaubt ist.
+Beachte, dass Graben in der Bambus-Bestenliste nicht erlaubt ist.
 
 `leaderboard_run(Leaderboards.Bamboo, filename, speedup)`
 Erfolgsbedingung: `num_items(Items.Bamboo) >= 500000000`
@@ -106,7 +106,7 @@ Erfolgsbedingung: `num_items(Items.Mushroom) >= 240000`
 `leaderboard_run(Leaderboards.Pyramids, filename, speedup)`
 Erfolgsbedingung: `num_items(Items.Power) >= 150000`
 
-## Einzel-Drohnen-Bestenlisten im Untergrund
+## Unterirdische Einzel-Drohnen-Bestenlisten
 Es gibt auch Bestenlisten für das Farmen mit einer einzelnen Drohne. Du bekommst nur eine Drohne und eine 8x8-Farm und musst eine bestimmte Menge an Ressourcen so schnell wie möglich farmen.
 
 ### `Leaderboards.Rice_Single`

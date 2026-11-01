@@ -1,7 +1,7 @@
 [<- Arroz](docs/unlocks/rice.md)
 ---
 # Calabazas petrificadas
-Al parecer, puedes encontrar calabazas bajo tierra. Se han endurecido y petrificado, pero aún sirven para lo que necesitamos. Puedes excavarlas con `dig()` para obtener calabazas.
+Al parecer, puedes encontrar calabazas bajo tierra. Se han endurecido y petrificado, pero aún sirven para lo que necesitamos. Puedes usar `dig()` para obtener calabazas.
 
 Esto ofrece otra forma de obtener calabazas sin cultivarlas en la superficie. Si prefieres cultivarlas, puedes ignorar por completo las calabazas petrificadas.
 

@@ -1,14 +1,13 @@
 [<- Carvão](docs/unlocks/coal.md)
 ---
 # Salto
-
 Seu drone desbloqueou o comando `jump()`. Use-o passando um desbloqueio como argumento, como `Unlocks.Iron`.
 
-Este comando permite escolher como alvo certos recursos escondidos no solo e saltar instantaneamente até eles. É especialmente útil para depuração ou para pular direto para um veio de minério que você acabou de deixar passar.
+Este comando permite escolher certos recursos escondidos no solo e saltar instantaneamente até eles. É especialmente útil para depuração ou para alcançar um veio que você acabou de deixar passar.
 
-Depois do salto, o recurso escolhido deve estar a no máximo 3 blocos da superfície. `jump()` só pode ser usado uma vez por execução do programa; novas tentativas de salto produzem um erro.
+Após o salto, o recurso desejado deve estar a até 3 blocos da superfície superior. `jump()` só pode ser usado uma vez por execução do programa; novas tentativas causarão um erro.
 
-O exemplo a seguir salta até o [arroz](docs/unlocks/rice.md), encontra a camada de argila e planta uma fileira de terraços de arroz:
+O exemplo abaixo salta até o [arroz](docs/unlocks/rice.md), encontra a argila e planta uma fileira de terraços de arroz:
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -30,12 +29,12 @@ O exemplo a seguir salta até o [arroz](docs/unlocks/rice.md), encontra a camada
     "starting_chunk": 0
 }
 #CODE
-# Salte para perto do recurso de arroz
+# Salte para perto do arroz
 jump(Unlocks.Rice)
 
 # Plante uma fileira de terraços de arroz
 for i in range(get_world_size()):
-    # O salto não é exato, escave os últimos blocos
+    # O salto não é exato; escave os últimos blocos
     while get_ground_type() != Grounds.Clay:
         dig()
 
@@ -45,17 +44,17 @@ for i in range(get_world_size()):
 }}
 
 ## Desbloqueios Compatíveis
-`jump()` só funciona com os seguintes desbloqueios de mineração:
-- Coal
-- Iron
-- Quartz
-- Rice
-- Petrified_Pumpkins
-- Special_Soils
-- Pyramid
-- Treasure_Map
-- Mushrooms
-- Dynamite
+`jump()` funciona apenas com os seguintes desbloqueios de mineração:
+- Carvão
+- Ferro
+- Quartzo
+- Arroz
+- Abóboras Petrificadas
+- Solos Especiais
+- Pirâmide
+- Mapa do Tesouro
+- Cogumelos
+- Dinamite
 
 ---
 

@@ -37,7 +37,7 @@ dig()
 print(get_pos_z())
 }}
 
-## 地块类型
+## 地面类型
 `get_ground_type()` 返回无人机下方地块的类型。你可以传入方向参数，例如 `get_ground_type(North)`，来获取相邻地块的类型。
 
 下面演示如何检查无人机下方是否为泥土地块：
@@ -67,9 +67,9 @@ if get_ground_type() == Grounds.Dirt:
 }}
 
 ## 硬度与稳定度
-`get_hardness()` 返回无人机下方地块的硬度。地块硬度越高，挖掘所需时间越长。你也可以传入方向参数，例如 `get_hardness(North)`。
+`get_hardness()` 返回无人机下方地块的硬度。你也可以传入方向参数，例如 `get_hardness(North)`。地块硬度越高，挖掘所需时间越长。
 
-`get_stability()` 返回无人机下方地块的稳定度。稳定度为 1 表示地块在塌方前能承受 1 格的高度差。你也可以传入方向参数，例如 `get_stability(North)`。
+`get_stability()` 返回无人机下方地块的稳定度。你也可以传入方向参数，例如 `get_stability(North)`。稳定度为 1 表示地块在塌方前能承受 1 格的高度差。
 
 {{codeexample 
 {

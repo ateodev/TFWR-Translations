@@ -1,7 +1,7 @@
 [<- Riso](docs/unlocks/rice.md)
 ---
 # Zucche Pietrificate
-A quanto pare si possono trovare zucche nel sottosuolo. Si sono indurite e pietrificate, ma vanno ancora bene per i nostri scopi. Puoi usare `dig()` su di esse per ottenere zucche.
+A quanto pare si possono trovare zucche nel sottosuolo. Si sono indurite e pietrificate, ma vanno ancora bene per i nostri scopi. Puoi scavarle con `dig()` per ottenere zucche.
 
 Questo offre un modo alternativo per ottenere zucche senza coltivarle in superficie. Se preferisci coltivarle, puoi tranquillamente ignorare le zucche pietrificate.
 

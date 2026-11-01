@@ -33,9 +33,9 @@
 #SETUP
 jump(Unlocks.Iron)
 #CODE
-# 确保探查结果是一个方向
+# 确保勘探返回了方向
 if prospect_iron() != None:
-    move(prospect_iron()) # 向铁矿脉靠近
+    move(prospect_iron()) # 靠近铁矿脉
 }}
 
 这段代码当前会调用两次 `prospect_iron()`，消耗 2 份煤炭。你可以考虑用变量来优化它。

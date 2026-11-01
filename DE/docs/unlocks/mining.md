@@ -47,9 +47,9 @@ Wenn du <desktop>den Mauszeiger über einen Block bewegst</desktop><mobile>auf e
 # Bohrer
 Je tiefer du gräbst, desto härter werden die Blöcke und desto länger dauert das Graben. Gut, dass wir unseren Bohrer verbessern können!
 
-Damit sich deine Drohne im Untergrund zurechtfindet, solltest du schnell die [unterirdischen Sinne](docs/unlocks/underground_senses.md) freischalten. Damit kann sie ihre eigene z-Position prüfen sowie die Art des Bodens unter ihr, seine Härte und seine Stabilität.
+Damit sich deine Drohne unter der Erde zurechtfindet, solltest du bald [Unterirdische Sinne](docs/unlocks/underground_senses.md) freischalten. Damit kann sie ihre z-Position sowie den Bodentyp, die Härte und die Stabilität unter sich prüfen.
 
-Mit den [unterirdischen Sinnen](docs/unlocks/underground_senses.md) kannst du zum Beispiel mit `get_hardness()` die Härte des Blocks unter dir prüfen. Wenn du auf einen Bereich mit besonders harten Blöcken stößt, kann es sinnvoll sein, sie zu umgehen, um schneller voranzukommen:
+Mit [Unterirdischen Sinnen](docs/unlocks/underground_senses.md) kannst du beispielsweise `get_hardness()` verwenden, um die Härte des Blocks unter dir zu prüfen. Wenn du auf einen Bereich mit besonders harten Blöcken stößt, kann es sinnvoll sein, sie zu umgehen, um schneller voranzukommen:
 
 `while True:
     if get_hardness() < 5:

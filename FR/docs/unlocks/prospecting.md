@@ -33,14 +33,14 @@ Tu peux utiliser le code suivant pour te rapprocher d’un pas du prochain miner
 #SETUP
 jump(Unlocks.Iron)
 #CODE
-# S’assurer que la prospection renvoie une direction
+# Vérifier que la prospection renvoie une direction
 if prospect_iron() != None:
     move(prospect_iron()) # Se rapprocher du filon de fer
 }}
 
 Tu peux optimiser ce code avec une variable, car il appelle actuellement `prospect_iron()` deux fois et coûte donc 2 charbons.
 
-## Calcul de la distance
+## Calcul de distance
 La distance du minerai de fer le plus proche correspond au nombre de pas que le drone doit effectuer. Si un minerai se trouve 2 blocs à l’est et 3 blocs au nord du drone, la distance est de 5, car le drone doit faire cinq pas pour l’atteindre.
 
 Forer compte également comme un pas. Si ce fer est en plus enfoui à 7 blocs de profondeur, la distance est de 12 : le drone doit faire cinq pas pour se placer au-dessus du fer, puis forer sept fois pour l’atteindre.

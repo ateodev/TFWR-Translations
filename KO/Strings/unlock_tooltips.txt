@@ -90,7 +90,7 @@ set_execution_speed(1)`
 @unlock_descr_leaderboard = 가장 빠른 시간 기록을 위한 리더보드에 참가합니다.
 
 `leaderboard_run(Leaderboards.Hay, "hay_file", speedup)`
-@unlock_descr_underground_leaderboard = 가장 빠른 시간 기록을 위한 지하 리더보드에 참가합니다.
+@unlock_descr_underground_leaderboard = 지하 리더보드에서 가장 빠른 기록에 도전하세요.
 
 `leaderboard_run(Leaderboards.Rice, "rice_file", speedup)`
 @unlock_descr_dicts = 딕셔너리와 세트에 접근할 수 있게 됩니다.

@@ -133,9 +133,9 @@ exemplo:
 @code_tooltip_get_entity_type = `get_entity_type(direction = None)`
 Descobre que tipo de entidade está sob o drone.
 
-Se `direction` não for `None`, ele verifica o ladrilho vizinho na direção dada.
+Se `direction` não for `None`, verifica a casa vizinha na direção indicada.
 
-retorna `None` se o ladrilho verificado estiver vazio, caso contrário, retorna o tipo da entidade nesse ladrilho.
+retorna `None` se a casa verificada estiver vazia; caso contrário, retorna o tipo da entidade nessa casa.
 
 leva `1` tick para executar.
 
@@ -145,9 +145,9 @@ exemplo:
 @code_tooltip_get_ground_type = `get_ground_type(direction = None)`
 Descobre que tipo de solo está sob o drone.
 
-Se `direction` não for `None`, ele verifica o ladrilho vizinho na direção dada.
+Se `direction` não for `None`, verifica a casa vizinha na direção indicada.
 
-retorna o tipo do solo no ladrilho verificado.
+retorna o tipo de solo da casa verificada.
 
 leva `1` tick para executar.
 
@@ -433,7 +433,7 @@ leva `200` ticks para executar.
 exemplo:
 `leaderboard_run(Leaderboards.Fastest_Reset, "full_run", 256)`
 @code_tooltip_simulate = `simulate(filename, sim_unlocks, sim_items, sim_globals, seed, speedup)`
-Inicia uma simulação para o leaderboard usando o `filename` especificado como ponto de partida.
+Inicia uma simulação para o placar de líderes usando o `filename` especificado como ponto de partida.
 
 `sim_unlocks`: Uma sequência contendo os desbloqueios iniciais.
 `sim_items`: Um dicionário mapeando itens para quantidades. A simulação começa com esses itens.
@@ -667,7 +667,7 @@ Escava um bloco para baixo.
 
 A velocidade de escavação depende da dureza do bloco e da força da broca do drone.
 
-leva `hardness / drill strength` segundos (a dureza dividida pela força da broca) para escavar um bloco. Os tempos de escavação não são afetados pelas melhorias de velocidade.
+leva `hardness / drill strength` segundos para escavar um bloco. Melhorias de velocidade não afetam o tempo de escavação.
 
 exemplo:
 `dig()`
@@ -699,7 +699,7 @@ Coloca blocos.
 
 Você pode especificar o bloco a ser colocado. Só é possível colocar blocos sem função especial. Por exemplo, você pode usar `place(Grounds.Rock)`, mas não `place(Grounds.Clay)`.
 
-retorna `True` se o bloco foi colocado, `False` caso contrário.
+retorna `True` se o bloco foi colocado, ou `False` caso contrário.
 
 leva `200` ticks para executar se bem-sucedido, `1` tick caso contrário.
 
@@ -712,7 +712,7 @@ Não é possível empurrar blocos para cima.
 
 retorna `True` se o bloco foi empurrado, caso contrário, `False`.
 
-leva `200` ticks para executar se o bloco foi empurrado, `1` tick caso contrário.
+leva `200` ticks se o bloco foi empurrado, ou `1` tick caso contrário.
 
 exemplo:
 `push(North)`

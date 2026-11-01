@@ -3,9 +3,9 @@
 # Dinamita
 El explosivo revolucionario que dejaron atrás expediciones mineras anteriores. Por desgracia, tu taladro es perfecto para hacer explotar la dinamita y volar todos los bloques que te rodean. La dinamita recogida se puede usar con `use_item(Items.Dynamite)` y explota inmediatamente debajo del dron.
 
-Para extraer dinamita de forma segura, encuentra una capa de `Grounds.Dynamite` seguida justo debajo de una capa de `Grounds.Soot`. La capa de dinamita de arriba se ha quedado algo vieja y es seguro excavar algunos de sus bloques. Sin embargo, algunos de los bloques de dinamita siguen activos y explotarán al excavarlos.
+Para extraer dinamita de forma segura, tendrás que encontrar el estrato doble de `Grounds.Dynamite` y `Grounds.Soot`. La dinamita del estrato superior se ha quedado algo vieja y es seguro excavar algunos de sus bloques. Sin embargo, parte de la dinamita sigue activa y explotará al excavarla.
 
-Este ejemplo excava en la dinamita y en todas las casillas alrededor del punto inicial de excavación, deja al descubierto la capa de hollín con sus números e imprime la medición:
+Este ejemplo excava dinamita y rodea el punto inicial, dejando al descubierto el estrato de hollín con sus números e imprimiendo la medición:
 {{codeexample 
 {
     "camera_position": {"x": -3, "y": 0, "z": 15},
@@ -31,11 +31,11 @@ for _ in range(3):
     move(East)
     move(North)
 #CODE
-# Excava hasta la capa de hollín, atravesando la capa de dinamita de arriba
+# Excava hasta el hollín atravesando la dinamita de arriba
 while get_ground_type() != Grounds.Soot:
     dig()
 
-# Lista de direcciones que hacen que el dron se mueva en círculo
+# Lista de direcciones para mover el dron en círculo
 circle_directions = [
     East, South, West, West, 
     North, North, East, East
@@ -47,7 +47,7 @@ for dir in circle_directions:
 }}
 
 ## Buscaminas de dinamita
-¿Puedes encontrar y excavar todos los bloques de dinamita inertes dejando solo los activos? Cada bloque activo que esté rodeado únicamente por otros bloques activos o bloques de hollín te dará dinamita adicional cuando desaparezca el estrato de dinamita.
+¿Puedes encontrar y excavar todos los bloques inertes dejando solo los activos? Cada bloque activo que esté rodeado únicamente por otros bloques activos o bloques de hollín te dará dinamita adicional cuando desaparezca el estrato de dinamita.
 
 Por suerte, los bloques de hollín inferiores te ayudarán: pueden detectar cuántos bloques de dinamita vecinos contienen dinamita activa. No te dirán exactamente cuáles están activos, solo el número total, así que tendrás que combinar las lecturas de varios bloques de hollín y deducirlo por tu cuenta.
 
@@ -56,7 +56,7 @@ Llamar a `measure()` sobre un bloque de hollín devuelve el número de minas que
 La primera excavación en el estrato de dinamita siempre da con un bloque inerte. Cada bloque de dinamita extraído produce un poco de dinamita. Cuando se destruye el estrato, ya sea por haber excavado correctamente todos los bloques inertes o por excavar sin querer dinamita activa, también obtienes una cantidad de dinamita igual al cuadrado del número de bloques activos descubiertos por completo.
 
 ## Estructura de los estratos
-El número de minas activas en el estrato de dinamita y, por tanto, la dificultad para encontrarlas aumentan con la profundidad. El número total de minas aumenta con el tamaño de la granja y, con él, el rendimiento máximo posible al despejar un estrato de dinamita.
+El número de minas activas en el estrato de dinamita y, por tanto, la dificultad para encontrarlas aumentan con la profundidad. El número total de minas aumenta con el tamaño de la granja, al igual que el rendimiento máximo posible al despejar un estrato de dinamita.
 
 Mejora la dinamita para aumentar el rendimiento de excavar bloques de dinamita y de descubrir por completo bloques activos. La mejora también aumenta un 30 % la energía de las explosiones de dinamita.
 
@@ -79,7 +79,7 @@ def dig_dynamite():
 
 ## Estrategia
 <spoiler=pista>
-El código de abajo excava en el estrato de dinamita y busca bloques de hollín cuya medición sea `0`. Por cada bloque así que encuentra, excava todos los bloques de dinamita que lo rodean:
+El código siguiente excava en el estrato de dinamita y busca bloques de hollín cuya medición sea `0`. Por cada uno que encuentra, excava todos los bloques de dinamita que lo rodean:
 {{codeexample 
 {
     "camera_position": {"x": -5, "y": 0, "z": 15},
@@ -115,7 +115,7 @@ circle_directions = [
 # Rodea el bloque que excavamos al principio
 for dir in circle_directions:
     # Si la medición del hollín es 0,
-    # sabemos que todos los bloques de dinamita de alrededor son inertes
+    # sabemos que todos los bloques de dinamita que lo rodean están inertes
     if get_ground_type() == Grounds.Soot and measure() == 0:
         # Da otra vuelta por los bloques de alrededor
         for dir2 in circle_directions:

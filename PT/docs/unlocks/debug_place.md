@@ -1,13 +1,11 @@
 [<- Bambu](docs/unlocks/bamboo.md)
 ---
 # Blocos Coloridos
-
 Como você talvez já saiba, pode usar `place()` para fazer o drone colocar um bloco. Este desbloqueio adiciona três blocos coloridos visualmente distintos dos arredores: `Grounds.Block_Red`, `Grounds.Block_Green` e `Grounds.Block_Blue`.
 
-Blocos coloridos podem ser usados para marcar coisas ou criar padrões bonitos.
+Blocos coloridos servem para marcar coisas ou criar padrões bonitos.
 
 Para colocar os novos blocos:
-
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 10},

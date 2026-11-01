@@ -30,7 +30,7 @@
 @UI volume = Volume da UI
 @ambience volume = Volume do Ambiente
 @drone volume = Volume do Drone
-@mute in background = Silenciar em Segundo Plano
+@mute in background = Silenciar em segundo plano
 @fps limit = FPS Máximo
 @autosave = Autosalvar Código
 @autosave progress = Autosalvar Progresso
@@ -85,7 +85,6 @@
 @Light = Claro
 @Lunar New Year = Ano Novo Lunar
 @Custom = Personalizado
-
 @Keyboard switches = Resposta das teclas
 @blue clicky = Clique + vibração
 @brown tactile = Vibração
@@ -111,9 +110,9 @@
 @30 fps = 30 FPS
 @60 fps = 60 FPS
 @120 fps = 120 FPS
-@automatic autocomplete = Autocompletar Automático
-@focus errors = Mostrar Erros
-@window docking = Acoplar Janelas
+@automatic autocomplete = Autocompletar automaticamente
+@focus errors = Revelar erros
+@window docking = Encaixar janelas
 @autocomplete = Autocompletar
 @keyboard = Teclado
 @Keyboard volume = Volume do teclado

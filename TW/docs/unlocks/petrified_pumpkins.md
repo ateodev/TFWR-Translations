@@ -1,9 +1,9 @@
 [<-水稻](docs/unlocks/rice.md)
 ---
 # 石化南瓜
-看來地下也能找到南瓜。它們已經變硬、石化，但對我們來說仍然夠用。你可以用 `dig()` 挖掘它們來取得南瓜。
+地下也能找到南瓜。它們已經變硬、石化，但對我們來說仍然夠用。使用 `dig()` 挖掘它們可以獲得南瓜。
 
-這提供了另一種不必在地面上種植就能取得南瓜的方法。如果你更喜歡種植，大可完全忽略石化南瓜。
+這提供了另一種取得南瓜的方法，不必在地面上種植。若你偏好種植，也可以完全忽略石化南瓜。
 
 {{codeexample 
 {
@@ -68,4 +68,4 @@ for _ in range(3):
 
 [統計資料](docs/stats.md)      [採礦](docs/unlocks/mining.md)      [地下感官](docs/unlocks/underground_senses.md)
 
-[move()](functions/move)      [dig()](functions/dig)      [get_ground_type()](functions/get_ground_type)
+[move()](functions/move) [dig()](functions/dig) [get_ground_type()](functions/get_ground_type)

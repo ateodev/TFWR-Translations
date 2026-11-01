@@ -1,8 +1,8 @@
-# Podziemna tabela wyników
-Podziemia kryją jeszcze większe wyzwania. Czy jesteś gotów zoptymalizować swoje programy do wydobycia i uprawy?
-Dzięki temu odblokowaniu możesz rywalizować o najbardziej wydajne metody w głębinach.
+# Ranking podziemny
+Podziemia kryją jeszcze większe wyzwania. Czy jesteś gotów zoptymalizować swoje programy górnicze i rolnicze?
+To odblokowanie pozwala rywalizować o najwydajniejsze metody w głębinach.
 
-Możesz rozpocząć próbę w podziemnej tabeli wyników, wywołując `leaderboard_run(leaderboard, filename, speedup)`.
+Możesz rozpocząć podziemną próbę rankingową przez `leaderboard_run(leaderboard, filename, speedup)`.
 Rozpoczyna to [symulację](docs/unlocks/simulation.md) podobną do `simulate()`, z tym wyjątkiem, że warunki początkowe są stałe. Każda kategoria tabeli wyników ma inne warunki początkowe i warunki powodzenia.
 
 Próba w tabeli wyników kończy się sukcesem, jeśli warunek powodzenia jest `True`, gdy symulacja się kończy.
@@ -12,14 +12,14 @@ Jeśli próba się powiedzie, twój czas zostanie dodany do tabeli wyników.
 
 Aby zmniejszyć wariancję, wszystkie próby muszą obejmować co najmniej 2 godziny symulowanego czasu. Symulację można przyspieszyć, więc w rzeczywistości nie potrwa to tak długo. Jeśli próba zakończy się wcześniej, będzie powtarzana, aż łączny symulowany czas osiągnie 2 godziny. Jako twój wynik zostanie przesłany średni czas ze wszystkich prób.
 
-Oto przykładowa konfiguracja, która pozwoli ci znaleźć się w tabeli wyników `Leaderboards.Rice_Single`.
+Oto przykładowy układ, który pozwoli wejść do rankingu `Leaderboards.Rice_Single`.
 
 ![|x400](UndergroundLeaderboardSetup)
 
 ## Najszybszy podziemny reset
-Podziemny reset to najbardziej prestiżowa kategoria. W tej kategorii całkowicie automatyzujesz drzewko odblokowań górniczych, zaczynając od jednego pola farmy i kończąc po ponownym odblokowaniu `Unlocks.Underground_Leaderboard`.
+Podziemny reset jest najbardziej prestiżową kategorią. W pełni automatyzujesz drzewko górnictwa, zaczynając od jednego pola i kończąc na ponownym odblokowaniu `Unlocks.Underground_Leaderboard`.
 
-Nie musisz wszystkiego odblokowywać. Po prostu spróbuj jak najszybciej odblokować `Unlocks.Underground_Leaderboard`.
+Nie musisz odblokowywać wszystkiego — po prostu odblokuj `Unlocks.Underground_Leaderboard` jak najszybciej.
 
 Pamiętaj, że za pomocą `num_unlocked(unlock) > 0` możesz sprawdzić, czy coś jest odblokowane. Możesz też użyć `get_cost()` na odblokowaniach, aby poznać ich koszt i automatycznie zdobywać odpowiednie przedmioty.
 
@@ -40,9 +40,9 @@ Warunek powodzenia:
 `num_unlocked(Unlocks.Underground_Leaderboard) > 0`
 
 ## Rudy
-Ta tabela wyników sprawdza twoje umiejętności wydobywania rud, a zwłaszcza kwarcu. Zmienia ona generowanie podłoża tak, że kolejne warstwy dostarczą ci węgla, potem żelaza, a na końcu kwarcu.
+Ten ranking sprawdza umiejętność zbierania rud, zwłaszcza kwarcu. Zmienia generowanie podłoża, by warstwy dostarczały kolejno węgla, żelaza i kwarcu.
 
-Zacznij z wszystkim odblokowanym i zbierz `20000` kwarcu tak szybko, jak potrafisz.
+Zacznij ze wszystkim odblokowanym i zbierz `20000` kwarcu jak najszybciej.
 
 Wywołanie funkcji:
 `leaderboard_run(Leaderboards.Ores, filename, speedup)`
@@ -57,10 +57,10 @@ simulate(filename, unlocks, items, globals, seed, speedup)`
 Warunek powodzenia:
 `num_items(Items.Quartz) >= 20000`
 
-## Mapa skarbu
-Ta tabela wyników zaczyna się z wszystkim odblokowanym i dużym zapasem energii. Zmienia ona generowanie podłoża tak, że występuje w nim mnóstwo map skarbu.
+## Mapa skarbów
+Ten ranking zaczyna się ze wszystkim odblokowanym i dużą ilością energii. Zmienia generowanie podłoża tak, by było wiele map skarbów.
 
-Rozgrywa się na świecie o rozmiarze 8x8 z jednym dronem. Celem jest jak najszybsze zebranie `115000` złota.
+Rozgrywa się w świecie 8x8 z jednym dronem. Celem jest zebranie `115000` złota jak najszybciej.
 
 Wywołanie funkcji:
 `leaderboard_run(Leaderboards.Treasure_Map, filename, speedup)`
@@ -75,21 +75,21 @@ simulate(filename, unlocks, items, globals, seed, speedup)`
 Warunek powodzenia:
 `num_items(Items.Gold) >= 115000`
 
-## Tabele wyników zasobów
-Te tabele wyników polegają na jak najszybszym zdobywaniu określonych zasobów. Zaczynasz ze wszystkimi odblokowaniami i dużym zapasem energii. Jedynym wyjątkiem jest tabela wyników piramid, w której energię musisz wytwarzać sam, odnawiając piramidy.
+## Rankingi zasobów
+Te rankingi skupiają się na jak najszybszym zbieraniu konkretnych zasobów. Zaczynasz ze wszystkim odblokowanym i dużą ilością energii. Wyjątkiem jest ranking piramid, w którym musisz samodzielnie wytwarzać energię przez ich odbudowę.
 
-Celem jest zebranie określonej ilości zasobów.
+Celem jest zebranie określonej liczby zasobów.
 
 Jak zawsze musisz upewnić się, że program zakończy działanie po osiągnięciu celu. Próba nie kończy się, dopóki program nie przestanie działać, nawet jeśli cel został już osiągnięty.
 
-Te tabele wyników zmieniają generowanie podłoża tak, aby potrzebny zasób można było znajdować raz za razem. Dzięki temu nie trzeba używać `clear()`. Na przykład tabela wyników ryżu składa się wyłącznie z warstw gliny.
+Te rankingi zmieniają generowanie podłoża, aby żądany zasób pojawiał się bez końca. Nie musisz więc używać `clear()`. Na przykład ranking ryżu zawiera wyłącznie warstwy gliny.
 
 ### `Leaderboards.Rice`
 `leaderboard_run(Leaderboards.Rice, filename, speedup)`
 Warunek powodzenia: `num_items(Items.Rice) >= 2000000`
 
 ### `Leaderboards.Bamboo`
-Pamiętaj, że w tabeli wyników bambusa kopanie jest niedozwolone.
+Ranking bambusa zabrania kopania.
 
 `leaderboard_run(Leaderboards.Bamboo, filename, speedup)`
 Warunek powodzenia: `num_items(Items.Bamboo) >= 500000000`
@@ -106,7 +106,7 @@ Warunek powodzenia: `num_items(Items.Mushroom) >= 240000`
 `leaderboard_run(Leaderboards.Pyramids, filename, speedup)`
 Warunek powodzenia: `num_items(Items.Power) >= 150000`
 
-## Podziemne tabele wyników jednego drona
+## Podziemne rankingi jednego drona
 Istnieją również tabele wyników dla uprawy jednym dronem. Otrzymujesz tylko jednego drona i farmę 8x8, a twoim zadaniem jest jak najszybsze zebranie określonej ilości zasobów.
 
 ### `Leaderboards.Rice_Single`

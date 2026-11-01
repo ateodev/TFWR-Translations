@@ -67,9 +67,9 @@ if get_ground_type() == Grounds.Dirt:
 }}
 
 ## Twardość i stabilność
-`get_hardness()` zwraca twardość pola pod dronem. Im twardsze pole, tym dłużej trwa kopanie. Możesz przekazać tej funkcji kierunek, na przykład `get_hardness(North)`.
+`get_hardness()` zwraca twardość pola pod dronem. Możesz przekazać tej funkcji kierunek, na przykład `get_hardness(North)`. Im twardsze pole, tym dłużej trwa kopanie.
 
-`get_stability()` zwraca stabilność pola pod dronem. Stabilność równa 1 oznacza, że blok wytrzyma różnicę wysokości wynoszącą 1, zanim się zawali. Możesz przekazać tej funkcji kierunek, na przykład `get_stability(North)`.
+`get_stability()` zwraca stabilność pola pod dronem. Możesz przekazać tej funkcji kierunek, na przykład `get_stability(North)`. Stabilność równa 1 oznacza, że blok wytrzyma różnicę wysokości wynoszącą 1, zanim się zawali.
 
 {{codeexample 
 {

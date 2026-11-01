@@ -41,7 +41,7 @@ jump(Unlocks.Treasure_Map)
 while get_ground_type() != Grounds.Basalt:
     dig()
 
-# Mesurer le basalte renvoie la position de la carte au trésor
+# Mesurer le basalte renvoie la position de la carte
 map_pos = measure()
 
 while get_pos_x() < map_pos[0]:
@@ -57,11 +57,11 @@ do_a_flip()
 instructions = measure()
 print("instructions : ", instructions)
 
-# Creuser dans la carte pour lancer la chasse au trésor
+# Creuser la carte pour commencer la chasse au trésor
 dig()
 }}
 
-Tu peux utiliser une boucle `for` sur la chaîne pour la traiter lettre par lettre :
+Tu peux parcourir la chaîne avec une boucle `for` pour la traiter lettre par lettre :
 {{codeexample 
 {
     "camera_position": {"x": -1.5, "y": 0, "z": 6},
@@ -96,14 +96,14 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 #CODE
-# Les instructions de la carte sont renvoyées sous forme d’une seule chaîne
+# Les instructions de la carte sont renvoyées en une seule chaîne
 instructions = measure()
-# Utiliser for-in pour découper la chaîne en lettres
+# Utiliser for-in pour séparer la chaîne en lettres
 for letter in instructions:
     print(letter)
 }}
 
-Le drone doit rester sur les blocs `Grounds.Treasure_Path` pendant tout le trajet. S’il passe sur un autre type de sol, le chemin se brise et le trésor est perdu.
+Le drone doit rester au-dessus de blocs de `Grounds.Treasure_Path` en permanence. S’il passe sur un autre type de sol, le chemin se brise et le trésor est perdu.
 
 ## Objectif
 Au bout du chemin se trouve un bloc `Grounds.Treasure_Goal`. Si le drone ne s’est pas écarté du chemin, une entité `Entities.Underground_Treasure` apparaîtra dessus. Le drone peut appeler `harvest()` sur le coffre pour récupérer son or.
@@ -112,7 +112,7 @@ Au bout du chemin se trouve un bloc `Grounds.Treasure_Goal`. Si le drone ne s’
 La quantité d’or est proportionnelle à la longueur du chemin du trésor. Améliorer le déblocage Carte au trésor augmente la profondeur du chemin, tandis qu’améliorer Agrandir lui donne plus d’espace pour se déplacer latéralement. Ces deux améliorations augmentent la longueur du chemin et la quantité d’or que tu trouveras.
 
 ## Plusieurs drones
-Le drone qui fore le bloc de carte au trésor est celui qui doit trouver le trésor sans quitter les blocs du chemin.
+Le drone qui creuse le bloc de la carte au trésor doit trouver le trésor sans quitter les blocs du chemin.
 </spoiler>
 
 ---

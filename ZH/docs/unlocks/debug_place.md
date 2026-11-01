@@ -3,7 +3,7 @@
 # 彩色地块
 你可能已经知道，可以用 `place()` 让无人机放置地块。此解锁项新增了三种颜色鲜明、容易与周围区分的地块：`Grounds.Block_Red`、`Grounds.Block_Green` 和 `Grounds.Block_Blue`。
 
-彩色地块可以用来做标记，或者拼出漂亮的图案。
+彩色地块可以用来标记位置，或制作漂亮的图案。
 
 放置新地块的方法如下：
 {{codeexample 

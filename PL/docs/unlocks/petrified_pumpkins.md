@@ -1,7 +1,7 @@
 [<- Ryż](docs/unlocks/rice.md)
 ---
 # Skamieniałe dynie
-Najwyraźniej pod ziemią można znaleźć dynie. Stwardniały i skamieniały, ale nadal nadają się do naszych celów. Możesz je wykopać za pomocą `dig()`, aby zdobyć dynie.
+Najwyraźniej pod ziemią można znaleźć dynie. Stwardniały i skamieniały, ale nadal nadają się do naszych celów. Możesz je wykopać przez `dig()`, aby otrzymać dynie.
 
 To alternatywny sposób na zdobywanie dyń bez uprawiania ich na powierzchni. Jeśli wolisz uprawę, możesz całkowicie zignorować skamieniałe dynie.
 

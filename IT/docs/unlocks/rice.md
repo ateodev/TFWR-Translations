@@ -3,9 +3,9 @@
 <right>[Perlite e Terriccio ->](docs/unlocks/special_soils.md)
 ---
 # Riso
-Sotto la superficie e lo strato di `Grounds.Dirt` troverai un sottile strato di `Grounds.Clay`. A quanto pare, questo terreno fertile e impregnato d'acqua è perfetto per piantare le piantine di riso.
+Sotto la superficie e lo strato di `Grounds.Dirt` trovi un sottile strato di `Grounds.Clay`. Questo terreno fertile e intriso d'acqua è perfetto per piantare riso.
 
-Il codice seguente potrebbe esserti utile per scavare verso il basso finché non trovi l'argilla e piantare il riso:
+Il codice seguente può aiutarti a scavare fino all'argilla e piantare riso:
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -33,10 +33,10 @@ while get_ground_type() != Grounds.Clay:
 plant(Entities.Rice)
 }}
 
-Finché il drone si trova sopra un blocco `Grounds.Clay`, puoi usare `plant(Entities.Rice)` per piantare piantine di riso nell'argilla, poi `can_harvest()` per controllare se il riso è completamente cresciuto e infine `harvest()` per ottenere riso.
+Quando il drone è sopra un blocco di `Grounds.Clay`, puoi usare `plant(Entities.Rice)` per piantare riso, `can_harvest()` per verificare se è maturo e infine `harvest()` per raccoglierlo.
 
 ## Terrazze
-Quando pianti il riso, il terreno diventa `Grounds.Rice_Terrace` per offrire al riso l'ambiente perfetto per maturare. Quando il riso è completamente cresciuto, il terreno si secca, diventa `Grounds.Dry_Rice_Terrace` e non può più essere usato per piantare altro riso. Per fortuna lo strato è spesso alcuni blocchi, quindi puoi rimuovere il blocco con `dig()` e piantare nuovo riso sulla `Grounds.Clay` sottostante. E se lo strato finisce, puoi sempre usare `clear()` sul mondo e scavare fino a uno strato nuovo.
+Quando pianti riso, il terreno diventa `Grounds.Rice_Terrace` per offrirgli l'ambiente ideale per maturare. Quando il riso è maturo, il terreno si asciuga e diventa `Grounds.Dry_Rice_Terrace`, dove non puoi piantare altro riso. Per fortuna, lo strato è spesso alcuni blocchi: puoi rimuovere il blocco con `dig()` e piantare altro riso sulla `Grounds.Clay` sottostante. Se lo strato si esaurisce, puoi sempre usare `clear()` per ripristinare il mondo e scavare fino a uno nuovo.
 
 ---
 

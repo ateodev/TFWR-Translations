@@ -3,7 +3,7 @@
 # Sentidos subterráneos
 Vamos a añadir algunos sensores para que tu dron pueda orientarse bajo tierra.
 
-## Posición z
+## Posición Z
 Ahora puedes usar `get_pos_z()` para obtener la altura del dron (empieza en 0 y se vuelve negativa a medida que el dron desciende).
 
 {{codeexample 
@@ -67,9 +67,9 @@ if get_ground_type() == Grounds.Dirt:
 }}
 
 ## Dureza y estabilidad
-`get_hardness()` devuelve la dureza de la casilla de terreno que hay debajo del dron. Cuanto mayor sea la dureza de una casilla, más se tarda en excavarla. Puedes pasarle un argumento de dirección, como `get_hardness(North)`.
+`get_hardness()` devuelve la dureza de la casilla de terreno que hay debajo del dron. Puedes pasarle un argumento de dirección, como `get_hardness(North)`. Cuanto mayor sea la dureza de una casilla, más se tarda en excavarla.
 
-`get_stability()` devuelve la estabilidad de la casilla de terreno que hay debajo del dron. Una estabilidad de 1 significa que el bloque puede soportar una diferencia de altura de 1 antes de derrumbarse. Puedes pasarle un argumento de dirección, como `get_stability(North)`.
+`get_stability()` devuelve la estabilidad de la casilla de terreno que hay debajo del dron. Puedes pasarle un argumento de dirección, como `get_stability(North)`. Una estabilidad de 1 significa que el bloque puede soportar una diferencia de altura de 1 antes de derrumbarse.
 
 {{codeexample 
 {

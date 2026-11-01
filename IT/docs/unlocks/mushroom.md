@@ -1,9 +1,9 @@
 [<- Quarzo](docs/unlocks/quartz.md) <right>[Dinamite ->](docs/unlocks/dynamite.md)
 ---
 # Funghi
-Molti tipi di funghi crescono in colonie sotterranee. Mentre scavi, cerca uno strato di `Grounds.Mushroom`. Puoi quindi usare `measure()` sul terreno per ottenere il tipo di fungo sotto forma di numero, da `0` a `5`.
+Molti tipi di funghi crescono in colonie sotterranee. Mentre scavi, cerca uno strato di `Grounds.Mushroom`. Puoi quindi usare `measure()` sul terreno per ottenere il tipo di fungo come numero da `0` a `5`.
 
-Il codice seguente trova alcuni funghi e ne stampa il tipo:
+Il codice seguente trova dei funghi e ne stampa il tipo:
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 6},
@@ -28,7 +28,7 @@ jump(Unlocks.Mushrooms)
 #CODE
 # Elabora una fila di funghi
 for i in range(get_world_size()):
-    # Scava fino al blocco di funghi più in alto
+    # Scava fino al primo blocco di funghi
     while get_ground_type() != Grounds.Mushroom:
         dig()
 
@@ -38,12 +38,12 @@ for i in range(get_world_size()):
     move(East)
 }}
 
-## Come Raccogliere i Funghi
+## Raccogliere i Funghi
 I funghi dello stesso tipo amano stare insieme, ma sono troppo timidi per crescere uno sopra l'altro. Spingi il blocco di funghi sotto il drone con `push(direction)`.
 
-Impila due blocchi di funghi dello stesso tipo uno sopra l'altro e i blocchi verranno raccolti automaticamente, dandoti i loro funghi.
+Impila due blocchi di funghi dello stesso tipo: verranno raccolti automaticamente per ottenere i funghi.
 
-Il codice qui sotto fa spazio e poi spinge un fungo finché non corrisponde al fungo sottostante:
+Il codice seguente fa spazio e spinge un fungo finché non corrisponde a quello sottostante:
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 6},
@@ -71,7 +71,7 @@ while get_ground_type() != Grounds.Mushroom:
 
 depth = get_pos_z()
 for i in range(2):
-    # Fai spazio per spingere il blocco di funghi verso est
+    # Fai spazio per spingere il fungo verso est
     move(East)
     while get_pos_z() > depth - 1:
         dig()
@@ -86,7 +86,7 @@ Puoi usare `can_push(direction)` per controllare se il blocco sotto il drone pu�
 
 `push(direction)` spinge il blocco e restituisce se l'operazione è riuscita.
 
-Solo i blocchi di funghi possono essere spinti, i blocchi non possono essere spinti verso l'alto e l'operazione fallisce se un altro blocco ostacola il percorso. Se vengono spinti nel vuoto, i blocchi cadono e atterrano sul blocco successivo sotto di loro.
+Si possono spingere solo blocchi di funghi. I blocchi non possono essere spinti verso l'alto e l'operazione fallisce se un altro blocco ostacola il percorso. Se vengono spinti nel vuoto, i blocchi cadono e atterrano sul blocco successivo sotto di loro.
 
 # Strategia
 <spoiler=suggerimento>

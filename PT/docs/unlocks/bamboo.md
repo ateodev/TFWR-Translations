@@ -2,12 +2,11 @@
 <right>[Pirâmides ->](docs/unlocks/pyramid.md)
 ---
 # Bambu
+O bambu é uma planta que cresce para cima. Seu drone precisa retirar regularmente os frutos marrons para que ele continue crescendo. Podemos fazer isso com o comando `hover` recém-desbloqueado.
 
-O bambu é uma planta que cresce para cima. Seu drone vai precisar arrancar os frutos marrons dele regularmente para que ele continue crescendo. Podemos fazer isso com o comando `hover`, que acabou de ser desbloqueado.
+O bambu deve ser plantado em solo arado (`Grounds.Soil`) e custa arroz.
 
-O bambu precisa ser plantado em terra arada (`Grounds.Soil`), e plantá-lo custa arroz.
-
-O código a seguir planta bambu e espera ele crescer até o primeiro fruto.
+O código abaixo planta bambu e espera que cresça até o primeiro fruto.
 {{codeexample
 {
 "camera_position": {"x": -1, "y": 0, "z": 10},
@@ -32,18 +31,17 @@ move(East)
 #CODE
 till()
 plant(Entities.Bamboo)
-move(East) # afaste-se para o bambu poder crescer
+move(East) # afaste-se para o bambu crescer
 }}
 
 ## Frutos
-
 O bambu cresce exatamente 1 bloco por segundo.
 
-O bambu produz frutos a cada poucos blocos. Quando isso acontece, o bambu para de crescer e você precisa voar com o drone para dentro dele para destruir o fruto.
+O bambu produz frutos a cada poucos blocos. Quando isso acontece, ele para de crescer e você precisa entrar nele com o drone para destruir o fruto. O bambu pode crescer até o terceiro fruto. Depois disso, não crescerá mais em altura, mesmo que você retire o fruto.
 
-Para arrancar os frutos, primeiro use `hover` para chegar à altura certa. Depois, use `move` para entrar no fruto e arrancá-lo, e `move` de novo para se afastar e deixar o bambu continuar crescendo.
+Para retirar frutos, primeiro use `hover` para alcançar a altura correta. Depois use `move` para entrar no fruto e retirá-lo, e novamente `move` para se afastar e deixar o bambu crescer.
 
-Você pode usar `measure()` no bambu para verificar em que altura o próximo fruto vai aparecer. `measure()` começa a contar em `0`, então `hover(measure())` leva o drone até a altura onde o fruto vai estar.
+Use `measure()` no bambu para verificar a altura do próximo fruto. `measure()` conta a partir de `0`, então `hover(measure())` leva o drone até a altura do fruto.
 
 {{codeexample
 {
@@ -69,35 +67,33 @@ move(East)
 #CODE
 till()
 plant(Entities.Bamboo)
-hover(measure()) # paire de modo que o drone fique ao lado do fruto
+hover(measure()) # paire na altura do fruto
 
-move(East) # afaste-se e espere ele crescer
+move(East) # afaste-se e espere crescer
 for i in range(3):
     do_a_flip()
 
-move(West) # arranque o fruto
-move(East) # afaste-se de novo
+move(West) # retire o fruto
+move(East) # afaste-se novamente
 }}
 
-## Pairar
+## Pairando
+O comando `hover` recebe um argumento: a altura em que pairar, um número de `0` a `18`. A altura padrão do drone é `1`. `hover` não permite descer para dentro de entidades sólidas. Se o drone já estiver sobre o bambu, não poderá entrar nele executando `hover(0)`.
 
-O comando `hover` recebe um argumento, a altura em que o drone deve pairar, que é um número de `0` a `18`. A altura padrão em que o drone paira é `1`. `hover` não consegue descer para dentro de entidades sólidas, então, se o drone já estiver acima de um bambu, você não consegue entrar nele executando `hover(0)`.
+`hover` retorna `True` se o drone alcançou a altura especificada, ou `False` caso contrário.
 
-`hover` retorna `True` se o drone conseguiu pairar na altura indicada, e `False` caso contrário.
+Também existe o comando `get_hover`, que retorna a altura atual em que o drone paira.
 
-Além disso, existe o comando `get_hover`, que retorna a altura atual em que o drone está pairando.
+Se usar `dig`, `harvest` ou `plant` enquanto paira, o drone volta à altura padrão (`1`).
 
-Se você usar `dig`, `harvest` ou `plant` enquanto paira, o drone volta para a altura padrão (`1`).
-
-Por fim, `get_pos_z()` não é afetado pela altura em que o drone paira. Ele sempre retorna a posição z do bloco abaixo do drone.
+Por fim, a altura de voo não afeta `get_pos_z()`. Ele sempre retorna a posição z do bloco sob o drone.
 
 ## Colhendo Bambu
+Você pode usar `harvest()`, mas a forma recomendada de colher bambu é entrar nele com o drone na altura `0` (`hover(0)`). Isso colhe a planta inteira de uma vez.
 
-Embora você possa usar `harvest()`, a forma recomendada de colher plantações de bambu é entrar em um bambu com o drone na altura `0` (`hover(0)`). Isso colhe a planta inteira de uma vez.
+Para colher sem destruir o bambu, entre nele com `move` em qualquer altura, por exemplo usando `hover(3)`. Isso colhe todos os segmentos dessa altura para cima, mas mantém o bambu vivo. Um bambu parcialmente colhido dessa forma volta a produzir frutos, que você terá que retirar novamente.
 
-Se quiser colher o bambu sem destruí-lo, você pode usar `move` para entrar nele em qualquer altura, por exemplo `hover(3)`. Isso colhe todos os pedaços de bambu dessa altura para cima, mas mantém o bambu vivo. Um bambu colhido parcialmente dessa forma volta a produzir frutos, então você vai precisar arrancá-los de novo.
-
-Em ambos os casos, sua produção é igual ao quadrado do número de pedaços de bambu destruídos, então, quanto mais alto o bambu, melhor a produção.
+Nos dois casos, a produção equivale ao quadrado do número de segmentos de bambu destruídos. Quanto mais alto o bambu, maior a produção.
 
 ---
 

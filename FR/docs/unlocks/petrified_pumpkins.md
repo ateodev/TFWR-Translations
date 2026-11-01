@@ -1,7 +1,7 @@
 [<- Riz](docs/unlocks/rice.md)
 ---
 # Citrouilles pétrifiées
-Apparemment, on peut trouver des citrouilles sous terre. Elles se sont solidifiées et pétrifiées, mais elles conviennent encore parfaitement à nos besoins. Tu peux les forer avec `dig()` pour obtenir des citrouilles.
+Apparemment, on peut trouver des citrouilles sous terre. Elles se sont solidifiées et pétrifiées, mais elles conviennent encore parfaitement à nos besoins. Creuse-les avec `dig()` pour obtenir des citrouilles.
 
 Cela offre un autre moyen d’obtenir des citrouilles sans les cultiver en surface. Si tu préfères les cultiver, tu peux tout simplement ignorer les citrouilles pétrifiées.
 

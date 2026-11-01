@@ -3,9 +3,9 @@
 <right>[Perlite et terreau ->](docs/unlocks/special_soils.md)
 ---
 # Riz
-Sous la surface et la couche de `Grounds.Dirt`, tu trouveras une fine couche de `Grounds.Clay`. Il s’avère que ce sol fertile et gorgé d’eau est idéal pour planter des pousses de riz.
+Sous la surface et la couche de `Grounds.Dirt`, tu trouveras une fine couche de `Grounds.Clay`. Ce sol fertile et détrempé est idéal pour planter du riz.
 
-Le code suivant peut t’aider à creuser jusqu’à trouver de l’argile et à planter du riz :
+Le code suivant peut t’aider à creuser jusqu’à l’argile et à planter du riz :
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -33,10 +33,10 @@ while get_ground_type() != Grounds.Clay:
 plant(Entities.Rice)
 }}
 
-Tant que ton drone se trouve au-dessus d’un bloc `Grounds.Clay`, tu peux utiliser `plant(Entities.Rice)` pour planter des pousses de riz dans l’argile, puis `can_harvest()` pour vérifier si le riz a fini de pousser, et enfin `harvest()` pour récolter du riz.
+Tant que le drone est au-dessus d’un bloc de `Grounds.Clay`, tu peux utiliser `plant(Entities.Rice)` pour y planter du riz, `can_harvest()` pour vérifier s’il est mûr et enfin `harvest()` pour le récolter.
 
 ## Terrasses
-Dès que tu plantes du riz, le sol devient `Grounds.Rice_Terrace` pour offrir au riz l’environnement idéal pour mûrir. Une fois le riz arrivé à maturité, le sol s’assèche, devient `Grounds.Dry_Rice_Terrace` et ne peut plus servir à planter du riz. Heureusement, la couche fait plusieurs blocs d’épaisseur : tu peux donc retirer le bloc avec `dig()` et planter du nouveau riz sur la `Grounds.Clay` en dessous. Et si la couche est épuisée, tu peux toujours utiliser `clear()` sur le monde et creuser jusqu’à une couche neuve.
+Lorsque tu plantes du riz, le sol devient `Grounds.Rice_Terrace` pour lui offrir les conditions idéales pour mûrir. Quand le riz est mûr, le sol sèche et devient `Grounds.Dry_Rice_Terrace`, où tu ne peux plus planter de riz. Heureusement, la couche fait plusieurs blocs d’épaisseur : tu peux retirer le bloc avec `dig()` et replanter sur la `Grounds.Clay` située dessous. Si la couche est épuisée, utilise `clear()` pour réinitialiser le monde et creuse jusqu’à une nouvelle couche.
 
 ---
 

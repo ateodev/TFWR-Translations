@@ -47,9 +47,9 @@ Si tu veux retourner à la surface, tu peux utiliser `clear()` à tout moment. C
 # Foreuse
 À mesure que tu creuses, tu remarqueras que les blocs deviennent plus durs et que leur forage prend donc plus de temps. Heureusement, nous pouvons améliorer notre foreuse !
 
-Pour aider ton drone à se repérer sous terre, tu devrais vite débloquer les [sens souterrains](docs/unlocks/underground_senses.md). Ils lui permettent de connaître sa propre position z ainsi que le type de sol en dessous, sa dureté et sa stabilité.
+Pour aider ton drone à se repérer sous terre, débloque rapidement les [sens souterrains](docs/unlocks/underground_senses.md). Il pourra ainsi vérifier sa position z et le type, la dureté et la stabilité du sol sous lui.
 
-Par exemple, avec les [sens souterrains](docs/unlocks/underground_senses.md), tu peux utiliser `get_hardness()` pour connaître la dureté du bloc situé sous toi. Si tu rencontres une zone de blocs particulièrement durs, il peut être judicieux de les contourner afin de progresser plus vite :
+Par exemple, les [sens souterrains](docs/unlocks/underground_senses.md) permettent d’utiliser `get_hardness()` pour vérifier la dureté du bloc sous le drone. Si tu rencontres une zone de blocs particulièrement durs, il peut être judicieux de les contourner afin de progresser plus vite :
 
 `while True:
     if get_hardness() < 5:

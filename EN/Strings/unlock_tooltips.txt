@@ -228,7 +228,6 @@ other_file.function()`
 @treasure_map = Treasure Map
 @mushrooms = Mushroom
 @jump = Jump
-
 @unlock_button_unlock = Unlock
 @unlock_button_upgrade = Upgrade
 @unlock_button_get_full_game = Get full game

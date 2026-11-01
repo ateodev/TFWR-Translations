@@ -3,7 +3,7 @@
 <right>[Perlita e Solo Franco ->](docs/unlocks/special_soils.md)
 ---
 # Arroz
-Abaixo da superfície e da camada de `Grounds.Dirt`, você vai encontrar uma fina camada de `Grounds.Clay`. Acontece que esse solo fértil e encharcado é perfeito para plantar mudas de arroz.
+Sob a superfície e a camada de `Grounds.Dirt`, há uma fina camada de `Grounds.Clay`. Acontece que esse solo fértil e encharcado é perfeito para plantar mudas de arroz.
 
 O código a seguir pode ajudar você a escavar para baixo até encontrar argila e plantar arroz:
 {{codeexample 
@@ -33,10 +33,10 @@ while get_ground_type() != Grounds.Clay:
 plant(Entities.Rice)
 }}
 
-Enquanto o drone estiver sobre um bloco de `Grounds.Clay`, você pode usar `plant(Entities.Rice)` para plantar mudas de arroz na argila, depois `can_harvest()` para verificar se o arroz já cresceu totalmente e, por fim, `harvest()` para obter arroz.
+Enquanto o drone estiver sobre `Grounds.Clay`, use `plant(Entities.Rice)` para plantar arroz, `can_harvest()` para verificar se amadureceu e `harvest()` para colher.
 
 ## Terraços
-Assim que você planta arroz, o solo vira `Grounds.Rice_Terrace` para oferecer o ambiente perfeito para o arroz amadurecer. Quando o arroz cresce totalmente, o solo seca, vira `Grounds.Dry_Rice_Terrace` e não pode mais ser usado para plantar arroz. Felizmente, a camada tem alguns blocos de espessura, então você pode remover o bloco com `dig()` e plantar arroz novo na `Grounds.Clay` abaixo. E, se a camada acabar, você sempre pode usar `clear()` no mundo e escavar até uma camada nova.
+Ao plantar arroz, o solo vira `Grounds.Rice_Terrace` para oferecer as condições ideais de maturação. Quando o arroz amadurece, o solo seca e vira `Grounds.Dry_Rice_Terrace`, onde não é possível plantar mais arroz. Felizmente a camada tem alguns blocos de espessura: remova o bloco com `dig()` e plante mais arroz na `Grounds.Clay` abaixo. Se a camada acabar, use `clear()` para restaurar o mundo e escave até uma nova camada.
 
 ---
 

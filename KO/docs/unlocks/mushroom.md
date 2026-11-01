@@ -3,7 +3,7 @@
 # 버섯
 여러 종류의 버섯이 지하에 군락을 이루고 자라납니다. 굴착하며 `Grounds.Mushroom` 지층을 찾아보세요. 그런 다음 땅을 `measure()`하면 `0`부터 `5`까지의 숫자로 버섯 종류를 알 수 있습니다.
 
-다음 코드는 버섯을 몇 개 찾아 그 종류를 출력합니다.
+다음 코드는 버섯을 찾아 종류를 출력합니다:
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 6},
@@ -26,24 +26,24 @@
 #SETUP
 jump(Unlocks.Mushrooms)
 #CODE
-# 버섯 한 줄 처리하기
+# 버섯 한 줄 처리
 for i in range(get_world_size()):
-    # 맨 위 버섯 블록까지 파 내려가기
+    # 가장 위의 버섯 블록까지 굴착
     while get_ground_type() != Grounds.Mushroom:
         dig()
 
-    # 버섯 종류 번호 출력하기
+    # 버섯 종류 번호 출력
     print(measure())
 
     move(East)
 }}
 
-## 버섯 모으는 방법
-같은 종류의 버섯들은 함께 자라나는 경향이 있지만, 서로의 위로 자라기엔 조금 부끄러워합니다. `push(direction)`으로 드론 아래의 버섯 블록을 밀 수 있습니다.
+## 버섯 모으기
+같은 종류의 버섯들은 함께 자라나는 경향이 있지만, 서로의 위로 자라기엔 조금 부끄러워합니다. `push(direction)`으로 드론 아래 버섯 블록을 미세요.
 
-같은 종류의 버섯 블록 두 개를 위아래로 쌓으면 블록이 자동으로 수확되어 버섯을 얻습니다.
+같은 종류의 버섯 블록 두 개를 포개면 자동으로 수확되어 버섯을 얻습니다.
 
-아래 코드는 공간을 만든 다음, 아래에 있는 버섯과 종류가 일치할 때까지 버섯을 밉니다.
+아래 코드는 공간을 만든 다음 아래 버섯과 같은 종류가 될 때까지 버섯을 밉니다:
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 6},
@@ -71,13 +71,13 @@ while get_ground_type() != Grounds.Mushroom:
 
 depth = get_pos_z()
 for i in range(2):
-    # 버섯 블록을 동쪽으로 밀 공간 만들기
+    # 버섯을 동쪽으로 밀 공간 만들기
     move(East)
     while get_pos_z() > depth - 1:
         dig()
-    # 돌아가서 밀고, 밀린 블록을 따라가기
+    # 돌아와서 밀고 밀린 블록 따라가기
     move(West)
-    push(East) # 버섯을 밀어라!
+    push(East) # 버섯 밀기!
     move(East)
 }}
 

@@ -29,11 +29,11 @@ Tak wyglądają ruiny piramidy po odkopaniu:
 jump(Unlocks.Pyramid)
 move(North)
 #CODE
-# Kop w dół, aby znaleźć fundament piramidy
+# Kop, aby znaleźć podstawę piramidy
 while get_ground_type() != Grounds.Limestone:
     dig()
 
-z = get_pos_z() # Zapamiętaj głębokość fundamentu
+z = get_pos_z() # Zapamiętaj głębokość podstawy
 
 # Wykop wszystko, co nie jest częścią piramidy
 for i in range(6):
@@ -46,7 +46,7 @@ for i in range(6):
     move(East)
 }}
 
-## Odnawianie piramidy
+## Odbudowa piramidy
 Jak widać, w piasku znajduje się kilka dziur, które trzeba wypełnić. Gdy uzupełnisz braki i przywrócisz piramidę do pierwotnego stanu, konstrukcja rozpadnie się, a pośrodku wapiennej podstawy pojawi się duży słonecznik. Zbierz go, aby otrzymać `Items.Power`. Im większa ukończona piramida, tym więcej energii otrzymasz.
 
 Piramidę można odnowić, umieszczając bloki poleceniem `place(Grounds.Sand)`. Piasek to specjalny blok, który natychmiast się zawali, jeśli nie ma odpowiedniego podparcia. Każdy blok piasku musi leżeć bezpośrednio na wapieniu albo na powierzchni 3x3 z bloków piasku. Oto mała ręcznie zbudowana piramida pokazowa. Oczywiście samodzielne zbudowanie jej nie daje energii:
@@ -71,22 +71,22 @@ Piramidę można odnowić, umieszczając bloki poleceniem `place(Grounds.Sand)`.
     "exclude_unlocks": ["watering", "fertilizer", "mushrooms", "coal", "quartz"]
 }
 #CODE
-# Potrzebujemy wapiennego fundamentu, na którym położymy piasek
+# Potrzebujemy wapiennej podstawy pod piasek
 for i in range(3):
     for j in range(3):
         place(Grounds.Limestone)
         move(North)
     move(East)
 
-# Połóż na wapieniu warstwę piasku 3x3
+# Ułóż na wapieniu warstwę piasku 3x3
 for i in range(3):
     for j in range(3):
         place(Grounds.Sand)
         move(North)
     move(East)
 
-# Spróbuj położyć kolejną warstwę 3x3
-# Zauważ, że tylko środkowy blok ma podparcie i zostaje
+# Spróbuj ułożyć kolejną warstwę 3x3
+# Tylko środkowy blok ma podparcie i pozostaje
 for i in range(3):
     for j in range(3):
         place(Grounds.Sand)
@@ -96,7 +96,7 @@ for i in range(3):
 
 Prawidłowo odnowiona piramida ma kwadratowy fundament z wapienia o nieparzystej długości boku, na przykład 5x5. Nad nim znajduje się warstwa bloków piasku tego samego rozmiaru (5x5), a następnie coraz mniejsze warstwy: 3x3 i 1x1.
 
-Bloki nad piramidą są zawsze ziemią. Możesz wykorzystać ten fakt, jeśli chcesz wydajnie odkopywać piramidy.
+Bloki nad piramidą są zawsze ziemią. Możesz wykorzystać ten fakt, aby odkopać piramidę wydajnie.
 
 ## Energia
 Dopóki masz energię, dron będzie jej używał, aby działać dwa razy szybciej.

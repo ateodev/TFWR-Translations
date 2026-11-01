@@ -1,9 +1,9 @@
 [<- Quartz](docs/unlocks/quartz.md) <right>[Dynamite ->](docs/unlocks/dynamite.md)
 ---
 # Champignon
-De nombreux types de champignons poussent en colonies sous terre. En creusant, cherche une strate de `Grounds.Mushroom`. Tu peux ensuite appeler `measure()` sur le sol pour obtenir le type de champignon sous forme d’un nombre allant de `0` à `5`.
+De nombreux types de champignons poussent en colonies sous terre. En creusant, cherche une strate de `Grounds.Mushroom`. Tu peux ensuite appeler `measure()` sur le sol pour obtenir le type de champignon sous forme d’un nombre de `0` à `5`.
 
-Le code suivant trouve quelques champignons et affiche leur type :
+Le code suivant trouve des champignons et affiche leur type :
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 6},
@@ -28,7 +28,7 @@ jump(Unlocks.Mushrooms)
 #CODE
 # Traiter une rangée de champignons
 for i in range(get_world_size()):
-    # Creuser jusqu’au bloc de champignon supérieur
+    # Creuser jusqu’au premier bloc de champignon
     while get_ground_type() != Grounds.Mushroom:
         dig()
 
@@ -38,12 +38,12 @@ for i in range(get_world_size()):
     move(East)
 }}
 
-## Comment récolter des champignons
-Les champignons du même type aiment se retrouver, mais ils sont un peu trop timides pour pousser les uns sur les autres. Pousse le bloc de champignon situé sous le drone avec `push(direction)`.
+## Récolter les champignons
+Les champignons du même type aiment se retrouver, mais ils sont un peu trop timides pour pousser les uns sur les autres. Pousse le bloc de champignon sous le drone avec `push(direction)`.
 
-Empile deux blocs de champignon du même type l’un sur l’autre : les blocs seront automatiquement récoltés et te rapporteront leurs champignons.
+Empile deux blocs de champignons du même type : ils seront automatiquement récoltés pour leurs champignons.
 
-Le code ci-dessous libère de la place, puis pousse un champignon jusqu’à ce qu’il corresponde au champignon situé dessous :
+Le code suivant fait de la place puis pousse un champignon jusqu’à ce qu’il corresponde à celui situé dessous :
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 6},
@@ -71,22 +71,22 @@ while get_ground_type() != Grounds.Mushroom:
 
 depth = get_pos_z()
 for i in range(2):
-    # Faire de la place pour pousser le bloc de champignon vers l’est
+    # Faire de la place pour pousser le champignon vers l’est
     move(East)
     while get_pos_z() > depth - 1:
         dig()
     # Revenir, pousser et suivre le bloc poussé
     move(West)
-    push(East) # Pousse le champignon !
+    push(East) # Pousser le champignon !
     move(East)
 }}
 
-# Pousser des blocs
+# Pousser les blocs
 Tu peux utiliser `can_push(direction)` pour vérifier si le bloc sous le drone peut être poussé et si quelque chose lui barre la route dans la direction indiquée.
 
 `push(direction)` pousse le bloc et indique si l’opération a réussi.
 
-Seuls les blocs de champignon peuvent être poussés. Les blocs ne peuvent pas être poussés vers le haut, et la poussée échoue si un autre bloc fait obstacle. Lorsqu’un bloc est poussé dans le vide, il tombe et atterrit sur le prochain bloc situé dessous.
+Seuls les blocs de champignons peuvent être poussés. Les blocs ne peuvent pas être poussés vers le haut, et la poussée échoue si un autre bloc fait obstacle. Lorsqu’un bloc est poussé dans le vide, il tombe et atterrit sur le prochain bloc situé dessous.
 
 # Stratégie
 <spoiler=indice>

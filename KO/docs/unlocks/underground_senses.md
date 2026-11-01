@@ -67,9 +67,9 @@ if get_ground_type() == Grounds.Dirt:
 }}
 
 ## 경도와 안정성
-`get_hardness()`는 드론 아래 땅 타일의 경도를 반환합니다. 타일의 경도가 높을수록 굴착에 더 오랜 시간이 걸립니다. `get_hardness(North)`처럼 방향 인수를 전달할 수 있습니다.
+`get_hardness()`는 드론 아래 땅 타일의 경도를 반환합니다. `get_hardness(North)`처럼 방향 인수를 전달할 수 있습니다. 타일의 경도가 높을수록 굴착에 더 오랜 시간이 걸립니다.
 
-`get_stability()`는 드론 아래 땅 타일의 안정성을 반환합니다. 안정성이 1이라면 블록이 붕괴하기 전에 높이 차이 1까지 견딜 수 있다는 뜻입니다. `get_stability(North)`처럼 방향 인수를 전달할 수 있습니다.
+`get_stability()`는 드론 아래 땅 타일의 안정성을 반환합니다. `get_stability(North)`처럼 방향 인수를 전달할 수 있습니다. 안정성이 1이라면 블록이 붕괴하기 전에 높이 차이 1까지 견딜 수 있다는 뜻입니다.
 
 {{codeexample 
 {

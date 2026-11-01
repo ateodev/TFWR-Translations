@@ -2,12 +2,11 @@
 <right>[Skok ->](docs/unlocks/jump.md)
 ---
 # Węgiel
+Pod ziemią czekają różne rudy, które możesz odnaleźć i wydobyć. Gdy przekopiesz się przez powierzchnię do `Grounds.Dirt`, pierwszą znalezioną rudą będzie węgiel.
 
-Pod ziemią kryją się różne rudy, które czekają, aż je znajdziesz i wykopiesz. Jeśli przekopiesz się przez powierzchnię do `Grounds.Dirt`, pierwszą rudą, jaką znajdziesz, będzie węgiel.
+Wydobywanie węgla nie wymaga niczego specjalnego: wykonaj `dig()`, gdy dron jest bezpośrednio nad blokiem `Grounds.Coal`. Użyj `get_ground_type()`, by sprawdzić podłoże pod dronem, i `get_ground_type(direction)`, by sprawdzić cztery sąsiednie bloki.
 
-Aby wydobyć węgiel, nie musisz robić nic specjalnego: wystarczy wykonać `dig()`, gdy dron znajduje się bezpośrednio nad blokiem `Grounds.Coal`. Użyj `get_ground_type()`, aby sprawdzić, co jest pod dronem, i `get_ground_type(direction)`, aby sprawdzić cztery sąsiednie bloki.
-
-Poniższy program to dobry punkt wyjścia do poszukiwania węgla. Kopie w dół w poszukiwaniu pokładu węgla.
+Poniższy program to dobry punkt wyjścia do poszukiwania węgla. Kopie w dół w poszukiwaniu pokładu.
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -32,7 +31,7 @@ move(North)
 move(East)
 move(East)
 #CODE
-# Kop, dopóki nie pojawi się blok węgla
+# Kop, aż pojawi się blok węgla
 while get_ground_type() != Grounds.Coal:
     dig()
 
@@ -41,16 +40,16 @@ dig()
 }}
 
 ## Uwaga o zawałach
-Pamiętaj, że węgiel dostajesz tylko za bloki węgla, w które kopiesz bezpośrednio, a nie za bloki, które zawalą się wokół drona. Weź to pod uwagę, planując wydobycie węgla, aby wydobyć jak najwięcej bloków węgla, a jak najmniej stracić w zawałach.
+Węgiel dostajesz wyłącznie z bezpośrednio wykopanych bloków, a nie z tych, które zawalą się wokół drona. Uwzględnij to w strategii, aby wydobyć jak najwięcej węgla i jak najmniej stracić w zawałach.
 
-## Struktura żył
-Jego żyły tworzą poziome pokłady o grubości 1 bloku, które musisz znaleźć przypadkiem, przekopując się przez ziemię. Bloki węgla w pokładzie leżą zwykle tuż obok siebie, ale niektóre mogą łączyć się tylko po przekątnej.
+## Budowa żył
+Żyły tworzą poziome warstwy o grubości 1 bloku, na które trzeba trafić podczas kopania ziemi. Większość bloków węgla w warstwie styka się bezpośrednio, ale niektóre łączą się tylko po skosie.
 
-Kopalnie węgla rosną proporcjonalnie do rozmiaru farmy, więc rozważ dalsze odblokowywanie [Rozszerzenia](unlocks/expand), aby zwiększyć ilość węgla, którą możesz wydobyć.
+Złoża węgla rosną proporcjonalnie do farmy, więc dalej ulepszaj [Rozszerzenie](unlocks/expand), aby wydobywać więcej węgla.
 
 ## Strategia
-<spoiler=pokaż podpowiedź>
-Prosta strategia, zwłaszcza na mniejszych farmach, to wykopanie wszystkich bloków na głębokości, na której znalazłeś blok węgla. Aby działać wydajniej, możesz zapamiętywać za pomocą `get_ground_type(direction)`, gdzie widziałeś bloki węgla, i nie tracić czasu na przechodzenie nad blokami ziemi. Uważaj szczególnie, by nie przeoczyć połączeń po przekątnej, które ominiesz, jeśli będziesz poruszać się tylko nad blokami węgla.
+<spoiler=pokaż wskazówkę>
+Prosta strategia, zwłaszcza na małych farmach, to wykopanie wszystkich bloków na głębokości znalezionego węgla. Aby zwiększyć wydajność, zapamiętuj pozycje węgla za pomocą `get_ground_type(direction)` i unikaj tracenia czasu na ruch nad ziemią. Uważaj na połączenia ukośne, które przeoczysz, poruszając się tylko po blokach węgla.
 </spoiler>
 
 ---

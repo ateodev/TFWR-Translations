@@ -133,9 +133,9 @@ esempio:
 @code_tooltip_get_entity_type = `get_entity_type(direction = None)`
 Scopri che tipo di entità si trova sotto il drone.
 
-Se `direction` non è `None`, controlla invece la casella vicina nella direzione data.
+Se `direction` non è `None`, controlla invece la casella adiacente nella direzione indicata.
 
-restituisce `None` se la casella controllata è vuota, altrimenti restituisce il tipo di entità su quella casella.
+restituisce `None` se la casella controllata è vuota, altrimenti il tipo di entità presente su di essa.
 
 richiede `1` tick per essere eseguita.
 
@@ -145,7 +145,7 @@ esempio:
 @code_tooltip_get_ground_type = `get_ground_type(direction = None)`
 Scopri che tipo di terreno si trova sotto il drone.
 
-Se `direction` non è `None`, controlla invece la casella vicina nella direzione data.
+Se `direction` non è `None`, controlla invece la casella adiacente nella direzione indicata.
 
 restituisce il tipo di terreno della casella controllata.
 
@@ -671,7 +671,7 @@ Scava una casella verso il basso.
 
 La velocità di scavo dipende dalla durezza del blocco e dalla potenza della trivella del drone.
 
-richiede `hardness / drill strength` secondi per scavare un blocco (durezza diviso potenza della trivella). I tempi di scavo non sono influenzati dai potenziamenti della velocità.
+scavare un blocco richiede `hardness / drill strength` secondi. I potenziamenti della velocità non influiscono sui tempi di scavo.
 
 esempio:
 `dig()`
@@ -703,7 +703,7 @@ Posiziona blocchi.
 
 Puoi specificare il blocco da posizionare. Puoi posizionare solo i blocchi senza una funzione speciale. Per esempio, puoi usare `place(Grounds.Rock)`, ma non `place(Grounds.Clay)`.
 
-restituisce `True` se il blocco è stato posizionato, `False` altrimenti.
+restituisce `True` se il blocco è stato posizionato, altrimenti `False`.
 
 richiede `200` tick per essere eseguita se ha avuto successo, `1` tick altrimenti.
 
@@ -716,7 +716,7 @@ Non puoi spingere i blocchi verso l'alto.
 
 restituisce `True` se il blocco è stato spinto, `False` altrimenti.
 
-richiede `200` tick per essere eseguita se il blocco è stato spinto, `1` tick altrimenti.
+richiede `200` tick se il blocco è stato spinto, altrimenti `1` tick.
 
 esempio:
 `push(North)`

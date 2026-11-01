@@ -3,11 +3,11 @@
 # 跳转
 无人机已解锁 `jump()` 命令。使用时，传入一个解锁项作为参数，例如 `Unlocks.Iron`。
 
-此命令可以指定某些藏在地下的资源，让无人机瞬间向下跳转到它们那里。调试程序，或者直接跳到刚刚错过的矿脉时，这特别有用。
+此命令可以指定地下的某些资源，并瞬间向下跳到它们附近。调试程序，或者回头寻找刚刚错过的矿脉时，这特别有用。
 
-跳转后，目标资源应位于最上层地块表面以下 3 个地块以内。每次执行程序只能使用一次 `jump()`，再次尝试跳转会产生错误。
+跳跃后，目标资源应该位于最上方地块表面以下 3 格以内。每次执行程序只能使用一次 `jump()`。再次尝试会报错。
 
-下面的示例会向下跳转到[水稻](docs/unlocks/rice.md)，找到黏土层，然后种下一排水稻梯田：
+下面的示例跳到[水稻](docs/unlocks/rice.md)附近，找到黏土层，再种下一排水稻梯田：
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -29,12 +29,12 @@
     "starting_chunk": 0
 }
 #CODE
-# 跳转到水稻资源附近
+# 跳到水稻资源附近
 jump(Unlocks.Rice)
 
 # 种下一排水稻梯田
 for i in range(get_world_size()):
-    # 跳转并不精确，需要挖掉最后几个地块
+    # 跳跃不精确，挖掉剩余地块
     while get_ground_type() != Grounds.Clay:
         dig()
 
@@ -43,18 +43,18 @@ for i in range(get_world_size()):
     move(East)
 }}
 
-## 兼容的解锁项
+## 支持的解锁项
 `jump()` 只适用于以下采矿解锁项：
-- Coal
-- Iron
-- Quartz
-- Rice
-- Petrified_Pumpkins
-- Special_Soils
-- Pyramid
-- Treasure_Map
-- Mushrooms
-- Dynamite
+- 煤炭
+- 铁矿
+- 石英
+- 水稻
+- 石化南瓜
+- 特殊土壤
+- 金字塔
+- 藏宝图
+- 蘑菇
+- 炸药
 
 ---
 

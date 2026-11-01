@@ -3,12 +3,11 @@
 <right>[Mapa do Tesouro ->](docs/unlocks/treasure_map.md)
 ---
 # Ferro
+Depois de encontrar carvão em `Grounds.Dirt`, escave além da camada de `Grounds.Clay` até `Grounds.Rock` para encontrar ferro.
 
-Depois de encontrar carvão em `Grounds.Dirt`, você pode escavar mais fundo, passando pela camada de `Grounds.Clay` até `Grounds.Rock`, para encontrar ferro.
+Ao contrário do carvão, os veios de ferro também se estendem verticalmente. Todos os blocos de ferro de um veio ficam diretamente adjacentes; nunca se conectam apenas na diagonal.
 
-Ao contrário dos veios de carvão, os veios de ferro também se estendem na vertical. Mas todos os blocos de ferro de um veio estão sempre diretamente lado a lado; os blocos nunca se ligam apenas na diagonal.
-
-Mas os veios de ferro começam pequenos, e você precisará de sorte para encontrá-los. Continuar desbloqueando o ferro aumenta o tamanho máximo dos veios e os torna um pouco mais fáceis de encontrar por acaso. Mas para encontrá-los de forma confiável, você deve desbloquear a [prospecção de ferro](docs/unlocks/prospecting.md).
+Os veios de ferro começam pequenos, e você precisará de sorte para encontrá-los. Melhorar o ferro aumenta o tamanho máximo dos veios e facilita encontrá-los por acaso. Para encontrá-los com segurança, desbloqueie a [prospecção](docs/unlocks/prospecting.md).
 
 {{codeexample 
 {
@@ -35,7 +34,7 @@ Mas os veios de ferro começam pequenos, e você precisará de sorte para encont
 while get_ground_type() != Grounds.Iron:
     dig()
 
-# Minere o ferro
+# Extraia o ferro
 dig()
 }}
 

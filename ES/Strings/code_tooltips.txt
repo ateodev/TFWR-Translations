@@ -133,9 +133,9 @@ ejemplo:
 @code_tooltip_get_entity_type = `get_entity_type(direction = None)`
 Averigua qué tipo de entidad hay debajo del dron.
 
-Si `direction` no es `None`, comprueba en su lugar la casilla vecina en la dirección dada.
+Si `direction` no es `None`, comprueba la casilla vecina en la dirección indicada.
 
-devuelve `None` si la casilla comprobada está vacía, de lo contrario devuelve el tipo de la entidad que hay en esa casilla.
+devuelve `None` si la casilla comprobada está vacía; de lo contrario, devuelve el tipo de entidad que hay en ella.
 
 tarda `1` tick en ejecutarse.
 
@@ -145,9 +145,9 @@ ejemplo:
 @code_tooltip_get_ground_type = `get_ground_type(direction = None)`
 Averigua qué tipo de terreno hay debajo del dron.
 
-Si `direction` no es `None`, comprueba en su lugar la casilla vecina en la dirección dada.
+Si `direction` no es `None`, comprueba la casilla vecina en la dirección indicada.
 
-devuelve el tipo del terreno de la casilla comprobada.
+devuelve el tipo de terreno de la casilla comprobada.
 
 tarda `1` tick en ejecutarse.
 
@@ -665,7 +665,7 @@ Excava una casilla hacia abajo.
 
 La velocidad de excavación depende de la dureza del bloque y de la potencia del taladro del dron.
 
-tarda `dureza / potencia perforadora` segundos en excavar un bloque. Las mejoras de velocidad no afectan al tiempo de excavación.
+tarda `hardness / drill strength` segundos en excavar un bloque. Las mejoras de velocidad no afectan al tiempo de excavación.
 
 ejemplo:
 `dig()`
@@ -710,7 +710,7 @@ No puedes empujar bloques hacia arriba.
 
 devuelve `True` si se empujó el bloque, `False` en caso contrario.
 
-tarda `200` ticks en ejecutarse si se empujó el bloque, `1` tick en caso contrario.
+tarda `200` ticks si se empujó el bloque, `1` tick en caso contrario.
 
 ejemplo:
 `push(North)`

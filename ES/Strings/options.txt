@@ -85,7 +85,6 @@
 @Light = Claro
 @Lunar New Year = Año Nuevo Lunar
 @Custom = Personalizado
-
 @Keyboard switches = Respuesta de teclas
 @blue clicky = Clic + vibración
 @brown tactile = Vibración
@@ -114,7 +113,7 @@
 @automatic autocomplete = Autocompletado automático
 @focus errors = Mostrar errores
 @window docking = Acoplar ventanas
-@autocomplete = Autocompletar
+@autocomplete = Autocompletado
 @keyboard = Teclado
 @Keyboard volume = Volumen del teclado
 @Keyboard sound = Sonido de teclas

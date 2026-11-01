@@ -1,7 +1,7 @@
 [<- Arroz](docs/unlocks/rice.md)
 ---
 # Abóboras Petrificadas
-Aparentemente, é possível encontrar abóboras no subsolo. Elas endureceram e ficaram petrificadas, mas ainda servem para nossos propósitos. Você pode escavá-las com `dig()` para obter abóboras.
+Aparentemente, é possível encontrar abóboras no subsolo. Elas endureceram e ficaram petrificadas, mas ainda servem para nossos propósitos. Use `dig()` nelas para obter abóboras.
 
 Essa é uma alternativa para obter abóboras sem cultivá-las na superfície. Se preferir cultivá-las, você pode ignorar completamente as abóboras petrificadas.
 
@@ -69,4 +69,3 @@ Abóboras petrificadas aparecem no subsolo em blocos de 3x3x3 ou 5x5x5. Não há
 [Estatísticas](docs/stats.md)      [Mineração](docs/unlocks/mining.md)      [Sentidos Subterrâneos](docs/unlocks/underground_senses.md)
 
 [move()](functions/move)      [dig()](functions/dig)      [get_ground_type()](functions/get_ground_type)
-

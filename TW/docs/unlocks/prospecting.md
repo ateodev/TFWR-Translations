@@ -33,9 +33,9 @@
 #SETUP
 jump(Unlocks.Iron)
 #CODE
-# 確認探查有回傳方向
+# 確保探勘傳回方向
 if prospect_iron() != None:
-    move(prospect_iron()) # 往鐵礦脈靠近
+    move(prospect_iron()) # 靠近鐵礦脈
 }}
 
 這段程式碼目前會呼叫兩次 `prospect_iron()`，消耗 2 份煤炭。你可以考慮用變數來最佳化它。

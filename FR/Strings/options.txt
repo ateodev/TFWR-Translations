@@ -85,7 +85,6 @@
 @Light = Clair
 @Lunar New Year = Nouvel An lunaire
 @Custom = Personnalisé
-
 @Keyboard switches = Retour des touches
 @blue clicky = Clic + vibration
 @brown tactile = Vibration
@@ -111,10 +110,10 @@
 @30 fps = 30 IPS
 @60 fps = 60 IPS
 @120 fps = 120 IPS
-@automatic autocomplete = Autocomplétion automatique
-@focus errors = Montrer les erreurs
+@automatic autocomplete = Complétion automatique
+@focus errors = Révéler les erreurs
 @window docking = Ancrage des fenêtres
-@autocomplete = Autocomplétion
+@autocomplete = Complétion
 @keyboard = Clavier
 @Keyboard volume = Volume du clavier
 @Keyboard sound = Son des touches

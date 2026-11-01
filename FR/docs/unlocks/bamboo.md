@@ -2,9 +2,9 @@
 <right>[Pyramides ->](docs/unlocks/pyramid.md)
 ---
 # Bambou
-Le bambou est une plante qui pousse vers le haut. Ton drone devra cueillir régulièrement ses fruits bruns pour qu’il puisse continuer à pousser. C’est possible grâce à la nouvelle commande `hover`.
+Le bambou est une plante qui pousse vers le haut. Ton drone devra cueillir régulièrement ses fruits bruns pour qu’il continue à pousser. La commande `hover` que tu viens de débloquer permet de le faire.
 
-Le bambou doit être planté sur un sol labouré (`Grounds.Soil`) et planter du bambou coûte du riz.
+Le bambou se plante sur un sol labouré (`Grounds.Soil`) et coûte du riz.
 
 Le code suivant plante du bambou et attend qu’il pousse jusqu’à son premier fruit.
 {{codeexample
@@ -31,17 +31,17 @@ move(East)
 #CODE
 till()
 plant(Entities.Bamboo)
-move(East) # s’éloigner pour que le bambou puisse pousser
+move(East) # s’éloigner pour laisser pousser le bambou
 }}
 
 ## Fruits
 Le bambou pousse d’exactement 1 bloc par seconde.
 
-Tous les quelques blocs, le bambou produit des fruits. Il arrête alors de pousser et tu dois voler dedans avec ton drone pour détruire le fruit.
+Le bambou produit des fruits tous les quelques blocs. Il cesse alors de pousser, et tu dois y faire entrer ton drone pour détruire le fruit. Le bambou peut pousser jusqu’à son troisième fruit. Ensuite, il ne grandira plus, même si tu cueilles ce fruit.
 
-Pour cueillir un fruit, utilise d’abord `hover` pour atteindre la bonne hauteur. Ensuite, utilise `move` pour entrer dans le fruit et le cueillir, puis `move` à nouveau pour t’éloigner afin que le bambou puisse continuer à pousser.
+Pour cueillir des fruits, utilise d’abord `hover` pour atteindre la bonne hauteur. Entre ensuite dans le fruit avec `move` pour le cueillir, puis éloigne-toi avec `move` pour laisser le bambou continuer à pousser.
 
-Tu peux utiliser `measure()` sur le bambou pour savoir à quelle hauteur apparaîtra le prochain fruit. `measure()` commence à compter à `0`, donc `hover(measure())` amène ton drone à la hauteur où se trouvera le fruit.
+Tu peux utiliser `measure()` sur le bambou pour savoir à quelle hauteur apparaîtra le prochain fruit. `measure()` compte à partir de `0`, donc `hover(measure())` place le drone à la hauteur du fruit.
 
 {{codeexample
 {
@@ -67,9 +67,9 @@ move(East)
 #CODE
 till()
 plant(Entities.Bamboo)
-hover(measure()) # voler à la hauteur du futur fruit
+hover(measure()) # se placer à la hauteur du fruit
 
-move(East) # s’éloigner et attendre qu’il pousse
+move(East) # s’éloigner et attendre la croissance
 for i in range(3):
     do_a_flip()
 
@@ -78,22 +78,22 @@ move(East) # s’éloigner à nouveau
 }}
 
 ## Vol stationnaire
-La commande `hover` prend un argument, la hauteur de vol, qui est un nombre de `0` à `18`. La hauteur de vol par défaut du drone est `1`. `hover` ne peut pas descendre dans des entités solides : si ton drone se trouve déjà au-dessus d’un bambou, tu ne peux pas y entrer en exécutant `hover(0)`.
+La commande `hover` prend un argument : la hauteur de vol, un nombre de `0` à `18`. La hauteur de vol par défaut du drone est `1`. `hover` ne peut pas faire descendre le drone dans une entité solide : s’il est déjà au-dessus du bambou, tu ne peux pas l’y faire entrer avec `hover(0)`.
 
-`hover` renvoie `True` si le drone a bien atteint la hauteur indiquée, sinon `False`.
+`hover` renvoie `True` si le drone a atteint la hauteur indiquée, sinon `False`.
 
-Il existe aussi la commande `get_hover`, qui renvoie la hauteur de vol actuelle du drone.
+La commande `get_hover` renvoie quant à elle la hauteur de vol actuelle du drone.
 
-Si tu utilises `dig`, `harvest` ou `plant` en vol, le drone revient à sa hauteur de vol par défaut (`1`).
+Si tu utilises `dig`, `harvest` ou `plant` en vol stationnaire, le drone revient à sa hauteur de vol par défaut (`1`).
 
-Enfin, `get_pos_z()` n’est pas affecté par le vol. Il renvoie toujours la position z du bloc sous le drone.
+Enfin, la hauteur de vol n’affecte pas `get_pos_z()`. Cette commande renvoie toujours la position z du bloc sous le drone.
 
 ## Récolter le bambou
-Tu pourrais utiliser `harvest()`, mais la méthode recommandée pour récolter un champ de bambou est d’entrer dans un bambou avec ton drone à la hauteur de vol `0` (`hover(0)`). Cela récolte toute la plante d’un coup.
+Tu peux utiliser `harvest()`, mais la méthode recommandée consiste à entrer dans le bambou avec ton drone à la hauteur de vol `0` (`hover(0)`). Cela récolte toute la plante en une fois.
 
-Si tu veux récolter le bambou sans le détruire, tu peux y entrer avec `move` à n’importe quelle hauteur, par exemple `hover(3)`. Cela récolte tous les morceaux de bambou à partir de cette hauteur, mais garde le bambou en vie. Un bambou partiellement récolté de cette façon produira de nouveaux fruits, que tu devras donc cueillir à nouveau.
+Pour récolter le bambou sans le détruire, tu peux y entrer avec `move` à n’importe quelle hauteur, par exemple avec `hover(3)`. Tous les morceaux à partir de cette hauteur seront récoltés, mais le bambou restera vivant. Un bambou partiellement récolté produit de nouveau des fruits, que tu devras donc cueillir à nouveau.
 
-Dans les deux cas, ton rendement est égal au carré du nombre de morceaux de bambou détruits : plus le bambou est haut, meilleur est ton rendement.
+Dans les deux cas, ton rendement est égal au carré du nombre de morceaux de bambou détruits : plus le bambou est haut, meilleur est le rendement.
 
 ---
 

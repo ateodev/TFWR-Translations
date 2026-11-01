@@ -3,7 +3,7 @@
 # Pilze
 Viele Pilzarten wachsen unterirdisch in Kolonien. Suche beim Graben nach einer Schicht aus `Grounds.Mushroom`. Mit `measure()` kannst du dann den Pilztyp als Zahl von `0` bis `5` ermitteln.
 
-Der folgende Code findet einige Pilze und gibt ihren Typ aus:
+Der folgende Code findet Pilze und gibt ihren Typ aus:
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 6},
@@ -26,9 +26,9 @@ Der folgende Code findet einige Pilze und gibt ihren Typ aus:
 #SETUP
 jump(Unlocks.Mushrooms)
 #CODE
-# Eine Reihe Pilze abarbeiten
+# Eine Reihe Pilze bearbeiten
 for i in range(get_world_size()):
-    # Bis zum obersten Pilzblock hinuntergraben
+    # Bis zum obersten Pilzblock graben
     while get_ground_type() != Grounds.Mushroom:
         dig()
 
@@ -38,10 +38,10 @@ for i in range(get_world_size()):
     move(East)
 }}
 
-## So sammelst du Pilze
+## Pilze sammeln
 Pilze desselben Typs sind gern zusammen, aber etwas zu schüchtern, um übereinander zu wachsen. Schiebe den Pilzblock unter der Drohne mit `push(direction)`.
 
-Staple zwei Pilzblöcke desselben Typs übereinander, dann werden die Blöcke automatisch geerntet und du erhältst ihre Pilze.
+Stapelst du zwei Pilzblöcke desselben Typs übereinander, werden die Blöcke automatisch abgeerntet und du erhältst ihre Pilze.
 
 Der folgende Code schafft Platz und schiebt dann einen Pilz, bis er zum Pilz darunter passt:
 {{codeexample 
@@ -75,9 +75,9 @@ for i in range(2):
     move(East)
     while get_pos_z() > depth - 1:
         dig()
-    # Zurückgehen, schieben und dem geschobenen Block folgen
+    # Zurückfliegen, schieben und dem geschobenen Block folgen
     move(West)
-    push(East) # Schieb den Pilz!
+    push(East) # Den Pilz schieben!
     move(East)
 }}
 
@@ -86,7 +86,7 @@ Mit `can_push(direction)` kannst du prüfen, ob sich der Block unter der Drohne 
 
 `push(direction)` schiebt den Block und gibt zurück, ob das Schieben erfolgreich war.
 
-Nur Pilzblöcke können geschoben werden. Blöcke können nicht nach oben geschoben werden, und befindet sich ein anderer Block im Weg, schlägt das Schieben fehl. Werden Blöcke in die Luft geschoben, fallen sie herunter und landen auf dem nächsten Block unter ihnen.
+Nur Pilzblöcke lassen sich schieben. Blöcke können nicht nach oben geschoben werden. Befindet sich ein anderer Block im Weg, schlägt das Schieben fehl. Werden Blöcke in die Luft geschoben, fallen sie herunter und landen auf dem nächsten Block unter ihnen.
 
 # Strategie
 <spoiler=Hinweis>

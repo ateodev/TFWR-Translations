@@ -1,13 +1,13 @@
 [<- Kohle](docs/unlocks/coal.md)
 ---
 # Springen
-Deine Drohne hat den Befehl `jump()` freigeschaltet. Du verwendest ihn, indem du ihm eine Freischaltung als Argument übergibst, beispielsweise `Unlocks.Iron`.
+Deine Drohne hat den Befehl `jump()` freigeschaltet. Übergib dazu eine Freischaltung als Argument, beispielsweise `Unlocks.Iron`.
 
-Mit diesem Befehl kannst du bestimmte Ressourcen anvisieren, die im Boden verborgen sind, und sofort zu ihnen hinunterspringen. Das ist besonders beim Debuggen praktisch oder wenn du zu einer Erzader springen möchtest, die du kurz zuvor verpasst hast.
+Mit diesem Befehl kannst du bestimmte im Boden verborgene Ressourcen anvisieren und sofort zu ihnen hinunterspringen. Das ist besonders zum Debuggen oder zum Überspringen bis zu einer kürzlich verpassten Erzader nützlich.
 
-Nach dem Sprung sollte sich die anvisierte Ressource höchstens 3 Blöcke unter der obersten Blockoberfläche befinden. `jump()` kann pro Programmausführung nur einmal verwendet werden, weitere Sprungversuche führen zu einem Fehler.
+Nach dem Sprung sollte die Zielressource höchstens 3 Blöcke unter der obersten Blockoberfläche liegen. `jump()` kann pro Programmausführung nur einmal verwendet werden. Weitere Sprungversuche führen zu einem Fehler.
 
-Das folgende Beispiel springt hinunter zum [Reis](docs/unlocks/rice.md), findet die Tonschicht und pflanzt eine Reihe Reisterrassen:
+Das folgende Beispiel springt zu [Reis](docs/unlocks/rice.md) hinunter, findet die Tonschicht und pflanzt eine Reihe Reisterrassen:
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -29,12 +29,12 @@ Das folgende Beispiel springt hinunter zum [Reis](docs/unlocks/rice.md), findet 
     "starting_chunk": 0
 }
 #CODE
-# Nahe an die Reis-Ressource springen
+# In die Nähe von Reis springen
 jump(Unlocks.Rice)
 
 # Eine Reihe Reisterrassen pflanzen
 for i in range(get_world_size()):
-    # Der Sprung ist nicht exakt, die letzten Blöcke weggraben
+    # Der Sprung ist ungenau, also die letzten Blöcke weggraben
     while get_ground_type() != Grounds.Clay:
         dig()
 
@@ -43,18 +43,18 @@ for i in range(get_world_size()):
     move(East)
 }}
 
-## Kompatible Freischaltungen
+## Unterstützte Freischaltungen
 `jump()` funktioniert nur mit den folgenden Bergbau-Freischaltungen:
-- Coal
-- Iron
-- Quartz
-- Rice
-- Petrified_Pumpkins
-- Special_Soils
-- Pyramid
-- Treasure_Map
-- Mushrooms
-- Dynamite
+- Kohle
+- Eisen
+- Quarz
+- Reis
+- Versteinerte Kürbisse
+- Spezialböden
+- Pyramide
+- Schatzkarte
+- Pilze
+- Dynamit
 
 ---
 

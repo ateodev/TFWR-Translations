@@ -1,9 +1,9 @@
 [<- Bambou](docs/unlocks/bamboo.md)
 ---
 # Blocs colorés
-Comme tu le sais peut-être déjà, tu peux utiliser `place()` pour que ton drone place un bloc. Ce déblocage ajoute trois blocs colorés qui se distinguent visuellement de leur environnement : `Grounds.Block_Red`, `Grounds.Block_Green` et `Grounds.Block_Blue`.
+Comme tu le sais peut-être déjà, `place()` permet au drone de placer un bloc. Ce déblocage ajoute trois blocs qui se distinguent visuellement de leur environnement : `Grounds.Block_Red`, `Grounds.Block_Green` et `Grounds.Block_Blue`.
 
-Les blocs colorés peuvent servir à marquer des choses ou à créer de jolis motifs.
+Les blocs colorés servent à marquer des emplacements ou à créer de jolis motifs.
 
 Pour placer les nouveaux blocs :
 {{codeexample 

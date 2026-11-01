@@ -37,7 +37,7 @@
 #SETUP
 jump(Unlocks.Treasure_Map)
 #CODE
-# 找到玄武岩层
+# 寻找玄武岩层
 while get_ground_type() != Grounds.Basalt:
     dig()
 
@@ -52,16 +52,16 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 
-# 找到地图了，测量它以获取路径
+# 找到地图，测量以获得路径
 do_a_flip()
 instructions = measure()
-print("指示：", instructions)
+print("指令： ", instructions)
 
 # 挖入地图，开始寻宝
 dig()
 }}
 
-可以对字符串使用 `for` 循环，逐个字母地处理它：
+可以对字符串使用 `for` 循环，逐个字母处理：
 {{codeexample 
 {
     "camera_position": {"x": -1.5, "y": 0, "z": 6},
@@ -96,16 +96,16 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 #CODE
-# 地图指示会以一个字符串的形式返回
+# 地图指令以一个字符串返回
 instructions = measure()
-# 用 for-in 把字符串拆分成字母
+# 用 for-in 将字符串逐字处理
 for letter in instructions:
     print(letter)
 }}
 
 无人机必须一直待在 `Grounds.Treasure_Path` 地块上方。如果移动到其他地块，路径就会断开，宝藏也会丢失。
 
-## 目标
+## 终点
 路径尽头是一个 `Grounds.Treasure_Goal` 地块。如果无人机没有偏离路径，其上方就会出现 `Entities.Underground_Treasure`。无人机可以使用 `harvest()` 收获宝箱，获得黄金。
 
 ## 奖励

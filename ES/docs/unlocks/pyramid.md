@@ -5,7 +5,7 @@
 
 Las pirámides están hechas de bloques de arena (`Grounds.Sand`). Debajo de la propia pirámide hay una capa de piedra caliza (`Grounds.Limestone`) que sirve como cimiento. Como son antiguas y están erosionadas, solo las encontrarás parcialmente destruidas. La capa de cimientos siempre está presente, pero habrá agujeros en la arena.
 
-Este es el aspecto de una pirámide en ruinas al desenterrarla:
+Así se ve una pirámide en ruinas cuando la desentierras:
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 8},
@@ -29,11 +29,11 @@ Este es el aspecto de una pirámide en ruinas al desenterrarla:
 jump(Unlocks.Pyramid)
 move(North)
 #CODE
-# Excava hacia abajo hasta encontrar el cimiento de una pirámide
+# Excava hasta encontrar la base de una pirámide
 while get_ground_type() != Grounds.Limestone:
     dig()
 
-z = get_pos_z() # Recuerda la profundidad del cimiento
+z = get_pos_z() # Recuerda la profundidad de la base
 
 # Excava todo lo que no forme parte de la pirámide
 for i in range(6):
@@ -47,7 +47,7 @@ for i in range(6):
 }}
 
 ## Restaurar la pirámide
-Como puedes ver, hay varios agujeros en la arena que tendrás que rellenar. Cuando rellenes estos agujeros y restaures la pirámide a su estado original, esta se destruirá y aparecerá un gran girasol en el centro de la base de piedra caliza. Coséchalo para recibir `Items.Power`. Cuanto mayor sea la pirámide que completes, más energía recibirás.
+Como puedes ver, hay varios agujeros en la arena que tendrás que rellenar. Cuando rellenes estos agujeros y restaures la pirámide a su estado original, esta se destruirá y aparecerá un gran girasol en el centro de la base de caliza. Coséchalo para obtener `Items.Power`. Cuanto mayor sea la pirámide que completes, más energía recibirás.
 
 Puedes restaurar una pirámide colocando bloques con el comando `place(Grounds.Sand)`. La arena es un bloque especial que se derrumba inmediatamente si no está bien apoyado. Cada bloque de arena que coloques debe estar directamente sobre piedra caliza o sobre una cuadrícula de 3x3 bloques de arena. Aquí tienes una pequeña pirámide construida a mano como ejemplo. Por supuesto, construirla tú mismo no te dará energía:
 
@@ -71,22 +71,22 @@ Puedes restaurar una pirámide colocando bloques con el comando `place(Grounds.S
     "exclude_unlocks": ["watering", "fertilizer", "mushrooms", "coal", "quartz"]
 }
 #CODE
-# Necesitamos un cimiento de piedra caliza sobre el que poner la arena
+# Necesitamos una base de caliza para colocar arena
 for i in range(3):
     for j in range(3):
         place(Grounds.Limestone)
         move(North)
     move(East)
 
-# Pon una capa de arena de 3x3 sobre la piedra caliza
+# Coloca una capa de arena de 3x3 sobre la caliza
 for i in range(3):
     for j in range(3):
         place(Grounds.Sand)
         move(North)
     move(East)
 
-# Intenta poner otra capa de 3x3
-# Observa que solo el bloque central tiene apoyo y se mantiene
+# Intenta colocar otra capa de 3x3
+# Solo el bloque central tiene apoyo y permanece
 for i in range(3):
     for j in range(3):
         place(Grounds.Sand)

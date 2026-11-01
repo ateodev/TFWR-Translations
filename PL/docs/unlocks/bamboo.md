@@ -2,9 +2,9 @@
 <right>[Piramidy ->](docs/unlocks/pyramid.md)
 ---
 # Bambus
-Bambus to roślina, która rośnie w górę. Twój dron będzie musiał regularnie zrywać jego brązowe owoce, aby bambus mógł dalej rosnąć. Pomoże nam w tym nowo odblokowane polecenie `hover`.
+Bambus to roślina rosnąca w górę. Dron musi regularnie zrywać jego brązowe owoce, aby mógł dalej rosnąć. Umożliwia to nowo odblokowane polecenie `hover`.
 
-Bambus trzeba sadzić na zaoranej glebie (`Grounds.Soil`), a jego sadzenie kosztuje ryż.
+Bambus trzeba sadzić na zaoranej glebie (`Grounds.Soil`), a posadzenie kosztuje ryż.
 
 Poniższy kod sadzi bambus i czeka, aż urośnie do pierwszego owocu.
 {{codeexample
@@ -37,11 +37,11 @@ move(East) # odleć, aby bambus mógł rosnąć
 ## Owoce
 Bambus rośnie dokładnie o 1 blok na sekundę.
 
-Co kilka bloków bambus wytwarza owoce. Gdy tak się stanie, bambus przestaje rosnąć i musisz wlecieć w niego dronem, aby zniszczyć owoc.
+Bambus wydaje owoce co kilka bloków. Wtedy przestaje rosnąć i trzeba wlecieć w niego dronem, aby zniszczyć owoc. Bambus może rosnąć w górę do trzeciego owocu. Potem nie urośnie już wyżej, nawet jeśli zerwiesz ten owoc.
 
-Aby zerwać owoce, musisz najpierw za pomocą `hover` wznieść się na odpowiednią wysokość. Następnie wykonaj `move` w stronę owocu, aby go zerwać, i znów `move`, aby odlecieć, dzięki czemu bambus będzie mógł dalej rosnąć.
+Aby zerwać owoc, najpierw użyj `hover`, by osiągnąć odpowiednią wysokość. Następnie wleć w owoc przez `move`, aby go zerwać, i ponownie użyj `move`, aby odlecieć i umożliwić dalszy wzrost.
 
-Za pomocą `measure()` możesz sprawdzić, na jakiej wysokości pojawi się następny owoc. `measure()` liczy od `0`, więc `hover(measure())` przeniesie drona na wysokość, na której będzie owoc.
+Użyj `measure()` na bambusie, aby sprawdzić wysokość następnego owocu. `measure()` liczy od `0`, więc `hover(measure())` ustawi drona na wysokości owocu.
 
 {{codeexample
 {
@@ -67,33 +67,33 @@ move(East)
 #CODE
 till()
 plant(Entities.Bamboo)
-hover(measure()) # unieś się tak, aby dron był obok owocu
+hover(measure()) # ustaw wysokość obok owocu
 
-move(East) # odleć i poczekaj, aż urośnie
+move(East) # odleć i poczekaj na wzrost
 for i in range(3):
     do_a_flip()
 
 move(West) # zerwij owoc
-move(East) # znów odleć
+move(East) # ponownie odleć
 }}
 
-## Unoszenie się
-Polecenie `hover` przyjmuje jeden argument: wysokość, na której dron ma się unosić. Jest to liczba od `0` do `18`. Domyślna wysokość unoszenia się drona to `1`. `hover` nie może przenieść drona w dół, w stałe obiekty, więc jeśli dron jest już nad bambusem, nie wleci w niego po wykonaniu `hover(0)`.
+## Zawis
+Polecenie `hover` przyjmuje jeden argument: wysokość zawisu, czyli liczbę od `0` do `18`. Domyślna wysokość zawisu drona to `1`. `hover` nie może obniżyć drona do wnętrza stałego obiektu. Jeśli dron jest już nad bambusem, nie wlecisz w niego przez `hover(0)`.
 
-`hover` zwraca `True`, jeśli dron uniósł się na podaną wysokość, a w przeciwnym razie `False`.
+`hover` zwraca `True`, jeśli dron osiągnął wskazaną wysokość, w przeciwnym razie `False`.
 
-Dostępne jest też polecenie `get_hover`, które zwraca bieżącą wysokość unoszenia się drona.
+Jest też polecenie `get_hover`, które zwraca aktualną wysokość zawisu drona.
 
-Jeśli podczas unoszenia się użyjesz `dig`, `harvest` lub `plant`, dron wróci na domyślną wysokość unoszenia się (`1`).
+Użycie `dig`, `harvest` lub `plant` podczas zawisu przywróci dronowi domyślną wysokość (`1`).
 
-Na koniec: unoszenie się nie wpływa na `get_pos_z()`. Ta funkcja zawsze zwraca pozycję z bloku pod dronem.
+Wysokość zawisu nie wpływa natomiast na `get_pos_z()`. Ta funkcja zawsze zwraca pozycję z bloku pod dronem.
 
 ## Zbieranie bambusa
-Możesz użyć `harvest()`, ale zalecanym sposobem zbierania pól bambusa jest wlecenie w bambus dronem na wysokości unoszenia się `0` (`hover(0)`). Zbiera to całą roślinę naraz.
+Możesz użyć `harvest()`, ale zalecanym sposobem zbioru bambusa jest wlecenie w niego dronem na wysokości `0` (`hover(0)`). Zbiera to całą roślinę naraz.
 
-Jeśli chcesz zebrać bambus, nie niszcząc go, możesz wlecieć w niego za pomocą `move` na dowolnej wysokości, na przykład po `hover(3)`. Zbierzesz wtedy wszystkie kawałki bambusa od tej wysokości w górę, ale bambus pozostanie żywy. Bambusowi zebranemu częściowo w ten sposób odrosną owoce, więc trzeba będzie je ponownie zerwać.
+Aby zebrać bambus bez niszczenia rośliny, wleć w niego poleceniem `move` na dowolnej wysokości, na przykład po `hover(3)`. Zbierzesz wszystkie części od tej wysokości w górę, ale roślina pozostanie żywa. Tak częściowo zebrany bambus ponownie wyda owoce, które trzeba będzie znów zerwać.
 
-W obu przypadkach plon jest równy kwadratowi liczby zniszczonych kawałków bambusa, więc im wyższy bambus, tym większy plon.
+W obu przypadkach plon jest równy kwadratowi liczby zniszczonych części bambusa, więc im wyższa roślina, tym lepszy plon.
 
 ---
 

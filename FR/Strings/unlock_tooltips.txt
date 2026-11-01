@@ -88,7 +88,7 @@ set_execution_speed(1)`
 
 `plant(Entities.Sunflowers)`
 @unlock_descr_leaderboard = Rejoins le classement pour les temps les plus rapides.\n\n`leaderboard_run(Leaderboards.Hay, "hay_file", speedup)`
-@unlock_descr_underground_leaderboard = Rejoins le classement souterrain pour les temps les plus rapides.
+@unlock_descr_underground_leaderboard = Participe au classement souterrain des meilleurs temps.
 
 `leaderboard_run(Leaderboards.Rice, "rice_file", speedup)`
 @unlock_descr_dicts = Accède aux dictionnaires et aux sets.
@@ -226,7 +226,6 @@ other_file.function()`
 @treasure_map = Carte au trésor
 @mushrooms = Champignon
 @jump = Saut
-
 @unlock_button_unlock = Débloquer
 @unlock_button_upgrade = Améliorer
 @unlock_button_get_full_game = Obtenir le jeu complet

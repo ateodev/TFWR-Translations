@@ -1,7 +1,7 @@
 [<- Reis](docs/unlocks/rice.md)
 ---
 # Versteinerte Kürbisse
-Anscheinend kann man unter der Erde Kürbisse finden. Sie sind hart und versteinert, aber für unsere Zwecke immer noch gut genug. Mit `dig()` kannst du sie abbauen und erhältst so Kürbisse.
+Anscheinend kann man unter der Erde Kürbisse finden. Sie sind hart und versteinert, aber für unsere Zwecke immer noch gut genug. Du kannst sie mit `dig()` abbauen, um Kürbisse zu erhalten.
 
 So kannst du Kürbisse erhalten, ohne sie an der Oberfläche anzubauen. Wenn du lieber Landwirtschaft betreibst, kannst du versteinerte Kürbisse getrost ignorieren.
 

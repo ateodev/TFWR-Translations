@@ -473,7 +473,6 @@ while True:
     if spawn_drone(harvest_column, i):
         move(East)
         i = (i + 1) % 10`
-
 @code_tooltip_wait_for = `wait_for(drone)`
 Waits until the given `drone` terminates.
 
@@ -490,7 +489,6 @@ def zero_arg_wrapper():
     return get_entity_type_in_direction(North)
 handle = spawn_drone(zero_arg_wrapper)
 print(wait_for(handle))`
-
 @code_tooltip_has_finished = `has_finished(drone)`
 Checks if the given `drone` has finished.
 
@@ -503,7 +501,6 @@ example:
 while not has_finished(drone):
     do_something_else()
 result = wait_for(drone)`
-
 @code_tooltip_max_drones = `max_drones()`
 
 returns the maximum number of drones that you can have in the farm.
@@ -514,7 +511,6 @@ example:
 `while num_drones() < max_drones():
     spawn_drone(task)
     move(East)`
-
 @code_tooltip_num_drones = `num_drones()`
 
 returns the number of drones currently in the farm.
@@ -525,7 +521,6 @@ example:
 `while num_drones() < max_drones():
     spawn_drone(task)
     move(East)`
-
 @code_tooltip_quick_print = `quick_print(*args)`
 Prints a value just like `print(*args)` but it doesn't stop to write it into the air so it can only be found on the output page.
 
@@ -544,7 +539,6 @@ takes `200` ticks to execute.
 
 example:
 `change_hat(Hats.Dinosaur_Hat)`
-
 @code_tooltip_max = `max(*args)`
 Gets the maximum of a sequence of elements or several passed arguments.
 Can be used on numbers and strings.

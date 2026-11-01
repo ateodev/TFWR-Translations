@@ -1,10 +1,9 @@
 [<- Quartzo](docs/unlocks/quartz.md) <right>[Dinamite ->](docs/unlocks/dynamite.md)
 ---
 # Cogumelo
+Muitos tipos de cogumelo crescem em colônias no subsolo. Procure um estrato de `Grounds.Mushroom` ao escavar. Use `measure()` no solo para obter o tipo de cogumelo como um número de `0` a `5`.
 
-Muitos tipos de cogumelo crescem em colônias no subsolo. Procure um estrato de `Grounds.Mushroom` ao escavar. Depois, use `measure()` no solo para obter o tipo de cogumelo como um número de `0` a `5`.
-
-O código a seguir encontra alguns cogumelos e imprime o tipo deles:
+O código abaixo encontra cogumelos e imprime o tipo:
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 6},
@@ -29,7 +28,7 @@ jump(Unlocks.Mushrooms)
 #CODE
 # Processe uma fileira de cogumelos
 for i in range(get_world_size()):
-    # Escave até o bloco de cogumelo do topo
+    # Escave até o bloco de cogumelo superior
     while get_ground_type() != Grounds.Mushroom:
         dig()
 
@@ -39,12 +38,12 @@ for i in range(get_world_size()):
     move(East)
 }}
 
-## Como Coletar Cogumelos
-Cogumelos do mesmo tipo gostam de ficar juntos, mas são tímidos demais para crescer uns sobre os outros. Empurre o bloco de cogumelo abaixo do drone com `push(direction)`.
+## Coletando Cogumelos
+Cogumelos do mesmo tipo gostam de ficar juntos, mas são tímidos demais para crescer uns sobre os outros. Empurre o bloco de cogumelo sob o drone com `push(direction)`.
 
-Empilhe dois blocos de cogumelo do mesmo tipo um sobre o outro, e os blocos serão colhidos automaticamente, rendendo seus cogumelos.
+Empilhe dois blocos de cogumelos do mesmo tipo e eles serão colhidos automaticamente.
 
-O código abaixo abre espaço e depois empurra um cogumelo até que ele combine com o cogumelo de baixo:
+O código abaixo abre espaço e empurra um cogumelo até combinar com o cogumelo abaixo:
 {{codeexample 
 {
     "camera_position": {"x": -1, "y": 0, "z": 6},
@@ -72,7 +71,7 @@ while get_ground_type() != Grounds.Mushroom:
 
 depth = get_pos_z()
 for i in range(2):
-    # Abra espaço para empurrar o bloco de cogumelo para o leste
+    # Abra espaço para empurrar o cogumelo para leste
     move(East)
     while get_pos_z() > depth - 1:
         dig()
@@ -87,7 +86,7 @@ Use `can_push(direction)` para verificar se o bloco sob o drone pode ser empurra
 
 `push(direction)` empurra o bloco e informa se a ação foi bem-sucedida.
 
-Só é possível empurrar blocos de cogumelo. Blocos não podem ser empurrados para cima, e o empurrão falha se houver outro bloco no caminho. Quando empurrados para o ar, eles caem e pousam no próximo bloco abaixo.
+Só blocos de cogumelo podem ser empurrados. Blocos não podem ser empurrados para cima, e o empurrão falha se houver outro bloco no caminho. Quando empurrados para o ar, eles caem e pousam no próximo bloco abaixo.
 
 # Estratégia
 <spoiler=dica>
@@ -99,4 +98,3 @@ Lembre-se de que você pode chamar `place(Grounds.Dirt)` para colocar blocos sob
 [Estatísticas](docs/stats.md)      [Sentidos Subterrâneos](docs/unlocks/underground_senses.md)      [Dicionários](docs/scripting/dicts.md)
 
 [move()](functions/move)      [measure()](functions/measure)      [can_push()](functions/can_push)      [push()](functions/push)      [place()](functions/place)      [get_ground_type()](functions/get_ground_type)
-

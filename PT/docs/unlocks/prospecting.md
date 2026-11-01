@@ -1,7 +1,6 @@
 [<- Ferro](docs/unlocks/iron.md)
 ---
 # Prospecção de Ferro
-
 Talvez você tenha percebido que às vezes é difícil encontrar veios de ferro. Você poderia escavar ao acaso, mas existe uma forma melhor: como o ferro é magnético, podemos detectá-lo à distância.
 
 O comando `prospect_iron()` faz exatamente isso. `prospect_iron()` retorna a direção (`North`, `East`, `South` ou `West`) em que o drone deve se mover para dar um passo em direção ao minério de ferro mais próximo.
@@ -34,7 +33,7 @@ Você pode usar o código a seguir para se aproximar um passo do próximo minér
 #SETUP
 jump(Unlocks.Iron)
 #CODE
-# Garanta que a prospecção retorne uma direção
+# Verifique se a prospecção retorna uma direção
 if prospect_iron() != None:
     move(prospect_iron()) # Aproxime-se do veio de ferro
 }}

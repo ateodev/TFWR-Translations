@@ -133,9 +133,9 @@ przykład:
 @code_tooltip_get_entity_type = `get_entity_type(direction = None)`
 Sprawdza, jaki rodzaj obiektu znajduje się pod dronem.
 
-Jeśli `direction` nie jest `None`, sprawdza zamiast tego sąsiednie pole w podanym kierunku.
+Jeśli `direction` nie jest `None`, sprawdza zamiast tego sąsiednie pole we wskazanym kierunku.
 
-zwraca `None`, jeśli sprawdzane pole jest puste, w przeciwnym razie zwraca typ obiektu na tym polu.
+zwraca `None`, jeśli sprawdzane pole jest puste, a w przeciwnym razie typ obiektu na tym polu.
 
 zajmuje `1` tick.
 
@@ -145,9 +145,9 @@ przykład:
 @code_tooltip_get_ground_type = `get_ground_type(direction = None)`
 Sprawdza, jaki rodzaj podłoża znajduje się pod dronem.
 
-Jeśli `direction` nie jest `None`, sprawdza zamiast tego sąsiednie pole w podanym kierunku.
+Jeśli `direction` nie jest `None`, sprawdza zamiast tego sąsiednie pole we wskazanym kierunku.
 
-zwraca typ podłoża na sprawdzanym polu.
+zwraca rodzaj podłoża na sprawdzanym polu.
 
 zajmuje `1` tick.
 
@@ -665,7 +665,7 @@ Kopie pole w dół.
 
 Prędkość kopania zależy od twardości bloku i siły wiertła drona.
 
-wykopanie bloku zajmuje `twardość / siła wiertła` sekund. Ulepszenia prędkości nie wpływają na czas kopania.
+wykopanie bloku zajmuje `hardness / drill strength` sekund. Ulepszenia szybkości nie wpływają na czas kopania.
 
 przykład:
 `dig()`
@@ -697,7 +697,7 @@ Umieszcza bloki.
 
 Możesz określić blok, który ma zostać umieszczony. Można umieszczać tylko bloki bez specjalnej funkcji. Możesz na przykład użyć `place(Grounds.Rock)`, ale nie `place(Grounds.Clay)`.
 
-zwraca `True`, jeśli blok został umieszczony, w przeciwnym razie `False`.
+zwraca `True`, jeśli blok został postawiony, w przeciwnym razie `False`.
 
 zajmuje `200` ticków, jeśli operacja się powiodła, w przeciwnym razie `1` tick.
 
@@ -710,7 +710,7 @@ Nie można popychać bloków w górę.
 
 zwraca `True`, jeśli blok został popchnięty, w przeciwnym razie `False`.
 
-zajmuje `200` ticków, jeśli blok został popchnięty, w przeciwnym razie `1` tick.
+zajmuje `200` ticków, jeśli blok został przesunięty, w przeciwnym razie `1` tick.
 
 przykład:
 `push(North)`

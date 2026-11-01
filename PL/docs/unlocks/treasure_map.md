@@ -1,7 +1,6 @@
 [<- Żelazo](docs/unlocks/iron.md)
 ---
 # Mapa skarbu
-
 Legendy mówią o nieuchwytnym skarbie ukrytym przez dawno zmarłego, zapominalskiego pirata — albo jakoś tak. A co, jeśli zapisał drogę do skarbu na mapie, a potem ją zgubił? Może upuścił mapę, gdy odcięła mu drogę rzeka lawy, i zachowała się ona pod warstwą bazaltu.
 
 Pomiar bloków bazaltu może coś ujawnić!
@@ -42,7 +41,7 @@ jump(Unlocks.Treasure_Map)
 while get_ground_type() != Grounds.Basalt:
     dig()
 
-# Pomiar bazaltu zwraca pozycję mapy skarbu
+# Pomiar bazaltu zwraca pozycję mapy skarbów
 map_pos = measure()
 
 while get_pos_x() < map_pos[0]:
@@ -53,16 +52,16 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 
-# Znaleziono mapę, zmierz ją, aby uzyskać drogę
+# Znaleziono mapę, zmierz ją, aby poznać ścieżkę
 do_a_flip()
 instructions = measure()
 print("instrukcje: ", instructions)
 
-# Dokop się do mapy, aby rozpocząć poszukiwanie skarbu
+# Wykop mapę, aby rozpocząć poszukiwanie skarbu
 dig()
 }}
 
-Możesz użyć pętli `for` na ciągu znaków, aby przetwarzać go litera po literze:
+Możesz użyć pętli `for` na łańcuchu, aby przetworzyć go litera po literze:
 {{codeexample 
 {
     "camera_position": {"x": -1.5, "y": 0, "z": 6},
@@ -97,14 +96,14 @@ while get_pos_y() < map_pos[1]:
 while get_ground_type() != Grounds.Treasure_Map:
     dig()
 #CODE
-# Instrukcje z mapy są zwracane jako jeden ciąg znaków
+# Instrukcje mapy są zwracane jako jeden łańcuch
 instructions = measure()
-# Użyj for-in, aby podzielić ciąg znaków na litery
+# Użyj for-in, aby przetworzyć łańcuch litera po literze
 for letter in instructions:
     print(letter)
 }}
 
-Dron musi przez cały czas pozostawać na blokach `Grounds.Treasure_Path`. Jeśli przemieści się na inne podłoże, droga zniknie, a skarb zostanie utracony.
+Dron przez cały czas musi pozostawać na blokach `Grounds.Treasure_Path`. Jeśli przemieści się na inne podłoże, droga zniknie, a skarb zostanie utracony.
 
 ## Cel
 Na końcu drogi znajduje się blok `Grounds.Treasure_Goal`. Jeśli dron nie zboczył z drogi, pojawi się na nim `Entities.Underground_Treasure`. Dron może użyć `harvest()` na skrzyni, aby zebrać złoto.
@@ -113,7 +112,7 @@ Na końcu drogi znajduje się blok `Grounds.Treasure_Goal`. Jeśli dron nie zboc
 Ilość złota jest proporcjonalna do długości drogi do skarbu. Ulepszanie odblokowania Mapy skarbu zwiększa jej głębokość, a ulepszanie Rozszerzenia daje jej więcej miejsca na ruch w poziomie. Oba ulepszenia wydłużają drogę do skarbu i zwiększają ilość znalezionego złota.
 
 ## Wiele dronów
-Dron, który dokopie się do bloku mapy skarbu, musi odnaleźć skarb, nie opuszczając bloków drogi.
+Dron, który wykopie blok mapy skarbów, musi znaleźć skarb bez opuszczania bloków ścieżki.
 </spoiler>
 
 ---
