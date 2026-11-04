@@ -135,10 +135,6 @@ other_file.function()`
 @unlock_descr_underground_senses = Сенсори дрона для взаємодії з підземними клітинками
 
 `while get_pos_z() < 100:
-    while get_hardness() > 5:
-        while get_hardness(North):
-            dig(North)
-        move(North)
     dig()`
 @unlock_descr_petrified_pumpkins = Під землею з'являються скам'янілі гарбузи.
 @unlock_descr_special_soils = Відкрийте шари перліту та суглинку, щоб підвищити врожайність рослин.
