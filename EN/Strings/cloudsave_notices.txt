@@ -10,4 +10,5 @@
 @cloud_sign_in_failed_google_play_games = Could not sign in to Google Play Games. Please try again later.
 @cloud_sign_in_failed_game_center = Could not sign in to Game Center. Please turn it on in the Settings app and try again.
 @cloud_sign_in_failed_game_center_try_again = Could not sign in to Game Center. Please try again later.
+@cloud_game_center_failed_to_open = Couldn't open Game Center.
 @cloud_notice_save_failed = Could not save {0} on this device. Please make sure the device has free space, then try again.

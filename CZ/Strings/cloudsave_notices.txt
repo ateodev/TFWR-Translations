@@ -10,4 +10,5 @@
 @cloud_sign_in_failed_google_play_games = Přihlášení do Google Play Games se nezdařilo. Zkus to prosím později.
 @cloud_sign_in_failed_game_center = Přihlášení do Game Center se nezdařilo. Zapni ho prosím v aplikaci Nastavení a zkus to znovu.
 @cloud_sign_in_failed_game_center_try_again = Přihlášení do Game Center se nezdařilo. Zkus to prosím později.
+@cloud_game_center_failed_to_open = Game Center se nepodařilo otevřít.
 @cloud_notice_save_failed = Nepodařilo se uložit {0} na toto zařízení. Ujisti se, že má zařízení volné místo, a zkus to znovu.

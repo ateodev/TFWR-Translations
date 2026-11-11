@@ -10,4 +10,5 @@
 @cloud_sign_in_failed_google_play_games = Google Play Gamesにサインインできませんでした。後でもう一度お試しください。
 @cloud_sign_in_failed_game_center = Game Centerにサインインできませんでした。設定アプリでオンにしてから、もう一度お試しください。
 @cloud_sign_in_failed_game_center_try_again = Game Centerにサインインできませんでした。後でもう一度お試しください。
+@cloud_game_center_failed_to_open = Game Centerを開けませんでした。
 @cloud_notice_save_failed = {0} をこの端末にセーブできませんでした。端末の空き容量を確認してから、もう一度お試しください。

@@ -10,4 +10,5 @@
 @cloud_sign_in_failed_google_play_games = 無法登入 Google Play Games。請稍後再試。
 @cloud_sign_in_failed_game_center = 無法登入 Game Center。請在「設定」App 中開啟它，然後再試一次。
 @cloud_sign_in_failed_game_center_try_again = 無法登入 Game Center。請稍後再試。
+@cloud_game_center_failed_to_open = 無法開啟 Game Center。
 @cloud_notice_save_failed = 無法在此裝置上儲存 {0}。請確認裝置有可用空間，然後再試一次。

@@ -10,4 +10,5 @@
 @cloud_sign_in_failed_google_play_games = Impossible de se connecter à Google Play Games. Réessaie plus tard.
 @cloud_sign_in_failed_game_center = Impossible de se connecter à Game Center. Active-le dans l'appli Réglages et réessaie.
 @cloud_sign_in_failed_game_center_try_again = Impossible de se connecter à Game Center. Réessaie plus tard.
+@cloud_game_center_failed_to_open = Impossible d'ouvrir Game Center.
 @cloud_notice_save_failed = Impossible de sauvegarder {0} sur cet appareil. Vérifie que l'appareil a de l'espace libre, puis réessaie.

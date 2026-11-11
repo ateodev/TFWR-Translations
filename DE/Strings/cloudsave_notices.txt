@@ -10,4 +10,5 @@
 @cloud_sign_in_failed_google_play_games = Anmeldung bei Google Play Games fehlgeschlagen. Bitte versuche es später noch einmal.
 @cloud_sign_in_failed_game_center = Anmeldung bei Game Center fehlgeschlagen. Bitte aktiviere es in der Einstellungen-App und versuche es erneut.
 @cloud_sign_in_failed_game_center_try_again = Anmeldung bei Game Center fehlgeschlagen. Bitte versuche es später noch einmal.
+@cloud_game_center_failed_to_open = Game Center konnte nicht geöffnet werden.
 @cloud_notice_save_failed = {0} konnte auf diesem Gerät nicht gespeichert werden. Bitte stelle sicher, dass das Gerät freien Speicherplatz hat, und versuche es erneut.
