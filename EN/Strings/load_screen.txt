@@ -14,6 +14,7 @@
 @load_screen_create = Create
 @load_screen_rename_empty = Please enter a name.
 @load_screen_rename_taken = A save with this name already exists.
+@load_screen_rename_not_portable = This name can't be used. Please choose another.
 @load_screen_delete_title = Delete {0}?
 @load_screen_delete_body = Its farm and its code are deleted. This can't be undone.
 @load_screen_import = Import

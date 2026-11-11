@@ -14,6 +14,7 @@
 @load_screen_create = Créer
 @load_screen_rename_empty = Entre un nom.
 @load_screen_rename_taken = Une sauvegarde porte déjà ce nom.
+@load_screen_rename_not_portable = Ce nom ne peut pas être utilisé. Choisis-en un autre.
 @load_screen_delete_title = Supprimer {0} ?
 @load_screen_delete_body = Sa ferme et son code seront supprimés. Cette action est irréversible.
 @load_screen_import = Importer

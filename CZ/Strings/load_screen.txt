@@ -14,6 +14,7 @@
 @load_screen_create = Vytvořit
 @load_screen_rename_empty = Zadej prosím název.
 @load_screen_rename_taken = Save s tímto názvem už existuje.
+@load_screen_rename_not_portable = Tento název nejde použít. Zvol prosím jiný.
 @load_screen_delete_title = Smazat {0}?
 @load_screen_delete_body = Jeho farma i kód budou smazány. Nelze to vrátit zpět.
 @load_screen_import = Import

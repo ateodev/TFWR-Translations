@@ -14,6 +14,7 @@
 @load_screen_create = 作成
 @load_screen_rename_empty = 名前を入力してください。
 @load_screen_rename_taken = その名前のセーブデータはすでにあります。
+@load_screen_rename_not_portable = この名前は使えません。別の名前を選んでください。
 @load_screen_delete_title = {0} を削除しますか？
 @load_screen_delete_body = その農場とコードが削除されます。元に戻すことはできません。
 @load_screen_import = インポート

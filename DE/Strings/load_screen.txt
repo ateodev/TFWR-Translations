@@ -14,6 +14,7 @@
 @load_screen_create = Erstellen
 @load_screen_rename_empty = Bitte gib einen Namen ein.
 @load_screen_rename_taken = Ein Spielstand mit diesem Namen existiert bereits.
+@load_screen_rename_not_portable = Dieser Name kann nicht verwendet werden. Bitte wähle einen anderen.
 @load_screen_delete_title = {0} löschen?
 @load_screen_delete_body = Die Farm und der Code werden gelöscht. Das kann nicht rückgängig gemacht werden.
 @load_screen_import = Import

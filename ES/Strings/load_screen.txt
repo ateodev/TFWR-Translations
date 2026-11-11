@@ -14,6 +14,7 @@
 @load_screen_create = Crear
 @load_screen_rename_empty = Introduce un nombre.
 @load_screen_rename_taken = Ya existe una partida con ese nombre.
+@load_screen_rename_not_portable = No se puede usar ese nombre. Elige otro.
 @load_screen_delete_title = ¿Eliminar {0}?
 @load_screen_delete_body = Se eliminarán su granja y su código. Esto no se puede deshacer.
 @load_screen_import = Importar

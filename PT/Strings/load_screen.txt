@@ -14,6 +14,7 @@
 @load_screen_create = Criar
 @load_screen_rename_empty = Digite um nome.
 @load_screen_rename_taken = Já existe um jogo salvo com esse nome.
+@load_screen_rename_not_portable = Esse nome não pode ser usado. Escolha outro.
 @load_screen_delete_title = Excluir {0}?
 @load_screen_delete_body = A fazenda e o código dele serão excluídos. Isso não pode ser desfeito.
 @load_screen_import = Importar

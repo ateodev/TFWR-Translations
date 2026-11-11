@@ -14,6 +14,7 @@
 @load_screen_create = Создать
 @load_screen_rename_empty = Введи название.
 @load_screen_rename_taken = Сохранение с таким названием уже есть.
+@load_screen_rename_not_portable = Это название нельзя использовать. Выбери другое.
 @load_screen_delete_title = Удалить {0}?
 @load_screen_delete_body = Его ферма и код будут удалены. Это нельзя отменить.
 @load_screen_import = Импорт

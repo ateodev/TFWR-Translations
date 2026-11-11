@@ -14,6 +14,7 @@
 @load_screen_create = Utwórz
 @load_screen_rename_empty = Wpisz nazwę.
 @load_screen_rename_taken = Zapis o tej nazwie już istnieje.
+@load_screen_rename_not_portable = Tej nazwy nie można użyć. Wybierz inną.
 @load_screen_delete_title = Usunąć {0}?
 @load_screen_delete_body = Farma i kod tego zapisu zostaną usunięte. Nie da się tego cofnąć.
 @load_screen_import = Import

@@ -14,6 +14,7 @@
 @load_screen_create = 建立
 @load_screen_rename_empty = 請輸入名稱。
 @load_screen_rename_taken = 已有同名的存檔。
+@load_screen_rename_not_portable = 無法使用這個名稱，請選擇其他名稱。
 @load_screen_delete_title = 刪除 {0}？
 @load_screen_delete_body = 它的農場和程式碼都會被刪除。此操作無法復原。
 @load_screen_import = 匯入
