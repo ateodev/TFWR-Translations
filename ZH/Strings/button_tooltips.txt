@@ -101,4 +101,4 @@
 @option_tooltip_selection_menu = 选中文字上方带有“剪切”、“拷贝”和“粘贴”的菜单。自动 = 显示游戏内键盘或连接实体键盘时隐藏，因为两者都有这些按键。
 @option_tooltip_docs_on_select = 选中代码中的单词时如何显示其文档。菜单内 = 在选择菜单中显示“文档”按钮，工具提示 = 立即显示文档。鼠标悬停时总会显示。
 @option_tooltip_keyboard_backlight = 游戏内键盘按键下方透出的光，白色或彩虹色（RGB），按下的每个键都会泛起光波。
-@option_tooltip_keyboard_squish = 让游戏内键盘的按键变扁，少遮挡屏幕。最大时按键高度为正常的一半。
+@option_tooltip_keyboard_squish = 让游戏内键盘的按键变扁，少遮挡屏幕。最大时按键会在仍便于点按的前提下变得最扁。
