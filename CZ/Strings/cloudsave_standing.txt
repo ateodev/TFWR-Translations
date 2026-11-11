@@ -10,6 +10,7 @@
 @cloud_standing_signed_out_body = Přihlas se do {0}, aby se tvé savy ukládaly do cloudu. Pak můžeš pokračovat tam, kde jsi skončil, i na jiném zařízení.
 @cloud_standing_other_account_headline = Cloudové ukládání je pozastaveno
 @cloud_standing_other_account_body = Jsi přihlášen do {0} jiným účtem, než ke kterému patří tvé savy, takže cloudové ukládání je pozastaveno. Stiskni „Synchronizovat“ pro přepnutí na savy tohoto účtu.
+@cloud_standing_made_signed_out_body = Savy na tomto zařízení vznikly dřív, než ses přihlásil do {0}, takže cloudové ukládání je pozastaveno. Stiskni „Synchronizovat“ pro přepnutí na savy tvého účtu.
 @cloud_standing_switch_failed_body = Nepodařilo se přepnout na savy tvého účtu. Zkontroluj připojení a pak stiskni „Synchronizovat“.
 @cloud_standing_unreachable_headline = Cloud není dostupný
 @cloud_standing_unreachable_body = Tvé savy zůstávají na tomto zařízení a do cloudu se dostanou, jakmile bude dostupný.

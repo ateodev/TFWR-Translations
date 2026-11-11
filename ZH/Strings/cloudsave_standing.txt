@@ -10,6 +10,7 @@
 @cloud_standing_signed_out_body = 请登录 {0} 以将存档保存在云端。这样你就可以在另一台设备上接着玩。
 @cloud_standing_other_account_headline = 云存档已暂停
 @cloud_standing_other_account_body = 你登录 {0} 所用的账号与存档所属的账号不同，因此云存档已暂停。请按“同步”切换到该账号的存档。
+@cloud_standing_made_signed_out_body = 此设备上的存档是在你登录 {0} 之前创建的，因此云存档已暂停。请按“同步”切换到你账号的存档。
 @cloud_standing_switch_failed_body = 无法切换到你账号的存档。请检查网络连接，然后按“同步”。
 @cloud_standing_unreachable_headline = 无法连接云端
 @cloud_standing_unreachable_body = 你的存档会保留在此设备上，并在云端可以连接后上传。

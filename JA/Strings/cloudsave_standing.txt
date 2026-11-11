@@ -10,6 +10,7 @@
 @cloud_standing_signed_out_body = {0} にサインインすると、セーブデータをクラウドに保存できます。別の端末でも続きからプレイできるようになります。
 @cloud_standing_other_account_headline = クラウドセーブは一時停止中です
 @cloud_standing_other_account_body = セーブデータの持ち主とは別のアカウントで {0} にサインインしているため、クラウドセーブは一時停止中です。「同期」を押すと、そのアカウントのセーブデータに切り替わります。
+@cloud_standing_made_signed_out_body = この端末のセーブデータは {0} にサインインする前に作成されたため、クラウドセーブは一時停止中です。「同期」を押すと、あなたのアカウントのセーブデータに切り替わります。
 @cloud_standing_switch_failed_body = アカウントのセーブデータに切り替えられませんでした。接続を確認してから「同期」を押してください。
 @cloud_standing_unreachable_headline = クラウドに接続できません
 @cloud_standing_unreachable_body = セーブデータはこの端末に保持され、クラウドに接続できるようになったら送られます。
