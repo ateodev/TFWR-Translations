@@ -12,3 +12,4 @@
 @cloud_sign_in_failed_game_center_try_again = Anmeldung bei Game Center fehlgeschlagen. Bitte versuche es später noch einmal.
 @cloud_game_center_failed_to_open = Game Center konnte nicht geöffnet werden.
 @cloud_notice_save_failed = {0} konnte auf diesem Gerät nicht gespeichert werden. Bitte stelle sicher, dass das Gerät freien Speicherplatz hat, und versuche es erneut.
+@cloud_notice_save_failed_try_again = {0} konnte nicht gespeichert werden. Bitte versuche es erneut.

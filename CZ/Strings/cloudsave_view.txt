@@ -7,4 +7,5 @@
 @cloud_view_sign_in = Přihlásit se
 @cloud_view_on_this_device = Na tomto zařízení
 @cloud_view_current = Aktuální
+@cloud_view_unreadable = Nečitelné
 @cloud_view_no_saves = Zatím žádné savy

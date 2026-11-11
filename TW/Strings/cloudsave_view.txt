@@ -7,4 +7,5 @@
 @cloud_view_sign_in = 登入
 @cloud_view_on_this_device = 此裝置上
 @cloud_view_current = 目前
+@cloud_view_unreadable = 無法讀取
 @cloud_view_no_saves = 尚無存檔

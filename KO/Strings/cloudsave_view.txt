@@ -7,4 +7,5 @@
 @cloud_view_sign_in = 로그인
 @cloud_view_on_this_device = 이 기기
 @cloud_view_current = 현재
+@cloud_view_unreadable = 읽기 불가
 @cloud_view_no_saves = 아직 저장 항목이 없습니다

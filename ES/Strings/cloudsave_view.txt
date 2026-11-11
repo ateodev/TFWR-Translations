@@ -7,4 +7,5 @@
 @cloud_view_sign_in = Iniciar sesión
 @cloud_view_on_this_device = En este dispositivo
 @cloud_view_current = Actual
+@cloud_view_unreadable = Ilegible
 @cloud_view_no_saves = Aún no hay partidas

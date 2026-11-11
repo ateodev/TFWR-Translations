@@ -7,4 +7,5 @@
 @cloud_view_sign_in = Anmelden
 @cloud_view_on_this_device = Auf diesem Gerät
 @cloud_view_current = Aktuell
+@cloud_view_unreadable = Unlesbar
 @cloud_view_no_saves = Noch keine Spielstände

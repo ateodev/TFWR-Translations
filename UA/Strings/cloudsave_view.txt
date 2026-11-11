@@ -7,4 +7,5 @@
 @cloud_view_sign_in = Увійти
 @cloud_view_on_this_device = На цьому пристрої
 @cloud_view_current = Поточне
+@cloud_view_unreadable = Не читається
 @cloud_view_no_saves = Збережень поки немає

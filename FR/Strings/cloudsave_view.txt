@@ -7,4 +7,5 @@
 @cloud_view_sign_in = Se connecter
 @cloud_view_on_this_device = Sur cet appareil
 @cloud_view_current = Actuelle
+@cloud_view_unreadable = Illisible
 @cloud_view_no_saves = Aucune sauvegarde

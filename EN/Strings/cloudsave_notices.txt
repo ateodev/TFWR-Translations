@@ -12,3 +12,4 @@
 @cloud_sign_in_failed_game_center_try_again = Could not sign in to Game Center. Please try again later.
 @cloud_game_center_failed_to_open = Couldn't open Game Center.
 @cloud_notice_save_failed = Could not save {0} on this device. Please make sure the device has free space, then try again.
+@cloud_notice_save_failed_try_again = Could not save {0}. Please try again.
