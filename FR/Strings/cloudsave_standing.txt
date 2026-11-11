@@ -10,6 +10,7 @@
 @cloud_standing_signed_out_body = Connecte-toi à {0} pour garder tes sauvegardes dans le cloud. Tu pourras ensuite reprendre là où tu t'es arrêté sur un autre appareil.
 @cloud_standing_other_account_headline = Sauvegarde cloud en pause
 @cloud_standing_other_account_body = Tu es connecté à {0} avec un compte différent de celui auquel appartiennent tes sauvegardes, la sauvegarde cloud est donc en pause. Appuie sur 'Synchroniser' pour passer aux sauvegardes de ce compte.
+@cloud_standing_switch_failed_body = Impossible de passer aux sauvegardes de ton compte. Vérifie ta connexion, puis appuie sur 'Synchroniser'.
 @cloud_standing_unreachable_headline = Cloud inaccessible
 @cloud_standing_unreachable_body = Tes sauvegardes restent sur cet appareil et iront dans le cloud dès qu'il sera accessible.
 @cloud_standing_changed_elsewhere_headline = Sauvegardes modifiées ailleurs

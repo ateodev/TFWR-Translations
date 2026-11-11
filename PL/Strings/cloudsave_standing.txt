@@ -10,6 +10,7 @@
 @cloud_standing_signed_out_body = Zaloguj się do {0}, aby przechowywać zapisy w chmurze. Będziesz wtedy mógł kontynuować grę na innym urządzeniu.
 @cloud_standing_other_account_headline = Zapis w chmurze wstrzymany
 @cloud_standing_other_account_body = Jesteś zalogowany do {0} na innym koncie niż to, do którego należą twoje zapisy, więc zapis w chmurze jest wstrzymany. Naciśnij „Synchronizuj”, aby przełączyć się na zapisy tego konta.
+@cloud_standing_switch_failed_body = Nie udało się przełączyć na zapisy twojego konta. Sprawdź połączenie, a potem naciśnij „Synchronizuj”.
 @cloud_standing_unreachable_headline = Brak połączenia z chmurą
 @cloud_standing_unreachable_body = Twoje zapisy pozostają na tym urządzeniu i trafią do chmury, gdy tylko będzie dostępna.
 @cloud_standing_changed_elsewhere_headline = Zapisy zmienione gdzie indziej

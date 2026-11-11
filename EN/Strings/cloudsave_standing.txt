@@ -10,6 +10,7 @@
 @cloud_standing_signed_out_body = Please sign in to {0} to keep your saves in the cloud. You can then keep playing where you left off on another device.
 @cloud_standing_other_account_headline = Cloud save is paused
 @cloud_standing_other_account_body = You are signed in to {0} with a different account than the one your saves belong to, so cloud save is paused. Please press 'Sync' to switch to that account's saves.
+@cloud_standing_switch_failed_body = Could not switch to your account's saves. Check your connection, then press 'Sync'.
 @cloud_standing_unreachable_headline = Cloud save can't be reached
 @cloud_standing_unreachable_body = Your saves are kept on this device and go to the cloud once it can be reached.
 @cloud_standing_changed_elsewhere_headline = Saves changed elsewhere

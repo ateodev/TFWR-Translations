@@ -10,6 +10,7 @@
 @cloud_standing_signed_out_body = Entre no {0} para manter seus jogos salvos na nuvem. Assim você pode continuar de onde parou em outro aparelho.
 @cloud_standing_other_account_headline = Salvamento na nuvem pausado
 @cloud_standing_other_account_body = Você está conectado ao {0} com uma conta diferente daquela a que seus jogos salvos pertencem, então o salvamento na nuvem está pausado. Toque em 'Sincronizar' para mudar para os jogos salvos dessa conta.
+@cloud_standing_switch_failed_body = Não foi possível mudar para os jogos salvos da sua conta. Verifique sua conexão e toque em 'Sincronizar'.
 @cloud_standing_unreachable_headline = Não foi possível acessar a nuvem
 @cloud_standing_unreachable_body = Seus jogos salvos ficam neste aparelho e vão para a nuvem assim que ela puder ser acessada.
 @cloud_standing_changed_elsewhere_headline = Jogos salvos alterados em outro lugar

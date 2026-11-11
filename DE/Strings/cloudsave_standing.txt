@@ -10,6 +10,7 @@
 @cloud_standing_signed_out_body = Bitte melde dich bei {0} an, um deine Spielstände in der Cloud zu sichern. Dann kannst du auf einem anderen Gerät dort weiterspielen, wo du aufgehört hast.
 @cloud_standing_other_account_headline = Cloud-Speicherung ist pausiert
 @cloud_standing_other_account_body = Du bist bei {0} mit einem anderen Konto angemeldet als dem, zu dem deine Spielstände gehören, deshalb ist die Cloud-Speicherung pausiert. Bitte drücke auf 'Synchronisieren', um zu den Spielständen dieses Kontos zu wechseln.
+@cloud_standing_switch_failed_body = Der Wechsel zu den Spielständen deines Kontos hat nicht geklappt. Prüfe deine Verbindung und drücke dann auf 'Synchronisieren'.
 @cloud_standing_unreachable_headline = Cloud nicht erreichbar
 @cloud_standing_unreachable_body = Deine Spielstände bleiben auf diesem Gerät und gelangen in die Cloud, sobald sie erreichbar ist.
 @cloud_standing_changed_elsewhere_headline = Spielstände anderswo geändert

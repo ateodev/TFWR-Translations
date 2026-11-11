@@ -10,6 +10,7 @@
 @cloud_standing_signed_out_body = Inicia sesión en {0} para guardar tus partidas en la nube. Así podrás seguir jugando donde lo dejaste en otro dispositivo.
 @cloud_standing_other_account_headline = Guardado en la nube en pausa
 @cloud_standing_other_account_body = Has iniciado sesión en {0} con una cuenta distinta de la que pertenecen tus partidas, así que el guardado en la nube está en pausa. Pulsa 'Sincronizar' para cambiar a las partidas de esa cuenta.
+@cloud_standing_switch_failed_body = No se pudo cambiar a las partidas de tu cuenta. Comprueba tu conexión y pulsa 'Sincronizar'.
 @cloud_standing_unreachable_headline = No se puede acceder a la nube
 @cloud_standing_unreachable_body = Tus partidas se quedan en este dispositivo e irán a la nube en cuanto se pueda acceder a ella.
 @cloud_standing_changed_elsewhere_headline = Partidas cambiadas en otro sitio
