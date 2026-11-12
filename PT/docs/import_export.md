@@ -6,6 +6,8 @@ Na tela de carregamento, toque nos três pontos no cartão de um jogo salvo e es
 
 Guarde-o como uma cópia sua ou leve o jogo salvo para o jogo de PC: extraia-o em uma pasta só dele dentro da pasta Saves do jogo de PC.
 
+<shortcuts>O app Atalhos também pode fazer isso por você toda vez que você sai do jogo: [Cópias com Atalhos](docs/save_shortcuts.md)
+</shortcuts>
 ## Importar
 Toque em “Importar” na tela de carregamento e escolha o zip de um jogo salvo. Alguns dispositivos também deixam você escolher a pasta de um jogo salvo. Um jogo salvo pode ter até 1 MB. Uma importação sempre cria um novo jogo salvo e nunca substitui nenhum.
 

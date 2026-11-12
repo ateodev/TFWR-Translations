@@ -6,6 +6,8 @@ Na obrazovce „Nahrát“ klepni na tři tečky na kartě uložené hry a zvol 
 
 Nech si ho jako vlastní kopii, nebo s ním přenes uloženou hru do hry na PC: rozbal ho do vlastní složky ve složce Saves hry na PC.
 
+<shortcuts>Aplikace Zkratky to za tebe může udělat i sama při každém odchodu ze hry: [Kopie přes Zkratky](docs/save_shortcuts.md)
+</shortcuts>
 ## Import
 Na obrazovce „Nahrát“ stiskni „Import“ a vyber zip uložené hry. Některá zařízení ti dovolí vybrat i složku uložené hry. Uložená hra může mít až 1 MB. Import vždy vytvoří novou uloženou hru a žádnou nenahradí.
 

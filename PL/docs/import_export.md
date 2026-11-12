@@ -6,6 +6,8 @@ Na ekranie wczytywania stuknij trzy kropki na karcie zapisu i wybierz „Eksport
 
 Zachowaj go jako własną kopię albo przenieś zapis do gry na PC: rozpakuj go do osobnego folderu w folderze Saves gry na PC.
 
+<shortcuts>Aplikacja Skróty może też robić to za ciebie za każdym razem, gdy wychodzisz z gry: [Kopie przez Skróty](docs/save_shortcuts.md)
+</shortcuts>
 ## Import
 Naciśnij „Import” na ekranie wczytywania i wybierz zip zapisu. Niektóre urządzenia pozwalają też wybrać folder zapisu. Zapis może mieć do 1 MB. Import zawsze tworzy nowy zapis i nigdy żadnego nie zastępuje.
 

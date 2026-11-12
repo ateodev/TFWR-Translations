@@ -6,6 +6,8 @@ Sur l'écran de chargement, touche les trois points sur la carte d'une sauvegard
 
 Garde-le comme copie personnelle, ou emporte la sauvegarde dans le jeu sur PC : décompresse-le dans un dossier à part dans le dossier Saves du jeu sur PC.
 
+<shortcuts>L'app Raccourcis peut aussi le faire pour toi chaque fois que tu quittes le jeu : [Copies avec Raccourcis](docs/save_shortcuts.md)
+</shortcuts>
 ## Importer
 Appuie sur « Importer » sur l'écran de chargement et choisis le zip d'une sauvegarde. Certains appareils te laissent aussi choisir le dossier d'une sauvegarde. Une sauvegarde peut faire jusqu'à 1 Mo. Une importation crée toujours une nouvelle sauvegarde et n'en remplace jamais une.
 

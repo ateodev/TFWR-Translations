@@ -6,6 +6,8 @@ En la pantalla de carga, toca los tres puntos de la tarjeta de una partida y eli
 
 Guárdalo como copia propia o lleva la partida al juego de PC: descomprímelo en una carpeta propia dentro de la carpeta Saves del juego de PC.
 
+<shortcuts>La app Atajos también puede hacerlo por ti cada vez que sales del juego: [Copias con Atajos](docs/save_shortcuts.md)
+</shortcuts>
 ## Importar
 Pulsa «Importar» en la pantalla de carga y elige un zip de una partida. Algunos dispositivos también te dejan elegir la carpeta de una partida. Una partida puede ocupar hasta 1 MB. Importar siempre crea una partida nueva y nunca reemplaza ninguna.
 

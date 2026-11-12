@@ -6,6 +6,8 @@ On the load screen, tap the three dots on a save's card and choose 'Export'. The
 
 Keep it as a copy of your own, or carry the save to the PC game: unzip it into a folder of its own in the PC game's Saves folder.
 
+<shortcuts>The Shortcuts app can also do this for you each time you leave the game: [Copies with Shortcuts](docs/save_shortcuts.md)
+</shortcuts>
 ## Import
 Press 'Import' on the load screen and choose a zip of a save. Some devices also let you choose a save's folder. A save can be up to 1 MB. An import always makes a new save and never replaces one.
 

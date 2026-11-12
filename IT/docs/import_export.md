@@ -6,6 +6,8 @@ Nella schermata di caricamento, tocca i tre puntini sulla scheda di un salvatagg
 
 Tienilo come copia tutta tua, oppure porta il salvataggio nel gioco per PC: estrailo in una cartella a sé nella cartella Saves del gioco per PC.
 
+<shortcuts>L'app Comandi Rapidi può anche farlo per te ogni volta che esci dal gioco: [Copie con Comandi Rapidi](docs/save_shortcuts.md)
+</shortcuts>
 ## Importazione
 Premi «Importa» nella schermata di caricamento e scegli lo zip di un salvataggio. Alcuni dispositivi ti permettono anche di scegliere la cartella di un salvataggio. Un salvataggio può arrivare fino a 1 MB. Un'importazione crea sempre un nuovo salvataggio e non ne sostituisce mai uno.
 

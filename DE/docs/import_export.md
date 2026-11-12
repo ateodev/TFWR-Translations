@@ -6,6 +6,8 @@ Tippe im Ladebildschirm auf die drei Punkte auf der Karte eines Spielstands und 
 
 Behalte es als eigene Kopie, oder nimm den Spielstand ins PC-Spiel mit: Entpacke es in einen eigenen Ordner im Saves-Ordner des PC-Spiels.
 
+<shortcuts>Die App Kurzbefehle kann das auch jedes Mal für dich erledigen, wenn du das Spiel verlässt: [Kopien mit Kurzbefehlen](docs/save_shortcuts.md)
+</shortcuts>
 ## Import
 Drücke im Ladebildschirm auf „Import“ und wähle ein Zip eines Spielstands. Auf manchen Geräten kannst du auch den Ordner eines Spielstands wählen. Ein Spielstand darf bis zu 1 MB groß sein. Ein Import legt immer einen neuen Spielstand an und ersetzt nie einen.
 
