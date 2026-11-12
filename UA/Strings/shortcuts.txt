@@ -1,0 +1,11 @@
+@shortcuts_get_latest_save = Отримати останнє збереження
+@shortcuts_get_latest_save_description = Видає останнє зігране збереження як ZIP-файл.
+@shortcuts_get_save = Отримати збереження
+@shortcuts_get_save_description = Видає збереження з вибраною назвою як ZIP-файл.
+@shortcuts_save_name = Назва збереження
+@shortcuts_get_saves = Отримати всі збереження
+@shortcuts_get_saves_description = Видає кожне збереження окремим ZIP-файлом або лише ті, що змінені з дати в «Змінено з».
+@shortcuts_changed_since = Змінено з
+@shortcuts_full_game_only = Ця дія входить до повної версії.
+@shortcuts_no_save = Збережень поки немає.
+@shortcuts_no_save_named = Збереження з назвою «{0}» немає.

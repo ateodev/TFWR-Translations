@@ -1,0 +1,11 @@
+@shortcuts_get_latest_save = Získat poslední save
+@shortcuts_get_latest_save_description = Vrátí save, který jsi hrál naposledy, jako soubor zip.
+@shortcuts_get_save = Získat save
+@shortcuts_get_save_description = Vrátí save se zvoleným názvem jako soubor zip.
+@shortcuts_save_name = Název savu
+@shortcuts_get_saves = Získat savy
+@shortcuts_get_saves_description = Vrátí každý save jako samostatný soubor zip, nebo jen savy změněné od data v „Změněno od“.
+@shortcuts_changed_since = Změněno od
+@shortcuts_full_game_only = Tato akce je součástí plné hry.
+@shortcuts_no_save = Zatím tu není žádný save.
+@shortcuts_no_save_named = Save s názvem „{0}“ neexistuje.

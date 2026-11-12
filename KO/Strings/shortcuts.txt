@@ -1,0 +1,11 @@
+@shortcuts_get_latest_save = 최근 저장 항목 가져오기
+@shortcuts_get_latest_save_description = 마지막으로 플레이한 저장 항목을 ZIP 파일로 넘겨줍니다.
+@shortcuts_get_save = 저장 항목 가져오기
+@shortcuts_get_save_description = 선택한 이름의 저장 항목을 ZIP 파일로 넘겨줍니다.
+@shortcuts_save_name = 저장 항목 이름
+@shortcuts_get_saves = 여러 저장 항목 가져오기
+@shortcuts_get_saves_description = 각 저장 항목을 개별 ZIP 파일로 넘겨줍니다. '이 날짜 이후 변경'에 날짜를 넣으면 그 이후에 변경된 저장 항목만 넘겨줍니다.
+@shortcuts_changed_since = 이 날짜 이후 변경
+@shortcuts_full_game_only = 이 동작은 정식판에 포함되어 있습니다.
+@shortcuts_no_save = 아직 저장 항목이 없습니다.
+@shortcuts_no_save_named = '{0}'(이)라는 저장 항목이 없습니다.

@@ -1,0 +1,11 @@
+@shortcuts_get_latest_save = Get latest save
+@shortcuts_get_latest_save_description = Gives the save you played last as a zip file.
+@shortcuts_get_save = Get save
+@shortcuts_get_save_description = Gives the save with the name you choose as a zip file.
+@shortcuts_save_name = Save name
+@shortcuts_get_saves = Get saves
+@shortcuts_get_saves_description = Gives each save as its own zip file, or only the saves changed since the date in 'Changed since'.
+@shortcuts_changed_since = Changed since
+@shortcuts_full_game_only = This action is part of the full game.
+@shortcuts_no_save = There is no save yet.
+@shortcuts_no_save_named = There is no save named '{0}'.

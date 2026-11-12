@@ -1,0 +1,11 @@
+@shortcuts_get_latest_save = Ottieni l'ultimo salvataggio
+@shortcuts_get_latest_save_description = Fornisce l'ultimo salvataggio giocato come file zip.
+@shortcuts_get_save = Ottieni salvataggio
+@shortcuts_get_save_description = Fornisce il salvataggio con il nome scelto come file zip.
+@shortcuts_save_name = Nome del salvataggio
+@shortcuts_get_saves = Ottieni salvataggi
+@shortcuts_get_saves_description = Fornisce ogni salvataggio come file zip a sé, oppure solo quelli modificati dopo la data in «Modificato dal».
+@shortcuts_changed_since = Modificato dal
+@shortcuts_full_game_only = Questa azione fa parte del gioco completo.
+@shortcuts_no_save = Non c'è ancora nessun salvataggio.
+@shortcuts_no_save_named = Non esiste un salvataggio chiamato «{0}».

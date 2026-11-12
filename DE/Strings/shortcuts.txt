@@ -1,0 +1,11 @@
+@shortcuts_get_latest_save = Neuesten Spielstand holen
+@shortcuts_get_latest_save_description = Gibt den zuletzt gespielten Spielstand als ZIP-Datei aus.
+@shortcuts_get_save = Spielstand holen
+@shortcuts_get_save_description = Gibt den Spielstand mit dem gewählten Namen als ZIP-Datei aus.
+@shortcuts_save_name = Name des Spielstands
+@shortcuts_get_saves = Spielstände holen
+@shortcuts_get_saves_description = Gibt jeden Spielstand als eigene ZIP-Datei aus, oder nur die seit dem Datum in „Geändert seit“ geänderten.
+@shortcuts_changed_since = Geändert seit
+@shortcuts_full_game_only = Diese Aktion ist Teil der Vollversion.
+@shortcuts_no_save = Es gibt noch keinen Spielstand.
+@shortcuts_no_save_named = Es gibt keinen Spielstand namens „{0}“.

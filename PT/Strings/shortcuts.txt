@@ -1,0 +1,11 @@
+@shortcuts_get_latest_save = Obter último jogo salvo
+@shortcuts_get_latest_save_description = Entrega o último jogo salvo que você jogou como arquivo zip.
+@shortcuts_get_save = Obter jogo salvo
+@shortcuts_get_save_description = Entrega o jogo salvo com o nome escolhido como arquivo zip.
+@shortcuts_save_name = Nome do jogo salvo
+@shortcuts_get_saves = Obter jogos salvos
+@shortcuts_get_saves_description = Entrega cada jogo salvo como um arquivo zip próprio, ou só os alterados desde a data em "Alterado desde".
+@shortcuts_changed_since = Alterado desde
+@shortcuts_full_game_only = Esta ação faz parte do jogo completo.
+@shortcuts_no_save = Ainda não há nenhum jogo salvo.
+@shortcuts_no_save_named = Não há nenhum jogo salvo chamado "{0}".

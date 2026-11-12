@@ -1,0 +1,11 @@
+@shortcuts_get_latest_save = 取得最新存檔
+@shortcuts_get_latest_save_description = 將你最後玩的存檔以 zip 檔提供。
+@shortcuts_get_save = 取得存檔
+@shortcuts_get_save_description = 將所選名稱的存檔以 zip 檔提供。
+@shortcuts_save_name = 存檔名稱
+@shortcuts_get_saves = 取得多個存檔
+@shortcuts_get_saves_description = 將每個存檔分別以 zip 檔提供；若在「此後變更」中填入日期，則只提供此後變更過的存檔。
+@shortcuts_changed_since = 此後變更
+@shortcuts_full_game_only = 此動作屬於完整版內容。
+@shortcuts_no_save = 尚無存檔。
+@shortcuts_no_save_named = 沒有名為「{0}」的存檔。

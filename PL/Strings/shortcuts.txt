@@ -1,0 +1,11 @@
+@shortcuts_get_latest_save = Pobierz ostatni zapis
+@shortcuts_get_latest_save_description = Zwraca ostatnio grany zapis jako plik zip.
+@shortcuts_get_save = Pobierz zapis
+@shortcuts_get_save_description = Zwraca zapis o wybranej nazwie jako plik zip.
+@shortcuts_save_name = Nazwa zapisu
+@shortcuts_get_saves = Pobierz zapisy
+@shortcuts_get_saves_description = Zwraca każdy zapis jako osobny plik zip albo tylko zapisy zmienione od daty w „Zmienione od”.
+@shortcuts_changed_since = Zmienione od
+@shortcuts_full_game_only = Ta czynność jest częścią pełnej wersji gry.
+@shortcuts_no_save = Nie ma jeszcze żadnego zapisu.
+@shortcuts_no_save_named = Nie ma zapisu o nazwie „{0}”.

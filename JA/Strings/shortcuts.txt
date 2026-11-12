@@ -1,0 +1,11 @@
+@shortcuts_get_latest_save = 最新のセーブデータを取得
+@shortcuts_get_latest_save_description = 最後に遊んだセーブデータをZIPファイルとして渡します。
+@shortcuts_get_save = セーブデータを取得
+@shortcuts_get_save_description = 選んだ名前のセーブデータをZIPファイルとして渡します。
+@shortcuts_save_name = セーブデータ名
+@shortcuts_get_saves = 複数のセーブデータを取得
+@shortcuts_get_saves_description = 各セーブデータを個別のZIPファイルとして渡します。「この日時以降に変更」を指定すると、その後に変更されたものだけを渡します。
+@shortcuts_changed_since = この日時以降に変更
+@shortcuts_full_game_only = このアクションは製品版の機能です。
+@shortcuts_no_save = セーブデータはまだありません。
+@shortcuts_no_save_named = 「{0}」という名前のセーブデータはありません。

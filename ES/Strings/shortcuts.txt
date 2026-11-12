@@ -1,0 +1,11 @@
+@shortcuts_get_latest_save = Obtener la última partida
+@shortcuts_get_latest_save_description = Da la última partida que jugaste como archivo zip.
+@shortcuts_get_save = Obtener partida
+@shortcuts_get_save_description = Da la partida con el nombre que elijas como archivo zip.
+@shortcuts_save_name = Nombre de la partida
+@shortcuts_get_saves = Obtener partidas
+@shortcuts_get_saves_description = Da cada partida como su propio archivo zip, o solo las modificadas desde la fecha de «Modificada desde».
+@shortcuts_changed_since = Modificada desde
+@shortcuts_full_game_only = Esta acción forma parte del juego completo.
+@shortcuts_no_save = Aún no hay ninguna partida.
+@shortcuts_no_save_named = No hay ninguna partida llamada «{0}».
