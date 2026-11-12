@@ -6,6 +6,7 @@
 [Pierwsze kroki](docs/getting_started.md)
 <mobile>[Klawiatura w grze](docs/keyboard.md)</mobile>
 <desktop>[Wczytywanie kopii zapasowych](docs/backup.md)</desktop>
+[Import i eksport](docs/import_export.md)
 <unlock=debug>[Dane wyjściowe](docs/output.md)
 </unlock><unlock=debug>[Statystyki](docs/stats.md)
 </unlock>

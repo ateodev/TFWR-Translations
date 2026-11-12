@@ -6,6 +6,7 @@
 [Getting Started](docs/getting_started.md)
 <mobile>[In-Game Keyboard](docs/keyboard.md)</mobile>
 <desktop>[Loading Backups](docs/backup.md)</desktop>
+[Import and Export](docs/import_export.md)
 <unlock=debug>[Output](docs/output.md)
 </unlock><unlock=debug>[Stats](docs/stats.md)
 </unlock>

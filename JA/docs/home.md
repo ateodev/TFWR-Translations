@@ -6,6 +6,7 @@
 [はじめに](docs/getting_started.md)
 <mobile>[ゲーム内キーボード](docs/keyboard.md)</mobile>
 <desktop>[バックアップのロード](docs/backup.md)</desktop>
+[インポートとエクスポート](docs/import_export.md)
 <unlock=debug>[出力](docs/output.md)
 </unlock><unlock=debug>[統計](docs/stats.md)
 </unlock>

@@ -6,6 +6,7 @@
 [Para Empezar](docs/getting_started.md)
 <mobile>[Teclado del juego](docs/keyboard.md)</mobile>
 <desktop>[Cargando Copias de Seguridad](docs/backup.md)</desktop>
+[Importar y exportar](docs/import_export.md)
 <unlock=debug>[Salida](docs/output.md)
 </unlock><unlock=debug>[Estadísticas](docs/stats.md)
 </unlock>

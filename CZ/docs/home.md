@@ -6,6 +6,7 @@
 [Začínáme](docs/getting_started.md)
 <mobile>[Herní klávesnice](docs/keyboard.md)</mobile>
 <desktop>[Nahrát Zálohu](docs/backup.md)</desktop>
+[Import a export](docs/import_export.md)
 <unlock=debug>[Výstup](docs/output.md)
 </unlock><unlock=debug>[Statistiky](docs/stats.md)
 </unlock>

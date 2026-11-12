@@ -6,6 +6,7 @@
 [Начало работы](docs/getting_started.md)
 <mobile>[Игровая клавиатура](docs/keyboard.md)</mobile>
 <desktop>[Загрузка резервных копий](docs/backup.md)</desktop>
+[Импорт и экспорт](docs/import_export.md)
 <unlock=debug>[Вывод](docs/output.md)
 </unlock><unlock=debug>[Статистика](docs/stats.md)
 </unlock>

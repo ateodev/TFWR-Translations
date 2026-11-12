@@ -6,6 +6,7 @@
 [入门指南](docs/getting_started.md)
 <mobile>[游戏内键盘](docs/keyboard.md)</mobile>
 <desktop>[加载备份](docs/backup.md)</desktop>
+[导入和导出](docs/import_export.md)
 <unlock=debug>[输出](docs/output.md)
 </unlock><unlock=debug>[统计数据](docs/stats.md)
 </unlock>

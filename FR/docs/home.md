@@ -6,6 +6,7 @@
 [Pour commencer](docs/getting_started.md)
 <mobile>[Clavier intégré](docs/keyboard.md)</mobile>
 <desktop>[Chargement des Sauvegardes](docs/backup.md)</desktop>
+[Import et export](docs/import_export.md)
 <unlock=debug>[Sortie](docs/output.md)
 </unlock><unlock=debug>[Statistiques](docs/stats.md)
 </unlock>

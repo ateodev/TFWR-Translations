@@ -6,6 +6,7 @@
 [시작하기](docs/getting_started.md)
 <mobile>[게임 내 키보드](docs/keyboard.md)</mobile>
 <desktop>[백업 불러오기](docs/backup.md)</desktop>
+[가져오기와 내보내기](docs/import_export.md)
 <unlock=debug>[출력](docs/output.md)
 </unlock><unlock=debug>[통계](docs/stats.md)
 </unlock>

@@ -6,6 +6,7 @@
 [Primi Passi](docs/getting_started.md)
 <mobile>[Tastiera del gioco](docs/keyboard.md)</mobile>
 <desktop>[Caricamento dei Backup](docs/backup.md)</desktop>
+[Importa ed esporta](docs/import_export.md)
 <unlock=debug>[Output](docs/output.md)
 </unlock><unlock=debug>[Statistiche](docs/stats.md)
 </unlock>
